@@ -5,7 +5,7 @@ item_tool_masterfork
   // edited raws from Immaterial Cultures by DPh Kraken, additional edits by zey //
   // mostly the same as vanilla except knives and stone axes have been removed
 
-[ITEM_TOOL:ITEM_TOOL_CAULDRON]
+[ITEM_TOOL:ITEM_TOOL_CAULDRON]  needed for the foundry building
 [NAME:cauldron:cauldrons]
 [DESCRIPTION:A large round container used to boil or melt things. Used both in kitchens and metalworking.]
 [VALUE:50]
