@@ -108,6 +108,7 @@ entity_dwarf_masterfork
 	[TOY:ITEM_TOY_DRAGON_CHP]
 	[TOY:ITEM_TOY_CROSSBOW_SPL]
 	[TOOL:ITEM_TOOL_TABLET]{+  hard writing surface.}
+	[TOOL:ITEM_TOOL_CAULDRON]{+  needed for foundry.}
 	[TOOL:ITEM_TOOL_NEST_BOX]
 	[TOOL:ITEM_TOOL_JUG]
 	[TOOL:ITEM_TOOL_LARGE_POT]
