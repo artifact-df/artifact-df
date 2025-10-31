@@ -1,5 +1,5 @@
 [ID:masterfork]
-[NUMERIC_VERSION:49]
+[NUMERIC_VERSION:50]
 [DISPLAYED_VERSION: (v.1.11.0)]
 [EARLIEST_COMPATIBLE_NUMERIC_VERSION:30]
 [EARLIEST_COMPATIBLE_DISPLAYED_VERSION: (v.1.0.8)]
@@ -54,4 +54,4 @@
 [STEAM_TAG:masterwork]
 [STEAM_TAG:texture]
 [STEAM_TAG:music]
-[STEAM_CHANGELOG:hotfix]
+[STEAM_CHANGELOG:hotfix 3: added cauldron to dwarves (needed for the foundry)]
