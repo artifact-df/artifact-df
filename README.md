@@ -5,7 +5,7 @@ Artifact Dwarf Fortress is a mod that aims to provide a uniquely balanced worldg
 ## Balanced?
 Part of this modpack's purpose is to ensure worlds are reasonably likely to reach 1000+ years of age without being mostly reduced to ruins. Destruction of entire civilizations by necromancers should be a significant event that doesn't happen often.
 
-We also want to keep things interesting, so many animals and megabeasts have higher skills than they would have in vanilla. Animals are more threatening to your citizens than they normally would be.
+We also want to keep things interesting, so many animals and megabeasts have higher skills than they would have in vanilla. The world is generally more threatening to your citizens than it normally would be.
 
 Other than that, we want more of pretty much everything.
  - More weapon/armor types
@@ -18,6 +18,10 @@ Other than that, we want more of pretty much everything.
  - More secrets than just necromancy
  - Many other things as well
  
- And we want all of this without bringing on the chaotic imbalances that can arise between many mods in a collection. This mod replaces the content in almost all of the vanilla modules, changing important names and in some cases relationships between materials. As a result, Artifact DF is not compatible with most mods on the bay12 forums or Steam workshop.
+And we want all of this without bringing on the chaotic imbalances that can arise between many mods in a collection. Everything that gets added gets changed, sometimes significantly, to better fit Artifact's purposes.
+ 
+## Will this work with my mod?
+This mod replaces the content in almost all of the vanilla modules, changing important names and in some cases relationships between materials. As a result, Artifact DF is not compatible with most mods on the bay12 forums or Steam workshop.
 
+Plenty of mods may *work* if loaded after Artifact DF, but don't expect stability unless you're using the recommended load order.
 
