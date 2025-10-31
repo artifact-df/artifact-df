@@ -1,4 +1,4 @@
-# Artifact Dwarf Fortress
+![Artifact Dwarf Fortress](https://github.com/zeyonic/df-masterfork/blob/readme/logo.png?raw=true)
 ## What?
 Artifact Dwarf Fortress is a mod that aims to provide a uniquely balanced worldgen and gameplay experience while also providing a greatly expanded set of features from a variety of other mods, both old and new. Our policy is to only include content from authors that have given permission to use their work in this way, so if you're aware of something in this repository that the original author doesn't want here, create an issue in our tracker and let us know.
 
