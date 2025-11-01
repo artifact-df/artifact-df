@@ -1,4 +1,4 @@
-![Artifact Dwarf Fortress](https://github.com/zeyonic/df-masterfork/blob/readme/logo.png?raw=true)
+![Artifact Dwarf Fortress](_md_assets/logo.png)
 ## What?
 Artifact Dwarf Fortress is a mod that aims to provide a uniquely balanced worldgen and gameplay experience
 while also providing a greatly expanded set of features from a variety of other mods, both old and new.
@@ -37,7 +37,7 @@ If a given issue can't be replicated with the recommended loading order, it like
 ## Load order?
 Once Artifact DF is in your mods folder, all you need to do is change your load order to look like this.
 
-![Correct load order](https://github.com/zeyonic/df-masterfork/blob/readme/load_order.jpg?raw=true)
+![Correct load order](_md_assets/load_order.jpg)
 
 In future versions, we might change which vanilla modules are replaced by this mod. 
 If this happens, we'll update this screenshot to show the new order.
