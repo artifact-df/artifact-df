@@ -41,3 +41,10 @@ Once Artifact DF is in your mods folder, all you need to do is change your load 
 
 In future versions, we might change which vanilla modules are replaced by this mod. 
 If this happens, we'll update this screenshot to show the new order.
+
+## What happened to Masterfork?
+This is the same mod, but we've changed the name and logo.
+At the advice of a prominent community member, we've decided to ditch the association with Masterwork and call it something new.
+The old name didn't really make a whole lot of sense anyway, given that no material from Masterwork itself has been carried over,
+meaning this isn't a true fork, just a similar kind of endeavor.
+This is largely a new mod, made from the combined work of newer modders, most of whom have their original mods hosted on the workshop.
