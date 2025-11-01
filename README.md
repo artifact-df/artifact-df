@@ -3,8 +3,7 @@
 Artifact Dwarf Fortress is a mod that aims to provide a uniquely balanced worldgen and gameplay experience
 while also providing a greatly expanded set of features from a variety of other mods, both old and new.
 Our policy is to only include content from authors that have given permission to use their work in this way,
-so if you're aware of something in this repository that the original author doesn't want here, create an issue
-on Github and let us know.
+so if you're aware of something in this repository that the original author doesn't want here, [create an issue on Github](/issues) and let us know.
 
 ## Balanced?
 Part of this modpack's purpose is to ensure worlds are reasonably likely to reach 1000+ years of age without being mostly reduced to ruins.
@@ -26,6 +25,7 @@ Other than that, we want more of pretty much everything.
  
 And we want all of this without bringing on the chaotic imbalances that can arise between many mods in a collection. 
 Everything that gets added gets changed, sometimes significantly, to better fit Artifact's purposes.
+A more specific list of features can be found [here](CHANGES.md).
  
 ## Will this work with my mod?
 This mod replaces the content in almost all of the vanilla modules, changing important names and in some cases relationships between materials.
