@@ -48,3 +48,5 @@ At the advice of a prominent community member, we've decided to ditch the associ
 The old name didn't really make a whole lot of sense anyway, given that no material from Masterwork itself has been carried over,
 meaning this isn't a true fork, just a similar kind of endeavor.
 This is largely a new mod, made from the combined work of newer modders, most of whom have their original mods hosted on the workshop.
+
+A list of credits can be found [here](information_and_credits.txt).
