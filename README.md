@@ -23,5 +23,6 @@ And we want all of this without bringing on the chaotic imbalances that can aris
 ## Will this work with my mod?
 This mod replaces the content in almost all of the vanilla modules, changing important names and in some cases relationships between materials. As a result, Artifact DF is not compatible with most mods on the bay12 forums or Steam workshop.
 
-Plenty of mods may *work* if loaded after Artifact DF, but don't expect stability unless you're using the recommended load order.
+Some mods may *work* if loaded after Artifact DF, but this isn't a priority for us, and game stability may suffer. If a given issue can't be replicated with the recommended loading order, it likely won't be fixed.
 
+![Correct load order](https://github.com/zeyonic/df-masterfork/blob/readme/load_order.jpg?raw=true)
