@@ -1,6 +1,6 @@
 ### Note: This list is not fully comprehensive
 Artifact DF contains so many tweaks acquired from so many sources, they can't possibly all be listed.
-This document will be edited when major features change, but if anything on this list is missing or not functioning correctly, [create an issue](/issues) to let us know.
+This document will be edited when major features change, but if anything on this list is missing or not functioning correctly, [create an issue](https://github.com/zeyonic/df-masterfork/issues) to let us know.
 
 # General Changes
  * World Textures
