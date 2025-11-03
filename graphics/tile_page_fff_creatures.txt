@@ -112,15 +112,15 @@ tile_page_fff_creatures
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:96:384]
 
-[TILE_PAGE:FFF_TROLL]
-	[FILE:images/fff_creatures/fff_troll.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:320:256]
+--TILE_PAGE:FFF_TROLL]
+	--FILE:images/fff_creatures/fff_troll.png]
+	--TILE_DIM:32:32]
+	--PAGE_DIM_PIXELS:320:256]
 
-[TILE_PAGE:FFF_TROLL_STATUES]
-	[FILE:images/fff_creatures/fff_troll_statues.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:32:256]
+--TILE_PAGE:FFF_TROLL_STATUES]
+	--FILE:images/fff_creatures/fff_troll_statues.png]
+	--TILE_DIM:32:32]
+	--PAGE_DIM_PIXELS:32:256]
 
 [TILE_PAGE:FFF_VERMIN]
 	[FILE:images/fff_creatures/fff_vermin.png]
