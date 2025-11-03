@@ -2,7 +2,9 @@ creature_civ_elf_dark_masterfork
 
 [OBJECT:CREATURE]
 
-[CREATURE:DARK_ELF_FFF] from fantastic fantasy fortress
+     // from Fantastic Fantasy Fortress by 'chipathingy'
+
+[CREATURE:DARK_ELF_FFF]
 	[DESCRIPTION:A medium-sized creature banished to the underground, dedicated to cruelty and malice.]
 	[NAME:dark elf:dark elves:dark elven]
 	[CASTE_NAME:dark elf:dark elves:dark elven]
