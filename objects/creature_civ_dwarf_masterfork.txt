@@ -248,17 +248,17 @@ creature_civ_dwarf_mfork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:90]{:100      -10% }
-		[ATTACK_VELOCITY_MODIFIER:800]{+   -20% }
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  revision: made melee combat slower.}
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:90]{:100      -10% }
-		[ATTACK_VELOCITY_MODIFIER:800]{+   -20% }
-		[ATTACK_PREPARE_AND_RECOVER:5:5]{:4:4  revision: made melee combat slower.}
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -270,10 +270,10 @@ creature_civ_dwarf_mfork
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:6:6]{:3:3  revision: made melee combat slower.}
+		[ATTACK_PREPARE_AND_RECOVER:3:5]{:3:3  revision: made civ biting slower.}
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
-		{  removed latching  }
+	{  removed latching  }
 	[BABY:1]
 	[GENERAL_BABY_NAME:dwarven baby:dwarven babies]
 	[BABYNAME:dwarven baby:dwarven babies]
