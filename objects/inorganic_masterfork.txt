@@ -924,6 +924,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[SPECIAL]
 
 [INORGANIC:SMOKE]	Smoke effect for smelting operations. Consider a metal fume syndrome smoke effect later. Make globs.  from march of wrath
+    [STATE_COLOR:ALL:CHARCOAL]
 	[STATE_NAME_ADJ:ALL_SOLID:coals]
 	[STATE_NAME_ADJ:LIQUID:embers]
 	[STATE_NAME_ADJ:GAS:smoke]
@@ -932,7 +933,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[SPEC_HEAT:100]
 	[IGNITE_POINT:9000]
 	[MELTING_POINT:9500]
-	[BOILING_POINT:1]
+	[BOILING_POINT:1] evaporates at room temperature
 	[HEATDAM_POINT:9000]
 	[COLDDAM_POINT:8999]
 	[SOLID_DENSITY:200]

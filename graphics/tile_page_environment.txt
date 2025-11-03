@@ -416,6 +416,11 @@ tile_page_environment
 	[FILE:images/wall_rock_blocks.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM:4:5]
+	
+[TILE_PAGE:WALL_REINFORCED_METAL]
+	[FILE:images/wall_reinforced_metal.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:4:5]
 
 [TILE_PAGE:FARMPLOT_PLANTED]
 	[FILE:images/floor_farm_planted.png]
@@ -429,5 +434,10 @@ tile_page_environment
 
 [TILE_PAGE:CAMPFIRE]
 	[FILE:images/campfire.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:4:4]
+
+[TILE_PAGE:SCAFFOLDS]
+	[FILE:images/scaffolds.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM:4:4]

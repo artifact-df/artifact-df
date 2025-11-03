@@ -2,7 +2,7 @@ reaction_instruments_masterfork
 
 // RAWS from: modest mod - edited by zey //
 
-[OBJECT:REACTION]
+--OBJECT:REACTION]  disabled for now
 
 
 //    WOOD INSTRUMENTS    //

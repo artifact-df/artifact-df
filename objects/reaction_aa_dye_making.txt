@@ -2,7 +2,6 @@ reaction_aa_dye_making
 
 [OBJECT:REACTION]
 
-
 [REACTION:AA_CONCENTRATE_DYE_FROM_PLANT]
 	[NAME:Concentrate dye powder from plants]
 	[BUILDING:DYER:NONE]
