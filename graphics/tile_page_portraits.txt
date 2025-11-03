@@ -20,7 +20,7 @@ tile_page_creatures
 [TILE_PAGE:PORTRAIT_DWARF_CLOTHING_CAP]
 	[FILE:images/portraits/dwarf_portrait_clothing_cap.png]
 	[TILE_DIM:96:96]
-	[PAGE_DIM_PIXELS:672:288]
+	[PAGE_DIM_PIXELS:672:384]
 
 [TILE_PAGE:PORTRAIT_DWARF_CLOTHING_COAT]
 	[FILE:images/portraits/dwarf_portrait_clothing_coat.png]
@@ -140,7 +140,7 @@ tile_page_creatures
 [TILE_PAGE:PORTRAIT_ELF_CLOTHING_CAP]
 	[FILE:images/portraits/elf_portrait_clothing_cap.png]
 	[TILE_DIM:96:96]
-	[PAGE_DIM_PIXELS:672:288]
+	[PAGE_DIM_PIXELS:672:384]
 
 [TILE_PAGE:PORTRAIT_ELF_CLOTHING_COAT]
 	[FILE:images/portraits/elf_portrait_clothing_coat.png]
@@ -260,7 +260,7 @@ tile_page_creatures
 [TILE_PAGE:PORTRAIT_HUMAN_CLOTHING_CAP]
 	[FILE:images/portraits/human_portrait_clothing_cap.png]
 	[TILE_DIM:96:96]
-	[PAGE_DIM_PIXELS:672:288]
+	[PAGE_DIM_PIXELS:672:384]
 
 [TILE_PAGE:PORTRAIT_HUMAN_CLOTHING_COAT]
 	[FILE:images/portraits/human_portrait_clothing_coat.png]
@@ -375,7 +375,7 @@ tile_page_creatures
 [TILE_PAGE:PORTRAIT_GOBLIN_CLOTHING_CAP]
 	[FILE:images/portraits/goblin_portrait_clothing_cap.png]
 	[TILE_DIM:96:96]
-	[PAGE_DIM_PIXELS:672:288]
+	[PAGE_DIM_PIXELS:672:384]
 
 [TILE_PAGE:PORTRAIT_GOBLIN_CLOTHING_COAT]
 	[FILE:images/portraits/goblin_portrait_clothing_coat.png]
@@ -485,7 +485,7 @@ tile_page_creatures
 [TILE_PAGE:PORTRAIT_KOBOLD_CLOTHING_CAP]
 	[FILE:images/portraits/kobold_portrait_clothing_cap.png]
 	[TILE_DIM:96:96]
-	[PAGE_DIM_PIXELS:672:288]
+	[PAGE_DIM_PIXELS:672:384]
 
 [TILE_PAGE:PORTRAIT_KOBOLD_CLOTHING_COAT]
 	[FILE:images/portraits/kobold_portrait_clothing_coat.png]

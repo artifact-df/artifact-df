@@ -75,7 +75,7 @@ tile_page_items
 [TILE_PAGE:ITEM_DOOR]
 	[FILE:images/item_door.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:416:128]
+	[PAGE_DIM_PIXELS:480:128]
 
 [TILE_PAGE:ITEM_GRATE]
 	[FILE:images/item_grate.png]
@@ -150,7 +150,7 @@ tile_page_items
 [TILE_PAGE:WEAPONS]
 	[FILE:images/item_weapons.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:160:672]
+	[PAGE_DIM_PIXELS:160:704]
 
 [TILE_PAGE:ITEM_WEBS]
 	[FILE:images/item_webs.png]
@@ -186,3 +186,8 @@ tile_page_items
 	[FILE:images/remnants.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM:4:5]
+
+[TILE_PAGE:RAMS]
+	[FILE:images/rams.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:10:6]
