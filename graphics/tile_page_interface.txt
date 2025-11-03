@@ -135,7 +135,7 @@ tile_page_interface
 [TILE_PAGE:INTERFACE_BITS_BUILDING_PLACEMENT]
 	[FILE:images/interface_bits_building_placement.png]
 	[TILE_DIM:8:12]
-	[PAGE_DIM_PIXELS:224:324]
+	[PAGE_DIM_PIXELS:224:360]
 
 [TILE_PAGE:DEFAULTS]
 	[FILE:images/defaults.png]
@@ -246,6 +246,16 @@ tile_page_interface
 	[FILE:images/combat_animations_sparks.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:128:1024]
+
+[TILE_PAGE:COMBAT_ANIMATIONS_MINING]
+	[FILE:images/combat_animations_mining.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:256]
+
+[TILE_PAGE:COMBAT_ANIMATIONS_RAM]
+	[FILE:images/combat_animations_ram.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:128]
 
 [TILE_PAGE:MOVE_INDICATORS]
 	[FILE:images/move_indicators.png]

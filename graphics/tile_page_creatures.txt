@@ -60,17 +60,17 @@ tile_page_creatures
 [TILE_PAGE:WIELDABLES]
 	[FILE:images/wieldables.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:384:864]
+	[PAGE_DIM_PIXELS:384:896]
 
 [TILE_PAGE:WIELDABLES_TALL]
 	[FILE:images/wieldables_tall.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:384:864]
+	[PAGE_DIM_PIXELS:384:896]
 
 [TILE_PAGE:WIELDABLES_WIDE]
 	[FILE:images/wieldables_wide.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:384:864]
+	[PAGE_DIM_PIXELS:384:896]
 
 [TILE_PAGE:DWARF_BODY]
 	[FILE:images/dwarf/dwarf_body.png]
@@ -386,3 +386,13 @@ tile_page_creatures
 	[FILE:images/eyes_dark.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:64:128]
+
+[TILE_PAGE:TROLL_BODY]
+	[FILE:images/troll/troll_body.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:576:256]
+
+[TILE_PAGE:TROLL_SIEGE_SUPPLIES]
+	[FILE:images/troll/troll_siege_supplies.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:288:64]
