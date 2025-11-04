@@ -573,13 +573,13 @@ entity_dwarf_masterfork
 	[VALUE:CRAFTSMANSHIP:50]
 	[VARIABLE_VALUE:MARTIAL_PROWESS:10:25]{: 15 *+
 	[VARIABLE_VALUE:SKILL:25:40]{:           30 *+
-	[VARIABLE_VALUE:HARD_WORK:25:40]{:       30 *+
+	[VARIABLE_VALUE:HARD_WORK:30:40]{:       30 *++
 	[VARIABLE_VALUE:SACRIFICE:-5:5]{:        0
 	[VARIABLE_VALUE:COMPETITION:-5:5]{:      0
 	[VARIABLE_VALUE:PERSEVERANCE:10:30]{:    5 *++
 	[VARIABLE_VALUE:LEISURE_TIME:10:20]{:    15
 	[VARIABLE_VALUE:COMMERCE:15:25]{:        15
-	[VARIABLE_VALUE:ROMANCE:-10:5]{:         0 *-
+	[VARIABLE_VALUE:ROMANCE:-15:5]{:         0 *--
 	[VARIABLE_VALUE:NATURE:-20:-10]{:       -15 
 	[VARIABLE_VALUE:PEACE:-10:10]{:          0 * more variance
 	[WILL_ACCEPT_TRIBUTE]
@@ -589,7 +589,6 @@ entity_dwarf_masterfork
 		[NAME_FEMALE:high queen:high queens]
 		[NUMBER:1]
 		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[SPOUSE_MALE:king consort:kings consort]
 		[SPOUSE_FEMALE:queen consort:queens consort]
 		[SUCCESSION:BY_POSITION:DUKE:COUNT] 
@@ -631,7 +630,6 @@ entity_dwarf_masterfork
 		[SPOUSE_FEMALE:lord consort:lord consorts]
 		[NUMBER:AS_NEEDED]
 		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[LAND_HOLDER:3]
 		[LAND_NAME:a large dwarven hold]
 		[RESPONSIBILITY:LAW_MAKING]
@@ -669,7 +667,6 @@ entity_dwarf_masterfork
 		[SPOUSE_FEMALE:jarl consort:jarl consorts]
 		[NUMBER:AS_NEEDED]
 		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[LAND_HOLDER:2]
 		[LAND_NAME:a dwarven hold]
 		[RESPONSIBILITY:LAW_MAKING]
@@ -707,7 +704,6 @@ entity_dwarf_masterfork
 		[SPOUSE_FEMALE:hersir consort:hersir consorts]
 		[NUMBER:AS_NEEDED]
 		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[LAND_HOLDER:1]
 		[LAND_NAME:a minor dwarven hold]
 		[RESPONSIBILITY:LAW_MAKING]
@@ -777,7 +773,6 @@ entity_dwarf_masterfork
 		[NAME:holdguard captain:holdguard captains]
 		[NUMBER:AS_NEEDED]
 		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[SQUAD:10:warrior:warriors]
 		[APPOINTED_BY:GENERAL]
 		[COMMANDER:CAPTAIN:ALL]
@@ -803,7 +798,6 @@ entity_dwarf_masterfork
 		[NAME:holdguard sergeant:holdguard sergeants]
 		[NUMBER:AS_NEEDED]
 		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[SQUAD:10:warrior:warriors]
 		[APPOINTED_BY:GENERAL]
 		[PRECEDENCE:190]
@@ -821,8 +815,6 @@ entity_dwarf_masterfork
 		[NAME:holdguard commander:holdguard commanders]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[SQUAD:10:stoneguard:stoneguard]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -835,8 +827,6 @@ entity_dwarf_masterfork
 		[NAME:holdguard captain:holdguard captains]
 		[SITE]
 		[NUMBER:AS_NEEDED]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[SQUAD:10:holdguard militia:holdguard militias]
 		[APPOINTED_BY:MILITIA_COMMANDER]
 		[PRECEDENCE:200]
@@ -847,8 +837,6 @@ entity_dwarf_masterfork
 		[NAME:warden:warden] 
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -869,8 +857,6 @@ entity_dwarf_masterfork
 		[NAME:deepwatch captain:deepwatch captains] 
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[SQUAD:10:deepwatch:deepwatch] 
 		[APPOINTED_BY:EXPEDITION_LEADER]
@@ -891,17 +877,17 @@ entity_dwarf_masterfork
 		[REQUIRED_DINING:250]
 	[POSITION:CAPTAIN_OF_THE_OATHGUARD]
 		[NAME:oathguard captain:oathguard captains]
-		[DESCRIPTION:The highly prestigious oathguard are the oathsworn personal bodyguards of high dwarven lords and ladies, and even the high king or queen.]
+		[DESCRIPTION:the highly prestigious Oathguard are the oathsworn personal bodyguards of high dwarven lords and ladies, and even the odd high monarch.  Only dwarves of the warriors' guild may serve.]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[RESPONSIBILITY:BUILD_MORALE]
-		[SQUAD:5:oathguard:oathguards] 
-		[APPOINTED_BY:EXPEDITION_LEADER]
-		[APPOINTED_BY:MAYOR]
-		[REQUIRES_POPULATION:100]
+		[SQUAD:3:oathguard:oathguards]
+		[ALLOWED_CLASS:GUILD_WARRIOR]
+		[APPOINTED_BY:DUKE]
+		[APPOINTED_BY:COUNT]
+		[APPOINTED_BY:BARON]
+		[REQUIRES_POPULATION:50]
 		[REQUIRES_MARKET]
 		[PRECEDENCE:65]
 		[DO_NOT_CULL]
@@ -912,15 +898,13 @@ entity_dwarf_masterfork
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_RACKS:2]
 		[REQUIRED_STANDS:1]
-		[REQUIRED_OFFICE:750]
-		[REQUIRED_BEDROOM:750]
-		[REQUIRED_DINING:750]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_DINING:250]
 	[POSITION:EXPEDITION_LEADER]
 		[NAME:expedition leader:expedition leaders]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[REPLACED_BY:MAYOR]
 		[RULES_FROM_LOCATION]
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -932,11 +916,9 @@ entity_dwarf_masterfork
 		[DUTY_BOUND]
 	[POSITION:MAYOR]
 		[NAME:hold steward:hold stewards]
-		[DESCRIPTION:The hold steward is a prestigious position within a dwarven hold. The steward is in charge of the day-to-day running of the hold and is an elected position. Unlike the manlings who vote with their hands, dwarves vote by a shouting match, and the candidate which makes the other group temporarily deaf is proclaimed the winner.]
+		[DESCRIPTION:the Hold Steward is a prestigious position within a dwarven hold. The steward is in charge of the day-to-day running of the hold and is an elected position. Unlike the manlings who vote with their hands, dwarves vote by a shouting match, and the candidate which makes the other group temporarily deaf is proclaimed the winner.]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]
@@ -967,8 +949,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -983,8 +963,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -1006,8 +984,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:HEALTH_MANAGEMENT]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -1021,8 +997,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:TRADE]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -1037,8 +1011,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:ACCOUNTING]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -1053,8 +1025,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:ACCOUNTING]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
@@ -1073,8 +1043,6 @@ entity_dwarf_masterfork
 	[POSITION:OUTPOST_LIAISON]
 		[NAME:outpost liaison:outpost liaisons]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS]
 		[APPOINTED_BY:MONARCH]
 		[PRECEDENCE:80]
@@ -1096,8 +1064,6 @@ entity_dwarf_masterfork
 	[POSITION:DIPLOMAT]
 		[NAME:emissary:emissaries]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
@@ -1123,8 +1089,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:BUILD_MORALE]
 		[APPOINTED_BY:DUKE]
 		[APPOINTED_BY:COUNT]
@@ -1165,8 +1129,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:HAMMER]
 		[APPOINTED_BY:EXPEDITION_LEADER]
@@ -1180,8 +1142,6 @@ entity_dwarf_masterfork
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:ESPIONAGE]
 		[RESPONSIBILITY:MANAGE_ANIMALS]
 		[APPOINTED_BY:MAYOR]
@@ -1223,7 +1183,8 @@ entity_dwarf_masterfork
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[RESPONSIBILITY:MEET_WORKERS]
 	[POSITION:MASTER_ENGINEER]
-		[NAME:clan engineer:clan engineers]
+		[NAME:apprentice engineer:apprentice engineers]
+		[DESCRIPTION:the apprentice engineer has yet to learn the deadly combat art of mathematics.  Only dwarves of the engineers' guild may serve.]
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
@@ -1246,6 +1207,7 @@ entity_dwarf_masterfork
 		[REQUIRED_BOXES:2]
 	[POSITION:ROYAL_ENGINEER]
 		[NAME:master engineer:master engineers]
+		[DESCRIPTION:the Master Engineer embodies the fine craftsdwarfship of the deadly art of mathematics, schematics, inventions and gadgets.  Their war machines are the most polished and best cared-for in the world and treated by their crew with all the respect due a venerable clan member, and their clock-work rifles the loudest.  Only dwarves of the engineers' guild may serve.]
 		[SITE]
 		[REQUIRES_MARKET]
 		[NUMBER:1]
@@ -1253,7 +1215,10 @@ entity_dwarf_masterfork
 		[RESPONSIBILITY:MAINTAIN_ROADS]
 		[RESPONSIBILITY:MAINTAIN_SEWERS]
 		[RESPONSIBILITY:MAINTAIN_TUNNELS]
-		[APPOINTED_BY:MONARCH][REQUIRES_POPULATION:70]
+		[APPOINTED_BY:DUKE]
+		[APPOINTED_BY:COUNT]
+		[APPOINTED_BY:BARON]
+		[REQUIRES_POPULATION:105]
 		[ALLOWED_CLASS:GUILD_ENGINEER]
 		[PRECEDENCE:100]
 		MENIAL_WORK_EXEMPTION
@@ -1265,15 +1230,13 @@ entity_dwarf_masterfork
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_RACKS:1]
 		[REQUIRED_STANDS:1]
-		[REQUIRED_OFFICE:500]
-		[REQUIRED_BEDROOM:500]
-		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:450]
+		[REQUIRED_BEDROOM:350]
+		[REQUIRED_DINING:350]
 	[POSITION:MESSENGER]
 		[NAME:messenger:messengers]
 		[SITE]
 		[NUMBER:AS_NEEDED]
-		[ALLOWED_CLASS:DWARF]{+}
-		[REJECTED_CLASS:DWARF_GUILD]{+}
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[APPOINTED_BY:EXPEDITION_LEADER]
 		[APPOINTED_BY:MAYOR]
