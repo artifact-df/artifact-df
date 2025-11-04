@@ -2,7 +2,7 @@ tile_page_writing_masterfork
 
 [OBJECT:TILE_PAGE]
 
-[TILE_PAGE:WRITING_MFORK]
-	[FILE:images/content.png]
+[TILE_PAGE:MFORK1]
+	[FILE:images/mfork/mforksheet.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:128:32]
+	[PAGE_DIM_PIXELS:256:256]

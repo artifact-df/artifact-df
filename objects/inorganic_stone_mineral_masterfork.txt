@@ -371,6 +371,7 @@ ore of mercury, powdered gives vermilion dye
 [MELTING_POINT:10819]
 [STATE_COLOR:ALL_SOLID:BRASS]
 
+this is common gypsum, 3 vars below, any gypsum can be heated to and then mixed with water to make plaster
 [INORGANIC:GYPSUM]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:gypsum][DISPLAY_COLOR:6:7:1][TILE:'#']
