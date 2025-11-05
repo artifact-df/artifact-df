@@ -454,7 +454,6 @@ material_template_default
 	[ITEMS_HARD]
 	[ITEMS_BARRED]
 	[EDIBLE_VERMIN]{+  Revision: bodies left in the open will disappear eventually.}
-	[ROTS]{+}
 
 [MATERIAL_TEMPLATE:CARTILAGE_TEMPLATE]  Sver: more elastic cartilage to complement its addition to throat
 	[STATE_COLOR:ALL_SOLID:WHITE]
