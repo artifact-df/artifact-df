@@ -960,3 +960,11 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[MAX_EDGE:500]
 	[ABSORPTION:100]
 	[SPECIAL]
+	
+[INORGANIC:CRUSHED_SALT]
+	[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+	[STATE_NAME_ADJ:ALL_SOLID:salt]
+	[DISPLAY_COLOR:7:0:1]
+	[MATERIAL_VALUE:5]
+	[STATE_COLOR:ALL:WHITE]
+	[SPECIAL]

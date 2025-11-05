@@ -358,6 +358,7 @@ material_template_default
 	This lets the game know that the item can be eaten in various ways.
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
+	[MATERIAL_REACTION_PRODUCT:SALT_MAT:LOCAL_CREATURE_MAT:MUSCLE_SALTED]{+}  meat can be salted
 
 [MATERIAL_TEMPLATE:SINEW_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:PINK]
