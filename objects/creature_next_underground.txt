@@ -876,7 +876,7 @@ creature_next_underground
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tough.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -1828,7 +1828,7 @@ creature_next_underground
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is still furry after tanning.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]

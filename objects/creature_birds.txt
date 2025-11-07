@@ -68,7 +68,7 @@ creature_birds
 	[MAXAGE:10:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -250,7 +250,7 @@ creature_birds
 	[MAXAGE:10:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -429,7 +429,7 @@ creature_birds
 	[MAXAGE:10:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -603,7 +603,7 @@ creature_birds
 	[MAXAGE:10:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -781,7 +781,7 @@ creature_birds
 	[MAXAGE:10:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -967,7 +967,7 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:20:30]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -1070,7 +1070,7 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:20:30]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -1173,7 +1173,7 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:20:50]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -1376,7 +1376,7 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 	[MAXAGE:12:15]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -1759,7 +1759,7 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
