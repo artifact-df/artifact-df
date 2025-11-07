@@ -70,11 +70,11 @@ creature_birds
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -252,11 +252,11 @@ creature_birds
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -431,11 +431,11 @@ creature_birds
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -605,11 +605,11 @@ creature_birds
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -783,11 +783,11 @@ creature_birds
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -969,11 +969,11 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -1072,11 +1072,11 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -1175,11 +1175,11 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -1378,11 +1378,11 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -1761,11 +1761,11 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[CASTE_NAME:ostrich hen:ostrich hens:ostrich hen]

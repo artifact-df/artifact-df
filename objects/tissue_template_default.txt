@@ -23,7 +23,7 @@ tissue_template_default
 	--VASCULAR:3]                Revision: fat doesn't bleed anymore; this behaved poorly with high temperatures.}
 	--PAIN_RECEPTORS:5]          Revision: fat feels no pain.  As above, this behaved poorly when fat melted.}
 	[CONNECTS]
-	[INSULATION:120]{:100  Revision: fat insulation increased to compensate for lowered hair insulation.}
+	[INSULATION:100]
 	[TISSUE_SHAPE:LAYER]
 
 [TISSUE_TEMPLATE:MUSCLE_TEMPLATE]
@@ -36,7 +36,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:3]
 	[HEALING_RATE:120]{:100
 	[VASCULAR:10]{:3
-	[PAIN_RECEPTORS:5]
+	[PAIN_RECEPTORS:10]{:5       Revision: increased pain to compensate for lowered pain on skin.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -47,8 +47,8 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:BONE]
 	[RELATIVE_THICKNESS:2]
 	[HEALING_RATE:1000]
-	[VASCULAR:5]{:3                Revision: bone fractures tend to make people bleed.}
-	[PAIN_RECEPTORS:50]
+	[VASCULAR:3]
+	[PAIN_RECEPTORS:65]{:50      Revision: bone fractures should be more painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 	[SETTABLE]
@@ -102,7 +102,7 @@ tissue_template_default
 	[SUBORDINATE_TO_TISSUE:SKIN]
 	[COSMETIC]
 	[STYLEABLE]
-	[INSULATION:25]{:100  Revision: hair is not universally insulating. Increased fat insulation to compensate.}
+	[INSULATION:100]
 	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
 	[TISSUE_SHAPE:STRANDS]
 
@@ -254,7 +254,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1500]{+     Revision: nerve tissue is too easy to damage, so compensate a little with the healing rate.}
 	[VASCULAR:3]
-	[PAIN_RECEPTORS:100]{:5   Revision: surprisingly nerve damage are painful.}
+	[PAIN_RECEPTORS:120]{:5   Revision: surprisingly nerve damage is very painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -282,7 +282,7 @@ tissue_template_default
 	[HEALING_RATE:1000]{:100  Revision: lungs healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:40]{:8          Revision: lungs bleed more when cut.  Internal wounds should be punishing.}
 	[ARTERIES]                Revision: experimental; should hopefully cause internal organ trauma to be even more severe.  -zey.}
-	[PAIN_RECEPTORS:35]{:5    Revision: lungs injuries are painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:100]{:5   Revision: lungs injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -323,7 +323,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100 Revision: guts healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:15]{:3         Revision: gut bleeds more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:40]{:5   Revision: gut injuries are painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:100]{:5  Revision: gut injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -336,7 +336,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100 Revision: stomachs healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:15]{:3         Revision: stomachs bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:50]{:5   Revision: stomach injuries are painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:100]{:5  Revision: stomach injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -349,7 +349,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100 Revision: gizzards healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:15]{:3         Revision: gizzards bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:40]{:5   Revision: gizzard injuries are painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:100]{:5  Revision: gizzard injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -362,7 +362,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100 Revision: pancreases healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:15]{:3         Revision: pancreases bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:15]{:5   Revision: pancreas injuries are painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:80]{:5   Revision: pancreas injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -376,7 +376,7 @@ tissue_template_default
 	[HEALING_RATE:1000]{:100 Revision: spleens healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:40]{:5         Revision: spleens bleed more when cut.  Internal wounds should be punishing.}
 	[ARTERIES]               Revision: experimental; should hopefully cause internal organ trauma to be even more severe.  -zey.}
-	[PAIN_RECEPTORS:40]{:5   Revision: spleen injuries are painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:80]{:5   Revision: spleen injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -389,7 +389,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100 Revision: kidneys healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:40]{:8         Revision: kidneys bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:50]{:5   Revision: kidney injuries are painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:80]{:5   Revision: kidney injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -426,7 +426,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPINE]
 	[HEALING_RATE:1500]{+      Revision: spine injuries shouldn't be permanent.}
 	[RELATIVE_THICKNESS:2]
-	[PAIN_RECEPTORS:100]{+     Revision: spinal injuries are very painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:200]{+     Revision: spinal injuries are very painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 

@@ -278,6 +278,8 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[VERMIN_NOTRAP]
 	[POPULATION_NUMBER:250:500]
 	[SMALL_REMAINS]
+	[VERMIN_GROUNDER]{+  Revision: most insects should have this tag.}
+	[VERMIN_HATEABLE]{+}
 	[PREFSTRING:chirping]
 	[PREFSTRING:great leaps]
 	[BENIGN][ALL_ACTIVE]
