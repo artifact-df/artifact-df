@@ -694,7 +694,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
-	[ITEMS_WEAPON]{+}
 	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
 	[REACTION_CLASS:LEAD_COATING] 
 
