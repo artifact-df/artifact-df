@@ -79,7 +79,7 @@ Penetration size currently only matters for edged attacks.
 [MINIMUM_SIZE:32500]
 [MATERIAL_SIZE:3]
 [CAN_STONE]{+}
-[ATTACK:BLUNT:20:200:bash:bashes:NO_SUB:2000]
+[ATTACK:BLUNT:25:1:bash:bashes:NO_SUB:3000] reduced pen to 1 as it's ignored by blunt attacks. increased momentum by 50% and contact area by +25%.}
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_WEAPON:ITEM_WEAPON_CROSSBOW]
@@ -213,7 +213,7 @@ no shot force requirements
 [TWO_HANDED:155000]{:77500  revision: increased substantially; one-handed should be extremely demanding.}
 [MINIMUM_SIZE:57500]{:62500  revision: reduced min. size by 5000; can be used by most dwarves now.}
 [MATERIAL_SIZE:12]{:5  revision: 2h weapons need more materials.}
-[ATTACK:BLUNT:150:1:bash:bashes:NO_SUB:3000] reduced pen to 1 as it's ignored by blunt attacks. increased momentum and contact area by +50%.}
+[ATTACK:BLUNT:125:1:bash:bashes:NO_SUB:3000] reduced pen to 1 as it's ignored by blunt attacks. increased momentum by 50% and contact area by +25%.}
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_WEAPON:ITEM_WEAPON_AXE_GREAT]

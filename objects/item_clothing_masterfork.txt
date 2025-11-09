@@ -15,6 +15,7 @@ headwear
 
 [ITEM_HELM:ITEM_HELM_CAP]
 [NAME:cap:caps]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:OVER]
 [COVERAGE:50]
 [LAYER_SIZE:10]
@@ -30,6 +31,7 @@ headwear
 
 [ITEM_HELM:ITEM_HELM_HOOD]
 [NAME:hood:hoods]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:COVER]
 [COVERAGE:100]
 [LAYER_SIZE:10]
@@ -42,6 +44,7 @@ headwear
 
 [ITEM_HELM:ITEM_HELM_TURBAN]
 [NAME:turban:turbans]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:OVER]
 [COVERAGE:50]
 [LAYER_SIZE:20]
@@ -53,6 +56,7 @@ headwear
 
 [ITEM_HELM:ITEM_HELM_MASK]
 [NAME:mask:masks]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:UNDER]
 [COVERAGE:50]
 [LAYER_SIZE:20]
@@ -69,6 +73,7 @@ headwear
 
 [ITEM_HELM:ITEM_HELM_VEIL_HEAD]
 [NAME:head veil:head veils]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:OVER]
 [COVERAGE:50]
 [LAYER_SIZE:10]
@@ -80,6 +85,7 @@ headwear
 
 [ITEM_HELM:ITEM_HELM_VEIL_FACE]
 [NAME:face veil:face veils]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:UNDER]
 [COVERAGE:50]
 [LAYER_SIZE:10]
@@ -91,6 +97,7 @@ headwear
 
 [ITEM_HELM:ITEM_HELM_SCARF_HEAD]
 [NAME:headscarf:headscarves]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:OVER]
 [COVERAGE:50]
 [LAYER_SIZE:10]
@@ -102,7 +109,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_COAT]
 [NAME:coat:coats]
-[ARMORLEVEL:1]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:3]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
 [LBSTEP:2]{:1    Revision: compensate for the (new) hips.}
 [LAYER:OVER]
@@ -117,6 +124,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_SHIRT]
 [NAME:shirt:shirts]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:2]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
 [LBSTEP:0]
 [LAYER:UNDER]
@@ -130,6 +138,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_TUNIC]
 [NAME:tunic:tunics]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:1]{:0        Revision: compensate for the (new) shoulders.}
 [LBSTEP:2]{:1        Revision: compensate for the (new) hips, plus change.}
 [LAYER:UNDER]
@@ -144,6 +153,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_TOGA]
 [NAME:toga:togas]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
 [LBSTEP:MAX]{:1     Revision: compensate for the (new) hips, then make it even longer.}
 [LAYER:OVER]
@@ -158,6 +168,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_CAPE]
 [NAME:cape:capes]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:1]{:0  Revision: compensate for the (new) shoulders.}
 [LBSTEP:2]{:0  Revision: compensate for the (new) hips, plus change.}
 [LAYER:COVER]
@@ -172,6 +183,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_VEST]
 [NAME:vest:vests]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:0]
 [LBSTEP:0]
 [LAYER:OVER]
@@ -186,6 +198,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_DRESS]
 [NAME:dress:dresses]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:3]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
 [LBSTEP:MAX]
 [LAYER:UNDER]
@@ -199,6 +212,7 @@ headwear
 
 [ITEM_ARMOR:ITEM_ARMOR_ROBE]
 [NAME:robe:robes]
+[ARMORLEVEL:0]{+  counts as clothing
 [UBSTEP:3]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
 [LBSTEP:MAX]
 [LAYER:OVER]
@@ -212,6 +226,7 @@ headwear
 
 [ITEM_GLOVES:ITEM_GLOVES_GLOVES]
 [NAME:glove:gloves]
+[ARMORLEVEL:0]{+  counts as clothing
 [MATERIAL_SIZE:3] 1 item
 [LAYER:UNDER]
 [COVERAGE:100]
@@ -225,6 +240,7 @@ headwear
 [ITEM_PANTS:ITEM_PANTS_PANTS]
 [PREPLURAL:pairs of]
 [NAME:trousers:trousers]
+[ARMORLEVEL:0]{+  counts as clothing
 [LBSTEP:MAX]
 [LAYER:OVER]
 [COVERAGE:100]
@@ -237,6 +253,7 @@ headwear
 
 [ITEM_PANTS:ITEM_PANTS_LOINCLOTH]
 [NAME:loincloth:loincloths]
+[ARMORLEVEL:0]{+  counts as clothing
 [LBSTEP:1]{+  Revision: compensate for the (new) hips.}
 [LAYER:UNDER]
 [COVERAGE:50]
@@ -250,6 +267,7 @@ headwear
 
 [ITEM_PANTS:ITEM_PANTS_THONG]
 [NAME:thong:thongs]
+[ARMORLEVEL:0]{+  counts as clothing
 [LBSTEP:1]{+  Revision: compensate for the (new) hips.}
 [LAYER:UNDER]
 [COVERAGE:25]
@@ -263,6 +281,7 @@ headwear
 
 [ITEM_PANTS:ITEM_PANTS_SKIRT]
 [NAME:skirt:skirts]
+[ARMORLEVEL:0]{+  counts as clothing
 [LBSTEP:2]{:1  Revision: compensate for the (new) hips.}
 [LAYER:OVER]
 [COVERAGE:100]
@@ -276,6 +295,7 @@ headwear
 [ITEM_PANTS:ITEM_PANTS_SKIRT_SHORT]
 [NAME:skirt:skirts]
 [ADJECTIVE:short]
+[ARMORLEVEL:0]{+  counts as clothing
 [LBSTEP:1]{+  Revision: compensate for the (new) hips.}
 [LAYER:OVER]
 [COVERAGE:100]
@@ -289,6 +309,7 @@ headwear
 [ITEM_PANTS:ITEM_PANTS_SKIRT_LONG]
 [NAME:skirt:skirts]
 [ADJECTIVE:long]
+[ARMORLEVEL:0]{+  counts as clothing
 [LBSTEP:MAX]
 [LAYER:OVER]
 [COVERAGE:100]
@@ -314,6 +335,7 @@ headwear
 
 [ITEM_SHOES:ITEM_SHOES_SHOES]
 [NAME:shoe:shoes]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:OVER]
 [COVERAGE:100]
 [LAYER_SIZE:20]
@@ -327,6 +349,7 @@ headwear
 
 [ITEM_SHOES:ITEM_SHOES_SOCKS]
 [NAME:sock:socks]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:UNDER]
 [COVERAGE:100]
 [LAYER_SIZE:10]
@@ -337,7 +360,7 @@ headwear
 
 [ITEM_SHOES:ITEM_SHOES_BOOTS_LOW] mostly civilian boots
 [NAME:boot:boots]
-[ARMORLEVEL:1]
+[ARMORLEVEL:0]
 --METAL_ARMOR_LEVELS]
 [LAYER:OVER]
 [COVERAGE:100]
@@ -352,6 +375,7 @@ headwear
 
 [ITEM_SHOES:ITEM_SHOES_SANDAL]
 [NAME:sandal:sandals]
+[ARMORLEVEL:0]{+  counts as clothing
 [LAYER:OVER]
 [COVERAGE:100]
 [LAYER_SIZE:25]
@@ -408,6 +432,7 @@ headwear
 
 [ITEM_PANTS:ITEM_PANTS_KILT_ZM5]
 [NAME:kilt:kilt]
+[ARMORLEVEL:0]{+  counts as clothing
 [LBSTEP:1]
 [LAYER:OVER]
 [COVERAGE:105]

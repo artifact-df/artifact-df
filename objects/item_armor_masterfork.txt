@@ -18,8 +18,8 @@ squamous's notes on armor spawning:
 [ITEM_HELM:ITEM_HELM_HELM]
 [NAME:helm:helm]
 [ADJECTIVE:plate]
-[ARMORLEVEL:3]
---METAL_ARMOR_LEVELS]
+[ARMORLEVEL:2]
+[METAL_ARMOR_LEVELS]
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:100]
@@ -123,7 +123,7 @@ squamous's notes on armor spawning:
 [ITEM_ARMOR:ITEM_ARMOR_BREASTPLATE]
 [NAME:cuirass:cuirasse]
 [ADJECTIVE:plate]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
 [UBSTEP:1]{:0  Revision: compensate for the (new) shoulders.}
 [LBSTEP:0]
 [SHAPED]
@@ -146,8 +146,8 @@ squamous's notes on armor spawning:
 [COVERAGE:100]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:150]
-[MATERIAL_SIZE:6] 2 items
-[SOFT]
+[MATERIAL_SIZE:3] 1 items
+--SOFT]
 [LEATHER]
 [SCALED]{+}
 [METAL]{+}
@@ -224,7 +224,7 @@ squamous's notes on armor spawning:
 [ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT]
 [NAME:mail shirt:mail shirt]
 [CHAIN_METAL_TEXT]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
 [UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
 [LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [LAYER:OVER]
@@ -240,7 +240,7 @@ squamous's notes on armor spawning:
 [NAME:armor:armor]
 [PREPLURAL:suits of]
 [MATERIAL_PLACEHOLDER:leather]
-[ARMORLEVEL:1]
+[ARMORLEVEL:2]
 [UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
 [LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [SHAPED]
@@ -258,7 +258,7 @@ squamous's notes on armor spawning:
 [ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]
 [NAME:gauntlet:gauntlet]
 [ADJECTIVE:plate]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
 [UPSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
@@ -311,7 +311,7 @@ squamous's notes on armor spawning:
 [NAME:greaves:greaves]
 [PREPLURAL:pairs of]
 [ADJECTIVE:plate]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
 [LBSTEP:MAX]
 [SHAPED]
 [LAYER:ARMOR]
@@ -327,7 +327,7 @@ squamous's notes on armor spawning:
 [NAME:leggings:leggings]
 [PREPLURAL:pairs of]
 [CHAIN_METAL_TEXT]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
 --METAL_ARMOR_LEVELS]
 [LBSTEP:MAX]
 --SHAPED]
@@ -361,7 +361,7 @@ squamous's notes on armor spawning:
 [ITEM_SHOES:ITEM_SHOES_BOOTS]
 [NAME:sabaton:sabaton]{:boot:boots
 [ADJECTIVE:plate]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
 [UPSTEP:1]
 --METAL_ARMOR_LEVELS]
 [LAYER:OVER]
