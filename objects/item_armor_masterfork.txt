@@ -17,9 +17,8 @@ squamous's notes on armor spawning:
 
 [ITEM_HELM:ITEM_HELM_HELM]
 [NAME:helm:helm]
-[ADJECTIVE:plate]
 [ARMORLEVEL:2]
-[METAL_ARMOR_LEVELS]
+--METAL_ARMOR_LEVELS]
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:100]
@@ -32,7 +31,6 @@ squamous's notes on armor spawning:
 
 [ITEM_HELM:ITEM_HELM_DWARF_PLATE_CHP]
 [NAME:plate helm:plate helm]
-[ADJECTIVE:heavy]
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
@@ -122,7 +120,6 @@ squamous's notes on armor spawning:
 
 [ITEM_ARMOR:ITEM_ARMOR_BREASTPLATE]
 [NAME:cuirass:cuirasse]
-[ADJECTIVE:plate]
 [ARMORLEVEL:2]
 [UBSTEP:1]{:0  Revision: compensate for the (new) shoulders.}
 [LBSTEP:0]
@@ -190,8 +187,7 @@ squamous's notes on armor spawning:
 
 [ITEM_ARMOR:ITEM_ARMOR_PAULDRONS_ZM5]
 [PREPLURAL:pairs of]
-[NAME:pauldrons:pauldrons]
-[ADJECTIVE:plate]
+[NAME:plate pauldrons:plate pauldrons]
 [ARMORLEVEL:3]  so that ai uniforms combine it with other plate
 [UBSTEP:2]
 [LBSTEP:0]
@@ -206,8 +202,7 @@ squamous's notes on armor spawning:
 [SCALED]
 
 [ITEM_ARMOR:ITEM_ARMOR_PLATE_DWARF_CHP]
-[NAME:plate cuirass:plate cuirass]
-[ADJECTIVE:heavy]
+[NAME:plate cuirass:plate cuirasse]
 [PREPLURAL:suits of]
 [ARMORLEVEL:3]
 [UBSTEP:1]{:0  Revision: compensate for the (new) shoulders.}
@@ -257,7 +252,6 @@ squamous's notes on armor spawning:
 
 [ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]
 [NAME:gauntlet:gauntlet]
-[ADJECTIVE:plate]
 [ARMORLEVEL:2]
 [UPSTEP:1]
 [SHAPED]
@@ -293,7 +287,6 @@ squamous's notes on armor spawning:
 
 [ITEM_GLOVES:ITEM_GLOVES_PLATE_DWARF_CHP]
 [NAME:plate gauntlet:plate gauntlet]
-[ADJECTIVE:heavy]
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
@@ -310,7 +303,6 @@ squamous's notes on armor spawning:
 [ITEM_PANTS:ITEM_PANTS_GREAVES]
 [NAME:greaves:greaves]
 [PREPLURAL:pairs of]
-[ADJECTIVE:plate]
 [ARMORLEVEL:2]
 [LBSTEP:MAX]
 [SHAPED]
@@ -359,8 +351,7 @@ squamous's notes on armor spawning:
 // boots
 
 [ITEM_SHOES:ITEM_SHOES_BOOTS]
-[NAME:sabaton:sabaton]{:boot:boots
-[ADJECTIVE:plate]
+[NAME:sabaton:sabatons]{:boot:boots
 [ARMORLEVEL:2]
 [UPSTEP:1]
 --METAL_ARMOR_LEVELS]
@@ -375,8 +366,7 @@ squamous's notes on armor spawning:
 [HARD]
 
 [ITEM_SHOES:ITEM_SHOES_PLATE_BOOTS_CHP]
-[NAME:plate sabaton:plate sabaton]
-[ADJECTIVE:heavy]
+[NAME:plate sabaton:plate sabatons]
 [ARMORLEVEL:3]
 [UPSTEP:1]
 [LAYER:OVER]
