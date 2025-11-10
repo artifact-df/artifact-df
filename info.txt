@@ -55,4 +55,4 @@
 [STEAM_TAG:texture]
 [STEAM_TAG:music]
 [STEAM_TAG:siege]
-[STEAM_CHANGELOG:siege update]
+[STEAM_CHANGELOG:fixed ballista graphics, minor entity tweaks, reduced orc site populations, bugfixes, minor equipment tweaks]
