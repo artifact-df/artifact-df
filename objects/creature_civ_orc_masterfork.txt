@@ -17,9 +17,8 @@ creature_civ_orc_masterwork
 	[INTELLIGENT]
 	[CANOPENDOORS]
 	[TRANCES]
-	[BONECARN][NO_DRINK][NO_EAT] for population
+	[BONECARN]
 	[BUILDINGDESTROYER:1] can destroy doors/hatches
-	[BONECARN][NO_DRINK][NO_EAT]
 	[PREFSTRING:tusks]
 	[PREFSTRING:green skin]
 	[PREFSTRING:ruthless savagery]

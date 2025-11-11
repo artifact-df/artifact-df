@@ -115,12 +115,7 @@ tile_page_buildings
 [TILE_PAGE:SIEGE_WEAPONS]
 	[FILE:images/siege_weapons.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:384:192]
-
-[TILE_PAGE:BOLT_THROWER]
-	[FILE:images/bolt_thrower.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM:7:8]
+	[PAGE_DIM_PIXELS:768:480]
 
 [TILE_PAGE:WORKSHOPS_NOFLOOR]
 	[FILE:images/workshops_nofloor.png]
