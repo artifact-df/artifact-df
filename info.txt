@@ -55,4 +55,4 @@
 [STEAM_TAG:texture]
 [STEAM_TAG:music]
 [STEAM_TAG:siege]
-[STEAM_CHANGELOG:fixed bolt thrower graphics]
+[STEAM_CHANGELOG:worldgen population stability, dwarf crop value tweaks, reduced likelihood of towers during worldgen]
