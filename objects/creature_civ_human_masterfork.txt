@@ -147,7 +147,7 @@ creature_civ_human_masterfork
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:60:100]{:60:120
+	[MAXAGE:60:120]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -210,20 +210,15 @@ creature_civ_human_masterfork
 	[MENT_ATT_RANGE:LINGUISTIC_ABILITY:450:950:1150:1250:1350:1550:2250]{+    +
 	[MENT_ATT_RANGE:INTUITION:450:950:1150:1250:1350:1550:2250]{+             +
 	[SWIMS_LEARNED]
-	[PERSONALITY:IMMODERATION:0:52:100]{+  revision: deadly sins.}
-	[PERSONALITY:LUST_PROPENSITY:0:52:100]{+
-	[PERSONALITY:GREED:0:52:100]{+
-	[PERSONALITY:ENVY_PROPENSITY:0:52:90]{+  *affects necromancer propensity.}
-	[PERSONALITY:ANGER_PROPENSITY:0:52:100]{+
-	[PERSONALITY:ACTIVITY_LEVEL:0:48:100]{+
-	[PERSONALITY:VANITY:0:52:90]{+ *
-	[PERSONALITY:PRIDE:0:52:90]{+ *
-	[PERSONALITY:AMBITION:0:52:90]{+ *
-	[PERSONALITY:CURIOUS:0:52:100]{+
-	[PERSONALITY:GREGARIOUSNESS:0:55:100]{+
-	[PERSONALITY:ANXIETY_PROPENSITY:0:50:90]{+ *
-	[PERSONALITY:STRESS_VULNERABILITY:0:50:90]{+ *
-	[PERSONALITY:BRAVERY:5:50:100]{+ *
+	[PERSONALITY:ENVY_PROPENSITY:0:48:85]{+  *affects necromancer propensity.}
+	[PERSONALITY:VANITY:0:48:85]{+ *
+	[PERSONALITY:PRIDE:0:48:85]{+ *
+	[PERSONALITY:AMBITION:0:48:85]{+ *
+	[PERSONALITY:ANXIETY_PROPENSITY:0:48:85]{+ *
+	[PERSONALITY:STRESS_VULNERABILITY:0:48:85]{+ *
+	[PERSONALITY:BRAVERY:5:52:100]{+ *
+	[PERSONALITY:CURIOUS:5:52:100]{+
+	[PERSONALITY:GREGARIOUSNESS:5:52:100]{+
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]
 	[MANNERISM_EAR:ear]
@@ -252,15 +247,14 @@ creature_civ_human_masterfork
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:50]{+}
-		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:2:4]{+}
+		[POP_RATIO:100]{+}
+		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:human baby girl:human babies]{+}
 		[CHILDNAME:human girl:human children]{+}
 		[DESCRIPTION:A medium-sized woman of great ambition and potential.  She looks almost ordinary in a world of strange things.  She toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:100]{+}
 		[BABYNAME:human baby boy:human babies]{+}
 		[CHILDNAME:human boy:human children]{+}
 		[DESCRIPTION:A medium-sized man of great ambition and potential.  He looks almost ordinary in a world of strange things.  He toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
@@ -275,7 +269,7 @@ creature_civ_human_masterfork
 	[CASTE:FEMALE_NOBLE]  noble castes are modified from Fantastic Fantasy Fortress
 		[FEMALE]
 		[POP_RATIO:5]
-		--MULTIPLE_LITTER_RARE]
+		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A medium-sized woman of great potential.  She is of noble birth, and is prone to great ambitions.  She rule others to rule villages, kingdoms, establishing trade networks and start wars.]{+}
 		[CASTE_NAME:human noblewoman:humans:human]
 	[CASTE:MALE_NOBLE]
@@ -305,23 +299,19 @@ creature_civ_human_masterfork
 		[MENT_ATT_RANGE:MUSICALITY:450:950:1150:1250:1350:1550:2250]            +
 		[MENT_ATT_RANGE:KINESTHETIC_SENSE:450:950:1150:1250:1350:1550:2250]     +
 		[MENT_ATT_RANGE:EMPATHY:150:600:800:900:1000:1100:1500]                 -
-		[PERSONALITY:IMMODERATION:5:55:100]
-		[PERSONALITY:LUST_PROPENSITY:5:55:100]
-		[PERSONALITY:GREED:5:55:100]
-		[PERSONALITY:ENVY_PROPENSITY:5:55:100]  *affects necromancer propensity
-		[PERSONALITY:ANGER_PROPENSITY:5:55:100]
-		[PERSONALITY:ACTIVITY_LEVEL:0:48:95]
-		[PERSONALITY:VANITY:5:55:100] *
-		[PERSONALITY:PRIDE:5:55:100] *
-		[PERSONALITY:AMBITION:5:55:100] *
-		[PERSONALITY:ANXIETY_PROPENSITY:0:50:100] *
-		[PERSONALITY:STRESS_VULNERABILITY:0:50:100] *
+		[PERSONALITY:ENVY_PROPENSITY:0:48:85]{+  *affects necromancer propensity.}
+		[PERSONALITY:VANITY:0:52:100]{+ *
+		[PERSONALITY:PRIDE:0:52:100]{+ *
+		[PERSONALITY:AMBITION:0:52:100]{+ *
+		[PERSONALITY:ANXIETY_PROPENSITY:0:52:100]{+ *
+		[PERSONALITY:STRESS_VULNERABILITY:0:52:100]{+ *
+		[PERSONALITY:BRAVERY:5:52:100]{+ *
 		[NATURAL_SKILL:LYING:1]
 		[NATURAL_SKILL:INTRIGUE:1]
         [CASTE_PROFESSION_NAME:RECRUIT:squire:squires]
 		[CASTE_PROFESSION_NAME:STANDARD:noble:nobles]
 		[SKILL_LEARN_RATES:110]
-		[MAXAGE:60:120]
+		[MAXAGE:70:130]
 
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]

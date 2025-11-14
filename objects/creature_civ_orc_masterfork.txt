@@ -6,8 +6,7 @@ creature_civ_orc_masterwork
     [DESCRIPTION:A large green-skinned humanoid with large, jutting tusks.  Barbaric and primative, most orcs live in raiding camps and constantly war with their neighbors.]
 	[NAME:orc:orcs:orcish]
 	[CASTE_NAME:orc:orcs:orcish]
-	[OUTSIDER_CONTROLLABLE]{+ can start as an outsider in adventure mode.}
-	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
+	[SKILL_RATES:50:10:18:18]{+                Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
 	[CREATURE_TILE:'O'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:153]
 	[CREATURE_CLASS:MAMMAL]
@@ -17,7 +16,7 @@ creature_civ_orc_masterwork
 	[INTELLIGENT]
 	[CANOPENDOORS]
 	[TRANCES]
-	[BONECARN]
+	[BONECARN][NO_DRINK][NO_EAT]
 	[BUILDINGDESTROYER:1] can destroy doors/hatches
 	[PREFSTRING:tusks]
 	[PREFSTRING:green skin]
@@ -37,11 +36,11 @@ creature_civ_orc_masterwork
 	[PERSONALITY:HATE_PROPENSITY:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:ENVY_PROPENSITY:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:CHEER_PROPENSITY:5:55:100]++  Moderate Inclination
-	[PERSONALITY:DEPRESSION_PROPENSITY:0:40:90]--- Great Aversion
+	[PERSONALITY:DEPRESSION_PROPENSITY:0:40:85]--- Great Aversion
 	[PERSONALITY:ANGER_PROPENSITY:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:ANXIETY_PROPENSITY:0:55:100]+   Minor Inclination
 	[PERSONALITY:LUST_PROPENSITY:10:60:100]+++ Great Inclination
-	[PERSONALITY:STRESS_VULNERABILITY:0:40:90]--- Great Aversion
+	[PERSONALITY:STRESS_VULNERABILITY:0:40:85]--- Great Aversion
 	[PERSONALITY:GREED:0:55:100]+   Minor Inclination
 	[PERSONALITY:IMMODERATION:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:VIOLENT:50:75:100]++++ Substantial Inclination
@@ -53,15 +52,15 @@ creature_civ_orc_masterwork
 	[PERSONALITY:DISDAIN_ADVICE:10:60:100]+++ Great Inclination
 	[PERSONALITY:BRAVERY:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:CONFIDENCE:10:60:100]+++ Great Inclination
-	[PERSONALITY:VANITY:0:40:90]--- Great Aversion
-	[PERSONALITY:AMBITION:10:60:100]+++ Great Inclination
-	[PERSONALITY:GRATITUDE:0:40:90]--- Great Aversion
+	[PERSONALITY:VANITY:0:40:85]--- Great Aversion
+	[PERSONALITY:AMBITION:10:60:75]+++ Great Inclination *
+	[PERSONALITY:GRATITUDE:0:40:85]--- Great Aversion
 	[PERSONALITY:IMMODESTY:10:60:100]+++ Great Inclination
 	[PERSONALITY:HUMOR:0:55:100]+   Minor Inclination
 	[PERSONALITY:VENGEFUL:10:60:100]+++ Great Inclination
 	[PERSONALITY:PRIDE:10:60:100]+++ Great Inclination
 	[PERSONALITY:CRUELTY:50:75:100]++++ Substantial Inclination
-	[PERSONALITY:SINGLEMINDED:0:40:90]--- Great Aversion
+	[PERSONALITY:SINGLEMINDED:0:40:85]--- Great Aversion
 	[PERSONALITY:HOPEFUL:10:60:100]+++ Great Inclination
 	[PERSONALITY:CURIOUS:0:25:50]---- Substantial Aversion
 	[PERSONALITY:BASHFUL:0:25:50]---- Substantial Aversion
@@ -289,7 +288,7 @@ creature_civ_orc_masterwork
 	[BABY:1]
 	[GENERAL_BABY_NAME:orcling:orclings]
 	[BABYNAME:orcling:orclings]
-	[CHILD:20]
+	[CHILD:10]
 	[GENERAL_CHILD_NAME:orc child:orc children]
 	[CHILDNAME:orc child:orc children]
 	[EQUIPS]
@@ -365,12 +364,11 @@ from Splint's Urks:
     [PROFESSION_NAME:RECRUIT:grunt:grunts]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:1]
-		[MULTIPLE_LITTER_RARE]
+		--MULTIPLE_LITTER_RARE]
+		[LITTERSIZE:4:8]{+}
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:2]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:NECKBEARD_TISSUE_LAYERS]

@@ -34,15 +34,15 @@ creature_civ_goblin_mfork
 	[PERSONALITY:HATE_PROPENSITY:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:ENVY_PROPENSITY:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:CHEER_PROPENSITY:5:55:100]++  Moderate Inclination
-	[PERSONALITY:DEPRESSION_PROPENSITY:0:40:90]--- Great Aversion
+	[PERSONALITY:DEPRESSION_PROPENSITY:0:40:85]--- Great Aversion
 	[PERSONALITY:ANGER_PROPENSITY:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:ANXIETY_PROPENSITY:10:60:100]+++ Great Inclination
 	[PERSONALITY:LUST_PROPENSITY:10:60:100]+++ Great Inclination
-	[PERSONALITY:STRESS_VULNERABILITY:0:40:90]--- Great Aversion
+	[PERSONALITY:STRESS_VULNERABILITY:0:40:85]--- Great Aversion
 	[PERSONALITY:GREED:0:55:100]+   Minor Inclination
 	[PERSONALITY:IMMODERATION:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:VIOLENT:50:75:100]++++ Substantial Inclination
-	[PERSONALITY:PERSEVERANCE:0:40:90]--- Great Aversion
+	[PERSONALITY:PERSEVERANCE:0:40:85]--- Great Aversion
 	[PERSONALITY:WASTEFULNESS:10:60:100]+++ Great Inclination
 	[PERSONALITY:DISCORD:50:75:100]++++ Substantial Inclination
 	[PERSONALITY:FRIENDLINESS:0:25:50]---- Substantial Aversion
@@ -50,15 +50,15 @@ creature_civ_goblin_mfork
 	[PERSONALITY:DISDAIN_ADVICE:10:60:100]+++ Great Inclination
 	[PERSONALITY:BRAVERY:0:45:100]-   Minor Aversion
 	[PERSONALITY:CONFIDENCE:10:60:100]+++ Great Inclination
-	[PERSONALITY:VANITY:0:40:90]--- Great Aversion
+	[PERSONALITY:VANITY:0:40:85]--- Great Aversion
 	[PERSONALITY:AMBITION:10:60:100]+++ Great Inclination
-	[PERSONALITY:GRATITUDE:0:40:90]--- Great Aversion
+	[PERSONALITY:GRATITUDE:0:40:85]--- Great Aversion
 	[PERSONALITY:IMMODESTY:10:60:100]+++ Great Inclination
 	[PERSONALITY:HUMOR:0:55:100]+   Minor Inclination
 	[PERSONALITY:VENGEFUL:10:60:100]+++ Great Inclination
 	[PERSONALITY:PRIDE:10:60:100]+++ Great Inclination
 	[PERSONALITY:CRUELTY:50:75:100]++++ Substantial Inclination
-	[PERSONALITY:SINGLEMINDED:0:40:90]--- Great Aversion
+	[PERSONALITY:SINGLEMINDED:0:40:85]--- Great Aversion
 	[PERSONALITY:HOPEFUL:10:60:100]+++ Great Inclination
 	[PERSONALITY:CURIOUS:0:25:50]---- Substantial Aversion
 	[PERSONALITY:BASHFUL:0:25:50]---- Substantial Aversion

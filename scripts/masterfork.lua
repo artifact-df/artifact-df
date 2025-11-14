@@ -438,7 +438,7 @@ tweaks={
 end
 
 -- redefined necromancy, increased summon wait periods
-interactions.secrets.necromancer=function(idx,sph)
+interactions.secrets.necromancymfork=function(idx,sph)
     if sph and sph~="DEATH" then return nil end -- no sph means it generates anyway!
     local ropar=random_object_parameters
     local animate_token=ropar.token_prefix.."SECRET_ANIMATE_"..tostring(idx)
@@ -739,11 +739,11 @@ interactions.secrets.necromancer=function(idx,sph)
     end
     local spheres={"DEATH"}
     if summon then spheres[2]="NIGHTMARES" end
-    return {raws=tbl,weight=1,spheres=spheres}
+    return {raws=tbl,weight=10,spheres=spheres}--weighted 10x
 end
 
 -- redefined vampires
-interactions.curse.major.vampire=function(idx,tok)
+interactions.curse.major.mforkvampirism=function(idx,tok)
     return {raws={
     "[IS_HIST_STRING_1: cursed ]",
     "[IS_HIST_STRING_2: to prowl the night in search of blood]",
@@ -838,7 +838,7 @@ interactions.curse.major.vampire=function(idx,tok)
 		    "[CDI:MAX_TARGET_NUMBER:A:1]",
 		    "[CDI:FREE_ACTION]",
 		    "[CDI:WAIT_PERIOD:100]",
-    },weight=1}
+    },weight=10}--weighted 10x
 end
 
 -- adamantine alloys

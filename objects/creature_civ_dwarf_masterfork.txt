@@ -45,14 +45,14 @@ creature_civ_dwarf_mfork
 	[PERSONALITY:DISDAIN_ADVICE:0:55:100]+   Minor Inclination
 	[PERSONALITY:BRAVERY:5:55:100]++  Moderate Inclination
 	[PERSONALITY:CONFIDENCE:0:55:100]+   Minor Inclination
-	[PERSONALITY:VANITY:0:40:90]--- Great Aversion
+	[PERSONALITY:VANITY:0:40:85]--- Great Aversion
 	[PERSONALITY:AMBITION:0:45:95]--  Moderate Aversion
 	[PERSONALITY:GRATITUDE:5:55:100]++  Moderate Inclination
 	[PERSONALITY:IMMODESTY:5:55:100]++  Moderate Inclination
 	[PERSONALITY:HUMOR:0:55:100]+   Minor Inclination
 	[PERSONALITY:VENGEFUL:10:60:100]+++ Great Inclination
 	[PERSONALITY:PRIDE:5:55:100]++  Moderate Inclination
-	[PERSONALITY:CRUELTY:0:40:90]--- Great Aversion
+	[PERSONALITY:CRUELTY:0:40:85]--- Great Aversion
 	[PERSONALITY:SINGLEMINDED:0:55:100]+   Minor Inclination
 	[PERSONALITY:HOPEFUL:0:55:100]+   Minor Inclination
 	[PERSONALITY:CURIOUS:0:55:100]+   Minor Inclination

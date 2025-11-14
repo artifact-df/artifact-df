@@ -35,10 +35,10 @@ creature_civ_elf_forest_masterfork
 	[PERSONALITY:DEPRESSION_PROPENSITY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:ANGER_PROPENSITY:0:45:100]-   Minor Aversion
 	[PERSONALITY:ANXIETY_PROPENSITY:0:45:95]--  Moderate Aversion
-	[PERSONALITY:LUST_PROPENSITY:0:40:90]--- Great Aversion
+	[PERSONALITY:LUST_PROPENSITY:0:40:85]--- Great Aversion
 	[PERSONALITY:STRESS_VULNERABILITY:0:45:95]--  Moderate Aversion
-	[PERSONALITY:GREED:0:40:90]--- Great Aversion
-	[PERSONALITY:IMMODERATION:0:40:90]--- Great Aversion
+	[PERSONALITY:GREED:0:40:85]--- Great Aversion
+	[PERSONALITY:IMMODERATION:0:40:85]--- Great Aversion
 	[PERSONALITY:VIOLENT:0:55:100]+   Minor Inclination
 	[PERSONALITY:PERSEVERANCE:0:45:100]-   Minor Aversion
 	[PERSONALITY:WASTEFULNESS:0:45:95]--  Moderate Aversion
@@ -49,7 +49,7 @@ creature_civ_elf_forest_masterfork
 	[PERSONALITY:BRAVERY:0:55:100]+   Minor Inclination
 	[PERSONALITY:CONFIDENCE:10:60:100]+++ Great Inclination
 	[PERSONALITY:VANITY:10:60:100]+++ Great Inclination
-	[PERSONALITY:AMBITION:0:40:90]--- Great Aversion
+	[PERSONALITY:AMBITION:0:40:85]--- Great Aversion
 	[PERSONALITY:GRATITUDE:0:55:100]+   Minor Inclination
 	[PERSONALITY:IMMODESTY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:HUMOR:0:45:95]--  Moderate Aversion

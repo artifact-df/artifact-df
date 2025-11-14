@@ -1070,10 +1070,6 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:PROFESSION_NAME:BLOWGUNMAN:Gunman:Gunmen]{+                         Revision: renamed from blowgunner, firearms use this skill now.}
 	[CV_NEW_TAG:PROFESSION_NAME:MASTER_BLOWGUNMAN:Veteran Gunman:Veteran Gunmen]{+
 	[CV_NEW_TAG:PROFESSION_NAME:PLANTER:Farmer:Farmers]{+                           Revision: renamed from planter.}
-	[CV_NEW_TAG:PROFESSION_NAME:LASHER:Flailman:Flailmen]{+                         Revision: renamed from lasher.}
-	[CV_NEW_TAG:PROFESSION_NAME:MASTER_LASHER:Master Flailman:Master Flailmen]{+
-	[CV_NEW_TAG:PROFESSION_NAME:PIKEMAN:Polearm user:Polearm users]{+               Revision: renamed from pike.}
-	[CV_NEW_TAG:PROFESSION_NAME:MASTER_PIKEMAN:Polearm Master:Polearm users]{+
 
 [CREATURE_VARIATION:STANDARD_FLYING_GAITS]
 	[CV_NEW_TAG:GAIT:FLY:Maximum Flight Speed:!ARG4:10:3:!ARG2:50:LAYERS_SLOW:STRENGTH:AGILITY:STEALTH_SLOWS:50]
