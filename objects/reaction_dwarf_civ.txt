@@ -338,7 +338,7 @@ reaction_dwarf_civ
 [SKILL:SMELT]
 [FORTRESS_MODE_ENABLED]
 
-[REACTION:PIG_IRON_MAKING_CRUCIBLE]  makes 1 bar more, and 15% chance for one additional bar on top of that.
+[REACTION:PIG_IRON_MAKING_CRUCIBLE_POWDER]  makes 1 bar more, and 15% chance for one additional bar on top of that.  needs powdered flux
 [NAME:smelt pig iron bars efficiently (powder)]
 [BUILDING:BLAST_FURNACE_CHP:NONE]
 [REAGENT:A:300:BAR:NO_SUBTYPE:METAL:IRON]  requires an additional bar of iron
