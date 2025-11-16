@@ -251,7 +251,7 @@ no shot force requirements
 [SKILL:WHIP]
 [TWO_HANDED:55000]{:27500  revision: increased substantially; one-handed should be extremely demanding.}
 [MINIMUM_SIZE:22500]
-[MATERIAL_SIZE:2]
+[MATERIAL_SIZE:3]{:2
 [ATTACK:EDGE:10:50:lash:lashes:NO_SUB:2000]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 	[ATTACK_FLAG_BAD_MULTIATTACK]

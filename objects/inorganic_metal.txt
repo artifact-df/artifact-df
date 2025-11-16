@@ -44,7 +44,6 @@ Colors added by Bohandas.
 	[BENDING_STRAIN_AT_YIELD:73]
 	[MAX_EDGE:10000]
 	[STATE_COLOR:ALL_SOLID:GRAY]
-	[REACTION_CLASS:IRON_COATING] 
 
 [INORGANIC:GOLD]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -88,7 +87,6 @@ Colors added by Bohandas.
 	[STATE_COLOR:ALL_SOLID:GOLDEN_YELLOW]{:GOLD
 	[ITEMS_SOFT]
 	[STOCKPILE_THREAD_METAL]
-	[REACTION_CLASS:GOLD_COATING] 
 
 [INORGANIC:SILVER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -97,11 +95,11 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:15]{:10
+	[MATERIAL_VALUE:12]{:10
 	[SPEC_HEAT:230]
 	[MELTING_POINT:11731]
 	[BOILING_POINT:13892]
-	--ITEMS_WEAPON]--ITEMS_AMMO]
+	[ITEMS_WEAPON][ITEMS_AMMO]
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -127,11 +125,10 @@ Colors added by Bohandas.
 	[BENDING_YIELD:100000]
 	[BENDING_FRACTURE:170000]
 	[BENDING_STRAIN_AT_YIELD:120]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision:  terrible for edged weapons.}
 	[STATE_COLOR:ALL_SOLID:BLUE-GRAY]{:SILVER
-	[ITEMS_SOFT]
-	[STOCKPILE_THREAD_METAL]
-	[REACTION_CLASS:SILVER_COATING] 
+	[ITEMS_SOFT]{+}
+	[STOCKPILE_THREAD_METAL]{+}
 
 [INORGANIC:COPPER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -172,8 +169,7 @@ Colors added by Bohandas.
 	[BENDING_STRAIN_AT_YIELD:58]
 	[MAX_EDGE:9000]{:10000  inferior to iron.}
 	[STATE_COLOR:ALL_SOLID:CHOCOLATE]{:COPPER
-	[REACTION_CLASS:COPPER_COATING] 
-	[MATERIAL_REACTION_PRODUCT:MINERAL_DYE:INORGANIC:DYE_MALACHITE]
+	[MATERIAL_REACTION_PRODUCT:MINERAL_DYE:INORGANIC:DYE_MALACHITE]{+}
 
 [INORGANIC:NICKEL]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -213,7 +209,6 @@ Colors added by Bohandas.
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SILVER]
-	[REACTION_CLASS:NICKEL_COATING] 
 
 [INORGANIC:ZINC]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -253,9 +248,8 @@ Colors added by Bohandas.
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SILVER]
-	[REACTION_CLASS:ZINC_COATING] 
 
-[INORGANIC:BRONZE]  zey: took the base values of (base) bronze + steel / 2 to average bronze and steel properties.
+[INORGANIC:BRONZE]  zey: took the base values of (base) bronze + steel / 2 to average bronze and steel properties.  values nerfed in mfork ver. 1.3.4 by 10%
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME_ADJ:ALL_SOLID:bronze]
 	[STATE_NAME_ADJ:LIQUID:molten bronze]
@@ -276,25 +270,24 @@ Colors added by Bohandas.
 	[MOLAR_MASS:80000]
 	[IMPACT_YIELD:602000]
 	[IMPACT_FRACTURE:843500]
-	[IMPACT_STRAIN_AT_YIELD:731]{:523}
-	[COMPRESSIVE_YIELD:1053500]{:602000}
-	[COMPRESSIVE_FRACTURE:1681750]{:843500}
-	[COMPRESSIVE_STRAIN_AT_YIELD:731]{:523}
-	[TENSILE_YIELD:301000]{:172000}
-	[TENSILE_FRACTURE:480500]{:241000}
-	[TENSILE_STRAIN_AT_YIELD:190]{:156}
-	[TORSION_YIELD:301000]{:172000}
-	[TORSION_FRACTURE:480500]{:241000}
-	[TORSION_STRAIN_AT_YIELD:488]{:420}
-	[SHEAR_YIELD:442500]{:455000}
-	[SHEAR_FRACTURE:734000]{:748000}
-	[SHEAR_STRAIN_AT_YIELD:823]{:1110}
-	[BENDING_YIELD:301000]{:172000}
-	[BENDING_FRACTURE:480500]{:241000}
-	[BENDING_STRAIN_AT_YIELD:190]{:156}
-	[MAX_EDGE:10750]{:10000  revision: slightly worse edge than steel.}
+	[IMPACT_STRAIN_AT_YIELD:658]{:523}
+	[COMPRESSIVE_YIELD:948150]{:602000}
+	[COMPRESSIVE_FRACTURE:1513575]{:843500}
+	[COMPRESSIVE_STRAIN_AT_YIELD:658]{:523}
+	[TENSILE_YIELD:270900]{:172000}
+	[TENSILE_FRACTURE:432450]{:241000}
+	[TENSILE_STRAIN_AT_YIELD:171]{:156}
+	[TORSION_YIELD:270900]{:172000}
+	[TORSION_FRACTURE:432450]{:241000}
+	[TORSION_STRAIN_AT_YIELD:439]{:420}
+	[SHEAR_YIELD:398250]{:455000}
+	[SHEAR_FRACTURE:660600]{:748000}
+	[SHEAR_STRAIN_AT_YIELD:741]{:1110}
+	[BENDING_YIELD:270900]{:172000}
+	[BENDING_FRACTURE:432450]{:241000}
+	[BENDING_STRAIN_AT_YIELD:171]{:156}
+	[MAX_EDGE:10200]{:10000  revision: slightly worse edge than steel.}
 	[STATE_COLOR:ALL_SOLID:OCHRE]{:BRONZE
-	[REACTION_CLASS:BRONZE_COATING] 
 
 [INORGANIC:BRASS]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -335,7 +328,6 @@ Colors added by Bohandas.
 	[ITEMS_SCALED]
 	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_ARMOR]{+}
 	[STATE_COLOR:ALL_SOLID:BRASS]
-	[REACTION_CLASS:BRASS_COATING] 
 
 [INORGANIC:STEEL]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -370,13 +362,12 @@ Colors added by Bohandas.
 	[BENDING_YIELD:430000]
 	[BENDING_FRACTURE:720000]
 	[BENDING_STRAIN_AT_YIELD:537]
-	[MAX_EDGE:11000]{:10000  revision: superior edge compared to iron.}
+	[MAX_EDGE:10500]{:10000  revision: superior edge compared to iron.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SLATE_GRAY]{:GRAY
-	[REACTION_CLASS:STEEL_COATING] 
 
 [INORGANIC:PIG_IRON]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -412,6 +403,7 @@ Colors added by Bohandas.
 	[BENDING_STRAIN_AT_YIELD:62]
 	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
 	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
+	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 [INORGANIC:PLATINUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -445,14 +437,13 @@ Colors added by Bohandas.
 	[BENDING_YIELD:100000]
 	[BENDING_FRACTURE:200000]
 	[BENDING_STRAIN_AT_YIELD:60]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision:  terrible for edged weapons.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
-	--ITEMS_WEAPON]--ITEMS_WEAPON_RANGED]--ITEMS_AMMO]--ITEMS_ARMOR]--ITEMS_ANVIL]
 	[STATE_COLOR:ALL_SOLID:WHITE]
-	[REACTION_CLASS:PLATINUM_COATING] 
+	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 [INORGANIC:ELECTRUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -495,7 +486,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:OCHRE]
-	[REACTION_CLASS:ELECTRUM_COATING] 
 
 [INORGANIC:TIN]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -535,7 +525,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	--ITEMS_BARRED]
 	--ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SILVER]
-	[REACTION_CLASS:TIN_COATING] 
 
 [INORGANIC:PEWTER_FINE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -575,7 +564,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SILVER]
-	[REACTION_CLASS:PEWTER_COATING] 
 
 [INORGANIC:PEWTER_TRIFLE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -615,7 +603,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
-	[REACTION_CLASS:PEWTER_COATING] 
 
 [INORGANIC:PEWTER_LAY]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -655,7 +642,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:WHITE]
-	[REACTION_CLASS:PEWTER_COATING] 
 
 [INORGANIC:LEAD]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -695,7 +681,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
-	[REACTION_CLASS:LEAD_COATING] 
 
 [INORGANIC:ALUMINUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -735,7 +720,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:WHITE]
-	[REACTION_CLASS:ALUMINUM_COATING]{+}
+	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 temperature values unknown, used nickel
 [INORGANIC:NICKEL_SILVER]
@@ -857,7 +842,6 @@ value is weighted average of 3 silver and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:WHITE]
-	[REACTION_CLASS:SILVER_COATING] 
 
 temperature values unknown, used copper
 also called shakudo or hepatizon depending on the proportions (some have no silver)
@@ -902,7 +886,7 @@ value of 11 is the weighted average value of 2copper/1silver/1gold components
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:DARK_BLUE]{:BLACK (actually dark blue, but this is less confusing)
-	[REACTION_CLASS:BRONZE_COATING] 
+	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 temperature values unknown, used gold
 value is weighted average of 3 gold and 1 copper
@@ -944,7 +928,6 @@ value is weighted average of 3 gold and 1 copper
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:PINK]
-	[REACTION_CLASS:GOLD_COATING] 
 
 bismuth itself is brittle, but you can alloy it with tin/copper to make a light-colored bronze
 [INORGANIC:BISMUTH]
@@ -981,7 +964,6 @@ bismuth itself is brittle, but you can alloy it with tin/copper to make a light-
 	[BENDING_STRAIN_AT_YIELD:94]
 	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
 	[STATE_COLOR:ALL_SOLID:HELIOTROPE]
-	[REACTION_CLASS:BISMUTH_COATING] 
 
 you can make a lighter colored bronze by adding bismuth, used temp values from bronze, used by incas, at least according to one source ha ha
 [INORGANIC:BISMUTH_BRONZE]
@@ -1023,7 +1005,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:TAN]
-	[REACTION_CLASS:BRONZE_COATING]
+	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 [INORGANIC:ADAMANTINE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -1068,4 +1050,4 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[DEEP_SPECIAL]
 	[STOCKPILE_THREAD_METAL]
 	[STATE_COLOR:ALL_SOLID:AQUA]
-	[REACTION_CLASS:ADAMANTINE_COATING]
+	[REACTION_CLASS:EXOTIC_METAL]{+}

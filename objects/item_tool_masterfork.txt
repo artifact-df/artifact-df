@@ -302,15 +302,14 @@ ITEM_TOOL_STONE_AXE
 
 [ITEM_TOOL:ITEM_TOOL_TABLET]
 [NAME:tablet:tablets]
-[VALUE:15]
+[VALUE:12]
 [METAL_MAT]
 [CERAMIC_MAT]
 [TOOL_USE:CONTAIN_WRITING]
 [TILE:240]
-[SIZE:100]
-[MATERIAL_SIZE:3]
+[SIZE:200]
+[MATERIAL_SIZE:1]
 [NO_DEFAULT_JOB]
-[NO_DEFAULT_IMPROVEMENTS]
 
 // raws from Fantastic Fantasy Fortress by chipathingy
 // chp: taken from Splint's Vanilla Expanded mod. Some removed/tweaked

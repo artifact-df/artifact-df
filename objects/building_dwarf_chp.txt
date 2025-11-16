@@ -71,9 +71,8 @@ building_dwarf_chp
 	[BUILD_KEY:CUSTOM_SHIFT_R]
 	
     [BUILD_ITEM:5:BAR:NO_SUBTYPE:METAL:DWARFSTEEL]
-	[BUILD_ITEM:1:ANVIL:NO_SUBTYPE:METAL:DWARFSTEEL]
-	[BUILD_ITEM:1:TOOL:ITEM_TOOL_CAULDRON:METAL:MITHRIL]
-	[NEEDS_MAGMA]
+	[BUILD_ITEM:1:ANVIL:NO_SUBTYPE:METAL:ADAMANTINE]
+	--NEEDS_MAGMA]
 
 	[DIM:5:5]
 	[WORK_LOCATION:3:3]
@@ -122,4 +121,4 @@ building_dwarf_chp
 	[COLOR:3:3:7:0:1:7:0:1:7:4:1:7:0:1:7:0:1]
 	[COLOR:3:4:7:0:1:7:0:1:7:0:1:7:0:1:7:0:1]
 	[COLOR:3:5:7:4:1:7:0:1:7:0:1:7:0:1:7:4:1]
-    [TOOLTIP:An ancient anvil powered by long-forgotten magic that allows the striking of ancient runes on to weapons.]
+    [TOOLTIP: ".. when the world was young the Smith sang to the mountains, and gave form to the most powerful weapons ever forged by dwarvenkind." ]

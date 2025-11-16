@@ -81,9 +81,9 @@ inorganic_other_mfork
 	[SOLID_DENSITY:3340]
 	[MATERIAL_VALUE:10]
 	[STATE_COLOR:ALL_SOLID:IVORY]
-	[REACTION_CLASS:LEATHER_TREATMENT]
+	[REACTION_CLASS:LEATHER_TREATMENT]{+}
 	[REACTION_CLASS:QUICKLIME]
-	[REACTION_CLASS:FLUX]  zey:  were sometimes used
+	[REACTION_CLASS:FLUX]{+}  zey:  were sometimes used
 
 [INORGANIC:MILK_OF_LIME] limewater / hydrated calcium oxide
 	[STATE_COLOR:ALL_SOLID:WHITE]
@@ -123,4 +123,3 @@ inorganic_other_mfork
 	[ABSORPTION:100]
 	[LIQUID_MISC_OTHER]
 	[STATE_COLOR:ALL_SOLID:IVORY]
-	[REACTION_CLASS:LEATHER_TREATMENT] don't know how you'll get it, but it's here

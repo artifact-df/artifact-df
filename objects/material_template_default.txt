@@ -1978,7 +1978,6 @@ material_template_default
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
 	[ROTS]
-	[REACTION_CLASS:LEATHER_TREATMENT] {+}
 	[REACTION_CLASS:TALLOW]
 
 [MATERIAL_TEMPLATE:CHITIN_TEMPLATE]
@@ -2154,7 +2153,7 @@ material_template_default
 	[STATE_NAME:GAS:smoke]
 	[STATE_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:6:0:0]
-	[MATERIAL_VALUE:2]{:1
+	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:2500]{:3000
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:11000]		Modest Mod
@@ -2247,7 +2246,7 @@ material_template_default
 	[STATE_NAME:GAS:smoke]
 	[STATE_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:2:0:0]
-	[MATERIAL_VALUE:2]{:1
+	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10400]
 	[MELTING_POINT:NONE]
@@ -2293,7 +2292,7 @@ material_template_default
 	[STATE_NAME:GAS:smoke]
 	[STATE_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:2:0:0]
-	[MATERIAL_VALUE:3]{:1
+	[MATERIAL_VALUE:2]{:1
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10400]
 	[MELTING_POINT:NONE]
@@ -2339,7 +2338,7 @@ material_template_default
 	[STATE_NAME:GAS:smoke]
 	[STATE_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:2:0:0]
-	[MATERIAL_VALUE:2]{:1
+	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10400]
 	[MELTING_POINT:NONE]
@@ -2384,7 +2383,7 @@ material_template_default
 	[STATE_NAME:GAS:smoke]
 	[STATE_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:2:0:0]
-	[MATERIAL_VALUE:2]{:1
+	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10400]
 	[MELTING_POINT:NONE]
@@ -2429,7 +2428,7 @@ material_template_default
 	[STATE_NAME:GAS:smoke]
 	[STATE_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:2:0:0]
-	[MATERIAL_VALUE:2]{:1
+	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10400]
 	[MELTING_POINT:NONE]
@@ -2959,8 +2958,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[ABSORPTION:100]
 	[MATERIAL_REACTION_PRODUCT:SOAP_MAT:LOCAL_PLANT_MAT:SOAP]
 	[LIQUID_MISC_PLANT]
-	[REACTION_CLASS:LEATHER_TREATMENT] {+}
-	[EXTRACT_STORAGE:FLASK] {+} this is an odd token to add, but it should cause caravans to bring it
+	[EXTRACT_STORAGE:FLASK]{+} this is an odd token to add, but it should cause caravans to bring it
 	[ROTS]{+}
 	[EDIBLE_VERMIN]{+}
 
@@ -3021,7 +3019,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[STATE_NAME:GAS:boiling wax]
 	[STATE_ADJ:GAS:boiling wax]
 	[DISPLAY_COLOR:6:0:1]
-	[MATERIAL_VALUE:2]{:1
+	[MATERIAL_VALUE:5]{:1
 	[SPEC_HEAT:3400]
 	[IGNITE_POINT:10368]
 	[MELTING_POINT:10113]
@@ -3055,7 +3053,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[REACTION_CLASS:WAX]
 	[ITEMS_HARD]
 	[DO_NOT_CLEAN_GLOB]
-	[REACTION_CLASS:LEATHER_TREATMENT] {+}
+	[REACTION_CLASS:LEATHER_TREATMENT]{+}
 	[BUTCHER_SPECIAL:GLOB:NONE] {+}
 	[EDIBLE_VERMIN]{+}
 

@@ -996,7 +996,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:YELLOW:1]
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:chitin:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
