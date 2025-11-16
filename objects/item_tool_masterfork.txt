@@ -275,7 +275,7 @@ ITEM_TOOL_STONE_AXE
 
 [ITEM_TOOL:ITEM_TOOL_ALTAR]
 [NAME:altar:altars]
-[VALUE:13]{:10  zey: altars were always somewhat useless so raised the value slightly.}
+[VALUE:15]{:10  zey: altars were always somewhat useless so raised the value slightly.}
 --HARD_MAT]
 [STONE_MAT]{+}
 [METAL_MAT]{+}
@@ -284,8 +284,8 @@ ITEM_TOOL_STONE_AXE
 [TOOL_USE:PLACE_OFFERING]
 [FURNITURE]
 [TILE:144]
-[SIZE:2000]{:500
-[MATERIAL_SIZE:9]{:6
+[SIZE:1000]{:500
+[MATERIAL_SIZE:15]{:6
 
 [ITEM_TOOL:ITEM_TOOL_DIE]
 [NAME:die:dice]

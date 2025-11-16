@@ -364,8 +364,7 @@ from Splint's Urks:
     [PROFESSION_NAME:RECRUIT:grunt:grunts]
 	[CASTE:FEMALE]
 		[FEMALE]
-		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:4:8]{+}
+		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]
