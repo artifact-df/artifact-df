@@ -578,6 +578,7 @@ interactions.secrets.necromancymfork=function(idx,sph)
         [CDI:DEFAULT_ICON:ADVENTURE_INTERACTION_ICON_RAISE_INTELLIGENT_UNDEAD]
     ]])
     end
+    if summon then 
     if bogeyman then
         tbl=split_to_lines(tbl,[[
         [CE_CAN_DO_INTERACTION:START:0:ABRUPT]
@@ -597,6 +598,7 @@ interactions.secrets.necromancymfork=function(idx,sph)
         [CDI:WAIT_PERIOD:12000]
         [CDI:DEFAULT_ICON:ADVENTURE_INTERACTION_ICON_SUMMON_BOGEYMAN]
     ]])
+        end
     end
     if ghoul then
         tbl=split_to_lines(tbl,[[
