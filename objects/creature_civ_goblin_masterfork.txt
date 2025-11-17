@@ -16,7 +16,7 @@ creature_civ_goblin_mfork
 	[EVIL]
 	[INTELLIGENT]
 	[CANOPENDOORS]
-	--BONECARN][CARNIVORE][NO_DRINK][NO_EAT]
+	[BONECARN][NO_DRINK][NO_EAT]
 	[SPREAD_EVIL_SPHERES_IF_RULER]{+}
 	[PREFSTRING:terrifying features]
 	[PREFSTRING:sadistic nature]{+}
@@ -285,7 +285,7 @@ creature_civ_goblin_mfork
 	[BABY:1]
 	[GENERAL_BABY_NAME:runtling:runtlings]
 	[BABYNAME:runtling:runtlings]
-	[CHILD:10]{:18
+	[CHILD:18]
 	[GENERAL_CHILD_NAME:goblin runt:goblin runts]
 	[CHILDNAME:goblin runt:goblin runts]
 	[EQUIPS]
@@ -326,7 +326,8 @@ creature_civ_goblin_mfork
 	[PROFESSION_NAME:RECRUIT:skulker:skulkers]{+}
 	[CASTE:FEMALE]
 		[FEMALE]
-		[MULTIPLE_LITTER_RARE]
+		--MULTIPLE_LITTER_RARE]
+		[LITTERSIZE:4:8]{+}
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
