@@ -396,3 +396,23 @@ tile_page_creatures
 	[FILE:images/troll/troll_siege_supplies.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:288:64]
+
+[TILE_PAGE:OGRES]
+	[FILE:images/ogres/ogres.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:576]
+
+[TILE_PAGE:OGRES_CORPSE]
+	[FILE:images/ogres/ogres_corpse.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:64]
+
+[TILE_PAGE:OGRES_STATUE]
+	[FILE:images/ogres/ogres_statue.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:128]
+
+[TILE_PAGE:OGRES_LIST_ICON]
+	[FILE:images/ogres/ogres_list_icon.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:64]
