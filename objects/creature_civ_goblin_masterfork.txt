@@ -285,7 +285,7 @@ creature_civ_goblin_mfork
 	[BABY:1]
 	[GENERAL_BABY_NAME:runtling:runtlings]
 	[BABYNAME:runtling:runtlings]
-	[CHILD:18]
+	[CHILD:12]{:18
 	[GENERAL_CHILD_NAME:goblin runt:goblin runts]
 	[CHILDNAME:goblin runt:goblin runts]
 	[EQUIPS]
