@@ -16,7 +16,7 @@ creature_civ_goblin_mfork
 	[EVIL]
 	[INTELLIGENT]
 	[CANOPENDOORS]
-	[BONECARN][NO_DRINK][NO_EAT]
+	--BONECARN][CARNIVORE][NO_DRINK][NO_EAT]
 	[SPREAD_EVIL_SPHERES_IF_RULER]{+}
 	[PREFSTRING:terrifying features]
 	[PREFSTRING:sadistic nature]{+}
@@ -267,17 +267,27 @@ creature_civ_goblin_mfork
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	{  removed latching  }
-	[GENERAL_BABY_NAME:goblin runt:goblin runts]
-	[GENERAL_CHILD_NAME:goblin child:goblin children]
 	Sver: added profession names
-	[PROFESSION_NAME:PIKEMAN:Man-at-arms:Men-at-arms]
-	[PROFESSION_NAME:MASTER_PIKEMAN:Elite Man-at-arms:Elite Men-at-arms]
-	[PROFESSION_NAME:LASHER:Flailsman:Flailsmen]
-	[PROFESSION_NAME:MASTER_LASHER:Flailmaster:Flailmasters]
-	[PROFESSION_NAME:BOWMAN:Skirmisher:Skirmishers]
-	[PROFESSION_NAME:MASTER_BOWMAN:Elite Skirmisher:Elite Skirmishers]
+	[PROFESSION_NAME:CRAFTSMAN:craftsgoblin:craftsgoblins]
+	[PROFESSION_NAME:FISHERMAN:fishergoblin:fishergoblins]
+	[PROFESSION_NAME:HAMMERMAN:hammergoblin:hammergoblins]
+	[PROFESSION_NAME:SPEARMAN:speargoblin:speargoblins]
+	[PROFESSION_NAME:CROSSBOWMAN:crossbowgoblin:crossbowgoblins]
+	[PROFESSION_NAME:AXEMAN:axegoblin:axegoblins]
+	[PROFESSION_NAME:SWORDSMAN:swordgoblin:swordgoblins]
+	[PROFESSION_NAME:MACEMAN:macegoblin:macegoblins]
+	[PROFESSION_NAME:PIKEMAN:pikegoblin:pikegoblins]
+	[PROFESSION_NAME:BOWMAN:bowgoblin:bowgoblins]
+	[PROFESSION_NAME:CRIMINAL:outcast:outcasts]
+	[PROFESSION_NAME:MESSENGER:runner:runners]
+	[PROFESSION_NAME:THIEF:scout:scouts]
+	[PROFESSION_NAME:MASTER_THIEF:veteran scout:veteran scouts]
 	[BABY:1]
-	[CHILD:18]
+	[GENERAL_BABY_NAME:runtling:runtlings]
+	[BABYNAME:runtling:runtlings]
+	[CHILD:10]{:18
+	[GENERAL_CHILD_NAME:goblin runt:goblin runts]
+	[CHILDNAME:goblin runt:goblin runts]
 	[EQUIPS]
 	[SMELL_TRIGGER:50]
 	[LOW_LIGHT_VISION:10000]{:100  goblins should have nightvision.}
@@ -312,6 +322,8 @@ creature_civ_goblin_mfork
 	[MANNERISM_POSTURE]
 	[MANNERISM_STRETCH]
 	[MANNERISM_EYELIDS]
+	[PROFESSION_NAME:STANDARD:laborer:laborers]{+}
+	[PROFESSION_NAME:RECRUIT:skulker:skulkers]{+}
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
