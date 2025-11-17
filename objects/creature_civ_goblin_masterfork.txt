@@ -277,7 +277,7 @@ creature_civ_goblin_mfork
 	[PROFESSION_NAME:BOWMAN:Skirmisher:Skirmishers]
 	[PROFESSION_NAME:MASTER_BOWMAN:Elite Skirmisher:Elite Skirmishers]
 	[BABY:1]
-	[CHILD:25]{:18
+	[CHILD:18]
 	[EQUIPS]
 	[SMELL_TRIGGER:50]
 	[LOW_LIGHT_VISION:10000]{:100  goblins should have nightvision.}
@@ -314,12 +314,10 @@ creature_civ_goblin_mfork
 	[MANNERISM_EYELIDS]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:1]{+}
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:2]{+}
 		[DESCRIPTION:A medium-sized, cruel man with leathery skin, glowing eyes, sharply-defined features and a lanky body.  He only eats meat and only sleep and distractions from her boredom.  He works with others to dig pits and trenches that connect many towers.  He does not appear to age.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
