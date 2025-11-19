@@ -46,7 +46,6 @@ Masterfork contains RAWs and other assets from the following mods, either in par
  - 'Flowing Water'                         author(s): Poss                                                                            # https://steamcommunity.com/sharedfiles/filedetails/?id=3419529410
  - 'Horned Cave Beetle'                    author(s): TossThrown, Kruggsmash, Squamous                                                # https://steamcommunity.com/sharedfiles/filedetails/?id=2908275915
  - 'Human Fortress'                        author(s): brolol.404                                                                      # https://www.bay12forums.com/smf/index.php?topic=174687.15
- - 'Skilled Animals & Megabeasts'          author(s): lmlsna                                                                          # https://steamcommunity.com/sharedfiles/filedetails/?id=3444553321
  - 'Perspective Walls'                     author(s): Thomrade                                                                        # https://steamcommunity.com/sharedfiles/filedetails/?id=2913113231
  - 'Sumptuously Engraved Floors'           author(s): FeralFerret                                                                     # https://steamcommunity.com/sharedfiles/filedetails/?id=3429443204
  - 'Smooth Floors Look Constructed'        author(s): Jojee                                                                           # https://steamcommunity.com/sharedfiles/filedetails/?id=2909811154
@@ -54,11 +53,12 @@ Masterfork contains RAWs and other assets from the following mods, either in par
  - 'Bourbon's Dark Wells'                  author(s): Bourbon                                                                         # https://steamcommunity.com/sharedfiles/filedetails/?id=3213614758
  - 'Rounded hills'                         author(s): Poss                                                                            # https://steamcommunity.com/sharedfiles/filedetails/?id=2900381145
  - 'Sver's DF Combat Reworked'             author(s): Sver                                                                            # https://www.bay12forums.com/smf/index.php?topic=170474.0
- - 'Writing systems'                       author(s): niemst                                                                          # https://steamcommunity.com/sharedfiles/filedetails/?id=3311055744
  - 'Simon Swerwer Soundtrack'              author(s): Simon Swerwer, DPh Kraken, HippieCab                                            # https://steamcommunity.com/sharedfiles/filedetails/?id=3009635554
  - 'Bourbon's March of Wrath'              author(s): Bourbon, Nikov                                                                  # https://steamcommunity.com/sharedfiles/filedetails/?id=3218038109
  - 'ZM5's Mod Depository'                  author(s): ZM5                                                                             # https://www.bay12forums.com/smf/index.php?topic=158898.0
  - 'More Book Titles'                      author(s): La Creatura                                                                     # https://steamcommunity.com/sharedfiles/filedetails/?id=2925944109
+ - 'Vanilla Weapon Overhaul'               author(s): lmlsna                                                                          # https://steamcommunity.com/sharedfiles/filedetails/?id=2912571821
+ - 'Real Alloys'                           author(s): Haethei                                                                         # https://steamcommunity.com/workshop/filedetails/?id=2917475915
  - ''                                      author(s):                                                                                 # https://
  - ''                                      author(s):                                                                                 # https://
  - ''                                      author(s):                                                                                 # https://

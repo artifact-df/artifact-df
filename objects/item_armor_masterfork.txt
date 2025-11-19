@@ -21,7 +21,7 @@ squamous's notes on armor spawning:
 --METAL_ARMOR_LEVELS]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:3] 1 bars
@@ -34,7 +34,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:125]
+[COVERAGE:200]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:6] 2 bars
@@ -46,7 +46,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:2]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:200]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:6] 2 bars
@@ -58,7 +58,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:2]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:200]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:6] 2 bars
@@ -70,7 +70,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:1]
 [METAL_ARMOR_LEVELS]
 [LAYER:OVER]
-[COVERAGE:50]
+[COVERAGE:75]
 [LAYER_SIZE:10]
 [LAYER_PERMIT:15]
 [MATERIAL_SIZE:1]
@@ -84,7 +84,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:1]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
+[COVERAGE:200]
 [LAYER_SIZE:30]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:4]
@@ -96,7 +96,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:110]
+[COVERAGE:200]
 [LAYER_SIZE:30]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:3]
@@ -108,7 +108,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:110]
+[COVERAGE:200]
 [LAYER_SIZE:30]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:3]
@@ -125,7 +125,7 @@ squamous's notes on armor spawning:
 [LBSTEP:0]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:9] 3 bars
@@ -140,7 +140,7 @@ squamous's notes on armor spawning:
 [UBSTEP:3]{:MAX     Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
 [LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [LAYER:COVER]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:150]
 [MATERIAL_SIZE:3] 1 items
@@ -161,7 +161,7 @@ squamous's notes on armor spawning:
 [LBSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
+[COVERAGE:200]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:12]
@@ -176,7 +176,7 @@ squamous's notes on armor spawning:
 --METAL_ARMOR_LEVELS]
 [LBSTEP:MAX]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:200]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:30]
 [MATERIAL_SIZE:6]
@@ -192,7 +192,7 @@ squamous's notes on armor spawning:
 [UBSTEP:2]
 [LBSTEP:0]
 [LAYER:COVER]
-[COVERAGE:20]
+[COVERAGE:25]
 [LAYER_SIZE:8]
 [LAYER_PERMIT:40]
 [MATERIAL_SIZE:6] 2 bars
@@ -209,7 +209,7 @@ squamous's notes on armor spawning:
 [LBSTEP:0]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:125]
+[COVERAGE:200]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:15] 5 bars
@@ -223,7 +223,7 @@ squamous's notes on armor spawning:
 [UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
 [LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [LAYER:OVER]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:6] 2 bars
@@ -240,7 +240,7 @@ squamous's notes on armor spawning:
 [LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:6] 2 leather
@@ -256,7 +256,7 @@ squamous's notes on armor spawning:
 [UPSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:12]
 [LAYER_PERMIT:12]
 [MATERIAL_SIZE:6] 2 bars
@@ -290,7 +290,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:125]
+[COVERAGE:200]
 [LAYER_SIZE:12]
 [LAYER_PERMIT:12]
 [MATERIAL_SIZE:9] 3 bars
@@ -307,7 +307,7 @@ squamous's notes on armor spawning:
 [LBSTEP:MAX]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:30]
 [MATERIAL_SIZE:9] 3 bars
@@ -324,7 +324,7 @@ squamous's notes on armor spawning:
 [LBSTEP:MAX]
 --SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:30]
 [MATERIAL_SIZE:6] 2 bars
@@ -339,7 +339,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:1]
 [UPSTEP:3]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
 [LAYER:UNDER]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:10]
 [LAYER_PERMIT:15]
 [MATERIAL_SIZE:6] 2 items
@@ -356,7 +356,7 @@ squamous's notes on armor spawning:
 [UPSTEP:1]
 --METAL_ARMOR_LEVELS]
 [LAYER:OVER]
-[COVERAGE:100]
+[COVERAGE:150]
 [LAYER_SIZE:25]
 [LAYER_PERMIT:15]
 [MATERIAL_SIZE:3] 1 bar
@@ -370,7 +370,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [UPSTEP:1]
 [LAYER:OVER]
-[COVERAGE:125]
+[COVERAGE:200]
 [LAYER_SIZE:25]
 [LAYER_PERMIT:15]
 [MATERIAL_SIZE:6] 2 bars

@@ -1,6 +1,6 @@
 [ID:masterfork]
 [NUMERIC_VERSION:55]
-[DISPLAYED_VERSION: (v.1.3.4)]
+[DISPLAYED_VERSION: (v.1.4)]
 [EARLIEST_COMPATIBLE_NUMERIC_VERSION:30]
 [EARLIEST_COMPATIBLE_DISPLAYED_VERSION: (v.1.0.8)]
 [CONFLICTS_WITH_ID:vanilla_bodies]
@@ -55,4 +55,4 @@
 [STEAM_TAG:texture]
 [STEAM_TAG:music]
 [STEAM_TAG:siege]
-[STEAM_CHANGELOG:1.3.4 - fixed siege engine missing sprites.. again.  reverted silver back to being able to make weapons out of it.  made certain metals not appear during worldgen and on merchants.  halfling merchants will now bring bee products to trade (honey, wax, mead).]
+[STEAM_CHANGELOG:1.4 - fixed siege engine missing sprites for realsies.  reverted silver back to being able to make weapons out of it.  made certain metals not appear during worldgen and on merchants.  halfling merchants will now bring bee products to trade (honey, wax, mead).]

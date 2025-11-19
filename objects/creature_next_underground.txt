@@ -287,7 +287,7 @@ creature_next_underground
 		[MULTIPLY_VALUE:4]
 
 [CREATURE:BLIND_CAVE_OGRE]
-	[DESCRIPTION:A large cavern-dwelling humanoid monster.  It has a gaping mouth with many sharp teeth.  It has no eyes and only two digits on each hand and foot.]
+	[DESCRIPTION:A large cavern-dwelling humanoid monster.  It has a gaping mouth with many sharp teeth.  It has no eyes and only two digits on each hand and foot.  It emits an aura of fear.]{:A large cavern-dwelling humanoid monster.  It has a gaping mouth with many sharp teeth.  It has no eyes and only two digits on each hand and foot.}
 	[NAME:blind cave ogre:blind cave ogres:blind cave ogre]
 	[CASTE_NAME:blind cave ogre:blind cave ogres:blind cave ogre]
 	[CREATURE_TILE:'O'][COLOR:7:0:1]
@@ -297,23 +297,54 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[PETVALUE:500]
 	[EVIL]
-	[DIFFICULTY:2][FREQUENCY:50]
-	[POPULATION_NUMBER:10:20]{:5:10
+	[DIFFICULTY:5]{:4}[FREQUENCY:50]
+	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:3]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
 	[CAN_LEARN][SLOW_LEARNER]
-	[CURIOUSBEAST_GUZZLER]{+}
 	[GRASSTRAMPLE:20]
+	[SMELL_TRIGGER:25]{+}
 	[BONECARN]
 	[EXTRAVISION]
 	[CAVE_ADAPT]{+}
 	[LOW_LIGHT_VISION:10000]{+}
+	[PRONE_TO_RAGE:15]{+}
+	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
+	[CURIOUSBEAST_EATER]{+}
+	[CURIOUSBEAST_GUZZLER]{+}
 	[PREFSTRING:echoing howls]
 	[SOUND:ALERT:100:10000:VOCALIZATION:howl:howls:a howl echoing across the caverns]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:25:2500:VOCALIZATION:growl idly:growls idly:an idle growl]{+}
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_FEAR]{+  fear inducing presence.}
+	[PERSONALITY:BASHFUL:0:0:0]{+}
+	[PERSONALITY:EMOTIONALLY_OBSESSIVE:0:0:0]{+}
+	[PERSONALITY:SWAYED_BY_EMOTIONS:0:0:0]{+}
+	[PERSONALITY:DUTIFULNESS:0:0:0]{+}
+	[PERSONALITY:DISCORD:50:75:100]{+}
+	[PERSONALITY:TOLERANT:50:75:100]{+}
+	[PERSONALITY:THOUGHTLESSNESS:50:75:100]{+}
+	[PERSONALITY:POLITENESS:0:25:50]{+}
+	[PERSONALITY:FRIENDLINESS:0:25:50]{+}
+	[PERSONALITY:GREED:25:75:100]{+}
+	[PERSONALITY:PRIVACY:25:75:100]{+}
+	[PERSONALITY:TRUST:0:25:50]{+}
+	[PERSONALITY:ANXIETY_PROPENSITY:25:75:100]{+}
+	[PERSONALITY:HATE_PROPENSITY:25:75:100]{+}
+	[PERSONALITY:ANGER_PROPENSITY:25:75:100]{+}
+	[PERSONALITY:VIOLENT:25:75:100]{+}
+	[PERSONALITY:IMMODERATION:25:75:100]{+}
+	[PERSONALITY:CRUELTY:50:75:100]{+}
+	[PERSONALITY:VANITY:0:25:75]{+}
+	[PERSONALITY:ALTRUISM:0:0:50]{+}
+	[PERSONALITY:IMAGINATION:0:25:75]{+}
+	[PERSONALITY:ABSTRACT_INCLINED:0:25:75]{+}
+	[PERSONALITY:ART_INCLINED:0:25:75]{+}
+	[PERSONALITY:ASSERTIVENESS:50:75:100]{+}
+	[PERSONALITY:EXCITEMENT_SEEKING:25:75:100]{+}
+	[SYNDROME_DILUTION_FACTOR:FEAR:150]{+}
+	[SYNDROME_DILUTION_FACTOR:INEBRIATION:133]{+}
 	[BODY:HUMANOID_NECK:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:2FINGERS:2TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:MONSTER_MATERIALS]{:STANDARD_MATERIALS}
 	[BODY_DETAIL_PLAN:MONSTER_TISSUES]{:STANDARD_TISSUES}
@@ -332,15 +363,47 @@ creature_next_underground
 	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
 	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
 	[CREATURE_CLASS:GENERAL_POISON]
+	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:150]{+  revison: 50% resistance to poison.}
 	[GETS_WOUND_INFECTIONS]
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+	[RELSIZE:BY_CATEGORY:BRAIN:75]{+  smaller brain.}
+	[USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]{+}
+	[USE_MATERIAL_TEMPLATE:SPIT:SPIT_TEMPLATE]{+
+	[SECRETION:LOCAL_CREATURE_MAT:SWEAT:LIQUID:BY_CATEGORY:ALL:SKIN:EXERTION]{+}
+	[CAN_DO_INTERACTION:PET_ANIMAL]{+}
+		[CDI:ADV_NAME:Pet animal]{+
+		[CDI:USAGE_HINT:GREETING]{+
+		[CDI:BP_REQUIRED:BY_TYPE:GRASP]{+
+		[CDI:VERB:pet:pets:pets]{+
+		[CDI:TARGET:A:SELF_ONLY]{+
+		[CDI:TARGET:B:TOUCHABLE]{+
+		[CDI:TARGET_RANGE:B:1]{+
+		[CDI:MAX_TARGET_NUMBER:B:1]{+
+		[CDI:WAIT_PERIOD:20]{+
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]{+}
+	    [CDI:TOKEN:SPIT]{+
+		[CDI:ADV_NAME:Spit]{+
+		[CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]{+
+		[CDI:USAGE_HINT:TORMENT]{+
+		[CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]{+
+		[CDI:MATERIAL:LOCAL_CREATURE_MAT:SPIT:LIQUID_GLOB]{+
+		[CDI:VERB:spit:spits:NA]{+
+		[CDI:TARGET:C:LINE_OF_SIGHT]{+
+		[CDI:TARGET_RANGE:C:15]{+
+		[CDI:MAX_TARGET_NUMBER:C:1]{+
+		[CDI:WAIT_PERIOD:30]{+
 	[BODY_SIZE:0:0:250000]
 	[BODY_SIZE:1:168:2500000]
 	[BODY_SIZE:20:0:7000000]
+	[SELECT_TISSUE:FAT]{+}
+	    [RELATIVE_THICKNESS:2]{+
+		[INSULATION:150]{+
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[APP_MOD_IMPORTANCE:480]{+}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+		[APP_MOD_IMPORTANCE:520]{+}
 	[MAXAGE:20:30]
 	[CHILD:10][BABY:1][MULTIPLE_LITTER_RARE]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
@@ -364,7 +427,7 @@ creature_next_underground
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
 	[CAN_DO_INTERACTION:OGRE_HOWL]{+}
@@ -376,6 +439,26 @@ creature_next_underground
 		[CDI:MAX_TARGET_NUMBER:A:99]
 		[CDI:WAIT_PERIOD:250]
 	[CREATURE_CLASS:CAN_GROWL_OGRE]{+  immune to its own growl/roar.}
+	{  revision: new stats.}
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]              +
+	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]             +
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]             +
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                 -
+	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]		    --
+	[MENT_ATT_RANGE:LINGUISTIC_ABILITY:0:400:600:750:800:900:1100]		    --
+	[MENT_ATT_RANGE:SOCIAL_AWARENESS:0:400:600:750:800:900:1100]		    --
+	[MENT_ATT_RANGE:EMPATHY:0:0:0:0:0:0:0]                                  unattainable
+		[MENT_ATT_RATES:EMPATHY:NONE:NONE:NONE:NONE]
+	[MENT_ATT_RANGE:MEMORY:0:400:600:750:800:900:1100]		                --
+	[MENT_ATT_RANGE:FOCUS:0:400:600:750:800:900:1100]		                --
+	[MENT_ATT_RANGE:WILLPOWER:150:600:800:900:1000:1100:1500]               -
+	[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
+	[NATURAL_SKILL:BITE:4]{+  revision: natural combat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:4]{+
+	[NATURAL_SKILL:MELEE_COMBAT:4]{+
+	[NATURAL_SKILL:DODGING:2]{+
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:5]{+
+	[NATURAL_SKILL:DISCIPLINE:2]{+
 	[EQUIPS]
 	[CANOPENDOORS]
 	[ALL_ACTIVE]
@@ -387,22 +470,19 @@ creature_next_underground
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[CASTE_NAME:blind cave ogress:blind cave ogresses:blind cave ogress]{+}
-		[BABYNAME:blind cave ogress baby girl:blind cave ogress baby girls]{+}
-		[CHILDNAME:blind cave ogress girl:blind cave ogress girls]{+}
-		[DESCRIPTION:A large, hairless, and monstrous woman with only two digits on each hand and foot.  She has no eyes yet somehow sees; she scarcely seems to have more than a gaping, toothy grin.  Barrel-chested, her neck seems to disappear into her broad shoulders.  She doesn't care that she's naked.]{+}
 		[MULTIPLE_LITTER_RARE]
+		[DESCRIPTION:A large, hairless, and monstrous woman with only two digits on each hand and foot.  She has no eyes yet somehow sees; she scarcely seems to have more than a gaping, toothy grin.  Barrel-chested, her neck seems to disappear into her broad shoulders.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[BABYNAME:blind cave ogre baby boy:blind cave ogre baby boys]{+}
-		[CHILDNAME:blind cave ogre boy:blind cave ogre boys]{+}
 		[DESCRIPTION:A large, hairless, and monstrous man with only two digits on each hand and foot.  He has no eyes yet somehow sees; he scarcely seems to have more than a gaping, toothy grin.  Barrel-chested, his neck seems to disappear into his broad shoulders.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
-				[TLCM_NOUN:skin:SINGULAR]
+				[TLCM_NOUN:hide:SINGULAR]{:skin:SINGULAR
+	[SELECT_MATERIAL:ALL]{+}
+		[MULTIPLY_VALUE:3]{+
 
 [CREATURE:CAP_HOPPER]
 	[DESCRIPTION:A tiny amphibian with a long prehensile tail.  It lives in underground swamps and tower-cap forests on which it feeds.]
