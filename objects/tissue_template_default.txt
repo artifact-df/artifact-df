@@ -406,7 +406,7 @@ tissue_template_default
 	[TISSUE_SHAPE:LAYER]
 
 [TISSUE_TEMPLATE:CHITIN_TEMPLATE]
-	[TISSUE_NAME:carapace:NP]{:chitin}
+	[TISSUE_NAME:chitin:NP]
 	--SCARS]                   Revision: chitin creatures usually molt leaving no scars.  -zey.}
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:CHITIN]
 	[RELATIVE_THICKNESS:2]{:1

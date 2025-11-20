@@ -9,12 +9,13 @@ creature_large_tropical
 	[CHILD:10][GENERAL_CHILD_NAME:elephant calf:elephant calves]
 	[CREATURE_TILE:'E'][COLOR:7:0:0]
 	[CREATURE_CLASS:MAMMAL]
-	[PETVALUE:650]{:500
-	[FREQUENCY:20]{+}
-	[PET_EXOTIC]{:PET}
+	[PETVALUE:535]{:500
+	[PET]
 	[STANDARD_GRAZER] don't have browsing trees yet
+	[PACK_ANIMAL]
+	[TRADE_CAPACITY:5000]{+}
 	[MOUNT_EXOTIC]
-	--TRAINABLE]
+	[TRAINABLE]
 	[LARGE_ROAMING]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]{:ANY_TROPICAL_FOREST}
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -22,7 +23,8 @@ creature_large_tropical
 	[BIOME:GRASSLAND_TROPICAL]{+}
 	[POPULATION_NUMBER:30:60]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[MEANDERER][NATURAL]--BENIGN]
+	[BENIGN][MEANDERER][NATURAL]
+	[NATURAL_SKILL:BITE:3]{+}
 	[PREFSTRING:strength]
 	[PREFSTRING:amazing trunks]
 	[PREFSTRING:calves' spirited antics]
@@ -40,6 +42,8 @@ creature_large_tropical
 		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
 			[STATE_NAME:ALL_SOLID:ivory]
 			[STATE_ADJ:ALL_SOLID:ivory]
+	[SELECT_MATERIAL:IVORY]{+  revision: more valuable ivory.}
+		[MATERIAL_VALUE:3]{+
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]
 			[TISSUE_NAME:ivory:NP]
@@ -81,7 +85,6 @@ creature_large_tropical
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:900]{+   -10% }
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_WITH]
@@ -94,16 +97,13 @@ creature_large_tropical
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[BENIGN]{+ females are benign.}
 		[POP_RATIO:3]{+}
-		[PACK_ANIMAL][WAGON_PULLER][TRADE_CAPACITY:5000]{+}
 		[CASTE_NAME:elephant cow:elephant cows:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  She lifts plants with her trunk and attacks with long tusks when she gets angry.  Her large ears flap in the heat.]{+}
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:2]{+ males are less common in herds}
-		[PRONE_TO_RAGE:5]{+}
-		[TRAINABLE_WAR]{+}
+		[PRONE_TO_RAGE:8]{+}
 		[CASTE_NAME:elephant bull:elephant bulls:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  He lifts plants with his trunk and attacks with long tusks when he gets angry.  His large ears flap in the heat.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
@@ -3754,13 +3754,13 @@ creature_large_tropical
 	[VISION_ARC:50:310]
 	[TRAINABLE_WAR]
 	[LARGE_ROAMING]
+	[NATURAL_SKILL:BITE:3]{+}
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:20]{+}
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:3:7]
-	[MEANDERER][NATURAL] removed benign
+	[MEANDERER][NATURAL][BENIGN]
 	[PREFSTRING:horns]
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN_NUMBERED]
@@ -3771,6 +3771,8 @@ creature_large_tropical
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]
 			[TISSUE_NAME:ivory:NP]{+}
+	[SELECT_MATERIAL:HORN]{+  revision: more valuable ivory.}
+		[MATERIAL_VALUE:2]{+
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
