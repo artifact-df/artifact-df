@@ -7,6 +7,10 @@ btc1_tweaks.mfork_titan_worship=function(lines,options,add_to_body,add_to_body_u
 		lines[#lines+1]="[POWER]" -- impersonates deities
 		lines[#lines+1]="[SPREAD_EVIL_SPHERES_IF_RULER]"
 		lines[#lines+1]="[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]"
+		lines[#lines+1]="[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]" -- 0.5x damage taken from all materials
+		lines[#lines+1]="[MATERIAL_FORCE_MULTIPLIER:INORGANIC:STEEL:5:4]" -- 1.25x damage taken from steel
+		lines[#lines+1]="[MATERIAL_FORCE_MULTIPLIER:INORGANIC:SILVER:6:4]" -- 1.5x damage taken from silver
+		lines[#lines+1]="[MATERIAL_FORCE_MULTIPLIER:INORGANIC:MITHRIL:2:1]" -- 2.0x damage taken from mithril
 	end
 end
 
@@ -478,27 +482,6 @@ interactions.mfork_secrets_necromancy=function(idx,sph)
         [IT_REQUIRES:MORTAL]
         [IT_REQUIRES:CAN_LEARN]
         [IT_REQUIRES:CAN_SPEAK]
-        [IT_CANNOT_HAVE_SYNDROME_CLASS:WERECURSE]
-        [IT_CANNOT_HAVE_SYNDROME_CLASS:VAMPCURSE]
-        [IT_CANNOT_HAVE_SYNDROME_CLASS:DISTURBANCE_CURSE]
-        [IT_CANNOT_HAVE_SYNDROME_CLASS:RAISED_UNDEAD]
-        [IT_CANNOT_HAVE_SYNDROME_CLASS:RAISED_GHOST]
-        [IT_CANNOT_HAVE_SYNDROME_CLASS:GHOUL]
-		[IT_CANNOT_HAVE_SYNDROME_CLASS:DISTURBED_DEAD]
-		[IT_CANNOT_HAVE_SYNDROME_CLASS:SECRET]// new
-		[IT_IMMUNE_CREATURE:DWARF:ALL]// only human nobles can discover the secret
-		[IT_IMMUNE_CREATURE:HALFLING_CHP:ALL]
-		[IT_IMMUNE_CREATURE:DARK_ELF_FFF:ALL]
-		[IT_IMMUNE_CREATURE:ELF:ALL]
-		[IT_IMMUNE_CREATURE:HIGH_ELF_CHP:ALL]
-		[IT_IMMUNE_CREATURE:GOBLIN:ALL]
-		[IT_IMMUNE_CREATURE:ORC_CHP:ALL]
-		[IT_IMMUNE_CREATURE:KOBOLD:ALL]
-		[IT_IMMUNE_CREATURE:HUMAN:FEMALE]
-		[IT_IMMUNE_CREATURE:HUMAN:MALE]
-		[IT_AFFECTED_CREATURE:HUMAN:FEMALE_NOBLE]
-		[IT_AFFECTED_CREATURE:HUMAN:MALE_NOBLE]
-		[IT_IMMUNE_CLASS:ANIMAL_PERSON]
     [I_EFFECT:ADD_SYNDROME]
         [IE_TARGET:A]
         [IE_IMMEDIATE]
@@ -511,8 +494,8 @@ interactions.mfork_secrets_necromancy=function(idx,sph)
             [CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0:ABRUPT]
             [CE_ADD_TAG:NOEXERT:NO_AGING:STERILE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]// added sterile
             [CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-50:FACET:EMOTIONALLY_OBSESSIVE:-50:FACET:SWAYED_BY_EMOTIONS:-50:FACET:GREGARIOUSNESS:-20:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
-			[CE_MENT_ATT_CHANGE:EMPATHY:50:0]// necromancers are less empathetic
+			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-20:FACET:EMOTIONALLY_OBSESSIVE:-20:FACET:SWAYED_BY_EMOTIONS:-20:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
+			[CE_MENT_ATT_CHANGE:EMPATHY:80:0]// necromancers are less empathetic
 		    [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// 0.5x damage taken from all materials
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:5:4:ABRUPT]// 1.25x damage taken from steel
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]// 1.5x damage taken from silver
@@ -1091,7 +1074,7 @@ creatures.fb.elemental=function(layer_type,tok)
 	lines[#lines+1]="[NAME:"..name_str
 	lines[#lines+1]="[CASTE_NAME:"..name_str
 	
-	return {raws=lines,weight=0.25}
+	return {raws=lines,weight=0.15}
 end
 
 -- new generated forgotten beasts
@@ -1137,5 +1120,5 @@ creatures.fb.unbidden=function(layer_type,tok)
     tbl[#tbl+1]="[CREATURE_TILE:"..tile_string(rcp.tile).."]"
     build_procgen_creature(rcp,tbl,options)
     -- Weight is a float; all vanilla objects have weight 1
-    return {creature=tbl,weight=0.25}
+    return {creature=tbl,weight=0.15}
 end

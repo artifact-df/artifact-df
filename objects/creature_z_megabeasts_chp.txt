@@ -36,7 +36,6 @@ creature_megabeasts_chp
 	[BONECARN]
 	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:roars]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
