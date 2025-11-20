@@ -1,17 +1,19 @@
 -- make all large creatures into powers
-btc1_tweaks.titan_worship=function(lines,options,add_to_body,add_to_body_unique,add_tweak_candidate)
+btc1_tweaks.mfork_titan_worship=function(lines,options,add_to_body,add_to_body_unique,add_tweak_candidate)
 	if options.body_size>=500000 then -- described as "very large", graphics size cutoff
 		options.can_learn=true -- for flavor text
 		lines[#lines+1]="[INTELLIGENT]"
 		lines[#lines+1]="[SUPERNATURAL]" -- knows secrets according to their spheres
 		lines[#lines+1]="[POWER]" -- impersonates deities
 		lines[#lines+1]="[SPREAD_EVIL_SPHERES_IF_RULER]"
-		lines[#lines+1]="[APPLY_CREATURE_VARIATION:AURA_TERROR]"
+		lines[#lines+1]="[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]"
 	end
 end
 
+body=nil-- remove old rcp bodies
+
 -- rcp tweaks
-btc1_tweaks.experiment_tweaks=function(lines,options,add_to_body,add_to_body_unique,add_tweak_candidate)
+btc1_tweaks.mfork_rcp_tweaks=function(lines,options,add_to_body,add_to_body_unique,add_tweak_candidate)
 tweaks={
     WINGS={
         body=function(body_str,options) add_unique(body_str,"RCP_TWO_WINGS") end,
@@ -437,8 +439,10 @@ tweaks={
 }
 end
 
--- redefined necromancy, increased summon wait periods
-interactions.secrets.necromancymfork=function(idx,sph)
+interactions.secrets.necromancer=nil-- disables vanilla necromancy
+
+-- redefined necromancy, increased summon wait periods, new abilities, resistances and weakness, etc.
+interactions.mfork_secrets_necromancy=function(idx,sph)
     if sph and sph~="DEATH" then return nil end -- no sph means it generates anyway!
     local ropar=random_object_parameters
     local animate_token=ropar.token_prefix.."SECRET_ANIMATE_"..tostring(idx)
@@ -481,7 +485,7 @@ interactions.secrets.necromancymfork=function(idx,sph)
         [IT_CANNOT_HAVE_SYNDROME_CLASS:RAISED_GHOST]
         [IT_CANNOT_HAVE_SYNDROME_CLASS:GHOUL]
 		[IT_CANNOT_HAVE_SYNDROME_CLASS:DISTURBED_DEAD]
-		[IT_CANNOT_HAVE_SYNDROME_CLASS:SECRET] -- new
+		[IT_CANNOT_HAVE_SYNDROME_CLASS:SECRET]// new
 		[IT_IMMUNE_CREATURE:DWARF:ALL]// only human nobles can discover the secret
 		[IT_IMMUNE_CREATURE:HALFLING_CHP:ALL]
 		[IT_IMMUNE_CREATURE:DARK_ELF_FFF:ALL]
@@ -501,19 +505,18 @@ interactions.secrets.necromancymfork=function(idx,sph)
         [IE_ARENA_NAME:Necromancer]
         [SYNDROME]
             [SYN_CLASS:NECROMANCER]
-			[SYN_CLASS:SECRET]// new identifier
-			[SYN_IMMUNE_CLASS:DWARF_GUILD]// new
             [SYN_CONCENTRATION_ADDED:1000:0]//just in case
+			[SYN_NO_HOSPITAL]//new
             [CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT]
             [CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0:ABRUPT]
-            [CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:STERILE:NOFEAR]// made necromancers sterile and nofear
-            ]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]
+            [CE_ADD_TAG:NOEXERT:NO_AGING:STERILE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]// added sterile
             [CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-50:FACET:GREGARIOUSNESS:-20:FACET:BASHFUL:-20:FACET:PRIVACY:20:FACET:TOLERANT:20:FACET:EMOTIONALLY_OBSESSIVE:-50:FACET:SWAYED_BY_EMOTIONS:-50:START:0:ABRUPT]// new personality alterations
-			[CE_MENT_ATT_CHANGE:EMPATHY:75:0]// less empathetic
-		    [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// 50% resistant to all materials
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:5:1:ABRUPT]// 20% vulnerability to silver
-		    [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:2:1:ABRUPT]// 50% vulnerability to mithril
+			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-50:FACET:EMOTIONALLY_OBSESSIVE:-50:FACET:SWAYED_BY_EMOTIONS:-50:FACET:GREGARIOUSNESS:-20:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
+			[CE_MENT_ATT_CHANGE:EMPATHY:50:0]// necromancers are less empathetic
+		    [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// 0.5x damage taken from all materials
+			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:5:4:ABRUPT]// 1.25x damage taken from steel
+			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]// 1.5x damage taken from silver
+		    [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:2:1:ABRUPT]// 2.0x damage taken from mithril
             [CE_CAN_DO_INTERACTION:START:0:ABRUPT]
                 [CDI:ADV_NAME:Animate corpse]
                 str="[CDI:INTERACTION:]]..animate_token..[[]
@@ -523,14 +526,14 @@ interactions.secrets.necromancymfork=function(idx,sph)
                 [CDI:TARGET_VERB:shudder and begin to move:shudders and begins to move]
                 [CDI:WAIT_PERIOD:100]
                 [CDI:DEFAULT_ICON:ADVENTURE_INTERACTION_ICON_ANIMATE_CORPSE]
-			[CE_CAN_DO_INTERACTION:START:0:ABRUPT]-- new ability
+			[CE_CAN_DO_INTERACTION:START:0:ABRUPT]// new ability
 				[CDI:ADV_NAME:Summon skeleton]
 				[CDI:INTERACTION:SUMMON_SKELETON]
 				[CDI:VERB:gesture:gestures:NA]
 				[CDI:TARGET_VERB:breaks free from the ground:breaks free from the ground]
 				[CDI:WAIT_PERIOD:600]
                 [CDI:DEFAULT_ICON:ADVENTURE_INTERACTION_ICON_ANIMATE_CORPSE]
-            [CAN_DO_INTERACTION:AURA_FEAR:START:0:ABRUPT]-- new ability
+            [CAN_DO_INTERACTION:AURA_FEAR:START:0:ABRUPT]// new ability
                 [CDI:ADV_NAME:Fearsome]
                 [CDI:USAGE_HINT:ATTACK]
                 [CDI:TARGET:A:LINE_OF_SIGHT]
@@ -539,7 +542,7 @@ interactions.secrets.necromancymfork=function(idx,sph)
                 [CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
                 [CDI:FREE_ACTION]
                 [CDI:WAIT_PERIOD:10]
-            [CAN_DO_INTERACTION:REGENERATE_GOLEM]-- regeneration heal ability
+            [CAN_DO_INTERACTION:REGENERATE_GOLEM]// regeneration heal ability
                 [CDI:ADV_NAME:Regenerate]
                 [CDI:USAGE_HINT:FLEEING]
                 [CDI:USAGE_HINT:DEFEND]
@@ -689,6 +692,10 @@ interactions.secrets.necromancymfork=function(idx,sph)
 							[CE_PHYS_ATT_CHANGE:STRENGTH:200:1000:TOUGHNESS:200:1000:START:0:ABRUPT]
 							[CE_ADD_TAG:NO_AGING:NOT_LIVING:STERILE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]
 							[CE_REMOVE_TAG:HAS_BLOOD:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
+							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// 0.5x damage taken from all materials
+							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:5:4:ABRUPT]// 1.25x damage taken from steel
+							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]// 1.5x damage taken from silver
+							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:2:1:ABRUPT]// 2.0x damage taken from mithril
         ]])
         local t,et=basic_lieutenant_powers(ghost_token)
         tbl=table_merge(tbl,table_merge(t,et))
@@ -736,16 +743,22 @@ interactions.secrets.necromancymfork=function(idx,sph)
                 else 1/2 chance CE_SPEED_CHANGE:SPEED_PERC:20:START:0:ABRUPT
                 [CE_ADD_TAG:NO_AGING:NOT_LIVING:OPPOSED_TO_LIFE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]
                 [CE_REMOVE_TAG:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
+                [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// 0.5x damage taken from all materials
+                [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:5:4:ABRUPT]// 1.25x damage taken from steel
+                [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]// 1.5x damage taken from silver
+                [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:2:1:ABRUPT]// 2.0x damage taken from mithril
                 [CE_SPECIAL_ATTACK_INTERACTION:INTERACTION:]]..ghoul_token..":BP:BY_CATEGORY:MOUTH:BP:BY_CATEGORY:TOOTH:START:0:ABRUPT]"
         )
     end
     local spheres={"DEATH"}
     if summon then spheres[2]="NIGHTMARES" end
-    return {raws=tbl,weight=10,spheres=spheres}--weighted 10x
+    return {raws=tbl,weight=1,spheres=spheres}
 end
 
+interactions.curse.major.vampire=nil-- disables vanilla vampires
+
 -- redefined vampires
-interactions.curse.major.mforkvampirism=function(idx,tok)
+interactions.mfork_curses_vampirism=function(idx,tok)
     return {raws={
     "[IS_HIST_STRING_1: cursed ]",
     "[IS_HIST_STRING_2: to prowl the night in search of blood]",
@@ -778,6 +791,7 @@ interactions.curse.major.mforkvampirism=function(idx,tok)
     --SOME STANDARD UNDEAD PROPERTIES, BUT NOT ALL OF THEM
         "[SYN_CLASS:VAMPCURSE]",
         "[SYN_CONCENTRATION_ADDED:1000:0]",--just in case
+		"[SYN_NO_HOSPITAL]",--new
         "[CE_ADD_TAG:BLOODSUCKER:NO_AGING:STERILE:NOT_LIVING:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:PARALYZEIMMUNE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0:ABRUPT]",
 		"[CE_PHYS_ATT_CHANGE:STRENGTH:50:0:TOUGHNESS:50:0:AGILITY:50:0:ENDURANCE:50:0:DISEASE_RESISTANCE:50:0:START:0:ABRUPT]",-- weakens the target always
 		"[CE_SPEED_CHANGE:SPEED_PERC:80:START:0:ABRUPT]",
@@ -787,23 +801,25 @@ interactions.curse.major.mforkvampirism=function(idx,tok)
 		"[CE_MENT_ATT_CHANGE:KINESTHETIC_SENSE:50:0:START:0:ABRUPT]",
 		"[CE_MENT_ATT_CHANGE:WILLPOWER:50:0:START:0:ABRUPT]",
 		"[CE_SPECIAL_ATTACK_INTERACTION:INTERACTION:"..tok..":BP:BY_CATEGORY:MOUTH:BP:BY_CATEGORY:TOOTH:START:0:ABRUPT]",-- vampires can spread vampirism similar to werecreatures
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]",-- 50% resistant to all materials
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:5:1:ABRUPT]",-- 20% vulnerability to silver
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:2:1:ABRUPT]",-- 50% vulnerability to mithril
+		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]",-- 0.5x damage taken from all materials
+		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:5:4:ABRUPT]",-- 1.25x damage taken from steel
+		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]",-- 1.5x damage taken from silver
+		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:2:1:ABRUPT]",-- 2.0x damage taken from mithril
         "[CE_BODY_MAT_INTERACTION:MAT_TOKEN:RESERVED_BLOOD:START:0:ABRUPT]",
         "[CE:INTERACTION:"..tok.."]",
             "[CE:SYNDROME_TAG:SYN_INGESTED]",
                     "[CE:SYNDROME_TAG:SYN_INJECTED]",
         "[CE_DISPLAY_TILE:TILE:165:4:0:0:START:0:CAN_BE_HIDDEN:ABRUPT]",
-		"[CE_CHANGE_PERSONALITY:FACET:STRESS_VULNERABILITY:-25:FACET:ANXIETY_PROPENSITY:25:FACET:LOVE_PROPENSITY:-66:BASHFUL:-25:FACET:PRIVACY:66:FACET:TRUST:-66:FACET:TOLERANT:25:FACET:EMOTIONALLY_OBSESSIVE:-66:FACET:SWAYED_BY_EMOTIONS:-66:START:0:ABRUPT]",--new
+		"[CE_CHANGE_PERSONALITY:FACET:STRESS_VULNERABILITY:-20:FACET:ANXIETY_PROPENSITY:20:FACET:LOVE_PROPENSITY:-20:BASHFUL:20:FACET:PRIVACY:50:FACET:TRUST:-50:FACET:TOLERANT:20:FACET:EMOTIONALLY_OBSESSIVE:-20:FACET:SWAYED_BY_EMOTIONS:-20:START:0:ABRUPT]",-- new personality facets
+		"[CE_MENT_ATT_CHANGE:EMPATHY:80:0]",-- vampires are less empathetic
         "[CE_DISPLAY_NAME:NAME:vampire:vampires:vampiric:START:0:CAN_BE_HIDDEN:ABRUPT]",
         "[CE_BP_APPEARANCE_MODIFIER:START:0:BP:BY_CATEGORY:TOOTH:APPEARANCE_MODIFIER:LENGTH:150:ABRUPT]",
             "[CE:COUNTER_TRIGGER:DRINKING_BLOOD:1:NONE:REQUIRED]",
-		"[CE_BP_APPEARANCE_MODIFIER:START:0:BP:BY_CATEGORY:TOOTH:APPEARANCE_MODIFIER:BROADNESS:75:ABRUPT]",-- new, narrower teeth
+		"[CE_BP_APPEARANCE_MODIFIER:START:0:BP:BY_CATEGORY:TOOTH:APPEARANCE_MODIFIER:BROADNESS:75:ABRUPT]",-- new narrower teeth
 			"[CE:COUNTER_TRIGGER:DRINKING_BLOOD:1:NONE:REQUIRED]",
-        "[CE_SENSE_CREATURE_CLASS:START:0:CLASS:GENERAL_POISON:15:4:0:1:ABRUPT]"
-		"[CE_PHYS_ATT_CHANGE:STRENGTH:250:100:TOUGHNESS:250:100:AGILITY:250:100:ENDURANCE:250:100:DISEASE_RESISTANCE:250:100:START:0:ABRUPT]",-- Strengthens the target
-			"[CE:COUNTER_TRIGGER:TIME_SINCE_SUCKED_BLOOD:NONE:2400:REQUIRED:DWF_STRETCH:144]",-- (2 day duration)  Prevents the above strengthening effect from working unless the target has recently sucked blood (vampires become Thirsty at 1200)
+        "[CE_SENSE_CREATURE_CLASS:START:0:CLASS:GENERAL_POISON:15:4:0:1:ABRUPT]",
+		"[CE_PHYS_ATT_CHANGE:STRENGTH:250:100:TOUGHNESS:250:100:AGILITY:250:100:ENDURANCE:250:100:DISEASE_RESISTANCE:250:100:START:0:ABRUPT]",-- strengthens the target
+			"[CE:COUNTER_TRIGGER:TIME_SINCE_SUCKED_BLOOD:NONE:2400:REQUIRED:DWF_STRETCH:144]",-- 2 day duration, prevents the above strengthening effect from working unless the target has recently sucked blood vampires become thirsty at 1200
 		"[CE_SPEED_CHANGE:SPEED_PERC:120:START:0:ABRUPT]",
 			"[CE:COUNTER_TRIGGER:TIME_SINCE_SUCKED_BLOOD:NONE:2400:REQUIRED:DWF_STRETCH:144]",
 		"[CE_MENT_ATT_CHANGE:FOCUS:250:100:START:0:ABRUPT]",
@@ -840,11 +856,11 @@ interactions.curse.major.mforkvampirism=function(idx,tok)
 		    "[CDI:MAX_TARGET_NUMBER:A:1]",
 		    "[CDI:FREE_ACTION]",
 		    "[CDI:WAIT_PERIOD:100]",
-    },weight=10}--weighted 10x
+    },weight=1}
 end
 
 -- adamantine alloys
-preprocess.adamantine_alloys=function()
+preprocess.mfork_adamantine_alloys=function()
     if not random_object_parameters.main_world_randoms then return end
     local l=get_debug_logger(2)
     local lines={}
@@ -1031,15 +1047,14 @@ creatures.fb.elemental=function(layer_type,tok)
 		[NO_EAT][NO_DRINK]
 		[DIFFICULTY:10]
 		
-		[NATURAL_SKILL:WRESTLING:10]
-		[NATURAL_SKILL:BITE:10]
-		[NATURAL_SKILL:GRASP_STRIKE:10]
-		[NATURAL_SKILL:STANCE_STRIKE:10]
-		[NATURAL_SKILL:MELEE_COMBAT:10]
-		[NATURAL_SKILL:DODGING:10]
-		[NATURAL_SKILL:SITUATIONAL_AWARENESS:10]
+		[NATURAL_SKILL:WRESTLING:6]
+		[NATURAL_SKILL:BITE:6]
+		[NATURAL_SKILL:GRASP_STRIKE:6]
+		[NATURAL_SKILL:STANCE_STRIKE:6]
+		[NATURAL_SKILL:MELEE_COMBAT:6]
+		[NATURAL_SKILL:DODGING:6]
+		[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]
 		[LARGE_PREDATOR]
-		[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:3]--33% force resistance
 	]])
 	
 	-- Create a water elemental in water layers, otherwise use another type
@@ -1076,7 +1091,7 @@ creatures.fb.elemental=function(layer_type,tok)
 	lines[#lines+1]="[NAME:"..name_str
 	lines[#lines+1]="[CASTE_NAME:"..name_str
 	
-	return {raws=lines,weight=1.5}
+	return {raws=lines,weight=0.25}
 end
 
 -- new generated forgotten beasts
@@ -1110,7 +1125,6 @@ creatures.fb.unbidden=function(layer_type,tok)
     [NATURAL_SKILL:DODGING:10]
     [NATURAL_SKILL:SITUATIONAL_AWARENESS:10]
     [LARGE_PREDATOR]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:3]--33% force resistance
     ]])
     add_regular_tokens(tbl,options)
     tbl[#tbl+1]=layer_type==0 and "[BIOME:SUBTERRANEAN_WATER]" or "[BIOME:SUBTERRANEAN_CHASM]"
@@ -1123,5 +1137,5 @@ creatures.fb.unbidden=function(layer_type,tok)
     tbl[#tbl+1]="[CREATURE_TILE:"..tile_string(rcp.tile).."]"
     build_procgen_creature(rcp,tbl,options)
     -- Weight is a float; all vanilla objects have weight 1
-    return {creature=tbl,weight=1.5}
+    return {creature=tbl,weight=0.25}
 end

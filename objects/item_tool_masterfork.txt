@@ -31,7 +31,7 @@ item_tool_masterfork
 [NAME:bowl:bowls]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+  zey: a bit grim but possible?}
+[CERAMIC_MAT]{+}
 [TOOL_USE:MEAL_CONTAINER]
 [TILE:248]
 [SIZE:100]
@@ -43,7 +43,7 @@ item_tool_masterfork
 [NAME:mortar:mortars]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+  zey: a bit grim but possible?}
+[CERAMIC_MAT]{+}
 [TOOL_USE:GRIND_POWDER_RECEPTACLE]
 [TILE:248]
 [SIZE:100]
@@ -55,7 +55,7 @@ item_tool_masterfork
 [NAME:pestle:pestles]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+  zey: a bit grim but possible?}
+[CERAMIC_MAT]{+}
 [TOOL_USE:GRIND_POWDER_GRINDER]
 [TILE:'/']
 [SIZE:20]
@@ -72,7 +72,7 @@ ITEM_TOOL_FORK_CARVING
 [NAME:nest box:nest boxes]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+}
+[CERAMIC_MAT]{+}
 [TOOL_USE:NEST_BOX]
 [TILE:8]
 [SIZE:1000]
@@ -82,10 +82,9 @@ ITEM_TOOL_FORK_CARVING
 [ITEM_TOOL:ITEM_TOOL_JUG]
 [NAME:jug:jugs]
 [VALUE:12]{:10
---HARD_MAT]
+[HARD_MAT]
 [CERAMIC_MAT]{+}
 [GLASS_MAT]{+}
-[METAL_MAT]{+}
 [TOOL_USE:LIQUID_CONTAINER]
 [TILE:229]
 [SIZE:300]
@@ -105,13 +104,14 @@ ITEM_TOOL_FORK_CARVING
 [TOOL_USE:FOOD_STORAGE]
 [TILE:232]
 [SIZE:5000]
-[MATERIAL_SIZE:9] {:1, parity with metal barrels.}
+[MATERIAL_SIZE:6] {:1, parity with metal barrels.}
 [CONTAINER_CAPACITY:60000]
 
 [ITEM_TOOL:ITEM_TOOL_HIVE]
 [NAME:hive:hives]
 [VALUE:10]
 [HARD_MAT]
+[CERAMIC_MAT]{+}
 [TOOL_USE:HIVE]
 [TILE:22]
 [SIZE:2000]
@@ -130,6 +130,7 @@ ITEM_TOOL_FORK_CARVING
 [NAME:pouch:pouches]
 [VALUE:10]
 [SOFT_MAT]
+[LEATHER_MAT]{+}
 [TOOL_USE:SMALL_OBJECT_STORAGE]
 [TILE:173]
 [SIZE:100]
@@ -178,7 +179,6 @@ ITEM_TOOL_FORK_CARVING
 [NAME:scroll rollers:scroll rollers]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+}
 [TOOL_USE:ROLL_UP_SHEET]
 [TILE:246]
 [SIZE:100]
@@ -191,7 +191,6 @@ ITEM_TOOL_FORK_CARVING
 [VALUE:10]
 [HARD_MAT]
 [LEATHER_MAT]{+}
-[BONE_MAT]{+}
 [TOOL_USE:PROTECT_FOLDED_SHEETS]
 [TILE:246]
 [SIZE:100]
@@ -225,7 +224,8 @@ ITEM_TOOL_FORK_CARVING
 [NAME:bookcase:bookcases]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+}
+[CERAMIC_MAT]{+}
+[GLASS_MAT]{+}
 [TOOL_USE:BOOKCASE]
 [FURNITURE]
 [TILE:240]
@@ -238,7 +238,6 @@ ITEM_TOOL_FORK_CARVING
 [NAME:helve:helves]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+}
 [TILE:'\']
 [SIZE:250]
 [NO_DEFAULT_JOB]
@@ -252,7 +251,8 @@ ITEM_TOOL_STONE_AXE
 [NAME:pedestal:pedestals]
 [VALUE:10]
 [HARD_MAT]
-[BONE_MAT]{+}
+[CERAMIC_MAT]{+}
+[GLASS_MAT]{+}
 [TOOL_USE:DISPLAY_OBJECT]
 [FURNITURE]
 [TILE:139]
@@ -261,37 +261,34 @@ ITEM_TOOL_STONE_AXE
 
 [ITEM_TOOL:ITEM_TOOL_DISPLAY_CASE]
 [NAME:display case:display cases]
-[VALUE:12]{:10  zey: display cases can now only be made with metals & glass so raising value.}
---HARD_MAT]
+[VALUE:12]{:10
+[HARD_MAT]
+[CERAMIC_MAT]{+}
 [GLASS_MAT]{+}
-[METAL_MAT]{+}
 [TOOL_USE:DISPLAY_OBJECT]
 [FURNITURE]
 [TILE:227]
 [INVERTED_TILE]
 [SIZE:1000]
---NO_DEFAULT_JOB]
+[NO_DEFAULT_JOB]
 [MATERIAL_SIZE:6]{+}
 
 [ITEM_TOOL:ITEM_TOOL_ALTAR]
 [NAME:altar:altars]
-[VALUE:15]{:10  zey: altars were always somewhat useless so raised the value slightly.}
---HARD_MAT]
-[STONE_MAT]{+}
-[METAL_MAT]{+}
-[BONE_MAT]{+}
+[VALUE:20]{:10  zey: altars were always somewhat useless so raised the value slightly.}
+[HARD_MAT]
 [CERAMIC_MAT]{+}
+[GLASS_MAT]{+}
 [TOOL_USE:PLACE_OFFERING]
 [FURNITURE]
 [TILE:144]
 [SIZE:1000]{:500
-[MATERIAL_SIZE:15]{:6
+[MATERIAL_SIZE:12]{:6
 
 [ITEM_TOOL:ITEM_TOOL_DIE]
 [NAME:die:dice]
 [VALUE:1]
 [HARD_MAT]
-[BONE_MAT]{+}
 [TOOL_USE:DIVINATION]
 [TOOL_USE:GAMES_OF_CHANCE]
 [SHAPE_CATEGORY:DICE]
@@ -541,9 +538,10 @@ ITEM_TOOL_STONE_AXE
 
 [ITEM_TOOL:ITEM_TOOL_URN]
 [NAME:urn:urns]
-[VALUE:35]
+[VALUE:25]{:35
 [METAL_MAT]
 [CERAMIC_MAT]
+[STONE_MAT]{+}
 [TOOL_USE:FOOD_STORAGE]
 [TILE:232]
 [SIZE:5000]

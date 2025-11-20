@@ -2149,7 +2149,7 @@ creature_next_underground
 	[AMPHIBIOUS]{+}
 	[SMELL_TRIGGER:10]{+}
 	[FANCIFUL]{+}
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[CURIOUSBEAST_ITEM]{+    Revision: cave dragons should steal items like regular dragons do.}
 	[PREFSTRING:impressive teeth]
 	[PREFSTRING:large eyes]

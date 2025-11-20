@@ -1010,7 +1010,7 @@ creature_standard
 	[CURIOUSBEAST_ITEM]
 	[NOFEAR][NOEXERT]
 	[BUILDINGDESTROYER:2]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[FLIER]
 	[SMELL_TRIGGER:12]
 	[LOW_LIGHT_VISION:10000]
@@ -1448,7 +1448,7 @@ creature_standard
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[FANCIFUL]
 	[AT_PEACE_WITH_WILDLIFE]{+  makes sense to ignore wild animals.}
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 		[NOTHOUGHT][NOEXERT]
 	[NO_DIZZINESS]
@@ -1533,7 +1533,7 @@ creature_standard
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[SEMIMEGABEAST][DIFFICULTY:5]
 		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
@@ -1866,7 +1866,7 @@ creature_standard
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[SEMIMEGABEAST][DIFFICULTY:5]
 		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
@@ -2195,7 +2195,7 @@ creature_standard
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[SEMIMEGABEAST][DIFFICULTY:5]
 		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
@@ -2528,7 +2528,7 @@ creature_standard
 	[FANCIFUL]
 	[BONECARN]
 	[LARGE_PREDATOR]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[SEMIMEGABEAST][DIFFICULTY:6]{:5
 		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
@@ -4412,7 +4412,7 @@ creature_standard
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[MEGABEAST][DIFFICULTY:10]
 		[ATTACK_TRIGGER:3:3:3]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
@@ -5021,7 +5021,7 @@ creature_standard
 	[BIOME:MOUNTAIN]
 	[FREQUENCY:15]{:5
 	[FANCIFUL]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[MEGABEAST][DIFFICULTY:10]
 		[ATTACK_TRIGGER:3:3:3]
     [VIEWRANGE:30]{:20  Revision: flying megabeasts can see farther.}

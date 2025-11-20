@@ -36,7 +36,7 @@ creature_megabeasts_chp
 	[BONECARN]
 	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:roars]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
@@ -207,7 +207,7 @@ CREATURE:DOOM_WOLF_CHP
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[SWIMS_INNATE]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:unending flame]
 	[PREFSTRING:destructive tendencies]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
@@ -349,7 +349,7 @@ CREATURE:DOOM_WOLF_CHP
 	[BUILDINGDESTROYER:2]
 	[GRASSTRAMPLE:50]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:colourful feathers]
 	[PREFSTRING:mastery of lightning]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
@@ -527,7 +527,7 @@ CREATURE:DOOM_WOLF_CHP
 	[BUILDINGDESTROYER:2]
 	[GRASSTRAMPLE:50]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:underwater majesty]
 	[PREFSTRING:fins]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
@@ -702,7 +702,7 @@ CREATURE:DOOM_WOLF_CHP
 	[BUILDINGDESTROYER:2]
 	[GRASSTRAMPLE:50]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:earth affinity]
 	[PREFSTRING:stone armour]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
@@ -895,7 +895,7 @@ CREATURE:DOOM_WOLF_CHP
 	[BUILDINGDESTROYER:2]
 	[GRASSTRAMPLE:50]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:frosty breath]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[SOUND:ALERT:100:15000:VOCALIZATION:roar:roars:the echoing roar of an ancient dragon]{+}
@@ -1087,7 +1087,7 @@ CREATURE:DOOM_WOLF_CHP
 	[GRASSTRAMPLE:0]
 	[NO_VEGETATION_PERTURB]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:dedication to nature]
 	[PREFSTRING:impressive antlers]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
@@ -1268,7 +1268,7 @@ CREATURE:DOOM_WOLF_CHP
 	[BUILDINGDESTROYER:2]
 	[GRASSTRAMPLE:50]
 	[BONECARN]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+  20% force restance.}
+	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
 	[PREFSTRING:terrible majesty]
 	[PREFSTRING:fire breath]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}

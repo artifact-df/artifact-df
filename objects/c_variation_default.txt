@@ -978,7 +978,7 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_REPLACEMENT:SCALE_TEMPLATE]
 	[CV_NEW_TAG:LARGE_ROAMING]
 	[CV_NEW_TAG:SAVAGE]
-	[CV_NEW_TAG:GENERAL_MATERIAL_FORCE_MULTIPLIER:1:5]{+    Revision: giant creatures are 20% resistant to force.}
+	[CV_NEW_TAG:GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+    Revision: giant creatures are 20% resistant to force.}
 	[CV_NEW_TAG:DIFFICULTY:4]{+                             Revision: slaying giant creatures should be a tough quest.}
 	[CV_NEW_TAG:PETVALUE:680]{+}
 	[CV_REMOVE_TAG:FREQUENCY]{+}
