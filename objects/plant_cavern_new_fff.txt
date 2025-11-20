@@ -67,7 +67,7 @@ mudshroom (farmable)
 		[TILE:15][IS_GEM:fire crystal:STP:OVERWRITE_SOLID][DISPLAY_COLOR:4:7:1][MATERIAL_VALUE:20]
 		[SOLID_DENSITY:2115]  Common to opals.  Range is 1980 - 2250
 		[STATE_COLOR:ALL_SOLID:RED]  As always, opals vary in color a lot.
-	[FREQUENCY:10]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:3]
 	[PREFSTRING:ashen texture]
 
@@ -104,7 +104,7 @@ mudshroom (farmable)
 		[EXTRACT_STORAGE:FLASK]
 		[PREFIX:NONE]
 	[EXTRACT_STILL_VIAL:LOCAL_PLANT_MAT:EXTRACT]
-	[FREQUENCY:25]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:5]
 	[PREFSTRING:swirling shadows]
 	[WET][DRY]
@@ -169,7 +169,7 @@ mudshroom (farmable)
 		[EDIBLE_COOKED]
 	[SEED:stone-cap spawn:stone-cap spawn:7:0:1:LOCAL_PLANT_MAT:SEED]
 	[SPRING][SUMMER][AUTUMN][WINTER]
-	[FREQUENCY:25]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:5]
 	[PREFSTRING:rough texture]
 	[WET][DRY]
@@ -260,7 +260,7 @@ mudshroom (farmable)
 			[SYN_NO_HOSPITAL]
 			[SYN_CONCENTRATION_ADDED:100:100]
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:PROB:100:LOCALIZED:START:0:END:33600:DWF_STRETCH:72]
-	[FREQUENCY:25]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:5]
 	[PREFSTRING:metallic tops]
 	[WET][DRY]
@@ -313,7 +313,7 @@ mudshroom (farmable)
 		[EDIBLE_COOKED]
 	[SEED:glowcap spawn:glowcap spawn:7:0:1:LOCAL_PLANT_MAT:SEED]
 	[SPRING][SUMMER][AUTUMN][WINTER]
-	[FREQUENCY:25]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:5]
 	[PREFSTRING:light in the dark]
 	[WET][DRY]
@@ -430,7 +430,7 @@ mudshroom (farmable)
 		[MATERIAL_VALUE:1]
 		[EDIBLE_VERMIN]
 	[SEED:puffball spawn:puffball spawns:6:0:1:LOCAL_PLANT_MAT:SEED]
-	[FREQUENCY:25]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:5]
 	[PREFSTRING:contrasting effects]
 	[GROWTH:BLACKPUFF]
@@ -469,7 +469,7 @@ mudshroom (farmable)
 	[BASIC_MAT:LOCAL_PLANT_MAT:STRUCTURAL]
 	[PICKED_TILE:6][PICKED_COLOR:5:0:0]
 	[VALUE:2]
-	[FREQUENCY:25]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:5]
 	[PREFSTRING:sparkling caps]
 	[WET][DRY]
@@ -510,7 +510,7 @@ mudshroom (farmable)
 		[EDIBLE_COOKED]
 	[SEED:mudshroom spawn:mudshroomspawn:6:0:1:LOCAL_PLANT_MAT:SEED]
 	[SPRING][SUMMER][AUTUMN][WINTER]
-	[FREQUENCY:25]
+	[FREQUENCY:0] disabled for now
 	[CLUSTERSIZE:8]
 	[DRY]
 	[BIOME:SUBTERRANEAN_WATER][SAVAGE]
