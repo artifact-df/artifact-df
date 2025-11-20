@@ -977,17 +977,17 @@ creature_standard
 
 [CREATURE:DRAGON] red dragon by deon used as base
 	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years.  Its scales are akin to metal.]
-	[NAME:ancient dragon:dragons:draconic]
-	[CASTE_NAME:ancient dragon:dragons:draconic]
+	[NAME:ragon:dragons:draconic]
+	[CASTE_NAME:dragon:dragons:draconic]
 	[CREATURE_TILE:'D'][COLOR:4:0:0]
 	[CHILD:10][CHILDNAME:dragon hatchling:dragon hatchlings]
-	[DOES_NOT_EXIST][ARENA_RESTRICTED] replaced by colored dragons
 	[PETVALUE:10000]
 	[PET_EXOTIC]
 	[TRAINABLE_WAR]{TRAINABLE  Revision: dragons are too deadly to hunt.}
 	[MOUNT_EXOTIC]
 	[BIOME:ANY_LAND]
-	[FREQUENCY:0]{:5
+	[FREQUENCY:5]
+	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 	    [CDI:TOKEN:BREATHE_FIRE]
 		[CDI:ADV_NAME:Breathe fire]
@@ -1006,7 +1006,6 @@ creature_standard
 		[ATTACK_TRIGGER:3:3:3]
 	[SPHERE:FIRE]
 	[SPHERE:WEALTH]
-	[SPHERE:THEFT]{+}
 	[CURIOUSBEAST_ITEM]
 	[NOFEAR][NOEXERT]
 	[BUILDINGDESTROYER:2]
@@ -1055,8 +1054,9 @@ creature_standard
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
 	[BODY_SIZE:0:0:6000]
-	[BODY_SIZE:10:0:6250000]{:5000000
+	[BODY_SIZE:10:0:5000000]
 	[BODY_SIZE:1000:0:25000000]
+	[BODY_SIZE:2000:0:33250000]{+  revision: 33% larger over two millenniums.}
 	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
@@ -1110,6 +1110,9 @@ creature_standard
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]
 	[NATURAL_SKILL:DISCIPLINE:10]
+	[SWIMS_INNATE]{+}
+	[HOMEOTHERM:10040]{+}
+	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:10]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:585:390:195:1900:2900] 45 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:900:703:505:274:1900:2900] 32 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -4404,7 +4407,7 @@ creature_standard
 	[TRAINABLE_WAR]{+}
 	[CHILD:1][GENERAL_CHILD_NAME:hydra hatchling:hydra hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:ANY_LAND]
-	[FREQUENCY:10]{:5
+	[FREQUENCY:5]
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
