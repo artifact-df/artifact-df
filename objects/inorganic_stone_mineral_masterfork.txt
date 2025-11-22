@@ -694,6 +694,7 @@ aluminum can occasionally be found in its free form in environments that like ox
 [MATERIAL_VALUE:1]{+}
 [REACTION_CLASS:FLUX]{+}
 [REACTION_CLASS:CALCIUM_CARBONATE]{+}
+[MATERIAL_REACTION_PRODUCT:MINERAL_LIME:INORGANIC:LIME_CRUSHED]{+  can be crushed into lime powder.}
 
 [INORGANIC:OLIVINE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -784,6 +785,7 @@ main constituent of limestone, but can be found as crystal
 [MELTING_POINT:12902]
 [SOLID_DENSITY:2930]
 [STATE_COLOR:ALL_SOLID:FLAX]
+[MATERIAL_REACTION_PRODUCT:MINERAL_LIME:INORGANIC:LIME_CRUSHED]{+  can be crushed into lime powder.}
 
 potassium nitrate, good for fertilizer and blowing things up with carbon and sulfur
 [INORGANIC:SALTPETER]

@@ -427,7 +427,7 @@ entity_human_masterfork
 	[ETHIC:TORTURE_FOR_INFORMATION:ACCEPTABLE]
 	[ETHIC:TORTURE_FOR_FUN:APPALLING]
 	[ETHIC:TORTURE_ANIMALS:SHUN]
-	[ETHIC:TREASON:PUNISH_CAPITAL]
+	[ETHIC:TREASON:PUNISH_SERIOUS]{:PUNISH_CAPITAL  humans murder and scheme
 	[ETHIC:OATH_BREAKING:PUNISH_CAPITAL]
 	[ETHIC:LYING:PERSONAL_MATTER]
 	[ETHIC:VANDALISM:PUNISH_SERIOUS]
@@ -440,19 +440,47 @@ entity_human_masterfork
 	[ETHIC:MAKE_TROPHY_SAME_RACE:ACCEPTABLE]
 	[ETHIC:MAKE_TROPHY_SAPIENT:ACCEPTABLE]
 	[ETHIC:MAKE_TROPHY_ANIMAL:ACCEPTABLE]
-	[VARIABLE_VALUE:ALL:-30:30]
-	[VALUE:COMMERCE:30]
-	[VALUE:LAW:30]
-	[VARIABLE_VALUE:COOPERATION:15:25]      min 15 for craft guilds
-	[VARIABLE_VALUE:KNOWLEDGE:15:30]        min 15 for libraries
-	[VARIABLE_VALUE:CRAFTSMANSHIP:15:30]    min 15 for craft guilds
+	--VARIABLE_VALUE:ALL:-30:30]
+	{  revision: reworked and weighted cultural values.}
+	[VARIABLE_VALUE:LAW:-20:30]{+
+	[VARIABLE_VALUE:LOYALTY:-30:20]{+
+	[VARIABLE_VALUE:FAMILY:-20:30]{+
+	[VARIABLE_VALUE:FRIENDSHIP:-20:30]{+
+	[VARIABLE_VALUE:POWER:-20:30]{+
+	[VARIABLE_VALUE:TRUTH:-30:20]{+
+	[VARIABLE_VALUE:CUNNING:-20:30]{+
+	[VARIABLE_VALUE:ELOQUENCE:-20:30]{+
+	[VARIABLE_VALUE:FAIRNESS:-30:20]{+
+	[VARIABLE_VALUE:DECORUM:-20:30]{+
+	[VARIABLE_VALUE:TRADITION:-20:30]{+
+	[VARIABLE_VALUE:ARTWORK:-20:30]{+
+	[VARIABLE_VALUE:COOPERATION:15:30]{+      min 15 for craft guilds
+	[VARIABLE_VALUE:INDEPENDENCE:-30:20]{+
+	[VARIABLE_VALUE:STOICISM:-20:30]{+
+	[VARIABLE_VALUE:INTROSPECTION:-20:30]{+
+	[VARIABLE_VALUE:SELF_CONTROL:-30:20]{+
+	[VARIABLE_VALUE:TRANQUILITY:-30:20]{+
+	[VARIABLE_VALUE:HARMONY:-30:20]{+
+	[VARIABLE_VALUE:MERRIMENT:-20:30]{+
+	[VARIABLE_VALUE:CRAFTSMANSHIP:15:30]{+    min 15 for craft guilds
+	[VARIABLE_VALUE:MARTIAL_PROWESS:-30:30]{+
+	[VARIABLE_VALUE:KNOWLEDGE:15:30]{+        min 15 for libraries
+	[VARIABLE_VALUE:SKILL:-20:30]{+
+	[VARIABLE_VALUE:HARD_WORK:-20:30]{+
+	[VARIABLE_VALUE:SACRIFICE:-30:20]{+
+	[VARIABLE_VALUE:COMPETITION:-30:30]{+
+	[VARIABLE_VALUE:PERSEVERANCE:-20:30]{+
+	[VARIABLE_VALUE:LEISURE_TIME:-20:30]{+
+	[VARIABLE_VALUE:COMMERCE:0:30]{+
+	[VARIABLE_VALUE:ROMANCE:-30:25]{+
+	[VARIABLE_VALUE:NATURE:-30:15]{+
+	[VARIABLE_VALUE:PEACE:-20:30]{+
 	[POSITION:MONARCH]
-		[GENDER:MALE]
 		[NAME_MALE:king:kings]
 		[NAME_FEMALE:queen:queens]
 		[DESCRIPTION:Heavy weighs the crown.]
 		[NUMBER:1]
-		[SQUAD:10:royal guard:royal guards]
+		[SQUAD:8:royal guard:royal guards]
 		[SPOUSE_MALE:king:kings]
 		[SPOUSE_FEMALE:queen:queens]
 		[ALLOWED_CREATURE:HUMAN:FEMALE_NOBLE]
@@ -467,6 +495,7 @@ entity_human_masterfork
 		[MENIAL_WORK_EXEMPTION]
 		[MENIAL_WORK_EXEMPTION_SPOUSE]
 		[SLEEP_PRETENSION]
+		[COMMANDER:KNIGHT:ALL]
 		[PUNISHMENT_EXEMPTION]
 		[FLASHES]
 		[BRAG_ON_KILL]
@@ -478,7 +507,6 @@ entity_human_masterfork
 		[COLOR:5:0:1]
 		[DUTY_BOUND]
 	[POSITION:DUKE]
-		[GENDER:MALE]
 		[NAME_MALE:duke:dukes]
 		[NAME_FEMALE:duchess:duchesses]
 		[SPOUSE_MALE:duke:dukes]
@@ -487,7 +515,7 @@ entity_human_masterfork
 		[ALLOWED_CREATURE:HUMAN:MALE_NOBLE]
 		[DESCRIPTION:Tasked with guarding the borders of the kingdom, a duke campaigns to keep the far marches.]
 		[NUMBER:AS_NEEDED]
-		[SQUAD:8:guard:guards]
+		[SQUAD:6:guard:guards]
 		[LAND_HOLDER:3]
 		[LAND_NAME:a duchy]
 		[RESPONSIBILITY:LAW_MAKING]
@@ -510,7 +538,6 @@ entity_human_masterfork
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 	[POSITION:COUNT]
-		[GENDER:MALE]
 		[NAME_MALE:count:counts]
 		[NAME_FEMALE:countess:countesses]
 		[SPOUSE_MALE:count:counts]
@@ -519,7 +546,7 @@ entity_human_masterfork
 		[ALLOWED_CREATURE:HUMAN:MALE_NOBLE]
 		[DESCRIPTION:Ruler of a vast fiefdom, a count rarely dirties his own hands.]
 		[NUMBER:AS_NEEDED]
-		[SQUAD:6:guard:guards]
+		[SQUAD:4:guard:guards]
 		[LAND_HOLDER:2]
 		[LAND_NAME:a county]
 		[RESPONSIBILITY:LAW_MAKING]
@@ -544,7 +571,6 @@ entity_human_masterfork
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 	[POSITION:BARON]
-		[GENDER:MALE]
 		[NAME_MALE:baron:barons]
 		[NAME_FEMALE:baroness:baronesses]
 		[SPOUSE_MALE:baron:barons]
@@ -581,14 +607,13 @@ entity_human_masterfork
 		[NAME:knight:knights]
 		[DESCRIPTION:A minor nobleman who takes a solemn oath to the defense of the realm, the upholding of the law and the protection of the weak.]
 		[SPOUSE_FEMALE:dame:dames]
-		[GENDER:MALE]
+		[ALLOWED_CREATURE:HUMAN:MALE_NOBLE]
 		[SITE]
 		[NUMBER:AS_NEEDED]
 		[SUCCESSION:BY_HEIR]
 		[APPOINTED_BY:DUKE]
 		[APPOINTED_BY:COUNT]
 		[APPOINTED_BY:BARON]
-		[ALLOWED_CREATURE:HUMAN:MALE_NOBLE]
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[RESPONSIBILITY:BUILD_MORALE]
 		[RESPONSIBILITY:EXECUTIONS]
@@ -632,7 +657,7 @@ entity_human_masterfork
 		[PRECEDENCE:110]
 		[DO_NOT_CULL]
 		[ACCOUNT_EXEMPT]
-		[DUTY_BOUND]	
+		[DUTY_BOUND]
 	[POSITION:MAYOR]
 		[NAME:burgermeister:burgermeisters]
 		[DESCRIPTION:Elected by the community, the burgermeister lead the local community of peasants and burghers and keep them content with the yoke of noble obligations.]
@@ -687,6 +712,7 @@ entity_human_masterfork
 	[POSITION:BISHOP]
 		[NAME:bishop:bishops]	priest was too frequently used a term
 		[DESCRIPTION:The bishop tends to souls as well as beseeching the divine for healing.]
+		[ALLOWED_CREATURE:HUMAN:MALE]
 		[SITE]
 		[NUMBER:1]
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -750,7 +776,7 @@ entity_human_masterfork
 	[SITE_VARIABLE_POSITIONS:ALL]
 	[BUILDS_OUTDOOR_FORTIFICATIONS]
 	[BUILDS_OUTDOOR_TOMBS]
-	[BANDITRY:5]{:10
+	[BANDITRY:8]{:10
 	[STONE_SHAPE:OVAL_CABOCHON]
 	[STONE_SHAPE:ROUND_CABOCHON]
 	[STONE_SHAPE:CUSHION_CABOCHON]

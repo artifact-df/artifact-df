@@ -79,7 +79,7 @@ creature_fff_cavern_blood
 	[ITEMCORPSE:LIQUID_MISC:NO_SUBTYPE:LOCAL_CREATURE_MAT:BLOOD]
 	[ALL_ACTIVE]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:BLOOD_HOUND_FFF]
 	ARENA_RESTRICTED
@@ -158,4 +158,4 @@ creature_fff_cavern_blood
 	[ITEMCORPSE:LIQUID_MISC:NO_SUBTYPE:LOCAL_CREATURE_MAT:BLOOD]
 	[ALL_ACTIVE]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}

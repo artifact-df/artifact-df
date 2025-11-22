@@ -2,35 +2,15 @@ tile_page_items
 
 [OBJECT:TILE_PAGE]
 
-[TILE_PAGE:ITEMS]
-	[FILE:images/items.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM:8:8]
-
-[TILE_PAGE:ITEMS2]
-	[FILE:images/items2.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:96:736]
-
-[TILE_PAGE:ITEMS3]
-	[FILE:images/items3.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:128:736]
-
-[TILE_PAGE:ITEMS4]
-	[FILE:images/items4.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:128:256]
-
 [TILE_PAGE:ITEM_CRAFTS]
 	[FILE:images/item_crafts.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM:2:7]
+	[PAGE_DIM:4:11]
 
 [TILE_PAGE:ITEM_FOOD]
 	[FILE:images/item_food.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM:1:3]
+	[PAGE_DIM:3:3]
 
 [TILE_PAGE:ITEM_TOY]
 	[FILE:images/item_toy.png]
@@ -50,12 +30,7 @@ tile_page_items
 [TILE_PAGE:ITEM_AMMO]
 	[FILE:images/item_ammo.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM:2:6]
-
-[TILE_PAGE:BALLISTA_ARROW]
-	[FILE:images/item_ammo_ballista.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM:2:2]
+	[PAGE_DIM:5:10]
 
 [TILE_PAGE:ITEM_TABLE]
 	[FILE:images/item_table.png]
@@ -110,7 +85,7 @@ tile_page_items
 [TILE_PAGE:CONTAINERS]
 	[FILE:images/containers.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:256:320]
+	[PAGE_DIM_PIXELS:256:448]
 
 [TILE_PAGE:ITEM_COFFIN]
 	[FILE:images/coffins.png]
@@ -135,7 +110,7 @@ tile_page_items
 [TILE_PAGE:TOOLS]
 	[FILE:images/item_tool.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:128:960]
+	[PAGE_DIM:4:23]
 
 [TILE_PAGE:UPRIGHT_WEAPONS]
 	[FILE:images/upright_weapons.png]
@@ -191,3 +166,39 @@ tile_page_items
 	[FILE:images/rams.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM:10:6]
+
+[TILE_PAGE:ITEM_CLOTH]
+	[FILE:images/item_cloth.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:2:2]
+
+[TILE_PAGE:ITEM_CONSTRUCTION]
+	[FILE:images/item_construction.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:4:10]
+
+[TILE_PAGE:ITEM_DISPLAY]
+	[FILE:images/item_display.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:4:4]
+
+[TILE_PAGE:ITEM_EQUIPMENT]
+	[FILE:images/item_equipment.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:8:26]
+
+[TILE_PAGE:ITEM_NATURE]
+	[FILE:images/item_nature.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:4:4]
+
+[TILE_PAGE:ITEM_SCRIBE]
+	[FILE:images/item_scribe.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:4:6]
+
+[TILE_PAGE:HIDES]
+	[FILE:images/hides.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM:6:4]
+

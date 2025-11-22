@@ -858,7 +858,7 @@ creature_fantasy_intelligent_chp
 	[BIOME:ANY_WETLAND]
 	[BIOME:ANY_DESERT]
 	[FREQUENCY:20]
-	[CREATURE_CLASS:CAN_HOWL] immune to packleader howls
+	[CREATURE_CLASS:IMMUNE_HOWL] immune to packleader howls
 	[LOCAL_POPS_CONTROLLABLE][LOCAL_POPS_PRODUCE_HEROES][CAN_LEARN][UTTERANCES]
 	[POPULATION_NUMBER:30:100][CLUSTER_NUMBER:2:5][LARGE_ROAMING]
 	[SOUND:ALERT:150:2750:VOCALIZATION:growl:growls:a low growl]{+}
@@ -1049,15 +1049,7 @@ creature_fantasy_intelligent_chp
 	[SELECT_ADDITIONAL_CASTE:MALE_ALPHA]
         [PERSONALITY:ASSERTIVENESS:100:100:100]
         [NATURAL_SKILL:INTIMIDATION:4]
-		[CAN_DO_INTERACTION:TERRIFYING_HOWL]{+  fear inducing howl.}
-			[CDI:ADV_NAME:Howl]
-			[CDI:USAGE_HINT:ATTACK]
-			[CDI:VERB:howl:howls:lets loose a fear inducing howl]
-			[CDI:TARGET:A:LINE_OF_SIGHT]
-			[CDI:TARGET_RANGE:A:5]
-			[CDI:TARGET_VERB:are trembling:is visibly trembling:NA]
-			[CDI:MAX_TARGET_NUMBER:A:99]
-			[CDI:WAIT_PERIOD:250]
+		[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[SELECT_CASTE:ALL]
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]

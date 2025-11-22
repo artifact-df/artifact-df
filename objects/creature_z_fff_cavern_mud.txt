@@ -22,7 +22,7 @@ throw mud
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:ELEMENTAL_MUD_SMALL_FFF]
 	[DESCRIPTION:A small blob of magically-animated mud. It can be found in underground lakes.]
@@ -92,7 +92,7 @@ throw mud
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:60]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:ELEMENTAL_MUD_LARGE_FFF]
 	[DESCRIPTION:A huge creature made of magically-animated mud. It can be found in underground lakes.]
@@ -170,4 +170,4 @@ throw mud
 		[CDI:MAX_TARGET_NUMBER:C:3]
 		[CDI:WAIT_PERIOD:30]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}

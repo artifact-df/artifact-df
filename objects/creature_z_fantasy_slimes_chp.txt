@@ -105,7 +105,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:BLACK:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 		
 [CREATURE:SLIME_BROWN_CHP]
 	[DESCRIPTION:A small, harmless blob of brown slime found in sewers, swamps and marshes]
@@ -210,7 +210,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:BROWN:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_ICE_CHP]
 	[DESCRIPTION:A small, harmless blob of icy slime found in the frozen wilds.]
@@ -321,7 +321,7 @@ creature_fantasy_slimes_chp
 		[IF_EXISTS_SET_MELTING_POINT:8000]
 		[IF_EXISTS_SET_BOILING_POINT:11000]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_CLEAR_CHP]
 	[DESCRIPTION:A small, harmless blob of clear slime found rarely in all sorts of places.]
@@ -425,7 +425,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:CLEAR:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_RAINBOW_CHP]
 	[DESCRIPTION:A small, harmless blob of rainbow-coloured slime found in good lands. It is said that their slime can heal any wound.]
@@ -546,7 +546,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:STRIPES_RAINBOW:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_PURPLE_CHP]
 	[DESCRIPTION:A small, harmless blob of purple slime found in haunted lands]
@@ -649,7 +649,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:PURPLE:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_GREEN_CHP]
 	[DESCRIPTION:A small, harmless blob of green slime found in forests and grassy plains]
@@ -754,7 +754,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:GREEN:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_BLUE_CHP]
 	[DESCRIPTION:A small, harmless blob of blue slime found in oceans, rivers and lakes]
@@ -860,7 +860,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:BLUE:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_YELLOW_CHP]
 	[DESCRIPTION:A small, harmless blob of yellow slime found in volcanoes and other hot places.]
@@ -964,7 +964,7 @@ creature_fantasy_slimes_chp
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SLIME]
 		[TL_COLOR_MODIFIER:YELLOW:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:SLIME_RED_CHP]
 	[DESCRIPTION:A small, harmless blob of red slime found in volcanoes and other hot places.]
@@ -1075,4 +1075,4 @@ creature_fantasy_slimes_chp
 		[IF_EXISTS_SET_MELTING_POINT:15000]
 		[IF_EXISTS_SET_BOILING_POINT:20000]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}

@@ -430,16 +430,7 @@ creature_next_underground
 		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
-	[CAN_DO_INTERACTION:OGRE_HOWL]{+}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
-	[CREATURE_CLASS:CAN_GROWL_OGRE]{+  immune to its own growl/roar.}
-	{  revision: new stats.}
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]              +
 	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]             +
 	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]             +
@@ -1558,7 +1549,7 @@ creature_next_underground
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ITEMCORPSE:LIQUID_MISC:NO_SUBTYPE:LOCAL_CREATURE_MAT:BLOOD]
 	[ALL_ACTIVE]
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:BUGBAT]
 	[DESCRIPTION:A small bat-like creature with the head of an insect.  It is found deep underground.]
@@ -2231,15 +2222,7 @@ creature_next_underground
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 	[APPLY_CREATURE_VARIATION:TAIL_ATTACK]{+ tail slap attack.}
-	[CAN_DO_INTERACTION:TERRIFYING_HOWL]{+  fear inducing howl.}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:lets loose a fear inducing howl]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:TARGET_VERB:are trembling:is visibly trembling:NA]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[ALL_ACTIVE]
 	[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4500:5000]             +++
 	[PHYS_ATT_RANGE:TOUGHNESS:3000:3500:3750:4000:4250:4500:5000]            +++
@@ -2469,7 +2452,7 @@ creature_next_underground
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ITEMCORPSE:BOULDER:NO_SUBTYPE:INORGANIC:GABBRO]
 	[ALL_ACTIVE]
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:GORLAK]
 	[DESCRIPTION:A small, round humanoid found wandering the caves deep underground.  Most of its body is taken up by a huge tusked mouth.]
@@ -2822,7 +2805,7 @@ creature_next_underground
 		[SET_TL_GROUP:BY_CATEGORY:ALL:MUSHROOM]
 			[TL_COLOR_MODIFIER:PURPLE:1]
 				[TLCM_NOUN:exterior:SINGULAR]
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:CAVE_BLOB]
 	[DESCRIPTION:A strange and shapeless blob filled with blistering liquid; its leathery skin glistens with the painful ooze.  It quivers and pulses as it flops and oozes around the deeepest caverns.]{:A strange shapeless life form with an orange leathery skin containing a liquid interior.  It can secrete its internal fluid.}
@@ -2896,7 +2879,7 @@ creature_next_underground
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 		[TL_COLOR_MODIFIER:ORANGE:1]
 			[TLCM_NOUN:skin:SINGULAR]
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:ELEMENTMAN_AMETHYST]
 	[DESCRIPTION:Living amethyst gemstone in the shape of a medium-sized golem.  Its crystalline body is composed of straight lines and smooth surfaces covered with small, six-sided prisms.  Tireless and mindless, it wanders without purpose deep underground.  If damaged, it will reform itself anew.]{:A strange crystalline creature the shape of a man.  It is found deep underground.}
@@ -2959,4 +2942,4 @@ creature_next_underground
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ITEMCORPSE:ROUGH:NO_SUBTYPE:INORGANIC:AMETHYST]
 	[ALL_ACTIVE]
-	[CAN_DO_INTERACTION:REGENERATE_GOLEM]{+  able to reform their body.}
+	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}

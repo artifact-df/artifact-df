@@ -404,15 +404,7 @@ creature_standard
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
-	[CAN_DO_INTERACTION:OGRE_HOWL]{+}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
-	[CREATURE_CLASS:CAN_GROWL_OGRE]{+  immune to its own growl/roar.}
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[EQUIPS]
 	[CANOPENDOORS]
 	[ALL_ACTIVE]
@@ -977,7 +969,7 @@ creature_standard
 
 [CREATURE:DRAGON] red dragon by deon used as base
 	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years.  Its scales are akin to metal.]
-	[NAME:ragon:dragons:draconic]
+	[NAME:dragon:dragons:draconic]
 	[CASTE_NAME:dragon:dragons:draconic]
 	[CREATURE_TILE:'D'][COLOR:4:0:0]
 	[CHILD:10][CHILDNAME:dragon hatchling:dragon hatchlings]
@@ -1550,7 +1542,6 @@ creature_standard
 	[CURIOUSBEAST_ITEM]
 	[SPHERE:FOOD]
 	[SPHERE:STRENGTH]
-	[POWER][SPREAD_EVIL_SPHERES_IF_RULER]{+  can be ruler of civs.}
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]
 	[MANNERISM_EAR:ear]
@@ -1658,15 +1649,7 @@ creature_standard
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
-	[CAN_DO_INTERACTION:TERRIFYING_HOWL]{+  fear inducing howl.}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:lets loose a fear inducing howl]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:TARGET_VERB:are trembling:is visibly trembling:NA]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[PHYS_ATT_RANGE:STRENGTH:700:1200:1400:1500:1600:2000:3000]              ++
 	[PHYS_ATT_RANGE:ENDURANCE:700:1200:1400:1500:1600:2000:3000]             ++
 	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                  -
@@ -1781,7 +1764,7 @@ creature_standard
 	[SWIMS_LEARNED]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:1]{+}
+		[POP_RATIO:10]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
 		[BABYNAME:giantess baby girl:giantess baby girls]{+}
@@ -1789,10 +1772,31 @@ creature_standard
 		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:2]{+}
+		[POP_RATIO:20]{+}
 		[BABYNAME:giant baby boy:giant baby boys]{+}
 		[CHILDNAME:giant boy:giant boys]{+}
 		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[CASTE_NAME:giant:giants:giant]
+	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[FEMALE]
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
+		[MAXAGE:250:500] so they cant rule forever
+		[POP_RATIO:1]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_NAME:giantess:giantesses:giantess]
+		[BABYNAME:giantess baby girl:giantess baby girls]
+		[CHILDNAME:giantess girl:giantess girls]
+		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]
+	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[MALE]
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
+		[MAXAGE:250:500] so they cant rule forever
+		[POP_RATIO:2]
+		[BABYNAME:giant baby boy:giant baby boys]
+		[CHILDNAME:giant boy:giant boys]
+		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_NAME:giant:giants:giant]
@@ -1884,7 +1888,6 @@ creature_standard
 	[SPHERE:MINERALS]
 	[SPHERE:STRENGTH]
 	[SPHERE:THUNDER]
-	[POWER][SPREAD_EVIL_SPHERES_IF_RULER]{+  can be ruler of civs.}
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]
 	[MANNERISM_EAR:ear]
@@ -1992,15 +1995,7 @@ creature_standard
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
-	[CAN_DO_INTERACTION:TERRIFYING_HOWL]{+  fear inducing howl.}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:lets loose a fear inducing howl]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:TARGET_VERB:are trembling:is visibly trembling:NA]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[PHYS_ATT_RANGE:STRENGTH:700:1200:1400:1500:1600:2000:3000]              ++
 	[PHYS_ATT_RANGE:ENDURANCE:700:1200:1400:1500:1600:2000:3000]             ++
 	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                  -
@@ -2111,19 +2106,39 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:1]{+}
+		[POP_RATIO:10]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]{+}
 		[CHILDNAME:cyclops girl:cyclops girls]{+}
 		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:2]{+}
+		[POP_RATIO:20]{+}
 		[BABYNAME:cyclops baby boy:cyclops baby boys]{+}
 		[CHILDNAME:cyclops boy:cyclops boys]{+}
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[FEMALE]
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
+		[MAXAGE:250:500] so they cant rule forever
+		[POP_RATIO:1]
+		[MULTIPLE_LITTER_RARE]
+		[BABYNAME:cyclops baby girl:cyclops baby girls]
+		[CHILDNAME:cyclops girl:cyclops girls]
+		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]
+	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[MALE]
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
+		[MAXAGE:250:500] so they cant rule forever
+		[POP_RATIO:2]
+		[BABYNAME:cyclops baby boy:cyclops baby boys]
+		[CHILDNAME:cyclops boy:cyclops boys]
+		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[CASTE_NAME:giant:giants:giant]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
@@ -2210,7 +2225,6 @@ creature_standard
 	[CURIOUSBEAST_ITEM]
 	[SPHERE:SPEECH]
 	[SPHERE:STRENGTH]
-	[POWER][SPREAD_EVIL_SPHERES_IF_RULER]{+  can be ruler of civs.}
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:noses]
 	[MANNERISM_EAR:ears]
@@ -2317,15 +2331,7 @@ creature_standard
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
-	[CAN_DO_INTERACTION:TERRIFYING_HOWL]{+  fear inducing howl.}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:lets loose a fear inducing howl]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:TARGET_VERB:are trembling:is visibly trembling:NA]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[PHYS_ATT_RANGE:STRENGTH:700:1200:1400:1500:1600:2000:3000]              ++
 	[PHYS_ATT_RANGE:ENDURANCE:700:1200:1400:1500:1600:2000:3000]             ++
 	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                  -
@@ -2443,19 +2449,39 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:1]{+}
+		[POP_RATIO:10]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]{+}
 		[CHILDNAME:ettin girl:ettin girls]{+}
 		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:2]{+}
+		[POP_RATIO:20]{+}
 		[BABYNAME:ettin baby boy:ettin baby boys]{+}
 		[CHILDNAME:ettin boy:ettin boys]{+}
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[FEMALE]
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
+		[MAXAGE:250:500] so they cant rule forever
+		[POP_RATIO:1]
+		[MULTIPLE_LITTER_RARE]
+		[BABYNAME:ettin baby girl:ettin baby girls]
+		[CHILDNAME:ettin girl:ettin girls]
+		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]
+	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[MALE]
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
+		[MAXAGE:250:500] so they cant rule forever
+		[POP_RATIO:2]
+		[BABYNAME:ettin baby boy:ettin baby boys]
+		[CHILDNAME:ettin boy:ettin boys]
+		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[CASTE_NAME:giant:giants:giant]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
@@ -2573,7 +2599,6 @@ creature_standard
 	[SPHERE:DARKNESS]
 	[SPHERE:DEFORMITY]
 	[SPHERE:STRENGTH]
-	[POWER][SPREAD_EVIL_SPHERES_IF_RULER]{+  can be ruler of civs.}
 	[BODY:HUMANOID_NECK_HOOF:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:2HEAD_HORN:5FINGERS:5TOES:MOUTH:TONGUE:EYELIDS:CHEEKS:TEETH:RIBCAGE]{:HUMANOID_NECK  Revision: hooves seem more appropriate than feet.}
 	[BODY_DETAIL_PLAN:MONSTER_MATERIALS]{:STANDARD_MATERIALS}
 		[USE_MATERIAL_TEMPLATE:HOOF:HOOF_TEMPLATE]{+  Revision: hooves seem more appropriate than feet.}
@@ -2636,16 +2661,7 @@ creature_standard
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
-	[CAN_DO_INTERACTION:TERRIFYING_HOWL]{+  fear inducing howl.}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:lets loose a fear inducing howl]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:TARGET_VERB:are trembling:is visibly trembling:NA]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
-	[CREATURE_CLASS:CAN_HOWL]{+  immune to its own growl/roar.}
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[BODY_SIZE:0:0:10000]
 	[BODY_SIZE:1:168:50000]
 	[BODY_SIZE:12:0:330000]{:220000  revision: increased the base size of minotaurs by 50% as they were rarely a threat.}
@@ -2841,15 +2857,7 @@ creature_standard
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		--ATTACK_FLAG_CANLATCH]
-	[CAN_DO_INTERACTION:TERRIFYING_HOWL]{+  fear inducing howl.}
-		[CDI:ADV_NAME:Howl]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:VERB:howl:howls:lets loose a fear inducing howl]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:5]
-		[CDI:TARGET_VERB:are trembling:is visibly trembling:NA]
-		[CDI:MAX_TARGET_NUMBER:A:99]
-		[CDI:WAIT_PERIOD:250]
+	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[EQUIPS]
 	[CANOPENDOORS]
 	[ALL_ACTIVE]

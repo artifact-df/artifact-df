@@ -46,8 +46,8 @@ inorganic_other_mfork
 	[SOLID_DENSITY:2403]
 	[IS_STONE]
 	[IS_CERAMIC]
-	[MATERIAL_VALUE:11]{:10
-	[BLOCK_NAME:brick:bricks]
+	[MATERIAL_VALUE:10]
+	[BLOCK_NAME:tile:tiles]{:brick:bricks
 	[NO_STONE_STOCKPILE]
 	[STATE_COLOR:ALL_SOLID:PEARL]
 
@@ -81,9 +81,7 @@ inorganic_other_mfork
 	[SOLID_DENSITY:3340]
 	[MATERIAL_VALUE:10]
 	[STATE_COLOR:ALL_SOLID:IVORY]
-	[REACTION_CLASS:LEATHER_TREATMENT]{+}
 	[REACTION_CLASS:QUICKLIME]
-	[REACTION_CLASS:FLUX]{+}  zey:  were sometimes used
 
 [INORGANIC:MILK_OF_LIME] limewater / hydrated calcium oxide
 	[STATE_COLOR:ALL_SOLID:WHITE]

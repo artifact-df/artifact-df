@@ -12,7 +12,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling iron]
 	[DISPLAY_COLOR:0:7:1]
 	[BUILD_COLOR:0:7:1]
-	[MATERIAL_VALUE:7]{:10  zey: iron is very common
+	[MATERIAL_VALUE:9]{:10  revision: iron is very common.}
 	[SPEC_HEAT:450]
 	[MELTING_POINT:12768]
 	[BOILING_POINT:15150]
@@ -167,7 +167,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:70000]
 	[BENDING_FRACTURE:220000]
 	[BENDING_STRAIN_AT_YIELD:58]
-	[MAX_EDGE:9000]{:10000  inferior to iron.}
+	[MAX_EDGE:9000]{:10000  revision: copper is less sharp than iron.}
 	[STATE_COLOR:ALL_SOLID:CHOCOLATE]{:COPPER
 	[MATERIAL_REACTION_PRODUCT:MINERAL_DYE:INORGANIC:DYE_MALACHITE]{+}
 
@@ -249,14 +249,14 @@ Colors added by Bohandas.
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SILVER]
 
-[INORGANIC:BRONZE]  zey: took the base values of (base) bronze + steel / 2 to average bronze and steel properties.  values nerfed in mfork ver. 1.3.4 by 10%
+[INORGANIC:BRONZE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
 	[STATE_NAME_ADJ:ALL_SOLID:bronze]
 	[STATE_NAME_ADJ:LIQUID:molten bronze]
 	[STATE_NAME_ADJ:GAS:boiling bronze]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:5] material cost would be 2. valuable because its a good armor/weapon material
+	[MATERIAL_VALUE:6]{:5 material cost would be 2. valuable because its a good armor/weapon material
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]
@@ -286,7 +286,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:172000]
 	[BENDING_FRACTURE:241000]
 	[BENDING_STRAIN_AT_YIELD:156]
-	[MAX_EDGE:10250]{:10000  sharper than iron but less than steel
+	[MAX_EDGE:10250]{:10000  revision: bronze is sharper than iron but less so than steel.}
 	[STATE_COLOR:ALL_SOLID:OCHRE]{:BRONZE
 
 [INORGANIC:BRASS]
@@ -362,7 +362,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:430000]
 	[BENDING_FRACTURE:720000]
 	[BENDING_STRAIN_AT_YIELD:537]
-	[MAX_EDGE:10500]{:10000  revision: superior edge compared to iron.}
+	[MAX_EDGE:10500]{:10000  revision: steel has a superior edge compared to iron and bronze.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -403,7 +403,6 @@ Colors added by Bohandas.
 	[BENDING_STRAIN_AT_YIELD:62]
 	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
 	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
-	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 [INORGANIC:PLATINUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -443,7 +442,6 @@ Colors added by Bohandas.
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:WHITE]
-	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 [INORGANIC:ELECTRUM]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -520,10 +518,10 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:24]
 	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
-	--ITEMS_HARD]
-	--ITEMS_METAL]
-	--ITEMS_BARRED]
-	--ITEMS_SCALED]
+	[ITEMS_HARD]
+	[ITEMS_METAL]
+	[ITEMS_BARRED]
+	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SILVER]
 
 [INORGANIC:PEWTER_FINE]
@@ -721,7 +719,6 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:WHITE]
-	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 temperature values unknown, used nickel
 [INORGANIC:NICKEL_SILVER]
@@ -887,7 +884,6 @@ value of 11 is the weighted average value of 2copper/1silver/1gold components
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:DARK_BLUE]{:BLACK (actually dark blue, but this is less confusing)
-	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 temperature values unknown, used gold
 value is weighted average of 3 gold and 1 copper
@@ -1006,7 +1002,6 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:TAN]
-	[SPECIAL]{+  can't be used for preferences and merchants wont bring it.}
 
 [INORGANIC:ADAMANTINE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
