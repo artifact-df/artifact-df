@@ -1,7 +1,0 @@
-plant_orc_chp
-
-[OBJECT:PLANT]
-
-[SELECT_PLANT:WEED_RAT]
-	[BIOME:TUNDRA]
-	

@@ -2,7 +2,7 @@ creature_undead_chp
 
 [OBJECT:CREATURE]
 
-[CREATURE:SKELETON_FFF] adapted from the Returned in ZM5's Diablo mod
+[CREATURE:SKELETON_CHP] adapted from the Returned in ZM5's Diablo mod
 	[DESCRIPTION:Reanimated by foul magics, skeletons are the remains of mortals raised from the dead to serve their master's cruel whims]
 	[NAME:skeleton:skeletons:skeleton]
 	[CREATURE_TILE:'S'][COLOR:0:0:1]
@@ -15,7 +15,7 @@ creature_undead_chp
 	[LARGE_PREDATOR][LARGE_ROAMING][AMBUSHPREDATOR]
 	[FANCIFUL]
 	[CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]
-	[CREATURE_CLASS:UNDEAD_FFF]
+	[CREATURE_CLASS:UNDEAD_CHP]
 	[PREFSTRING:shuddering movements]
 	[PERSONALITY:ANGER_PROPENSITY:60:75:100]
 	[PERSONALITY:HATE_PROPENSITY:60:75:100]

@@ -6,5 +6,5 @@ Adds in some very basic information to setup domestic creatures for appearing in
 [CREATURE_VARIATION:SAVDOM_DOMESTIC_SETUP]
 	[CV_REMOVE_TAG:COMMON_DOMESTIC]
 	[CV_ADD_TAG:BIOME:NOT_FREEZING] Based on dingos
-	[CV_ADD_TAG:FREQUENCY:100] Commonality based off of crows / ravens
+	[CV_ADD_TAG:FREQUENCY:10] Commonality based off of crows / ravens
 

@@ -28,7 +28,7 @@ item_toy_mfork
 
 all _SPL items from Splint
 
-[ITEM_TOY:ITEM_TOY_BALL_FFF]
+[ITEM_TOY:ITEM_TOY_BALL_CHP]
 [NAME:ball:balls]
 [HARD_MAT]
 
@@ -40,23 +40,23 @@ all _SPL items from Splint
 [NAME:toy horse:toy horse]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOG_FFF]
+[ITEM_TOY:ITEM_TOY_DOG_CHP]
 [NAME:toy dog:toy dog]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_CAT_FFF]
+[ITEM_TOY:ITEM_TOY_CAT_CHP]
 [NAME:toy cat:toy cat]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_COW_FFF]
+[ITEM_TOY:ITEM_TOY_COW_CHP]
 [NAME:toy cow:toy cows]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_PIG_FFF]
+[ITEM_TOY:ITEM_TOY_PIG_CHP]
 [NAME:toy pig:toy pig]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_CROCODILE_FFF]
+[ITEM_TOY:ITEM_TOY_CROCODILE_CHP]
 [NAME:toy crocodile:toy crocodile]
 [HARD_MAT]
 
@@ -68,48 +68,48 @@ all _SPL items from Splint
 [NAME:human doll:human dolls] edited
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_LIZARDFOLK_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_LIZARDFOLK_CHP]
 [NAME:lizardfolk doll:lizardfolk dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_DWARF_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_DWARF_CHP]
 [NAME:dwarf doll:dwarf dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_FAE_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_FAE_CHP]
 [NAME:fairy doll:fairy dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_GOBLIN_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_GOBLIN_CHP]
 [NAME:goblin doll:goblin dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_ELF_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_ELF_CHP]
 [NAME:elf doll:elf dolls] 
 [HARD_MAT]
 
 
-[ITEM_TOY:ITEM_TOY_DOLL_LICH_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_LICH_CHP]
 [NAME:lich doll:lich dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_HALFLING_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_HALFLING_CHP]
 [NAME:halfling doll:halfling dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_ORC_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_ORC_CHP]
 [NAME:orc doll:orc dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_DEATHKNIGHT_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_DEATHKNIGHT_CHP]
 [NAME:death knight doll:death knight dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_SKELETON_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_SKELETON_CHP]
 [NAME:skeleton doll:skeleton dolls] 
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DOLL_KNIGHT_FFF]
+[ITEM_TOY:ITEM_TOY_DOLL_KNIGHT_CHP]
 [NAME:knight doll:knight dolls] 
 [HARD_MAT]
 
@@ -129,14 +129,14 @@ all _SPL items from Splint
 [NAME:toy dagger:toy daggers]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_SPEAR_FFF]
+[ITEM_TOY:ITEM_TOY_SPEAR_CHP]
 [NAME:toy spear:toy spears]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_BOW_FFF]
+[ITEM_TOY:ITEM_TOY_BOW_CHP]
 [NAME:toy bow:toy bow]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_DRAGON_FFF]
+[ITEM_TOY:ITEM_TOY_DRAGON_CHP]
 [NAME:toy dragon:toy dragon]
 [HARD_MAT]
