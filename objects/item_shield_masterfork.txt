@@ -29,15 +29,15 @@ Shield stats by Sver
 [MATERIAL_SIZE:6] 2 bars
 
 [ITEM_SHIELD:ITEM_SHIELD_KITE_SPL]
-[NAME:kite shield:kite shield]
-[ARMORLEVEL:3]
-[BLOCKCHANCE:30]
-[UPSTEP:3]
-[MATERIAL_SIZE:9] 3 bars
+[NAME:kite shield:kite shields]
+[ARMORLEVEL:2]
+[BLOCKCHANCE:25]
+[UPSTEP:2]
+[MATERIAL_SIZE:15]
 
 [ITEM_SHIELD:ITEM_SHIELD_TOWER_SPL]
-[NAME:tower shield:tower shield]
-[ARMORLEVEL:3]
-[BLOCKCHANCE:40]
-[UPSTEP:3]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
-[MATERIAL_SIZE:12] 4 bars
+[NAME:tower shield:tower shields]
+[ARMORLEVEL:2]
+[BLOCKCHANCE:30]
+[UPSTEP:2]
+[MATERIAL_SIZE:18]

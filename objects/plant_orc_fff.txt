@@ -1,0 +1,7 @@
+plant_orc_fff
+
+[OBJECT:PLANT]
+
+[SELECT_PLANT:WEED_RAT]
+	[BIOME:TUNDRA]
+	

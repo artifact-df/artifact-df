@@ -2,7 +2,7 @@ creature_fff_dwarf_pets
 
 [OBJECT:CREATURE]
 
-[CREATURE:UNIGOAT_CHP]
+[CREATURE:UNIGOAT_FFF]
 	[DESCRIPTION:A medium-sized animal found in the caverns. It is known for its single horn and insatiable thirst for alcohol.]
 	[NAME:unigoat:unigoats:hircine]
 	[CASTE_NAME:unigoat:unigoats:unigoat]
@@ -149,7 +149,7 @@ creature_fff_dwarf_pets
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 
-[CREATURE:CAVE_BOAR_CHP]
+[CREATURE:CAVE_BOAR_FFF]
 	[DESCRIPTION:A large, pig-like creature with large tusks. It is found underground where it feeds on mushrooms and lichens. ]
 	[NAME:cave boar:cave boars:porcine]
 	[CASTE_NAME:cave boar:cave boars:cave boar]

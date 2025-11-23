@@ -1,0 +1,18 @@
+tile_page_savage_domestics
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:SAVAGE_DOMESTICS_GIANT]
+	[FILE:images/fff_creatures/domestic_savage_giant.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:768:1408]
+
+[TILE_PAGE:SAVAGE_DOMESTICS_PEOPLE]
+	[FILE:images/fff_creatures/domestic_savage_people.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:96:1056]
+
+[TILE_PAGE:SAVAGE_DOMESTICS_PEOPLE_STATUES]
+	[FILE:images/fff_creatures/domestic_savage_people_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1664]

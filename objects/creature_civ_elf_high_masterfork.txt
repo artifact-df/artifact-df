@@ -2,7 +2,7 @@ creature_civ_elf_high_masterfork
 
 [OBJECT:CREATURE]
 
-[CREATURE:HIGH_ELF_CHP]
+[CREATURE:HIGH_ELF_FFF]
 	[DESCRIPTION:A medium-sized creature known for their magical aptitude and longevity. It does not appear to age.]
 	[NAME:high elf:high elves:elven]
 	[CASTE_NAME:high elf:high elves:elven]

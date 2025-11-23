@@ -2,7 +2,7 @@ creature_civ_orc_masterwork
 
 [OBJECT:CREATURE]
 
-[CREATURE:ORC_CHP]
+[CREATURE:ORC_FFF]
     [DESCRIPTION:A large green-skinned humanoid with large, jutting tusks.  Barbaric and primative, most orcs live in raiding camps and constantly war with their neighbors.]
 	[NAME:orc:orcs:orcish]
 	[CASTE_NAME:orc:orcs:orcish]
