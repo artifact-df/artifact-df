@@ -3,7 +3,7 @@ creature_civ_elf_high_masterfork
 [OBJECT:CREATURE]
 
 [CREATURE:HIGH_ELF_FFF]
-	[DESCRIPTION:A medium-sized creature known for their magical aptitude and longevity. It does not appear to age.]
+	[DESCRIPTION:A medium-sized creature known for their magical aptitude and court intrigue. It does not appear to age.]
 	[NAME:high elf:high elves:elven]
 	[CASTE_NAME:high elf:high elves:elven]
 	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
@@ -25,6 +25,8 @@ creature_civ_elf_high_masterfork
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]
 	[NATURAL_SKILL:DODGING:1]
 	[SLAIN_SPEECH:SLAIN_ELF]
+	[NATURAL_SKILL:INTRIGUE:1] high elves scheme and lie, all while smiling of course
+	[NATURAL_SKILL:LYING:1]
 	
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:55:100]+   Minor Inclination
@@ -33,7 +35,7 @@ creature_civ_elf_high_masterfork
 	[PERSONALITY:CHEER_PROPENSITY:5:55:100]++  Moderate Inclination
 	[PERSONALITY:DEPRESSION_PROPENSITY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:ANGER_PROPENSITY:0:45:100]-   Minor Aversion
-	[PERSONALITY:ANXIETY_PROPENSITY:0:45:95]--  Moderate Aversion
+	[PERSONALITY:ANXIETY_PROPENSITY:0:55:100]+   Minor Inclination
 	[PERSONALITY:LUST_PROPENSITY:0:40:85]--- Great Aversion
 	[PERSONALITY:STRESS_VULNERABILITY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:GREED:0:40:85]--- Great Aversion
@@ -48,35 +50,35 @@ creature_civ_elf_high_masterfork
 	[PERSONALITY:BRAVERY:0:55:100]+   Minor Inclination
 	[PERSONALITY:CONFIDENCE:10:60:100]+++ Great Inclination
 	[PERSONALITY:VANITY:10:60:100]+++ Great Inclination
-	[PERSONALITY:AMBITION:0:40:85]--- Great Aversion
+	[PERSONALITY:AMBITION:0:55:100]+   Minor Inclination
 	[PERSONALITY:GRATITUDE:0:55:100]+   Minor Inclination
 	[PERSONALITY:IMMODESTY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:HUMOR:0:45:95]--  Moderate Aversion
-	[PERSONALITY:VENGEFUL:0:45:100]-   Minor Aversion
-	[PERSONALITY:PRIDE:0:45:100]-   Minor Aversion
+	[PERSONALITY:VENGEFUL:5:55:100]++  Moderate Inclination
+	[PERSONALITY:PRIDE:5:55:100]++  Moderate Inclination
 	[PERSONALITY:CRUELTY:0:45:100]-   Minor Aversion
 	[PERSONALITY:SINGLEMINDED:0:55:100]+   Minor Inclination
-	[PERSONALITY:HOPEFUL:5:55:100]++  Moderate Inclination
+	[PERSONALITY:HOPEFUL:0:55:100]+   Minor Inclination
 	[PERSONALITY:CURIOUS:0:55:100]+   Minor Inclination
 	[PERSONALITY:BASHFUL:0:55:100]+   Minor Inclination
-	[PERSONALITY:PRIVACY:0:45:100]-   Minor Aversion
+	[PERSONALITY:PRIVACY:0:55:100]+   Minor Inclination
 	[PERSONALITY:PERFECTIONIST:10:60:100]+++ Great Inclination
 	[PERSONALITY:CLOSEMINDED:0:45:100]-   Minor Aversion
 	[PERSONALITY:TOLERANT:5:55:100]++  Moderate Inclination
-	[PERSONALITY:EMOTIONALLY_OBSESSIVE:5:55:100]++  Moderate Inclination
-	[PERSONALITY:SWAYED_BY_EMOTIONS:5:55:100]++  Moderate Inclination
+	[PERSONALITY:EMOTIONALLY_OBSESSIVE:0:45:100]-   Minor Aversion
+	[PERSONALITY:SWAYED_BY_EMOTIONS:0:45:100]-   Minor Aversion
 	[PERSONALITY:ALTRUISM:5:55:100]++  Moderate Inclination
 	[PERSONALITY:DUTIFULNESS:0:55:100]+   Minor Inclination
 	[PERSONALITY:THOUGHTLESSNESS:0:40:85]--- Great Aversion
 	[PERSONALITY:ORDERLINESS:10:60:100]+++ Great Inclination
-	[PERSONALITY:TRUST:0:55:100]+   Minor Inclination
+	[PERSONALITY:TRUST:0:45:100]-   Minor Aversion
 	[PERSONALITY:GREGARIOUSNESS:0:55:100]+   Minor Inclination
 	[PERSONALITY:ASSERTIVENESS:0:45:100]-   Minor Aversion
 	[PERSONALITY:ACTIVITY_LEVEL:0:45:95]--  Moderate Aversion
 	[PERSONALITY:EXCITEMENT_SEEKING:0:45:95]--  Moderate Aversion
 	[PERSONALITY:IMAGINATION:0:55:100]+   Minor Inclination
 	[PERSONALITY:ABSTRACT_INCLINED:0:55:100]+   Minor Inclination
-	[PERSONALITY:ART_INCLINED:5:55:100]++  Moderate Inclination
+	[PERSONALITY:ART_INCLINED:0:55:100]+   Minor Inclination
 	
 	[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -344,7 +346,7 @@ creature_civ_elf_high_masterfork
 		[BABYNAME:elf baby girl:elven baby girls]
 		[CHILDNAME:elf girl:elven girls]
 		[MULTIPLE_LITTER_RARE]
-		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, golden hair, and a reputation for grace and beauty.  She has a natural talent of magic.  She does not appear to age.]{+}
+		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, golden hair, and a reputation for grace, beauty and court intrigue.  She has a natural talent of magic.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
 		[ORIENTATION:MALE:75:5:20]{+}
@@ -353,7 +355,7 @@ creature_civ_elf_high_masterfork
 		[CHILDNAME:elf boy:elven boys]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, golden hair, and a reputation for grace and beauty.  He has a natural talent of magic.  He does not appear to age.]{+}
+		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, golden hair, and a reputation for grace, beauty and court intrigue.  He has a natural talent of magic.  He does not appear to age.]{+}
 
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]

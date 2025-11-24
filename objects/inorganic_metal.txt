@@ -12,7 +12,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling iron]
 	[DISPLAY_COLOR:0:7:1]
 	[BUILD_COLOR:0:7:1]
-	[MATERIAL_VALUE:9]{:10  revision: iron is very common.}
+	[MATERIAL_VALUE:5]{:10  revision: iron is very common.}
 	[SPEC_HEAT:450]
 	[MELTING_POINT:12768]
 	[BOILING_POINT:15150]
@@ -137,7 +137,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling copper]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:2]
+	[MATERIAL_VALUE:4]{:2  copper is very useful
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -256,7 +256,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling bronze]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:6]{:5 material cost would be 2. valuable because its a good armor/weapon material
+	[MATERIAL_VALUE:12]{:5  material cost would be 4,4. valuable because its a good armor/weapon material
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]
@@ -296,7 +296,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling brass]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:4]{:7
+	[MATERIAL_VALUE:9]{:7  material cost of 3,6
 	[SPEC_HEAT:377]
 	[MELTING_POINT:11656]
 	[BOILING_POINT:14068]
@@ -450,7 +450,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling electrum]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:24] material cost would be 20
+	[MATERIAL_VALUE:31] material cost would be 21
 	[SPEC_HEAT:180]
 	[MELTING_POINT:11828]
 	[BOILING_POINT:14968]
@@ -492,7 +492,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling tin]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:2]
+	[MATERIAL_VALUE:8]{:2  tin is quite rare and extremely useful
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -531,7 +531,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling fine pewter]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:8] material value would be 2
+	[MATERIAL_VALUE:17]{:5  material cost = 7,1
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -570,7 +570,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling trifle pewter]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:5]{:4
+	[MATERIAL_VALUE:4]
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -610,7 +610,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling lay pewter]
 	[DISPLAY_COLOR:3:7:0]
 	[BUILD_COLOR:3:7:0]
-	[MATERIAL_VALUE:5] material value would be 2. compare reagents to bronze
+	[MATERIAL_VALUE:11]{:3  material cost = 7,1
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -728,7 +728,7 @@ temperature values unknown, used nickel
 	[STATE_NAME_ADJ:GAS:boiling nickel silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:5] material cost would be 2
+	[MATERIAL_VALUE:5] material cost would be 3,4
 	[SPEC_HEAT:444]
 	[MELTING_POINT:11620] german wiki
 	[BOILING_POINT:15243]
@@ -768,7 +768,7 @@ temperature values unknown, used copper
 	[STATE_NAME_ADJ:GAS:boiling billon]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:6]
+	[MATERIAL_VALUE:8]{:6  material cost of 7,2
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -809,7 +809,7 @@ value is weighted average of 3 silver and 1 copper
 	[STATE_NAME_ADJ:GAS:boiling sterling silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:11] material cost would be 9.2
+	[MATERIAL_VALUE:12] material cost would be 11,2
 	[SPEC_HEAT:230]
 	[MELTING_POINT:11602] unknown source
 	[BOILING_POINT:13892]
@@ -853,7 +853,7 @@ value of 11 is the weighted average value of 2copper/1silver/1gold components
 	[STATE_NAME_ADJ:GAS:boiling black bronze]
 	[DISPLAY_COLOR:5:6:0]
 	[BUILD_COLOR:5:6:0]
-	[MATERIAL_VALUE:8] material cost would be 5.6
+	[MATERIAL_VALUE:8] material cost would be 7,4
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -894,7 +894,7 @@ value is weighted average of 3 gold and 1 copper
 	[STATE_NAME_ADJ:GAS:boiling rose gold]
 	[DISPLAY_COLOR:5:5:1]
 	[BUILD_COLOR:5:5:1]
-	[MATERIAL_VALUE:26]{:23
+	[MATERIAL_VALUE:26]{:23  materials are 23,5
 	[SPEC_HEAT:129]
 	[MELTING_POINT:11915]
 	[BOILING_POINT:15141]
@@ -970,7 +970,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[STATE_NAME_ADJ:GAS:boiling bismuth bronze]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:6] material value would be 4.7
+	[MATERIAL_VALUE:13] material value would be 11
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]

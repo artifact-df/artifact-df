@@ -1,5 +1,4 @@
-body=nil-- remove old rcp bodies
-body=tweaks-- remove old rcp tweaks
+tweaks=nil-- remove old rcp tweaks
 
 -- redefined rcp bodies
 btc1_tweaks.mfork_rcp_tweaks=function(lines,options,add_to_body,add_to_body_unique,add_tweak_candidate)

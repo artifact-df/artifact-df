@@ -170,7 +170,7 @@ tile_page_items
 [TILE_PAGE:ITEM_CLOTH]
 	[FILE:images/item_cloth.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM:2:2]
+	[PAGE_DIM:6:2]
 
 [TILE_PAGE:ITEM_CONSTRUCTION]
 	[FILE:images/item_construction.png]
@@ -196,9 +196,4 @@ tile_page_items
 	[FILE:images/item_scribe.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM:4:6]
-
-[TILE_PAGE:HIDES]
-	[FILE:images/hides.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM:6:4]
 
