@@ -2,7 +2,7 @@ creature_cavern_new_fff
 
 [OBJECT:CREATURE]
 
-[CREATURE:LANTERN_MOTH_CHP]
+[CREATURE:LANTERN_MOTH_FFF]
 	[DESCRIPTION:A large, moth-like monster with glowing wings that hypnotize prey. Their larvae burrow into cave walls, secreting a nutrient-rich slime that fungi thrive on.]
 	[NAME:lantern moth:lantern moths:lantern moth]
 	[CASTE_NAME:lantern moth:lantern moths:lantern moth]
@@ -16,7 +16,7 @@ creature_cavern_new_fff
 	[CLUSTER_NUMBER:1:5]
 	[AMBUSHPREDATOR]
 	[FLIER]
-	[CAN_DO_INTERACTION:LANTERN_MOTH_CHP]
+	[CAN_DO_INTERACTION:LANTERN_MOTH_FFF]
 		[CDI:ADV_NAME:Hypnotise]
 		[CDI:USAGE_HINT:ATTACK]
 		[CDI:VERB:flutter its hypnotic wings:flutters it's hypnotic wings:NA]
@@ -91,7 +91,7 @@ creature_cavern_new_fff
 
 
 
-[CREATURE:VEIL_DRIFTER_CHP]
+[CREATURE:VEIL_DRIFTER_FFF]
 	[DESCRIPTION:A floating, jellyfish-like creature that drifts through caverns, feeding on airborne spores. Their tendrils release a paralyzing mist when disturbed.]
 	[NAME:veil drifter:veil drifters:veil drifter]
 	[CASTE_NAME:veil drifter:veil drifters:veil drifter]
@@ -129,7 +129,7 @@ creature_cavern_new_fff
 		[SYNDROME]
 			[SYN_NAME:veil drifter toxin]
 			[SYN_AFFECTED_CLASS:GENERAL_POISON]
-			[SYN_IMMUNE_CREATURE:VEIL_DRIFTER_CHP:ALL]
+			[SYN_IMMUNE_CREATURE:VEIL_DRIFTER_FFF:ALL]
 			[SYN_CONTACT]
 			[CE_PARALYSIS:SEV:50:PROB:100:RESISTABLE:SIZE_DILUTES:START:10:END:400]
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
@@ -185,7 +185,7 @@ creature_cavern_new_fff
 		[FEMALE]
 		[LITTERSIZE:2:6]
 
-[CREATURE:MAGMA_DRAKE_CHP]
+[CREATURE:MAGMA_DRAKE_FFF]
 	[DESCRIPTION:A small, drake-like creature that nests near volcanoes and magma vents. Unlike its surface cousins, it cannot fly but instead uses its like wings to propel itself through the magma sea. It has a rocky hide, molten blood and is capable of spitting globs of magma when threatened. ]
 	[NAME:magma drake:magma drakes:magma drake]
 	[CASTE_NAME:magma drake:magma drakes:magma drake]
@@ -313,7 +313,7 @@ creature_cavern_new_fff
 	[SELECT_MATERIAL:BLOOD]
 		[MELTING_POINT:10000]
 
-[CREATURE:CAVE_THRESHER_CHP]
+[CREATURE:CAVE_THRESHER_FFF]
 	[DESCRIPTION:A large, insect-like monster with serrated, scythe-like forelimbs. They use their claws to shred fungi, rock, or flesh with equal ease.]
 	[NAME:cave thresher:cave threshers:cave thresher]
 	[CASTE_NAME:cave thresher:cave threshers:cave thresher]
@@ -402,7 +402,7 @@ creature_cavern_new_fff
 
 
 
-[CREATURE:CHASM_STRIDER_CHP]
+[CREATURE:CHASM_STRIDER_FFF]
 	[DESCRIPTION:A six-legged insectoid beast with long, spindly limbs that allow them to walk across deep crevices. They spin sticky, silk-like bridges between cliffs, creating natural pathways.]
 	[NAME:chasm strider:chasm striders:chasm strider]
 	[CASTE_NAME:chasm strider:chasm striders:chasm strider]

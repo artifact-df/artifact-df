@@ -21,3 +21,8 @@ tile_page_cavern_fff
 	[FILE:images/fff_cavern/fff_cavern_new_statues.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:32:704]
+
+[TILE_PAGE:CAVERN_CREATURES_FFF_STATUES]
+	[FILE:images/fff_cavern/cavern_creatures_fff_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:192]

@@ -2,7 +2,7 @@ graphics_creatures_halfling_corpse_fffS
 
 [OBJECT:GRAPHICS]
 
-[CREATURE_GRAPHICS:HALFLING_CHP]
+[CREATURE_GRAPHICS:HALFLING_FFF]
 	[LAYER_SET:CORPSE]
 
 	right shoulder
