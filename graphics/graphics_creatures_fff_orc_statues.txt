@@ -1,0 +1,6 @@
+graphics_creatures_fff_orc_statues
+
+[OBJECT:GRAPHICS]
+
+[STATUE_CREATURE_GRAPHICS:ORC_CHP]
+        [DEFAULT:FFF_ORC_STATUES:0:0:0:1]

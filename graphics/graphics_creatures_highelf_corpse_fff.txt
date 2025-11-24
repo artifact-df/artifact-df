@@ -2,7 +2,7 @@ graphics_creatures_highelf_corpse_fff
 
 [OBJECT:GRAPHICS]
 
-[CREATURE_GRAPHICS:HIGH_ELF_FFF]
+[CREATURE_GRAPHICS:HIGH_ELF_CHP]
 	[LAYER_SET:CORPSE]
 
 	right shoulder

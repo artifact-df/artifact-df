@@ -102,15 +102,25 @@ tile_page_fff_creatures
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:32:640]
 
-[TILE_PAGE:FFF_TROLL]
-	[FILE:images/fff_creatures/troll_body_fff.png]
+[TILE_PAGE:FFF_SUMMONS]
+	[FILE:images/fff_creatures/fff_summons.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:320:320]
+	[PAGE_DIM_PIXELS:96:224]
 
-[TILE_PAGE:FFF_TROLL_STATUES]
-	[FILE:images/fff_creatures/fff_troll_statues.png]
+[TILE_PAGE:FFF_SUMMONS_STATUES]
+	[FILE:images/fff_creatures/fff_summons_statues.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:32:256]
+	[PAGE_DIM_PIXELS:96:384]
+
+--TILE_PAGE:FFF_TROLL]
+	--FILE:images/fff_creatures/fff_troll.png]
+	--TILE_DIM:32:32]
+	--PAGE_DIM_PIXELS:320:256]
+
+--TILE_PAGE:FFF_TROLL_STATUES]
+	--FILE:images/fff_creatures/fff_troll_statues.png]
+	--TILE_DIM:32:32]
+	--PAGE_DIM_PIXELS:32:256]
 
 [TILE_PAGE:FFF_VERMIN]
 	[FILE:images/fff_creatures/fff_vermin.png]
@@ -122,12 +132,3 @@ tile_page_fff_creatures
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:32:320]
 
-[TILE_PAGE:FFF_SKELETONS]
-	[FILE:images/fff_creatures/fff_skeletons.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:64:160]
-
-[TILE_PAGE:FFF_SKELETONS_STATUES]
-	[FILE:images/fff_creatures/fff_skeletons_statue.png]
-	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:32:448]

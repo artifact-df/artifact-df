@@ -207,14 +207,12 @@ material_template_default
 	This lets the game know that an animal was likely killed in the production of this item.
 	[IMPLIES_ANIMAL_KILL]
 	[ROTS]
-	[EDIBLE_VERMIN]{+}
-	[GENERATES_MIASMA]{+}
 
 [MATERIAL_TEMPLATE:SKIN_NOLEATHER_TEMPLATE]{+  Revision: in almost all cases this for creatures smaller than 10000.}
-	[STATE_COLOR:ALL_SOLID:GRAY]
-	[STATE_NAME:ALL_SOLID:skin]
-	[STATE_ADJ:ALL_SOLID:skin]
-	[STATE_COLOR:LIQUID:GRAY]
+	[STATE_COLOR:ALL_SOLID:BROWN]
+	[STATE_NAME:ALL_SOLID:leather]
+	[STATE_ADJ:ALL_SOLID:leather]
+	[STATE_COLOR:LIQUID:BROWN]
 	[STATE_NAME:LIQUID:n/a]
 	[STATE_ADJ:LIQUID:n/a]
 	[STATE_COLOR:GAS:CHARCOAL]
@@ -223,11 +221,11 @@ material_template_default
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
-	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[IGNITE_POINT:10360]{:10508   Revision: 392 F, lights more easily.}
+	[MELTING_POINT:11000]
+	[BOILING_POINT:12000]
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: 22 F, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1000]
 	[LIQUID_DENSITY:NONE]
@@ -252,14 +250,11 @@ material_template_default
 	[BENDING_STRAIN_AT_YIELD:50000]
 	[MAX_EDGE:0]
 	[ABSORPTION:100]
-	This lets the game know to use this item to determine the exact material type for the leather product in the tanning reaction.
-	This lets the game know that an animal was likely killed in the production of this item.
 	[IMPLIES_ANIMAL_KILL]
 	[ROTS]
 	[EDIBLE_VERMIN]{+}
-	[GENERATES_MIASMA]{+}
 
-[MATERIAL_TEMPLATE:FAT_TEMPLATE]
+[MATERIAL_TEMPLATE:FAT_TEMPLATE] Sver: sane melting/heatdam points by thefriendlyhacker, also strengthened against force transfer a little
 	[STATE_COLOR:ALL_SOLID:YELLOW]
 	[STATE_NAME:ALL_SOLID:fat]
 	[STATE_ADJ:ALL_SOLID:fatty]
@@ -691,6 +686,7 @@ material_template_default
 	[IMPLIES_ANIMAL_KILL]
 	[ITEMS_HARD]
 	[EDIBLE_VERMIN]{+}
+	[ROTS]{+}
 
 [MATERIAL_TEMPLATE:TOOTH_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:IVORY]
@@ -737,7 +733,6 @@ material_template_default
 	[IMPLIES_ANIMAL_KILL]
 	[TOOTH]
 	[ITEMS_HARD]
-	[EDIBLE_VERMIN]{+}
 
 [MATERIAL_TEMPLATE:EYE_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:WHITE]
@@ -789,7 +784,6 @@ material_template_default
 	[MEAT_NAME:prepared:eye:eye]
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
-	[GENERATES_MIASMA]{+}
 
 [MATERIAL_TEMPLATE:NERVE_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:CARMINE]
@@ -2050,7 +2044,6 @@ material_template_default
 	[ABSORPTION:100]
 	[IMPLIES_ANIMAL_KILL]
 	[CHITIN]
-	[EDIBLE_VERMIN]{+}
 
 [MATERIAL_TEMPLATE:MILK_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:WHITE]
@@ -2439,7 +2432,6 @@ material_template_default
 	[ABSORPTION:100]
 	[ROTS]
 	[EDIBLE_VERMIN]{+}
-	[GENERATES_MIASMA]{+}
 
 [MATERIAL_TEMPLATE:FLOWER_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:GREEN]
@@ -2574,6 +2566,7 @@ material_template_default
 	[MAX_EDGE:500]
 	[ABSORPTION:100]
 	[ALCOHOL_PLANT]
+	[EDIBLE_VERMIN]{+}
 	[SYNDROME]
 		[SYN_NAME:inebriation]
 		[SYN_IDENTIFIER:INEBRIATION]
@@ -2635,7 +2628,6 @@ material_template_default
 	[ABSORPTION:100]
 	[POWDER_MISC_PLANT]
 	[EDIBLE_VERMIN]{+}
-	[ROTS][GENERATES_MIASMA]{+  revision: flour and similar items should rot.}
 
 [MATERIAL_TEMPLATE:PLANT_EXTRACT_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:WHITE]
@@ -2992,7 +2984,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[STATE_NAME:GAS:smoke]
 	[STATE_ADJ:GAS:n/a]
 	[DISPLAY_COLOR:7:0:1]
-	[MATERIAL_VALUE:1]
+	[MATERIAL_VALUE:3]{:1
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:10078]
@@ -3118,6 +3110,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[MAX_EDGE:500]
 	[ABSORPTION:100]
 	[ALCOHOL_CREATURE]
+	[EDIBLE_VERMIN]{+}
 	[SYNDROME]
 		[SYN_NAME:inebriated after consuming alcohol]
 		[SYN_IDENTIFIER:INEBRIATION]

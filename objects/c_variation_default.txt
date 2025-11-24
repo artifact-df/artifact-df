@@ -907,8 +907,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:CLUSTER_NUMBER]
 	[CV_REMOVE_TAG:COLOR]
 	[CV_REMOVE_TAG:MOUNT]
-	[CV_REMOVE_TAG:MOUNT_EXOTIC]
-	[CV_REMOVE_TAG:SOUND]
+	--CV_REMOVE_TAG:MOUNT_EXOTIC]
+	--CV_REMOVE_TAG:SOUND]
 	[CV_REMOVE_TAG:SMALL_REMAINS]
 	[CV_REMOVE_TAG:DESCRIPTION]
 	[CV_REMOVE_TAG:CREATURE_TILE]
@@ -978,7 +978,9 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_REPLACEMENT:SCALE_TEMPLATE]
 	[CV_NEW_TAG:LARGE_ROAMING]
 	[CV_NEW_TAG:SAVAGE]
+	[CV_NEW_TAG:GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+    Revision: giant creatures are 20% resistant to force.}
 	[CV_NEW_TAG:DIFFICULTY:4]{+                             Revision: slaying giant creatures should be a tough quest.}
+	[CV_NEW_TAG:PETVALUE:680]{+}
 	[CV_REMOVE_TAG:FREQUENCY]{+}
 	[CV_NEW_TAG:FREQUENCY:10]{+}
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
@@ -1050,20 +1052,24 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:GAIT:CRAWL:Creep:!ARG6:NO_BUILD_UP:0]
 	[CV_NEW_TAG:CAN_DO_INTERACTION:BATTLE_FERVOUR_GRIMLOCKE]  Sver: adrenaline by Grimlocke for longer combat
 		[CV_NEW_TAG:CDI:ADV_NAME:Prepare for a fight]
-		[CV_NEW_TAG:CDI:TARGET:A:SELF_ONLY]
-		[CV_NEW_TAG:CDI:USAGE_HINT:DEFEND]
 		[CV_NEW_TAG:CDI:USAGE_HINT:FLEEING]
+		[CV_NEW_TAG:CDI:USAGE_HINT:DEFEND]
+		[CV_NEW_TAG:CDI:VERB:steel themselves:prepares for battle:NA]
+		[CV_NEW_TAG:CDI:TARGET:A:SELF_ONLY:TOUCHABLE]
 		[CV_NEW_TAG:CDI:TARGET_RANGE:A:1]
 		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:A:1]
 		[CV_NEW_TAG:CDI:FREE_ACTION]
-		[CV_NEW_TAG:CDI:VERB:ready yourself for a fight:appears very steadfast on their own survival:NA]
-		[CV_NEW_TAG:CDI:WAIT_PERIOD:50]
-	[CV_NEW_TAG:SKILL_RATES:75:10:18:18]{+                    Revision: global skill learn reduction.  default:100:8:16:16 }
-	[CV_NEW_TAG:SKILL_RUST_RATE:MELEE_COMBAT:16:8:6]{+        Revision: melee fighting should take decades and regular practice to master.  default:100:8:16:16 }
-	[CV_NEW_TAG:SKILL_RUST_RATE:DISCIPLINE:14:6:4]{+          Revision: discipline should take regular drilling to maintain, decays rapidly otherwise.  default:100:8:16:16 }
+		[CV_NEW_TAG:CDI:WAIT_PERIOD:1200]
+	[CV_NEW_TAG:SKILL_RATE:MINING:33:8:16:16]{+           Revision: mining learned -66% slower.}
+	[CV_NEW_TAG:SKILL_RATE:COOK:33:12:24:24]{+            Revision: cooking learned -66% slower; too strong at the moment.}
+	[CV_NEW_TAG:SKILL_RATE:PLANT:33:12:24:24]{+           Revision: planting learned -66% slower; too strong at the moment.}
+	[CV_NEW_TAG:SKILL_RATE:DISCIPLINE:33:16:6:6]{+        Revision: some combat skills are too strong/should take time to master. Discipline decays rapidly without regular training.}
+	[CV_NEW_TAG:SKILL_RATE:MELEE_COMBAT:33:16:8:8]{+      Revision: melee fighting should take decades and regular practice to master.}
+	[CV_NEW_TAG:CREATURE_CLASS:ALL_CREATURES]{+           Revision: applies to all creatures to be used in syndromes/interactions.}
+	[CV_NEW_TAG:SKILL_RATE:BLOWGUN:33:8:16:16]{+          Revision: most creatures struggle to handle firearms.}
 	[CV_NEW_TAG:PROFESSION_NAME:BLOWGUNMAN:Gunman:Gunmen]{+                         Revision: renamed from blowgunner, firearms use this skill now.}
 	[CV_NEW_TAG:PROFESSION_NAME:MASTER_BLOWGUNMAN:Veteran Gunman:Veteran Gunmen]{+
-	[CV_NEW_TAG:PROFESSION_NAME:PLANTER:Farmer:Farmers]{+                           Revision: renamed from planter, used to be farmer in older versions.}
+	[CV_NEW_TAG:PROFESSION_NAME:PLANTER:Farmer:Farmers]{+                           Revision: renamed from planter.}
 
 [CREATURE_VARIATION:STANDARD_FLYING_GAITS]
 	[CV_NEW_TAG:GAIT:FLY:Maximum Flight Speed:!ARG4:10:3:!ARG2:50:LAYERS_SLOW:STRENGTH:AGILITY:STEALTH_SLOWS:50]

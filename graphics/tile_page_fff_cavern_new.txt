@@ -1,0 +1,15 @@
+tile_page_fff_cavern_new
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:FFF_CAVERN_NEW]
+	[FILE:images/fff_cavern_new/fff_cavern_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:288:640]
+
+[TILE_PAGE:FFF_CAVERN_NEW_STATUES]
+	[FILE:images/fff_cavern_new/fff_cavern_new_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:704]
+
+

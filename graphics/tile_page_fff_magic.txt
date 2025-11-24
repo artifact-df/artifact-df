@@ -1,0 +1,13 @@
+tile_page_fff_magic
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:FFF_SKELETONS]
+	[FILE:images/fff_magic/fff_skeletons.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:128]
+
+[TILE_PAGE:FFF_SKELETONS_STATUES]
+	[FILE:images/fff_magic/fff_skeletons_statue.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:448]

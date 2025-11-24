@@ -1,0 +1,58 @@
+tile_page_fff_orc
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:FFF_ORC_BODY] 
+	[FILE:images/fff_orc/fff_orc_body.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:288:224]
+
+[TILE_PAGE:FFF_ORC_BODY_CORPSE] 
+	[FILE:images/fff_orc/fff_orc_body_corpse.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:96:288]
+
+[TILE_PAGE:FFF_ORC_HAIR]
+	[FILE:images/fff_orc/fff_orc_hair.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:192:608]
+
+[TILE_PAGE:FFF_ORC_HAIR_CORPSE] 
+	[FILE:images/fff_orc/fff_orc_hair_corpse.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:1024]
+
+[TILE_PAGE:FFF_ORC_PETS]
+	[FILE:images/fff_orc/fff_orc_pets.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:320:192]
+
+[TILE_PAGE:FFF_ORC_STATUES] 
+	[FILE:images/fff_orc/fff_orc_statue.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:320]
+
+[TILE_PAGE:FFF_ORC_TUSKS] 
+	[FILE:images/fff_orc/fff_orc_tusks.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:256:32]
+
+[TILE_PAGE:FFF_ORC_WEARABLES] 
+	[FILE:images/fff_orc/fff_orc_wearables.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:864]
+
+[TILE_PAGE:FFF_ORC_WEARABLES_NEW] 
+	[FILE:images/fff_orc/fff_orc_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_ORC_WIELDABLES] 
+	[FILE:images/fff_orc/fff_orc_wieldables.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:480:864]
+
+[TILE_PAGE:FFF_ORC_WIELDABLES_NEW] 
+	[FILE:images/fff_orc/fff_orc_wieldables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:864]
