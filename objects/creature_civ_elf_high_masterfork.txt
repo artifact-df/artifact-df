@@ -2,7 +2,7 @@ creature_civ_elf_high_masterfork
 
 [OBJECT:CREATURE]
 
-[CREATURE:HIGH_ELF_CHP]
+[CREATURE:HIGH_ELF_FFF]
 	[DESCRIPTION:A medium-sized creature known for their magical aptitude and longevity. It does not appear to age.]
 	[NAME:high elf:high elves:elven]
 	[CASTE_NAME:high elf:high elves:elven]
@@ -170,7 +170,7 @@ creature_civ_elf_high_masterfork
 		--SYNDROME] - from Dwarvemon mod
 			--SYN_CONTACT]
 		--SYN_NAME:beholding the beauty of the heavens]
-		--SYN_AFFECTED_CREATURE:HIGH_ELF_CHP:ALL]
+		--SYN_AFFECTED_CREATURE:HIGH_ELF_FFF:ALL]
 			--CE_FEEL_EMOTION:EMOTION:DELIGHT:SEV:30:PROB:100:START:0]
 				--CE:COUNTER_TRIGGER:CAVE_ADAPT:0:NONE:REQUIRED]
 			--CE_FEEL_EMOTION:EMOTION:ELATION:SEV:30:PROB:100:START:0]
@@ -178,7 +178,7 @@ creature_civ_elf_high_masterfork
 		--SYNDROME] 
 			--SYN_CONTACT]
 		--SYN_NAME:being seperated from the heavens]
-		--SYN_AFFECTED_CREATURE:HIGH_ELF_CHP:ALL]
+		--SYN_AFFECTED_CREATURE:HIGH_ELF_FFF:ALL]
 			--CE_FEEL_EMOTION:EMOTION:UNEASINESS:SEV:30:PROB:100:START:0]
 				--CE:COUNTER_TRIGGER:CAVE_ADAPT:1200:2400:REQUIRED]
 			--CE_FEEL_EMOTION:EMOTION:SADNESS:SEV:30:PROB:100:START:0]

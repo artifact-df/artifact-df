@@ -688,7 +688,7 @@ creature_standard
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_CANLATCH]
 	[CAN_DO_INTERACTION:OGRE_HOWL]{+}
@@ -1072,7 +1072,7 @@ creature_standard
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]{  Revision: a powerful edged scratching attack.}
@@ -1081,7 +1081,7 @@ creature_standard
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 	[APPLY_CREATURE_VARIATION:TAIL_ATTACK]{+ tail slap attack.}
 	[ALL_ACTIVE]
@@ -1782,7 +1782,7 @@ creature_standard
 	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[FEMALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:250:500] so they cant rule forever
+		[MAXAGE:150:450] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
@@ -1792,7 +1792,7 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:250:500] so they cant rule forever
+		[MAXAGE:150:450] so they cant rule forever
 		[POP_RATIO:2]
 		[BABYNAME:giant baby boy:giant baby boys]
 		[CHILDNAME:giant boy:giant boys]
@@ -2122,7 +2122,7 @@ creature_standard
 	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[FEMALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:250:500] so they cant rule forever
+		[MAXAGE:150:450] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]
@@ -2131,7 +2131,7 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:250:500] so they cant rule forever
+		[MAXAGE:150:450] so they cant rule forever
 		[POP_RATIO:2]
 		[BABYNAME:cyclops baby boy:cyclops baby boys]
 		[CHILDNAME:cyclops boy:cyclops boys]
@@ -2465,7 +2465,7 @@ creature_standard
 	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[FEMALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:250:500] so they cant rule forever
+		[MAXAGE:150:450] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]
@@ -2474,7 +2474,7 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:250:500] so they cant rule forever
+		[MAXAGE:150:450] so they cant rule forever
 		[POP_RATIO:2]
 		[BABYNAME:ettin baby boy:ettin baby boys]
 		[CHILDNAME:ettin boy:ettin boys]
@@ -2557,7 +2557,8 @@ creature_standard
 	[SEMIMEGABEAST][DIFFICULTY:6]{:5
 		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
-	[CAN_LEARN][CAN_SPEAK]
+	[CAN_LEARN]--CAN_SPEAK][UTTERANCES]
+	[SLOW_LEARNER]{+}
 	[CANOPENDOORS]
 	[CURIOUSBEAST_GUZZLER]{+}
 	[BUILDINGDESTROYER:2]
@@ -2608,6 +2609,8 @@ creature_standard
 		[USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
 	[TISSUE_LAYER:BY_CATEGORY:HEAD:HAIR:NORMAL]
+	[TISSUE_LAYER:BY_CATEGORY:LEG_UPPER:HAIR]{+  hairly legs.}
+	[TISSUE_LAYER:BY_CATEGORY:LEG_LOWER:HAIR]{+
 	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
 	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
@@ -2632,6 +2635,7 @@ creature_standard
 	[CREATURE_CLASS:GENERAL_POISON]
 	[GETS_WOUND_INFECTIONS]
 	[GETS_INFECTIONS_FROM_ROT]
+	[RELSIZE:BY_CATEGORY:BRAIN:75]{+  smaller brain.}
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
 	[USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]
@@ -2689,7 +2693,7 @@ creature_standard
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	removed scratching
@@ -2766,7 +2770,7 @@ creature_standard
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]{+}
-		[MULTIPLY_VALUE:5]{+
+		[MULTIPLY_VALUE:4]{+
 
 [CREATURE:YETI]
 	[DESCRIPTION:A large ape-like creature with white fur, found in the snowy wilds.]
@@ -4426,7 +4430,7 @@ creature_standard
 	[SPHERE:MUCK]
 	[SPHERE:REBIRTH]
 	[SPHERE:STRENGTH]
-	[SPHERE:HEALING]{+}
+	[SPHERE:HEALING]{+  hydras heal.}
 	[NOFEAR]--NOEXERT] hydras are extremely powerful but get exhausted eventually
 	[NOSTUN]
 	[NOPAIN]
@@ -4500,7 +4504,7 @@ creature_standard
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:3]{:3:3  hydras recover faster}
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]{  Revision: a powerful edged scratching attack.}
@@ -4509,7 +4513,7 @@ creature_standard
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 	[APPLY_CREATURE_VARIATION:TAIL_ATTACK]{+ tail slap attack.}
 	[ALL_ACTIVE]
@@ -5035,7 +5039,6 @@ creature_standard
 	[SPHERE:SKY]
 	[SPHERE:WIND]
 	[SPHERE:HUNTING]
-	[SPHERE:ANIMALS]{+}
 	[MANNERISM_FINGERS:claw:claws]
 	[MANNERISM_HEAD:head]
 	[MANNERISM_EYES:eyes]
@@ -5128,20 +5131,20 @@ creature_standard
 		[APP_MOD_IMPORTANCE:550]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
-		[ATTACK_CONTACT_PERC:80]
+		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
-		[ATTACK_CONTACT_PERC:80]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_WITH]
 	[CASTE:FEMALE]
