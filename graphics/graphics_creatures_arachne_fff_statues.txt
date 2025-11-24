@@ -1,0 +1,6 @@
+graphics_statues_cavern_elementals_fff_statues
+
+[OBJECT:GRAPHICS]
+
+[STATUE_CREATURE_GRAPHICS:ARACHNE_FFF]
+     [DEFAULT:STATUES_ARACHNE_FFF:0:0:0:1]

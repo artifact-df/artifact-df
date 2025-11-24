@@ -1,0 +1,88 @@
+tile_page_fff_vanilla_races
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:FFF_DWARF_WEARABLES_NEW]
+	[FILE:images/fff_core/fff_dwarf_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_ELF_WEARABLES_NEW]
+	[FILE:images/fff_core/fff_elf_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_GOBLIN_WEARABLES_NEW]
+	[FILE:images/fff_core/fff_goblin_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_HUMAN_WEARABLES_NEW]
+	[FILE:images/fff_core/fff_human_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_KOBOLD_WEARABLES_NEW]
+	[FILE:images/fff_core/fff_kobold_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_WIELDABLES]
+	[FILE:images/fff_core/fff_wieldables.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:864]
+
+[TILE_PAGE:FFF_WIELDABLES_TALL]
+	[FILE:images/fff_core/fff_wieldables_tall.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:864]
+
+[TILE_PAGE:PORTRAIT_DWARF_ARMOUR_NEW]
+	[FILE:images/fff_core/portraits/dwarf_portrait_armour_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:672:768]
+
+[TILE_PAGE:PORTRAIT_DWARF_CLOTHING_NEW]
+	[FILE:images/fff_core/portraits/dwarf_portrait_clothing_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:96:288]
+
+[TILE_PAGE:PORTRAIT_ELF_ARMOUR_NEW]
+	[FILE:images/fff_core/portraits/elf_portrait_armour_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:672:768]
+
+[TILE_PAGE:PORTRAIT_ELF_CLOTHING_NEW]
+	[FILE:images/fff_core/portraits/elf_portrait_clothing_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:96:288]
+
+[TILE_PAGE:PORTRAIT_GOBLIN_ARMOUR_NEW]
+	[FILE:images/fff_core/portraits/goblin_portrait_armour_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:672:768]
+
+[TILE_PAGE:PORTRAIT_GOBLIN_CLOTHING_NEW]
+	[FILE:images/fff_core/portraits/goblin_portrait_clothing_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:96:288]
+
+[TILE_PAGE:PORTRAIT_HUMAN_ARMOUR_NEW]
+	[FILE:images/fff_core/portraits/human_portrait_armour_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:672:768]
+
+[TILE_PAGE:PORTRAIT_HUMAN_CLOTHING_NEW]
+	[FILE:images/fff_core/portraits/human_portrait_clothing_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:96:288]
+
+[TILE_PAGE:PORTRAIT_KOBOLD_ARMOUR_NEW]
+	[FILE:images/fff_core/portraits/kobold_portrait_armour_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:96:768]
+
+[TILE_PAGE:PORTRAIT_KOBOLD_CLOTHING_NEW]
+	[FILE:images/fff_core/portraits/kobold_portrait_clothing_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:96:288]

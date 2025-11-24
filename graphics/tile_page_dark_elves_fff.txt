@@ -1,0 +1,13 @@
+tile_page_dark_elves_fff
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:PORTRAIT_DARKELF_ARMOUR_NEW]
+	[FILE:images/darkelf/darkelf_portrait_armour_new.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM_PIXELS:672:768]
+
+[TILE_PAGE:FFF_DARKELF_WEARABLES_NEW]
+	[FILE:images/darkelf/fff_darkelf_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]

@@ -1,0 +1,53 @@
+tile_page_creatures_highelf_fff
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:FFF_HIGHELF_BODY]
+	[FILE:images/fff_highelf/fff_highelf_body.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:288:224]
+
+[TILE_PAGE:FFF_HIGHELF_BODY_CORPSE]
+	[FILE:images/fff_highelf/fff_highelf_body_corpse.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:96:288]
+
+[TILE_PAGE:FFF_HIGHELF_HAIR]
+	[FILE:images/fff_highelf/fff_highelf_hair.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:192:608]
+
+[TILE_PAGE:FFF_HIGHELF_HAIR_CORPSE]
+	[FILE:images/fff_highelf/fff_highelf_hair_corpse.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:192:512]
+
+[TILE_PAGE:FFF_HIGHELF_PETS]
+	[FILE:images/fff_highelf/fff_highelf_pets.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:288:128]
+
+[TILE_PAGE:FFF_HIGHELF_STATUES]
+	[FILE:images/fff_highelf/fff_highelf_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:192]
+
+[TILE_PAGE:FFF_HIGHELF_WEARABLES]
+	[FILE:images/fff_highelf/fff_highelf_wearables.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:864]
+
+[TILE_PAGE:FFF_HIGHELF_WEARABLES_NEW]
+	[FILE:images/fff_highelf/fff_highelf_wearables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:768]
+
+[TILE_PAGE:FFF_HIGHELF_WIELDABLES]
+	[FILE:images/fff_highelf/fff_highelf_wieldables.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:864]
+
+[TILE_PAGE:FFF_HIGHELF_WIELDABLES_NEW]
+	[FILE:images/fff_highelf/fff_highelf_wieldables_new.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:384:864]

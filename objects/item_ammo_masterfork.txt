@@ -33,13 +33,6 @@ item_ammo_masterfork
 [SIZE:80]
 [ATTACK:EDGE:5:12000:stab:stabs:NO_SUB:3000]
 
-[ITEM_AMMO:ITEM_AMMO_SLING_SPL]
-[NAME:sling-bullet:sling-bullets]
-[CLASS:SLING]
-[SIZE:100]
-[ATTACK:BLUNT:20:50:bash:bashes:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-
 
   // THROWN WEAPON AMMO
 

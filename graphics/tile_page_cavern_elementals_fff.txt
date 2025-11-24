@@ -1,0 +1,13 @@
+tile_page_cavern_elementals_fff
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:CAVERN_ELEMENTALS_FFF]
+	[FILE:images/cavern_elementals/cavern_elementals_fff.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:992]
+
+[TILE_PAGE:STATUES_CAVERN_ELEMENTALS_FFF]
+	[FILE:images/cavern_elementals/cavern_elementals_statues_fff.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:592]

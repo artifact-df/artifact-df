@@ -10,7 +10,7 @@ creature_large_temperate
 	[CREATURE_TILE:'B'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[NATURAL]
-	[PETVALUE:500]
+	[PETVALUE:520]{:500
 	[PET]
 	[TRAINABLE]
 	[MOUNT_EXOTIC]
@@ -190,7 +190,7 @@ creature_large_temperate
 	[CREATURE_TILE:'B']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:1124]{:500  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:strength]
@@ -387,7 +387,7 @@ creature_large_temperate
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
-	[PETVALUE:300]{:694  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:strength]
@@ -570,7 +570,7 @@ creature_large_temperate
 	[CREATURE_TILE:'D']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:156]{:50  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:grace]
@@ -741,7 +741,7 @@ creature_large_temperate
 	[CREATURE_TILE:'F']
 	[COLOR:4:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:103]{:25  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]{+}
 	[LARGE_PREDATOR]{+}
@@ -908,7 +908,7 @@ creature_large_temperate
 	[CREATURE_TILE:'R']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:103]{:25  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:cunning]
@@ -1070,7 +1070,7 @@ creature_large_temperate
 	[CREATURE_TILE:'M']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:156]{:50  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:mischief]
@@ -1281,7 +1281,7 @@ creature_large_temperate
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:264]{:100  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:cunning]
@@ -1306,8 +1306,8 @@ creature_large_temperate
 	[POPULATION_NUMBER:20:40]{:10:20
 	[CLUSTER_NUMBER:3:7]
 	[GRASSTRAMPLE:0][NATURAL]
-	[PETVALUE:100]{:50
-	[PET_EXOTIC]
+	[PETVALUE:65]{:50
+	[PET]{:PET_EXOTIC}
 	[TRAINABLE]{+}
 	[BONECARN]
 	[PREFSTRING:cunning]
@@ -1493,7 +1493,7 @@ creature_large_temperate
 	[CREATURE_TILE:'W']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:264]{:50  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:cunning]
@@ -1508,7 +1508,7 @@ creature_large_temperate
 	[GENERAL_CHILD_NAME:groundhog pup:groundhog pups]
 	[CREATURE_TILE:'g'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
-	[PETVALUE:25]{:50
+	[PETVALUE:50]
 	[PET_EXOTIC]
 	[STANDARD_GRAZER]
 	[NATURAL]
@@ -1657,7 +1657,7 @@ creature_large_temperate
 	[CREATURE_TILE:'G']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:103]{:50  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:ability to burrow]
@@ -1839,7 +1839,7 @@ creature_large_temperate
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:1446]{:650  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:strength]
@@ -2015,7 +2015,7 @@ creature_large_temperate
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
-	[PETVALUE:113]{:30  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:striking red face]
@@ -2184,7 +2184,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[COLOR:7:0:1]
 	[TRAINABLE]
 	[PET_EXOTIC]
-	[PETVALUE:694]{:300  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:1000]
 	[MOUNT_EXOTIC]
 	[PREFSTRING:enormous size]
 	[PREFSTRING:striking coloration]
@@ -2265,7 +2265,7 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[CHILD:1][GENERAL_CHILD_NAME:capybara pup:capybara pups]
 	[CREATURE_TILE:'c'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
-	[PETVALUE:35]{:100
+	[PETVALUE:100]
 	[PET_EXOTIC]{PET}
 	[NATURAL]
 	[STANDARD_GRAZER]
@@ -2387,7 +2387,7 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:124]{:100  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[SOUND:ALERT:200:1000:VOCALIZATION:bark:barks:a resounding bark]
 	[SOUND:PEACEFUL_INTERMITTENT:200:10000:VOCALIZATION:whistle:whistles:deep whistling]
@@ -2627,7 +2627,7 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'B']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:103]{:25  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
@@ -2827,7 +2827,7 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:694]{:300  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:1000]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[SELECT_CASTE:FEMALE]
@@ -2855,7 +2855,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'p'][COLOR:4:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[NATURAL]
-	[PETVALUE:65]{:25
+	[PETVALUE:25]
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:20:40]{:10:20
@@ -3050,7 +3050,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'P']
 	[COLOR:4:0:0]
 	[PET_EXOTIC]
-	[PETVALUE:189]{:25  revision: giant creatures should have a higher pet value. base value +23 x 2.15  rounded down.}
+	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]

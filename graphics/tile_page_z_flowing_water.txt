@@ -1,0 +1,24 @@
+tile_page_flowing_water
+
+[OBJECT:TILE_PAGE]
+
+
+[TILE_PAGE:FLOWINGWATER]
+	[FILE:images/flowing1.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:512:256]
+
+[TILE_PAGE:FLOWINGWATER2]
+	[FILE:images/flowing1.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:512:256]
+
+[TILE_PAGE:FLOWINGWATER3]
+	[FILE:images/flowing1.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:512:256]
+
+[TILE_PAGE:FLOWINGWATER4]
+	[FILE:images/flowing1.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:512:256]

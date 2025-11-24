@@ -1,0 +1,48 @@
+tile_page_fff_items
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:FFF_CORE_AMMO]
+	[FILE:images/fff_core/fff_core_ammo.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:768]
+
+[TILE_PAGE:FFF_CORE_TOOLS]
+	[FILE:images/fff_core/fff_core_tools.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:960]
+
+[TILE_PAGE:FFF_CORE_TOYS]
+	[FILE:images/fff_core/fff_core_toys.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:896]
+
+[TILE_PAGE:FFF_DWARF_ITEMS]
+	[FILE:images/fff_core/fff_dwarf_items.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:96:416]
+
+[TILE_PAGE:FFF_HALFLING_ITEMS]
+	[FILE:images/fff_core/fff_halfling_items.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:96:96]
+
+[TILE_PAGE:FFF_HUMAN_ITEMS]
+	[FILE:images/fff_core/fff_human_items.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:96:192]
+
+[TILE_PAGE:FFF_HIGHELF_ITEMS]
+	[FILE:images/fff_core/fff_highelf_items.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:32]
+
+[TILE_PAGE:FFF_LIZARDFOLK_ITEMS]
+	[FILE:images/fff_core/fff_lizardfolk_items.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:96:160]
+
+[TILE_PAGE:FFF_ORC_ITEMS]
+	[FILE:images/fff_core/fff_orc_items.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:64:256]

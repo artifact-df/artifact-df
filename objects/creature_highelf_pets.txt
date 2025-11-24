@@ -2,7 +2,7 @@ creature_highelf_pets
 
 [OBJECT:CREATURE]
 				
-[CREATURE:LUNAR_DRAKE_CHP]
+[CREATURE:LUNAR_DRAKE_FFF]
 	[DESCRIPTION:A large winged reptile that resembles a small dragon. They can channel magic from the moon and are said to have taught the High Elves how to use lunar magic.]
 	[NAME:lunar drake:lunar drakes:lunar drake]
 	[CASTE_NAME:lunar drake:lunar drakes:lunar drake]
@@ -116,7 +116,7 @@ creature_highelf_pets
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:5]
 
-[CREATURE:SOLAR_DRAKE_CHP]
+[CREATURE:SOLAR_DRAKE_FFF]
 	[DESCRIPTION:A large winged reptile that resembles a small dragon. They can channel magic from the sun and are said to have taught the High Elves how to use solar magic.]
 	[NAME:solar drake:solar drakes:solar drake]
 	[CASTE_NAME:solar drake:solar drakes:solar drake]

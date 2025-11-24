@@ -138,7 +138,7 @@ creature_civ_dwarf_mfork
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
-	[CAVE_ADAPT]
+	[CAVE_ADAPT]{+  revision: dwarves get bonus stats when they've been underground for a long time.}
 	[USE_MATERIAL_TEMPLATE:CAVEADAPTATION:CREATURE_EXTRACT_TEMPLATE]
 	  [SYNDROME]  base from Dwarvemon mod / edited by zey
 		[SYN_CONTACT]

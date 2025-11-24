@@ -29,7 +29,7 @@ squamous's notes on armor spawning:
 [METAL]
 --LEATHER]
 
-[ITEM_HELM:ITEM_HELM_DWARF_PLATE_CHP]
+[ITEM_HELM:ITEM_HELM_DWARF_PLATE_FFF]
 [NAME:plate helm:plate helm]
 [MATERIAL_SIZE:9]
 [LAYER:ARMOR]
@@ -41,7 +41,7 @@ squamous's notes on armor spawning:
 [METAL]
 [SHAPED]
 
-[ITEM_HELM:ITEM_HELM_HORNED_CHP]
+[ITEM_HELM:ITEM_HELM_HORNED_FFF]
 [NAME:horned helm:horned helms]
 [ARMORLEVEL:2]
 [SHAPED]
@@ -53,7 +53,7 @@ squamous's notes on armor spawning:
 [HARD]
 [METAL]
 
-[ITEM_HELM:ITEM_HELM_WINGED_CHP]
+[ITEM_HELM:ITEM_HELM_WINGED_FFF]
 [NAME:winged helm:winged helms]
 [ARMORLEVEL:2]
 [SHAPED]
@@ -65,7 +65,7 @@ squamous's notes on armor spawning:
 [HARD]
 [METAL]
 
-[ITEM_HELM:ITEM_HELM_CAP_HORNED_CHP]
+[ITEM_HELM:ITEM_HELM_CAP_HORNED_FFF]
 [NAME:horned cap:horned caps]
 [METAL_ARMOR_LEVELS]
 [LAYER:OVER]
@@ -90,7 +90,7 @@ squamous's notes on armor spawning:
 [LEATHER]
 [STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
-[ITEM_HELM:ITEM_HELM_KETTLE_CHP]
+[ITEM_HELM:ITEM_HELM_KETTLE_FFF]
 [NAME:bucket helm:bucket helms]
 [ARMORLEVEL:2]
 [SHAPED]
@@ -102,7 +102,7 @@ squamous's notes on armor spawning:
 [HARD]
 [METAL]
 
-[ITEM_HELM:ITEM_HELM_VISORED_CHP]
+[ITEM_HELM:ITEM_HELM_VISORED_FFF]
 [NAME:visored helm:visored helms]
 [ARMORLEVEL:2]
 [SHAPED]
@@ -200,7 +200,7 @@ squamous's notes on armor spawning:
 [BARRED]
 [SCALED]
 
-[ITEM_ARMOR:ITEM_ARMOR_PLATE_DWARF_CHP]
+[ITEM_ARMOR:ITEM_ARMOR_PLATE_DWARF_FFF]
 [NAME:plate armor:plate armor]
 [PREPLURAL:suits of]
 [ARMORLEVEL:3]
@@ -284,7 +284,7 @@ squamous's notes on armor spawning:
 [STRUCTURAL_ELASTICITY_CHAIN_ALL]
 [STRUCTURAL_ELASTICITY_CHAIN_METAL]
 
-[ITEM_GLOVES:ITEM_GLOVES_PLATE_DWARF_CHP]
+[ITEM_GLOVES:ITEM_GLOVES_PLATE_DWARF_FFF]
 [NAME:plate gauntlet:plate gauntlets]
 [ARMORLEVEL:3]
 [UPSTEP:1]
@@ -365,7 +365,7 @@ squamous's notes on armor spawning:
 --LEATHER]
 [HARD]
 
-[ITEM_SHOES:ITEM_SHOES_PLATE_BOOTS_CHP]
+[ITEM_SHOES:ITEM_SHOES_PLATE_BOOTS_FFF]
 [NAME:plate sabaton:plate sabatons]
 [ARMORLEVEL:3]
 [UPSTEP:1]
