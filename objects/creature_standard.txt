@@ -490,7 +490,7 @@ creature_standard
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[LARGE_ROAMING][EVIL][DIFFICULTY:4][FREQUENCY:50]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:20]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
@@ -769,7 +769,7 @@ creature_standard
 	[GOOD]
 	[TRAINABLE]{+}
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:20]{:5:10
 	[CLUSTER_NUMBER:1:5]
 	[GRASSTRAMPLE:0]
 	[NATURAL]{+}
@@ -1782,7 +1782,9 @@ creature_standard
 	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[FEMALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:450] so they cant rule forever
+		[ORIENTATION:MALE:0:0:1]
+		[ORIENTATION:FEMALE:1:0:0]
+		[MAXAGE:150:250] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
@@ -1792,7 +1794,9 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:450] so they cant rule forever
+		[ORIENTATION:FEMALE:1:0:0]
+		[ORIENTATION:MALE:0:0:1]
+		[MAXAGE:150:250] so they cant rule forever
 		[POP_RATIO:2]
 		[BABYNAME:giant baby boy:giant baby boys]
 		[CHILDNAME:giant boy:giant boys]
@@ -2122,7 +2126,9 @@ creature_standard
 	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[FEMALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:450] so they cant rule forever
+		[ORIENTATION:MALE:0:0:1]
+		[ORIENTATION:FEMALE:1:0:0]
+		[MAXAGE:150:250] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]
@@ -2131,7 +2137,9 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:450] so they cant rule forever
+		[MAXAGE:150:250] so they cant rule forever
+		[ORIENTATION:FEMALE:1:0:0]
+		[ORIENTATION:MALE:0:0:1]
 		[POP_RATIO:2]
 		[BABYNAME:cyclops baby boy:cyclops baby boys]
 		[CHILDNAME:cyclops boy:cyclops boys]
@@ -2465,7 +2473,9 @@ creature_standard
 	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[FEMALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:450] so they cant rule forever
+		[ORIENTATION:MALE:0:0:1]
+		[ORIENTATION:FEMALE:1:0:0]
+		[NO_GENDER] so they cant have heirs
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]
@@ -2474,7 +2484,9 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:450] so they cant rule forever
+		[MAXAGE:150:250] so they cant rule forever
+		[ORIENTATION:FEMALE:1:0:0]
+		[ORIENTATION:MALE:0:0:1]
 		[POP_RATIO:2]
 		[BABYNAME:ettin baby boy:ettin baby boys]
 		[CHILDNAME:ettin boy:ettin boys]
@@ -2668,8 +2680,8 @@ creature_standard
 	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[BODY_SIZE:0:0:10000]
 	[BODY_SIZE:1:168:50000]
-	[BODY_SIZE:12:0:330000]{:220000  revision: increased the base size of minotaurs by 50% as they were rarely a threat.}
-	[BODY_SIZE:1000:0:495000]{+  Revision: 50% greater size after a millennium.}
+	[BODY_SIZE:12:0:220000]
+	[BODY_SIZE:1000:0:292600]{+  Revision: 50% greater size after a millennium.}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
@@ -2745,7 +2757,7 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:1]{+}
+		[POP_RATIO:10]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:minotauress:minotauresses:minotauress]{+}
 		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
@@ -2753,11 +2765,33 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:2]{+}
+		[POP_RATIO:20]{+}
 		[CASTE_NAME:minotaur:minotaurs:minotaur]{+}
 		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
 		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked.]{+}
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+	[CASTE:FEMALE_CRAZED]
+		[FEMALE]
+		[POP_RATIO:1]{+}
+		[MULTIPLE_LITTER_RARE]
+		[CRAZED][ARENA_RESTRICTED]
+		[ORIENTATION:MALE:0:0:1]
+		[ORIENTATION:FEMALE:1:0:0]
+		[CASTE_NAME:minotauress berserker:minotauress berserkers:minotauress]{+}
+		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
+		[CHILDNAME:minotauress girl:minotauress girls]{+}
+		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked. She is crazed and in a state of bloodlust.]{+}
+	[CASTE:MALE_CRAZED]
+		[MALE]
+		[POP_RATIO:2]{+}
+		[CRAZED][ARENA_RESTRICTED]
+		[ORIENTATION:FEMALE:1:0:0]
+		[ORIENTATION:MALE:0:0:1]
+		[CASTE_NAME:minotaur berserker:minotaur berserkers:minotaur]{+}
+		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
+		[CHILDNAME:minotaur boy:minotaur boys]{+}
+		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked. He is crazed and in a state of bloodlust.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -2784,7 +2818,7 @@ creature_standard
 	[BIOME:GLACIER]
 	[BIOME:TUNDRA]
 	[LARGE_ROAMING][SAVAGE][DIFFICULTY:2][FREQUENCY:5]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20
 	[CLUSTER_NUMBER:1:5]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
@@ -2907,8 +2941,8 @@ creature_standard
 	[CHILD:10][BABY:1]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:FOREST_TAIGA]
-	[LARGE_ROAMING][SAVAGE][DIFFICULTY:2][FREQUENCY:5]
-	[POPULATION_NUMBER:10:20]
+	[LARGE_ROAMING][SAVAGE][DIFFICULTY:2][FREQUENCY:10]{:5
+	[POPULATION_NUMBER:20:40]{:10:20
 	[CLUSTER_NUMBER:1:5]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
@@ -3035,7 +3069,7 @@ creature_standard
 	[BIOME:TUNDRA]
 	[BIOME:TAIGA]{+}
 	[LARGE_ROAMING][EVIL][DIFFICULTY:2][FREQUENCY:25]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20
 	[CLUSTER_NUMBER:1:5]
 	[LARGE_PREDATOR][MEANDERER]
 	[CAN_LEARN][SLOW_LEARNER]
@@ -3117,7 +3151,7 @@ creature_standard
 	[BIOME:TAIGA]{+}
 	[POPULATION_NUMBER:10:250]
 	[CLUSTER_NUMBER:1:10]
-	[SAVAGE](EVIL)
+	[EVIL]
 	[GRASSTRAMPLE:0]
 	[BONECARN]
 	[TRAINABLE]{+}
@@ -3850,14 +3884,14 @@ creature_standard
 	[CASTE_NAME:foul blendec:foul blendecs:foul blendec]
 	[CREATURE_TILE:'b'][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20
 	[CLUSTER_NUMBER:3:5]
 	[CANOPENDOORS]
 	[LARGE_PREDATOR][EVIL]
 	[BONECARN]
 	[GRASSTRAMPLE:0]
 	[PETVALUE:250]
-	[LARGE_ROAMING][FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:10]{:5
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_CONIFER]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
@@ -3991,7 +4025,7 @@ creature_standard
 	[GRASSTRAMPLE:0]
 	[BONECARN]
 	[LARGE_ROAMING][FREQUENCY:50]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20
 	[CLUSTER_NUMBER:1:10]
 	[LARGE_PREDATOR][EVIL]
 	--BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
