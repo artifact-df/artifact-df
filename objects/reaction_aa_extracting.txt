@@ -3,7 +3,7 @@ reaction_aa_extracting
 [OBJECT:REACTION]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_PLANT]
-	[NAME:Extract five syrup from plants]
+	[NAME:extract five syrup from plants]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:5:PLANT:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:SYRUP_MAT]
@@ -29,7 +29,7 @@ reaction_aa_extracting
 		[CATEGORY_DESCRIPTION:Reactions for using any available plants or growths]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_PLANT_GROWTH]
-	[NAME:Extract five syrup from plant growths]
+	[NAME:extract five syrup from plant growths]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:5:PLANT_GROWTH:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:SYRUP_MAT]
@@ -53,7 +53,7 @@ reaction_aa_extracting
 	[CATEGORY:GENERIC_REACTIONS]
 
 [REACTION:AA_CRYSTALLIZE_SUGAR_FROM_SYRUP]
-	[NAME:Crystallize a bag of sugar from syrup]
+	[NAME:crystallize a bag of sugar from syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:syrup:750:LIQUID_MISC:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:SUGAR_MAT]
@@ -77,7 +77,7 @@ reaction_aa_extracting
 	[CATEGORY:GENERIC_REACTIONS]
 
 [REACTION:AA_EXTRACT_WAX_FROM_GROWTH]
-	[NAME:Extract wax from plant growths]
+	[NAME:extract wax from plant growths]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:WAX_MAT]
@@ -130,7 +130,7 @@ reaction_aa_extracting
 	[CATEGORY:GENERIC_REACTIONS]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_BEET_STRUCTURAL]
-	[NAME:Extract five beet syrup]
+	[NAME:extract five beet syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:5:PLANT:NONE:PLANT_MAT:BEET:STRUCTURAL]
 		[UNROTTEN]
@@ -147,11 +147,11 @@ reaction_aa_extracting
 	[SKILL:PROCESSPLANTS]
 		[SKILL_IP:100]
 	[CATEGORY:EXTRACT_SYRUP]
-		[CATEGORY_NAME:Extract syrups]
+		[CATEGORY_NAME:extract syrups]
 		[CATEGORY_DESCRIPTION:Extract syrups from fruits and plants]
 
 [REACTION:AA_CRYSTALLIZE_SUGAR_FROM_BIRCH_SYRUP]
-	[NAME:Crystallize a bag of birch sugar from syrup]
+	[NAME:crystallize a bag of birch sugar from syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:syrup:750:LIQUID_MISC:NONE:PLANT_MAT:BIRCH:SYRUP]
 		[UNROTTEN]
@@ -171,11 +171,11 @@ reaction_aa_extracting
 	[SKILL:COOK]
 		[SKILL_IP:100]
 	[CATEGORY:CRYSTALLIZE_SUGAR]
-		[CATEGORY_NAME:Crystallize sugar from syrup]
+		[CATEGORY_NAME:crystallize sugar from syrup]
 		[CATEGORY_DESCRIPTION:Crystallize sugars from syrups]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_BIRCH_SAP_BUCKET]
-	[NAME:Extract five birch syrup]
+	[NAME:extract five birch syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:5:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:BIRCH:SAP_BUCKET]
 		[UNROTTEN]
@@ -208,11 +208,11 @@ reaction_aa_extracting
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:PROCESSPLANTS]
 	[CATEGORY:DISTILL_EXTRACT]
-		[CATEGORY_NAME:Extracts from wild plants]
+		[CATEGORY_NAME:extracts from wild plants]
 		[CATEGORY_DESCRIPTION:Extracts from gnomelight and golden salve]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_DATE_PALM_FRUIT]
-	[NAME:Extract five date syrup]
+	[NAME:extract five date syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:5:PLANT_GROWTH:FRUIT:PLANT_MAT:DATE_PALM:FRUIT]
 		[UNROTTEN]
@@ -247,7 +247,7 @@ reaction_aa_extracting
 	[CATEGORY:DISTILL_EXTRACT]
 
 [REACTION:AA_CRYSTALLIZE_SUGAR_FROM_MAPLE_SYRUP]
-	[NAME:Crystallize a bag of maple sugar from syrup]
+	[NAME:crystallize a bag of maple sugar from syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:syrup:750:LIQUID_MISC:NONE:PLANT_MAT:MAPLE:SYRUP]
 		[UNROTTEN]
@@ -269,7 +269,7 @@ reaction_aa_extracting
 	[CATEGORY:CRYSTALLIZE_SUGAR]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_MAPLE_SAP_BUCKET]
-	[NAME:Extract five maple syrup]
+	[NAME:extract five maple syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:5:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:MAPLE:SAP_BUCKET]
 		[UNROTTEN]
@@ -288,7 +288,7 @@ reaction_aa_extracting
 	[CATEGORY:EXTRACT_SYRUP]
 
 [REACTION:AA_CRYSTALLIZE_SUGAR_FROM_PALM_SYRUP]
-	[NAME:Crystallize a bag of palm sugar from syrup]
+	[NAME:crystallize a bag of palm sugar from syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:syrup:750:LIQUID_MISC:NONE:PLANT_MAT:PALM:SYRUP]
 		[UNROTTEN]
@@ -310,7 +310,7 @@ reaction_aa_extracting
 	[CATEGORY:CRYSTALLIZE_SUGAR]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_PALM_SAP_BUCKET]
-	[NAME:Extract five palm syrup]
+	[NAME:extract five palm syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:5:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:PALM:SAP_BUCKET]
 		[UNROTTEN]
@@ -329,7 +329,7 @@ reaction_aa_extracting
 	[CATEGORY:EXTRACT_SYRUP]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_POD_SWEET_STRUCTURAL]
-	[NAME:Extract five dwarven syrup]
+	[NAME:extract five dwarven syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:5:PLANT:NONE:PLANT_MAT:POD_SWEET:STRUCTURAL]
 		[UNROTTEN]
@@ -349,7 +349,7 @@ reaction_aa_extracting
 	[CATEGORY:EXTRACT_SYRUP]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_REED_ROPE_STRUCTURAL]
-	[NAME:Extract five rope reed syrup]
+	[NAME:extract five rope reed syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:5:PLANT:NONE:PLANT_MAT:REED_ROPE:STRUCTURAL]
 		[UNROTTEN]
@@ -369,7 +369,7 @@ reaction_aa_extracting
 	[CATEGORY:EXTRACT_SYRUP]
 
 [REACTION:AA_CRYSTALLIZE_SUGAR_FROM_REED_ROPE_SYRUP]
-	[NAME:Crystallize a bag of rope reed sugar from syrup]
+	[NAME:crystallize a bag of rope reed sugar from syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:syrup:750:LIQUID_MISC:NONE:PLANT_MAT:REED_ROPE:SYRUP]
 		[UNROTTEN]
@@ -391,7 +391,7 @@ reaction_aa_extracting
 	[CATEGORY:CRYSTALLIZE_SUGAR]
 
 [REACTION:AA_EXTRACT_SYRUP_FROM_SORGHUM_STRUCTURAL]
-	[NAME:Extract five sorghum syrup]
+	[NAME:extract five sorghum syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:5:PLANT:NONE:PLANT_MAT:SORGHUM:STRUCTURAL]
 		[UNROTTEN]
@@ -410,7 +410,7 @@ reaction_aa_extracting
 	[CATEGORY:EXTRACT_SYRUP]
 
 [REACTION:AA_EXTRACT_WAX_FROM_WAX_MYRTLE_FRUIT]
-	[NAME:Extract myrtle wax]
+	[NAME:extract myrtle wax]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:WAX_MYRTLE:FRUIT]
 		[UNROTTEN]
@@ -425,5 +425,5 @@ reaction_aa_extracting
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:WAX_WORKING]
 	[CATEGORY:EXTRACT_WAX]
-		[CATEGORY_NAME:Extract wax from fruits]
+		[CATEGORY_NAME:extract wax from fruits]
 		[CATEGORY_DESCRIPTION:Extract wax from fruits]

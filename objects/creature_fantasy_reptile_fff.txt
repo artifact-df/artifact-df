@@ -104,7 +104,7 @@ creature_fantasy_reptile_fff
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
-	[APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
+	--APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
 
 
 [SELECT_CREATURE:BIRD_CHICKEN]
@@ -256,7 +256,7 @@ creature_fantasy_reptile_fff
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
-	[APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
+	--APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
 
 [CREATURE:BASILISK_FFF]
 	[DESCRIPTION:A large aggressive snake-like creature with feathers and a cockeral's crest. According to legend, a basilisk is born when the egg of a serpent is incubated by a rooster. Its venom is deadly, its gaze can paralyze and its only weaknesses are the smell of a weasel and the sound of a rooster's crow.]
@@ -393,7 +393,7 @@ creature_fantasy_reptile_fff
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:5]
-	[APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
+	--APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
 
 [CREATURE:TURTLE_DUCK_FFF]
 	[DESCRIPTION:A small water bird-turtle hybrid that can be found in rivers and ponds.]
