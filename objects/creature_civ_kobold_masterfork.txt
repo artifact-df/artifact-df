@@ -12,7 +12,7 @@ creature_civ_kobold
 	[LOCKPICKER][TRAPAVOID][FLEEQUICK]
 	[CAN_LEARN]
 	[UTTERANCES]
-	[CARNIVORE]--BONECARN] restricts population too much
+	[BONECARN]
 	[CANOPENDOORS]
 	[PREFSTRING:mischief]
 	[PREFSTRING:adorable snouts]{+}
@@ -21,8 +21,6 @@ creature_civ_kobold
 	[NATURAL_SKILL:SWIMMING:1]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]
 	[NATURAL_SKILL:DODGING:1]
-	[NATURAL_SKILL:SNEAK:2] kobolds are sneaky
-	[NATURAL_SKILL:CLIMBING:5] kobolds live in caves
 	[PERSONALITY:ANXIETY_PROPENSITY:50:75:100]
 	[PERSONALITY:TRUST:0:25:50]
 	[PERSONALITY:ACTIVITY_LEVEL:50:75:100]
@@ -230,7 +228,7 @@ creature_civ_kobold
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_CANLATCH]
 	[BABY:1]
-	[CHILD:5]
+	[CHILD:12]
 	[EQUIPS]
 	[NOCTURNAL]
 	[SMELL_TRIGGER:25]
@@ -265,7 +263,6 @@ creature_civ_kobold
 	[MANNERISM_EYELIDS]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:1:4:95][ORIENTATION:FEMALE:95:4:1]{+}
 		[CHILDNAME:kobold girl:kobold girls]{+}
 		[DESCRIPTION:A small, quiet woman with leathery, scale-like skin and large, floppy ears.  She has wide, bright eyes and an innocent expression, feigned or real.  She lives in a cave with her tribe; she leaves often to steal.  Like most kobolds, she doesn't know her real parents.  Her tribe is her family.]{+}
 		[LAYS_EGGS]
@@ -276,7 +273,6 @@ creature_civ_kobold
 			[CLUTCH_SIZE:5:10]{:1:2
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:MALE:95:4:1][ORIENTATION:FEMALE:1:4:95]{+}
 		[CHILDNAME:kobold boy:kobold boys]{+}
 		[DESCRIPTION:A small, quiet man with leathery, scale-like skin and large, floppy ears.  He has wide, bright eyes and an innocent expression, feigned or real.  He lives in a cave with his tribe; he leaves often to steal.  Like most kobolds, he doesn't know his real parents.  His tribe is his family.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
