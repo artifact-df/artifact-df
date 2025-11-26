@@ -43,7 +43,7 @@ reaction_abv_extracting
 	[CATEGORY:EXTRACT_SYRUP]
 
 [REACTION:ABV_CRYSTALLIZE_SUGAR_FROM_ABV_SUGAR_CANE_SYRUP]
-	[NAME:crystallize a bag of cane sugar from syrup]
+	[NAME:Crystallize a bag of cane sugar from syrup]
 	[BUILDING:STILL:NONE]
 	[REAGENT:syrup:750:LIQUID_MISC:NONE:PLANT_MAT:ABV_SUGAR_CANE:SYRUP]
 		[UNROTTEN]

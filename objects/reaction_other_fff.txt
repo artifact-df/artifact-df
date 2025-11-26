@@ -4,7 +4,7 @@ reaction_other_fff
 
 [REACTION:FILL_BUCKET_WATER] 
 	[FORTRESS_MODE_ENABLED]
-	--WORLDGEN_ENABLED]
+	[WORLDGEN_ENABLED]
 	[NAME:fill bucket with water]
 	[DESCRIPTION:Fill a bucket with water.]
 	[BUILDING:KITCHEN:NONE]
@@ -17,7 +17,7 @@ reaction_other_fff
 
 [REACTION:EMPTY_BUCKET]
 	[FORTRESS_MODE_ENABLED]
-	--WORLDGEN_ENABLED]
+	[WORLDGEN_ENABLED]
 	[NAME:empty water bucket]
 	[DESCRIPTION:Dump water out of a bucket.]
 	[BUILDING:KITCHEN:CUSTOM_E]

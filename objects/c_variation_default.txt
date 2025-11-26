@@ -1056,7 +1056,7 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CV_NEW_TAG:CDI:TARGET_RANGE:A:1]
 		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:A:1]
 		[CV_NEW_TAG:CDI:FREE_ACTION]
-		[CV_NEW_TAG:CDI:VERB:ready yourself for the coming conflict:prepared themselves for the coming conflict:NA]
+		[CV_NEW_TAG:CDI:VERB:ready yourself for a fight:appears very steadfast on their own survival:NA]
 		[CV_NEW_TAG:CDI:WAIT_PERIOD:50]
 	[CV_NEW_TAG:SKILL_RATES:75:10:18:18]{+                    Revision: global skill learn reduction.  default:100:8:16:16 }
 	[CV_NEW_TAG:SKILL_RUST_RATE:MELEE_COMBAT:16:8:6]{+        Revision: melee fighting should take decades and regular practice to master.  default:100:8:16:16 }
