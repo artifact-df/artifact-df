@@ -27,13 +27,13 @@ creature_civ_dwarf_mfork
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:45:100]-   Minor Aversion
 	[PERSONALITY:HATE_PROPENSITY:0:55:100]+   Minor Inclination
-	[PERSONALITY:ENVY_PROPENSITY:0:55:100]+   Minor Inclination
+	[PERSONALITY:ENVY_PROPENSITY:0:55:85]+   Minor Inclination  *affects necromancer likelyhood
 	[PERSONALITY:CHEER_PROPENSITY:0:55:100]+   Minor Inclination
 	[PERSONALITY:DEPRESSION_PROPENSITY:0:45:100]-   Minor Aversion
 	[PERSONALITY:ANGER_PROPENSITY:0:55:100]+   Minor Inclination
-	[PERSONALITY:ANXIETY_PROPENSITY:0:45:100]-   Minor Aversion
+	[PERSONALITY:ANXIETY_PROPENSITY:0:45:85]-   Minor Aversion  *affects necromancer likelyhood
 	[PERSONALITY:LUST_PROPENSITY:0:55:100]+   Minor Inclination
-	[PERSONALITY:STRESS_VULNERABILITY:0:45:100]-   Minor Aversion
+	[PERSONALITY:STRESS_VULNERABILITY:0:45:85]-   Minor Aversion  *affects necromancer likelyhood
 	[PERSONALITY:GREED:10:60:100]+++ Great Inclination
 	[PERSONALITY:IMMODERATION:5:55:100]++  Moderate Inclination
 	[PERSONALITY:VIOLENT:0:55:100]+   Minor Inclination
@@ -46,12 +46,12 @@ creature_civ_dwarf_mfork
 	[PERSONALITY:BRAVERY:5:55:100]++  Moderate Inclination
 	[PERSONALITY:CONFIDENCE:0:55:100]+   Minor Inclination
 	[PERSONALITY:VANITY:0:40:85]--- Great Aversion
-	[PERSONALITY:AMBITION:0:45:95]--  Moderate Aversion
+	[PERSONALITY:AMBITION:0:45:85]--  Moderate Aversion  *affects necromancer likelyhood
 	[PERSONALITY:GRATITUDE:5:55:100]++  Moderate Inclination
 	[PERSONALITY:IMMODESTY:5:55:100]++  Moderate Inclination
 	[PERSONALITY:HUMOR:0:55:100]+   Minor Inclination
 	[PERSONALITY:VENGEFUL:10:60:100]+++ Great Inclination
-	[PERSONALITY:PRIDE:5:55:100]++  Moderate Inclination
+	[PERSONALITY:PRIDE:5:55:85]++  Moderate Inclination  *affects necromancer likelyhood
 	[PERSONALITY:CRUELTY:0:40:85]--- Great Aversion
 	[PERSONALITY:SINGLEMINDED:0:55:100]+   Minor Inclination
 	[PERSONALITY:HOPEFUL:0:55:100]+   Minor Inclination

@@ -155,6 +155,10 @@ creature_civ_orc_masterwork
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
+	[CAN_DO_INTERACTION:ADRENALINE_FFF]
+		[CDI:USAGE_HINT:DEFEND] 
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:WAIT_PERIOD:1000]
 	[PHYS_ATT_RANGE:STRENGTH:1250:1500:1750:2000:2500:3000:5000]	 	    +++
 	[PHYS_ATT_RANGE:AGILITY:0:400:600:750:800:900:1100]				        --
 	[PHYS_ATT_RANGE:TOUGHNESS:700:1200:1400:1500:1600:1800:2500]		    ++
@@ -370,7 +374,7 @@ from Splint's Urks:
 	[CASTE:FEMALE]
 		[FEMALE]
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:4:6]
+		[LITTERSIZE:3:5]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]
