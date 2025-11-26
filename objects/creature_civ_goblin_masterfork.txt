@@ -327,7 +327,7 @@ creature_civ_goblin_mfork
 	[CASTE:FEMALE]
 		[FEMALE]
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:5:12]{+}
+		[LITTERSIZE:5:9]{+}
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
