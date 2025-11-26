@@ -9,6 +9,7 @@ function add_regular_tokens(lines,options)
     lines[#lines+1]="[MATERIAL_FORCE_MULTIPLIER:INORGANIC:ORICHALCUM:3:2]"-- 1.5x damage taken from orichalcum
     lines[#lines+1]="[MATERIAL_FORCE_MULTIPLIER:INORGANIC:VOLCANIC:3:2]"--   1.5x damage taken from volcanite
     lines[#lines+1]="[MATERIAL_FORCE_MULTIPLIER:INORGANIC:ADAMANTINE:3:2]"-- 1.5x damage taken from adamantine
+	lines[#lines+1]="[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]"-- terror aura
 --rcp_emotion_aura={
 --if creatures.fb=true then
 --lines[#lines+1]="[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]"-- forgotten beasts

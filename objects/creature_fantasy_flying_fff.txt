@@ -511,7 +511,7 @@ creature_fantasy_flying_fff
 				[TLCM_NOUN:feathers:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:5]
-	[APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
+	--APPLY_CREATURE_VARIATION:LEATHER_SCALE_FFF]
 
 
 [CREATURE:WYVERN_FFF]
@@ -621,7 +621,7 @@ creature_fantasy_flying_fff
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
-	[APPLY_CREATURE_VARIATION:LEATHER_SCALE_TOUGH_FFF]
+	--APPLY_CREATURE_VARIATION:LEATHER_SCALE_TOUGH_FFF]
 
 [CREATURE:HIPPOGRIFF_FFF]
 	[DESCRIPTION:A proud creature with head, wings and front legs of an eagle and the body, tail and rear legs of a horse.]]
