@@ -317,7 +317,7 @@ creature_fff_cavern_gem
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ALL_ACTIVE]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
 
 [CREATURE:ELEMENTAL_GEMCRAB_FFF]
@@ -590,5 +590,5 @@ creature_fff_cavern_gem
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
 	[ALL_ACTIVE]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}

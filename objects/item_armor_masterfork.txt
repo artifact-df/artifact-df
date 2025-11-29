@@ -24,7 +24,7 @@ squamous's notes on armor spawning:
 [COVERAGE:150]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:3] 1 bars
+[MATERIAL_SIZE:6] 2 bars
 [HARD]
 [METAL]
 --LEATHER]
@@ -126,8 +126,8 @@ squamous's notes on armor spawning:
 [LAYER:ARMOR]
 [COVERAGE:150]
 [LAYER_SIZE:20]
-[LAYER_PERMIT:50]
-[MATERIAL_SIZE:9] 3 bars
+[LAYER_PERMIT:30]
+[MATERIAL_SIZE:12] 4 bars
 [HARD]
 [METAL]
 
@@ -141,8 +141,8 @@ squamous's notes on armor spawning:
 [LAYER:COVER]
 [COVERAGE:150]
 [LAYER_SIZE:20]
-[LAYER_PERMIT:150]
-[MATERIAL_SIZE:3] 1 items
+[LAYER_PERMIT:60]
+[MATERIAL_SIZE:6] 2 items
 --SOFT]
 [LEATHER]
 [SCALED]{+}
@@ -223,7 +223,7 @@ squamous's notes on armor spawning:
 [LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [LAYER:OVER]
 [COVERAGE:150]
-[LAYER_SIZE:15]
+[LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:6] 2 bars
 [HARD]
@@ -239,7 +239,7 @@ squamous's notes on armor spawning:
 [LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
+[COVERAGE:250]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
 [MATERIAL_SIZE:6] 2 leather
@@ -250,39 +250,36 @@ squamous's notes on armor spawning:
   // HAND EQUIPMENT //
 
 [ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS]
-[NAME:gauntlet:gauntlet]
+[NAME:gauntlet:gauntlets]
 [ARMORLEVEL:2]
 [UPSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
-[LAYER_SIZE:12]
-[LAYER_PERMIT:12]
-[MATERIAL_SIZE:6] 2 bars
+[COVERAGE:200]
+[LAYER_SIZE:20]
+[LAYER_PERMIT:15]
+[MATERIAL_SIZE:1]
 [SCALED]
 [BARRED]
 [METAL]
 [HARD]
 
-[ITEM_GLOVES:ITEM_GLOVES_MITTENS]
-[NAME:mitten:mittens]
-[METAL_ARMOR_LEVELS]
-[CHAIN_METAL_TEXT]
-[ARMORLEVEL:1]
-[UPSTEP:1]
-[LAYER:COVER]
-[COVERAGE:150]
-[LAYER_SIZE:15]
-[LAYER_PERMIT:20]
-[MATERIAL_SIZE:3] 1 item
---SOFT]
+[ITEM_GLOVES:ITEM_GLOVES_GLOVES]
+[NAME:glove:gloves]
+[MATERIAL_SIZE:1]
+[LAYER:UNDER]
+[COVERAGE:200]
+[LAYER_SIZE:10]
+[LAYER_PERMIT:10]
+[SOFT]
 [LEATHER]
+[STRUCTURAL_ELASTICITY_WOVEN_THREAD]
+[HARD]
 [METAL]
-[SCALED]
-[BARRED]
---STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+[ARMORLEVEL:0]
+[METAL_ARMOR_LEVELS]
 [STRUCTURAL_ELASTICITY_CHAIN_METAL]
+[CHAIN_METAL_TEXT]
 
 [ITEM_GLOVES:ITEM_GLOVES_PLATE_DWARF_FFF]
 [NAME:plate gauntlet:plate gauntlets]
@@ -309,7 +306,7 @@ squamous's notes on armor spawning:
 [LAYER:ARMOR]
 [COVERAGE:150]
 [LAYER_SIZE:15]
-[LAYER_PERMIT:30]
+[LAYER_PERMIT:15]
 [MATERIAL_SIZE:9] 3 bars
 [METAL]
 [BARRED]
@@ -335,35 +332,39 @@ squamous's notes on armor spawning:
 [STRUCTURAL_ELASTICITY_CHAIN_METAL]
 
 [ITEM_SHOES:ITEM_SHOES_CHAUSSE]
-[NAME:chausse:chausse]
-[ARMORLEVEL:1]
+[NAME:chausse:chausses]
 [UPSTEP:3]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
 [LAYER:UNDER]
-[COVERAGE:150]
-[LAYER_SIZE:10]
-[LAYER_PERMIT:15]
-[MATERIAL_SIZE:6] 2 items
+[COVERAGE:100]
+[LAYER_SIZE:20]
+[LAYER_PERMIT:50]
+[MATERIAL_SIZE:3]
 [SOFT]
 [LEATHER]
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+[HARD]
+[METAL]
+[ARMORLEVEL:0]
+[METAL_ARMOR_LEVELS]
+[STRUCTURAL_ELASTICITY_CHAIN_METAL]
+[CHAIN_METAL_TEXT]
 
 // boots
 
 [ITEM_SHOES:ITEM_SHOES_BOOTS]
-[NAME:sabaton:sabatons]{:boot:boots
-[ARMORLEVEL:2]
+[NAME:high boot:high boots]
+[ARMORLEVEL:1]
 [UPSTEP:1]
---METAL_ARMOR_LEVELS]
+[METAL_ARMOR_LEVELS]
 [LAYER:OVER]
 [COVERAGE:150]
 [LAYER_SIZE:25]
-[LAYER_PERMIT:15]
-[MATERIAL_SIZE:3] 1 bar
-[SHAPED]{+  Revision: boots aren't usually worn over other boots.}
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:6] 3 items
 [METAL]
---LEATHER]
+[LEATHER]
 [HARD]
+[SHAPED]
 
 [ITEM_SHOES:ITEM_SHOES_PLATE_BOOTS_FFF]
 [NAME:plate sabaton:plate sabatons]

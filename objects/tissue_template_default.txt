@@ -69,7 +69,7 @@ tissue_template_default
 	[TISSUE_NAME:horn:NP]
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HORN]
-	[RELATIVE_THICKNESS:3]{:2
+	[RELATIVE_THICKNESS:2]
 	[HEALING_RATE:500]{+  Revision: horn damage shouldn't cause permanent injury.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -78,7 +78,7 @@ tissue_template_default
 	[TISSUE_NAME:hoof:NP]
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HOOF]
-	[RELATIVE_THICKNESS:3]{:2
+	[RELATIVE_THICKNESS:2]
 	[HEALING_RATE:1000]{+  Revision: hoof damage shouldn't cause permanent injury.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -400,7 +400,7 @@ tissue_template_default
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:FLAME]
 	[TISSUE_MAT_STATE:GAS]
-	[RELATIVE_THICKNESS:2]{:1
+	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1]{+    Sver: experimental! Change to 100 if too hardcore!
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -409,7 +409,7 @@ tissue_template_default
 	[TISSUE_NAME:chitin:NP]
 	--SCARS]                   Revision: chitin creatures usually molt leaving no scars.  -zey.}
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:CHITIN]
-	[RELATIVE_THICKNESS:2]{:1
+	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:200]{:100    Revision: chitin healed too quickly.}
 	--VASCULAR:1               Revision: chitin doesn't bleed.}
 	--PAIN_RECEPTORS:5         Revision: chitin wounds are painless.}
@@ -455,7 +455,7 @@ tissue_template_default
 	[TISSUE_NAME:scale:STP]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SCALE]
 	[SCARS]
-	[RELATIVE_THICKNESS:4]
+	[RELATIVE_THICKNESS:3]
 	[HEALING_RATE:500]
 	[CONNECTS]
 	[TISSUE_SHAPE:SCALES]
@@ -487,7 +487,7 @@ tissue_template_default
 	[TISSUE_NAME:tooth:NP]
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:TOOTH]
-	[RELATIVE_THICKNESS:2]
+	[RELATIVE_THICKNESS:3]
 	[HEALING_RATE:500]{+  Revision: losing some teeth shouldn't be a permanent injury.}
 	[VASCULAR:1]
 	[PAIN_RECEPTORS:2]

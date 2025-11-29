@@ -21,7 +21,7 @@ Wild boars were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:ferocious charges]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:ANY_SAVANNA]
 	[BIOME:ANY_GRASSLAND]
@@ -220,7 +220,7 @@ Coyotes were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:ANY_TEMPERATE_WETLAND]
 	[BIOME:ANY_DESERT]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:2:10]
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:50]
@@ -396,7 +396,7 @@ Kangaroos were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:ANY_DESERT]
 	[VISION_ARC:50:310]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:2:4]
 	[PREFSTRING:pouches]
 	[PREFSTRING:great leaps]
@@ -605,7 +605,7 @@ Koalas were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[BENIGN][MEANDERER]
 	[PREFSTRING:adorable appearance]
 	[BODY:QUADRUPED_NECK_FRONT_GRASP:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:5TOES_RQ_REG:MOUTH:RODENT_TEETH:RIBCAGE]
@@ -776,7 +776,7 @@ Adders were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:ANY_TEMPERATE_WETLAND]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:warning hisses]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -989,7 +989,7 @@ Echidnas were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:ANY_DESERT]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:spines]
@@ -1165,7 +1165,7 @@ Porcupines were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:ANY_DESERT]
 	[BIOME:TUNDRA]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:quills]
@@ -1339,7 +1339,7 @@ Kingsnakes were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:MOUNTAIN]
 	[BIOME:ANY_DESERT]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:habit of eating other snakes]
 	[PREFSTRING:coloration]
@@ -1495,7 +1495,7 @@ Gray langurs were sponsored by the generous contributions of the Bay 12 communit
 	[CURIOUSBEAST_ITEM]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
-	[POPULATION_NUMBER:20:50]
+	[POPULATION_NUMBER:100:250]{:20:50
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[BIOME:ANY_DESERT]
 	[BIOME:ANY_GRASSLAND]
@@ -1632,7 +1632,7 @@ Gray langurs were sponsored by the generous contributions of the Bay 12 communit
 	[NAME:giant gray langur:giant gray langurs:giant gray langur]
 	[CASTE_NAME:giant gray langur:giant gray langurs:giant gray langur]
 	[DESCRIPTION:A huge monster in the shape of a gray langur.]
-	[POPULATION_NUMBER:20:50]
+	[POPULATION_NUMBER:100:250]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'L']
 	[COLOR:7:0:0]
@@ -1670,7 +1670,7 @@ Bobcats were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SWAMP_MANGROVE]
 	[BIOME:MOUNTAIN]
 	[LARGE_ROAMING][FREQUENCY:5]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
@@ -1856,7 +1856,7 @@ Skunks were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:GRASSLAND_TEMPERATE]
 	[LARGE_ROAMING]
 	[HUNTS_VERMIN]{+}
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:distinctive striping]
@@ -2167,7 +2167,7 @@ Hares were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:long ears]
@@ -2337,7 +2337,7 @@ Rattlesnakes were sponsored by the generous contributions of the Bay 12 communit
 	[CARNIVORE]
 	[LARGE_ROAMING]
 	[BIOME:NOT_FREEZING]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:warning rattle]
 	[SOUND:ALERT:25:2500:NONE:rattle:rattles:the rattle of a deadly snake]{+}
@@ -2473,7 +2473,7 @@ Rattlesnakes were sponsored by the generous contributions of the Bay 12 communit
 	[GO_TO_START]
 	[NAME:rattlesnake man:rattlesnake men:rattlesnake man]
 	[DESCRIPTION:A person resembling a large rattlesnake with arms.]
-	[FREQUENCY:50][CLUSTER_NUMBER:1:5][POPULATION_NUMBER:10:20]
+	[FREQUENCY:50][CLUSTER_NUMBER:1:5][POPULATION_NUMBER:50:100]{:10:20
 	[LISP]{+}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
@@ -2545,7 +2545,7 @@ Weasels were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:NOT_FREEZING]
 	[BIOME:TUNDRA]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[NO_WINTER][BENIGN]
 	[PREFSTRING:long bodies]
@@ -2717,7 +2717,7 @@ Copperhead snakes were sponsored by the generous contributions of the Bay 12 com
 	[LARGE_ROAMING]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:ANY_TEMPERATE_SWAMP]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:attractive scale patterns]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -2896,7 +2896,7 @@ Copperhead snakes were sponsored by the generous contributions of the Bay 12 com
 	[CASTE_NAME:giant copperhead snake:giant copperhead snakes:giant copperhead snake]
 	[GENERAL_CHILD_NAME:giant copperhead snakelet:giant copperhead snakelets]{+}
 	[DESCRIPTION:A huge monster in the form of a copperhead snake.]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
@@ -2923,7 +2923,7 @@ Ibexes were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_CLASS:MAMMAL]
 	[PREFSTRING:long horns]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:4]
 	[GRASSTRAMPLE:0]
 	[VISION_ARC:50:310]
@@ -3076,7 +3076,7 @@ Ibexes were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant ibex:giant ibexes:giant ibex]
 	[GENERAL_CHILD_NAME:giant ibex kid:giant ibex kids]
 	[DESCRIPTION:A huge monster in the form of an ibex.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:4]
 	[CREATURE_TILE:'I']
 	[COLOR:6:0:0]
@@ -3108,7 +3108,7 @@ Wombats were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:MOUNTAIN]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:waddle]
@@ -3243,7 +3243,7 @@ Wombats were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant wombat:giant wombats:giant wombat]
 	[GENERAL_CHILD_NAME:giant wombat joey:giant wombat joeys]
 	[DESCRIPTION:A huge monster in the shape of a wombat.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
@@ -3270,7 +3270,7 @@ Dingoes were sponsored by the generous contributions of the Bay 12 community.
 	[MEANDERER]{LARGE_PREDATOR  Revision: dingos aren't big enough to be large predators.}
 	[LARGE_ROAMING][FREQUENCY:5]
 	[BIOME:NOT_FREEZING]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:3:12]
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:50]
@@ -3416,7 +3416,7 @@ Dingoes were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant dingo:giant dingos:giant dingo]{:giant dingoes:}
 	[GENERAL_CHILD_NAME:giant dingo pup:giant dingo pups]
 	[DESCRIPTION:A huge monster in the form of a dingo.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:3:12]
 	[CREATURE_TILE:'D']
 	[COLOR:6:0:1]
@@ -3448,7 +3448,7 @@ Coatis were sponsored by the generous contributions of the Bay 12 community.
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_ITEM]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:curiosity]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:5TOES_RQ_REG:MOUTH:RODENT_TEETH:RIBCAGE]
@@ -3581,7 +3581,7 @@ Coatis were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant coati:giant coatis:giant coati]
 	[GENERAL_CHILD_NAME:baby giant coati:baby giant coatis]
 	[DESCRIPTION:A huge monster in the form of a coati.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
@@ -3614,7 +3614,7 @@ Opossums were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:ability to play dead]
@@ -3748,7 +3748,7 @@ Opossums were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant opossum:giant opossums:giant opossum]
 	[GENERAL_CHILD_NAME:baby giant opossum:baby giant opossums]
 	[DESCRIPTION:A huge monster in the shape of an opossum.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'O']
 	[COLOR:7:0:0]

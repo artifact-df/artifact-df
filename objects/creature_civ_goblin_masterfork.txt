@@ -172,7 +172,7 @@ creature_civ_goblin_mfork
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
 	[BODY_SIZE:12:0:60000]
-	[BODY_SIZE:1000:0:65000]{+}
+	[BODY_SIZE:1000:0:62000]{+}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
 		[APP_MOD_IMPORTANCE:600]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
@@ -285,7 +285,7 @@ creature_civ_goblin_mfork
 	[BABY:1]
 	[GENERAL_BABY_NAME:runtling:runtlings]
 	[BABYNAME:runtling:runtlings]
-	[CHILD:10]{:18
+	[CHILD:14]{:18
 	[GENERAL_CHILD_NAME:goblin runt:goblin runts]
 	[CHILDNAME:goblin runt:goblin runts]
 	[EQUIPS]
@@ -326,11 +326,16 @@ creature_civ_goblin_mfork
 	[PROFESSION_NAME:RECRUIT:skulker:skulkers]{+}
 	[CASTE:FEMALE]
 		[FEMALE]
-		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:5:12]{+}
+		[ORIENTATION:MALE:0:0:1]{+}
+		[ORIENTATION:FEMALE:1:0:0]{+}
+		[POP_RATIO:2]{+}
+		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
+		[ORIENTATION:FEMALE:0:0:1]{+}
+		[ORIENTATION:MALE:1:0:0]{+}
+		[POP_RATIO:3]{+}
 		[DESCRIPTION:A medium-sized, cruel man with leathery skin, glowing eyes, sharply-defined features and a lanky body.  He only eats meat and only sleep and distractions from her boredom.  He works with others to dig pits and trenches that connect many towers.  He does not appear to age.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]

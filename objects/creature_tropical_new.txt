@@ -19,7 +19,7 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -189,7 +189,7 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:5:15]
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:50]
@@ -366,9 +366,9 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
-	{LARGE_PREDATOR  Revision: anacondas aren't big enough to be large predators.}
+	[LARGE_PREDATOR]
 	[BIOME:ANY_TROPICAL_WETLAND]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:great size]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -466,6 +466,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:80:120]{:60:80
+	[LISP]{+}
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:1]
 
@@ -516,7 +517,7 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:ANY_TROPICAL_FOREST]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:25:50]{:5:10
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
@@ -633,6 +634,7 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:80:120]{:60:80
+	[LISP]{+}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -688,7 +690,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[CARNIVORE]
 	[LARGE_ROAMING]
 	[BIOME:ANY_TROPICAL_FOREST]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:charming hood]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -829,6 +831,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:80:120]{:60:80
+	[LISP]{+}
 	[CREATURE_TILE:'k']
 	[COLOR:0:0:1]
 
@@ -899,7 +902,7 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[LARGE_ROAMING][FREQUENCY:5]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
@@ -1086,7 +1089,7 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:1:5]
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:50]
@@ -1263,7 +1266,7 @@ Capuchins were sponsored by the generous contributions of the Bay 12 community.
 	[CURIOUSBEAST_ITEM]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
-	[POPULATION_NUMBER:20:50]
+	[POPULATION_NUMBER:100:250]{:20:50
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SWAMP_MANGROVE]
@@ -1425,7 +1428,7 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 	[BENIGN][PET_EXOTIC]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
-	[POPULATION_NUMBER:10:30]
+	[POPULATION_NUMBER:50:150]{:10:30
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:ANY_TROPICAL_FOREST]
 	[PREFSTRING:slow movement]
@@ -1589,7 +1592,7 @@ Spider monkeys were sponsored by the generous contributions of the Bay 12 commun
 	[BENIGN][PET_EXOTIC]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
-	[POPULATION_NUMBER:20:50]
+	[POPULATION_NUMBER:100:250]{:20:50
 	[CLUSTER_NUMBER:1:6][LOOSE_CLUSTERS]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
@@ -1757,7 +1760,7 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:ANY_TROPICAL_FOREST]
 	[LARGE_ROAMING]
 	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:overlapping scales]
@@ -1897,7 +1900,7 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant pangolin:giant pangolins:giant pangolin]
 	[GENERAL_CHILD_NAME:baby giant pangolin:baby giant pangolins]
 	[DESCRIPTION:A huge monster in the form of a pangolin.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:10:20]{:10:20
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'P']
 	[COLOR:6:0:0]
@@ -1930,7 +1933,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:ANY_TROPICAL_SWAMP]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:aggression]
 	[PREFSTRING:deadly bite]
@@ -2072,7 +2075,10 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[GO_TO_START]
 	[NAME:black mamba man:black mamba men:black mamba man]
 	[DESCRIPTION:A person in the form of a large black mamba with arms.]
-	[FREQUENCY:50][CLUSTER_NUMBER:1:5][POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:5:10]
+	[CLUSTER_NUMBER:1:3]
+	[MAXAGE:80:120]{:60:80
+	[LISP]{+}
 	[CREATURE_TILE:'s']
 	[COLOR:0:0:1]
 
@@ -2110,14 +2116,13 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[CASTE_NAME:giant black mamba:giant black mambas:giant black mamba]
 	[GENERAL_CHILD_NAME:giant black mamba hatchling:giant black mamba hatchlings]{+}
 	[DESCRIPTION:A large monster taking the shape of a black mamba.]
-	[POPULATION_NUMBER:500:500]{:10:25
-	[FREQUENCY:100]{+}
+	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:0:0:1]
-	[PET]
+	[PET_EXOTIC]
 	[PETVALUE:600]{:500
-	[MOUNT]
+	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:aggression]
@@ -2139,7 +2144,7 @@ Sloth bears were sponsored by the generous contributions of the Bay 12 community
 	[PET_EXOTIC]{PET}
 	[NATURAL]
 	[LARGE_ROAMING][FREQUENCY:5]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:ANY_TROPICAL_FOREST]
 	[CURIOUSBEAST_EATER]
@@ -2305,7 +2310,7 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 	[BENIGN][PET_EXOTIC]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:10]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:50:100]{:10:20
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2474,7 +2479,7 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[CARNIVORE]
 	[LARGE_ROAMING]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:deadly bite]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -2615,7 +2620,8 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:bushmaster man:bushmaster men:bushmaster man]
 	[DESCRIPTION:A large bushmaster with the arms of a man.]
-	[FREQUENCY:50][CLUSTER_NUMBER:1:5][POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:5:10]
+	[CLUSTER_NUMBER:1:3]
 	[LISP]{+}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
@@ -2654,14 +2660,13 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[CASTE_NAME:giant bushmaster:giant bushmasters:giant bushmaster]
 	[GENERAL_CHILD_NAME:giant bushmaster hatchling:giant bushmaster hatchlings]{+}
 	[DESCRIPTION:A huge monster in the form of a bushmaster.]
-	[POPULATION_NUMBER:500:500]{:10:25
-	[FREQUENCY:100]{+}
+	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
-	[PET]
+	[PET_EXOTIC]
 	[PETVALUE:600]{:500
-	[MOUNT]
+	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:deadly bite]
@@ -2687,7 +2692,7 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[CARNIVORE]
 	[LARGE_ROAMING]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
-	[POPULATION_NUMBER:10:25]
+	[POPULATION_NUMBER:50:125]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:great size]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -2789,7 +2794,8 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:python man:python men:python man]
 	[DESCRIPTION:A large python with arms of a man.]
-	[FREQUENCY:50][CLUSTER_NUMBER:1:5][POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:5:10]
+	[CLUSTER_NUMBER:1:3]
 	[LISP]{+}
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
@@ -2811,14 +2817,13 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant python:giant pythons:giant python]
 	[GENERAL_CHILD_NAME:giant python hatchling:giant python hatchlings]{+}
 	[DESCRIPTION:A huge monster in the form of a python.]
-	[POPULATION_NUMBER:500:500]{:10:25
-	[FREQUENCY:100]{+}
+	[POPULATION_NUMBER:10:25]
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
-	[PET]
+	[PET_EXOTIC]
 	[PETVALUE:600]{:500
-	[MOUNT]
+	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR][AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:great size]
@@ -2838,7 +2843,7 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'T'][COLOR:7:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[PETVALUE:200]
 	[VISION_ARC:50:310]
@@ -3041,7 +3046,7 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:mighty leaps]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
@@ -3221,7 +3226,7 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:GRASSLAND_TROPICAL]
 	[LARGE_ROAMING]
 	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]{+}
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:long ears]

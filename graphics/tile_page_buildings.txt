@@ -130,4 +130,4 @@ tile_page_buildings
 [TILE_PAGE:WORKSHOPS_5x5_NOFLOOR]
 	[FILE:images/workshops_5x5_nofloor.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:1280:576]
+	[PAGE_DIM_PIXELS:1280:576
