@@ -32,10 +32,7 @@ creature_undead_chp
 	[PHYS_ATT_RANGE:TOUGHNESS:700:1200:1400:1500:1600:1800:2500]            ++
 	[MENT_ATT_RANGE:WILLPOWER:5000:5000:5000:5000:5000:5000:5000]           max
 	[MENT_ATT_RANGE:EMPATHY:0:0:0:0:0:0:0]                                  none
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]  0.5x damage taken from all materials
-	[MATERIAL_FORCE_MULTIPLIER:INORGANIC:STEEL:5:4]  1.25x damage taken from steel
-	[MATERIAL_FORCE_MULTIPLIER:INORGANIC:SILVER:6:4]  1.5x damage taken from silver
-	[MATERIAL_FORCE_MULTIPLIER:INORGANIC:MITHRIL:2:1]  2.0x damage taken from mithril
+	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[CASTE:AXE]
 		[CASTE_NAME:skeleton axeman:skeletons axemen:skeleton]
 	 	[BODY:DIABLO_SKELETON_BODY:5FINGERS:5TOES:DIABLO_EYE_SOCKETS:MOUTH:TEETH:RIBCAGE:AXE]

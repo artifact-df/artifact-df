@@ -51,10 +51,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:AGE]
 	[NOUN:age:ages]
 		[FRONT_COMPOUND_NOUN_SING]
-		REAR_COMPOUND_NOUN_SING -
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		FRONT_COMPOUND_NOUN_PLUR -
+		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
@@ -63,7 +63,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:AGELESS]
 	[ADJ:ageless]
-		[ADJ_DIST:4]
+		[ADJ_DIST:3]
 
 [WORD:ALE]
 	[NOUN:ale:ales]
@@ -78,13 +78,15 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:ANCIENT]
 	[NOUN:ancient:ancients]
-		FRONT_COMPOUND_NOUN_SING -
-		REAR_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
+		[FRONT_COMPOUND_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_PLUR]
 	[ADJ:ancient]
-		[ADJ_DIST:4]
+		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 
 [WORD:ANGEL]
@@ -192,7 +194,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[ADJ:artificial]
-		[ADJ_DIST:2]
+		[ADJ_DIST:3]
 
 [WORD:ASH]
 	[NOUN:ash:ashes]
@@ -241,7 +243,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:AWE-INSPIRING]
 	[ADJ:awesome] *
-		[ADJ_DIST:4]
+		[ADJ_DIST:5]
 
 [WORD:AXE]
 	[NOUN:axe:axes]
@@ -1338,7 +1340,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[ADJ:chaotic] +
-		[ADJ_DIST:2] +
+		[ADJ_DIST:1] +
 		[THE_COMPOUND_ADJ] +
 
 [WORD:CHAMBER]
@@ -1638,7 +1640,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:coldness:coldnesses]
 		[OF_NOUN_SING]
 	[ADJ:cold]
-		[ADJ_DIST:3]
+		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
@@ -1729,7 +1731,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[PREFIX:crabs] +
 		[FRONT_COMPOUND_PREFIX] +
 	[ADJ:crabby] +
-		[ADJ_DIST:2] +
+		[ADJ_DIST:3] +
 
 [WORD:CRAWL]
 	[NOUN:crawler:crawlers] +
@@ -1746,7 +1748,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[ADJ:crazed]
-		[ADJ_DIST:2]
+		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ]
@@ -1755,7 +1757,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:craziness:crazinesses]
 		[OF_NOUN_SING]
 	[ADJ:crazy]
-		[ADJ_DIST:2]
+		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
@@ -2007,7 +2009,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_SING] +
 		[OF_NOUN_SING] +
 	[ADJ:dark]
-		[ADJ_DIST:2]
+		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
@@ -2048,7 +2050,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[VERB:dawn:dawns:dawned:dawned:dawning]
 		STANDARD_VERB -
 	[ADJ:crepuscular] +
-		[ADJ_DIST:4] +
+		[ADJ_DIST:5] +
 		[THE_COMPOUND_ADJ] +
 
 [WORD:DAY]
@@ -2124,7 +2126,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:deep]
-		[ADJ_DIST:2]
+		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
@@ -2148,7 +2150,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:demonic] +
-		[ADJ_DIST:3] +
+		[ADJ_DIST:2] +
 		[THE_COMPOUND_ADJ] +
 	[PREFIX:demons] +
 		[FRONT_COMPOUND_PREFIX] +
@@ -2302,7 +2304,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[ADJ:draconic] +
-		[ADJ_DIST:3] +
+		[ADJ_DIST:2] +
 		[THE_COMPOUND_ADJ] +
 	[PREFIX:dragons] +
 		[FRONT_COMPOUND_PREFIX] +
@@ -2482,7 +2484,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[ADJ:vespertine] +
-		[ADJ_DIST:4] +
+		[ADJ_DIST:5] +
 	[PREFIX:vesper] +
 		[FRONT_COMPOUND_PREFIX] +
 		[THE_COMPOUND_PREFIX] +
@@ -2507,7 +2509,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
 	[ADJ:dutiful]
-		[ADJ_DIST:5]
+		[ADJ_DIST:4]
 
 [WORD:DYE]
 	[NOUN:dye:dyes]
@@ -2601,18 +2603,18 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:ELDER]
 	[NOUN:elder:elders]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[FRONT_COMPOUND_NOUN_PLUR]
-		REAR_COMPOUND_NOUN_PLUR -
-		THE_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
+		[THE_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:elder]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
-		REAR_COMPOUND_ADJ -
+		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
 [WORD:ENTRAILS]
@@ -2625,6 +2627,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:3]
 		[FRONT_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ]
+		[REAR_COMPOUND_ADJ]
 
 [WORD:EVER]
 	[PREFIX:ever]
@@ -3677,7 +3680,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:greatness:greatnesses]
 		[OF_NOUN_SING] +
 	[ADJ:great]
-		[ADJ_DIST:4]
+		[ADJ_DIST:3]
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
@@ -4960,7 +4963,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:LEGEND]
 	[NOUN:legend:legends]
 		[FRONT_COMPOUND_NOUN_SING]
-		REAR_COMPOUND_NOUN_SING -
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
@@ -5020,6 +5023,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
+	[ADJ:runic] +
+		[ADJ_DIST:4] +
+		[FRONT_COMPOUND_ADJ] +
+		[THE_COMPOUND_ADJ] +
+		[REAR_COMPOUND_ADJ] +
 
 [WORD:LIE]
 	[NOUN:lie:lies]
@@ -5842,12 +5850,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:MYTH]
 	[NOUN:myth:myths]
 		[FRONT_COMPOUND_NOUN_SING]
-		REAR_COMPOUND_NOUN_SING -
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR] +
+		[THE_NOUN_PLUR] +
 	[ADJ:mythical]
 		[ADJ_DIST:4]
 		[THE_COMPOUND_ADJ]
@@ -6019,7 +6028,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_NOUN_SING] +
 		[THE_COMPOUND_NOUN_SING] +
 	[ADJ:northern] *
-		[ADJ_DIST:2]
+		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ] + //somehow missing from the direction cycle
 
@@ -6619,11 +6628,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:PROPHET]
 	[NOUN:prophet:prophets]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[PREFIX:prophets] +
 		[FRONT_COMPOUND_PREFIX] +
@@ -8354,7 +8363,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_NOUN_SING] +
 		[THE_COMPOUND_NOUN_SING] +
 	[ADJ:southern] *
-		[ADJ_DIST:2]
+		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
@@ -8613,7 +8622,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:astral] +
 		[ADJ_DIST:4] +
@@ -10103,7 +10112,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_NOUN_SING] +
 		[THE_COMPOUND_NOUN_SING] +
 	[ADJ:western] *
-		[ADJ_DIST:2]
+		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ] +
 
@@ -10199,7 +10208,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:wild]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
-		REAR_COMPOUND_ADJ -
+		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
 [WORD:WILL]
@@ -10555,11 +10564,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DOMAIN]
 	[NOUN:domain:domains]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 
@@ -10734,13 +10743,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LAND]
 	[NOUN:land:lands]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		FRONT_COMPOUND_NOUN_PLUR -
-		REAR_COMPOUND_NOUN_PLUR -
+		[FRONT_COMPOUND_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 	[PREFIX:terra] +
@@ -11141,7 +11150,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		FRONT_COMPOUND_NOUN_PLUR -
+		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
@@ -11152,7 +11161,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		FRONT_COMPOUND_NOUN_PLUR -
+		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
@@ -13136,7 +13145,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:CONTINENT]
 	[NOUN:continent:continents]
 		[THE_NOUN_SING]
-		OF_NOUN_SING -
+		[OF_NOUN_SING]
 		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[ADJ:continental] +
@@ -16098,7 +16107,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FURNACE]
 	[NOUN:forge:forges] *
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[THE_NOUN_PLUR]
@@ -16111,11 +16120,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:ANVIL]
 	[NOUN:anvil:anvils]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
-		OF_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 
 [WORD:BRIDGE]
 	[NOUN:bridge:bridges]
@@ -16403,10 +16412,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:COAST]
 	[NOUN:coast:coasts]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:coastal]
@@ -20284,7 +20293,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:COSMOS]
 	[NOUN:cosmos:]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 	[ADJ:cosmic] +
@@ -20860,6 +20869,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:destiny:destinies]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
+		[THE_NOUN_PLUR] +
+		[OF_NOUN_PLUR] +
 	[ADJ:destined]
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]

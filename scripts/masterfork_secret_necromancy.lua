@@ -55,6 +55,7 @@ interactions.secrets.necromancer=function(idx,sph)
 			[CE_MENT_ATT_CHANGE:EMPATHY:75:-150]// necromancers are less empathetic
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]",-- 0.5x damage taken from all materials
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:1:1:ABRUPT]",-- 1.0x damage taken from steel
+			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:BRONZE:4:5]",-- 0.75x damage taken from bronze
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]",-- 1.5x damage taken from silver
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:5:4:ABRUPT]"-- 1.25x damage taken from mithril
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:DWARFSTEEL:5:4:ABRUPT]"-- 1.25x damage taken from dwarfsteel
@@ -241,6 +242,7 @@ interactions.secrets.necromancer=function(idx,sph)
 							[CE_REMOVE_TAG:HAS_BLOOD:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
 							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]",-- 0.5x damage taken from all materials
 							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:1:1:ABRUPT]",-- 1.0x damage taken from steel
+							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:BRONZE:4:5]",-- 0.75x damage taken from bronze
 							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]",-- 1.5x damage taken from silver
 							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:5:4:ABRUPT]"-- 1.25x damage taken from mithril
 							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:DWARFSTEEL:5:4:ABRUPT]"-- 1.25x damage taken from dwarfsteel
@@ -297,6 +299,7 @@ interactions.secrets.necromancer=function(idx,sph)
                 [CE_REMOVE_TAG:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
                 [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]",-- 0.5x damage taken from all materials
                 [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:1:1:ABRUPT]",-- 1.0x damage taken from steel
+				[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:BRONZE:4:5]",-- 0.75x damage taken from bronze
                 [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]",-- 1.5x damage taken from silver
                 [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:5:4:ABRUPT]"-- 1.25x damage taken from mithril
                 [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:DWARFSTEEL:5:4:ABRUPT]"-- 1.25x damage taken from dwarfsteel

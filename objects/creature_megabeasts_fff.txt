@@ -16,7 +16,7 @@ creature_megabeasts_fff
 	[BIOME:ANY_LAND]
 	[LARGE_ROAMING][FREQUENCY:5]
 	[SEMIMEGABEAST][DIFFICULTY:6]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2
 	[FANCIFUL]
 	[BUILDINGDESTROYER:2]
 	[FIREIMMUNE]
@@ -167,7 +167,7 @@ creature_megabeasts_fff
 	[FREQUENCY:5]
 	[FANCIFUL]
 	[MEGABEAST][DIFFICULTY:10]
-	    [ATTACK_TRIGGER:3:3:3]
+	    [ATTACK_TRIGGER:3:0:3]{:3:3:3
 	[SPHERE:REBIRTH]
 	[SPHERE:FIRE]
 	[SPHERE:DEATH]
@@ -194,7 +194,7 @@ creature_megabeasts_fff
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[SWIMS_INNATE]
-	[GENERAL_MATERIAL_FORCE_MULTIPLIER:4:5]{+  20% force restance.}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[PREFSTRING:unending flame]
 	[PREFSTRING:destructive tendencies]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
