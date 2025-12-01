@@ -152,7 +152,7 @@ creature_megabeasts_fff
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:8]
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:PHOENIX] from here: https://www.reddit.com/r/dwarffortress/comments/54x3bt/raws_for_a_phoenix/
 	[DESCRIPTION:A bird of blazing fire. All who see it are stunned by its intense glare. Its constantly burning feathers are known to set fires wherever they go.]
@@ -288,4 +288,4 @@ creature_megabeasts_fff
 	[SELECT_MATERIAL:BLOOD]
 		 [PLUS_MATERIAL:PUS]
 		 [MELTING_POINT:10000]
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}

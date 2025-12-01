@@ -70,7 +70,7 @@ entity_kobold_masterfork
 	--SKULKING]
 	[METAL_PREF] -- metal weapons of their own for now
 	[STONE_PREF]
-	[MAX_STARTING_CIV_NUMBER:5]
+	[MAX_STARTING_CIV_NUMBER:4]
 	[MAX_POP_NUMBER:2500]
 	[MAX_SITE_POP_NUMBER:2500]{:120
 	[PERMITTED_JOB:MINER]

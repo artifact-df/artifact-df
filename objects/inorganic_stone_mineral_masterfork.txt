@@ -686,6 +686,8 @@ aluminum can occasionally be found in its free form in environments that like ox
 [INORGANIC:BORAX]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:borax][DISPLAY_COLOR:7:7:1][TILE:'`']
+[STATE_NAME:POWDER:borax powder]{+}
+[STATE_ADJ:POWDER:borax powder]{+}
 [ENVIRONMENT_SPEC:GYPSUM:CLUSTER_SMALL:100]
 [ENVIRONMENT_SPEC:ROCK_SALT:CLUSTER:100]
 [IS_STONE]
@@ -693,10 +695,11 @@ aluminum can occasionally be found in its free form in environments that like ox
 [BOILING_POINT:12835]
 [SOLID_DENSITY:1730]
 [STATE_COLOR:ALL_SOLID:SILVER]
+[STATE_COLOR:POWDER:SILVER]{+}
 [MATERIAL_VALUE:1]{+}
 [REACTION_CLASS:FLUX]{+}
 [REACTION_CLASS:CALCIUM_CARBONATE]{+}
-[MATERIAL_REACTION_PRODUCT:MINERAL_LIME:INORGANIC:LIME_CRUSHED]{+  can be crushed into lime powder.}
+[MATERIAL_REACTION_PRODUCT:MINERAL_LIME:INORGANIC:BORAX]{+  can be crushed into lime powder.}
 
 [INORGANIC:OLIVINE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
@@ -778,6 +781,8 @@ main constituent of limestone, but can be found as crystal
 [INORGANIC:CALCITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:calcite][DISPLAY_COLOR:7:7:1][TILE:'"']
+[STATE_NAME:POWDER:calcite powder]{+}
+[STATE_ADJ:POWDER:calcite powder]{+}
 [REACTION_CLASS:FLUX]
 [REACTION_CLASS:CALCIUM_CARBONATE]
 [ENVIRONMENT_SPEC:LIMESTONE:CLUSTER_SMALL:100]
@@ -787,7 +792,8 @@ main constituent of limestone, but can be found as crystal
 [MELTING_POINT:12902]
 [SOLID_DENSITY:2930]
 [STATE_COLOR:ALL_SOLID:FLAX]
-[MATERIAL_REACTION_PRODUCT:MINERAL_LIME:INORGANIC:LIME_CRUSHED]{+  can be crushed into lime powder.}
+[STATE_COLOR:POWDER:FLAX]{+}
+[MATERIAL_REACTION_PRODUCT:MINERAL_LIME:INORGANIC:CALCITE]{+  can be crushed into lime powder.}
 
 potassium nitrate, good for fertilizer and blowing things up with carbon and sulfur
 [INORGANIC:SALTPETER]

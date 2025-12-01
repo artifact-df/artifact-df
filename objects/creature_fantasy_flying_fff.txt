@@ -726,7 +726,7 @@ creature_fantasy_flying_fff
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:GRIFFIN_FFF]
     [DESCRIPTION:A savage creature with the head and wings of an eagle and the body, tail and back les of a lion. They live in the mountains and are fiercely territorial.]
@@ -830,7 +830,7 @@ creature_fantasy_flying_fff
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:PEGASUS_FFF]
     [DESCRIPTION:A large, winged horse-like creature.  They can run swiftly, fly like an eagle and have been ridden into battle by many a hero.]

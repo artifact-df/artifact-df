@@ -6690,7 +6690,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL:HELIOTROPE]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:6]{:2  made more valuable due to requiring sugar
+		[MATERIAL_VALUE:5]{:2  made more valuable due to requiring sugar
 		[EDIBLE_RAW]
 		[EDIBLE_COOKED]
 		[REACTION_CLASS:ALCOHOL]

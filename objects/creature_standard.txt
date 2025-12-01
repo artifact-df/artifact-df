@@ -393,17 +393,21 @@ creature_standard
 	[ATTACK:TGORE:BODYPART:BY_CATEGORY:TUSK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_WITH]
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_FLAG_WITH]
 	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[EQUIPS]
 	[CANOPENDOORS]
@@ -1321,11 +1325,12 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]
 		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_FLAG_WITH]
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:scratch:scratches]
@@ -1767,7 +1772,7 @@ creature_standard
 	[SWIMS_LEARNED]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:10]{+}
+		[POP_RATIO:20]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
 		[BABYNAME:giantess baby girl:giantess baby girls]{+}
@@ -1775,7 +1780,7 @@ creature_standard
 		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:40]{+}
 		[BABYNAME:giant baby boy:giant baby boys]{+}
 		[CHILDNAME:giant boy:giant boys]{+}
 		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -1787,7 +1792,7 @@ creature_standard
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
 		[ORIENTATION:MALE:0:0:1]
 		[ORIENTATION:FEMALE:1:0:0]
-		[MAXAGE:100:300] so they cant rule forever
+		[MAXAGE:150:500] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
@@ -1799,7 +1804,7 @@ creature_standard
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
 		[ORIENTATION:FEMALE:1:0:0]
 		[ORIENTATION:MALE:0:0:1]
-		[MAXAGE:100:300] so they cant rule forever
+		[MAXAGE:150:500] so they cant rule forever
 		[POP_RATIO:2]
 		[BABYNAME:giant baby boy:giant baby boys]
 		[CHILDNAME:giant boy:giant boys]
@@ -2113,14 +2118,14 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:10]{+}
+		[POP_RATIO:20]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]{+}
 		[CHILDNAME:cyclops girl:cyclops girls]{+}
 		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:40]{+}
 		[BABYNAME:cyclops baby boy:cyclops baby boys]{+}
 		[CHILDNAME:cyclops boy:cyclops boys]{+}
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -2131,7 +2136,7 @@ creature_standard
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
 		[ORIENTATION:MALE:0:0:1]
 		[ORIENTATION:FEMALE:1:0:0]
-		[MAXAGE:100:300] so they cant rule forever
+		[MAXAGE:150:500] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]
@@ -2140,7 +2145,7 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:100:300] so they cant rule forever
+		[MAXAGE:150:500] so they cant rule forever
 		[ORIENTATION:FEMALE:1:0:0]
 		[ORIENTATION:MALE:0:0:1]
 		[POP_RATIO:2]
@@ -2460,14 +2465,14 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:10]{+}
+		[POP_RATIO:20]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]{+}
 		[CHILDNAME:ettin girl:ettin girls]{+}
 		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:40]{+}
 		[BABYNAME:ettin baby boy:ettin baby boys]{+}
 		[CHILDNAME:ettin boy:ettin boys]{+}
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -2478,7 +2483,7 @@ creature_standard
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
 		[ORIENTATION:MALE:0:0:1]
 		[ORIENTATION:FEMALE:1:0:0]
-		[NO_GENDER] so they cant have heirs
+		[MAXAGE:150:500] so they cant rule forever
 		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]
@@ -2487,7 +2492,7 @@ creature_standard
 	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[MALE]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:100:300] so they cant rule forever
+		[MAXAGE:150:500] so they cant rule forever
 		[ORIENTATION:FEMALE:1:0:0]
 		[ORIENTATION:MALE:0:0:1]
 		[POP_RATIO:2]
@@ -2707,10 +2712,12 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_FLAG_WITH]
 	removed scratching
 	removed biting
 	[BABY:1]
@@ -2760,7 +2767,7 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:10]{+}
+		[POP_RATIO:20]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:minotauress:minotauresses:minotauress]{+}
 		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
@@ -2768,7 +2775,7 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:40]{+}
 		[CASTE_NAME:minotaur:minotaurs:minotaur]{+}
 		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
@@ -3961,10 +3968,12 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_FLAG_WITH]
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:scratch:scratches]

@@ -376,7 +376,7 @@ from Splint's Urks:
 		[ORIENTATION:FEMALE:1:0:0]
 		[POP_RATIO:2]
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:2:4]
+		[LITTERSIZE:2:3]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]

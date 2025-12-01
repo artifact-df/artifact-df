@@ -36,7 +36,7 @@ Adds in giant variations of all the domestic creatures
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_CAT]
 	[COPY_TAGS_FROM:CAT]
@@ -71,7 +71,7 @@ Adds in giant variations of all the domestic creatures
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_MULE]
 	-- How do they even exist in the wild? Who knows!
@@ -105,7 +105,7 @@ Adds in giant variations of all the domestic creatures
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_DONKEY]
 	[COPY_TAGS_FROM:DONKEY]
@@ -138,7 +138,7 @@ Adds in giant variations of all the domestic creatures
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_HORSE]
 	[COPY_TAGS_FROM:HORSE]
@@ -172,7 +172,7 @@ Adds in giant variations of all the domestic creatures
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_COW]
 	[COPY_TAGS_FROM:COW]
@@ -209,7 +209,7 @@ Adds in giant variations of all the domestic creatures
 		[CASTE_NAME:giant bull:giant bulls:giant bull]
 		[CHILDNAME:giant bull calf:giant bull calves]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_SHEEP]
 	[COPY_TAGS_FROM:SHEEP]
@@ -250,7 +250,7 @@ Adds in giant variations of all the domestic creatures
 		[CASTE_NAME:giant ram:giant rams:giant ram]
 
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_PIG]
 	[COPY_TAGS_FROM:PIG]
@@ -290,7 +290,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant boar:giant boars:giant boar]
 		
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_GOAT]
 	[COPY_TAGS_FROM:GOAT]
@@ -329,7 +329,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant billy goat:giant billy goats:giant billy goat]
 	
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_BIRD_CHICKEN]
 	[COPY_TAGS_FROM:BIRD_CHICKEN]
@@ -369,7 +369,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant rooster:giant roosters:giant rooster]
 	
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_CAVY]
 	[COPY_TAGS_FROM:CAVY]
@@ -412,7 +412,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant cavy boar:giant cavy boar:giant cavy boar]
 	
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_BIRD_DUCK]
 	[COPY_TAGS_FROM:BIRD_DUCK]
@@ -453,7 +453,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant drake:giant drakes:giant drake]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_WATER_BUFFALO]
 	[COPY_TAGS_FROM:WATER_BUFFALO]
@@ -495,7 +495,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant water buffalo bull:giant water buffalo bulls:giant water buffalo bull]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_REINDEER]
 	[COPY_TAGS_FROM:REINDEER]
@@ -536,7 +536,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant reindeer bull:giant reindeer bulls:giant reindeer bull]
 		
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_BIRD_GOOSE]
 	[COPY_TAGS_FROM:BIRD_GOOSE]
@@ -577,7 +577,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant gander:giant ganders:giant gander]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_YAK]
 	[COPY_TAGS_FROM:YAK]
@@ -619,7 +619,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant yak bull:giant yak bulls:giant yak bull]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_LLAMA]
 	[COPY_TAGS_FROM:LLAMA]
@@ -655,7 +655,7 @@ Adds in giant variations of all the domestic creatures
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_ALPACA]
 	[COPY_TAGS_FROM:ALPACA]
@@ -692,7 +692,7 @@ Adds in giant variations of all the domestic creatures
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_BIRD_GUINEAFOWL]
 	[COPY_TAGS_FROM:BIRD_GUINEAFOWL]
@@ -730,7 +730,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant guineacock:giant guineacocks:giant guineacock]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_BIRD_PEAFOWL_BLUE]
 	[COPY_TAGS_FROM:BIRD_PEAFOWL_BLUE]
@@ -773,7 +773,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant blue peacock:giant blue peacocks:giant blue peacock]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_BIRD_TURKEY]
 	[COPY_TAGS_FROM:BIRD_TURKEY]
@@ -817,7 +817,7 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant turkey gobbler:giant turkey gobblers:giant turkey gobbler]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
 [CREATURE:SAVDOM_GIANT_RABBIT]
 	[COPY_TAGS_FROM:RABBIT]
@@ -859,4 +859,4 @@ Adds in giant variations of all the domestic creatures
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant buck rabbit:giant buck rabbits:giant buck rabbit]
 
-	--APPLY_CREATURE_VARIATION:LEATHER_TOUGH_FFF]
+	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}

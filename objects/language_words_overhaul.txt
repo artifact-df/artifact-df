@@ -11163,8 +11163,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		--THE_NOUN_PLUR]
+		--OF_NOUN_PLUR]
 	[ADJ:planar] +
 		[ADJ_DIST:1] +
 		[FRONT_COMPOUND_ADJ] +
@@ -11175,8 +11175,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:dimension:dimensions]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		--THE_NOUN_PLUR]
+		--OF_NOUN_PLUR]
 	[ADJ:dimensional] +
 		[ADJ_DIST:1] +
 		[THE_COMPOUND_ADJ] +
@@ -11185,8 +11185,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:universe:universes]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		--THE_NOUN_PLUR]
+		--OF_NOUN_PLUR]
 	[ADJ:universal] +
 		[ADJ_DIST:1] +
 		[THE_COMPOUND_ADJ] +
@@ -11195,8 +11195,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:planet:planets]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		--THE_NOUN_PLUR]
+		--OF_NOUN_PLUR]
 	[ADJ:planetary] +
 		[ADJ_DIST:1] +
 		[THE_COMPOUND_ADJ] +

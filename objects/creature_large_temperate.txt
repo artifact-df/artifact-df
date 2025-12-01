@@ -31,6 +31,11 @@ creature_large_temperate
 	[SOUND:PEACEFUL_INTERMITTENT:25:2500:VOCALIZATION:growl idly:growls idly:an idle growl]{+}
 	[PRONE_TO_RAGE:5]{+}
 	[PREFSTRING:strength]
+	[PREFSTRING:standing posture]{+}
+	[PREFSTRING:dark, handsome pelts]{+}
+	[PREFSTRING:lengthy hibernating periods]{+}
+	[PREFSTRING:interspecies rivalry]{+}
+	[PREFSTRING:motherly instinct]{+}
 	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 		[CDI:ADV_NAME:Growl!]
 		[CDI:USAGE_HINT:ATTACK]
@@ -207,9 +212,9 @@ creature_large_temperate
 	[CREATURE_TILE:'B'][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:300]
-	[PET]
-	[TRAINABLE]
+	--PET][PET_EXOTIC]
 	[NATURAL]
+	[TRAINABLE]{+}
 	[LARGE_ROAMING][FREQUENCY:8]{:4
 	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
@@ -228,6 +233,11 @@ creature_large_temperate
 	[SOUND:PEACEFUL_INTERMITTENT:25:2500:VOCALIZATION:growl idly:growls idly:an idle growl]{+}
 	[PRONE_TO_RAGE:3]{+}
 	[PREFSTRING:strength]
+	[PREFSTRING:meandering]{+}
+	[PREFSTRING:V-shaped white chest blaze]{+}
+	[PREFSTRING:beautiful black coats]{+}
+	[PREFSTRING:playful cubs]{+}
+	[PREFSTRING:motherly teaching skill]{+}
 	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 		[CDI:ADV_NAME:Growl!]
 		[CDI:USAGE_HINT:ATTACK]
@@ -406,6 +416,11 @@ creature_large_temperate
 	[PETVALUE:50]
 	[STANDARD_GRAZER]
 	[PREFSTRING:grace]
+	[PREFSTRING:grand antlers]{+}
+	[PREFSTRING:moist venison]{+}
+	[PREFSTRING:lithe, compact bodies]{+}
+	[PREFSTRING:musk]{+}
+	[PREFSTRING:valuable deerskin]{+}
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:75:150]{:15:30
@@ -439,10 +454,12 @@ creature_large_temperate
 		[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 			[ATTACK_SKILL:BITE]
 			[ATTACK_VERB:gore:gores]
-			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_CONTACT_PERC:90]
+			[ATTACK_PENETRATION_PERC:100]
+			[ATTACK_FLAG_EDGE]
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
-			[ATTACK_FLAG_WITH]
 			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
 	[SELECT_CASTE:ALL]
 	 [ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_FRONT]
 		[ATTACK_SKILL:STANCE_STRIKE]
@@ -450,7 +467,7 @@ creature_large_temperate
 		[ATTACK_CONTACT_PERC:110]{:100      +10% }
 		[ATTACK_VELOCITY_MODIFIER:900]{+    -10% }
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
-		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_PRIORITY:SECOND]{:MAIN
 		[ATTACK_FLAG_WITH]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	 [ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_REAR]
@@ -459,7 +476,7 @@ creature_large_temperate
 		[ATTACK_CONTACT_PERC:100]{:110      +10% }
 		[ATTACK_VELOCITY_MODIFIER:900]{+    -10% }
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
-		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_PRIORITY:SECOND]{:MAIN
 		[ATTACK_FLAG_WITH]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	 [ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+  Revision: a weak blunt biting attack.}
@@ -600,6 +617,10 @@ creature_large_temperate
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:1000:VOCALIZATION:yap:yaps:tiny yapping]{+}
 	[PREFSTRING:cunning]
+	[PREFSTRING:bushy tails]{+}
+	[PREFSTRING:auburn pelts]{+}
+	[PREFSTRING:wary nature]{+}
+	[PREFSTRING:sharp features]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -773,6 +794,10 @@ creature_large_temperate
 	[SOUND:ALERT:100:1000:VOCALIZATION:growl:growls:a tiny growl]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:25:10000:VOCALIZATION:chatter:chatters:a chattering]{+}
 	[PREFSTRING:mischief]
+	[PREFSTRING:black facial markings]{+}
+	[PREFSTRING:ringed, bushy tails]{+}
+	[PREFSTRING:fashionable fur]{+}
+	[PREFSTRING:skilled foraging ability]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_NOLEATHER_MATERIALS]{:STANDARD_MATERIALS}
@@ -937,6 +962,11 @@ creature_large_temperate
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[PREFSTRING:mischief]
+	[PREFSTRING:ungodly ability to get into trouble]{+}
+	[PREFSTRING:quick hands and adept feet]{+}
+	[PREFSTRING:stuffed, pouch-like cheeks]{+}
+	[PREFSTRING:matriarchal social hierarchy]{+}
+	[PREFSTRING:relatively easy upkeep in captivity]{+}
 	[BODY:QUADRUPED_NECK_FRONT_GRASP:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:5TOES_FQ_FINGERS:5TOES_RQ_ANON:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE:FACIAL_FEATURES]
 	[BODY_DETAIL_PLAN:STANDARD_NOLEATHER_MATERIALS]{:STANDARD_MATERIALS}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
@@ -1100,6 +1130,11 @@ creature_large_temperate
 	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[PREFSTRING:cunning]
+	[PREFSTRING:many exotic names]{+}
+	[PREFSTRING:stalk-and-ambush hunting style]{+}
+	[PREFSTRING:territorial nature]{+}
+	[PREFSTRING:comparatively small head contrasting a contrarily large body]{+}
+	[PREFSTRING:plain colouring]{+}
 	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 		[CDI:ADV_NAME:Growl!]
 		[CDI:USAGE_HINT:ATTACK]
@@ -1311,6 +1346,11 @@ creature_large_temperate
 	[TRAINABLE]{+}
 	[BONECARN]
 	[PREFSTRING:cunning]
+	[PREFSTRING:feral nature]{+}
+	[PREFSTRING:intimidating howls]{+}
+	[PREFSTRING:stamina-built bodies]{+}
+	[PREFSTRING:bulky, double-layered coats]{+}
+	[PREFSTRING:social predatory lifestyle]{+}
 	[PRONE_TO_RAGE:2]{+}
 	[SMELL_TRIGGER:5]{+  Revision: canids have an acute sense of smell.}
 	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
@@ -1521,6 +1561,11 @@ creature_large_temperate
 	[NO_WINTER][BENIGN][MEANDERER]
 	[VISION_ARC:50:310]
 	[PREFSTRING:ability to burrow]
+	[PREFSTRING:fame as excellent burrowers]{+}
+	[PREFSTRING:banded guard hairs]{+}
+	[PREFSTRING:alertness]{+}
+	[PREFSTRING:sharp, high-pitched whistles]{+}
+	[PREFSTRING:penchant for getting in the way]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:RODENT_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[GRASSTRAMPLE:0]
@@ -1687,12 +1732,17 @@ creature_large_temperate
 	[MEANDERER]
 	[PETVALUE:650]
 	[PET_EXOTIC]
-	[MOUNT_EXOTIC]
+	--MOUNT_EXOTIC]
 	[AMBUSHPREDATOR]{+}
 	[CANNOT_JUMP]
 	[LARGE_PREDATOR]
 	[GRASSTRAMPLE:20]
 	[PREFSTRING:strength]
+	[PREFSTRING:incredibly powerful vice-like jaws]{+}
+	[PREFSTRING:dark, valuable scaled hides]{+}
+	[PREFSTRING:wild convulses]{+}
+	[PREFSTRING:grip]{+}
+	[PREFSTRING:dragon-like appearance]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
@@ -1839,7 +1889,7 @@ creature_large_temperate
 	[COLOR:2:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	[MOUNT_EXOTIC]
+	--MOUNT_EXOTIC]
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:1422:1127:831:488:2500:3700] 18 kph
@@ -2687,10 +2737,12 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 			[ATTACK_SKILL:BITE]
 			[ATTACK_VERB:gore:gores]
-			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_CONTACT_PERC:90]
+			[ATTACK_PENETRATION_PERC:100]
+			[ATTACK_FLAG_EDGE]
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
-			[ATTACK_FLAG_WITH]
 			[ATTACK_PRIORITY:MAIN]
+			[ATTACK_FLAG_WITH]
 		[STANDARD_GRAZER]
 		[BODY_SIZE:0:0:31500]
 		[BODY_SIZE:1:0:262500]
