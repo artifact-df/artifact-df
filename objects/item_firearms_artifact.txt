@@ -1,0 +1,67 @@
+item_firearms_artifact
+
+[OBJECT:ITEM]
+
+// Bullet types
+
+[ITEM_AMMO:ITEM_AMMO_PELLET]
+[NAME:pellet:pellets]
+[CLASS:NON_FIREABLE] Only fired via cartridge
+[SIZE:4]
+[ATTACK:BLUNT:6:1:strike:strikes:NO_SUB:5000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
+
+[ITEM_AMMO:ITEM_AMMO_BALL]
+[NAME:ball:balls]
+[CLASS:NON_FIREABLE] Only fired via cartridge
+[SIZE:10]
+[ATTACK:BLUNT:12:1:strike:strikes:NO_SUB:5000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
+
+// Muzzle-loader firearms
+
+[ITEM_WEAPON:ITEM_WEAPON_ARQUEBUS]
+[NAME:arquebus:arquebuses]
+[SIZE:2000]
+[SKILL:HAMMER]
+[RANGED:BLOWGUN:MUZZLE_LOADER]
+[AIM_DIFFICULTY:12]
+[LOADED:500:200]
+[INITIATE_SHOT_TIME:1]
+[SHOT_RECOVERY_TIME:0]
+[SHOOT_FORCE:3000]
+[SHOOT_MAXVEL:3000] 
+[TWO_HANDED:5000000]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:6]
+[ATTACK:BLUNT:100:4000:bash:bashes:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:5:5]
+
+// Paper cartridges for muzzle-loaders
+
+[ITEM_AMMO:ITEM_AMMO_BALL_CHARGE]
+[NAME:ball charge:ball charges]
+[CLASS:MUZZLE_LOADER]
+[SIZE:25]
+[ARTIFACTDF_CARTRIDGE_SHOTS:ITEM_AMMO_BALL:1]
+[ARTIFACTDF_CARTRIDGE_SMOKE:40] -- serpentine gunpowder (mixed without water) produces more smoke
+[ATTACK:BLUNT:48:1:strike:strikes:NO_SUB:2000] 
+	[ATTACK_PREPARE_AND_RECOVER:5:5]
+	
+[ITEM_AMMO:ITEM_AMMO_BUCK_CHARGE]
+[NAME:buckshot charge:buckshot charges]
+[CLASS:MUZZLE_LOADER]
+[SIZE:25]
+[ARTIFACTDF_CARTRIDGE_SHOTS:ITEM_AMMO_PELLET:8]
+[ARTIFACTDF_CARTRIDGE_SMOKE:30] -- serpentine gunpowder (mixed without water) produces more smoke
+[ATTACK:BLUNT:48:1:strike:strikes:NO_SUB:2000]
+	[ATTACK_PREPARE_AND_RECOVER:5:5]
+
+[ITEM_AMMO:ITEM_AMMO_BUCK_AND_BALL_CHARGE]
+[NAME:buck and ball charge:buck and ball charges]
+[CLASS:MUZZLE_LOADER]
+[SIZE:25]
+[ARTIFACTDF_CARTRIDGE_SHOTS:ITEM_AMMO_BALL:1:ITEM_AMMO_PELLET:4]
+[ARTIFACTDF_CARTRIDGE_SMOKE:40] -- serpentine gunpowder (mixed without water) produces more smoke
+[ATTACK:BLUNT:48:1:strike:strikes:NO_SUB:2000]
+	[ATTACK_PREPARE_AND_RECOVER:5:5]
