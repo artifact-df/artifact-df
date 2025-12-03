@@ -11,13 +11,15 @@ local tokens = require("custom-raw-tokens")
 local artifact = reqscript("internal/artifactdf/core")
 artifact.print("Loading projectile behavior script...")
 
--- Arbitrarily picked one of the unlabeled flags
+-- Arbitrarily picked one of the unlabeled projectile flags
 local IGNORE_BITFLAG = 30
 
-local makeCopyProjectile = function(ammo_subtype_string, original_proj)
+local fireCartridgeProjectile = function(ammo_subtype_string, original_proj)
     local firer = original_proj.firer
     local mat_type = original_proj.item.mat_type
     local mat_idx = original_proj.item.mat_index
+
+    -- Make the new projectile item
     local item_vec = dfhack.items.createItem(
         firer,
         df.item_type.AMMO,
@@ -29,8 +31,8 @@ local makeCopyProjectile = function(ammo_subtype_string, original_proj)
     assert(#item_vec == 1, "Failed to create projectile")
     local new_proj_item = item_vec[1]
 
+    -- Turn the item into a projectile
     local new_proj = dfhack.items.makeProjectile(new_proj_item)
-
     new_proj.firer = firer
     new_proj.origin_pos = utils.clone(original_proj.origin_pos)
     new_proj.target_pos = utils.clone(original_proj.target_pos)
@@ -46,8 +48,6 @@ local makeCopyProjectile = function(ammo_subtype_string, original_proj)
     new_proj.velocity = original_proj.velocity
     new_proj.hit_rating = original_proj.hit_rating
     new_proj.flags.no_impact_destroy = true
-    -- NOTE: this causes our event logic to ignore this projectile
-    new_proj.flags[IGNORE_BITFLAG] = true
 end
 
 events.onProjItemCheckMovement.one = function(fired_proj)
@@ -59,7 +59,6 @@ events.onProjItemCheckMovement.one = function(fired_proj)
     -- Logic for cartridge-type ammo
     local cart_data = { tokens.getToken(fired_proj.item, "ARTIFACTDF_CARTRIDGE_SHOTS") }
     if cart_data[1] ~= false then -- cart_data[1] will be false if ARTIFACTDF_CARTRIDGE_SHOTS is not present
-        artifact.printDebug("Fired projectile " .. fired_proj.item.id .. " is a cartridge")
         -- Create smoke if needed
         if not artifact.settings.DISABLE_GUN_SMOKE then
             local smoke_data = { tokens.getToken(fired_proj.item, "ARTIFACTDF_CARTRIDGE_SMOKE") }
@@ -90,7 +89,7 @@ events.onProjItemCheckMovement.one = function(fired_proj)
                 "Expected ARTIFACTDF_CARTRIDGE_SHOTS:x:y to provide an ITEM_AMMO subtype for x and a quantity for y"
             )
             for _ = 1, shot_count do
-                makeCopyProjectile(shot_subtype_string, fired_proj)
+                fireCartridgeProjectile(shot_subtype_string, fired_proj)
             end
         end
         -- Remove the cartridge
@@ -100,7 +99,24 @@ events.onProjItemCheckMovement.one = function(fired_proj)
         return
     end
 
+    -- Logic for adjusting projectile accuracy
+    local inaccuracy_data = { tokens.getToken(fired_proj.item, "ARTIFACTDF_PROJ_INACCURACY") }
+    if inaccuracy_data[1] ~= false then
+        local inaccuracy = tonumber(inaccuracy_data[1])
+        assert(type(inaccuracy) == "number", "Expected ARTIFACTDF_PROJ_INACCURACY:x to provide an integer for x")
+        x_inaccuracy = (math.random() - 0.5) * inaccuracy_data[1]
+        y_inaccuracy = (math.random() - 0.5) * inaccuracy_data[1]
+
+        -- Apply the inaccuracy
+        fired_proj.target_pos.x = math.floor(fired_proj.target_pos.x + x_inaccuracy + 0.5)
+        fired_proj.target_pos.y = math.floor(fired_proj.target_pos.y + y_inaccuracy + 0.5)
+
+        -- Mark the projectile as ignored to prevent running this function on it again
+        fired_proj.flags[IGNORE_BITFLAG] = true
+
+        return
+    end
+
     -- If no relevant tokens were found, mark the projectile as ignored
-    artifact.printDebug("Fired projectile " .. fired_proj.item.id .. " has no special behavior")
     fired_proj.flags[IGNORE_BITFLAG] = true
 end
