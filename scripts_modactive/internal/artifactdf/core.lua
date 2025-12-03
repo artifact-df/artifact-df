@@ -45,5 +45,3 @@ function reloadSettings()
 		return false
 	end
 end
-
-reloadSettings()
