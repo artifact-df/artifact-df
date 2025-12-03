@@ -18,6 +18,12 @@
     "COLOR_LIGHTRED",
     "COLOR_LIGHTMAGENTA",
     "COLOR_YELLOW",
-    "COLOR_WHITE"
+    "COLOR_WHITE",
+    "printDebug",
+    "reqscript",
+    "dfhack_flags"
+  ],
+  "diagnostics.disable": [
+    "lowercase-global"
   ]
 }
