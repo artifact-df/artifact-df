@@ -1,0 +1,13 @@
+tile_page_artifactdf
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:DWARF_GUNS_MUZZLE]
+    [FILE:images/dwarf_guns_muzzle.png]
+    [TILE_DIM:32:32]
+    [PAGE_DIM:4:2]
+
+[TILE_PAGE:DWARF_GUNS_MUZZLE_WIELDABLES]
+    [FILE:images/dwarf_guns_muzzle_wieldables.png]]
+    [TILE_DIM:32:32]
+    [PAGE_DIM:4:2]
