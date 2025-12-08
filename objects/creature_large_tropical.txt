@@ -14,18 +14,17 @@ creature_large_tropical
 	[STANDARD_GRAZER] don't have browsing trees yet
 	[PACK_ANIMAL]
 	--MOUNT_EXOTIC]
-	--TRAINABLE]
-	[WAGON_PULLER]{+}
-	[TRAINABLE_WAR]{+}
+	[TRAINABLE]
 	[MOUNT]{+}
 	[LARGE_ROAMING]
 	[TRADE_CAPACITY:5000]{+}
+	[FREQUENCY:15]{+}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]{+}
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[BENIGN][MEANDERER][NATURAL]
+	--BENIGN]--MEANDERER][NATURAL]
 	[NATURAL_SKILL:BITE:3]{+}
 	[PREFSTRING:strength]
 	[PREFSTRING:amazing trunks]
@@ -106,17 +105,19 @@ creature_large_tropical
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
+		[BENIGN]{+ elephant cows are mostly benign.}
 		[POP_RATIO:3]{+}
 		[CASTE_NAME:elephant cow:elephant cows:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  She lifts plants with her trunk and attacks with long tusks when she gets angry.  Her large ears flap in the heat.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:2]{+ males are less common in herds}
-		[PRONE_TO_RAGE:8]{+}
+		[POP_RATIO:2]{+ males are less common in herds.}
+		[PRONE_TO_RAGE:10]{+}
 		[CASTE_NAME:elephant bull:elephant bulls:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  He lifts plants with his trunk and attacks with long tusks when he gets angry.  His large ears flap in the heat.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -129,6 +130,9 @@ creature_large_tropical
 				[TLCM_NOUN:tusks:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:6]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:ELEPHANT_MAN]
 	[COPY_TAGS_FROM:ELEPHANT]
@@ -226,8 +230,9 @@ creature_large_tropical
 	[PREFSTRING:presumed ugliness]{+}
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:15]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -316,6 +321,7 @@ creature_large_tropical
 		[DESCRIPTION:A stout, medium-sized beast that lives in grass and woodland.  Two wrinkled flaps of skin hang from his long, wide snout.  He defends himself with four sharp tusks.  He can be aggressive when he needs to be.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -408,11 +414,11 @@ creature_large_tropical
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:25:50]{:5:10
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR][MEANDERER]
+	[LARGE_PREDATOR]--MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -518,6 +524,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, maned, tawny cat with a short, rounded head, round ears, and a tufted tail.  When not fighting for mates he lives in the grassland with several of them.  His pack hunts together and can fell extremely large prey.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -612,11 +619,11 @@ creature_large_tropical
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:10:15]{:2:3
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR][MEANDERER]
+	[LARGE_PREDATOR]--MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -719,6 +726,7 @@ creature_large_tropical
 		[DESCRIPTION:A large cat with a spotted, rosetted coat.  He hunts with great speed, bounding after his prey on long legs.  He's deceptively strong and adaptable, capable of dragging large carcasses and surviving where other cats can't.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_ORANGE_BLACK:990:BLACK:10:WHITE:1]
@@ -812,11 +820,11 @@ creature_large_tropical
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:10:15]{:2:3
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR][MEANDERER]
+	[LARGE_PREDATOR]--MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -919,6 +927,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, solitary cat with a spotted, rosetted coat.  He has short legs and a shorter tail than other cats, making him look stocky.  He stalks and silently ambushes his prey, biting with powerful jaws.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_ORANGE_BLACK:940:BLACK:60:WHITE:1]
@@ -1014,12 +1023,12 @@ creature_large_tropical
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
 	[BIOME:SWAMP_TROPICAL_SALTWATER]
 	[BIOME:SWAMP_MANGROVE]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:10:15]{:2:3
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[AMBUSHPREDATOR]{+}
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR][MEANDERER]
+	[LARGE_PREDATOR]--MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -1122,6 +1131,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, striped cat with powerful legs and a long, swishing tail.  Aloof and territorial, his aggressive nature sometimes drives him to attack people.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:STRIPES_ORANGE_BLACK:1]
@@ -1215,11 +1225,11 @@ creature_large_tropical
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:25:50]{:5:10
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR][MEANDERER]
+	[LARGE_PREDATOR]--MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:yowl:yowls:a loud yowl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -1311,6 +1321,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, spotted cat with thin legs, a slender body, a small, rounded head, and a long, swishing tail.  His ears flick this way and that as he lies in wait for his prey.  He runs with great speed, bounding and leaping through tall grass at a great pace.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_TAN_BLACK:1]
@@ -1409,9 +1420,9 @@ creature_large_tropical
 	[PREFSTRING:petite tufts-of-a-tail]{+}
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:5:10]
-	[UBIQUITOUS]{+}
+	[FREQUENCY:50]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BENIGN][MEANDERER][NATURAL]
@@ -1493,6 +1504,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, skittish, agile herbivore with spiral horns, long, hooved legs, and a slender, light body.  He lives with a large herd and runs in leaps and bounds through the tall grass.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -1578,8 +1590,8 @@ creature_large_tropical
 	[TRAINABLE]
 	[NATURAL]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][LOOSE_CLUSTERS][FREQUENCY:20]{:10
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][LOOSE_CLUSTERS][FREQUENCY:15]{:10
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:SAVANNA_TROPICAL]{+  no baboons so mandrills are close enough.}
@@ -1659,6 +1671,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, stocky monkey with a very short tail, a crushing bite, a blue face, and a blue bum.  He lives with a large group that sometimes raids settlements, destroying crops and stealing whatever they can.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1747,10 +1760,10 @@ creature_large_tropical
 	[CURIOUSBEAST_ITEM]{+}
 	[PET_EXOTIC]
 	[NATURAL]
-	[MEANDERER]--BENIGN]
+	--MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -1831,6 +1844,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, intelligent, sometimes vicious ape which lives with a large, complex tribe in tropical forest.  He has a round and mostly hairless face, prominent ears, and arms longer than his legs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -1856,8 +1870,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -1933,6 +1947,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, intelligent, and social ape with a carefree attitude toward sex.  He lives with a large and complex tribe in tropical forest.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -1957,10 +1972,10 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[TRAINABLE]
 	[NATURAL]
-	[MEANDERER]--BENIGN]
+	--MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
@@ -2043,6 +2058,7 @@ creature_large_tropical
 		[DESCRIPTION:A large ape that lives quietly in the forest.  His arms are longer than his legs, allowing him to walk upright on his knuckles and feet.  He lives in a complex social group lead by a large, dominant, silver-backed male.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2068,8 +2084,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:colorful hair]
 	[PREFSTRING:long arms]
@@ -2145,6 +2161,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, intelligent ape that swings around the trees of tropical forest.  He has long, red fur, strong arms, short, bowed legs, and a distinctive hairless face.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:ORANGE:1]
@@ -2170,8 +2187,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:loud calls]
@@ -2247,6 +2264,7 @@ creature_large_tropical
 		[DESCRIPTION:A medium-sized, long-armed ape that lives in the trees.  He has long, shaggy fur and a mostly hairless face.  His large throat pouch puffs up as he makes loud, resonating calls.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2272,8 +2290,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:coloration]
@@ -2349,6 +2367,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed ape with white hands and feet.  He swings around the trees, eating fruit.  A ring of white fur surrounds his black face, and his bum is protected with tough, bony padding.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			NOTE: More is needed here.
@@ -2375,8 +2394,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:coloration]
@@ -2452,6 +2471,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed, fruit-eating ape that swings around the in the trees.  He has white eyebrows, black hands and feet, and tough, bony padding on his bum.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			NOTE: More is needed here.
@@ -2478,8 +2498,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:coloration]
@@ -2555,6 +2575,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed ape with gray fur, a black cap, and a ring of white fur around his face.  He swings around the trees of tropical forest.  He can be very territorial, warning intruders with loud calls and songs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2580,8 +2601,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:coloration]
@@ -2652,6 +2673,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, fruit-eating ape that swings around in the trees.  He has long, curved fingers and a lean body, and hangs from trees with long arms.  His gray fur has a blue tinge, and the top of his head is black.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2677,8 +2699,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:white head rings]
@@ -2752,6 +2774,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, fruit-eating ape often found swinging from the trees in pairs.  He has long, shaggy fur and a ring of white fur around his black head.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:hair:SINGULAR]
@@ -2777,8 +2800,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:beautiful songs]
@@ -2854,6 +2877,7 @@ creature_large_tropical
 		[DESCRIPTION:A small ape that swings from the trees and eats fruit.  He has long, shaggy fur and a mostly hairless face.  He has beautiful, song-like calls that warn others and strengthen family bonds.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2879,8 +2903,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:mask-like facial coloration]
@@ -2951,6 +2975,7 @@ creature_large_tropical
 		[DESCRIPTION:A small fruit-eating ape that swings about the trees in tropical forest.  He has white eyebrows and a white ring of fur that surrounds his black face.  He sings elaborate songs with his mate, strengthening family bonds.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2976,8 +3001,8 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:100:250]{:20:50
+	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:coloration]
@@ -3053,6 +3078,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed ape that lives in tropical forest.  He has a loud, song-like call often sung in concert.  He swings around in the trees, eating fruit.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -3085,7 +3111,7 @@ creature_large_tropical
 	[PREFSTRING:penchant for spitting]{+}
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:100]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[BIOME:ANY_DESERT]
 	[TRADE_CAPACITY:3000]
@@ -3197,6 +3223,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, long-necked creature with a patchy coat, long legs, a big-lipped, long snout, and a large hump on his sturdy body.  He has been domesticated to carry passengers and cargo, but is nonetheless bad-tempered and will spit.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -3311,7 +3338,7 @@ creature_large_tropical
 	[PREFSTRING:strangely dry, fire-fuel-friendly droppings]{+}
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:100]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[BIOME:ANY_DESERT]
 	[TRADE_CAPACITY:3000]
@@ -3400,6 +3427,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, long-necked creature with a thick coat, long legs, a big-lipped, long snout, and two fleshy humps on his back.  He has been domesticated to carry passengers and cargo, but is nonetheless bad-tempered and will spit.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -3511,11 +3539,11 @@ creature_large_tropical
 	[BIOME:RIVER_TROPICAL_SALTWATER]
 	[BIOME:RIVER_TROPICAL_BRACKISHWATER]
 	[BIOME:RIVER_TROPICAL_FRESHWATER]
-	[LARGE_ROAMING][DIFFICULTY:2][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:25:50]{:5:10
+	[LARGE_ROAMING][DIFFICULTY:2][FREQUENCY:15]{:5
+	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
-	[MEANDERER]
+	--MEANDERER]
 	[LARGE_PREDATOR]
 	[AMBUSHPREDATOR]{+  Revision: as their description indicates, they prefer to ambush their prey.}
 	[GRASSTRAMPLE:20]
@@ -3601,6 +3629,7 @@ creature_large_tropical
 		[MALE]
 		[DESCRIPTION:A huge reptile with a broad body, a wide snout, and a thick, powerful tail.  He swims in coastal marshes and rivers, watching for prey to drag underwater.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{:SCALE
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -3683,7 +3712,7 @@ creature_large_tropical
 	[CASTE_NAME:vulture:vultures:vulture]
 	[GENERAL_CHILD_NAME:vulture hatchling:vulture hatchlings]
 	[CREATURE_TILE:'v'][COLOR:4:0:0]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:5:10]
 	[LOOSE_CLUSTERS]
 	[PETVALUE:30]
@@ -3698,6 +3727,7 @@ creature_large_tropical
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:ANY_DESERT]
+	[FREQUENCY:15]{+}
 	[HOMEOTHERM:10067]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -3775,6 +3805,7 @@ creature_large_tropical
 		[MALE]
 		[DESCRIPTION:A large bird that flies in warm skies, watching the ground for carrion.  He has a strong beak for tearing flesh and it excretes a mild, flesh-degrading toxin from his featherless head.  His strong stomach can digest even the most putrid carcasses.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -3866,12 +3897,13 @@ creature_large_tropical
 	[TRAINABLE_WAR]
 	[LARGE_ROAMING]
 	[NATURAL_SKILL:BITE:3]{+}
+	[FREQUENCY:15]{+}
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[MEANDERER][NATURAL][BENIGN]
+	--MEANDERER][NATURAL]--BENIGN]
 	[PREFSTRING:horns]
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN_NUMBERED]
@@ -3942,6 +3974,7 @@ creature_large_tropical
 		[DESCRIPTION:An immense, heavy herbivore with thick, plated skin and thick horns at the end of his snout.  He sleeps through the hottest parts of the day and grazes otherwise, aside from occasional mud baths.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -4046,7 +4079,8 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[FREQUENCY:15]{+}
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:long necks]
@@ -4105,6 +4139,7 @@ creature_large_tropical
 		[DESCRIPTION:A huge, leaf-eating mammal with an extremely long neck.  His skin has a distinctive brown and white pattern.  He runs in leaps and bounds across savanna and shrubland on long legs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:STRIPES_BROWN_WHITE:1]
@@ -4195,6 +4230,7 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:15]{+}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
@@ -4275,6 +4311,7 @@ creature_large_tropical
 		[BODY_SIZE:1:0:7000]
 		[BODY_SIZE:2:0:14000]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
@@ -4394,7 +4431,8 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:10:30]{:10:30
+	[FREQUENCY:15]{+}
+	[POPULATION_NUMBER:100:300]{:10:30
 	[CLUSTER_NUMBER:5:10]
 	[PREFSTRING:great size]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:RIBCAGE:SHELL]
@@ -4469,6 +4507,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 		[BODY_SIZE:2:0:150000]
 		[BODY_SIZE:5:0:300000]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:ECRU:1]
@@ -4558,7 +4597,8 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[GRASSTRAMPLE:0]
 	[VISION_ARC:50:310]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[FREQUENCY:15]{+}
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
@@ -4626,6 +4666,7 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small, naturally-armored mammal with a pointy snout, large ears, and a long tail.  He can roll into a ball to escape predators, relying on his leathery, armored hide for defense.  He has a long, sticky tongue useful for eating insects.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]

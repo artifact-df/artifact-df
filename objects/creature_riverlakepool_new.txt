@@ -18,9 +18,9 @@ Otters were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:3]{:1:4
-	[FREQUENCY:25][UBIQUITOUS]{+}
+	[FREQUENCY:25]
 	--BIOME:ANY_POOL]
 	[BIOME:ANY_LAKE]
 	[BIOME:ANY_RIVER]
@@ -98,6 +98,7 @@ Otters were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized river mammal with webbed feet and hands, water repellent fur, and a long body.  He swims with the help of his powerful tail, closing his ears and nostrils to keep out water.  He eats shellfish and other small animals, and lives in a burrow near the water's edge.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -120,9 +121,9 @@ Otters were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:5:10]
-	[FREQUENCY:25][UBIQUITOUS]{+}
+	[FREQUENCY:25]
 	[BIOME:OCEAN_TEMPERATE]
 	[BONECARN]
 	[BENIGN]
@@ -197,6 +198,7 @@ Otters were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized marine mammal with webbed feet and hands, water repellent fur, and a long body.  He swims with the help of his powerful tail, closing his ears and nostrils to keep out water.  He eats shellfish and other small animals.  He likes to float on the water, lying on his back and sleeping with a serene pose.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -289,14 +291,14 @@ Snapping turtles were sponsored by the generous contributions of the Bay 12 comm
 	[AMPHIBIOUS]
 	[NATURAL][PET_EXOTIC]
 	[CARNIVORE]
-	[FREQUENCY:25][UBIQUITOUS]{+}
+	[FREQUENCY:25]
 	[BIOME:RIVER_TEMPERATE_FRESHWATER]
 	[BIOME:RIVER_TEMPERATE_BRACKISHWATER]
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[BIOME:LAKE_TEMPERATE_BRACKISHWATER]
 	[BIOME:POOL_TEMPERATE_FRESHWATER]
 	[BIOME:POOL_TEMPERATE_BRACKISHWATER]
-	[POPULATION_NUMBER:25:50]
+	[POPULATION_NUMBER:250:500]{:25:50
 	[PREFSTRING:powerful bites]
 	[PREFSTRING:long necks]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:BEAK:RIBCAGE:SHELL]
@@ -366,6 +368,7 @@ Snapping turtles were sponsored by the generous contributions of the Bay 12 comm
 		[MALE]
 		[DESCRIPTION:A midsized reptile with a painful bite and a thick shell, which he retreats into when he needs to.  He has a long tail with triangular spikes.  He doesn't swim particularly well and often simply walks along the bottom.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:DARK_GREEN:1]
@@ -385,14 +388,14 @@ Snapping turtles were sponsored by the generous contributions of the Bay 12 comm
 	[NATURAL][PET_EXOTIC]
 	[CARNIVORE]
 	[LARGE_ROAMING]
-	[FREQUENCY:25][UBIQUITOUS]{+}
+	[FREQUENCY:25]
 	[BIOME:RIVER_TEMPERATE_FRESHWATER]
 	[BIOME:RIVER_TEMPERATE_BRACKISHWATER]
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[BIOME:LAKE_TEMPERATE_BRACKISHWATER]
 	[BIOME:POOL_TEMPERATE_FRESHWATER]
 	[BIOME:POOL_TEMPERATE_BRACKISHWATER]
-	[POPULATION_NUMBER:15:40]{:25:50
+	[POPULATION_NUMBER:250:500]{:25:50
 	[PREFSTRING:vicious bites]
 	[PREFSTRING:long necks]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:BEAK:RIBCAGE:SHELL]
@@ -463,6 +466,7 @@ Snapping turtles were sponsored by the generous contributions of the Bay 12 comm
 		[MALE]
 		[DESCRIPTION:A large reptile with a thick ridged shell, a beak-like jaw, and a thick, scaled tail.  He sometimes eats snakes and smaller turtles, and his bite can amputate fingers.  His worm-shaped tongue lures curious fish or frogs close enough to be snatched.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:DARK_GREEN:1]
@@ -548,11 +552,11 @@ Beavers were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[NATURAL]
-	[FREQUENCY:25][UBIQUITOUS]{+}
+	[FREQUENCY:25]
 	[BIOME:ANY_TEMPERATE_LAKE]
 	[BIOME:ANY_TEMPERATE_RIVER]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:10]
 	[BENIGN][MEANDERER]
 	[PREFSTRING:dams]
@@ -626,6 +630,7 @@ Beavers were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized river mammal with a board-like tail and buck teeth for chewing underwater.  He swims using his tail as a rudder, carrying wood to the dams he likes to build.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -718,7 +723,6 @@ Leeches were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:10]
 	[VERMIN_SOIL]
 	[FREQUENCY:100][VERMIN_HATEABLE]
-	[UBIQUITOUS]{+}
 	[SMALL_REMAINS][VERMIN_NOTRAP][NOBONES]
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
@@ -906,6 +910,7 @@ Axolotls were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A tiny, neotenic salamander with feathery external gills and a dorsal fin along his long body.  He lives in remote lakes and has the mysterious ability to regrow limbs.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -989,12 +994,12 @@ Minks were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:50]
 	[PET_EXOTIC]
 	[NATURAL]
-	[FREQUENCY:25]{+}
+	[FREQUENCY:20]{+}
 	[BIOME:ANY_TEMPERATE_LAKE]
 	[BIOME:ANY_TEMPERATE_RIVER]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]{+}
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BENIGN]
 	[PREFSTRING:long bodies]
@@ -1067,6 +1072,7 @@ Minks were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A tiny, predatory, weasel-like mammal with a rich, glossy coat and a long body and tail.  He lives close to water, sometimes swimming and sometimes hunting nearby.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1231,6 +1237,7 @@ Pond turtles were sponsored by the generous contributions of the Bay 12 communit
 		[MALE]
 		[DESCRIPTION:A tiny reptile with a smooth shell on his back.  He lives in rivers and ponds, basking in the sun when he can and diving into the water at the first sign of danger.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:DARK_GREEN:1]

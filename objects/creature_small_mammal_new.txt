@@ -84,6 +84,7 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A tiny rodent with a stout body and a short tail.  He burrows by day and scurries about at night, carrying food in his large cheek pouches.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:MOTTLED_WHITE_BROWN:1]
@@ -252,6 +253,7 @@ Hedgehogs were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A tiny, round, bug-eating mammal with a back covered in hollow spines.  He curls into a spiny ball when startled, protecting face and his soft belly.  He's a nocturnal creature that lives in temperate areas.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -412,6 +414,7 @@ Flying squirrels were sponsored by the generous contributions of the Bay 12 comm
 		[DESCRIPTION:A tiny rodent with a bushy tail and sturdy claws good for climbing.  Active only at night, he sails between trees on furry wings stretching between his front and hind legs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:CINNAMON:1]

@@ -455,6 +455,24 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:UNTAMED]
 	[S_WORD:WILD]
 	[S_WORD:SAPLING]
+	+ expanded dictionary
+	[S_WORD:FEN]
+	[S_WORD:HIGHLAND]
+	[S_WORD:HILLSIDE]
+	[S_WORD:HILLTOP]
+	[S_WORD:HINTERLAND]
+	[S_WORD:LOWLAND]
+	[S_WORD:QUAGMIRE]
+	[S_WORD:TERRAIN]
+	[S_WORD:WILDERNESS]
+	[S_WORD:BARREN]
+	[S_WORD:CANOPY]
+	[S_WORD:GREENWOOD]
+	[S_WORD:ORCHARD]
+	[S_WORD:OVERGROWN]
+	[S_WORD:THICKET]
+	[S_WORD:BLUFF_CLIFF]
+	[S_WORD:VERDANT]
 
 [SYMBOL:PRIMITIVE]
 	[S_WORD:ANIMAL]
@@ -836,6 +854,9 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:STAR]
 	[S_WORD:TIME]
 	[S_WORD:WONDER_NOUN]
+	+ expanded dictionary
+	[S_WORD:NEXUS]
+	[S_WORD:SPHERE]
 
 [SYMBOL:VIOLENT]
 	[S_WORD:ANGER]
@@ -1205,6 +1226,8 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:POISON]
 	[S_WORD:PUNGENT]
 	[S_WORD:SLOP]
+	+ expanded dictionary
+	[S_WORD:QUAGMIRE]
 
 [SYMBOL:DEATH]
 	[S_WORD:ASH]
@@ -1305,6 +1328,8 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:EVERLASTING]
 	[S_WORD:EVER]
 	[S_WORD:GLOOM]
+	+ expanded dictionary
+	[S_WORD:BARREN]
 
 [SYMBOL:OLD]
 	[S_WORD:AGE]
@@ -1363,6 +1388,8 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:WISDOM]
 	[S_WORD:WITHER]
 	[S_WORD:YAWN]
+	+ expanded dictionary
+	[S_WORD:BARREN]
 
 [SYMBOL:SUBORDINATE]
 	[S_WORD:CHILD]
@@ -1922,6 +1949,10 @@ Misc verbs/adjectives
 	[S_WORD:YORE]
 	[S_WORD:ZEPHYR]
 	[S_WORD:ARMOK] the god of blood himself
+	+ expanded dictionary
+	[S_WORD:NEXUS]
+	[S_WORD:SPHERE]
+	[S_WORD:NOTHING]
 
 [SYMBOL:ARTIFICE] *** This also needed some thematic redefining into being the list for gods of crafts, initially it was anything manmade. No precious metals are on the list.
 
@@ -2057,6 +2088,9 @@ Misc verbs/adjectives
 	[S_WORD:TREASURY]
 	[S_WORD:VAULT PLACE]
 	[S_WORD:WALL]
+	
+	+ expanded dictionary
+	[S_WORD:MONOLITH]
 
 [SYMBOL:COLOR]
 	[S_WORD:BLACK]
@@ -2882,6 +2916,10 @@ Misc verbs/adjectives
 	[S_WORD:SACRIFICE]
 	[S_WORD:STAND]
 	[S_WORD:WATCHFUL]
+	+ expanded dictionary
+	[S_WORD:CANOPY]
+	[S_WORD:REFUGE]
+	[S_WORD:HAVEN]
 
 [SYMBOL:RESTRAIN]
 	[S_WORD:BRIDLE]
@@ -3096,6 +3134,15 @@ Misc verbs/adjectives
 	[S_WORD:EAST]
 	[S_WORD:WEST]
 	[S_WORD:MIST]
+	+ expanded dictionary
+	[S_WORD:FEN]
+	[S_WORD:HINTERLAND]	
+	[S_WORD:LOWLAND]
+	[S_WORD:POOL]
+	[S_WORD:QUAGMIRE]
+	[S_WORD:TERRAIN]
+	[S_WORD:WATER]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_DESERT]
 	[S_WORD:WASTE]
@@ -3117,6 +3164,16 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:ARID]
+	[S_WORD:BARREN]
+	[S_WORD:EXPANSE]
+	[S_WORD:HINTERLAND]
+	[S_WORD:INFERTILE]
+	[S_WORD:ROCK]
+	[S_WORD:TERRAIN]
+	[S_WORD:WASTELAND]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_FOREST]
 	[S_WORD:FOREST]
@@ -3138,6 +3195,18 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:CANOPY]
+	[S_WORD:GROVE]
+	[S_WORD:GREENWOOD]
+	[S_WORD:HINTERLAND]
+	[S_WORD:LOWLAND]
+	[S_WORD:ORCHARD]
+	[S_WORD:OVERGROWN]
+	[S_WORD:REFUGE]
+	[S_WORD:TERRAIN]
+	[S_WORD:THICKET]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_MOUNTAINS]
 	[S_WORD:AXE]
@@ -3167,6 +3236,25 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:ALTITUDE]
+	[S_WORD:ARETE]
+	[S_WORD:BLUFF_CLIFF]
+	[S_WORD:CRAG]
+	[S_WORD:CLIMAX]
+	[S_WORD:CLIFF]
+	[S_WORD:ELEVATE]
+	[S_WORD:HIGHLAND]
+	[S_WORD:HINTERLAND]
+	[S_WORD:MOUNTAINSIDE]
+	[S_WORD:MOORLAND]	
+	[S_WORD:PRECIPICE]
+	[S_WORD:PLATEAU]
+	[S_WORD:RIDGE]
+	[S_WORD:STEEP]
+	[S_WORD:SLOPE]
+	[S_WORD:TERRAIN]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_OCEAN]
 	[S_WORD:BLUE]
@@ -3226,6 +3314,16 @@ Misc verbs/adjectives
 	++
 	[S_WORD:NORTH]
 	[S_WORD:SOUTH]
+	+ expanded dictionary
+	[S_WORD:ARCTIC]
+	[S_WORD:CREVASSE]
+	[S_WORD:CRYSTAL]
+	[S_WORD:EXPANSE]
+	[S_WORD:FREEZE]
+	[S_WORD:HOAR-FROST]
+	[S_WORD:PERMAFROST]
+	[S_WORD:TERRAIN]
+	[S_WORD:WASTELAND]
 
 [SYMBOL:NAME_TUNDRA]
 	[S_WORD:WINTER]
@@ -3238,6 +3336,17 @@ Misc verbs/adjectives
 	++
 	[S_WORD:NORTH]
 	[S_WORD:SOUTH]
+	+ expanded dictionary
+	[S_WORD:ARCTIC]
+	[S_WORD:COLD]
+	[S_WORD:EXPANSE]
+	[S_WORD:HINTERLAND]
+	[S_WORD:LOWLAND]
+	[S_WORD:PERMAFROST]
+	[S_WORD:PLAIN]
+	[S_WORD:TERRAIN]
+	[S_WORD:WASTELAND]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_GRASSLAND]
 	[S_WORD:FIELD]
@@ -3260,6 +3369,19 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:EXPANSE]
+	[S_WORD:GARDEN]
+	[S_WORD:GRASS]
+	[S_WORD:GRASSLAND]
+	[S_WORD:HINTERLAND]
+	[S_WORD:LOWLAND]
+	[S_WORD:MOORLAND]
+	[S_WORD:PASTURAGE]
+	[S_WORD:SAVANNAH]
+	[S_WORD:TERRAIN]
+	[S_WORD:VERDANT]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_HILLS]
 	[S_WORD:HILL]
@@ -3280,6 +3402,20 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:CRAG]
+	[S_WORD:FOOTHILL]
+	[S_WORD:HIGHLAND]
+	[S_WORD:HILLSIDE]
+	[S_WORD:HILLTOP]
+	[S_WORD:HINTERLAND]
+	[S_WORD:INCLINE]
+	[S_WORD:MOORLAND]
+	[S_WORD:PLATEAU]
+	[S_WORD:SLOPE]
+	[S_WORD:STEEP]
+	[S_WORD:TERRAIN]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_REGION]
 	[S_WORD:DOMAIN]
@@ -3330,6 +3466,55 @@ Misc verbs/adjectives
 	[S_WORD:AGELESS]
 	[S_WORD:ANCIENT]
 	[S_WORD:ELDER]
+	+ expanded dictionary
+	[S_WORD:ATMOSPHERE]
+	[S_WORD:DEPTH]
+	[S_WORD:DREAMLAND]
+	[S_WORD:ECOSYSTEM]
+	[S_WORD:EDEN]
+	[S_WORD:ENVIRONMENT]
+	[S_WORD:EXIST]
+	[S_WORD:GARDEN]
+	[S_WORD:HAVEN]
+	[S_WORD:HELL]
+	[S_WORD:HEAVEN]
+	[S_WORD:HEMISPHERE]
+	[S_WORD:HINTERLAND]
+	[S_WORD:HOMELAND]
+	[S_WORD:HORIZON]
+	[S_WORD:IDYLL]
+	[S_WORD:LATITUDE]
+	[S_WORD:LANDSCAPE]
+	[S_WORD:LAYER]
+	[S_WORD:LAYOUT]
+	[S_WORD:LEVEL]
+	[S_WORD:LOCAL]
+	[S_WORD:MAINLAND]
+	[S_WORD:MAP]
+	[S_WORD:NEXUS]
+	[S_WORD:NOTHING]
+	[S_WORD:NIGHTMARE]
+	[S_WORD:OBJECT]
+	[S_WORD:OCCUR]
+	[S_WORD:ORB]
+	[S_WORD:PERIOD]
+	[S_WORD:PLACE]
+	[S_WORD:PLEXUS]
+	[S_WORD:PROVINCE]
+	[S_WORD:PROXIMATE]
+	[S_WORD:REALITY]
+	[S_WORD:REGION]
+	[S_WORD:REPRESENT_ART]
+	[S_WORD:REVERIE]
+	[S_WORD:ROCK]
+	[S_WORD:SCENE]
+	[S_WORD:SETTING]
+	[S_WORD:SKY]
+	[S_WORD:SPACE]
+	[S_WORD:SPHERE]
+	[S_WORD:SURFACE]
+	[S_WORD:TERRAIN]
+	[S_WORD:WILDERNESS]
 
 [SYMBOL:NAME_CAVE]
 	[S_WORD:CAVE]
@@ -3373,6 +3558,14 @@ Misc verbs/adjectives
 	[S_WORD:SHADE]
 	[S_WORD:UNDER]
 	[S_WORD:VEIL]
+	+ expanded dictionary
+	[S_WORD:CHASM]
+	[S_WORD:DEPRESSION LOW]
+	[S_WORD:HERMITAGE]
+	[S_WORD:NOOK]
+	[S_WORD:PLACE]
+	[S_WORD:REFUGE]
+	[S_WORD:CREVASSE]
 
 [SYMBOL:EARTH]
 	[S_WORD:CANYON]
@@ -3435,6 +3628,8 @@ Misc verbs/adjectives
 	[S_WORD:SAPPHIRE]
 	[S_WORD:RUBY]
 	[S_WORD:JADE]
+	+ expanded dictionary
+	[S_WORD:CRAG]
 
 [SYMBOL:NAME_LAKE]
 	[S_WORD:BLUE]
@@ -3454,6 +3649,10 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:OASIS]
+	[S_WORD:POND]
+	[S_WORD:RESERVOIR]
 
 [SYMBOL:NAME_ENTITY_KINGDOM]
 	[S_WORD:REALM]
@@ -3471,6 +3670,9 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:HOMELAND]
+	[S_WORD:NEXUS]
 
 [SYMBOL:NAME_ENTITY_TOWN_FOUNDER]
 	[S_WORD:COUNCIL]
@@ -3485,6 +3687,9 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:REFUGE]
+	[S_WORD:HAVEN]
 
 [SYMBOL:GOOD]
 	[S_WORD:ANGEL]
@@ -3588,10 +3793,21 @@ Misc verbs/adjectives
 	[S_WORD:MYTH]
 	[S_WORD:OMINOUS]
 	[S_WORD:TEMPLE HEAD] "aspect"
+	+ expanded dictionary
+	[S_WORD:AREA]
+	[S_WORD:HINTERLAND]
+	[S_WORD:INLAND]
+	[S_WORD:MAINLAND]
+	[S_WORD:REGION]
 
 [SYMBOL:NAME_ISLAND]
 	S_WORD:LAND -
 	[S_WORD:ISLAND]
+	+ expanded dictionary
+	[S_WORD:COAST]
+	[S_WORD:COASTLINE]
+	[S_WORD:INSHORE]
+	[S_WORD:SHORE]
 
 [SYMBOL:NAME_ISLAND_SMALL]
 	S_WORD:LAND -
@@ -3602,6 +3818,14 @@ Misc verbs/adjectives
 	[S_WORD:COAST]
 	[S_WORD:ROCK]
 	[S_WORD:POINT]
+	+ expanded dictionary
+	[S_WORD:ATOLL]
+	[S_WORD:COVE]	
+	[S_WORD:DELTA]
+	[S_WORD:ISLET]
+	[S_WORD:INSHORE]
+	[S_WORD:REEF]
+	[S_WORD:REFUGE]
 
 [SYMBOL:NAME_PEAK]
 	[S_WORD:AXE]
@@ -3634,6 +3858,34 @@ Misc verbs/adjectives
 	[S_WORD:PEAK]
 	[S_WORD:SUMMIT]
 	[S_WORD:ZENITH]
+	+ expanded dictionary
+	[S_WORD:ARM]
+	[S_WORD:CRYSTAL]
+	[S_WORD:CLIMAX]
+	[S_WORD:CULMINATE]
+	[S_WORD:FATHER]
+	[S_WORD:FIST]
+	[S_WORD:FOCUS]
+	[S_WORD:FOOT]
+	[S_WORD:GRANDPARENT]
+	[S_WORD:GRANDMOTHER]
+	[S_WORD:GRANDFATHER]
+	[S_WORD:HEART]
+	[S_WORD:HIGH]	
+	[S_WORD:LIMB]
+	[S_WORD:LONG]
+	[S_WORD:MOTHER]
+	[S_WORD:MONOLITH]
+	[S_WORD:PARENT]
+	[S_WORD:PRECIPICE]
+	[S_WORD:PROTRUDE]
+	[S_WORD:POLE_GEOGRAPHY]
+	[S_WORD:PLATEAU]
+	[S_WORD:SLOPE]
+	[S_WORD:SNOWCAP]
+	[S_WORD:TENTACLE]
+	[S_WORD:TIP]
+	[S_WORD:TOP]
 
 [SYMBOL:NAME_VOLCANO]
 	[S_WORD:ASH]
@@ -3658,6 +3910,15 @@ Misc verbs/adjectives
 	[S_WORD:SUMMIT]
 	[S_WORD:ANVIL]
 	[S_WORD:PILLAR]
+	+ expanded dictionary
+	[S_WORD:CHIMNEY]
+	[S_WORD:ERUPT]
+	[S_WORD:FATHER]
+	[S_WORD:HEART]
+	[S_WORD:LAVA]
+	[S_WORD:MAGMA]
+	[S_WORD:MOLTEN]
+	[S_WORD:MOTHER]
 
 [SYMBOL:NAME_COMMON_RELIGION]
 	[S_WORD:CULT]
@@ -3776,6 +4037,8 @@ Misc verbs/adjectives
 	[S_WORD:TWILIGHT]
 	[S_WORD:VALLEY]
 	[S_WORD:VESTIBULE]
+	+ expanded dictionary
+	[S_WORD:THICKET]
 
 [SYMBOL:DANCE]
 	[S_WORD:DANCE]
@@ -3908,6 +4171,8 @@ Misc verbs/adjectives
 	[S_WORD:RIGHTEOUSNESS]
 	[S_WORD:SOCIETY]
 	[S_WORD:TRIAL]
+	+ expanded dictionary
+	[S_WORD:NEXUS]
 
 [SYMBOL:FESTIVAL]
 	[S_WORD:GARISH]
@@ -4252,6 +4517,8 @@ Misc verbs/adjectives
 	[S_WORD:WING]
 	[S_WORD:ZENITH]
 	[S_WORD:ZEPHYR]
+	+ expanded dictionary
+	[S_WORD:ALTITUDE]
 
 [SYMBOL:SILENCE]
 	[S_WORD:SILENCE]
@@ -4414,6 +4681,9 @@ Misc verbs/adjectives
 	[S_WORD:HALL]
 	[S_WORD:MONASTERY]
 	[S_WORD:PALACE]
+	+ expanded dictionary
+	[S_WORD:REFUGE]
+	[S_WORD:HAVEN]
 
 [SYMBOL:NAME_BUILDING_KEEP]
 	[S_WORD:CASTLE]
@@ -4425,6 +4695,9 @@ Misc verbs/adjectives
 	++
 	[S_WORD:CHAMBER]
 	[S_WORD:SPIRE]
+	+ expanded dictionary
+	[S_WORD:REFUGE]
+	[S_WORD:HAVEN]
 
 [SYMBOL:NAME_WAR]
 	[S_WORD:WAR]
@@ -4575,6 +4848,8 @@ Misc verbs/adjectives
 	[S_WORD:MOURN] "mausoleum"
 	[S_WORD:SHRINE]
 	[S_WORD:SORROW]
+	+ expanded dictionary
+	[S_WORD:MONOLITH]
 
 [SYMBOL:NAME_BUILDING_LIBRARY]
 	[S_WORD:HOME]
@@ -4592,6 +4867,8 @@ Misc verbs/adjectives
 	[S_WORD:HALL]
 	[S_WORD:QUILL]
 	[S_WORD:THEATER]
+	+ expanded dictionary
+	[S_WORD:REFUGE]
 
 [SYMBOL:NAME_FESTIVAL]
 	[S_WORD:CELEBRATE]

@@ -65,6 +65,9 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:ATTACK_VELOCITY_MODIFIER]
 	[CV_REMOVE_TAG:GAIT]
 	[CV_REMOVE_TAG:UBIQUITOUS]
+	[CV_REMOVE_TAG:CURIOUSBEAST_EATER]{+}
+	[CV_REMOVE_TAG:CURIOUSBEAST_ITEM]{+}
+	[CV_REMOVE_TAG:CURIOUSBEAST_GUZZLER]{+}
 	[CV_REMOVE_TAG:CANNOT_JUMP]{+    Revision: if they have legs, they can jump.}
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
@@ -292,14 +295,16 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:MANNERISM_BREATH]{+
 	[CV_NEW_TAG:MANNERISM_POSTURE]{+
 	[CV_NEW_TAG:MANNERISM_STRETCH]{+
-	[CV_NEW_TAG:PERSONALITY:BASHFUL:0:40:80]{+  Revision: some weighted personalities.}
-	[CV_NEW_TAG:PERSONALITY:TOLERANT:20:60:100]{+
-	[CV_NEW_TAG:PERSONALITY:ENVY_PROPENSITY:0:45:80]{+  Revision: these make necromancers less likely.}
-	[CV_NEW_TAG:PERSONALITY:ANXIETY_PROPENSITY:0:45:80]{+
-	[CV_NEW_TAG:PERSONALITY:STRESS_VULNERABILITY:0:45:80]{+
-	[CV_NEW_TAG:PERSONALITY:VANITY:0:45:80]{+
-	[CV_NEW_TAG:PERSONALITY:AMBITION:0:40:80]{+
-	[CV_NEW_TAG:PERSONALITY:HOPEFUL:10:55:100]{+
+	[CV_NEW_TAG:PERSONALITY:BASHFUL:0:45:85]{+  Revision: some weighted personalities.}
+	[CV_NEW_TAG:PERSONALITY:TOLERANT:5:55:100]{+
+	[CV_NEW_TAG:PERSONALITY:ENVY_PROPENSITY:0:45:85]{+  Revision: these make necromancers less likely.}
+	[CV_NEW_TAG:PERSONALITY:ANXIETY_PROPENSITY:0:45:85]{+
+	[CV_NEW_TAG:PERSONALITY:STRESS_VULNERABILITY:0:45:85]{+
+	[CV_NEW_TAG:PERSONALITY:VANITY:0:45:85]{+
+	[CV_NEW_TAG:PERSONALITY:AMBITION:0:45:85]{+
+	[CV_NEW_TAG:PERSONALITY:HOPEFUL:5:55:100]{+
+	[CV_NEW_TAG:PERSONALITY:CURIOUS:5:55:100]{+
+	[CV_NEW_TAG:PERSONALITY:BRAVERY:5:55:100]{+
 	[CV_NEW_TAG:CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]{+}
 	[CV_NEW_TAG:CREATURE_CLASS:ANIMAL_PERSON]{+}
 	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]{+    Revision: animal people can now sweat, cry and spit.}
@@ -320,21 +325,25 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:C:1]
 		[CV_NEW_TAG:CDI:WAIT_PERIOD:30]
 	[CV_REMOVE_TAG:BODY_APPEARANCE_MODIFIER]{+         Revision: animal peoples height and broadness varies like other civ creatures.}
-	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:HEIGHT:80:95:98:100:102:105:120]{+
+	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
-	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:BROADNESS:80:95:98:100:102:105:120]{+
+	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
 	[CV_REMOVE_TAG:FREQUENCY]{+}
 	[CV_NEW_TAG:FREQUENCY:10]{+                        Revision: a high frequency should hopefully allow them to be absorbed into civs easier.}
 	[CV_NEW_TAG:SKILL_RATES:50:10:18:18]{+             Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
-	[CV_NEW_TAG:SKILL_LEARN_RATE:BITE:120]{+           Revision: animal people should learn these skills faster than normal.}
-	[CV_NEW_TAG:SKILL_LEARN_RATE:GRASP_STRIKE:120]{+
-	[CV_NEW_TAG:SKILL_LEARN_RATE:STANCE_STRIKE:120]{+
+	[CV_NEW_TAG:SKILL_LEARN_RATE:BITE:125]{+           Revision: animal people should learn these skills faster than normal.}
+	[CV_NEW_TAG:SKILL_LEARN_RATE:GRASP_STRIKE:125]{+
+	[CV_NEW_TAG:SKILL_LEARN_RATE:STANCE_STRIKE:125]{+
 	[CV_NEW_TAG:SKILL_LEARN_RATE:SWIMMING:100]{+
 	[CV_NEW_TAG:SKILL_LEARN_RATE:CLIMBING:100]{+
 	[CV_NEW_TAG:SKILL_LEARN_RATE:TRACKING:100]{+
 	[CV_NEW_TAG:SKILL_LEARN_RATE:DODGING:100]{+
 	[CV_NEW_TAG:SKILL_LEARN_RATE:SNEAK:100]{+
+	[CV_NEW_TAG:NATURAL_SKILL:BITE:2]{+                Revision: animal people have a small amount of nat skill in these.}
+	[CV_NEW_TAG:NATURAL_SKILL:STANCE_STRIKE:2]{+
+	[CV_NEW_TAG:NATURAL_SKILL:GRASP_STRIKE:2]{+
+	[CV_NEW_TAG:NATURAL_SKILL:DODGING:1]{+
 
 [CREATURE_VARIATION:ANIMAL_PERSON_LEGLESS]
 	[CV_REMOVE_TAG:TRAINABLE]{+}
@@ -388,6 +397,9 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:ATTACK_VELOCITY_MODIFIER]
 	[CV_REMOVE_TAG:GAIT]
 	[CV_REMOVE_TAG:UBIQUITOUS]
+	[CV_REMOVE_TAG:CURIOUSBEAST_EATER]{+}
+	[CV_REMOVE_TAG:CURIOUSBEAST_ITEM]{+}
+	[CV_REMOVE_TAG:CURIOUSBEAST_GUZZLER]{+}
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
 	[CV_REMOVE_TAG:ORIENTATION]		should restore orientations to default 5/20/75
@@ -980,6 +992,9 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:DIFFICULTY:4]{+                             Revision: slaying giant creatures should be a tough quest.}
 	[CV_REMOVE_TAG:FREQUENCY]{+}
 	[CV_NEW_TAG:FREQUENCY:10]{+}
+	[CV_NEW_TAG:NATURAL_SKILL:BITE:3]{+}
+	[CV_NEW_TAG:NATURAL_SKILL:STANCE_STRIKE:3]{+}
+	[CV_NEW_TAG:NATURAL_SKILL:DODGING:1]{+}
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
 		[CV_NEW_TAG:CHANGE_BODY_SIZE_PERC:200]
 		[CV_NEW_TAG:CHANGE_FREQUENCY_PERC:50]

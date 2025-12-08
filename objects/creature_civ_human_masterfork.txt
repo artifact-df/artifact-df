@@ -85,7 +85,7 @@ creature_civ_human_masterfork
 		[CDI:WAIT_PERIOD:30]
 	[BODY_SIZE:0:0:4000]
 	[BODY_SIZE:1:168:17500]
-	[BODY_SIZE:12:0:70000]
+	[BODY_SIZE:10:0:70000]{:12:0:70000
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:70:95:98:100:102:105:130]{:75:95:98:100:102:105:125  greater variance}
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:70:95:98:100:102:105:130]{:75:95:98:100:102:105:125  greater variance}
@@ -178,7 +178,7 @@ creature_civ_human_masterfork
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	{  removed latching  }
 	[BABY:1]
-	[CHILD:14]{:18
+	[CHILD:12]{:18
 	[EQUIPS]
 	[DIURNAL]
 	[SMELL_TRIGGER:90]
@@ -252,7 +252,7 @@ creature_civ_human_masterfork
 		[FEMALE]
 		[POP_RATIO:20]{+}
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:2:5]{+}
+		[LITTERSIZE:3:5]{+}
 		[BABYNAME:human baby girl:human babies]{+}
 		[CHILDNAME:human girl:human children]{+}
 		[DESCRIPTION:A medium-sized woman of great ambition and potential.  She looks almost ordinary in a world of strange things.  She toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
@@ -264,27 +264,26 @@ creature_civ_human_masterfork
 		[DESCRIPTION:A medium-sized man of great ambition and potential.  He looks almost ordinary in a world of strange things.  He toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[SELECT_CASTE:MALE]
+	[SELECT_CASTE:MALE]{+}
 		[CREATURE_CLASS:HUMAN_MALE]
-	[SELECT_CASTE:FEMALE]
+	[SELECT_CASTE:FEMALE]{+}
       [SELECT_ADDITIONAL_CASTE:MALE]
         [CASTE_PROFESSION_NAME:RECRUIT:levy:levies]
 		[CASTE_PROFESSION_NAME:STANDARD:serf:serfs]
-	[CASTE:FEMALE_NOBLE]  noble castes are modified from Fantastic Fantasy Fortress
+	[CASTE:FEMALE_NOBLE]{+  noble castes are modified from Fantastic Fantasy Fortress.}
 		[FEMALE]
-		[POP_RATIO:1]
-		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:1:4]{+}
+		[POP_RATIO:1] 1/20
+		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A medium-sized woman of great potential.  She is of noble birth, and is prone to great ambitions.  She rule others to rule villages, kingdoms, establishing trade networks and start wars.]{+}
 		[CASTE_NAME:human noblewoman:humans:human]
-	[CASTE:MALE_NOBLE]
+	[CASTE:MALE_NOBLE]{+}
 		[MALE]
-		[POP_RATIO:1]
+		[POP_RATIO:1] 1/20
 		[DESCRIPTION:A medium-sized man of great potential.  He is of noble birth, and is prone to great ambitions.  He rule others to rule villages, kingdoms, establishing trade networks and start wars.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 		[CASTE_NAME:human nobleman:humans:human]
-	[SELECT_CASTE:FEMALE_NOBLE]
+	[SELECT_CASTE:FEMALE_NOBLE]{+}
 	    [SELECT_ADDITIONAL_CASTE:MALE_NOBLE]
 		[CREATURE_CLASS:HUMAN_NOBLE]
 		[ARENA_RESTRICTED]
@@ -302,7 +301,7 @@ creature_civ_human_masterfork
 		[MENT_ATT_RANGE:MUSICALITY:450:950:1150:1250:1350:1550:2250]            +
 		[MENT_ATT_RANGE:KINESTHETIC_SENSE:450:950:1150:1250:1350:1550:2250]     +
 		[MENT_ATT_RANGE:EMPATHY:0:400:600:750:800:900:1100]                     --
-		[PERSONALITY:ENVY_PROPENSITY:10:55:100]{+  affects necromancer propensity.}
+		[PERSONALITY:ENVY_PROPENSITY:10:55:100]{+  nobles personalities differ from peasants.}
 		[PERSONALITY:VANITY:10:55:100]{+ 
 		[PERSONALITY:PRIDE:10:55:100]{+ 
 		[PERSONALITY:AMBITION:10:55:100]{+ 

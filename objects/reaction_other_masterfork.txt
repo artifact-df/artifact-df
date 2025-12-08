@@ -987,6 +987,7 @@ reaction_other_masterfork
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:WOOD_BURNING]
+	[SKILL_IP:150]{+ 30 default  revision: bulk reactions should yield the same experience as doing each reagent individually.}
 
 [REACTION:MAKE_QUICKLIME_FROM_POWDER]
 	[NAME:make quicklime (powder)]
@@ -1016,6 +1017,7 @@ reaction_other_masterfork
 	[PRODUCT:100:1:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:carbonate rock:MINERAL_LIME][PRODUCT_DIMENSION:750] x5
 		[PRODUCT_TO_CONTAINER:bag]
 	[SKILL:MILLING]
+	[SKILL_IP:120]{+ 30 default  revision: bulk reactions should yield the same experience as doing each reagent individually.}
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:STEEL_MAKING_POWDER]  can use powdered flux instead
@@ -1108,3 +1110,53 @@ reaction_other_masterfork
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:SMELT]
 	[FUEL]
+
+[REACTION:GRIND_ROCK_SALT_POWDER]
+	[NAME:process mineral salt (5)]
+	[BUILDING:QUERN:NONE]
+	[BUILDING:MILLSTONE:NONE]
+	[REAGENT:mineral salt:10:BOULDER:NONE:NONE:NONE]
+		[HAS_MATERIAL_REACTION_PRODUCT:MINERAL_SALT]
+	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
+		[EMPTY]
+		[PRESERVE_REAGENT]
+		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+	[PRODUCT:100:1:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:mineral salt:MINERAL_SALT][PRODUCT_DIMENSION:750] x5
+		[PRODUCT_TO_CONTAINER:bag]
+	[SKILL:MILLING]
+	[SKILL_IP:300]{+ 30 default  revision: bulk reactions should yield the same experience as doing each reagent individually.}
+	[FORTRESS_MODE_ENABLED]
+	[WORLDGEN_ENABLED]
+
+[REACTION:MAKE_SALTED_MEAT]  salt meat to make it not rot and more valuable - ratio: 5:4
+	[NAME:salt meat]
+	[BUILDING:KITCHEN:NONE]
+	[REAGENT:meat:5:MEAT:NONE:NONE:NONE][UNROTTEN]
+		[REACTION_CLASS:SALTED_MEAT]
+	[REAGENT:salt:150:POWDER_MISC:NONE:NONE:NONE]
+		[REACTION_CLASS:SALTY]
+	[REAGENT:bag:1:NONE:NONE:NONE:NONE]
+		[CONTAINS:salt]
+		[PRESERVE_REAGENT]
+		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+	[PRODUCT:100:4:MEAT:NONE:GET_MATERIAL_FROM_REAGENT:meat:SALTED_MAT]
+	[SKILL:COOK]
+	[SKILL_IP:150]{+ 30 default  revision: bulk reactions should yield the same experience as doing each reagent individually.}
+	[FORTRESS_MODE_ENABLED]
+	[WORLDGEN_ENABLED]
+
+[REACTION:TAN_A_HIDE_SALT]  more efficient way to tan hides
+	[NAME:tan a hide (salt)]
+	[BUILDING:TANNER:NONE]
+	[REAGENT:hide:2:NONE:NONE:NONE:NONE][USE_BODY_COMPONENT][UNROTTEN]
+		[HAS_MATERIAL_REACTION_PRODUCT:TAN_MAT]
+	[REAGENT:salt:150:POWDER_MISC:NONE:NONE:NONE]
+		[REACTION_CLASS:SALTY]
+	[REAGENT:bag:1:NONE:NONE:NONE:NONE]
+		[CONTAINS:salt]
+		[PRESERVE_REAGENT]
+		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+	[PRODUCT:100:3:SKIN_TANNED:NONE:GET_MATERIAL_FROM_REAGENT:hide:TAN_MAT] an additional leather
+	[SKILL:TANNER]
+	[SKILL_IP:60]
+	[FORTRESS_MODE_ENABLED]

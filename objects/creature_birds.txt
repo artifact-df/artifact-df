@@ -1698,7 +1698,7 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[PETVALUE:100]
 	[BENIGN][MEANDERER]
-	[PET_EXOTIC]
+	[PET]--PET_EXOTIC]
 	[SOUND:ALERT:100:10000:VOCALIZATION:squawk angrily:squawks angrily angrily:angry squawking]{+}
 	[DIURNAL]
 	[HOMEOTHERM:10067]

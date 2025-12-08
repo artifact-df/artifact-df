@@ -5,12 +5,11 @@ item_tool_masterfork
   // edited raws from Immaterial Cultures by DPh Kraken, additional edits by zey //
   // mostly the same as vanilla except knives and stone axes have been removed
 
-[ITEM_TOOL:ITEM_TOOL_CAULDRON]  needed for the foundry building
+[ITEM_TOOL:ITEM_TOOL_CAULDRON]
 [NAME:cauldron:cauldrons]
-[DESCRIPTION:A large round container used to boil or melt things. Used both in kitchens and metalworking.]
+[DESCRIPTION:A large round container used to boil or melt things. Used both in kitchens and metalworking.]{+}
 [VALUE:50]
 [METAL_MAT]
---HARD_MAT]
 [TOOL_USE:LIQUID_COOKING]
 [TILE:147]
 [SIZE:4000]
@@ -25,7 +24,6 @@ item_tool_masterfork
 [TILE:13]
 [SIZE:100]
 [MATERIAL_SIZE:1]
-[NO_DEFAULT_JOB] adventure only
 
 [ITEM_TOOL:ITEM_TOOL_BOWL]
 [NAME:bowl:bowls]
@@ -37,7 +35,6 @@ item_tool_masterfork
 [SIZE:100]
 [MATERIAL_SIZE:1]
 [CONTAINER_CAPACITY:3000]
-[NO_DEFAULT_JOB] adventure only
 
 [ITEM_TOOL:ITEM_TOOL_MORTAR]
 [NAME:mortar:mortars]
@@ -49,18 +46,15 @@ item_tool_masterfork
 [SIZE:100]
 [MATERIAL_SIZE:1]
 [CONTAINER_CAPACITY:1000]
-[NO_DEFAULT_JOB] adventure only
 
 [ITEM_TOOL:ITEM_TOOL_PESTLE]
 [NAME:pestle:pestles]
 [VALUE:10]
 [HARD_MAT]
-[CERAMIC_MAT]{+}
 [TOOL_USE:GRIND_POWDER_GRINDER]
 [TILE:'/']
 [SIZE:20]
 [MATERIAL_SIZE:1]
-[NO_DEFAULT_JOB] adventure only
 
 ITEM_TOOL_KNIFE_CARVING
 ITEM_TOOL_KNIFE_BONING
@@ -81,7 +75,7 @@ ITEM_TOOL_FORK_CARVING
 
 [ITEM_TOOL:ITEM_TOOL_JUG]
 [NAME:jug:jugs]
-[VALUE:12]{:10
+[VALUE:10]
 [HARD_MAT]
 [CERAMIC_MAT]{+}
 [GLASS_MAT]{+}
@@ -762,7 +756,6 @@ ITEM_TOOL_STONE_AXE
 	[ATTACK_PREPARE_AND_RECOVER:4:1]
 [ATTACK:EDGE:7:764:lunge:lunges at:NO_SUB:576]
 	[ATTACK_PREPARE_AND_RECOVER:4:2]
-
 
 [ITEM_TOOL:ITEM_TOOL_BASKET]
 [NAME:basket:baskets]

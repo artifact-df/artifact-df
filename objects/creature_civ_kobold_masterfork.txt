@@ -13,6 +13,7 @@ creature_civ_kobold
 	[CAN_LEARN]
 	--UTTERANCES][LISP]{+  revision: kobolds can now communicate, but with sounds similar to snakes.}
 	--BONECARN][CARNIVORE]
+	[BENIGN]{+}
 	[CANOPENDOORS]
 	[PREFSTRING:mischief]
 	[PREFSTRING:adorable snouts]{+}
@@ -88,10 +89,10 @@ creature_civ_kobold
 	[CAN_DO_INTERACTION:HIDE]{+ ability to hide.}
 		[CDI:ADV_NAME:Hide]
 		[CDI:TARGET:A:SELF_ONLY]
-		[CDI:USAGE_HINT:DEFEND]
+		--CDI:USAGE_HINT:DEFEND]
 		[CDI:USAGE_HINT:FLEEING]
 		[CDI:VERB:hide:hides:NA]
-		[CDI:WAIT_PERIOD:200]
+		[CDI:WAIT_PERIOD:500]
 	[CAVE_ADAPT]{+  revision: kobolds get bonus stats when they've been underground for a long time.}
 	[USE_MATERIAL_TEMPLATE:CAVEADAPTATION:CREATURE_EXTRACT_TEMPLATE]
 	  [SYNDROME]  base from Dwarvemon mod / edited by zey
@@ -281,7 +282,7 @@ creature_civ_kobold
 			--EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			--EGG_SIZE:1100]
 			--CLUTCH_SIZE:1:2]
-		[LITTERSIZE:8:12]{+}
+		[LITTERSIZE:10:20]{+}
 	[CASTE:MALE]
 		[MALE]
 		[ORIENTATION:FEMALE:0:0:1]{+}

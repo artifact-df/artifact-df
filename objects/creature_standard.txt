@@ -84,13 +84,6 @@ creature_standard
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
-	[CAN_DO_INTERACTION:HIDE]{+ ability to hide.}
-		[CDI:ADV_NAME:Hide]
-		[CDI:TARGET:A:SELF_ONLY]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:USAGE_HINT:FLEEING]
-		[CDI:VERB:hide:hides:NA]
-		[CDI:WAIT_PERIOD:200]
 	[BODY_SIZE:0:0:500]
 	[BODY_SIZE:1:168:2500]
 	[BODY_SIZE:12:0:10000]
@@ -210,6 +203,7 @@ creature_standard
 		[DESCRIPTION:A pint-sized, goblin-like man with sharply-defined features, leathery skin, and wide, pointy ears.  He has a toothy, unusually wide smile; he seems to delight in chaos and mischief.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -460,6 +454,7 @@ creature_standard
 		[CHILDNAME:troll boy:troll boys]{+}
 		[DESCRIPTION:A huge, monstrous man with large tusks, curved horns, broad shoulders, and a strong back.  Enslaved by goblins and orcs, his shaggy fur is sheared for wool; he also does brutish work for his masters.  He's always naked but it's hard to say if that's by choice.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -911,6 +906,7 @@ creature_standard
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[POP_RATIO:750]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:WHITE:10:BLACK:1]
@@ -1130,6 +1126,7 @@ creature_standard
 		[MALE]
 		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years.]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1:BLACK:1:GREEN:1:BLUE:1:YELLOW:1:PURPLE:1:SILVER:1:AQUA:1]
@@ -1372,6 +1369,7 @@ creature_standard
 		[CHILDNAME:satyr boy:satyr boys]
 		[DESCRIPTION:A hooved, medium-sized man with a hairy body, woolly legs, and short, spiral horns.  Capricious and lewd, he wanders certain forests, looking for fun.  He likes being naked; he's comfy as he is.  * His skin is moderately firm. *]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[SELECT_CASTE:ALL]{+}
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
@@ -1772,7 +1770,7 @@ creature_standard
 	[SWIMS_LEARNED]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:100]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
 		[BABYNAME:giantess baby girl:giantess baby girls]{+}
@@ -1780,39 +1778,25 @@ creature_standard
 		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:40]{+}
+		[POP_RATIO:100]{+}
 		[BABYNAME:giant baby boy:giant baby boys]{+}
 		[CHILDNAME:giant boy:giant boys]{+}
 		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_NAME:giant:giants:giant]
-	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[FEMALE]
+	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[NO_GENDER]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[ORIENTATION:MALE:0:0:1]
-		[ORIENTATION:FEMALE:1:0:0]
 		[MAXAGE:150:500] so they cant rule forever
 		[POP_RATIO:1]
-		[MULTIPLE_LITTER_RARE]
-		[CASTE_NAME:giantess:giantesses:giantess]
-		[BABYNAME:giantess baby girl:giantess baby girls]
-		[CHILDNAME:giantess girl:giantess girls]
-		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]
-	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[MALE]
-		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[ORIENTATION:FEMALE:1:0:0]
-		[ORIENTATION:MALE:0:0:1]
-		[MAXAGE:150:500] so they cant rule forever
-		[POP_RATIO:2]
-		[BABYNAME:giant baby boy:giant baby boys]
-		[CHILDNAME:giant boy:giant boys]
-		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BABYNAME:giant baby:giant babies]
+		[CHILDNAME:giant child:giant children]
+		[DESCRIPTION:A gigantic and monstrous overweight humanoid almost unparalleled in size.  They has a hairy, strong body, shaggy hair, and an almost primitive appearance.  They live quietly in a cozy burrow and keeps to themselves.  They steps over fortifications and crushes buildings underfoot, whether they means to or not.  Their great size makes their nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_NAME:giant:giants:giant]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2118,44 +2102,30 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:100]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]{+}
 		[CHILDNAME:cyclops girl:cyclops girls]{+}
 		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:40]{+}
+		[POP_RATIO:100]{+}
 		[BABYNAME:cyclops baby boy:cyclops baby boys]{+}
 		[CHILDNAME:cyclops boy:cyclops boys]{+}
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[FEMALE]
+	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[NO_GENDER]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[ORIENTATION:MALE:0:0:1]
-		[ORIENTATION:FEMALE:1:0:0]
 		[MAXAGE:150:500] so they cant rule forever
 		[POP_RATIO:1]
-		[MULTIPLE_LITTER_RARE]
-		[BABYNAME:cyclops baby girl:cyclops baby girls]
-		[CHILDNAME:cyclops girl:cyclops girls]
-		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]
-	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[MALE]
-		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:500] so they cant rule forever
-		[ORIENTATION:FEMALE:1:0:0]
-		[ORIENTATION:MALE:0:0:1]
-		[POP_RATIO:2]
-		[BABYNAME:cyclops baby boy:cyclops baby boys]
-		[CHILDNAME:cyclops boy:cyclops boys]
-		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BABYNAME:cyclops baby:cyclops babies]
+		[CHILDNAME:cyclops child:cyclops children]
+		[DESCRIPTION:A giant, monstrous humanoid with leathery, veined skin and a primitive-looking face with one large eye set in their forehead.  They mostly stays in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-		[CASTE_NAME:giant:giants:giant]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2465,44 +2435,30 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:100]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]{+}
 		[CHILDNAME:ettin girl:ettin girls]{+}
 		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:40]{+}
+		[POP_RATIO:100]{+}
 		[BABYNAME:ettin baby boy:ettin baby boys]{+}
 		[CHILDNAME:ettin boy:ettin boys]{+}
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[CASTE:POWER_FEMALE]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[FEMALE]
+	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
+		[NO_GENDER]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[ORIENTATION:MALE:0:0:1]
-		[ORIENTATION:FEMALE:1:0:0]
 		[MAXAGE:150:500] so they cant rule forever
 		[POP_RATIO:1]
-		[MULTIPLE_LITTER_RARE]
-		[BABYNAME:ettin baby girl:ettin baby girls]
-		[CHILDNAME:ettin girl:ettin girls]
-		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]
-	[CASTE:POWER_MALE]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[MALE]
-		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:500] so they cant rule forever
-		[ORIENTATION:FEMALE:1:0:0]
-		[ORIENTATION:MALE:0:0:1]
-		[POP_RATIO:2]
-		[BABYNAME:ettin baby boy:ettin baby boys]
-		[CHILDNAME:ettin boy:ettin boys]
-		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BABYNAME:ettin baby:ettin babies]
+		[CHILDNAME:ettin child:ettin children]
+		[DESCRIPTION:A giant and monstrous overweight humanoid with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  They mostly lives in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-		[CASTE_NAME:giant:giants:giant]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2767,7 +2723,7 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:20]{+}
+		[POP_RATIO:100]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:minotauress:minotauresses:minotauress]{+}
 		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
@@ -2775,7 +2731,7 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:40]{+}
+		[POP_RATIO:100]{+}
 		[CASTE_NAME:minotaur:minotaurs:minotaur]{+}
 		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
@@ -2783,7 +2739,7 @@ creature_standard
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[CASTE:FEMALE_CRAZED]
 		[FEMALE]
-		[POP_RATIO:2]{+}
+		[POP_RATIO:1]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CRAZED][ARENA_RESTRICTED]
 		[ORIENTATION:MALE:0:0:1]
@@ -2794,7 +2750,7 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked. She is crazed and in a state of bloodlust.]{+}
 	[CASTE:MALE_CRAZED]
 		[MALE]
-		[POP_RATIO:4]{+}
+		[POP_RATIO:1]{+}
 		[CRAZED][ARENA_RESTRICTED]
 		[ORIENTATION:FEMALE:1:0:0]
 		[ORIENTATION:MALE:0:0:1]
@@ -2928,6 +2884,7 @@ creature_standard
 		[DESCRIPTION:A large, ape-like man covered in shaggy fur save for his sad-looking and his broad hands and feet.  He wanders certain lonely, wintery wastes.  He's protective of his territory and his kind; if you've seen one you may soon see another.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -3055,6 +3012,7 @@ creature_standard
 		[DESCRIPTION:A large, ape-like man covered in shaggy fur save for his sad-looking face and his broad hands and feet.  His arms are almost long enough for his hands to brush the ground.  He lives quietly by himself in certain forests.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -3240,6 +3198,7 @@ creature_standard
 		[DESCRIPTION:A fierce, medium-sized canine with shaggy fur and a piercing howl.  Despite his wagging tail, he seems very different from his domesticated cousins.  He hunts and wanders certain tundra, sometimes alone but often with others.  * His skin is moderately firm. *]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -3435,6 +3394,7 @@ creature_standard
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -3661,6 +3621,7 @@ creature_standard
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -3801,6 +3762,7 @@ creature_standard
 		[DESCRIPTION:A large, beaked, and featherless creature that chatters and clicks.  He wanders certain swamps on thick chicken-like legs and is often kept by goblins.  Hunched and wingless, he resembles a squat, dog-like bird with colorful, blotchy skin.  * His skin is moderately firm. *]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:SPOTS_PALE_CHESTNUT_MAUVE_EMERALD:1]{:STRIPES_RAINBOW  Revision: fan art never seems to draw the rainbow stripes, which admittedly sounds pretty silly.  Try to improve on it a little.}
@@ -4015,6 +3977,7 @@ creature_standard
 		[DESCRIPTION:A hooved, medium-sized horror with a hairy, gaunt body, woolly legs, and spiral horns on the empty-eyed skull of a goat.  Foul and lewd, he wanders certain forests, looking for fun.  He doesn't care that he's naked.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]{+}
 		[SET_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:LEG_UPPER:HAIR]
@@ -4118,6 +4081,7 @@ creature_standard
 		[BABYNAME:strangler baby boy:strangler baby boys]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -4233,6 +4197,7 @@ creature_standard
 		[DESCRIPTION:A large and sinister beastman with a jackal's head, a thin mane, and needle-like horns.  His fur seems stretched over his gaunt, unusually light body.  His enveloping back-wings are thin yet immense.  He circles overhead in certain deserts.  He doesn't seem to need food, drink, or even rest.  He doesn't care that he's naked.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 		[TL_COLOR_MODIFIER:DARK_BROWN:1]
@@ -4366,6 +4331,7 @@ creature_standard
 		[CHILDNAME:harpy boy:harpy boys]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]{+}
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
@@ -4587,6 +4553,7 @@ creature_standard
 		[MALE]
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  His armored tail whips and thrashes aggressively.  He preys on his victims with a flurry of attacks as his heads all bite at once.  His wounds heal quickly.  His scales are akin to metal.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GOLD:1:RED:1]
@@ -4966,6 +4933,7 @@ creature_standard
 		[MALE]
 		[DESCRIPTION:A giant, serpentine dragon that lurks near the sea floor.  His twisting, limbless body is covered in glittering scales.  He coils and flows through the water, steering with twin flippers near the end of his long tail.  He dwarfs the largest ships and crushes them in his coils.  His scales are akin to metal.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:AQUA:1]
@@ -5204,6 +5172,7 @@ creature_standard
 		[MALE]
 		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath his mighty wings should fear the sky.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:WHITE:1]

@@ -84,14 +84,14 @@ item_ammo_masterfork
 [NAME:rifle bullet:rifle bullets]
 [CLASS:HANDCANNON_SHELL]
 [SIZE:100]{:500
-[ATTACK:BLUNT:50:200:strike:strikes:NO_SUB:1000]
+[ATTACK:BLUNT:40:1:impact:impacts:NO_SUB:1250]{:NO_SUB:1000  arrows and bolts have a velocity of 1000
 	[ATTACK_PREPARE_AND_RECOVER:5:5]
-	
+
 [ITEM_AMMO:ITEM_AMMO_HANDCANNON_SHRAPNEL_SHELL_ZM5]
 [NAME:rifle shrapnel shell:rifle shrapnel shells]
 [CLASS:HANDCANNON_SHELL]
 [SIZE:100]{:500
-[ATTACK:EDGE:1000:1000:strike:strikes:NO_SUB:500]
+[ATTACK:EDGE:1000:1000:strike:strikes:NO_SUB:625]{:NO_SUB:500    arrows and bolts have a velocity of 1000
 	[ATTACK_PREPARE_AND_RECOVER:5:5]
 
 [ITEM_AMMO:ITEM_AMMO_BOLTS_BROADHEAD]
@@ -100,7 +100,7 @@ item_ammo_masterfork
 [SIZE:10]
 [ATTACK:EDGE:100:400:stab:stabs:NO_SUB:500]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
-	
+
 [ITEM_AMMO:ITEM_AMMO_BOLTS_HAMMERHEAD]
 [NAME:hammerhead bolt:hammerhead bolts]
 [CLASS:BOLT]

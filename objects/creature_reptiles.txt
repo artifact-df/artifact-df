@@ -9,7 +9,6 @@ creature_reptiles
 	[CREATURE_TILE:249][COLOR:6:0:0]
 	[PETVALUE:10]
 	[VERMIN_EATER][PENETRATEPOWER:2][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
-	[UBIQUITOUS]{+}
 	[SMALL_REMAINS][NO_WINTER]
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
@@ -75,6 +74,7 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny reptile with a tail much longer than his thin body.  Quick and agile, he scurries away on stocky legs when others come near.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:LIGHT_BROWN:1]
@@ -160,7 +160,6 @@ creature_reptiles
 	[CREATURE_TILE:249][COLOR:7:0:0]
 	[PETVALUE:10]
 	[VERMIN_GROUNDER][FREQUENCY:100]
-	[UBIQUITOUS]{+}
 	[SMALL_REMAINS]
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
@@ -232,6 +231,7 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny, secretive lizard that lives in a burrow and forages for bugs during daylight hours.  He has small legs and a stocky body, and seems to have no neck.  He can live in most climates.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_BLACK_WHITE:1]
@@ -314,7 +314,6 @@ creature_reptiles
 	[CREATURE_TILE:249][COLOR:2:0:1]
 	[PETVALUE:10]
 	[VERMIN_GROUNDER][FREQUENCY:100]
-	[UBIQUITOUS]{+}
 	[SMALL_REMAINS]
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
@@ -389,6 +388,7 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny, color-shifting lizard that spends his life hunting insects with his long tongue.  He moves slowly with a swaying gait through the trees, watching everywhere with independently roving eyes.  His gripping tail is often curled into a spiral.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_RAINBOW:1] needs to do color changes
@@ -472,7 +472,6 @@ creature_reptiles
 	[CREATURE_TILE:249][COLOR:2:0:1]
 	[PETVALUE:10]
 	[VERMIN_GROUNDER][FREQUENCY:100]
-	[UBIQUITOUS]{+}
 	[SMALL_REMAINS]
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
@@ -543,6 +542,7 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny lizard with a colorful neck flap and adhesive feet for climbing.  He can drop his tail to surprise predators.  His coloring shifts between brown and green to fit his surroundings.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -626,7 +626,6 @@ creature_reptiles
 	[CHILD:1][GENERAL_CHILD_NAME:iguana hatchling:iguana hatchlings]
 	[CREATURE_TILE:'i'][COLOR:2:0:1]
 	[BIOME:ANY_TROPICAL_FOREST]
-	[UBIQUITOUS]{+}
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:1]
@@ -706,6 +705,7 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A small, plant-eating lizard with skin that looks like bark.  He has a spiny back, a large neck flap, and a tiny, light-sensitive third eye on his forehead.  Usually docile by nature, he whips his long tail about when he's angry.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GREEN:1]

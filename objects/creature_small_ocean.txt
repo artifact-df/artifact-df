@@ -194,6 +194,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny red fish that lives in the ocean and swims up a river to breed in the cold, clear water of his birth.  He thrives in the sea on plankton and can swim great distances.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1]
@@ -268,6 +269,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny orange marine fish that lives on the sea floor inside the tentacles of poisonous sea anemones near coral.  He naturally alternates his gender throughout his life.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:ORANGE:1]
@@ -340,6 +342,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, spineless, eel-like fish that lives on the bottom of the ocean.  He can turn the water around his body into a cloud of slime to escape predators.  Strangely, he has a skull but no spine.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -413,6 +416,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, jawless, filter-feeding fish found in brooks and streams.  His skeleton is cartilage and he has a round, sucker-like mouth.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -485,6 +489,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, flat, winged fish with a wide mouth and a long tail.  He lives in the muddy coasts of temperate and tropical waters.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -556,6 +561,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, flat, winged fish with spotted skin, a thorny back, and a long, thorny tail.  He lives and hunts swims near the seabed.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -630,6 +636,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, shark-like fish with spotted, sparkling skin, soft jaws with a strong bite, and a venomous spine on his back.  He lives and hunts in the ocean's muddy shallows.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1]
@@ -706,6 +713,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, plankton eating fish that swims the sea in vast schools.  He has shiny skin and a slender, streamlined body.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -785,6 +793,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny schooling fish that lives in the sea and swims to a sandy river to breed.  He eats plankton and migrates great distances.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:SILVER:1]
@@ -860,6 +869,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, oily ocean fish that lives in temperate waters.  He has a slender, streamlined body and skin that shimmers blue and green.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:SILVER:1]
@@ -938,6 +948,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny fish found in tributaries and oceans.  His colorful skin shimmers.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1014,6 +1025,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A slender, tiny, toothy fish that swims and hunts in the sea.  He stays in the deep during the day and swims to the surface at night.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1083,6 +1095,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, curved and colorful fish with a horse-like head and neck, an upright posture, and a curled tail.  He lives in coral reefs, feeding on shrimp.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -1158,6 +1171,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, nocturnal fish with large, glassy eyes.  He hunts each night and lives in coral reefs out at sea.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1]
@@ -1226,6 +1240,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, colorful fish with white spots.  He swims in coral reefs and puffs himself up when he feels threatened, becoming round in shape.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1301,6 +1316,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny flat fish that swims near the muddy bottom of shallow seas.  He's hard to hold because of his slimy skin.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1375,6 +1391,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny flat fish that swims in the muddy bottom of coastal run-offs and ponds.  Both of his eyes are on one side of his body.  He swims sideways, staring up at the waves.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1451,6 +1468,7 @@ creature_small_ocean
 		[MALE]
 		[DESCRIPTION:A tiny, schooling ocean fish prized for his meat.  He has a silvery, striped body and a forked tail.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1588,6 +1606,7 @@ Squids were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A tiny sea vermin with a large, distinct head, eight arms and two tentacles.  He can spray ink to confuse predators and can squeeze through openings much smaller than himself.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]

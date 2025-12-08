@@ -4,8 +4,8 @@ creature_civ_elf_forest_masterfork
 
 [CREATURE:ELF]
 	[DESCRIPTION:A medium-sized creature dedicated to the ruthless protection of nature. It does not appear to age.]
-	[NAME:forest elf:forest elves:elven]
-	[CASTE_NAME:forest elf:forest elves:elven]
+	[NAME:forest elf:forest elves:elven]{:elf:elves:elven
+	[CASTE_NAME:forest elf:forest elves:elven]{:elf:elves:elven
 	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
 	[CREATURE_TILE:'e'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:137]
@@ -141,10 +141,10 @@ creature_civ_elf_forest_masterfork
 	[CAN_DO_INTERACTION:HIDE]{+ ability to hide.}
 		[CDI:ADV_NAME:Hide]
 		[CDI:TARGET:A:SELF_ONLY]
-		[CDI:USAGE_HINT:DEFEND]
+		--CDI:USAGE_HINT:DEFEND]
 		[CDI:USAGE_HINT:FLEEING]
 		[CDI:VERB:hide:hides:NA]
-		[CDI:WAIT_PERIOD:200]
+		[CDI:WAIT_PERIOD:500]
 	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+}            -
 	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]              ++
 	[PHYS_ATT_RANGE:RECUPERATION:450:950:1150:1250:1350:1550:2250]          +
@@ -158,13 +158,13 @@ creature_civ_elf_forest_masterfork
 	[MENT_ATT_RANGE:KINESTHETIC_SENSE:700:1200:1400:1500:1600:1800:2500]    ++
 	[MENT_ATT_RANGE:EMPATHY:450:950:1150:1250:1350:1550:2250]               +
 	[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:950:1150:1250:1350:1550:2250]      +
-	[BODY_SIZE:0:0:4000]
-	[BODY_SIZE:1:168:17500]
-	[BODY_SIZE:20:0:70000]
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:94:96:98:100:106:112:125]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
-		[APP_MOD_IMPORTANCE:600]{:500  Revision: height is more important than the other descriptors.}
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-		[APP_MOD_IMPORTANCE:500]
+	[BODY_SIZE:0:0:3000]
+	[BODY_SIZE:1:168:15000]
+	[BODY_SIZE:25:0:60000]{:12:0:60000
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:94:96:98:100:105:112:133]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
+		[APP_MOD_IMPORTANCE:550]{:500  Revision: height is more important than the other descriptors.}
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:80:95:98:100:102:105:120]{:75:95:98:100:102:105:125  Revision: elves are less broad than tall.}
+		[APP_MOD_IMPORTANCE:450]{:500  Revision: broadness is less important than the other descriptors.}
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
 			[APP_MOD_NOUN:glowing eyes:PLURAL]{:eyes:PLURAL
@@ -252,7 +252,7 @@ creature_civ_elf_forest_masterfork
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	{  removed latching  }
 	[BABY:1]
-	[CHILD:25]{:18
+	[CHILD:30]{:18
 	[EQUIPS]
 	[DIURNAL]
 	[SMELL_TRIGGER:10]
@@ -299,23 +299,23 @@ creature_civ_elf_forest_masterfork
 	[CASTE:FEMALE]
 		[FEMALE]
 		[POP_RATIO:3]{+}
-		[ORIENTATION:MALE:5:75:20]{+}
-		[ORIENTATION:FEMALE:20:75:5]{+}
+		[ORIENTATION:MALE:50:35:15]{+}
+		[ORIENTATION:FEMALE:75:20:5]{+}
 		[BABYNAME:elf baby girl:elven baby girls]{+}
 		[CHILDNAME:elf girl:elven girls]{+}
-		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, golden hair, and a reputation for grace and beauty.  She feels most at home among her beloved trees and seems driven to protect them.  She does not appear to age.]{+}
+		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  She feels most at home among her beloved trees and seems driven to protect them.  She does not appear to age.]{+}
 		[MULTIPLE_LITTER_RARE]
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
-		[ORIENTATION:MALE:20:75:5]{+}
-		[ORIENTATION:FEMALE:5:75:20]{+}
+		[ORIENTATION:MALE:75:20:5]{+}
+		[ORIENTATION:FEMALE:50:35:15]{+}
 		[BABYNAME:elf baby boy:elven baby boys]{+}
 		[CHILDNAME:elf boy:elven boys]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]{+  Revision: elves are clean-shaven.}
-		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, golden hair, and a reputation for grace and beauty.  He feels most at home among his beloved trees and seems driven to protect them.  He does not appear to age.]{+}
-	
+		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  He feels most at home among his beloved trees and seems driven to protect them.  He does not appear to age.]{+}
+
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]

@@ -12,7 +12,7 @@ creature_next_underground
 	[PETVALUE:10]
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
-	[FREQUENCY:25]{:10
+	[FREQUENCY:20]{:10
 	[EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 	[NOTHOUGHT]
 	[NOBONES]
@@ -69,7 +69,7 @@ creature_next_underground
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_ITEM]
 	[LARGE_ROAMING][FREQUENCY:20]{:10
-	[POPULATION_NUMBER:100:250]{:20:50
+	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
@@ -141,6 +141,7 @@ creature_next_underground
 		[DESCRIPTION:A large, shaggy-furred man that walks on all fours.  He has hands for feet and has a mane that circles his hairless, strangely human face.  He resembles a lion-like ape twisted into a bestial form and unable to stand.  He wanders dark caverns, scavenging and raiding supplies.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -161,7 +162,7 @@ creature_next_underground
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
 	[LARGE_ROAMING]
-	[FREQUENCY:10]{:5
+	[FREQUENCY:20]{:5
 	[NOBREATHE]
 	[NOBONES]
 	[EVIL]
@@ -214,7 +215,8 @@ creature_next_underground
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[LARGE_ROAMING][DIFFICULTY:2]
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20
+	[FREQUENCY:20]{+}
 	[CARNIVORE][NATURAL]
 	[PETVALUE:1000]
 	[PET_EXOTIC]
@@ -276,6 +278,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A huge, wriggling insect with a ravenous appetite.  Hundreds of tiny, carapaced feet move along the bottom of his long body.  His writhing, segmented body is covered in fleshy plates.  In place of a head he has an enormous, toothy maw.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[NO_DIZZINESS]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -296,7 +299,7 @@ creature_next_underground
 	[PETVALUE:500]
 	[EVIL]
 	[DIFFICULTY:5]{:4}[FREQUENCY:50]
-	[POPULATION_NUMBER:25:50]{:5:10
+	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
@@ -465,6 +468,7 @@ creature_next_underground
 		[DESCRIPTION:A large, hairless, and monstrous man with only two digits on each hand and foot.  He has no eyes yet somehow sees; he scarcely seems to have more than a gaping, toothy grin.  Barrel-chested, his neck seems to disappear into his broad shoulders.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -538,6 +542,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A tiny amphibian with a long, gripping tail.  He lives and feeds in dark underground swamp and tower-cap forest.  Playful and lively, he uses his tail for balance as he hops about energetically.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:PALE_BLUE:1]
@@ -605,6 +610,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A small, rock-eating crab that thrives in extreme heat.  He has clacking pincers and hardened carapace for protection.  He swims through liquid rock on sharp, flightless wings; the magma helps him digest rock.  He spits out the excess as a burning glob, sent with surpring force.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -741,6 +747,7 @@ creature_next_underground
 		[DESCRIPTION:A pint-sized, scaly imp with large claws and horns.  He walks on two legs and is an incredible climber.  While weak and cowardly, he roams the caverns with large numbers of his kind.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:CRIMSON:1]
@@ -759,6 +766,7 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]
 	[CLUSTER_NUMBER:5:10]
+	[FREQUENCY:20]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
 	[LARGE_PREDATOR]
@@ -817,6 +825,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A small, gaping, long-toothed mouth that flies in dark caverns on large, bat-like wings.  He lacks eyes, ears, and limbs.  He rests by clinging to rock with his strong wings.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -831,7 +840,7 @@ creature_next_underground
 	[CASTE_NAME:flesh ball:flesh balls:flesh ball]
 	[CREATURE_TILE:'o'][COLOR:6:0:0]
 	[PETVALUE:10]
-	[FREQUENCY:25]{:10
+	[FREQUENCY:20]{:10
 	[BIOME:SUBTERRANEAN_WATER]
 	[LARGE_ROAMING]
 	[UNDERGROUND_DEPTH:3:3]
@@ -874,8 +883,9 @@ creature_next_underground
 	[CASTE_NAME:elk bird:elk birds:elk bird]
 	[GENERAL_CHILD_NAME:elk bird hatchling:elk bird hatchlings]
 	[CREATURE_TILE:'E'][COLOR:6:0:0]
-	[POPULATION_NUMBER:125:250]{:25:50
+	[POPULATION_NUMBER:250:500]{:25:50
 	[CLUSTER_NUMBER:5:10]
+	[FREQUENCY:20]{+}
 	[NATURAL]
 	[LARGE_ROAMING]
 	--BENIGN]
@@ -974,6 +984,7 @@ creature_next_underground
 		[DESCRIPTION:A large, flightless bird that walks on two legs and has great, velvety antlers on his head.  He roams in the dark deep underground and grazes on mushrooms as he walks.  While usually harmless, his natural curiosity can get the best of him sometimes.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -996,7 +1007,7 @@ creature_next_underground
 	[PETVALUE:50]
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
-	[FREQUENCY:60]{:30
+	[FREQUENCY:30]
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
@@ -1004,7 +1015,7 @@ creature_next_underground
 	[LOW_LIGHT_VISION:10000]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
-	[POPULATION_NUMBER:50:100]{:10:25
+	[POPULATION_NUMBER:100:250]{:10:25
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:impressive heads]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -1096,6 +1107,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A medium-sized, aggressive, and poisonous snake with a dragon-like head covered in hardened plates.  He slithers in dark caverns and preys on anything smaller than himself.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1114,7 +1126,7 @@ creature_next_underground
 	[PETVALUE:200]
 	[NATURAL]
 	[LARGE_ROAMING][FREQUENCY:20]{:10
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
@@ -1177,6 +1189,7 @@ creature_next_underground
 		[DESCRIPTION:A medium-sized, headless horror that wanders dark caverns on two clawed legs.  Instead of arms he has a pair of tentacles that end in mouths; he uses them to carve into the flesh of his victims with rows of razor-like teeth, then digests their flesh with acid.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -1198,8 +1211,9 @@ creature_next_underground
 	[LOW_LIGHT_VISION:10000]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:20]{+}
 	[CAVE_ADAPT]{+}
 	--BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:enormous tails]
@@ -1263,6 +1277,7 @@ creature_next_underground
 		[DESCRIPTION:A huge, shaggy-furred monster with tall, pointy ears, a long snout, and an enormous, furry tail.  He makes for a fearsome sight but is actually benign.  He runs deep under the earth on four strong legs and large paws; he whips his long tail about as he passes.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1337,8 +1352,9 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:2:5]
+	[FREQUENCY:20]{+}
 	[CAVE_ADAPT]{+}
 	--BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:lustrous manes]
@@ -1403,6 +1419,7 @@ creature_next_underground
 		[DESCRIPTION:A large, long-bodied grazer with warm fur, a pointy, narrow snout, floppy ears, and a thick, horse-like mane.  His long legs end in sharp hooves.  He grazes on what meager vegetation he can find deep under the earth; his long neck helps him feed on the tops of tower-cap mushrooms.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:YELLOW:1]
@@ -1422,12 +1439,12 @@ creature_next_underground
 	[CASTE_NAME:giant earthworm:giant earthworms:giant earthworm]
 	[CREATURE_TILE:'W'][COLOR:7:0:0]
 	[PETVALUE:500]
-	[FREQUENCY:40]{:20
+	[FREQUENCY:20]
 	[NATURAL][NOBONES]
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:awesome presence]
 	[EXTRAVISION]
@@ -1476,9 +1493,9 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
-	[FREQUENCY:2]{:1
+	[FREQUENCY:5]{:1
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:2:5]
 	[NOBONES]
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
@@ -1553,8 +1570,9 @@ creature_next_underground
 	[PETVALUE:20]
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:100:200]{:20:40
+	[POPULATION_NUMBER:200:400]{:20:40
 	[CLUSTER_NUMBER:5:15]
+	[FREQUENCY:20]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[BENIGN]
@@ -1622,6 +1640,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A small, bat-like creature with large wings and the carapaced head of an insect.  His large mandibles clack together as he flies deep underground, and he chitters in an unsettling way.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:DARK_VIOLET:1]
@@ -1642,7 +1661,7 @@ creature_next_underground
 	[EVIL]
 	[CAN_LEARN][SLOW_LEARNER]
 	[LARGE_ROAMING][FREQUENCY:20]{:10
-	[POPULATION_NUMBER:100:150]{:20:30
+	[POPULATION_NUMBER:200:300]{:20:30
 	[CLUSTER_NUMBER:1:1]
 	[LARGE_PREDATOR][AMBUSHPREDATOR][GRASSTRAMPLE:0]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -1712,6 +1731,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A strange, medium-sized creature that crawls along the cavern ceiling with four long, double-jointed arms.  His body looks like an ape-like head with a mouth full of razer-sharp teeth.  He watches in the dark, waiting to drop from above to feast on flesh.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1729,9 +1749,9 @@ creature_next_underground
 	[CREATURE_TILE:'M'][COLOR:4:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[NATURAL]
-	[LARGE_ROAMING][FREQUENCY:40]{:20
+	[LARGE_ROAMING][FREQUENCY:20]
 	[LARGE_PREDATOR]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:3]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
@@ -1811,6 +1831,7 @@ creature_next_underground
 		[DESCRIPTION:A tall, monstrous man with the long body of a naked mole-rat and a man's torso.  Savage and unintelligent, he's more beast than man.  The wrinkles on his hairless skin smooth at his hips and chest.  He has a long, slender, pointy snout, small ears, and many sharp teeth, and his long tail whips about as he wanders the deep caverns.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:PINK:1]
@@ -1834,7 +1855,8 @@ creature_next_underground
 	[NATURAL]
 	[CAVE_ADAPT]{+}
 	[LARGE_ROAMING][DIFFICULTY:3]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
+	[FREQUENCY:20]{+}
 	[LARGE_PREDATOR][NATURAL]
 	[BONECARN]
 	[CHILD:1]
@@ -1920,6 +1942,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A huge, flightless bird of prey with tall, featherless legs, a long neck, and a serrated beak almost as big as his patterned head.  He wanders underground caverns and plucks up unsuspecting victims in the dark.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:PURPLE:1]
@@ -1940,8 +1963,9 @@ creature_next_underground
 	[CREATURE_TILE:'p'][COLOR:1:0:1]
 	[PETVALUE:50]
 	[AQUATIC][IMMOBILE_LAND]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:5]
+	[FREQUENCY:20]{+}
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:1:2]
@@ -2018,7 +2042,7 @@ creature_next_underground
 	[NATURAL]
 	[CAVE_ADAPT]{+}
 	[LARGE_ROAMING][FREQUENCY:20]{:10
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
@@ -2095,6 +2119,7 @@ creature_next_underground
 		[DESCRIPTION:A huge, emaciated-looking bear with great drooping ears, patchy, matted fur, and many sharp teeth.  His glassy, useless eyes stare forward.  He relies on other senses to hunt in the dark.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -2116,10 +2141,10 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
-	[POPULATION_NUMBER:10:25]{:2:5
+	[POPULATION_NUMBER:20:50]{:2:5
 	[DIFFICULTY:10]
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:10]{:5
+	[FREQUENCY:20]{:5
 	[FIREIMMUNE_SUPER]
 	[LARGE_PREDATOR]
 	[NOFEAR]
@@ -2246,6 +2271,7 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A gigantic, pale monster, once a dragon, now adapted to and polluted by the underground.  His maw is full of incredibly long teeth, and his eyes are large enough to penetrate the darkness.  He can no longer breathe fire.  His scales are akin to metal.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -2281,8 +2307,9 @@ creature_next_underground
 	[LOW_LIGHT_VISION:10000]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
-	[POPULATION_NUMBER:50:150]{:10:15
+	[POPULATION_NUMBER:100:150]{:10:15
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:20]{+}
 	[BONECARN]
 	[CAVE_ADAPT]{+}
 	[LARGE_PREDATOR][AMBUSHPREDATOR][GRASSTRAMPLE:0]{+}
@@ -2374,6 +2401,7 @@ creature_next_underground
 		[DESCRIPTION:A monstrous, medium-sized horror that lurks deep underground.  He has sharp features, expressonless eyes, leathery skin, and a toothy grin that never seems to go away.  Mindless and sinister, he strangles or drowns his prey with his unnaturally long arms.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2390,8 +2418,8 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
-	[FREQUENCY:2]{:1
-	[POPULATION_NUMBER:75:150]{:15:30
+	[FREQUENCY:5]{:1
+	[POPULATION_NUMBER:150:300]{:15:30
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 		[NOTHOUGHT][NOEXERT]
 	[NO_DIZZINESS]
@@ -2453,8 +2481,8 @@ creature_next_underground
 	[CREATURE_TILE:'g'][COLOR:6:0:1]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:3]
-	[LARGE_ROAMING][FREQUENCY:50]{:25
-	[POPULATION_NUMBER:50:100]{:10:20
+	[LARGE_ROAMING][FREQUENCY:25]
+	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:2]{:1:1
 	[BENIGN]
 	[CAVE_ADAPT]{+}
@@ -2601,6 +2629,7 @@ creature_next_underground
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GOLDENROD:1]
@@ -2708,9 +2737,9 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:2:3]
-	[FREQUENCY:40]{:20
+	[FREQUENCY:20]
 	[BENIGN]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:5]
 	[CAN_LEARN]
 	[LOCAL_POPS_CONTROLLABLE]
@@ -2793,6 +2822,7 @@ creature_next_underground
 		[DESCRIPTION:A small, strange man of tough fungal tissue.  A wide-brimmed, rounded mushroom caps his head and shades his blank, featureless face.  He lives in darkness far underground near water and soil.  He doesn't notice or care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:MUSHROOM]
 			[TL_COLOR_MODIFIER:PURPLE:1]
@@ -2881,8 +2911,8 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
-	[FREQUENCY:2]{:1
-	[POPULATION_NUMBER:75:150]{:15:30
+	[FREQUENCY:5]{:1
+	[POPULATION_NUMBER:150:300]{:15:30
 	[NOBONES]
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 		[NOTHOUGHT][NOEXERT]

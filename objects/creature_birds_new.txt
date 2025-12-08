@@ -392,7 +392,7 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:100]
-	[BENIGN][MEANDERER]
+	--BENIGN]--MEANDERER]
 	[PET_EXOTIC]
 	[DIURNAL]
 	[HOMEOTHERM:10067]

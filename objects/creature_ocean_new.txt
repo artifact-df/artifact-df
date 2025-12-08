@@ -88,6 +88,7 @@ Octopuses were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A small mollusk with eight arms and a bulbous head.  He swims the oceans and squirts ink in self defense.  He has no skeleton, letting him squeeze through tight spaces.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 		[TL_COLOR_MODIFIER:ECRU:1] should be able to change its color
@@ -213,6 +214,7 @@ Crabs were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A small shelled crustacean with many long legs, eyestalks, and two large pincers.  He scuttles sideways along the ocean floor, looking for food to latch onto.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:RED:1]
@@ -361,6 +363,7 @@ Leopard seals were sponsored by the generous contributions of the Bay 12 communi
 		[DESCRIPTION:A large, predatory, amphibious mammal with a thick, streamlined body.  His spotted, hairless skin is mottled white on his front and gray elsewhere, with each side dotted with contrasting spots.  He hunts in frigid waters and swims quickly enough to catch most prey.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -520,6 +523,7 @@ Cuttlefish were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A tiny sea mollusk with large eyes with W-shaped pupils, two clubbed tentacles, and eight tentacle arms.  He has a shell-shaped bone that helps keep him buoyant.  He can talk by changing his color and skin pattern.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 		[TL_COLOR_MODIFIER:BROWN:1] or pretty much anything
@@ -670,6 +674,7 @@ Orcas were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:An immense ocean mammal with a long, rounded body and a large dorsal fin.  His black body has white patches on the underside and near his eyes.  A vicious predator that can hunt in groups, he sometimes torments his prey.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:MOTTLED_BLACK_WHITE:1] should break up by part
@@ -893,6 +898,7 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 		[MALE]
 		[DESCRIPTION:A small sea animal with a long, rigid tail and a flat body protected by a large shell.  He lives in the sand just offshore, crawling about on many legs.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:MAROON:1]
@@ -1044,6 +1050,7 @@ Sperm whales were sponsored by the generous contributions of the Bay 12 communit
 		[MALE]
 		[DESCRIPTION:An immeasurable marine mammal with a toothy jaw and a massive head with a prominent, rounded forehead.  He clicks to speak and to echolocate.  He sustains his bulk on a diet of fish and squid.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:100:WHITE:1]
@@ -1189,6 +1196,7 @@ Elephant seals were sponsored by the generous contributions of the Bay 12 commun
 	    [BODY_SIZE:2:0:1500000]
 	    [BODY_SIZE:5:0:3000000]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1334,6 +1342,7 @@ Harp seals were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A large, earless marine mammal with large eyes and a sleek, blubbery body.  He's very social and lives in a large colony.  His young are prized for their white fur.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1479,6 +1488,7 @@ Nautiluses were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A tiny, beaked mollusk that lives in a large, patterned spiral shell.  He has many tentacles and large, primitive eyes.  He takes in and filters water as he swims, then propels himself by expelling it.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SHELL]
 		[TL_COLOR_MODIFIER:STRIPES_WHITE_CHESTNUT:1]

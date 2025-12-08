@@ -18,6 +18,7 @@ creatures.fb.default=function(layer_type,tok)
     [NO_GENDER]
     [CARNIVORE]
     [DIFFICULTY:10]
+	[UNDERGROUND_DEPTH:2:3]// new
 
     [NATURAL_SKILL:WRESTLING:6]
     [NATURAL_SKILL:BITE:6]
@@ -29,7 +30,7 @@ creatures.fb.default=function(layer_type,tok)
     [LARGE_PREDATOR]
     ]])
     add_regular_tokens(tbl,options)
-    tbl[#tbl+1]=layer_type==0 and "[BIOME:SUBTERRANEAN_WATER]" and "[UNDERGROUND_DEPTH:2:3]" or "[BIOME:SUBTERRANEAN_CHASM]" and "[UNDERGROUND_DEPTH:2:3]"-- new and conditions
+    tbl[#tbl+1]=layer_type==0 and "[BIOME:SUBTERRANEAN_WATER]" or "[BIOME:SUBTERRANEAN_CHASM]"
     if layer_type==0 then options.spheres.WATER=true end
     options.spheres[pick_random(evil_spheres)]=true
     options.do_water=layer_type==0

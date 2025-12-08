@@ -13,8 +13,9 @@ creature_large_tundra
 	[LARGE_ROAMING]
 	[BIOME:TUNDRA]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:20]{+}
 	[MEANDERER]--BENIGN]
 	[PETVALUE:300]
 	[PET_EXOTIC]
@@ -106,6 +107,7 @@ creature_large_tundra
 		[DESCRIPTION:A large, stocky herbivore with curved horns, long, hooved legs, and a strong odor.  His thick fur makes him look larger than he is.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -198,12 +200,16 @@ creature_large_tundra
 	[VISION_ARC:50:310]
 	[PREFSTRING:grace]
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:75:150]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:20]{+}
 	[GRASSTRAMPLE:0]
 	[BIOME:TUNDRA]
 	[BIOME:GRASSLAND_TEMPERATE]
+	[BIOME:MOUNTAIN]{+}
 	[BIOME:FOREST_TAIGA]{+}
+	[BIOME:FOREST_TEMPERATE_BROADLEAF]{+}
+	[BIOME:FOREST_TEMPERATE_CONIFER]{+}
 	[BENIGN][MEANDERER]
 	[NATURAL]
 	[CASTE:FEMALE]
@@ -215,6 +221,7 @@ creature_large_tundra
 		[MALE]
 		[DESCRIPTION:A large, skittish herbivore that roams wild in forest and tundra, gathering in herds for protection.  He has a large body, long legs, cloven hooves, and a short tail.  His long, velvety antlers grow back yearly.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:2HEAD_ANTLER:RIBCAGE]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[SELECT_CASTE:ALL]
@@ -385,10 +392,10 @@ creature_large_tundra
 	[LARGE_PREDATOR]
 	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:4]{:2
+	[FREQUENCY:20]{:2
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
-	[MEANDERER]
+	--MEANDERER]
 	[BIOME:GLACIER]
 	[BIOME:TUNDRA]
 	[GRASSTRAMPLE:0]
@@ -483,6 +490,7 @@ creature_large_tundra
 		[DESCRIPTION:A large, stocky mammal with non-retractable claws, a short tail, and shaggy fur.  He hunts and fishes in tundra and glacier, his heavy body keeping him warm.  He can swim long distances in the cold waters, searching for food.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
+	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
