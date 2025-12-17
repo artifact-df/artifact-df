@@ -21,6 +21,7 @@ creature_hornbeetle_masterfork
     [CAVE_ADAPT]
 	[BENIGN]
 	[ALL_ACTIVE]
+	[NOMEAT] will not be hunted by hunters in fortress mode
 	[CHILD:1][GENERAL_CHILD_NAME:cave beetle nymph:cave beetle nymphs]
     [FREQUENCY:50][POPULATION_NUMBER:20:50]
 	[CLUSTER_NUMBER:2:8]

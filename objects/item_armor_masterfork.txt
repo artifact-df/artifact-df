@@ -16,18 +16,20 @@ squamous's notes on armor spawning:
   // HEAD EQUIPMENT //
 
 [ITEM_HELM:ITEM_HELM_HELM]
-[NAME:helm:helm]
-[ARMORLEVEL:2]
---METAL_ARMOR_LEVELS]
+[NAME:helm:helms]
+[ARMORLEVEL:1]
+[METAL_ARMOR_LEVELS]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
-[LAYER_SIZE:15]
+[COVERAGE:100]
+[LAYER_SIZE:30]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:6] 2 bars
+[MATERIAL_SIZE:6]
 [HARD]
 [METAL]
---LEATHER]
+[BARRED]
+[SCALED]
+[LEATHER]
 
 [ITEM_HELM:ITEM_HELM_DWARF_PLATE_FFF]
 [NAME:plate helm:plate helm]
@@ -118,38 +120,31 @@ squamous's notes on armor spawning:
   // UPPERBODY EQUIPMENT //
 
 [ITEM_ARMOR:ITEM_ARMOR_BREASTPLATE]
-[NAME:cuirass:cuirasse]
-[ARMORLEVEL:2]
-[UBSTEP:1]{:0  Revision: compensate for the (new) shoulders.}
+[NAME:breastplate:breastplates]
+[ARMORLEVEL:3]
+[UBSTEP:0]
 [LBSTEP:0]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
+[COVERAGE:100]
 [LAYER_SIZE:20]
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:12] 4 bars
+[LAYER_PERMIT:12]
+[MATERIAL_SIZE:12]
 [HARD]
 [METAL]
 
 [ITEM_ARMOR:ITEM_ARMOR_CLOAK]
 [NAME:cloak:cloaks]
-[CHAIN_METAL_TEXT]{+}
-[ARMORLEVEL:1]{+}
-[METAL_ARMOR_LEVELS]{+}
-[UBSTEP:3]{:MAX     Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
-[LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
+[UBSTEP:MAX]
+[LBSTEP:1]
 [LAYER:COVER]
-[COVERAGE:150]
+[COVERAGE:100]
 [LAYER_SIZE:20]
-[LAYER_PERMIT:60]
-[MATERIAL_SIZE:6] 2 items
---SOFT]
+[LAYER_PERMIT:48]
+[MATERIAL_SIZE:6]
+[SOFT]
 [LEATHER]
-[SCALED]{+}
-[METAL]{+}
-[BARRED]{+}
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
-[STRUCTURAL_ELASTICITY_CHAIN_METAL]{+}
 
 [ITEM_ARMOR:ITEM_ARMOR_LEATHER_REINFORCED] stronger leather armor
 [NAME:armor:armor]
@@ -216,35 +211,32 @@ squamous's notes on armor spawning:
 [METAL]
 
 [ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT]
-[NAME:mail shirt:mail shirt]
-[CHAIN_METAL_TEXT]
+[NAME:mail shirt:mail shirts]
 [ARMORLEVEL:2]
-[UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
-[LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
+[UBSTEP:1]
+[LBSTEP:1]
 [LAYER:OVER]
-[COVERAGE:150]
-[LAYER_SIZE:20]
-[LAYER_PERMIT:50]
-[MATERIAL_SIZE:6] 2 bars
+[COVERAGE:100]
+[LAYER_SIZE:5]
+[LAYER_PERMIT:4]
+[MATERIAL_SIZE:12]
 [HARD]
 [METAL]
-[STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
 [ITEM_ARMOR:ITEM_ARMOR_LEATHER]
 [NAME:armor:armor]
 [PREPLURAL:suits of]
 [MATERIAL_PLACEHOLDER:leather]
-[ARMORLEVEL:2]
-[UBSTEP:2]{:1       Revision: compensate for the (new) shoulders.}
-[LBSTEP:2]{:1       Revision: compensate for the (new) hips.}
+[ARMORLEVEL:1]
+[UBSTEP:1]
+[LBSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:250]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:50]
-[MATERIAL_SIZE:6] 2 leather
+[MATERIAL_SIZE:4]
 [LEATHER]
-[STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
 
   // HAND EQUIPMENT //
@@ -268,7 +260,7 @@ squamous's notes on armor spawning:
 [NAME:glove:gloves]
 [MATERIAL_SIZE:1]
 [LAYER:UNDER]
-[COVERAGE:200]
+[COVERAGE:150]
 [LAYER_SIZE:10]
 [LAYER_PERMIT:10]
 [SOFT]
@@ -278,7 +270,6 @@ squamous's notes on armor spawning:
 [METAL]
 [ARMORLEVEL:0]
 [METAL_ARMOR_LEVELS]
-[STRUCTURAL_ELASTICITY_CHAIN_METAL]
 [CHAIN_METAL_TEXT]
 
 [ITEM_GLOVES:ITEM_GLOVES_PLATE_DWARF_FFF]
@@ -299,46 +290,44 @@ squamous's notes on armor spawning:
 
 [ITEM_PANTS:ITEM_PANTS_GREAVES]
 [NAME:greaves:greaves]
-[PREPLURAL:pairs of]
-[ARMORLEVEL:2]
+[ARMORLEVEL:3]
 [LBSTEP:MAX]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
-[LAYER_SIZE:30]{:15
+[COVERAGE:100]
+[LAYER_SIZE:15]
 [LAYER_PERMIT:15]
-[MATERIAL_SIZE:9] 3 bars
+[MATERIAL_SIZE:12]
 [METAL]
 [BARRED]
 [HARD]
 
 [ITEM_PANTS:ITEM_PANTS_LEGGINGS]
 [NAME:leggings:leggings]
-[PREPLURAL:pairs of]
 [CHAIN_METAL_TEXT]
-[ARMORLEVEL:2]
---METAL_ARMOR_LEVELS]
+[ARMORLEVEL:1]
+[METAL_ARMOR_LEVELS]
 [LBSTEP:MAX]
---SHAPED]
+[SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:150]
-[LAYER_SIZE:15]
-[LAYER_PERMIT:30]
-[MATERIAL_SIZE:6] 2 bars
+[COVERAGE:100]
+[LAYER_SIZE:5]
+[LAYER_PERMIT:25]
+[MATERIAL_SIZE:9]
 [SCALED]
+[HARD]
 [METAL]
---LEATHER]
+[LEATHER]
 [BARRED]
-[STRUCTURAL_ELASTICITY_CHAIN_METAL]
 
 [ITEM_SHOES:ITEM_SHOES_CHAUSSE]
 [NAME:chausse:chausses]
-[UPSTEP:3]{:MAX  Revision: avoid bug 1821 by capping UBSTEP at 3.  At 3 facial features and feet are protected (incorrectly), but not toes.  Feet are hardcoded not to be and I set facial features as INTERNAL to prevent this.}
+[UPSTEP:MAX]
 [LAYER:UNDER]
 [COVERAGE:100]
-[LAYER_SIZE:20]
-[LAYER_PERMIT:50]
-[MATERIAL_SIZE:3]
+[LAYER_SIZE:10]
+[LAYER_PERMIT:9]
+[MATERIAL_SIZE:9]
 [SOFT]
 [LEATHER]
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
@@ -346,7 +335,6 @@ squamous's notes on armor spawning:
 [METAL]
 [ARMORLEVEL:0]
 [METAL_ARMOR_LEVELS]
-[STRUCTURAL_ELASTICITY_CHAIN_METAL]
 [CHAIN_METAL_TEXT]
 
 // boots
@@ -360,7 +348,7 @@ squamous's notes on armor spawning:
 [COVERAGE:150]
 [LAYER_SIZE:25]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:6] 3 items
+[MATERIAL_SIZE:6]
 [METAL]
 [LEATHER]
 [HARD]

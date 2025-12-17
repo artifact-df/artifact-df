@@ -9,7 +9,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:85]{:100           Lower is faster.
 	[VASCULAR:1]
-	[PAIN_RECEPTORS:4]{:5        Revision: on the other hand, cuts were too painful.}
+	[PAIN_RECEPTORS:3]{:5        Revision: on the other hand, cuts were too painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -19,9 +19,9 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:FAT]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:80]{:100       Revision: should heal fairly quickly.}
-	--VASCULAR:3]                Revision: fat doesn't bleed anymore; this behaved poorly with high temperatures.}
-	--PAIN_RECEPTORS:5]          Revision: fat feels no pain.  As above, this behaved poorly when fat melted.}
+	[HEALING_RATE:100]
+	[VASCULAR:2]{:3              Revision: reduced bleeding as fatty tissue don't bleed that much.}
+	[PAIN_RECEPTORS:1]{:5        Revision: reduced pain significantly.}
 	[CONNECTS]
 	[INSULATION:100]
 	[TISSUE_SHAPE:LAYER]
@@ -36,7 +36,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:3]
 	[HEALING_RATE:120]{:100
 	[VASCULAR:10]{:3
-	[PAIN_RECEPTORS:10]{:5       Revision: increased pain to compensate for lowered pain on skin.}
+	[PAIN_RECEPTORS:7]{:5       Revision: increased pain to compensate for lowered pain on skin.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
