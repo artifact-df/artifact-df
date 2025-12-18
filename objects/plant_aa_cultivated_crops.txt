@@ -447,7 +447,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:VIOLET]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:10]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:VIOLET]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
@@ -632,7 +632,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:LAVENDER]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:10]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:LAVENDER]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
@@ -696,7 +696,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:EMERALD]
 		[DISPLAY_COLOR:2:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:EMERALD]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -885,7 +885,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:LAVENDER]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:10]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:LAVENDER]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
@@ -1102,7 +1102,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:PINK]
 		[DISPLAY_COLOR:4:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:PINK]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -1249,7 +1249,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:PALE_BROWN]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:PALE_BROWN]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -1904,7 +1904,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:RED]
 		[DISPLAY_COLOR:4:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:RED]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
@@ -2029,7 +2029,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:MIDNIGHT_BLUE]
 		[DISPLAY_COLOR:1:0:1]
-		[MATERIAL_VALUE:25]{:20
+		[MATERIAL_VALUE:20]
 		[POWDER_DYE:MIDNIGHT_BLUE]
 		[REACTION_CLASS:DYE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
@@ -2062,7 +2062,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:LILAC]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:LILAC]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -2676,7 +2676,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:LAVENDER]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:10]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:LAVENDER]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:OIL:PLANT_OIL_TEMPLATE]
@@ -2932,7 +2932,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:BROWN]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:RED]
 		[REACTION_CLASS:DYE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
@@ -3958,7 +3958,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:ORANGE]
 		[DISPLAY_COLOR:4:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:ORANGE]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -4321,7 +4321,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:DARK_BROWN]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:DARK_BROWN]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:MILK:AA_PLANT_MILK_TEMPLATE]
@@ -4707,7 +4707,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:GOLDEN_YELLOW]
 		[DISPLAY_COLOR:6:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:GOLDEN_YELLOW]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:THREAD:THREAD_PLANT_TEMPLATE]
@@ -4863,7 +4863,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:BEIGE]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:BEIGE]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:SKIN:LEAF_TEMPLATE]
@@ -5283,7 +5283,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:PALE_PINK]
 		[DISPLAY_COLOR:4:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:PALE_PINK]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -5400,7 +5400,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:RASPBERRY_PINK]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:RASPBERRY_PINK]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:FLOWER:FLOWER_TEMPLATE]
@@ -5582,7 +5582,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:FUCHSIA]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:FUCHSIA]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -5646,7 +5646,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:TAN]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:10]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:TAN]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -5749,7 +5749,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:BUFF]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:BUFF]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -6017,7 +6017,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:BLACK]
 		[DISPLAY_COLOR:0:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:BLACK]
 		[REACTION_CLASS:DYE]
 	[MILL:LOCAL_PLANT_MAT:MILL]
@@ -6127,7 +6127,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:RUST]
 		[DISPLAY_COLOR:4:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:RUST]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:MILL:PLANT_POWDER_TEMPLATE]
@@ -6387,7 +6387,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:LEAF_GREEN]
 		[DISPLAY_COLOR:2:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:LEAF_GREEN]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -6776,7 +6776,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:BEIGE]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:BEIGE]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -7015,7 +7015,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:AMBER]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:AMBER]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -7109,7 +7109,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:BEIGE]
 		[DISPLAY_COLOR:6:0:0]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:5]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:BEIGE]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:LEAF:LEAF_TEMPLATE]
@@ -7312,7 +7312,7 @@ plant_aa_cultivated_crops
 		[PREFIX:NONE]
 		[STATE_COLOR:ALL_SOLID:ORCHID_PINK]
 		[DISPLAY_COLOR:5:0:1]
-		[MATERIAL_VALUE:8]{:20  revision: common plant dye values too high.}
+		[MATERIAL_VALUE:10]{:20  revision: common plant dye values too high.}
 		[POWDER_DYE:ORCHID_PINK]
 		[REACTION_CLASS:DYE]
 	[USE_MATERIAL_TEMPLATE:OIL:PLANT_OIL_TEMPLATE]

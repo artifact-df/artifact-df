@@ -332,6 +332,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:WARTHOG_MAN]
 	[COPY_TAGS_FROM:WARTHOG]
@@ -537,6 +540,9 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:LION_MAN]
 	[COPY_TAGS_FROM:LION]
@@ -739,6 +745,9 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:LEOPARD_MAN]
 	[COPY_TAGS_FROM:LEOPARD]
@@ -940,6 +949,9 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:JAGUAR_MAN]
 	[COPY_TAGS_FROM:JAGUAR]
@@ -1144,6 +1156,9 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:TIGER_MAN]
 	[COPY_TAGS_FROM:TIGER]
@@ -1334,6 +1349,9 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CHEETAH_MAN]
 	[COPY_TAGS_FROM:CHEETAH]
@@ -1515,6 +1533,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GAZELLE_MAN]
 	[COPY_TAGS_FROM:GAZELLE]
@@ -1683,6 +1704,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_ORANGE:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:MANDRILL_MAN]
 	[COPY_TAGS_FROM:MANDRILL]
@@ -1855,6 +1879,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:BONOBO]
 	[DESCRIPTION:A large ape which lives in the tropical forests.  It is quite intelligent and lives in large and complex social groups.]
@@ -1958,6 +1985,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GORILLA]
 	[DESCRIPTION:A huge ape found in the forest.  It lives in small groups eating plants.  The groups are lead by a large dominant male with a silver back.]
@@ -2069,6 +2099,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:ORANGUTAN]
 	[DESCRIPTION:A huge intelligent ape found in the tropical forests.  It is bright red and found living in the trees.]
@@ -2172,6 +2205,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_SIAMANG]
 	[DESCRIPTION:A medium-sized ape found in the trees.  It is known for its loud calls.]
@@ -2275,6 +2311,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_WHITE_HANDED]
 	[DESCRIPTION:A small, long-armed ape.  It lives in trees and eats fruit.]
@@ -2379,6 +2418,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_BLACK_HANDED]
 	[DESCRIPTION:A small fruit-eating ape, found in the trees.]
@@ -2483,6 +2525,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_GRAY]
 	[DESCRIPTION:A small ape found in the trees of the tropical forest.  It is known for its calls.]
@@ -2586,6 +2631,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_SILVERY]
 	[DESCRIPTION:A small ape found in the trees eating fruit.]
@@ -2684,6 +2732,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_PILEATED]
 	[DESCRIPTION:A small ape found in pairs, swinging from the trees.]
@@ -2785,6 +2836,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_BILOU]
 	[DESCRIPTION:A small ape that swings from the trees, eating fruit.]
@@ -2888,6 +2942,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_WHITE_BROWED]
 	[DESCRIPTION:A small fruit-eating ape, found in the trees.]
@@ -2986,6 +3043,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIBBON_BLACK_CRESTED]
 	[DESCRIPTION:A small ape from the tropical forest.  It can be found in the trees eating fruit.]
@@ -3089,6 +3149,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CAMEL_1_HUMP]
 	[DESCRIPTION:A large long-necked creature with a large hump on its sturdy body.  It has been domesticated to carry passengers and cargo but is nonetheless bad-tempered and will spit.]
@@ -3234,6 +3297,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CAMEL_1_HUMP_MAN]
 	[COPY_TAGS_FROM:CAMEL_1_HUMP]
@@ -3438,6 +3504,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CAMEL_2_HUMP_MAN]
 	[COPY_TAGS_FROM:CAMEL_2_HUMP]
@@ -3639,6 +3708,9 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CROCODILE_SALTWATER_MAN]
 	[COPY_TAGS_FROM:CROCODILE_SALTWATER]
@@ -3816,6 +3888,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:VULTURE_MAN]
 	[COPY_TAGS_FROM:BIRD_VULTURE]
@@ -3987,6 +4062,9 @@ creature_large_tropical
 				[TLCM_NOUN:horn:SINGULAR]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:5]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:RHINOCEROS_MAN]
 	[COPY_TAGS_FROM:RHINOCEROS]
@@ -4152,6 +4230,9 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:5]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIRAFFE_MAN]
 	[COPY_TAGS_FROM:GIRAFFE]
@@ -4333,6 +4414,9 @@ creature_large_tropical
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:HONEY BADGER MAN]
 	[COPY_TAGS_FROM:HONEY BADGER]
@@ -4515,6 +4599,9 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIANT TORTOISE MAN]
 	[COPY_TAGS_FROM:GIANT TORTOISE]
@@ -4677,6 +4764,9 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:ARMADILLO MAN]
 	[COPY_TAGS_FROM:ARMADILLO]

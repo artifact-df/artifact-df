@@ -2605,14 +2605,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:elder:elders]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
-		--THE_COMPOUND_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		--FRONT_COMPOUND_NOUN_PLUR]
+		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
-		--THE_COMPOUND_NOUN_PLUR]
-		--OF_NOUN_PLUR]
+		[THE_COMPOUND_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 	[ADJ:elder]
-		[ADJ_DIST:3]
+		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
@@ -2647,10 +2647,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 	[ADJ:evil]
-		[ADJ_DIST:4]
+		[ADJ_DIST:3]
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
@@ -5321,7 +5321,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 	[ADJ:magical]
-		[ADJ_DIST:4]
+		[ADJ_DIST:3]
 		[THE_COMPOUND_ADJ]
 
 [WORD:MAN]
@@ -11088,7 +11088,6 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 	[ADJ:worldly] +
 		[ADJ_DIST:2] +
@@ -11167,8 +11166,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
-		--THE_NOUN_PLUR]
-		--OF_NOUN_PLUR]
+		[THE_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 	[ADJ:planar] +
 		[ADJ_DIST:1] +
 		[FRONT_COMPOUND_ADJ] +
@@ -11177,30 +11176,42 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DIMENSION]
 	[NOUN:dimension:dimensions]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		--THE_NOUN_PLUR]
-		--OF_NOUN_PLUR]
+		[FRONT_COMPOUND_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_PLUR]
+		[THE_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 	[ADJ:dimensional] +
 		[ADJ_DIST:1] +
 		[THE_COMPOUND_ADJ] +
 
 [WORD:UNIVERSE]
 	[NOUN:universe:universes]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		--THE_NOUN_PLUR]
-		--OF_NOUN_PLUR]
+		[FRONT_COMPOUND_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_PLUR]
+		[THE_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 	[ADJ:universal] +
 		[ADJ_DIST:1] +
 		[THE_COMPOUND_ADJ] +
 
 [WORD:PLANET]
 	[NOUN:planet:planets]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		--THE_NOUN_PLUR]
-		--OF_NOUN_PLUR]
+		[FRONT_COMPOUND_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_PLUR]
+		[THE_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 	[ADJ:planetary] +
 		[ADJ_DIST:1] +
 		[THE_COMPOUND_ADJ] +
@@ -11235,9 +11246,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		FRONT_COMPOUND_NOUN_PLUR -
+		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
-		THE_NOUN_PLUR -
+		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:regal] +
 		[ADJ_DIST:1] +
@@ -11249,9 +11260,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		FRONT_COMPOUND_NOUN_PLUR -
+		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
-		THE_NOUN_PLUR -
+		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:imperial]
 		[ADJ_DIST:1]
@@ -11262,7 +11273,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		THE_NOUN_PLUR -
+		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:federal] +
 		[ADJ_DIST:1] +
@@ -21817,7 +21828,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 	[ADJ:nothing]
-		[ADJ_DIST:2]
+		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
