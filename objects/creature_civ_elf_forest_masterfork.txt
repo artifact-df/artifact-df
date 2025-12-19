@@ -160,7 +160,7 @@ creature_civ_elf_forest_masterfork
 	[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:950:1150:1250:1350:1550:2250]      +
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:25:0:60000]{:12:0:60000
+	[BODY_SIZE:25:0:62000]{:12:0:60000
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:94:96:98:100:105:112:133]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
 		[APP_MOD_IMPORTANCE:550]{:500  Revision: height is more important than the other descriptors.}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:80:95:98:100:102:105:120]{:75:95:98:100:102:105:125  Revision: elves are less broad than tall.}
@@ -225,16 +225,14 @@ creature_civ_elf_forest_masterfork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
@@ -298,23 +296,42 @@ creature_civ_elf_forest_masterfork
 	
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]{+}
-		[ORIENTATION:MALE:50:35:15]{+}
-		[ORIENTATION:FEMALE:75:20:5]{+}
+		[POP_RATIO:1]{+}
 		[BABYNAME:elf baby girl:elven baby girls]{+}
 		[CHILDNAME:elf girl:elven girls]{+}
 		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  She feels most at home among her beloved trees and seems driven to protect them.  She does not appear to age.]{+}
 		[MULTIPLE_LITTER_RARE]
+	[CASTE:FEMALE_ASEXUAL]{+} new gender that is completely asexual to reduce elven population
+		[FEMALE]
+		[POP_RATIO:2]
+		[ARENA_RESTRICTED]
+		[PERSONALITY:LUST_PROPENSITY:0:20:50]
+		[ORIENTATION:MALE:1:0:0]
+		[ORIENTATION:FEMALE:1:0:0]
+		[BABYNAME:elf baby girl:elven baby girls]
+		[CHILDNAME:elf girl:elven girls]
+		[MULTIPLE_LITTER_RARE]
+		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  She feels most at home among her beloved trees and seems driven to protect them.  She does not appear to age.]
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:5]{+}
-		[ORIENTATION:MALE:75:20:5]{+}
-		[ORIENTATION:FEMALE:50:35:15]{+}
+		[POP_RATIO:1]{+}
 		[BABYNAME:elf baby boy:elven baby boys]{+}
 		[CHILDNAME:elf boy:elven boys]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]{+  Revision: elves are clean-shaven.}
 		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  He feels most at home among his beloved trees and seems driven to protect them.  He does not appear to age.]{+}
+	[CASTE:MALE_ASEXUAL]{+} new gender that is completely asexual to reduce elven population
+		[MALE]
+		[POP_RATIO:2]
+		[ARENA_RESTRICTED]
+		[PERSONALITY:LUST_PROPENSITY:0:20:50]
+		[ORIENTATION:MALE:1:0:0]
+		[ORIENTATION:FEMALE:1:0:0]
+		[BABYNAME:elf baby boy:elven baby boys]
+		[CHILDNAME:elf boy:elven boys]
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  He feels most at home among his beloved trees and seems driven to protect them.  He does not appear to age.]
 
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]

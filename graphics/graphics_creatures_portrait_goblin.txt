@@ -1,4 +1,4 @@
-graphics_creatures_portrait_goblin_fff
+graphics_creatures_portrait_goblin
 
 [OBJECT:GRAPHICS]
 

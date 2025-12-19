@@ -1,4 +1,4 @@
-graphics_creatures_portrait_dwarf_fff
+graphics_creatures_portrait_dwarf
 
 [OBJECT:GRAPHICS]
 

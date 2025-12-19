@@ -151,16 +151,13 @@ creature_civ_human_masterfork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
-		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]

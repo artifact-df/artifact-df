@@ -260,6 +260,7 @@ entity_elf_forest_masterfork
 		[NAME:druid:druids]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:ELF:ALL]{+}
+		[ALLOWED_CLASS:ANIMAL_PERSON]{+}
 		[RESPONSIBILITY:RELIGION]
 		[SUCCESSION:BY_POSITION:ACOLYTE]
 		[MENIAL_WORK_EXEMPTION]
@@ -312,7 +313,7 @@ entity_elf_forest_masterfork
 		[COLOR:3:0:1]
 		[DUTY_BOUND]
 	[POSITION:LEADER]
-		[NAME:queen:queens]
+		[NAME:glade monarch:glade monarchs]
 		[NAME_MALE:glade king:glade kings]{+}
 		[NAME_FEMALE:glade queen:glade queens]{+}
 		[NUMBER:1]
@@ -356,6 +357,7 @@ entity_elf_forest_masterfork
 		[NAME:ranger captain:ranger captains]
 		[NUMBER:AS_NEEDED]
 		[ALLOWED_CREATURE:ELF:ALL]{+}
+		[ALLOWED_CLASS:ANIMAL_PERSON]{+}
 		[SQUAD:8:ranger:rangers]
 		[RESPONSIBILITY:ATTACK_ENEMIES]
 		[RESPONSIBILITY:PATROL_TERRITORY]
@@ -367,6 +369,7 @@ entity_elf_forest_masterfork
 		[NAME:trade liaison:trade liaisons]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:ELF:ALL]{+}
+		[ALLOWED_CLASS:ANIMAL_PERSON]{+}
 		[RESPONSIBILITY:TRADE]
 		[APPOINTED_BY:LEADER]
 		[PRECEDENCE:70]

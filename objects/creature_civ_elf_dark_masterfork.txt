@@ -108,9 +108,9 @@ creature_civ_elf_dark_masterfork
 	[MENT_ATT_RANGE:EMPATHY:450:950:1150:1250:1350:1550:2250]               +
 	[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:950:1150:1250:1350:1550:2250]      +
 	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]               -
-	[BODY_SIZE:0:0:4000]
-	[BODY_SIZE:1:168:17500]
-	[BODY_SIZE:20:0:70000]
+	[BODY_SIZE:0:0:3000]
+	[BODY_SIZE:1:168:15000]
+	[BODY_SIZE:25:0:62000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:94:96:98:100:106:112:125]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
 		[APP_MOD_IMPORTANCE:600]{:500  Revision: height is more important than the other descriptors.}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
@@ -175,16 +175,13 @@ creature_civ_elf_dark_masterfork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
-		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
