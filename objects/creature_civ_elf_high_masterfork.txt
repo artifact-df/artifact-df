@@ -31,7 +31,7 @@ creature_civ_elf_high_masterfork
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:55:100]+   Minor Inclination
 	[PERSONALITY:HATE_PROPENSITY:0:45:100]-   Minor Aversion
-	[PERSONALITY:ENVY_PROPENSITY:0:45:95]--  Moderate Aversion
+	[PERSONALITY:ENVY_PROPENSITY:0:55:100]+   Minor Inclination
 	[PERSONALITY:CHEER_PROPENSITY:5:55:100]++  Moderate Inclination
 	[PERSONALITY:DEPRESSION_PROPENSITY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:ANGER_PROPENSITY:0:45:100]-   Minor Aversion
@@ -191,7 +191,7 @@ creature_civ_elf_high_masterfork
 				--CE:COUNTER_TRIGGER:CAVE_ADAPT:4800:NONE:REQUIRED]
 	--SECRETION:LOCAL_CREATURE_MAT:SUNEXPOSURE:LIQUID:BY_CATEGORY:BRAIN:ALL:CONTINUOUS]
 
-	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+}            -
+	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]            -
 	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]              ++
 	[PHYS_ATT_RANGE:RECUPERATION:450:950:1150:1250:1350:1550:2250]          +
 	[PHYS_ATT_RANGE:DISEASE_RESISTANCE:1250:1500:1750:2000:2500:3000:5000]  +++
@@ -206,7 +206,7 @@ creature_civ_elf_high_masterfork
 	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:1250:1500:1750:2000:2500:3000:5000]  +++
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:25:0:60000]{:12:0:60000
+	[BODY_SIZE:25:0:62000]{:12:0:60000
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:94:96:98:100:105:112:133]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
 		[APP_MOD_IMPORTANCE:550]{:500  Revision: height is more important than the other descriptors.}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:80:95:98:100:102:105:120]{:75:95:98:100:102:105:125  Revision: elves are less broad than tall.}
@@ -255,11 +255,11 @@ creature_civ_elf_high_masterfork
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
 	[SET_BP_GROUP:BY_CATEGORY:SKULL]
 		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 	[SET_BP_GROUP:BY_CATEGORY:THROAT]
-		[BP_APPEARANCE_MODIFIER:DEEP_VOICE:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:DEEP_VOICE:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:RASPY_VOICE:0:70:90:100:110:130:200]
 	[SET_BP_GROUP:BY_CATEGORY:HEAD]
 		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
@@ -271,16 +271,14 @@ creature_civ_elf_high_masterfork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
@@ -342,23 +340,42 @@ creature_civ_elf_high_masterfork
 
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]
-		[ORIENTATION:MALE:50:35:15]
-		[ORIENTATION:FEMALE:75:20:5]
+		[POP_RATIO:1]
 		[BABYNAME:elf baby girl:elven baby girls]
 		[CHILDNAME:elf girl:elven girls]
 		[MULTIPLE_LITTER_RARE]
-		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace, beauty and court intrigue.  She has a natural talent of magic.  She does not appear to age.]{+}
+		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace, beauty and court intrigue.  She has a natural talent of magic.  She does not appear to age.]
+	[CASTE:FEMALE_ASEXUAL] new gender that is completely asexual to reduce elven population
+		[FEMALE]
+		[POP_RATIO:2]
+		[ARENA_RESTRICTED]
+		[PERSONALITY:LUST_PROPENSITY:0:20:50]
+		[ORIENTATION:MALE:1:0:0]
+		[ORIENTATION:FEMALE:1:0:0]
+		[BABYNAME:elf baby girl:elven baby girls]
+		[CHILDNAME:elf girl:elven girls]
+		[MULTIPLE_LITTER_RARE]
+		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace, beauty and court intrigue.  She has a natural talent of magic.  She does not appear to age.]
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:5]
-		[ORIENTATION:MALE:75:20:5]
-		[ORIENTATION:FEMALE:50:35:15]
+		[POP_RATIO:1]
 		[BABYNAME:elf baby boy:elven baby boys]
 		[CHILDNAME:elf boy:elven boys]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace, beauty and court intrigue.  He has a natural talent of magic.  He does not appear to age.]{+}
+		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace, beauty and court intrigue.  He has a natural talent of magic.  He does not appear to age.]
+	[CASTE:MALE_ASEXUAL] new gender that is completely asexual to reduce elven population
+		[MALE]
+		[POP_RATIO:2]
+		[ARENA_RESTRICTED]
+		[PERSONALITY:LUST_PROPENSITY:0:20:50]
+		[ORIENTATION:MALE:1:0:0]
+		[ORIENTATION:FEMALE:1:0:0]
+		[BABYNAME:elf baby boy:elven baby boys]
+		[CHILDNAME:elf boy:elven boys]
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace, beauty and court intrigue.  He has a natural talent of magic.  He does not appear to age.]
 
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]

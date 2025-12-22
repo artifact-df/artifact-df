@@ -592,6 +592,8 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:COVEN]
 	[S_WORD:SECT]
 	[S_WORD:ORDER GROUP]
+	+ expanded dictionary
+	[S_WORD:CRUSADE]
 
 [SYMBOL:EVIL]
 	[S_WORD:BAD]
@@ -1069,6 +1071,8 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:STRATEGY]
 	[S_WORD:TACTIC]
 	[S_WORD:ARMOK] the god of blood himself
+	+ expanded dictionary
+	[S_WORD:CRUSADE]
 
 [SYMBOL:PEACE]
 	[S_WORD:BUTTERFLY]
@@ -1953,6 +1957,7 @@ Misc verbs/adjectives
 	[S_WORD:NEXUS]
 	[S_WORD:SPHERE]
 	[S_WORD:NOTHING]
+	[S_WORD:CRUSADE]
 
 [SYMBOL:ARTIFICE] *** This also needed some thematic redefining into being the list for gods of crafts, initially it was anything manmade. No precious metals are on the list.
 
@@ -1974,8 +1979,6 @@ Misc verbs/adjectives
 	[S_WORD:SMOOTH]
 	[S_WORD:STEEL]
 	[S_WORD:WAX]
-	+
-	[S_WORD:MITHRIL]
 
 	Tools
 	[S_WORD:ANVIL]
@@ -2859,6 +2862,17 @@ Misc verbs/adjectives
 	[S_WORD:WADE]
 	[S_WORD:WET]
 	[S_WORD:WHIRL]
+	+ expanded dictionary
+	[S_WORD:OASIS]
+	[S_WORD:POND]
+	[S_WORD:RESERVOIR]
+	[S_WORD:COASTLINE]
+	[S_WORD:INSHORE]
+	[S_WORD:ATOLL]
+	[S_WORD:COVE]
+	[S_WORD:DELTA]
+	[S_WORD:ISLET]
+	[S_WORD:REEF]
 
 [SYMBOL:PROTECT]
 	[S_WORD:ARMOR]
@@ -3247,7 +3261,6 @@ Misc verbs/adjectives
 	[S_WORD:HIGHLAND]
 	[S_WORD:HINTERLAND]
 	[S_WORD:MOUNTAINSIDE]
-	[S_WORD:MOORLAND]	
 	[S_WORD:PRECIPICE]
 	[S_WORD:PLATEAU]
 	[S_WORD:RIDGE]
@@ -3255,6 +3268,8 @@ Misc verbs/adjectives
 	[S_WORD:SLOPE]
 	[S_WORD:TERRAIN]
 	[S_WORD:WILDERNESS]
+	[S_WORD:PROTRUDE]
+	[S_WORD:MONOLITH]
 
 [SYMBOL:NAME_OCEAN]
 	[S_WORD:BLUE]
@@ -3799,6 +3814,7 @@ Misc verbs/adjectives
 	[S_WORD:INLAND]
 	[S_WORD:MAINLAND]
 	[S_WORD:REGION]
+	[S_WORD:COASTLINE]
 
 [SYMBOL:NAME_ISLAND]
 	S_WORD:LAND -
@@ -3919,6 +3935,16 @@ Misc verbs/adjectives
 	[S_WORD:MAGMA]
 	[S_WORD:MOLTEN]
 	[S_WORD:MOTHER]
+	[S_WORD:PROTRUDE]
+	[S_WORD:MONOLITH]
+	[S_WORD:STEEP]
+	[S_WORD:SLOPE]
+	[S_WORD:PLATEAU]
+	[S_WORD:PRECIPICE]
+	[S_WORD:MOUNTAINSIDE]
+	[S_WORD:CLIFF]
+	[S_WORD:CRAG]
+	[S_WORD:BLUFF_CLIFF]
 
 [SYMBOL:NAME_COMMON_RELIGION]
 	[S_WORD:CULT]
@@ -3956,6 +3982,8 @@ Misc verbs/adjectives
 	[S_WORD:OCCULT]
 	[S_WORD:ORDER CONCEPT]
 	[S_WORD:FAITH LOYALTY]
+	+ expanded dictionary
+	[S_WORD:CRUSADE]
 
 [SYMBOL:BALANCE]
 	[S_WORD:FAIR EVEN]
@@ -4285,6 +4313,11 @@ Misc verbs/adjectives
 	[S_WORD:VOLCANO]
 	[S_WORD:WAX]
 	[S_WORD:WISP]
+	+ expanded dictionary
+	[S_WORD:CHIMNEY]
+	[S_WORD:ERUPT]
+	[S_WORD:LAVA]
+	[S_WORD:MAGMA]
 
 [SYMBOL:FOOD] *** Completely overwriting this one. Used by food-aligned gods and... taverns. Ideally FOOD would be a subsymbol for taverns and there'd be a main symbol, but such is hardcoding.
 	[S_WORD:BAKE]
@@ -4708,11 +4741,23 @@ Misc verbs/adjectives
 	[S_WORD:STRIFE]
 	[S_WORD:TROUBLE]
 	[S_WORD:TURMOIL]
+	[S_WORD:SAVAGERY]
+	[S_WORD:DESTRUCTION]
+	[S_WORD:DECIMATE]
+	[S_WORD:ONSLAUGHT]
 	++
 	[S_WORD:NORTH]
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	+ expanded dictionary
+	[S_WORD:SUBJUGATE]
+	[S_WORD:CONQUEST]
+	[S_WORD:AGGRESSION]
+	[S_WORD:CRISIS]
+	[S_WORD:DOWNFALL]
+	[S_WORD:CONFRONT]
+	[S_WORD:INVADE]
 
 [SYMBOL:NAME_BATTLE]
 	[S_WORD:BATTLE]

@@ -1,4 +1,4 @@
-inorganic_masterfork
+inorganic_metal
 
 [OBJECT:INORGANIC]
 

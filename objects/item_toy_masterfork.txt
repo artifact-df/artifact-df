@@ -1,4 +1,4 @@
-item_toy_mfork
+item_toy_masterfork
 
 [OBJECT:ITEM]
 
@@ -22,9 +22,8 @@ item_toy_mfork
 [NAME:mini-forge:mini-forges]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_TOY_STANDARDIZED]
-[NAME:toy:toys]
-[HARD_MAT]
+
+// fantastic fantasy fortress //
 
 all _SPL items from Splint
 

@@ -286,6 +286,9 @@ creature_next_underground
 				[TLCM_NOUN:skin:SINGULAR]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:4]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:BLIND_CAVE_OGRE]
 	[DESCRIPTION:A large cavern-dwelling humanoid monster.  It has a gaping mouth with many sharp teeth.  It has no eyes and only two digits on each hand and foot.  It emits an aura of fear.]{:A large cavern-dwelling humanoid monster.  It has a gaping mouth with many sharp teeth.  It has no eyes and only two digits on each hand and foot.}
@@ -493,6 +496,7 @@ creature_next_underground
 	[PREFSTRING:swinging antics]
 	[SOUND:ALERT:100:10000:VOCALIZATION:croak angrily:croaks angrily:angry croaking]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:10000:VOCALIZATION:ribbit:ribbits:the ribbiting of a strange amphibian]{+}
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_NOLEATHER_MATERIALS]{:STANDARD_MATERIALS}
 		[REMOVE_MATERIAL:HAIR]
@@ -997,6 +1001,9 @@ creature_next_underground
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:HELMET_SNAKE]
 	[DESCRIPTION:A snake-like creature living deep underground.  Its head is covered in armor so that is resembles the head of a dragon.]
@@ -1290,6 +1297,9 @@ creature_next_underground
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CREEPY_CRAWLER]
 	[DESCRIPTION:A tiny mass of appendages shaped like fingers that creeps around dark caverns.  It eats with the mouth on the bottom of its strange, starfish-shaped body.  The fingers writhe as it moves; they sometimes pull the thing around and sometimes they pointlessly wriggle.]{:A tiny underground creature made of a mass of appendages resembling human fingers.  It creeps across the ground like a starfish and eats with amouth on the bottom of its body.}
@@ -1310,6 +1320,7 @@ creature_next_underground
 	[POPULATION_NUMBER:250:500]
 	[PREFSTRING:freakish wriggling]
 	[EXTRAVISION]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:BODY_WITH_HEAD_FLAG:HEART:GUTS:BRAIN:MOUTH]
 	[BODY_DETAIL_PLAN:STANDARD_NOLEATHER_MATERIALS]{:STANDARD_MATERIALS}
 		[REMOVE_MATERIAL:HAIR]
@@ -1432,6 +1443,9 @@ creature_next_underground
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:GIANT_EARTHWORM]
 	[DESCRIPTION:A gigantic version of its tiny cousin, this long, slimy creature tunnels through the rocks deep underground.]
@@ -1955,6 +1969,9 @@ creature_next_underground
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:4]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:POND_GRABBER]
 	[DESCRIPTION:A small, strange squid-like thing that swims in the calm underground pools.  It has four clawed tentacles and a sharp beak larger than its small body.  It buries itself near the bottom, waiting for its opportunity to strangle and drown something.  It often feeds for weeks on each decaying carcass.]{:A small creature that lives in watery ditches deep underground.  It has a sharp beak and four tentacles with claws at the end.}
@@ -2126,6 +2143,9 @@ creature_next_underground
 				[TLCM_NOUN:fur:SINGULAR]{:skin
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CAVE_DRAGON]
 	[DESCRIPTION:A gigantic monster, once a dragon, now adapted to and polluted by the underground.  Its face is full of incredibly long teeth.  Its eyes are large to penetrate the darkness.  Its scales are akin to metal.]{: Revision: removed mention of wings and added mention of dragonscales.}
@@ -2281,9 +2301,9 @@ creature_next_underground
 				[TLCM_NOUN:eyes:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:FINGER:CLAW]{+  variable claw descriptions + lengths.}
 		 [PLUS_TL_GROUP:BY_CATEGORY:TOE:CLAW]{+
-		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:80:90:95:100:110:130:150]{+
+		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:85:95:98:100:102:105:115]{+
 				[APP_MOD_NOUN:claws:PLURAL]{+
-				[APP_MOD_DESC_RANGE:60:80:90:110:130:150]{+
+				[APP_MOD_DESC_RANGE:86:94:98:102:106:114]{+
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:8]{:4
 		[COLDDAM_POINT:NONE]{+}

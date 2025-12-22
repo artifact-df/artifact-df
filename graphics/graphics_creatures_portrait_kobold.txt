@@ -1,4 +1,4 @@
-graphics_creatures_portrait_kobold_fff
+graphics_creatures_portrait_kobold
 
 [OBJECT:GRAPHICS]
 

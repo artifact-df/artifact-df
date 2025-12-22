@@ -1,4 +1,4 @@
-graphics_creatures_portrait_human_fff
+graphics_creatures_portrait_human
 
 [OBJECT:GRAPHICS]
 

@@ -1,4 +1,4 @@
-b_detail_plan_revised
+b_detail_plan_default
 
 Includes changes from DF Revised 2.2.0
 Includes changes from Sver's DF Combat Reworked 1.7
@@ -547,22 +547,37 @@ Made on game version 0.47.04
 	[BP_POSITION:BY_TOKEN:DORSAL_FIN:BACK]
 	
 [BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BP_RELATION:BY_TOKEN:RCB:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+       Revision: added separating 'limbs' for better armor coverage.}
+	[BP_RELATION:BY_TOKEN:LCB:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+       Revision: added separating 'limbs' for better armor coverage.}
+	[BP_RELATION:BY_TOKEN:RCB1:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+      Revision: added separating 'limbs' for better armor coverage.}
+	[BP_RELATION:BY_TOKEN:LCB1:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+      Revision: added separating 'limbs' for better armor coverage.}
+ 	[BP_RELATION:BY_TOKEN:RCB2:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+      Revision: added separating 'limbs' for better armor coverage.}
+	[BP_RELATION:BY_TOKEN:LCB2:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+      Revision: added separating 'limbs' for better armor coverage.}
+	[BP_RELATION:BY_TOKEN:RCB3:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+      Revision: added separating 'limbs' for better armor coverage.}
+	[BP_RELATION:BY_TOKEN:LCB3:ABOVE:BY_CATEGORY:BODY_UPPER:33]{+      Revision: added separating 'limbs' for better armor coverage.}
+
 	Sver: more precise right/left rib coverage.
 
 	[BP_RELATION:BY_CATEGORY:RIB_TRUE:AROUND:BY_CATEGORY:HEART:55] anterior
-	[BP_RELATION:BY_CATEGORY:RIB_TRUE:AROUND:BY_CATEGORY:LIVER:13]
 	[BP_RELATION:BY_TOKEN:R_TRUE_RIB:AROUND:BY_TOKEN:RLUNG:57]
+	[BP_RELATION:BY_TOKEN:R_TRUE_RIB:AROUND:BY_CATEGORY:LIVER:13]
 	[BP_RELATION:BY_TOKEN:L_TRUE_RIB:AROUND:BY_TOKEN:LLUNG:57]
+	[BP_RELATION:BY_TOKEN:L_TRUE_RIB:AROUND:BY_CATEGORY:LIVER:13]
 	[BP_RELATION:BY_CATEGORY:RIB_FALSE:AROUND:BY_CATEGORY:HEART:55] anterior
-	[BP_RELATION:BY_TOKEN:R_FALSE_RIB:AROUND:BY_CATEGORY:LIVER:13]
 	[BP_RELATION:BY_TOKEN:R_FALSE_RIB:AROUND:BY_TOKEN:RLUNG:3]
+	[BP_RELATION:BY_TOKEN:R_FALSE_RIB:AROUND:BY_CATEGORY:LIVER:13]
 	[BP_RELATION:BY_TOKEN:L_FALSE_RIB:AROUND:BY_TOKEN:LLUNG:3]
 	[BP_RELATION:BY_TOKEN:R_FLOATING_RIB:AROUND:BY_CATEGORY:LIVER:4]
 	[BP_RELATION:BY_TOKEN:L_FLOATING_RIB:AROUND:BY_CATEGORY:LIVER:1]
+	
+	[BP_RELATION:BY_TOKEN:RHB:BELOW:BY_CATEGORY:BODY_LOWER:33]{+       Revision: added separating 'limbs' for better armor coverage.}
+	[BP_RELATION:BY_TOKEN:LHB:BELOW:BY_CATEGORY:BODY_LOWER:33]{+       Revision: added separating 'limbs' for better armor coverage.}
 
 [BODY_DETAIL_PLAN:SHELL_POSITIONS]
 	[BP_POSITION:BY_CATEGORY:SHELL:TOP]
 	[BP_RELATION:BY_CATEGORY:SHELL:AROUND:BY_CATEGORY:UPPERBODY:50]
+	[BP_RELATION:BY_CATEGORY:SHELL:AROUND:BY_CATEGORY:LOWERBODY:33]{+  Revision: lower body should be partially covered as well.}
+	[BP_RELATION:BY_CATEGORY:SHELL:AROUND:BY_CATEGORY:SPINE:100]{+     Revision: the shell protects the spine.}
 
 [BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
 	This command establishes the relative size of body parts within a creature.  The numbers have no absolute meaning or units.

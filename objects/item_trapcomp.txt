@@ -1,86 +1,58 @@
 item_trapcomp
 
-
-Includes changes from Sver's DF Combat Reworked
-Made on game version 0.47.04
-
-
 [OBJECT:ITEM]
 
-
-	here are trap components only
-
-	equivalents of the vanilla weapons (which are using their tags; e.g. not my new stuff) are highlighted by =VANILLA=
-		for those players/modders who don't want to use the new items
-
-	material sizes are imprecise in the game for now, so all are set to take/return an integer number of bars
-
-	traps always hit with the same velocity, so velocities here are mostly placeholders
-
-
-===========================================================
-
-[ITEM_TRAPCOMP:ITEM_TRAPCOMP_GIANTAXEBLADE]  =VANILLA=
+[ITEM_TRAPCOMP:ITEM_TRAPCOMP_GIANTAXEBLADE]
 [NAME:axe blade:axe blades]
 [ADJECTIVE:giant]
-[SIZE:1200]
-[HITS:2]
-[MATERIAL_SIZE:9]
+[SIZE:1600]
+[HITS:1]
+[MATERIAL_SIZE:12]{:5
 [METAL]
-[ATTACK:EDGE:1350:1800:slash:slashes:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:8:1]
-[ATTACK:EDGE:5400:5400:cleave:cleaves:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:8:1]
-[ATTACK:EDGE:180:900:thrust:thrusts:flank:1000]
-	[ATTACK_PREPARE_AND_RECOVER:8:10]
+[ATTACK:EDGE:100000:10000:slash:slashes:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
 
-[ITEM_TRAPCOMP:ITEM_TRAPCOMP_ENORMOUSCORKSCREW]  =VANILLA=
-	made weak as a weapon to keep the production cost low
-	as it is required for (magma) pumps
+[ITEM_TRAPCOMP:ITEM_TRAPCOMP_ENORMOUSCORKSCREW]
 [NAME:corkscrew:corkscrews]
 [ADJECTIVE:enormous]
-[SIZE:200]
+[SIZE:1600]
 [HITS:1]
-[MATERIAL_SIZE:6]
+[MATERIAL_SIZE:12]{:5
 [IS_SCREW]
 [WOOD]
 [METAL]
-[ATTACK:EDGE:100:300:drill:drills:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:13:9]
-[ATTACK:EDGE:100:20:cut:cuts:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:13:9]
+[ATTACK:EDGE:100:10000:drill:drills:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
 
-[ITEM_TRAPCOMP:ITEM_TRAPCOMP_SPIKEDBALL]  =VANILLA=
+[ITEM_TRAPCOMP:ITEM_TRAPCOMP_SPIKEDBALL]
 [NAME:ball:balls]
 [ADJECTIVE:spiked]
-[SIZE:690]
-[HITS:1]
-[MATERIAL_SIZE:9]
-WOOD  --doesn't make much sense
+[SIZE:1000]
+[HITS:3]
+[MATERIAL_SIZE:9]{:4
+[WOOD]
 [METAL]
-[ATTACK:EDGE:3:160:strike:strikes:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:9:16]
+[ATTACK:EDGE:10:200:strike:strikes:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
 
-[ITEM_TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC]  =VANILLA=
+[ITEM_TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC]
 [NAME:disc:discs]
 [ADJECTIVE:large, serrated]
-[SIZE:600]
-[HITS:2]
-[MATERIAL_SIZE:9]
+[SIZE:1000]
+[HITS:3]
+[MATERIAL_SIZE:12]{:4
 [METAL]
-[ATTACK:EDGE:10000:10000:saw:saws:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:13:1]
-[ATTACK:EDGE:400:400:grind:grinds:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:13:1]
+[ATTACK:EDGE:100000:10000:saw:saws:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]
 
-[ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE]  =VANILLA=
+[ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE]
 [NAME:spike:spikes]
 [ADJECTIVE:menacing]
 [SIZE:1600]
 [HITS:1]
-[MATERIAL_SIZE:9]
+[MATERIAL_SIZE:6]{:5
 [IS_SPIKE]
 [WOOD]
 [METAL]
-[ATTACK:EDGE:17:20000:thrust:thrusts:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:1:13]
+[ATTACK:EDGE:10:6000:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:4:4]

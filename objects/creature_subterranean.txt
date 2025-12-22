@@ -683,7 +683,6 @@ creature_subterranean
 	[CAN_LEARN][SLOW_LEARNER]
 	[CURIOUSBEAST_GUZZLER]{+}
 	[CURIOUSBEAST_EATER]{+}
-	[MISCHIEVOUS]{+  revision: troglodytes are now mischievous.}
 	[PERSONALITY:BASHFUL:0:0:0]{+  doesn't care about being nude.}
 	[PERSONALITY:DISCORD:50:75:100]{+}
 	[PERSONALITY:CURIOUS:50:75:100]{+}
@@ -831,12 +830,30 @@ creature_subterranean
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
+		[POP_RATIO:20]{+}
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A short and hairy brute with a searching expression and a primitive, almost simian appearance.  Stooped and long-limbed, she searches for food and comfort in the darkness.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
+		[POP_RATIO:20]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[DESCRIPTION:A short and hairy brute with a searching expression and a primitive, almost simian appearance.  Stooped and long-limbed, he searches for food and comfort in the darkness.  He doesn't care that he's naked.]{+}
+	[CASTE:FEMALE_MISCHIEVOUS]{+  revision: new rare caste that has the mischievous creature token.}
+		[FEMALE]
+		[POP_RATIO:1]
+		[MISCHIEVOUS][LOCKPICKER]
+		[ARENA_RESTRICTED]
+		[CASTE_NAME:mischievous troglodyte:troglodytes:troglodyte]
+		[MULTIPLE_LITTER_RARE]
+		[DESCRIPTION:A short and hairy brute with a searching expression and a primitive, almost simian appearance.  Stooped and long-limbed, she searches for food and comfort in the darkness.  She doesn't care that she's naked.  She is quite mischievous.]{+}
+	[CASTE:MALE_MISCHIEVOUS]{+  revision: new rare caste that has the mischievous creature token.}
+		[MALE]
+		[POP_RATIO:1]
+		[MISCHIEVOUS][LOCKPICKER]
+		[ARENA_RESTRICTED]
+		[CASTE_NAME:mischievous troglodyte:troglodytes:troglodyte]
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[DESCRIPTION:A short and hairy brute with a searching expression and a primitive, almost simian appearance.  Stooped and long-limbed, he searches for food and comfort in the darkness.  He doesn't care that he's naked.  He is quite mischievous.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
@@ -2410,6 +2427,11 @@ creature_subterranean
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+		[SET_TL_GROUP:BY_CATEGORY:FINGER:TALON]{+  variable talon descriptions + lengths.}
+		 [PLUS_TL_GROUP:BY_CATEGORY:TOE:TALON]{+
+		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:85:95:98:100:102:105:115]{+
+				[APP_MOD_NOUN:talons:PLURAL]{+
+				[APP_MOD_DESC_RANGE:86:94:98:102:106:114]{+
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:2]
 

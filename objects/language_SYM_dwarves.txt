@@ -71,9 +71,9 @@ Squads don't use the MILITARY_UNIT symbol, but I've defined them for all of the 
 	[S_WORD:HAMMER] <>
 	[S_WORD:HATCHET] >
 	[S_WORD:HELM] <>
-	[S_WORD:LANCE] >
-	[S_WORD:RAZOR] <
-	[S_WORD:SABRE] <>
+	--S_WORD:LANCE] >
+	--S_WORD:RAZOR] <
+	--S_WORD:SABRE] <>
 	[S_WORD:SHIELD] V>
 	[S_WORD:SPEAR] <
 	[S_WORD:SWORD] >

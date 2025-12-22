@@ -6,7 +6,7 @@ creature_civ_dwarf_mfork
 	[DESCRIPTION:A short, sturdy creature fond of drink and industry.]
 	[NAME:dwarf:dwarves:dwarven]
 	[CASTE_NAME:dwarf:dwarves:dwarven]
-	[SKILL_RATES:50:10:18:18]{+                Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
+	[SKILL_RATES:50:9:17:17]{+                Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
 	[CREATURE_TILE:1][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:2]
 	[CREATURE_CLASS:MAMMAL]
@@ -32,7 +32,7 @@ creature_civ_dwarf_mfork
 	[PERSONALITY:DEPRESSION_PROPENSITY:0:45:100]-   Minor Aversion
 	[PERSONALITY:ANGER_PROPENSITY:0:55:100]+   Minor Inclination
 	[PERSONALITY:ANXIETY_PROPENSITY:0:45:85]-   Minor Aversion  *affects necromancer likelyhood
-	[PERSONALITY:LUST_PROPENSITY:0:55:100]+   Minor Inclination
+	[PERSONALITY:LUST_PROPENSITY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:STRESS_VULNERABILITY:0:45:85]-   Minor Aversion  *affects necromancer likelyhood
 	[PERSONALITY:GREED:10:60:100]+++ Great Inclination
 	[PERSONALITY:IMMODERATION:5:55:100]++  Moderate Inclination
@@ -41,7 +41,7 @@ creature_civ_dwarf_mfork
 	[PERSONALITY:WASTEFULNESS:0:45:100]-   Minor Aversion
 	[PERSONALITY:DISCORD:0:45:95]--  Moderate Aversion
 	[PERSONALITY:FRIENDLINESS:5:55:100]++  Moderate Inclination
-	[PERSONALITY:POLITENESS:0:55:100]+   Minor Inclination
+	[PERSONALITY:POLITENESS:0:45:100]-   Minor Aversion
 	[PERSONALITY:DISDAIN_ADVICE:0:55:100]+   Minor Inclination
 	[PERSONALITY:BRAVERY:5:55:100]++  Moderate Inclination
 	[PERSONALITY:CONFIDENCE:0:55:100]+   Minor Inclination
@@ -54,13 +54,13 @@ creature_civ_dwarf_mfork
 	[PERSONALITY:PRIDE:5:55:85]++  Moderate Inclination  *affects necromancer likelyhood
 	[PERSONALITY:CRUELTY:0:40:85]--- Great Aversion
 	[PERSONALITY:SINGLEMINDED:0:55:100]+   Minor Inclination
-	[PERSONALITY:HOPEFUL:0:55:100]+   Minor Inclination
+	[PERSONALITY:HOPEFUL:0:55:100]+   Minor Inclination  *affects necromancer likelyhood
 	[PERSONALITY:CURIOUS:0:55:100]+   Minor Inclination
 	[PERSONALITY:BASHFUL:0:45:100]-   Minor Aversion
 	[PERSONALITY:PRIVACY:0:55:100]+   Minor Inclination
 	[PERSONALITY:PERFECTIONIST:5:55:100]++  Moderate Inclination
 	[PERSONALITY:CLOSEMINDED:5:55:100]++  Moderate Inclination
-	[PERSONALITY:TOLERANT:0:45:95]--  Moderate Aversion
+	[PERSONALITY:TOLERANT:0:45:100]-   Minor Aversion
 	[PERSONALITY:EMOTIONALLY_OBSESSIVE:0:45:100]-   Minor Aversion
 	[PERSONALITY:SWAYED_BY_EMOTIONS:0:55:100]+   Minor Inclination
 	[PERSONALITY:ALTRUISM:0:55:100]+   Minor Inclination
@@ -70,8 +70,8 @@ creature_civ_dwarf_mfork
 	[PERSONALITY:TRUST:0:45:100]-   Minor Aversion
 	[PERSONALITY:GREGARIOUSNESS:5:55:100]++  Moderate Inclination
 	[PERSONALITY:ASSERTIVENESS:0:55:100]+   Minor Inclination
-	[PERSONALITY:ACTIVITY_LEVEL:0:55:100]+   Minor Inclination
-	[PERSONALITY:EXCITEMENT_SEEKING:0:45:100]-   Minor Aversion
+	[PERSONALITY:ACTIVITY_LEVEL:5:55:100]++  Moderate Inclination
+	[PERSONALITY:EXCITEMENT_SEEKING:0:55:100]+   Minor Inclination
 	[PERSONALITY:IMAGINATION:0:55:100]+   Minor Inclination
 	[PERSONALITY:ABSTRACT_INCLINED:0:45:100]-   Minor Aversion
 	[PERSONALITY:ART_INCLINED:5:55:100]++  Moderate Inclination
@@ -182,10 +182,10 @@ creature_civ_dwarf_mfork
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
 	[BODY_SIZE:15:0:60000]{:12
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:85:95:98:100:102:105:115]{:75:95:98:100:102:105:125     Revision: dwarves' height varies not by much.}
-		[APP_MOD_IMPORTANCE:500]
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:130]{:75:95:98:100:102:105:125  Revision: dwarves' broadness varies more.}
-		[APP_MOD_IMPORTANCE:550]{:500  Revision: broadness is more important than the other descriptors.}
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:85:95:98:100:102:105:115]{:75:95:98:100:102:105:125     Revision: dwarves' height varies less.}
+		[APP_MOD_IMPORTANCE:480]{:500
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:85:95:98:100:102:105:135]{:75:95:98:100:102:105:125  Revision: dwarves' broadness varies more.}
+		[APP_MOD_IMPORTANCE:520]{:500  Revision: broadness is more important than the other descriptors.}
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
 			[APP_MOD_NOUN:eyes:PLURAL]
@@ -229,34 +229,32 @@ creature_civ_dwarf_mfork
 			[APP_MOD_NOUN:teeth:PLURAL]
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
 	[SET_BP_GROUP:BY_CATEGORY:SKULL]
-		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:70:90:100:110:130:200]
 	[SET_BP_GROUP:BY_CATEGORY:THROAT]
 		[BP_APPEARANCE_MODIFIER:DEEP_VOICE:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:RASPY_VOICE:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:RASPY_VOICE:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 	[SET_BP_GROUP:BY_CATEGORY:HEAD]
 		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-			[APP_MOD_IMPORTANCE:800]{:700  Revision: broadness is more important than the other descriptors.}
+			[APP_MOD_IMPORTANCE:735]{:700  Revision: broadness is more important than the other descriptors.}
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
-			[APP_MOD_IMPORTANCE:700]
+			[APP_MOD_IMPORTANCE:665]{:700
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
 	[MAXAGE:150:200]{:150:170
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
@@ -275,10 +273,10 @@ creature_civ_dwarf_mfork
 	{  removed latching  }
 	[BABY:1]
 	[GENERAL_BABY_NAME:dwarven baby:dwarven babies]
-	[BABYNAME:dwarven baby:dwarven babies]
+	--BABYNAME:dwarven baby:dwarven babies]
 	[CHILD:16]{:18
 	[GENERAL_CHILD_NAME:dwarven child:dwarven children]
-	[CHILDNAME:dwarven child:dwarven children]
+	--CHILDNAME:dwarven child:dwarven children]
 	[EQUIPS]
 	--CAVE_ADAPT] moved
 	[DIURNAL]
@@ -317,21 +315,34 @@ creature_civ_dwarf_mfork
 	[PROFESSION_NAME:CRIMINAL:exile:exiles]
 	[PROFESSION_NAME:STANDARD:dweller:dwellers]
 	[PROFESSION_NAME:RECRUIT:recruit:recruit]
-    [SKILL_RATE:BLOWGUN:75:16:32:32]{+                Revision: dwarves invented boomsticks and are familiar with them; slower rust and learn much faster than most other races.}
     [SKILL_LEARN_RATE:LYING:25]{+                     Revision: dwarves value truth and honesty; lying is learned -75% slower.}
     [SKILL_LEARN_RATE:INTRIGUE:25]{+                  Revision: dwarves value truth and honesty; intrigue is learned -75% slower.}
     [SKILL_RATE:MINING:90:NONE:NONE:NONE]{+           Revision: dwarves learn mining much faster and dont rust.}   
-	[SKILL_LEARN_RATE:MASONRY:75]{+                   Revision: dwarves learn masonry skills much faster.}  
+	[SKILL_LEARN_RATE:MASONRY:75]{+                   Revision: dwarves learn these skills faster than other races do.}  
 	[SKILL_LEARN_RATE:STONECRAFT:75]{+
 	[SKILL_LEARN_RATE:ENGRAVE_STONE:75]{+
-	[SKILL_LEARN_RATE:SMELT:75]{+                     Revision: dwarves learn smithing skills much faster.}
+	[SKILL_LEARN_RATE:SMELT:75]{+
 	[SKILL_LEARN_RATE:FORGE_WEAPON:75]{+
 	[SKILL_LEARN_RATE:FORGE_ARMOR:75]{+
 	[SKILL_LEARN_RATE:FORGE_FURNITURE:75]{+
 	[SKILL_LEARN_RATE:METALCRAFT:75]{+
-	[SKILL_LEARN_RATE:CUTGEM:75]{+                    Revision: dwarves learn jewelcrafting skills much faster.}
+	[SKILL_LEARN_RATE:CUTGEM:75]{+
 	[SKILL_LEARN_RATE:ENCRUSTGEM:75]{+
-    [SKILL_LEARN_RATE:BREWING:50]{+                   Revision: dwarves learn brewing skills much faster.}
+	[SKILL_LEARN_RATE:CUT_STONE:75]{+
+	[SKILL_LEARN_RATE:CARVE_STONE:75]{+
+	[SKILL_LEARN_RATE:BREWING:75]{+
+    [SKILL_LEARN_RATE:AXE:75]{+
+	[SKILL_LEARN_RATE:MACE:75]{+
+	[SKILL_LEARN_RATE:HAMMER:75]{+
+	[SKILL_LEARN_RATE:CROSSBOW:75]{+
+	[SKILL_LEARN_RATE:BLOWGUN:75]{+
+	[SKILL_LEARN_RATE:SHIELD:75]{+
+	[SKILL_LEARN_RATE:ARMOR:75]{+
+	[SKILL_LEARN_RATE:SIEGEOPERATE:75]{+
+	[SKILL_LEARN_RATE:MILLING:75]{+
+	[SKILL_LEARN_RATE:POETRY:75]{+
+	[SKILL_LEARN_RATE:SPEAKING:75]{+
+	[SKILL_LEARN_RATE:SING:75]{+
     [SWIMS_LEARNED]
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]
@@ -360,8 +371,8 @@ creature_civ_dwarf_mfork
 	[SPOUSE_CONVERSION_TARGET]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:15:35:50]{+  dwarven women are more selective of their partners due to there being so many men.}
-		[ORIENTATION:FEMALE:75:20:5]{+}
+		[ORIENTATION:MALE:15:25:60]{+  dwarven women are more selective of their partners due to there being so many men.}
+		[ORIENTATION:FEMALE:85:10:5]{+}
 		[BABYNAME:dwarf baby girl:dwarven baby girls]{+}
 		[CHILDNAME:dwarf girl:dwarven girls]{+}
 		[DESCRIPTION:A short, sturdy woman fond of drink and industry.  She has a strong back and hairy arms, and her skin feels rougher than you'd expect.  A longing to explore deep under the earth inspires her.]{+}
@@ -370,8 +381,8 @@ creature_civ_dwarf_mfork
 		[MULTIPLE_LITTER_RARE]
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:MALE:75:20:5]{+}
-		[ORIENTATION:FEMALE:2:18:80]{+  dwarven men are more often looking for a partner due to them outnumbering the women.}
+		[ORIENTATION:MALE:85:10:5]{+}
+		[ORIENTATION:FEMALE:3:22:75]{+  dwarven men are more often looking for a partner due to them outnumbering the women.}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[BABYNAME:dwarf baby boy:dwarven baby boys]{+}
@@ -1495,7 +1506,7 @@ creature_civ_dwarf_mfork
 				--APP_MOD_RATE:1:DAILY:0:1000:0:0:NO_END]
 				--APP_MOD_NOUN:nails:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
-	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:10:DARK_TAN:1:ECRU:10:PALE_BROWN:10:PALE_CHESTNUT:10:PALE_PINK:10:PEACH:10:PINK:10:RAW_UMBER:1:SEPIA:1:TAN:10:TAUPE_PALE:1:TAUPE_SANDY:1]{+  Revision: dwarves are more likely to have pale skin due to lack of sunlight.}
+	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:5:DARK_TAN:1:ECRU:5:PALE_BROWN:5:PALE_CHESTNUT:5:PALE_PINK:5:PEACH:5:PINK:5:RAW_UMBER:1:SEPIA:1:TAN:5:TAUPE_PALE:1:TAUPE_SANDY:1]{+  Revision: dwarves are more likely to have pale skin due to lack of sunlight.}
 			[TLCM_NOUN:skin:SINGULAR]
 		[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
 			[APP_MOD_RATE:1:YEARLY:0:100:60:0:NO_END]

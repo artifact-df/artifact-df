@@ -15,7 +15,6 @@ tweaks={
     },
     TAIL={
         body=function(body_str,options)
-        --UPGRADE
             if find_in_array_part(body_str,"RCP_TAIL") then 
                 remove_item(body_str,"RCP_TAIL")
                 if one_in(2) then
@@ -43,32 +42,27 @@ tweaks={
             end
         end,
         has_desc_func=function(options)
-            local tail_num,thick_tail=1,false
-            --above is for graphics, not implemented yet
             local str=""
             if find_in_array_part(options.body_string,"RCP_2_TAILS") then
                 str=str.." It has two "
-                tail_num=2
+                options.tail_count=2
             elseif find_in_array_part(options.body_string,"RCP_3_TAILS") then
                 str=str.." It has three "
-                tail_num=3
+                options.tail_count=3
             else
                 str=str.." It has a "
             end
             str=str..pick_random({
-                "long, hanging",--thick_tail=true
-                "long, straight",--thick_tail=true
+                "long, hanging",
+                "long, straight",
                 "long, curly",
-                "short",--tail_num=0
-                "stubby",--tail_num=0
+                "short",
+                "stubby",
                 "narrow"
             })
 
-            if tail_num>1 then str=str.." tails"
+            if options.tail_count>1 then str=str.." tails"
             else str=str.." tail" end
-            --[[
-            proc_graphics stuff that was commented out
-            ]]
             return str
         end
     },
@@ -120,19 +114,16 @@ tweaks={
         body=function(body_str,options)
             local amt=trandom(4)+1
             add_unique(body_str,"RCP_"..tostring(amt).."_HEAD_HORN"..((amt>1) and "S" or ""))
+            options.pcg_layering_modifier.horn_count=amt
         end,
         has_desc_func=function(options)
-            local horn_num=1
             local str=" It has "
-            if find_in_array_part(options.body_string,"RCP_2_HEAD_HORNS") then
+            if options.pcg_layering_modifier.horn_count==2 then
                 str=str.."two "
-                horn_num=2
-            elseif find_in_array_part(options.body_string,"RCP_2_HEAD_HORNS") then
+            elseif options.pcg_layering_modifier.horn_count==3 then
                 str=str.."three "
-                horn_num=3
-            elseif find_in_array_part(options.body_string,"RCP_2_HEAD_HORNS") then
+            elseif options.pcg_layering_modifier.horn_count==4 then
                 str=str.."four "
-                horn_num=4
             else
                 str=str.."a "
             end
@@ -144,12 +135,11 @@ tweaks={
                 function() options.pcg_layering_modifier.HORN="BROAD" return "broad" end,
                 function() options.pcg_layering_modifier.HORN="LONG_STRAIGHT" return "long, straight" end,
             })()
-            if horn_num>1 then
+            if options.pcg_layering_modifier.horn_count>1 then
                 str=str.." horns"
             else
                 str=str.." horn"
             end
-            options.pcg_layering_modifier.horn_count=horn_num
             return str
         end,
         flavor_adj={"skinless"}
@@ -383,11 +373,13 @@ tweaks={
             lines[#lines+1]="[BODY_DETAIL_PLAN:MONSTER_MATERIALS]"
             lines[#lines+1]="[REMOVE_MATERIAL:HAIR]"
             lines[#lines+1]="[REMOVE_MATERIAL:SKIN]"
+            lines[#lines+1]="[REMOVE_MATERIAL:BONE]"
             lines[#lines+1]="[USE_MATERIAL_TEMPLATE:CHITIN:MONSTER_CHITIN_TEMPLATE]"
             lines[#lines+1]="[BODY_DETAIL_PLAN:MONSTER_TISSUES]"
             lines[#lines+1]="[REMOVE_TISSUE:HAIR]"
+            lines[#lines+1]="[REMOVE_TISSUE:SKIN]"
             lines[#lines+1]="[REMOVE_TISSUE:BONE]"
-            lines[#lines+1]="[USE_TISSUE_TEMPLATE:CHITIN:CHITIN_TEMPLATE]"
+            lines[#lines+1]="[USE_TISSUE_TEMPLATE:CHITIN:MONSTER_TISSUE_CHITIN_TEMPLATE]"
         end,
         color_surf="CHITIN",
         adj="armored",

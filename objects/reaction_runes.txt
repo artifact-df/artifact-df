@@ -1,5 +1,9 @@
 reaction_runes
 
+  // base from fantastic fantasy fortress - edited by zey //
+  
+  rune weapons can only be made by dwarves and are not present during worldgen - +100% to weapon velocities
+
 [OBJECT:REACTION]
 
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_AXE_BATTLE]
@@ -12,10 +16,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_HAMMER_WAR]
 	[NAME:strike runes upon a war hammer]
 	[BUILDING:RUNESMITH:NONE]
@@ -26,10 +30,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_SWORD_SHORT]
 	[NAME:strike runes upon a short sword]
 	[BUILDING:RUNESMITH:NONE]
@@ -40,10 +44,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_SPEAR]
 	[NAME:strike runes upon a spear]
 	[BUILDING:RUNESMITH:NONE]
@@ -54,10 +58,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_MACE]
 	[NAME:strike runes upon a mace]
 	[BUILDING:RUNESMITH:NONE]
@@ -68,10 +72,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_PICK]
 	[NAME:strike runes upon a pick]
 	[BUILDING:RUNESMITH:NONE]
@@ -82,10 +86,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_PIKE]
 	[NAME:strike runes upon a pike]
 	[BUILDING:RUNESMITH:NONE]
@@ -96,10 +100,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_HALBERD]
 	[NAME:strike runes upon a halberd]
 	[BUILDING:RUNESMITH:NONE]
@@ -110,10 +114,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_SWORD_2H]
 	[NAME:strike runes upon a greatsword]
 	[BUILDING:RUNESMITH:NONE]
@@ -124,10 +128,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_SWORD_LONG]
 	[NAME:strike runes upon a longsword]
 	[BUILDING:RUNESMITH:NONE]
@@ -138,24 +142,24 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_MAUL]
 	[NAME:strike runes upon a maul]
 	[BUILDING:RUNESMITH:NONE]
-	[REAGENT:maul:1:WEAPON:ITEM_WEAPON_MAUL]:METAL:NONE]
+	[REAGENT:maul:1:WEAPON:ITEM_WEAPON_MAUL:METAL:NONE]
 	    [METAL_ITEM_MATERIAL][REACTION_CLASS:EXOTIC_METAL][CAN_USE_ARTIFACT]
 	[PRODUCT:100:1:WEAPON:ITEM_WEAPON_MAUL_RUNEFORGED_FFF:GET_MATERIAL_FROM_REAGENT:maul:NONE]
 		[TRANSFER_ARTIFACT_STATUS]
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_AXE_GREAT]
 	[NAME:strike runes upon a great axe]
 	[BUILDING:RUNESMITH:NONE]
@@ -166,10 +170,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_DAGGER_LARGE]
 	[NAME:strike runes upon a dagger]
 	[BUILDING:RUNESMITH:NONE]
@@ -180,10 +184,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_FLAIL]
 	[NAME:strike runes upon a flail]
 	[BUILDING:RUNESMITH:NONE]
@@ -194,10 +198,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_MORNINGSTAR]
 	[NAME:strike runes upon a morningstar]
 	[BUILDING:RUNESMITH:NONE]
@@ -208,10 +212,10 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]
-	
+
 [REACTION:MAKE_RUNIC_ITEM_WEAPON_SCIMITAR]
 	[NAME:strike runes upon a scimitar]
 	[BUILDING:RUNESMITH:NONE]
@@ -222,6 +226,6 @@ reaction_runes
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:FORGE_WEAPON]
-		[SKILL_ROLL_RANGE:1:9]
-		[SKILL_IP:450] 15x experience
+		[SKILL_ROLL_RANGE:1:9]  worse quality for low skilled crafters but much better for highly skilled crafters
+		[SKILL_IP:300] 10x experience
 	[FUEL]

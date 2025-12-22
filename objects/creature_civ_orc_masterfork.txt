@@ -6,7 +6,7 @@ creature_civ_orc_masterwork
     [DESCRIPTION:A large green-skinned humanoid with large, jutting tusks.  Barbaric and primative, most orcs live in raiding camps and constantly war with their neighbors.]
 	[NAME:orc:orcs:orcish]
 	[CASTE_NAME:orc:orcs:orcish]
-	[SKILL_RATES:50:10:18:18]{+                Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
+	[SKILL_RATES:50:9:17:17]{+                Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
 	[CREATURE_TILE:'O'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:153]
 	[CREATURE_CLASS:MAMMAL]
@@ -176,7 +176,7 @@ creature_civ_orc_masterwork
 	[MENT_ATT_RANGE:FOCUS:0:400:600:750:800:900:1100]		                --
 	[BODY_SIZE:0:0:4000]
 	[BODY_SIZE:1:168:17500]
-	[BODY_SIZE:25:0:70000]
+	[BODY_SIZE:25:0:72000]
 	[BODY_SIZE:100:0:90000]
 	[PRONE_TO_RAGE:10]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
@@ -235,13 +235,13 @@ creature_civ_orc_masterwork
 		[BP_APPEARANCE_MODIFIER:BROADNESS:50:70:90:100:110:130:150]
 			[APP_MOD_NOUN:tusks:PLURAL]
 	[SET_BP_GROUP:BY_CATEGORY:SKULL]
-		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:70:90:100:110:130:200]
 	[SET_BP_GROUP:BY_CATEGORY:THROAT]
 		[BP_APPEARANCE_MODIFIER:DEEP_VOICE:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:RASPY_VOICE:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:RASPY_VOICE:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 	[SET_BP_GROUP:BY_CATEGORY:HEAD]
 		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:800]
@@ -253,16 +253,14 @@ creature_civ_orc_masterwork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:800]{+  reduced velocity by 20%.}
+		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
@@ -273,7 +271,7 @@ creature_civ_orc_masterwork
 		[ATTACK_VERB:bite:bites]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:700]{+  reduced velocity by 30%.}
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:5]{:3:3  revision: made civ biting slower.}
 		[ATTACK_PRIORITY:SECOND]
@@ -371,15 +369,15 @@ from Splint's Urks:
     [PROFESSION_NAME:RECRUIT:grunt:grunts]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:0:0:1]
-		[ORIENTATION:FEMALE:1:0:0]
+		[ORIENTATION:MALE:5:0:95]
+		[ORIENTATION:FEMALE:95:0:5]
 		[POP_RATIO:1]
-		[MULTIPLE_LITTER_RARE]
+		--MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:FEMALE:0:0:1]
-		[ORIENTATION:MALE:1:0:0]
+		[ORIENTATION:FEMALE:5:0:95]
+		[ORIENTATION:MALE:95:0:5]
 		[POP_RATIO:3]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
