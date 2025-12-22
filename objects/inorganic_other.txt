@@ -1,4 +1,4 @@
-inorganic_other_mfork
+inorganic_other
 
 [OBJECT:INORGANIC]
 

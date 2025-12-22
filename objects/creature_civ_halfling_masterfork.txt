@@ -7,7 +7,7 @@ creature_civ_halfling_chp
 	[NAME:halfling:halflings:halfling]
 	[CASTE_NAME:halfling:halflings:halfling]
 	[OUTSIDER_CONTROLLABLE]
-	[SKILL_RATES:50:10:18:18]{+                Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
+	[SKILL_RATES:50:9:17:17]{+                Revision: intelligent mortal creatures learn all skills at 50% rate but rust slower.}
 	[CREATURE_TILE:'u'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:129]
 	[CREATURE_CLASS:MAMMAL]
@@ -213,6 +213,7 @@ creature_civ_halfling_chp
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]

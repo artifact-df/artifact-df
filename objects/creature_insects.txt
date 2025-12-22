@@ -30,6 +30,7 @@ creature_insects
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
 	[NOBONES]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -198,6 +199,7 @@ creature_insects
 	[NOT_BUTCHERABLE]
 	[NOBONES]
 	[CREATURE_CLASS:EDIBLE_GROUND_BUG]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -323,6 +325,7 @@ creature_insects
 	[NOT_BUTCHERABLE]
 	[NOBONES]
 	[CREATURE_CLASS:EDIBLE_GROUND_BUG]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -454,6 +457,7 @@ creature_insects
 	[BODY_SIZE:0:0:1]
 	[MAXAGE:1:1]
 	[NOBONES]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[CASTE:WORKER]
 		[CASTE_NAME:worker ant:worker ants:worker ant]
 		[DESCRIPTION:A tiny digging insect found in huge colonies comprised of many physical castes, some of which have poison bites.  The colony overwhelms its enemies with swarms.  It forages for food and maintains the colony.]{+}
@@ -529,6 +533,7 @@ creature_insects
 	[NOT_BUTCHERABLE]
 	[NOBONES]
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
 	[BODY_DETAIL_PLAN:EXOSKELETON_TISSUE_LAYERS:CHITIN:FAT:MUSCLE]
@@ -653,6 +658,7 @@ creature_insects
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
 	[NOBONES]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -777,6 +783,7 @@ creature_insects
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
 	[NOBONES]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -909,6 +916,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[NO_SLEEP]
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[USE_MATERIAL_TEMPLATE:WAX:WAX_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:honey bee wax]
 		[STATE_NAME_ADJ:SOLID_PRESSED:honey bee wax cake]
@@ -944,6 +952,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 		[STATE_NAME_ADJ:ALL_SOLID:frozen mead]
 		[STATE_NAME_ADJ:LIQUID:mead]
 		[STATE_NAME_ADJ:GAS:boiling mead]
+		[MATERIAL_VALUE:2]
 		[PREFIX:NONE]
 	[USE_MATERIAL_TEMPLATE:VENOM:CREATURE_EXTRACT_TEMPLATE]
 		[STATE_NAME:ALL_SOLID:frozen honey bee venom]
@@ -1029,6 +1038,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:15]
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[USE_MATERIAL_TEMPLATE:WAX:WAX_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:bumblebee wax]
 		[STATE_NAME_ADJ:SOLID_PRESSED:bumblebee wax cake]
@@ -1063,6 +1073,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 		[STATE_NAME_ADJ:ALL_SOLID:frozen bumblebee mead]
 		[STATE_NAME_ADJ:LIQUID:bumblebee mead]
 		[STATE_NAME_ADJ:GAS:boiling bumblebee mead]
+		[MATERIAL_VALUE:2]
 		[PREFIX:NONE]
 	[USE_MATERIAL_TEMPLATE:VENOM:CREATURE_EXTRACT_TEMPLATE]
 		[STATE_NAME:ALL_SOLID:frozen bumblebee venom]

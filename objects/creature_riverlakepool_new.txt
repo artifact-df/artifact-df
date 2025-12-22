@@ -735,6 +735,7 @@ Leeches were sponsored by the generous contributions of the Bay 12 community.
 	[SWIMS_INNATE]
 	[POPULATION_NUMBER:250:500]
 	[PREFSTRING:feeding habits]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:BASIC_1PARTBODY:BASIC_HEAD:TAIL:HEART:GUTS:BRAIN:MOUTH]{:BASIC_1PARTBODY:BASIC_HEAD:HEART:GUTS:BRAIN:MOUTH Revision: added a tail for the larger variants.}
 	[BODY_DETAIL_PLAN:STANDARD_NOLEATHER_MATERIALS]{:STANDARD_MATERIALS}
 		[REMOVE_MATERIAL:HAIR]

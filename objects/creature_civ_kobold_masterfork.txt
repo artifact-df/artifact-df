@@ -211,6 +211,7 @@ creature_civ_kobold
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]

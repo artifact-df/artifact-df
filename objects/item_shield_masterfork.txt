@@ -1,4 +1,4 @@
-item_armor_shield
+item_shield_masterfork
 
 # // from DPh Krakens' Immaterial Cultures // #
 
@@ -17,8 +17,8 @@ Shield stats by Sver
 [ITEM_SHIELD:ITEM_SHIELD_BUCKLER]
 [NAME:buckler:buckler]
 [ARMORLEVEL:1]  not sure who can use it, needs testing
-[BLOCKCHANCE:17]
-[UPSTEP:0]
+[BLOCKCHANCE:16]
+[UPSTEP:1]
 [MATERIAL_SIZE:3] 1 bar
 
 [ITEM_SHIELD:ITEM_SHIELD_SHIELD]
@@ -31,13 +31,14 @@ Shield stats by Sver
 [ITEM_SHIELD:ITEM_SHIELD_KITE_SPL]
 [NAME:kite shield:kite shields]
 [ARMORLEVEL:2]
-[BLOCKCHANCE:25]
+[BLOCKCHANCE:24]
 [UPSTEP:2]
 [MATERIAL_SIZE:9] 3 bars
 
 [ITEM_SHIELD:ITEM_SHIELD_TOWER_SPL]
 [NAME:tower shield:tower shields]
+[ADJECTIVE:heavy]
 [ARMORLEVEL:3]
-[BLOCKCHANCE:33]
+[BLOCKCHANCE:28]
 [UPSTEP:2]
 [MATERIAL_SIZE:15] 5 bars

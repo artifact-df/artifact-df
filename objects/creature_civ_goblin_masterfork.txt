@@ -224,11 +224,11 @@ creature_civ_goblin_mfork
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
 	[SET_BP_GROUP:BY_CATEGORY:SKULL]
 		[BP_APPEARANCE_MODIFIER:HIGH_CHEEKBONES:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:BROAD_CHIN:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:JUTTING_CHIN:0:70:90:100:110:130:200]
-		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:SQUARE_CHIN:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 	[SET_BP_GROUP:BY_CATEGORY:THROAT]
-		[BP_APPEARANCE_MODIFIER:DEEP_VOICE:0:35:45:50:55:65:100]{:0:70:90:100:110:130:200  Revision: less important values.}
+		[BP_APPEARANCE_MODIFIER:DEEP_VOICE:0:70:90:100:110:130:160]{:0:70:90:100:110:130:200    Revision: less important values.}
 		[BP_APPEARANCE_MODIFIER:RASPY_VOICE:0:70:90:100:110:130:200]
 	[SET_BP_GROUP:BY_CATEGORY:HEAD]
 		[BP_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
@@ -246,6 +246,7 @@ creature_civ_goblin_mfork
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_FLAG_WITH]
@@ -257,7 +258,7 @@ creature_civ_goblin_mfork
 		[ATTACK_VERB:bite:bites]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:700]{+  reduced velocity by 30%.}
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:5]{:3:3  revision: made civ biting slower.}
 		[ATTACK_PRIORITY:SECOND]
@@ -322,16 +323,16 @@ creature_civ_goblin_mfork
 	[PROFESSION_NAME:RECRUIT:skulker:skulkers]{+}
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:0:0:1]{+}
-		[ORIENTATION:FEMALE:1:0:0]{+}
 		[POP_RATIO:1]{+}
+		[ORIENTATION:MALE:15:0:85]{+}
+		[ORIENTATION:FEMALE:95:0:5]{+}
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:FEMALE:0:0:1]{+}
-		[ORIENTATION:MALE:1:0:0]{+}
 		[POP_RATIO:3]{+}
+		[ORIENTATION:FEMALE:5:0:95]{+}
+		[ORIENTATION:MALE:95:0:5]{+}
 		[DESCRIPTION:A medium-sized, cruel man with leathery skin, glowing eyes, sharply-defined features and a lanky body.  He only eats meat and only sleep and distractions from her boredom.  He works with others to dig pits and trenches that connect many towers.  He does not appear to age.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]

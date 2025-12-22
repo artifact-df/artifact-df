@@ -197,6 +197,13 @@ Some intense/negative words that can apply to various conflicts, in addition to 
 	[S_WORD:JUST]
 	[S_WORD:NOBLE]
 	[S_WORD:RIGHTEOUSNESS]
+	[S_WORD:COALITION] +
+	+ expanded dictionary
+	[S_WORD:CRUSADE]
+	[S_WORD:DECEPTION]
+	[S_WORD:BETRAY]
+	[S_WORD:TREASON]
+	[S_WORD:DEFIANCE]
 
 The HEALING sphere uses GOOD and PEACE, doesn't quite fit as well as a purpose-made symbol for hospitals.
 [SYMBOL:MEDICAL]
