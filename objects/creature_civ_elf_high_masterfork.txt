@@ -6,7 +6,6 @@ creature_civ_elf_high_masterfork
 	[DESCRIPTION:A medium-sized creature known for their magical aptitude and court intrigue. It does not appear to age.]
 	[NAME:high elf:high elves:elven]
 	[CASTE_NAME:high elf:high elves:elven]
-	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
 	[CREATURE_TILE:'e'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:137]
 	[CREATURE_CLASS:MAMMAL]
@@ -271,19 +270,29 @@ creature_civ_elf_high_masterfork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
+		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:110]{:100  revision: increased surface area of punches and kicks instead of slowing velocity.}
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1200]{+    Revision: kick velocity increased by 20%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
-	{  removed scratching  }
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1200]{+    Revision: kick velocity increased by 20%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	{ removed scratching }
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:bite:bites]
@@ -291,10 +300,10 @@ creature_civ_elf_high_masterfork
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:3:5]{:3:3  revision: made civ biting slower.}
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
-	{  removed latching  }
+	    { removed latching }
 	[BABY:1]
 	[CHILD:30]{:18
 	[EQUIPS]
@@ -306,6 +315,7 @@ creature_civ_elf_high_masterfork
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2728:2069:1409:675:4000:5700] 13 kph
+	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
 	[SWIMS_LEARNED]
 	[GRASSTRAMPLE:10]
 	--NO_VEGETATION_PERTURB]

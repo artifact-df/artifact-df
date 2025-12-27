@@ -196,7 +196,7 @@ c_variation_masterwork
 		[CV_NEW_TAG:CDI:BP_REQUIRED:BY_CATEGORY:HEAD]
 		[CV_NEW_TAG:CDI:FREE_ACTION]
 		[CV_NEW_TAG:CDI:VERB:reform your body:begins to reform:begin to reform]
-		[CV_NEW_TAG:CDI:WAIT_PERIOD:10]
+		[CV_NEW_TAG:CDI:WAIT_PERIOD:1200]
 
 [CREATURE_VARIATION:REGENERATION_CREATURE]{+  able to regrow limbs.}
 	[CV_NEW_TAG:CAN_DO_INTERACTION:REGENERATE_CREATURE]
@@ -209,7 +209,7 @@ c_variation_masterwork
 		[CV_NEW_TAG:CDI:BP_REQUIRED:BY_CATEGORY:HEAD]
 		[CV_NEW_TAG:CDI:FREE_ACTION]
 		[CV_NEW_TAG:CDI:VERB:heal yourself:begins to heal:begin to heal]
-		[CV_NEW_TAG:CDI:WAIT_PERIOD:10]
+		[CV_NEW_TAG:CDI:WAIT_PERIOD:1200]
 
 [CREATURE_VARIATION:REGENERATION_HYDRA]{+  able to regrow limbs.}	
 	[CV_NEW_TAG:CAN_DO_INTERACTION:REGENERATE_HYDRA]
@@ -222,7 +222,7 @@ c_variation_masterwork
 		[CV_NEW_TAG:CDI:BP_REQUIRED:BY_CATEGORY:HEART]
 		[CV_NEW_TAG:CDI:FREE_ACTION]
 		[CV_NEW_TAG:CDI:VERB:heal yourself:begins to heal rapidly:begin to rapidly heal]
-		[CV_NEW_TAG:CDI:WAIT_PERIOD:10]
+		[CV_NEW_TAG:CDI:WAIT_PERIOD:1200]
 
 [CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]  makes certain creatures highly resistant to non-metal attacks
 	[CV_NEW_TAG:GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]                   0.5x  damage taken from all materials
