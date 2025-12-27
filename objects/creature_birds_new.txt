@@ -444,11 +444,23 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
-		[CV_NEW_TAG:ATTACK_PENETRATION_PERC:100]{+}
-		[CV_NEW_TAG:ATTACK_FLAG_EDGE]{+}
-		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_PENETRATION_PERC:100]{+}
+		[ATTACK_FLAG_EDGE]{+}
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:KICK:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]{+}
+		[ATTACK_FLAG_EDGE]{+}
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]

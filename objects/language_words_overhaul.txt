@@ -11290,9 +11290,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CONFEDERATION]
 	[NOUN:confederation:confederations]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[OF_NOUN_SING]
+		FRONT_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:federal] +
@@ -11457,9 +11460,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CONFEDERACY]
 	[NOUN:confederacy:confederacies]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[OF_NOUN_SING]
+		FRONT_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:confederate:confederates:confederated:confederated:confederating]
@@ -13129,6 +13135,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:nation:nations]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		FRONT_COMPOUND_NOUN_PLUR -
 		[REAR_COMPOUND_NOUN_PLUR]
@@ -13212,12 +13219,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GUILD]
 	[NOUN:guild:guilds]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		FRONT_COMPOUND_NOUN_PLUR -
+		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 
 [WORD:MERCHANT]
 	[NOUN:merchant:merchants]
@@ -13229,17 +13238,20 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:mercantile] +
-		[ADJ_DIST:2] +
+		[ADJ_DIST:4] +
+		[FRONT_COMPOUND_ADJ] +
+		[THE_NOUN_SING] +
+		[FRONT_COMPOUND_NOUN_SING] +
 
 [WORD:TRADE]
 	[NOUN:trade:trades]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
-		[THE_NOUN_SING]
-		[OF_NOUN_SING]
+		THE_NOUN_SING -
+		OF_NOUN_SING -
 		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[VERB:trade:trades:traded:traded:trading]
 		[STANDARD_VERB]
 
@@ -15967,10 +15979,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CITY]
 	[NOUN:city:cities]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		FRONT_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
+		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:metropolitan] +
 		[ADJ_DIST:3]
@@ -18710,9 +18725,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:league:leagues]
 		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
+		FRONT_COMPOUND_NOUN_PLUR -
 		[REAR_COMPOUND_NOUN_PLUR]
-		OF_NOUN_PLUR -
+		[THE_NOUN_PLUR]
+		[OF_NOUN_PLUR]
 	[ADJ:liege] +
 		[ADJ_DIST:2] +
 		[REAR_COMPOUND_ADJ] +
@@ -18945,6 +18963,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 		[OF_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_SING] +
+		[FRONT_COMPOUND_NOUN_PLUR] +
+		[REAR_COMPOUND_NOUN_PLUR] +
+		[THE_NOUN_PLUR] +
 	[VERB:domineer:domineers:domineered:domineered:domineering] +
 
 [WORD:GRASP]
@@ -19314,8 +19336,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:ALLIANCE]
 	[NOUN:alliance:alliances]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[OF_NOUN_SING]
+		FRONT_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
+		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
 [WORD:ALLEGIANCE]

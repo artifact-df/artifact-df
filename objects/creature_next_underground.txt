@@ -420,7 +420,17 @@ creature_next_underground
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -713,7 +723,17 @@ creature_next_underground
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -1566,7 +1586,17 @@ creature_next_underground
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -2238,12 +2268,11 @@ creature_next_underground
 			[APP_MOD_IMPORTANCE:1000]{+
 			[APP_MOD_NOUN:pointy teeth:PLURAL]{+
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]{+
-	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+  Revision: a powerful edged biting attack.}
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:chomp:chomps]{:bite:bites
-		[ATTACK_CONTACT_PERC:85]{:100      -15% }
+		[ATTACK_CONTACT_PERC:90]{:100
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1100]{+  +10% }
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -2251,12 +2280,11 @@ creature_next_underground
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]{  Revision: a powerful edged scratching attack.}
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:claw:claws]{:scratch:scratches
-		[ATTACK_CONTACT_PERC:85]{:100      -15% }
+		[ATTACK_CONTACT_PERC:90]{:100
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1100]{+  +10% }
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_PRIORITY:MAIN]
 	[APPLY_CREATURE_VARIATION:TAIL_ATTACK]{+ tail slap attack.}
 	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[ALL_ACTIVE]
@@ -2377,7 +2405,17 @@ creature_next_underground
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -2485,7 +2523,17 @@ creature_next_underground
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -2814,7 +2862,17 @@ creature_next_underground
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]

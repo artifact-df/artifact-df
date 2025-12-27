@@ -201,7 +201,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:1]
 [METAL_ARMOR_LEVELS]
 [UBSTEP:0]
-[LBSTEP:1]  protects hips
+[LBSTEP:1] protects the hips
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:100]
@@ -219,8 +219,8 @@ squamous's notes on armor spawning:
 [PREPLURAL:suits of]
 [ARMORLEVEL:1]
 [METAL_ARMOR_LEVELS]
-[UBSTEP:2]
-[LBSTEP:2]
+[UBSTEP:1] protects the neck
+[LBSTEP:1] protects the hips
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:200]
