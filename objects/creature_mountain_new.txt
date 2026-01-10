@@ -94,7 +94,7 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small, predatory, and weasel-like creature, stocky and powerful with short legs, a long snout, a bushy tail, and long, shaggy fur.  He hunts alone, sometimes viciously.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
@@ -271,7 +271,7 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 		[DESCRIPTION:A tiny, fluffy rodent with large, round ears and a fluffy tail.  He has short forelimbs and, long, muscular hind legs.  He dwells in the hollow cracks of rocks and lives high in the mountains.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]

@@ -11,7 +11,7 @@ creature_large_temperate
 	[CREATURE_CLASS:MAMMAL]
 	[NATURAL]
 	[PETVALUE:520]{:500
-	[PET]
+	[PET_EXOTIC]--PET]
 	[TRAINABLE]
 	[MOUNT_EXOTIC]
 	[LARGE_ROAMING][FREQUENCY:4]{:2
@@ -119,7 +119,7 @@ creature_large_temperate
 		[DESCRIPTION:A huge, shaggy, and stocky creature with long claws, a pointy muzzle, small round ears, and a hump on his shoulders.  Generally calm, he has a fierce temper if his family is threatened.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -134,7 +134,7 @@ creature_large_temperate
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BEAR_GRIZZLY_MAN]
 	[COPY_TAGS_FROM:BEAR_GRIZZLY]
@@ -214,7 +214,7 @@ creature_large_temperate
 	[CREATURE_TILE:'B'][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:300]
-	[PET]
+	[PET_EXOTIC]--PET]
 	[NATURAL]
 	[TRAINABLE]{+}
 	[LARGE_ROAMING][FREQUENCY:8]{:4
@@ -323,7 +323,7 @@ creature_large_temperate
 		[DESCRIPTION:A large and shaggy creature found in temperate woodland.  He has long claws, large ears, and a pointy muzzle.  He sates his large appetite with berries but sometimes steals carcasses from other hunters.  Normally docile, he can be ferocious when provoked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -338,7 +338,7 @@ creature_large_temperate
 		[MULTIPLY_VALUE:2]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BEAR_BLACK_MAN]
 	[COPY_TAGS_FROM:BEAR_BLACK]
@@ -453,7 +453,7 @@ creature_large_temperate
 		[CASTE_NAME:stag:stags:stag]{+}
 		[DESCRIPTION:A gentle, medium-sized forest creature that wanders the forest and startles easily.  He jumps and runs on long, powerful, hooved legs.  His large antlers grow back yearly.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_ANTLER]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
@@ -539,7 +539,7 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:DEER_MAN]
 	[COPY_TAGS_FROM:DEER]
@@ -698,7 +698,7 @@ creature_large_temperate
 		[DESCRIPTION:A small and clever canine that wanders temperate forest.  He has large ears, a pointy snout, and a bushy tail.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -713,7 +713,7 @@ creature_large_temperate
 		[MULTIPLY_VALUE:4]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:FOX_MAN]
 	[COPY_TAGS_FROM:FOX]
@@ -878,7 +878,7 @@ creature_large_temperate
 		[DESCRIPTION:A small and curious bandit-masked omnivore with a striped tail, nimble front paws, and a curious nature.  He lives in the forest but can thrive in civilization as a pest by stealing food and rummaging in garbage each night.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -891,7 +891,7 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:RACCOON_MAN]
 	[COPY_TAGS_FROM:RACCOON]
@@ -1050,7 +1050,7 @@ creature_large_temperate
 		[DESCRIPTION:A medium-sized monkey that forages for roots and insects.  He lives with a large, hierarchical group in wood and grassland.  In civilized areas they can become pests by stealing and begging for scraps.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1063,7 +1063,7 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:MACAQUE_RHESUS_MAN]
 	[COPY_TAGS_FROM:MACAQUE_RHESUS]
@@ -1261,7 +1261,7 @@ creature_large_temperate
 		[DESCRIPTION:A large, tawny cat that lives by himself.  He hides in dense vegetation, waiting to ambush his prey.  He has a long tail, powerful paws, excellent vision, and a stealthy nature.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -1276,7 +1276,7 @@ creature_large_temperate
 		[MULTIPLY_VALUE:2]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:COUGAR_MAN]
 	[COPY_TAGS_FROM:COUGAR]
@@ -1458,7 +1458,7 @@ creature_large_temperate
 		[DESCRIPTION:A large and territorial canine that hunts and lives with his pack.  He has a shaggy, wagging tail and pointy ears.  His echoing howls can be heard from far away.  Cautious and wary, he rarely stays long in one place.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1495,7 +1495,7 @@ creature_large_temperate
 		[MULTIPLY_VALUE:2]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:WOLF_MAN]
 	[COPY_TAGS_FROM:WOLF]
@@ -1660,7 +1660,7 @@ creature_large_temperate
 		[DESCRIPTION:A large, stocky rodent that hides in his burrow; he digs in the ground with powerful arms and thick claws.  He has small, round ears, long incisors, and a bushy tail.  He usually only ventures into the open to eat.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -1673,7 +1673,7 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GROUNDHOG_MAN]
 	[COPY_TAGS_FROM:GROUNDHOG]
@@ -1849,7 +1849,7 @@ creature_large_temperate
 		[MALE]
 		[DESCRIPTION:A large, territorial reptile with a dangerous bite and a thick tail.  He swims alone in rivers, swamps, and marshland, watching for his next meal.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{:SCALE
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1861,7 +1861,7 @@ creature_large_temperate
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:ALLIGATOR_MAN]
 	[COPY_TAGS_FROM:ALLIGATOR]
@@ -2030,7 +2030,7 @@ creature_large_temperate
 		[MALE]
 		[DESCRIPTION:A medium-sized, red-faced bird that flies high overhead looking for carrion.  He has a featherless head, broad tail feathers, and a strong, flesh-tearing beak.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2043,7 +2043,7 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BUZZARD_MAN]
 	[COPY_TAGS_FROM:BIRD_BUZZARD]
@@ -2214,7 +2214,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A large plant-eating bear with a striking coat of shaggy black and white fur.  Lazy and solitary, he spends much of his time sitting and eating great quantities of bamboo.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2247,7 +2247,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 		[MULTIPLY_VALUE:2]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:PANDA, GIGANTIC]
 	[COPY_TAGS_FROM:PANDA]
@@ -2439,7 +2439,7 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A medium-sized, docile rodent with a heavy, barrel-shaped body, small, round ears, and a short, rounded snout.  He spends as much time in the water as he spends on land.  He barks when alarmed, warning his herd.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:LIGHT_BROWN:1]
@@ -2454,7 +2454,7 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 		[MULTIPLY_VALUE:2]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:CAPYBARA, GIANT]
 	[COPY_TAGS_FROM:CAPYBARA]
@@ -2626,7 +2626,7 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[CASTE_NAME:badger boar:badger boars:badger boar]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
@@ -2652,7 +2652,7 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BADGER MAN]
 	[COPY_TAGS_FROM:BADGER]
@@ -2801,7 +2801,7 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 		[BODY_SIZE:1:0:262500]
 		[BODY_SIZE:2:0:525000]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 	 [ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_FRONT]{+    Revision: hooved animals should kick much harder.}
 		[ATTACK_SKILL:STANCE_STRIKE]
@@ -2873,7 +2873,7 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:MOOSE MAN]
 	[COPY_TAGS_FROM:MOOSE]
@@ -3068,7 +3068,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[CASTE_NAME:red panda boar:red panda boars:red panda boar]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
@@ -3094,7 +3094,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:RED PANDA MAN]
 	[COPY_TAGS_FROM:RED PANDA]

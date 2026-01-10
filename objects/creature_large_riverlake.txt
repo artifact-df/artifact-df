@@ -95,7 +95,7 @@ creature_large_riverlake
 		[DESCRIPTION:A huge, rotund, and hairless mammal that swims and bathes in the river and feeds on plants.  He has a barrel-shaped torso and a wide-opening mouth with long tusks.  He can be violent and aggressive and is best left alone.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -254,7 +254,7 @@ creature_large_riverlake
 		[MALE]
 		[DESCRIPTION:A medium-sized, ray-finned fish with a long snout and hardened, protective scales.  He swims in lakes and streams and hunts with needle-like teeth.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -345,7 +345,7 @@ creature_large_riverlake
 		[MALE]
 		[DESCRIPTION:A medium-sized, oily fish that swims in lakes and streams.  He has large scales and long tendrils on each side of his jaw.  He lurks in groups near the river bed; he roots about in the mud and clouds the water as he thrashes.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -436,7 +436,7 @@ creature_large_riverlake
 		[MALE]
 		[DESCRIPTION:A medium-sized, predatory fish that swims in lakes and streams.  He tears into his prey with large, interlocking interlocking teeth.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -528,7 +528,7 @@ creature_large_riverlake
 		[MALE]
 		[DESCRIPTION:A medium-sized green fish that lurks in rivers and lakes and waits for his prey.  He has a long, spotted body and long jaws with sharp teeth that point backward.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -666,7 +666,7 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 			[ATTACK_PRIORITY:SECOND]
 			[ATTACK_FLAG_CANLATCH]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]

@@ -116,7 +116,7 @@ Wild boars were sponsored by the generous contributions of the Bay 12 community.
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[CASTE_NAME:wild boar:wild boars:wild boar]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -300,7 +300,7 @@ Coyotes were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A slender, midsized canine with a sly and predatory nature.  He eats almost anything and is quick to adapt to change.  Groups can be heard howling in the night.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:MOTTLED_GRAY_BROWN:1]
@@ -510,7 +510,7 @@ Kangaroos were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A large, long-eared marsupial that hops as he moves and can travel long distances.  He jumps with the help of his long, muscular tail, strong legs, and large feet.  He's well suited to live in harsh, dry places.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1] could be better
@@ -691,7 +691,7 @@ Koalas were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized, tree-dwelling marsupial with a large black nose, floppy ears, and a stout, tailless body.  He spends his time sleeping.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -877,7 +877,7 @@ Adders were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A tiny snake with ridged, patterned scales and a venomous bite.  Quiet and passive, he spends his time sleeping.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:MOTTLED_TAN_DARK_BROWN:1]
@@ -1081,7 +1081,7 @@ Echidnas were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized, spiny, egg-laying mammal with a long snout.  He digs for ants and termites with his short, strong arms and large claws.]{+}
 		undescended, not geldable
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -1258,7 +1258,7 @@ Porcupines were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small rodent covered with long, sharp quills.  He eats grass and leaves and sometimes climbs trees.  He runs backward when threatened, waving his spiny tail about and attacking with his quills.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1425,7 +1425,7 @@ Kingsnakes were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A small, colorful, banded snake that eats other snakes.  He looks like he should be poisonous, so is usually left alone.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_BLACK_WHITE:1]
@@ -1589,7 +1589,7 @@ Gray langurs were sponsored by the generous contributions of the Bay 12 communit
 		[DESCRIPTION:A midsized monkey that lives in the streets of towns as often as he lives elsewhere.  He has a long tail and shaggy hair around his hairless face.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1777,7 +1777,7 @@ Bobcats were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small predatory cat with a short tail, a spotted coat, and large, black-tipped ears.  He has a ruff of fur on the sides of his face.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_ORANGE_BLACK:990:BLACK:10:WHITE:1]
@@ -1949,7 +1949,7 @@ Skunks were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small black and white mammal with a long body and a bushy tail.  He can spray a stinking fluid and is best left alone.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:STRIPES_BLACK_WHITE:1]
@@ -2095,7 +2095,7 @@ Green tree frogs were sponsored by the generous contributions of the Bay 12 comm
 		[MALE]
 		[DESCRIPTION:A tiny, easily frightened amphibian with a loud croak.  He makes for a strange yet easily cared for pet.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -2266,7 +2266,7 @@ Hares were sponsored by the generous contributions of the Bay 12 community.
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[CASTE_NAME:buck hare:buck hares:buck hare]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -2445,7 +2445,7 @@ Rattlesnakes were sponsored by the generous contributions of the Bay 12 communit
 		[MALE]
 		[DESCRIPTION:A small reptile with a tell-tale rattle, patterned scales, and a deadly, venomous bite.  Shy and timid, he bites only when provoked.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_BROWN_WHITE:1]
@@ -2643,7 +2643,7 @@ Weasels were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A tiny, bloodthirsty mammal with a long, slender body, a fluffy tail, and short legs.  He has a long, flexible neck and small, round ears.  He hunts in mouse holes as well as barn yards.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2821,7 +2821,7 @@ Copperhead snakes were sponsored by the generous contributions of the Bay 12 com
 		[MALE]
 		[DESCRIPTION:A tiny, camouflaged, venomous snake found in the woods and swamps.  His scales are patterned except for his copper-red head.  He has a painful bite and is more aggressive than most snakes.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_BRONZE_DARK_BROWN:1]{:COPPER:1}
@@ -3042,7 +3042,7 @@ Ibexes were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized, hooved mammal with long, curved horns.  He nimbly leaps from rock to rock in the mountains, foraging for tasty plants.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -3209,7 +3209,7 @@ Wombats were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized, stocky marsupial with a stubby tail and small ears.  He digs extensive burrows with large claws and sharp teeth, tunneling exits and living space.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -3384,7 +3384,7 @@ Dingoes were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A midsized wild dog that sometimes attacks livestock, often in groups.  Noisy and opportunistic, he roams great distances looking for his next meal.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAUPE_SANDY:1:TAN:1:CHESTNUT:1:BLACK:1:LIGHT_BROWN:1:WHITE:1:DARK_TAN:1:CINNAMON:1]
@@ -3554,7 +3554,7 @@ Coatis were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small, raccoon-like mammal with a slender snout and a fluffy tail.  He sleeps in the trees and travels with his kin as a noisy, riotous pack.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:CHESTNUT:1]
@@ -3722,7 +3722,7 @@ Opossums were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small, hardy, rat-like marsupial with a long snout and a gripping tail.  Sometimes he plays dead to confuse attackers, feigning the smell and appearance of death.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]

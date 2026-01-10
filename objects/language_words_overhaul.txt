@@ -2882,7 +2882,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FIRE]
 	[NOUN:fire:fires]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -2937,7 +2937,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FLAME]
 	[NOUN:flame:flames]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -3319,7 +3319,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		[REAR_COMPOUND_NOUN_PLUR]
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 
@@ -7368,7 +7368,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SAPPHIRE] +
 	[NOUN:sapphire:sapphires]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -10554,7 +10554,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DIAMOND]
 	[NOUN:diamond:diamonds]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -10743,7 +10743,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:JADE]
 	[NOUN:jade:jades]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -14100,7 +14100,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		
 [WORD:RUBY] +
 	[NOUN:ruby:rubies]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -16074,7 +16074,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BASTION]
 	[NOUN:bastion:bastions]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
@@ -16085,7 +16085,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FURNACE]
 	[NOUN:forge:forges] *
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -16103,7 +16103,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:ANVIL]
 	[NOUN:anvil:anvils]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -19471,7 +19471,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GEM]
 	[NOUN:gem:gems]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -19482,7 +19482,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:JEWEL]
 	[NOUN:jewel:jewels]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -20649,7 +20649,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:EMERALD]
 	[NOUN:emerald:emeralds]
-		FRONT_COMPOUND_NOUN_SING
+		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -21353,6 +21353,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
+	[ADJ:quagmire]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 
 [WORD:TERRAIN]
 	[NOUN:terrain:terrains]
@@ -21375,21 +21379,32 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-		
-[WORD:ARID]
-	[ADJ:arid]
+	[ADJ:wilderness]
 		[ADJ_DIST:6]
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
-	[NOUN:aridity:]
-		--THE_NOUN_SING]
+		
+[WORD:ARID]
+	[NOUN:arid:]
+		[THE_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
 		[OF_NOUN_PLUR]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
+	[ADJ:arid]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:BARREN]
+	[NOUN:barren:]
+		[THE_NOUN_SING]
+		[THE_COMPOUND_NOUN_SING]
+		[FRONT_COMPOUND_NOUN_SING]
+		[REAR_COMPOUND_NOUN_SING]
+		[OF_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 	[ADJ:barren]
 		[ADJ_DIST:3]
 		[THE_COMPOUND_ADJ]
@@ -21403,17 +21418,21 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[OF_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
-		
-[WORD:INFERTILE]
-	[ADJ:infertile]
-		[ADJ_DIST:6]
+	[ADJ:expanse]
+		[ADJ_DIST:3]
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
-	[NOUN:infertility:]
+		
+[WORD:INFERTILE]
+	[NOUN:infertile:]
 		[THE_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
+	[ADJ:infertile]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:WASTELAND]
 	[NOUN:wasteland:wastelands]
@@ -21425,6 +21444,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
+	[ADJ:wasteland]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:CANOPY]
 	[NOUN:canopy:canopies]
@@ -21436,8 +21459,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-	[VERB:canopy:canopies:canopied:canopied:canopying]
-		[STANDARD_VERB]
+	[ADJ:canopy]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:GREENWOOD]
 	[NOUN:greenwood:greenwoods]
@@ -21449,6 +21474,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
+	[ADJ:greenwood]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:ORCHARD]
 	[NOUN:orchard:orchards]
@@ -21460,12 +21489,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-		
-[WORD:OVERGROWN]
-	[ADJ:overgrown]
-		[ADJ_DIST:3]
+	[ADJ:orchard]
+		[ADJ_DIST:6]
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
+		
+[WORD:OVERGROWN]
 	[NOUN:overgrowth:overgrowths]
 		[THE_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
@@ -21473,6 +21502,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[OF_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
+	[ADJ:overgrown]
+		[ADJ_DIST:4]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:REFUGE]
 	[NOUN:refuge:refuges]
@@ -21482,6 +21515,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[OF_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
+	[ADJ:refuge]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:THICKET]
 	[NOUN:thicket:thickets]
@@ -21491,6 +21528,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[OF_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
+	[ADJ:thicket]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:ALTITUDE]
 	[NOUN:altitude:altitudes]
@@ -21513,10 +21554,6 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		
 [WORD:BLUFF_CLIFF]
-	[ADJ:bluff]
-		[ADJ_DIST:1]
-		[THE_COMPOUND_ADJ]
-		[FRONT_COMPOUND_ADJ]
 	[NOUN:bluff:bluffs]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
@@ -21526,6 +21563,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
+	[ADJ:bluff]
+		[ADJ_DIST:1]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:CRAG]
 	[NOUN:crag:crags]
@@ -21587,6 +21628,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
+	[ADJ:moorland]
+		[ADJ_DIST:7]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:PRECIPICE]
 	[NOUN:precipice:precipices]
@@ -21661,6 +21706,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
+	[ADJ:dreamland]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 
 [WORD:ECOSYSTEM]
 	[NOUN:ecosystem:ecosystems]
@@ -21683,6 +21732,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
+	[ADJ:eden]
+		[ADJ_DIST:6]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:ENVIRONMENT]
 	[NOUN:environment:environments]
@@ -21709,8 +21762,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[OF_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
-	[ADJ:existent]
-		[ADJ_DIST:2]
+	[ADJ:existence]
+		[ADJ_DIST:5]
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
 
@@ -21723,7 +21776,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
+	[ADJ:garden]
+		[ADJ_DIST:5]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 	[VERB:garden:gardens:gardened:gardened:gardening]
 		[STANDARD_VERB]
 		
@@ -21737,6 +21794,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
+	[ADJ:haven]
+		[ADJ_DIST:5]
+		[THE_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
 		
 [WORD:HEMISPHERE]
 	[NOUN:hemisphere:hemispheres]

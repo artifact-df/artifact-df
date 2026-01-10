@@ -95,7 +95,7 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small and furry critter with a slender snout and a long, low-slung body.  His long tail swishes as he walks.  He hunts snakes and small animals.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -270,7 +270,7 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A medium-sized, scavenging pack predator with tall ears, wicked teeth, and a long neck.  He has a chattering, hysterical cry that sounds like laughter.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_TAN_BLACK:1]
@@ -433,7 +433,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A patterned, medium-sized snake that hides and waits in trees and shallow water.  He can eat prey much larger than himself; he crushes them to death first.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -601,7 +601,7 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 		[MALE]
 		[DESCRIPTION:A medium-sized, intelligent reptile with striped scales, strong legs, and a long tail.  He hunts, forages and digs for eggs and worms.  He looks dangerous.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -784,7 +784,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 		[MALE]
 		[DESCRIPTION:A small, striped snake with deadly venom and a hood that expands in warning.  He can eat prey much larger than himself, swallowing whole and digesting slowly.  He avoids confrontation when he can.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:OLIVE:1:TAN:1:BLACK:1]
@@ -1000,7 +1000,7 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A slender, medium-sized cat with stripes and spots.  He lives alone in the jungle, claiming territory and hunting small mammals.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_TAN_BLACK:990:BLACK:10:WHITE:1]
@@ -1177,7 +1177,7 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A medium-sized, predatory canine with tall ears, long legs, and a shaggy tail.  He normally scavenges with his mate, but packs tend to gather around carcasses.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -1349,7 +1349,7 @@ Capuchins were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small monkey that swings around in the trees.  He gets curious easily and likes to steal things.  He raids supplies with his pack, looking for food.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:MOTTLED_BLACK_WHITE:1] should break up by part
@@ -1510,7 +1510,7 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small, slow-moving creature with shaggy fur, tiny ears, and a wide face.  He hangs from branches with curved claws and is almost helpless on the ground.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1677,7 +1677,7 @@ Spider monkeys were sponsored by the generous contributions of the Bay 12 commun
 		[DESCRIPTION:A small, nimble monkey that swings about the canopy of the jungle with long, lanky arms and a gripping tail.  Social and noisy, he lives, forages, and steals with his pack.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -1852,7 +1852,7 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small critter covered in tough scales.  He curls into a ball to defend his soft belly when threatened.  He has a slender snout and a long tongue for eating insects.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -2039,7 +2039,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[MALE]
 		[DESCRIPTION:A small, shy snake with an inky blue and black mouth.  He hisses and opens his neck-flap in warning.  Nervous and aggressive when threatened, he bites over and over, injecting venom with each strike.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2234,7 +2234,7 @@ Sloth bears were sponsored by the generous contributions of the Bay 12 community
 		[DESCRIPTION:A large, lanky creature with large, floppy ears, shaggy fur, and a shaggy mane.  He can run and climb quickly despite his shambling, clumsy gait.  He lives in the trees and has an easy-going nature.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2399,7 +2399,7 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small, nocturnal creature with wide eyes and big ears.  He lives in trees and uses his long fingers to fish out grubs from the wood.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2587,7 +2587,7 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 		[MALE]
 		[DESCRIPTION:A small snake longer than most snakes.  His scales are camouflaged; he blends into the foliage and waits for an opportunity to strike with poison fangs.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_BROWN_BLACK:1]
@@ -2779,7 +2779,7 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A large, tree-dwelling snake with patterned scales and backward-curving fangs.  He coils around his prey to crush them.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -2962,7 +2962,7 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A large, pig-like creature with a bristly mane and a floppy, gripping nose.  His stripes and spots fade with age.  He lives in tropical rainforest and likes to bathe and cool off in the water.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1] work needed
@@ -3155,7 +3155,7 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 		[APPLY_CREATURE_VARIATION:HORN_GORE_ATTACK]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -3322,7 +3322,7 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A medium-sized, nocturnal creature with a long tail and tall ears.  He sniffs for ants and termites with his long, pig-like snout then uses his long tongue to slurp his food.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -3482,7 +3482,7 @@ Lion tamarins were sponsored by the generous contributions of the Bay 12 communi
 		[DESCRIPTION:A tiny orange monkey with a long tail and a golden mane.  He swings about the trees and uses his claws to tear off bark, then dines on what scuttles out.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:ORANGE:1]

@@ -14,6 +14,7 @@ reaction_smelter_masterfork
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:SMELT]
 	[FUEL]
+	[DESCRIPTION:Smelt 9 bars of coke from one unit of bituminous coal.]{+}
 
 [REACTION:LIGNITE_TO_COKE]
 	[NAME:make coke(5) from lignite]
@@ -27,6 +28,7 @@ reaction_smelter_masterfork
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:SMELT]
 	[FUEL]
+	[DESCRIPTION:Smelt 5 bars of coke from one unit of lignite.]{+}
 
 [REACTION:ADAMANTINE_WAFERS]
 	[NAME:smelt adamantine wafers]
@@ -38,6 +40,7 @@ reaction_smelter_masterfork
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 	[FUEL]
+	[DESCRIPTION:Smelt 1 adamantine wafer from 1 spool of adamatine thread.]{+}
 	[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
 
 REACTION:BRASS_MAKING  alloys can only be smelted using bars
@@ -45,13 +48,13 @@ REACTION:BRASS_MAKING  alloys can only be smelted using bars
 [REACTION:BRASS_MAKING2]
 [NAME:smelt brass bars (3)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:150:BAR:NO_SUBTYPE:METAL:ZINC]
 [REAGENT:B:300:BAR:NO_SUBTYPE:METAL:COPPER]
 [PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:BRASS][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 3 brass bars from 1 zinc bar and 2 copper bars.]{+}
 [SKILL_IP:45]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 REACTION:BRONZE_MAKING  alloys can only be smelted using bars
@@ -59,13 +62,13 @@ REACTION:BRONZE_MAKING  alloys can only be smelted using bars
 [REACTION:BRONZE_MAKING2]
 [NAME:smelt bronze bars (10)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:150:BAR:NO_SUBTYPE:METAL:TIN] 1 bar
 [REAGENT:B:1350:BAR:NO_SUBTYPE:METAL:COPPER] 9 bars
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 10 bronze bars from 1 tin bar and 9 copper bars.]{+}
 [SKILL_IP:450]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
 REACTION:ELECTRUM_MAKING  alloys can only be smelted using bars
@@ -73,26 +76,26 @@ REACTION:ELECTRUM_MAKING  alloys can only be smelted using bars
 [REACTION:ELECTRUM_MAKING2]
 [NAME:smelt electrum bars (2)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:150:BAR:NO_SUBTYPE:METAL:SILVER]
 [REAGENT:B:150:BAR:NO_SUBTYPE:METAL:GOLD]
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:ELECTRUM][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
-[SKILL:SMELT]
 [FUEL]
+[SKILL:SMELT]
+[DESCRIPTION:Smelt 2 electrum bars from 1 silver bar and 1 gold bar.]{+}
 
 REACTION:BILLON_MAKING  alloys can only be smelted using bars
 
 [REACTION:BILLON_MAKING2]
 [NAME:smelt billon bars (5)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:300:BAR:NO_SUBTYPE:METAL:SILVER]
 [REAGENT:B:450:BAR:NO_SUBTYPE:METAL:COPPER]
 [PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:BILLON][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 5 billon bars from 2 silver bars and 3 copper bars.]{+}
 [SKILL_IP:37]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 REACTION:PEWTER_FINE_MAKING  alloys can only be smelted using bars
@@ -100,7 +103,6 @@ REACTION:PEWTER_FINE_MAKING  alloys can only be smelted using bars
 [REACTION:PEWTER_FINE_MAKING2]
 [NAME:smelt fine pewter bars (10)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:1200:BAR:NO_SUBTYPE:METAL:TIN] 8 bars
 [REAGENT:B:150:BAR:NO_SUBTYPE:METAL:COPPER] 1 bar
 [REAGENT:C:150:BAR:NO_SUBTYPE:METAL:ANTIMONY] 1 bar
@@ -108,6 +110,7 @@ REACTION:PEWTER_FINE_MAKING  alloys can only be smelted using bars
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 10 fine pewter bars from 8 tin bars, 1 copper bar, and 1 antimony bar.]{+}
 [SKILL_IP:75]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 REACTION:PEWTER_TRIFLE_MAKING  removed
@@ -117,7 +120,6 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [REACTION:PEWTER_LAY_MAKING]
 [NAME:smelt lay pewter bars (10)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:1200:BAR:NO_SUBTYPE:METAL:TIN] 8 bars
 [REAGENT:B:150:BAR:NO_SUBTYPE:METAL:COPPER] 1 bar
 [REAGENT:C:150:BAR:NO_SUBTYPE:METAL:LEAD] 1 bar
@@ -125,24 +127,24 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 10 lay pewter bars from 8 tin bars, 1 copper bar, and 1 lead bar.]{+}
 [SKILL_IP:75]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 [REACTION:PIG_IRON_MAKING]
 [NAME:smelt pig iron bars (1)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
-[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:IRON]  requires an additional bar of iron
+[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:IRON]{:150:BAR  requires an additional bar of iron
 [REAGENT:B:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
 [REAGENT:C:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 [PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 1 pig iron bar from 2 iron bars, 1 flux stone boulder, and 1 bar of coal/coke (in addition to that used for fuel).]{+}
 
 [REACTION:STEEL_MAKING]
 [NAME:smelt steel bars (2)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:150:BAR:NO_SUBTYPE:METAL:IRON]
 [REAGENT:B:150:BAR:NO_SUBTYPE:METAL:PIG_IRON]
 [REAGENT:C:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
@@ -151,25 +153,25 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 2 steel bars from 1 iron bar, 1 pig iron bar, 1 flux stone boulder, and 1 bar of coal/coke (in addition to that used for fuel).]{+}
 [SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
 [REACTION:NICKEL_SILVER_MAKING]
 [NAME:smelt nickel silver bars (5)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:150:BAR:NO_SUBTYPE:METAL:NICKEL]
 [REAGENT:B:450:BAR:NO_SUBTYPE:METAL:COPPER]
 [REAGENT:C:150:BAR:NO_SUBTYPE:METAL:ZINC]
 [PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:NICKEL_SILVER][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
-[SKILL:SMELT]
-[SKILL_IP:37]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 [FUEL]
+[SKILL:SMELT]
+[DESCRIPTION:Smelt 5 nickel silver bars from 1 nickel bar, 3 copper bars, and 1 zinc bar.]{+}
+[SKILL_IP:37]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 [REACTION:BLACK_BRONZE_MAKING]
 [NAME:smelt black bronze bars (10)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:1200:BAR:NO_SUBTYPE:METAL:COPPER]
 [REAGENT:B:150:BAR:NO_SUBTYPE:METAL:SILVER]
 [REAGENT:C:150:BAR:NO_SUBTYPE:METAL:GOLD]
@@ -177,39 +179,40 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 10 black bronze bars from 8 copper bars, 1 silver bar, and 1 gold bar.]{+}
 [SKILL_IP:112]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
 [REACTION:STERLING_SILVER_MAKING]
 [NAME:smelt sterling silver bars (10)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:1350:BAR:NO_SUBTYPE:METAL:SILVER]
 [REAGENT:B:150:BAR:NO_SUBTYPE:METAL:COPPER]
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:STERLING_SILVER][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[DESCRIPTION:Smelt 10 sterling silver bars from 9 copper bars and 1 silver bar.]{+}
 [SKILL_IP:300]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 [REACTION:ROSE_GOLD_MAKING]
 [NAME:smelt rose gold bars (4)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:450:BAR:NO_SUBTYPE:METAL:GOLD]
 [REAGENT:B:150:BAR:NO_SUBTYPE:METAL:COPPER]
 [PRODUCT:100:4:BAR:NO_SUBTYPE:METAL:ROSE_GOLD][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
-[SKILL:SMELT]
 [FUEL]
+[SKILL:SMELT]
+[DESCRIPTION:Smelt 4 rose gold bars from 3 gold bars and 1 copper bar.]{+}
 
 [REACTION:BISMUTH_BRONZE_MAKING]
 [NAME:smelt bismuth bronze bars (10)]
 [BUILDING:SMELTER:NONE]
-[BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:A:1350:BAR:NO_SUBTYPE:METAL:BRONZE]
 [REAGENT:C:150:BAR:NO_SUBTYPE:METAL:BISMUTH]
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:BISMUTH_BRONZE][PRODUCT_DIMENSION:150]
 [PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
-[SKILL:SMELT]
-[SKILL_IP:112]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 [FUEL]
+[SKILL:SMELT]
+[DESCRIPTION:Smelt 10 bismuth bronze bars from 9 bronze bars and 1 bismuth bar.]{+}
+[SKILL_IP:112]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}

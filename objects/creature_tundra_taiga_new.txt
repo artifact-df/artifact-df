@@ -94,7 +94,7 @@ Stoats were sponsored by the generous contributions of the Bay 12 community.
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[CASTE_NAME:stoat jack:stoat jacks:stoat jack]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1] black tail tip
@@ -274,7 +274,7 @@ Lynx were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A medium-sized cat with tufted ears and a short tail.  His fur is warm and thick; his paws are wide and padded for walking on snow.  He prefers to hunt alone, but sometimes travels and hunts with his pack.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_BROWN_BLACK:1]

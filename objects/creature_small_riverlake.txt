@@ -79,7 +79,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny, eel-shaped fish that can walk on land and breathe air.  When the mud dries, he burrows until water returns and lives without food and water.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -155,7 +155,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny whiskered river fish with colorful stripes.  He makes happy clicking sounds as he swims.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:ORANGE:1]
@@ -231,7 +231,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny whiskered fish that feeds at the muddy bottom of rivers, ponds, and lakes.  He's adaptable, living in warmer and muddier waters than most fish.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -307,7 +307,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny whiskered fish that scavenges at the muddy bottom of rivers, ponds, and lakes.  He eats almost anything he can.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:OLIVE:1]
@@ -383,7 +383,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny whiskered fish that feeds at the muddy bottom of rivers, ponds, and lakes.  He sleeps during the day.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:DARK_BROWN:1]
@@ -459,7 +459,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny spotted fish that swims in tropical rivers and lakes.  His short fins run the length of his sleek, patterned body.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -535,7 +535,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny, white-spotted fish with a red belly.  He swims in temperate lakes and rivers and can live in colder waters than most fish.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -611,7 +611,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny, spotted fish with a reddish stripe along his side and a white belly.  He swims and hunts in temperate rivers and lakes.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]  *** Obviously not a rainbow.
@@ -691,7 +691,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny spotted fish that swims in coastal rivers and temperate lakes.  He hides in vegetation in shallow waters, feeding on algae.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -771,7 +771,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny, colorful fish with a patterned, fan-shaped tail.  He thrives in tropical lakes and rivers.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BLUE:1]
@@ -847,7 +847,7 @@ creature_small_riverlake
 		[MALE]
 		[DESCRIPTION:A tiny, striped, ray-finned fish that swims and hunts in fresh waters.  His skin has a yellow shimmer.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BROWN:1]

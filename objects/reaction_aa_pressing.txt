@@ -22,6 +22,7 @@ reaction_aa_pressing
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:PRESSING]
+	[DESCRIPTION:Press oil from seed/nut paste. Seeds and nuts are ground to paste at a quern or millstone.]{+}
 	[CATEGORY:GENERIC_REACTIONS]
 		[CATEGORY_NAME:Generic reactions]
 		[CATEGORY_DESCRIPTION:Reactions for using any available plants or growths]
@@ -45,6 +46,7 @@ reaction_aa_pressing
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:PRESSING]
+	[DESCRIPTION:Press oil from soft, oily fruit, such as olives.]{+}
 	[CATEGORY:GENERIC_REACTIONS]
 
 [REACTION:PRESS_HONEYCOMB]
@@ -67,6 +69,7 @@ reaction_aa_pressing
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:PRESSING]
+	[DESCRIPTION:Press honey from a honeycomb, which is collected from hives.]{+}
 	[CATEGORY:GENERIC_REACTIONS]
 
 [REACTION:AA_PRESS_TWENTY_HONEYCOMBS]

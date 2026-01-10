@@ -335,7 +335,17 @@ tile_page_creatures
 [TILE_PAGE:BEASTS_SMALL]
 	[FILE:images/beasts_small.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:1248:1216]
+	[PAGE_DIM_PIXELS:416:1184]
+
+[TILE_PAGE:BEASTS_SMALL_DECORATIONS]
+	[FILE:images/beasts_small_decorations.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:416:544]
+
+[TILE_PAGE:BEASTS_SMALL_ORGANICS]
+	[FILE:images/beasts_small_organics.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:416:1184]
 
 [TILE_PAGE:STATUES_LAYERED]
 	[FILE:images/creatures_layered_statues.png]

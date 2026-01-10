@@ -9,7 +9,8 @@ reaction_other
 		[HAS_MATERIAL_REACTION_PRODUCT:TAN_MAT]
 	[PRODUCT:100:1:SKIN_TANNED:NONE:GET_MATERIAL_FROM_REAGENT:hide:TAN_MAT]
 	[SKILL:TANNER]
-	--AUTOMATIC] disabled due to the salt tanning reaction being more efficient
+	[AUTOMATIC]
+	[DESCRIPTION:Make leather from animal skin.]{+}
 
 [REACTION:TAN_A_HIDE_FUR]
 	[NAME:tan a furred hide]
@@ -19,6 +20,7 @@ reaction_other
 	[PRODUCT:100:1:SKIN_TANNED:NONE:GET_MATERIAL_FROM_REAGENT:furred hide:FUR_MAT]
 	[SKILL:TANNER]
 	[AUTOMATIC]
+	[DESCRIPTION:Make fur from furred animal skin.]{+}
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:RENDER_FAT]
@@ -29,6 +31,7 @@ reaction_other
 	[PRODUCT:100:1:GLOB:NONE:GET_MATERIAL_FROM_REAGENT:A:RENDER_MAT]
 	[SKILL:COOK]
 	[AUTOMATIC]
+	[DESCRIPTION:Render animal fat into tallow.]{+}
 
 [REACTION:MAKE_SOAP_FROM_TALLOW]
 	[NAME:make soap from tallow]
@@ -43,6 +46,7 @@ reaction_other
 	[PRODUCT:100:1:BAR:NONE:GET_MATERIAL_FROM_REAGENT:tallow:SOAP_MAT]
 		[PRODUCT_DIMENSION:150]
 	[SKILL:SOAP_MAKING]
+	[DESCRIPTION:Make soap from animal tallow and lye.]{+}
 
 [REACTION:MAKE_SOAP_FROM_OIL]
 	[NAME:make soap from oil]
@@ -62,6 +66,7 @@ reaction_other
 	[PRODUCT:100:1:BAR:NONE:GET_MATERIAL_FROM_REAGENT:oil:SOAP_MAT]
 		[PRODUCT_DIMENSION:150]
 	[SKILL:SOAP_MAKING]
+	[DESCRIPTION:Make soap from plant oil and lye.]{+}
 
 [REACTION:MAKE_PEARLASH]
 	[NAME:make pearlash]
@@ -71,6 +76,7 @@ reaction_other
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
+	[DESCRIPTION:Make pearlash from potash for use in the production of clear glass.]{+}
 
 [REACTION:MAKE_PLASTER_POWDER]
 	[NAME:make plaster powder]
@@ -81,6 +87,7 @@ reaction_other
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
+	[DESCRIPTION:Make plaster powder from gypsum, alabaster, selenite, or satinspar.]{+}
 
 [REACTION:MAKE_SHARP_ROCK]
 	[NAME:make sharp rock]
@@ -101,6 +108,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
+	[DESCRIPTION:Make an earthenware jug from clay, a stoneware jug from fire clay, or a porcelain jug from kaolinite.]{+}
 
 [REACTION:MAKE_CLAY_BRICKS]
 	[NAME:make clay bricks]
@@ -111,6 +119,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
+	[DESCRIPTION:Make earthenware bricks from clay, stoneware bricks from fire clay, or porcelain bricks from kaolinite.]{+}
 
 [REACTION:MAKE_CLAY_STATUE]
 	[NAME:make clay statue]
@@ -121,6 +130,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
+	[DESCRIPTION:Make an earthenware statue from clay, a stoneware statue from fire clay, or a porcelain statue from kaolinite.]{+}
 
 [REACTION:MAKE_LARGE_CLAY_POT]
 	[NAME:make large clay pot]
@@ -131,6 +141,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
+	[DESCRIPTION:Make an earthenware pot from clay, a stoneware pot from fire clay, or a porcelain pot from kaolinite.]{+}
 
 [REACTION:MAKE_CLAY_CRAFTS]
 	[NAME:make clay crafts]
@@ -141,6 +152,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
+	[DESCRIPTION:Make earthenware crafts from clay, stoneware crafts from fire clay, or porcelain crafts from kaolinite.]{+}
 
 [REACTION:GLAZE_JUG]
 	[NAME:glaze clay/stone jug]
@@ -161,6 +173,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
+	[DESCRIPTION:Glaze a pottery jug with ash, cassiterite, uranium oxide or rutile/titania. Earthenware must be glazed in order to hold liquids.]{+}
 
 [REACTION:GLAZE_STATUE]
 	[NAME:glaze clay/stone statue]
@@ -176,6 +189,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
+	[DESCRIPTION:Glaze a pottery statue with ash, cassiterite, uranium oxide or rutile/titania. This will increase its value.]{+}
 
 [REACTION:GLAZE_LARGE_POT]
 	[NAME:glaze large clay/stone pot]
@@ -191,6 +205,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
+	[DESCRIPTION:Earthenware must be glazed in order to hold liquids.]{+}
 
 [REACTION:GLAZE_CRAFT]
 	[NAME:glaze clay/stone craft]
@@ -206,6 +221,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
+	[DESCRIPTION:Glaze a pottery craft with ash, cassiterite, uranium oxide or rutile/titania. This will increase its value.]{+}
 
 REACTION:PRESS_OIL  replaced by AA
 
@@ -220,6 +236,7 @@ REACTION:PRESS_OIL_FRUIT  replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
+	[DESCRIPTION:Make an earthenware hive from clay, a stoneware hive from fire clay, or a porcelain hive from kaolinite.]{+}
 
 REACTION:PRESS_HONEYCOMB  replaced by AA
 
@@ -230,6 +247,7 @@ REACTION:PRESS_HONEYCOMB  replaced by AA
 		[REACTION_CLASS:WAX]
 	[PRODUCT:100:1:CRAFTS:NONE:GET_MATERIAL_FROM_REAGENT:wax:NONE]
 	[SKILL:WAX_WORKING]
+	[DESCRIPTION:Make figurines and other crafts from beeswax. Wax is produced when a honeycomb is pressed at a screw press.]{+}
 
 REACTION:BREW_DRINK_FROM_PLANT  replaced by AA
 
@@ -248,6 +266,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
+	[DESCRIPTION:Make quicklime from calcium carbonate rock such as marble, limestone, chalk, borax or calcite.]{+}
 
 [REACTION:MAKE_MILK_OF_LIME]
 	[NAME:make milk of lime]
@@ -265,6 +284,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 		[PRODUCT_TO_CONTAINER:bucket]
 		[PRODUCT_DIMENSION:150]
 	[SKILL:LYE_MAKING] close enough for now!
+	[DESCRIPTION:Make milk of lime from quicklime for use in parchment making. Quicklime is made at a kiln.]{+}
 
 [REACTION:MAKE_PARCHMENT]
 	[NAME:make parchment]
@@ -278,6 +298,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:1:SHEET:NONE:GET_MATERIAL_FROM_REAGENT:A:PARCHMENT_MAT]
 	[SKILL:TANNER] close enough for now!
+	[DESCRIPTION:Make parchment from animal skin using milk of lime.]{+}
 
 [REACTION:MAKE_SCROLL]
 	[NAME:make scroll]
@@ -288,6 +309,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 		[PRODUCT_TOKEN:scroll]
 	[IMPROVEMENT:100:scroll:SPECIFIC:ROLLERS:GET_MATERIAL_FROM_REAGENT:scroll rollers:NONE]
 	[SKILL:BOOKBINDING]
+	[DESCRIPTION:Place a blank sheet of paper or parchment into a scroll roller to make a scroll.]{+}
 
 [REACTION:MAKE_QUIRE]
 	[NAME:make quire]
@@ -295,6 +317,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 	[REAGENT:sheet:10000:SHEET:NONE:NONE:NONE]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_QUIRE:GET_MATERIAL_FROM_REAGENT:sheet:NONE]
 	[SKILL:BOOKBINDING]
+	[DESCRIPTION:Fold a blank sheet of paper or parchment into a quire. Quires can be bound into books once written on.]{+}
 
 [REACTION:MAKE_SHEET_FROM_PLANT]
 	[NAME:make sheet from plant]
@@ -306,6 +329,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 		[PRODUCT_PRESSED]
 	[PRODUCT:100:1:SEEDS:NONE:GET_MATERIAL_FROM_REAGENT:plant:SEED_MAT]
 	[SKILL:PAPERMAKING]
+	[DESCRIPTION:Make a sheet directly from a plant, such as papyrus.]{+}
 
 REACTION:MAKE_SLURRY_FROM_PLANT replaced by AA
 
@@ -318,6 +342,7 @@ REACTION:MAKE_SLURRY_FROM_PLANT replaced by AA
 	[PRODUCT:100:1:SHEET:NONE:GET_MATERIAL_FROM_REAGENT:paste:NONE]
 		[PRODUCT_PRESSED]
 	[SKILL:PAPERMAKING]
+	[DESCRIPTION:Press fibrous plant slurry into paper. Plants are mashed into slurry at a quern or millstone.]{+}
 
 [REACTION:BIND_BOOK]
 	[NAME:bind book]
@@ -335,6 +360,7 @@ REACTION:MAKE_SLURRY_FROM_PLANT replaced by AA
 	[IMPROVEMENT:100:book:PAGES:GET_MATERIAL_FROM_REAGENT:quire:NONE]
 		note -- right now, the above will auto-pull any writing from the quire and place it in the pages improvement
 	[SKILL:BOOKBINDING]
+	[DESCRIPTION:Bind a written-upon quire into a book binding using a spool of thread.]{+}
 
 [REACTION:MAKE WOODEN DISPLAY CASE]
 	[NAME:make display case]
@@ -344,3 +370,4 @@ REACTION:MAKE_SLURRY_FROM_PLANT replaced by AA
 	[REAGENT:window:1:WINDOW:NONE:NONE:NONE]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_DISPLAY_CASE:GET_MATERIAL_FROM_REAGENT:log:NONE]
 	[SKILL:CARPENTRY]
+	[DESCRIPTION:Make an display case from a wooden log and a window.]{+}

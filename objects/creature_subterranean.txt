@@ -18,6 +18,8 @@ creature_subterranean
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CARNIVORE][NATURAL]
 	[LARGE_PREDATOR]
+	[CAVE_ADAPT]{+}
+	[TRAINABLE]{+}
 	[FREQUENCY:20]{+}
 	[GRASSTRAMPLE:20]
 	[PREFSTRING:strength]
@@ -98,7 +100,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A huge, low-slung reptile with a thick tail and a crushing bite.  His scales are pale and colorless from lack of light; he waits in the darkness to ambush prey.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{:SCALE
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -124,6 +126,8 @@ creature_subterranean
 	[CARNIVORE]
 	[BUILDINGDESTROYER:1]
 	[NATURAL]
+	[CAVE_ADAPT]{+}
+	[TRAINABLE]{+}
 	[GRASSTRAMPLE:20]
 	[FREQUENCY:20]{+}
 	[BIOME:SUBTERRANEAN_WATER]
@@ -185,7 +189,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A giant, pot-bellied amphibian that lives deep underground.  His bumpy, mottled skin is pale from lack of light.  His long tongue is ready to lash out and snatch his next meal.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:TAUPE_GRAY:1]
@@ -210,6 +214,8 @@ creature_subterranean
 	[CARNIVORE]
 	[BUILDINGDESTROYER:1]
 	[NATURAL]
+	[CAVE_ADAPT]{+}
+	[TRAINABLE]{+}
 	[GRASSTRAMPLE:20]
 	[FREQUENCY:20]{+}
 	[BIOME:SUBTERRANEAN_WATER]
@@ -271,7 +277,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A giant, serpentine amphibian with red, feathery gills and small, thin legs.  He keeps to himself in underground lakes, he lives and breathes underwater.  His skin is pale from lack of light; his eyesight is faded from disuse.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -295,6 +301,7 @@ creature_subterranean
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE_HUNTING]
+	[CAVE_ADAPT]{+}
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -366,7 +373,7 @@ creature_subterranean
 		[DESCRIPTION:A giant winged critter with large ears, a thin tail, and broad wings stretching from his hands to his feet.  He clings to rock with long, sickle-like fingers and toes.  He hunts at night and makes sounds in the darkness to help him see.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -393,6 +400,8 @@ creature_subterranean
 	[NATURAL]
 	[LARGE_ROAMING][FREQUENCY:100][DIFFICULTY:2]
 	--BENIGN]
+	[CAVE_ADAPT]{+}
+	[TRAINABLE]{+}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
@@ -465,7 +474,7 @@ creature_subterranean
 		[DESCRIPTION:A gigantic, ragged-looking pest with a long, naked tail, sharp teeth, and a mean, hungry look.  He scurries in the dark, searching for food and, sometimes, infecting supplies.  If any are left over.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -491,6 +500,8 @@ creature_subterranean
 	[NATURAL]
 	[LARGE_ROAMING][FREQUENCY:100]
 	[BENIGN]
+	[CAVE_ADAPT]{+}
+	[TRAINABLE]{+}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:1]
@@ -563,7 +574,7 @@ creature_subterranean
 		[DESCRIPTION:A huge, ragged-looking pest that searches for food in the caverns, stealing food and infecting supplies.  He has a long, naked tail and a hungry look.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -587,6 +598,8 @@ creature_subterranean
 	[NATURAL]
 	[LARGE_ROAMING][FREQUENCY:100]
 	[BENIGN]
+	[CAVE_ADAPT]{+}
+	[TRAINABLE]{+}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -658,7 +671,7 @@ creature_subterranean
 		[DESCRIPTION:A large, nearly blind rodent with long teeth and loose, hairless skin pale from lack of light.  He scurries away in the darkness, hiding and waiting.  He has a dangerous bite, when cornered.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:PINK:1]
@@ -683,6 +696,7 @@ creature_subterranean
 	[CAN_LEARN][SLOW_LEARNER]
 	[CURIOUSBEAST_GUZZLER]{+}
 	[CURIOUSBEAST_EATER]{+}
+	[CAVE_ADAPT]{+}
 	[PERSONALITY:BASHFUL:0:0:0]{+  doesn't care about being nude.}
 	[PERSONALITY:DISCORD:50:75:100]{+}
 	[PERSONALITY:CURIOUS:50:75:100]{+}
@@ -865,7 +879,7 @@ creature_subterranean
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[DESCRIPTION:A short and hairy brute with a searching expression and a primitive, almost simian appearance.  Stooped and long-limbed, he searches for food and comfort in the darkness.  He doesn't care that he's naked.  He is quite mischievous.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:AMBER:1:AUBURN:1:BLACK:1:BROWN:1:BUFF:1:BURNT_SIENNA:1:BURNT_UMBER:1:CHARCOAL:1:CHESTNUT:1:CHOCOLATE:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_CHESTNUT:1:DARK_TAN:1:ECRU:1:FLAX:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:LIGHT_BROWN:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:PALE_CHESTNUT:1:PUMPKIN:1:RAW_UMBER:1:RUSSET:1:SAFFRON:1:SEPIA:1:TAN:1:TAUPE_DARK:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -887,6 +901,8 @@ creature_subterranean
 	[PETVALUE:350]
 	[PET_EXOTIC]
 	[NATURAL]
+	[CAVE_ADAPT]{+}
+	[TRAINABLE]{+}
 	[LARGE_ROAMING][FREQUENCY:100]
 	--BENIGN]
 	[POPULATION_NUMBER:150:300]{:15:30
@@ -959,7 +975,7 @@ creature_subterranean
 		[DESCRIPTION:A gigantic, earless beast with tiny eyes, velvet fur, and a strange, star-shaped nose.  He has a gentle nature.  He digs in the darkness, shifting dirt and stone.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -980,6 +996,7 @@ creature_subterranean
 	[CREATURE_TILE:'i'][COLOR:6:0:1]
 	[LARGE_ROAMING][FREQUENCY:20]
 	[CHILD:10]{+}
+	[CAVE_ADAPT]{+}
 	[BIOME:SUBTERRANEAN_LAVA]
 	[UNDERGROUND_DEPTH:0:4]
 	[POPULATION_NUMBER:150:300]{:15:30
@@ -1106,7 +1123,7 @@ creature_subterranean
 		[DESCRIPTION:A naked, pocket-sized imp with sharp, angular features, large eyes, hair of fire, and long fingers.  His arms and legs are wreathed in flame, which he can hurl at his enemies.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]{+}
 	[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 		[TL_COLOR_MODIFIER:RED:1]
@@ -1134,6 +1151,8 @@ creature_subterranean
 	[CREATURE_CLASS:POISONOUS]
 	[PETVALUE:2500]
 	[PET_EXOTIC]
+	[TRAINABLE_WAR]{+}
+	[CAVE_ADAPT]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]{:1:2
 	[SMELL_TRIGGER:5]{+ stalking prey }
@@ -1250,7 +1269,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A large and deadly underground spider with sharp, venomous fangs.  He shoots web to ensnare prey; the silk is prized, but hard to collect.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1272,6 +1291,7 @@ creature_subterranean
 	[PARALYZEIMMUNE]
 	[WEBIMMUNE]
 	[NATURAL]
+	[CAVE_ADAPT]{+}
 	[FREQUENCY:100]
 	[BIOME:SUBTERRANEAN_WATER]
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -1347,7 +1367,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A tiny underground spider, sought for his thread.  His bite causes an unpleasant dizziness which never goes away.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1366,6 +1386,7 @@ creature_subterranean
 	[NATURAL]
 	[FREQUENCY:100]
 	[NOT_BUTCHERABLE]
+	[CAVE_ADAPT]{+}
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:1:2]
 	[POPULATION_NUMBER:250:500]
@@ -1420,7 +1441,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A small, blind, and pale fish that swims in underground streams and ponds.  His scales shimmer as he swims.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1483,6 +1504,7 @@ creature_subterranean
 	[NOT_BUTCHERABLE][COOKABLE_LIVE]
 	[NOPAIN][EXTRAVISION][NOSTUN][NOFEAR]
 	[NOBONES]
+	[CAVE_ADAPT]{+}
 	[CANNOT_JUMP]
 	[BODY:SPIDER:SHELL:2EYES:HEART:GUTS:BRAIN:MOUTH:TAIL:UPPERBODY_PINCERS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
@@ -1510,7 +1532,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A small, pale critter with a hardened carapace, long antennae, large pincers, and a muscular tail.  He walks along the bottom of underground streams and ponds, searching for food.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1532,6 +1554,7 @@ creature_subterranean
 	[SMALL_REMAINS]
 	[NOT_BUTCHERABLE]
 	[NO_DRINK][NO_EAT][NO_SLEEP]
+	[CAVE_ADAPT]{+}
 	[BIOME:SUBTERRANEAN_LAVA]
 	[UNDERGROUND_DEPTH:2:4]
 	[POPULATION_NUMBER:250:500]
@@ -1577,6 +1600,7 @@ creature_subterranean
 	[AMPHIBIOUS][UNDERSWIM]
 	[NATURAL]
 	[NOT_BUTCHERABLE]
+	[CAVE_ADAPT]{+}
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:1:2]
 	[POPULATION_NUMBER:250:500]
@@ -1631,7 +1655,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A tiny, snake-like, nearly blind amphibian that swims in underground streams and sleeps and eats underwater.  He has feathery, red gills and small, thin legs.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1687,6 +1711,7 @@ creature_subterranean
 	[SMALL_REMAINS][NO_WINTER]
 	[NOT_BUTCHERABLE]
 	[FLIER]
+	[CAVE_ADAPT]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
 	[BIOME:NOT_FREEZING]
@@ -1760,7 +1785,7 @@ creature_subterranean
 		[DESCRIPTION:A tiny winged mammal that rests in caves during the day and makes sounds to help him hunt at night.  He has long fingers, a thin tail, and large ears.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1:BROWN:1]
@@ -1819,6 +1844,7 @@ creature_subterranean
 	[VERMIN_GROUNDER][VERMIN_NOROAM][VERMIN_HATEABLE]
 	[SMALL_REMAINS][NATURAL]
 	[NOT_BUTCHERABLE]
+	[CAVE_ADAPT]{+}
 	[CREATURE_CLASS:DWARF_PET]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:3]{:2:3  Revision: let them appear in the first cavern, letting dwarven civilizations find them in worldgen.  Fixes bug 1449.}
@@ -1959,6 +1985,8 @@ creature_subterranean
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[SWIMS_INNATE]
 	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
+	[SELECT_TISSUE_LAYER:ALL]{+}
+		[TL_HEALING_RATE:1]{+}
 
 [CREATURE:ELEMENTMAN_MAGMA]
 	[DESCRIPTION:A midsized, faceless golem of moving magma with a cracked black crust, mindless and tireless.  Its molten feet seem to flow as it moves.  If damaged, it will reform itself anew.]{:Magma moving in the shape of a man.  It has a cracked black crust.}
@@ -2067,6 +2095,8 @@ creature_subterranean
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[SWIMS_INNATE]
 	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
+	[SELECT_TISSUE_LAYER:ALL]{+}
+		[TL_HEALING_RATE:1]{+}
 
 [CREATURE:ELEMENTMAN_IRON]
 	[DESCRIPTION:A midsized automaton of iron, mindless, tough, and impervious to pain.  Its strangely hollow, filled with a strange yellow vapor that escapes from its eyes as it moves.]{:A man-shaped creature made of iron.}
@@ -2166,6 +2196,8 @@ creature_subterranean
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[SWIMS_LEARNED]
 	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
+	[SELECT_TISSUE_LAYER:ALL]{+}
+		[TL_HEALING_RATE:10]{+}
 
 [CREATURE:ELEMENTMAN_MUD]
 	[DESCRIPTION:A midsized, faceless, and sweet-smelling golem of packed mud.  It wanders near water deep underground, tireless and cryptic.  If damaged, it will reform itself anew.]{:A humanoid made of mud which lives near water underground.}
@@ -2242,6 +2274,8 @@ creature_subterranean
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[SWIMS_LEARNED]
 	[APPLY_CREATURE_VARIATION:REGENERATION_GOLEM]{+  able to reform their body.}
+	[SELECT_TISSUE_LAYER:ALL]{+}
+		[TL_HEALING_RATE:10]{+}
 
 [CREATURE:BIRD_SWALLOW_CAVE]
 	[DESCRIPTION:A small blue and orange bird.]
@@ -2260,6 +2294,7 @@ creature_subterranean
 	[FLIER]
 	[CHILD:1]
 	[ALL_ACTIVE]
+	[CAVE_ADAPT]{+}
 	[HOMEOTHERM:10071]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
@@ -2335,7 +2370,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A small blue and orange songbird with a pale throat.  He spends his time foraging in the dark and plasters his cup-like nest against the cavern wall.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2401,6 +2436,7 @@ creature_subterranean
 	[ALL_ACTIVE]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[FREQUENCY:20]{+}
+	[CAVE_ADAPT]{+}
 	[UNDERGROUND_DEPTH:1:2]
 	[HOMEOTHERM:10067]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -2476,7 +2512,7 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A blue and orange bird-like monster with a pale throat and long wings.  He forages in the depths, wandering and waiting.  He plasters his cup-like nest against the cavern wall.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2511,7 +2547,16 @@ creature_subterranean
 	[CANOPENDOORS]
 	[LARGE_PREDATOR]
 	[CARNIVORE]
-	[OUTSIDER_CONTROLLABLE]{+  can be played in adv mode.}
+	[CAVE_ADAPT]{+}
+	[LOCAL_POPS_CONTROLLABLE]{+  revision: cave humanoids can sometimes join civilizations.}
+	[LOCAL_POPS_PRODUCE_HEROES]{+
+	[NATURAL_SKILL:BITE:1]{+}
+	[NATURAL_SKILL:GRASP_STRIKE:1]{+}
+	[NATURAL_SKILL:STANCE_STRIKE:1]{+}
+	[NATURAL_SKILL:DODGING:1]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:CLIMBING:3]{+}
+	[NATURAL_SKILL:SNEAK:3]{+}
 	[PREFSTRING:terrifying features]
 	[BODY:HUMANOID_NECK:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4FINGERS:4TOES:MOUTH:TONGUE:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -2537,12 +2582,20 @@ creature_subterranean
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+	[RELSIZE:BY_CATEGORY:BRAIN:75]{+  smaller brain.}
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]             +
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]              +
+	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]{+       --
+	[MENT_ATT_RANGE:EMPATHY:0:400:600:750:800:900:1100]{+                  --
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[BODY_SIZE:0:0:1000]
 	[BODY_SIZE:1:168:5000]
 	[BODY_SIZE:2:0:20000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[APP_MOD_IMPORTANCE:500]{+}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-	[MAXAGE:80:120]{:60:80
+		[APP_MOD_IMPORTANCE:500]{+}
+	[MAXAGE:60:80]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2550,24 +2603,6 @@ creature_subterranean
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
-	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
-		[ATTACK_SKILL:STANCE_STRIKE]
-		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
-		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
-		[ATTACK_FLAG_WITH]
-		[ATTACK_PRIORITY:SECOND]
-		[ATTACK_FLAG_BAD_MULTIATTACK]
-	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
-		[ATTACK_SKILL:STANCE_STRIKE]
-		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1250]{+    Revision: kick velocity increased by 25%.}
-		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
-		[ATTACK_FLAG_WITH]
-		[ATTACK_PRIORITY:SECOND]
-		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:MOUTH]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:bite:bites]
@@ -2600,8 +2635,6 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A pint-sized, slimy horror with bulging eyes on a wide head, spindly limbs, and a long, gripping tongue.  He wanders the darkness, hunched and squat.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -2626,7 +2659,16 @@ creature_subterranean
 	[CAN_LEARN][CAN_SPEAK][LISP]
 	[CANOPENDOORS]
 	[CARNIVORE]
-	[OUTSIDER_CONTROLLABLE]{+  can be played in adv mode.}
+	[CAVE_ADAPT]{+}
+	[LOCAL_POPS_CONTROLLABLE]{+  revision: cave humanoids can sometimes join civilizations.}
+	[LOCAL_POPS_PRODUCE_HEROES]{+
+	[NATURAL_SKILL:BITE:1]{+}
+	[NATURAL_SKILL:GRASP_STRIKE:1]{+}
+	[NATURAL_SKILL:STANCE_STRIKE:1]{+}
+	[NATURAL_SKILL:DODGING:1]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:CLIMBING:3]{+}
+	[NATURAL_SKILL:SNEAK:2]{+}
 	[PREFSTRING:terrifying features]
 	[BODY:HUMANOID_NECK:TAIL_GRASP:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4FINGERS:4TOES:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]{:TAIL  Revision: give them a grasping tail.}
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -2663,12 +2705,20 @@ creature_subterranean
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+	[RELSIZE:BY_CATEGORY:BRAIN:75]{+  smaller brain.}
+	[PHYS_ATT_RANGE:STRENGTH:150:600:800:900:1000:1100:1500]{+             -
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]              +
+	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]{+       --
+	[MENT_ATT_RANGE:EMPATHY:0:400:600:750:800:900:1100]{+                  --
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[BODY_SIZE:0:0:1500]
 	[BODY_SIZE:1:168:10000]
 	[BODY_SIZE:12:0:50000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[APP_MOD_IMPORTANCE:500]{+}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-	[MAXAGE:80:120]{:60:80
+		[APP_MOD_IMPORTANCE:500]{+}
+	[MAXAGE:60:80]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2741,8 +2791,6 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A small and scaly reptilian with a long tail, a strong body, and rows of sharp teeth.  His scales are rough and hardened.  His eyes gleam in the darkness as he watches and waits.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -2768,9 +2816,18 @@ creature_subterranean
 	[CAN_LEARN][CAN_SPEAK][LISP]
 	[CANOPENDOORS]
 	[CARNIVORE]
-	[CANNOT_JUMP]{+ no legs.}
 	[PARALYZEIMMUNE]
-	[OUTSIDER_CONTROLLABLE]{+  can be played in adv mode.}
+	[CANNOT_JUMP]{+ no legs.}
+	[CAVE_ADAPT]{+}
+	[LOCAL_POPS_CONTROLLABLE]{+  revision: cave humanoids can sometimes join civilizations.}
+	[LOCAL_POPS_PRODUCE_HEROES]{+
+	[NATURAL_SKILL:BITE:2]{+}
+	[NATURAL_SKILL:GRASP_STRIKE:1]{+}
+	[NATURAL_SKILL:STANCE_STRIKE:1]{+}
+	[NATURAL_SKILL:DODGING:1]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:CLIMBING:3]{+}
+	[NATURAL_SKILL:SNEAK:2]{+}
 	[PREFSTRING:impressive tails]
 	[BODY:HUMANOID_LEGLESS_NECK:TAIL_STANCE_GRASP:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4FINGERS:MOUTH:FORKED_TONGUE:GENERIC_TEETH_WITH_FANGS:RIBCAGE]{:TAIL_STANCE  Revision: give them a grasping tail.}
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -2821,20 +2878,30 @@ creature_subterranean
 			[SYN_IMMUNE_CREATURE:SERPENT_MAN:ALL]
 			[SYN_INJECTED]
 			[CE_PARALYSIS:SEV:50:PROB:100:RESISTABLE:SIZE_DILUTES:START:5:PEAK:10:END:20]
+	[RELSIZE:BY_CATEGORY:BRAIN:75]{+  smaller brain.}
+	[PHYS_ATT_RANGE:STRENGTH:150:600:800:900:1000:1100:1500]{+             -
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]              +
+	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]{+       --
+	[MENT_ATT_RANGE:EMPATHY:0:400:600:750:800:900:1100]{+                  --
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[BODY_SIZE:0:0:1500]
 	[BODY_SIZE:1:168:10000]
 	[BODY_SIZE:12:0:50000]
+	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]{+}
+		[APP_MOD_IMPORTANCE:500]{+}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[APP_MOD_IMPORTANCE:500]{+}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-	[MAXAGE:80:120]{:60:80
+		[APP_MOD_IMPORTANCE:500]{+}
+	[MAXAGE:60:80]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
-		[ATTACK_PRIORITY:SECOND]
-	{ removed kicking due to no legs.
+		[ATTACK_PRIORITY:MAIN]{:SECOND
+	{ removed kicking due to no legs.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:scratch:scratches]
@@ -2886,8 +2953,6 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A small and scaly snakeman with a gaunt, twisting body, pale scales, and serpent's head at the end of a long, curved neck.  His thighs merge into a tail; he slithers in the dark on hands and tail.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -2908,7 +2973,13 @@ creature_subterranean
 	[CAN_LEARN][CAN_SPEAK]
 	[POPULATION_NUMBER:100:200]{:5:10  makes sense these should be more
 	[CLUSTER_NUMBER:5:10]
-	[OUTSIDER_CONTROLLABLE]{+  can be played in adv mode.}
+	[NATURAL_SKILL:BITE:1]{+}
+	[NATURAL_SKILL:GRASP_STRIKE:1]{+}
+	[NATURAL_SKILL:STANCE_STRIKE:1]{+}
+	[NATURAL_SKILL:DODGING:1]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:CLIMBING:6]{+}
+	[NATURAL_SKILL:SNEAK:2]{+}
 	[PREFSTRING:mystery]
 	[EQUIPS]
 	[CANOPENDOORS]
@@ -2976,6 +3047,8 @@ creature_subterranean
 		[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:711:521:293:1900:2900] 30 kph
 		[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 		[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
+	[SELECT_CASTE:QUEEN]
+		[MAXAGE:15:24]
 	[SELECT_CASTE:ALL]
 		[BODY_DETAIL_PLAN:CHITIN_MATERIALS]
 		[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -3037,6 +3110,15 @@ creature_subterranean
 		[BODY_SIZE:0:0:1000]
 		[BODY_SIZE:1:168:5000]
 		[BODY_SIZE:2:0:20000]
+	[SELECT_CASTE:ALL]{+}
+		[RELSIZE:BY_CATEGORY:BRAIN:75]{+  smaller brain.}
+		[PHYS_ATT_RANGE:STRENGTH:700:1200:1400:1500:1600:1800:2500]		       ++
+		[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]            +
+		[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+              -
+		[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]{+       --
+		[MENT_ATT_RANGE:EMPATHY:0:400:600:750:800:900:1100]{+                  --
+		[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
+		[PERSONALITY:DUTIFULNESS:5:60:100]{+}
 
 [CREATURE:RODENT MAN]
 	[DESCRIPTION:An evil humanoid with a long tail, black spiky fur and a twitching nose.  It lives far underground.]
@@ -3054,7 +3136,16 @@ creature_subterranean
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
 	[CARNIVORE]
-	[OUTSIDER_CONTROLLABLE]{+  can be played in adv mode.}
+	[CAVE_ADAPT]{+}
+	[LOCAL_POPS_CONTROLLABLE]{+  revision: cave humanoids can sometimes join civilizations.}
+	[LOCAL_POPS_PRODUCE_HEROES]{+
+	[NATURAL_SKILL:BITE:1]{+}
+	[NATURAL_SKILL:GRASP_STRIKE:1]{+}
+	[NATURAL_SKILL:STANCE_STRIKE:1]{+}
+	[NATURAL_SKILL:DODGING:1]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:CLIMBING:3]{+}
+	[NATURAL_SKILL:SNEAK:3]{+}
 	[PREFSTRING:terrifying features]
 	[BODY:HUMANOID_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4FINGERS:5TOES:MOUTH:TONGUE:RODENT_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -3083,12 +3174,18 @@ creature_subterranean
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+	[RELSIZE:BY_CATEGORY:BRAIN:75]{+  smaller brain.}
+	[PHYS_ATT_RANGE:STRENGTH:150:600:800:900:1000:1100:1500]{+             -
+	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]		       ++
+	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]{+       --
+	[MENT_ATT_RANGE:EMPATHY:0:400:600:750:800:900:1100]{+                  --
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[BODY_SIZE:0:0:1000]
 	[BODY_SIZE:1:168:8000]
 	[BODY_SIZE:12:0:40000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -3145,8 +3242,6 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A small, spiky-furred beastman with a long, naked tail and the head of a rat; he has a a twitching nose with long whiskers.  He lives deep underground and has a cruel, devious nature.  He doesn't care that she's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]

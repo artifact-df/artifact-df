@@ -71,7 +71,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:CANNOT_JUMP]{+    Revision: if they have legs, they can jump.}
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
-	[CV_REMOVE_TAG:ORIENTATION]		should restore orientations to default 5/20/75
+	[CV_REMOVE_TAG:ORIENTATION]{+	should restore orientations to default 5/20/75
+	[CV_REMOVE_TAG:APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+  same as above
 	[CV_REMOVE_TAG:GRAZER]{+         Revision: animal people ought to be able to eat normal food.}
 	[CV_REMOVE_TAG:STANDARD_GRAZER]{+}
 	[CV_REMOVE_TAG:SPECIFIC_FOOD]{+  Revision: adventurers that depend on specific plants to survive are difficult to play.}
@@ -403,7 +404,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:CURIOUSBEAST_GUZZLER]{+}
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
-	[CV_REMOVE_TAG:ORIENTATION]		should restore orientations to default 5/20/75
+	[CV_REMOVE_TAG:ORIENTATION]{+	should restore orientations to default 5/20/75
+	[CV_REMOVE_TAG:APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+  same as above
 	[CV_REMOVE_TAG:LAYS_EGGS]{+      Revision: egg laying is broken for civilized humanoids (10209).}
 	[CV_REMOVE_TAG:EGG_MATERIAL]{+}
 	[CV_REMOVE_TAG:EGG_SIZE]{+}
@@ -1105,10 +1107,10 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:A:1]
 		[CV_NEW_TAG:CDI:FREE_ACTION]
 		[CV_NEW_TAG:CDI:VERB:ready yourself for the coming conflict:prepared themselves for the coming conflict:NA]
-		[CV_NEW_TAG:CDI:WAIT_PERIOD:100]
+		[CV_NEW_TAG:CDI:WAIT_PERIOD:600] 12h
 	[CV_NEW_TAG:SKILL_RATES:50:9:17:17]{+                     Revision: global skill learn reduction.  default:100:8:16:16 }
-	[CV_NEW_TAG:SKILL_RUST_RATE:MELEE_COMBAT:16:8:6]{+        Revision: melee fighting should take decades and regular practice to master.  default:100:8:16:16 }
-	[CV_NEW_TAG:SKILL_RUST_RATE:DISCIPLINE:14:6:4]{+          Revision: discipline should take regular drilling to maintain, decays rapidly otherwise.  default:100:8:16:16 }
+	[CV_NEW_TAG:SKILL_RUST_RATE:MELEE_COMBAT:16:8:8]{+        Revision: melee fighting should take decades and regular practice to master.  default:8:16:16 }
+	[CV_NEW_TAG:SKILL_RUST_RATE:DISCIPLINE:12:6:6]{+          Revision: discipline should require regular drilling to maintain and decays rapidly otherwise.  default:8:16:16 }
 	[CV_NEW_TAG:PROFESSION_NAME:BLOWGUNMAN:Gunman:Gunmen]{+                         Revision: renamed from blowgunner, firearms use this skill now.}
 	[CV_NEW_TAG:PROFESSION_NAME:MASTER_BLOWGUNMAN:Veteran Gunman:Veteran Gunmen]{+
 	[CV_NEW_TAG:PROFESSION_NAME:PLANTER:Farmer:Farmers]{+                           Revision: renamed from planter, used to be farmer in older versions.}

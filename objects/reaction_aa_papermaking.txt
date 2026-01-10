@@ -27,6 +27,7 @@ reaction_aa_papermaking
 	[CATEGORY:GENERIC_REACTIONS]
 		[CATEGORY_NAME:Generic reactions]
 		[CATEGORY_DESCRIPTION:Reactions for using any available plants or growths]
+	[DESCRIPTION:Mash fibrous plants into a slurry, which can be pressed into paper at a screw press.]{+}
 
 [REACTION:AA_MAKE_SLURRY_FROM_PLANT_GROWTH]
 	[NAME:Mash plant growths into slurry]
