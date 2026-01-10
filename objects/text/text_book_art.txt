@@ -22,18 +22,6 @@ We See [NAME]
 [NAME] Ever Onward
 [NAME] and Nothing More
 And [ANY_PRONOUN] Sang '[NAME]!'
-
-[NAME]
-[NAME]
-[NAME]
-[PHRASE]
-[PHRASE]
-[PHRASE]
-[PHRASE]
-[PHRASE]
-[NAME] [ADJ]
-The [ADJ] [NO_ART_NAME]
-The [ADJ] [NO_ART_NAME]
 [ANY_AGE] and [NAME]
 Dreams of [NAME]
 A Book For [ADJ] [NO_ART_NAME]
@@ -132,3 +120,20 @@ Land of [NAME] and [NOUN]
 [ADJ] Ever After
 As [ADJ], So [ADJ]
 May [ANY_PRONOUN] Be [ADJ]
+[ANY_PRONOUN] Could Be [NAME]
+[ANY_PRONOUN] Couldn't Be [NOUN]
+Book of [NOUN]
+Canticle for [NAME]
+Chronicles of [NAME]
+Legend of [NAME]
+[NAME] Forever!
+[NOUN], [ADJ] [NOUN]
+[PHRASE] Without Me
+Romance of the [NOUN]
+Saga of [NAME]
+Song of [NOUN]
+The Epic of [NAME]
+The Key to [NAME]
+The [NO_ART_NAME] Anthem
+The [ADJ] Revelations
+The [NO_ART_NAME], Solely

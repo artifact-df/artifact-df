@@ -117,7 +117,7 @@ creature_large_tropical
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  He lifts plants with his trunk and attacks with long tusks when he gets angry.  His large ears flap in the heat.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -132,7 +132,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:6]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:ELEPHANT_MAN]
 	[COPY_TAGS_FROM:ELEPHANT]
@@ -322,7 +322,7 @@ creature_large_tropical
 		[DESCRIPTION:A stout, medium-sized beast that lives in grass and woodland.  Two wrinkled flaps of skin hang from his long, wide snout.  He defends himself with four sharp tusks.  He can be aggressive when he needs to be.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -335,7 +335,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:WARTHOG_MAN]
 	[COPY_TAGS_FROM:WARTHOG]
@@ -526,7 +526,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, maned, tawny cat with a short, rounded head, round ears, and a tufted tail.  When not fighting for mates he lives in the grassland with several of them.  His pack hunts together and can fell extremely large prey.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -541,7 +541,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:LION_MAN]
 	[COPY_TAGS_FROM:LION]
@@ -729,7 +729,7 @@ creature_large_tropical
 		[DESCRIPTION:A large cat with a spotted, rosetted coat.  He hunts with great speed, bounding after his prey on long legs.  He's deceptively strong and adaptable, capable of dragging large carcasses and surviving where other cats can't.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_ORANGE_BLACK:990:BLACK:10:WHITE:1]
@@ -744,7 +744,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:LEOPARD_MAN]
 	[COPY_TAGS_FROM:LEOPARD]
@@ -931,7 +931,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, solitary cat with a spotted, rosetted coat.  He has short legs and a shorter tail than other cats, making him look stocky.  He stalks and silently ambushes his prey, biting with powerful jaws.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_ORANGE_BLACK:940:BLACK:60:WHITE:1]
@@ -946,7 +946,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:JAGUAR_MAN]
 	[COPY_TAGS_FROM:JAGUAR]
@@ -1136,7 +1136,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, striped cat with powerful legs and a long, swishing tail.  Aloof and territorial, his aggressive nature sometimes drives him to attack people.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:STRIPES_ORANGE_BLACK:1]
@@ -1151,7 +1151,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:TIGER_MAN]
 	[COPY_TAGS_FROM:TIGER]
@@ -1327,7 +1327,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, spotted cat with thin legs, a slender body, a small, rounded head, and a long, swishing tail.  His ears flick this way and that as he lies in wait for his prey.  He runs with great speed, bounding and leaping through tall grass at a great pace.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:SPOTS_TAN_BLACK:1]
@@ -1342,7 +1342,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:CHEETAH_MAN]
 	[COPY_TAGS_FROM:CHEETAH]
@@ -1514,7 +1514,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, skittish, agile herbivore with spiral horns, long, hooved legs, and a slender, light body.  He lives with a large herd and runs in leaps and bounds through the tall grass.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -1527,7 +1527,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GAZELLE_MAN]
 	[COPY_TAGS_FROM:GAZELLE]
@@ -1683,7 +1683,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, stocky monkey with a very short tail, a crushing bite, a blue face, and a blue bum.  He lives with a large group that sometimes raids settlements, destroying crops and stealing whatever they can.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1697,7 +1697,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:MANDRILL_MAN]
 	[COPY_TAGS_FROM:MANDRILL]
@@ -1858,7 +1858,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, intelligent, sometimes vicious ape which lives with a large, complex tribe in tropical forest.  He has a round and mostly hairless face, prominent ears, and arms longer than his legs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -1871,7 +1871,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BONOBO]
 	[DESCRIPTION:A large ape which lives in the tropical forests.  It is quite intelligent and lives in large and complex social groups.]
@@ -1965,7 +1965,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, intelligent, and social ape with a carefree attitude toward sex.  He lives with a large and complex tribe in tropical forest.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -1978,7 +1978,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GORILLA]
 	[DESCRIPTION:A huge ape found in the forest.  It lives in small groups eating plants.  The groups are lead by a large dominant male with a silver back.]
@@ -2087,7 +2087,7 @@ creature_large_tropical
 		[DESCRIPTION:A large ape that lives quietly in the forest.  His arms are longer than his legs, allowing him to walk upright on his knuckles and feet.  He lives in a complex social group lead by a large, dominant, silver-backed male.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2100,7 +2100,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:ORANGUTAN]
 	[DESCRIPTION:A huge intelligent ape found in the tropical forests.  It is bright red and found living in the trees.]
@@ -2194,7 +2194,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, intelligent ape that swings around the trees of tropical forest.  He has long, red fur, strong arms, short, bowed legs, and a distinctive hairless face.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:ORANGE:1]
@@ -2207,7 +2207,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_SIAMANG]
 	[DESCRIPTION:A medium-sized ape found in the trees.  It is known for its loud calls.]
@@ -2301,7 +2301,7 @@ creature_large_tropical
 		[DESCRIPTION:A medium-sized, long-armed ape that lives in the trees.  He has long, shaggy fur and a mostly hairless face.  His large throat pouch puffs up as he makes loud, resonating calls.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2314,7 +2314,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_WHITE_HANDED]
 	[DESCRIPTION:A small, long-armed ape.  It lives in trees and eats fruit.]
@@ -2408,7 +2408,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed ape with white hands and feet.  He swings around the trees, eating fruit.  A ring of white fur surrounds his black face, and his bum is protected with tough, bony padding.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			NOTE: More is needed here.
@@ -2422,7 +2422,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_BLACK_HANDED]
 	[DESCRIPTION:A small fruit-eating ape, found in the trees.]
@@ -2516,7 +2516,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed, fruit-eating ape that swings around the in the trees.  He has white eyebrows, black hands and feet, and tough, bony padding on his bum.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			NOTE: More is needed here.
@@ -2530,7 +2530,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_GRAY]
 	[DESCRIPTION:A small ape found in the trees of the tropical forest.  It is known for its calls.]
@@ -2624,7 +2624,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed ape with gray fur, a black cap, and a ring of white fur around his face.  He swings around the trees of tropical forest.  He can be very territorial, warning intruders with loud calls and songs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2637,7 +2637,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_SILVERY]
 	[DESCRIPTION:A small ape found in the trees eating fruit.]
@@ -2726,7 +2726,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, fruit-eating ape that swings around in the trees.  He has long, curved fingers and a lean body, and hangs from trees with long arms.  His gray fur has a blue tinge, and the top of his head is black.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2739,7 +2739,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_PILEATED]
 	[DESCRIPTION:A small ape found in pairs, swinging from the trees.]
@@ -2831,7 +2831,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, fruit-eating ape often found swinging from the trees in pairs.  He has long, shaggy fur and a ring of white fur around his black head.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:hair:SINGULAR]
@@ -2844,7 +2844,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_BILOU]
 	[DESCRIPTION:A small ape that swings from the trees, eating fruit.]
@@ -2938,7 +2938,7 @@ creature_large_tropical
 		[DESCRIPTION:A small ape that swings from the trees and eats fruit.  He has long, shaggy fur and a mostly hairless face.  He has beautiful, song-like calls that warn others and strengthen family bonds.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -2951,7 +2951,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_WHITE_BROWED]
 	[DESCRIPTION:A small fruit-eating ape, found in the trees.]
@@ -3040,7 +3040,7 @@ creature_large_tropical
 		[DESCRIPTION:A small fruit-eating ape that swings about the trees in tropical forest.  He has white eyebrows and a white ring of fur that surrounds his black face.  He sings elaborate songs with his mate, strengthening family bonds.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -3053,7 +3053,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIBBON_BLACK_CRESTED]
 	[DESCRIPTION:A small ape from the tropical forest.  It can be found in the trees eating fruit.]
@@ -3147,7 +3147,7 @@ creature_large_tropical
 		[DESCRIPTION:A small, long-armed ape that lives in tropical forest.  He has a loud, song-like call often sung in concert.  He swings around in the trees, eating fruit.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -3160,7 +3160,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:CAMEL_1_HUMP]
 	[DESCRIPTION:A large long-necked creature with a large hump on its sturdy body.  It has been domesticated to carry passengers and cargo but is nonetheless bad-tempered and will spit.]
@@ -3296,7 +3296,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, long-necked creature with a patchy coat, long legs, a big-lipped, long snout, and a large hump on his sturdy body.  He has been domesticated to carry passengers and cargo, but is nonetheless bad-tempered and will spit.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -3309,7 +3309,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:CAMEL_1_HUMP_MAN]
 	[COPY_TAGS_FROM:CAMEL_1_HUMP]
@@ -3504,7 +3504,7 @@ creature_large_tropical
 		[DESCRIPTION:A large, long-necked creature with a thick coat, long legs, a big-lipped, long snout, and two fleshy humps on his back.  He has been domesticated to carry passengers and cargo, but is nonetheless bad-tempered and will spit.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -3517,7 +3517,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:CAMEL_2_HUMP_MAN]
 	[COPY_TAGS_FROM:CAMEL_2_HUMP]
@@ -3708,7 +3708,7 @@ creature_large_tropical
 		[MALE]
 		[DESCRIPTION:A huge reptile with a broad body, a wide snout, and a thick, powerful tail.  He swims in coastal marshes and rivers, watching for prey to drag underwater.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{:SCALE
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -3720,7 +3720,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:CROCODILE_SALTWATER_MAN]
 	[COPY_TAGS_FROM:CROCODILE_SALTWATER]
@@ -3887,7 +3887,7 @@ creature_large_tropical
 		[MALE]
 		[DESCRIPTION:A large bird that flies in warm skies, watching the ground for carrion.  He has a strong beak for tearing flesh and it excretes a mild, flesh-degrading toxin from his featherless head.  His strong stomach can digest even the most putrid carcasses.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -3900,7 +3900,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:VULTURE_MAN]
 	[COPY_TAGS_FROM:BIRD_VULTURE]
@@ -4059,7 +4059,7 @@ creature_large_tropical
 		[DESCRIPTION:An immense, heavy herbivore with thick, plated skin and thick horns at the end of his snout.  He sleeps through the hottest parts of the day and grazes otherwise, aside from occasional mud baths.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -4074,7 +4074,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:5]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:RHINOCEROS_MAN]
 	[COPY_TAGS_FROM:RHINOCEROS]
@@ -4227,7 +4227,7 @@ creature_large_tropical
 		[DESCRIPTION:A huge, leaf-eating mammal with an extremely long neck.  His skin has a distinctive brown and white pattern.  He runs in leaps and bounds across savanna and shrubland on long legs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:STRIPES_BROWN_WHITE:1]
@@ -4242,7 +4242,7 @@ creature_large_tropical
 		[MULTIPLY_VALUE:5]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIRAFFE_MAN]
 	[COPY_TAGS_FROM:GIRAFFE]
@@ -4403,7 +4403,7 @@ creature_large_tropical
 		[BODY_SIZE:1:0:7000]
 		[BODY_SIZE:2:0:14000]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
@@ -4427,7 +4427,7 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:HONEY BADGER MAN]
 	[COPY_TAGS_FROM:HONEY BADGER]
@@ -4602,7 +4602,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 		[BODY_SIZE:2:0:150000]
 		[BODY_SIZE:5:0:300000]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:ECRU:1]
@@ -4612,7 +4612,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GIANT TORTOISE MAN]
 	[COPY_TAGS_FROM:GIANT TORTOISE]
@@ -4765,7 +4765,7 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 		[DESCRIPTION:A small, naturally-armored mammal with a pointy snout, large ears, and a long tail.  He can roll into a ball to escape predators, relying on his leathery, armored hide for defense.  He has a long, sticky tongue useful for eating insects.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -4778,7 +4778,7 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:ARMADILLO MAN]
 	[COPY_TAGS_FROM:ARMADILLO]

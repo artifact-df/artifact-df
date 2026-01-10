@@ -173,6 +173,7 @@ reaction_aa_milling
 	[SKILL:MILLING]
 		[SKILL_IP:100]
 	[CATEGORY:GENERIC_REACTIONS]
+	[DESCRIPTION:Mill oily seeds and nuts to paste, which can then be pressed into oil and cake at a screw press.]{+}
 
 [REACTION:AA_MILL_PLANT_TO_PASTE]
 	[NAME:Mill five plants to paste]

@@ -56,7 +56,7 @@ creature_insects
 		[MALE]
 		[DESCRIPTION:A tiny pest that flies around rotting meat and garbage.  The buzzing is the worst part.  He flits about, persistent yet evasive.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BLACK:1:DARK_OLIVE:1:DARK_GREEN:1:CHARCOAL:1]{:BLACK:1}
@@ -225,7 +225,7 @@ creature_insects
 		[MALE]
 		[DESCRIPTION:A scuttling pest that seeks out unwatched food and garbage.  He fears light and is hard to kill.  He can thrive where little else can.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -351,7 +351,7 @@ creature_insects
 		[MALE]
 		[DESCRIPTION:A tiny oval insect that can be found almost anywhere outside.  His forewings are hardened carapaces, protecting him when he isn't flying.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:RED:1]
@@ -558,7 +558,7 @@ creature_insects
 		[MALE]
 		[DESCRIPTION:A small, fluttering insect with large, orange, and patterned wings, admired for his beauty.  Born as a caterpillar, he develops into adulthood in a chrysalis.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:ORANGE:1] *** This obviously needs work.
@@ -684,7 +684,7 @@ creature_insects
 		[MALE]
 		[DESCRIPTION:A tiny flying insect that can be seen at night by his glowing tail.  His leathery forewings are hardened carapaces, protecting him when he's not flying.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -809,7 +809,7 @@ creature_insects
 		[MALE]
 		[DESCRIPTION:A relatively large, colorful insect with filmy wings and a long body.  He preys on insects in flight and devours them in the air.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:AQUAMARINE:1]

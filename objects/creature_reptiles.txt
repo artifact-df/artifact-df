@@ -8,7 +8,7 @@ creature_reptiles
 	[CASTE_NAME:lizard:lizards:lizard]
 	[CREATURE_TILE:249][COLOR:6:0:0]
 	[PETVALUE:10]
-	[VERMIN_EATER][PENETRATEPOWER:2][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
+	[VERMIN_EATER][PENETRATEPOWER:1][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
 	[SMALL_REMAINS][NO_WINTER]
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
@@ -74,7 +74,6 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny reptile with a tail much longer than his thin body.  Quick and agile, he scurries away on stocky legs when others come near.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:LIGHT_BROWN:1]
@@ -102,7 +101,7 @@ creature_reptiles
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
 	[APPLY_CREATURE_VARIATION:CLAW_SCRATCH_ATTACK]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
+	[APPLY_CREATURE_VARIATION:TOOTH_BITE_ATTACK]{:MOUTH_BITE_ATTACK
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -112,7 +111,7 @@ creature_reptiles
 	[DESCRIPTION:A person with the head and tail of a lizard.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -231,7 +230,6 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny, secretive lizard that lives in a burrow and forages for bugs during daylight hours.  He has small legs and a stocky body, and seems to have no neck.  He can live in most climates.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_BLACK_WHITE:1]
@@ -268,7 +266,7 @@ creature_reptiles
 	[DESCRIPTION:A long-bodied person with the head and tail of a skink.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -388,7 +386,6 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny, color-shifting lizard that spends his life hunting insects with his long tongue.  He moves slowly with a swaying gait through the trees, watching everywhere with independently roving eyes.  His gripping tail is often curled into a spiral.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:STRIPES_RAINBOW:1] needs to do color changes
@@ -415,7 +412,7 @@ creature_reptiles
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
+	[APPLY_CREATURE_VARIATION:TOOTH_BITE_ATTACK]{:MOUTH_BITE_ATTACK
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -425,7 +422,7 @@ creature_reptiles
 	[DESCRIPTION:A colorful person with the head and tail of a chameleon.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'c']
 	[COLOR:2:0:1]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -542,7 +539,6 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A tiny lizard with a colorful neck flap and adhesive feet for climbing.  He can drop his tail to surprise predators.  His coloring shifts between brown and green to fit his surroundings.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -569,7 +565,7 @@ creature_reptiles
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]
+	[APPLY_CREATURE_VARIATION:TOOTH_BITE_ATTACK]{:MOUTH_BITE_ATTACK
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -579,7 +575,7 @@ creature_reptiles
 	[DESCRIPTION:A person with the head and tail of an anole.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'a']
 	[COLOR:2:0:1]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
@@ -705,7 +701,6 @@ creature_reptiles
 		[MALE]
 		[DESCRIPTION:A small, plant-eating lizard with skin that looks like bark.  He has a spiny back, a large neck flap, and a tiny, light-sensitive third eye on his forehead.  Usually docile by nature, he whips his long tail about when he's angry.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -745,7 +740,7 @@ creature_reptiles
 	[DESCRIPTION:A person with the head and tail of an iguana.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'i']
 	[COLOR:2:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]

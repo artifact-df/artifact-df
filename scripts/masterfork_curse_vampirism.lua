@@ -1,7 +1,7 @@
 interactions.curse.major.vampire=nil-- disables vanilla vampires
 
 -- redefined vampires
-interactions.curse.major.vampire=function(idx,tok)
+interactions.curse.major.vampirism=function(idx,tok)
     return {raws={
     "[IS_HIST_STRING_1: cursed ]",
     "[IS_HIST_STRING_2: to prowl the night in search of blood]",
@@ -37,7 +37,7 @@ interactions.curse.major.vampire=function(idx,tok)
 		"[SYN_NO_HOSPITAL]",--new
         "[CE_ADD_TAG:BLOODSUCKER:NO_AGING:STERILE:NOT_LIVING:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:PARALYZEIMMUNE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0:ABRUPT]",
 		"[CE_PHYS_ATT_CHANGE:STRENGTH:50:0:TOUGHNESS:50:0:AGILITY:50:0:ENDURANCE:50:0:DISEASE_RESISTANCE:50:0:START:0:ABRUPT]",-- weakens the target always
-		"[CE_MENT_ATT_CHANGE:EMPATHY:75:-150]",-- vampires are less empathetic
+		"[CE_MENT_ATT_CHANGE:EMPATHY:50:0]",-- vampires are less empathetic
 		"[CE_SPEED_CHANGE:SPEED_PERC:80:START:0:ABRUPT]",
 		"[CE_MENT_ATT_CHANGE:FOCUS:50:0:START:0:ABRUPT]",
 		"[CE_MENT_ATT_CHANGE:INTUITION:50:0:START:0:ABRUPT]",
@@ -46,21 +46,12 @@ interactions.curse.major.vampire=function(idx,tok)
 		"[CE_MENT_ATT_CHANGE:WILLPOWER:50:0:START:0:ABRUPT]",
 		"[CE_SPECIAL_ATTACK_INTERACTION:INTERACTION:"..tok..":BP:BY_CATEGORY:MOUTH:BP:BY_CATEGORY:TOOTH:START:0:ABRUPT]",-- vampires can spread vampirism similar to werecreatures
 		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]",-- 0.5x damage taken from all materials
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:1:1:ABRUPT]",-- 1.0x damage taken from steel
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:BRONZE:4:5]",-- 0.75x damage taken from bronze
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]",-- 1.5x damage taken from silver
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:5:4:ABRUPT]",-- 1.25x damage taken from mithril
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:DWARFSTEEL:5:4:ABRUPT]",-- 1.25x damage taken from dwarfsteel
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:TITANSTEEL:5:4:ABRUPT]",-- 1.25x damage taken from titansteel
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:ORICHALCUM:5:4:ABRUPT]",-- 1.25x damage taken from orichalcum
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:VOLCANIC:5:4:ABRUPT]",--   1.25x damage taken from volcanite
-		"[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:ADAMANTINE:5:4:ABRUPT]",-- 1.25x damage taken from adamantine
         "[CE_BODY_MAT_INTERACTION:MAT_TOKEN:RESERVED_BLOOD:START:0:ABRUPT]",
         "[CE:INTERACTION:"..tok.."]",
             "[CE:SYNDROME_TAG:SYN_INGESTED]",
                     "[CE:SYNDROME_TAG:SYN_INJECTED]",
         "[CE_DISPLAY_TILE:TILE:165:4:0:0:START:0:CAN_BE_HIDDEN:ABRUPT]",
-		"[CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:25:FACET:LOVE_PROPENSITY:-25:FACET:BASHFUL:25:FACET:PRIVACY:50:FACET:TRUST:-50:FACET:TOLERANT:25:FACET:EMOTIONALLY_OBSESSIVE:-25:FACET:SWAYED_BY_EMOTIONS:-25:START:0:ABRUPT]",-- new personality facets
+		"[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-33:FACET:BASHFUL:33:FACET:PRIVACY:33:FACET:TRUST:-33:FACET:EMOTIONALLY_OBSESSIVE:-33:FACET:SWAYED_BY_EMOTIONS:-33:START:0:ABRUPT]",-- new personality facets
 		"[CE_MENT_ATT_CHANGE:EMPATHY:80:0]",-- vampires are less empathetic
         "[CE_DISPLAY_NAME:NAME:vampire:vampires:vampiric:START:0:CAN_BE_HIDDEN:ABRUPT]",
         "[CE_BP_APPEARANCE_MODIFIER:START:0:BP:BY_CATEGORY:TOOTH:APPEARANCE_MODIFIER:LENGTH:150:ABRUPT]",
@@ -107,5 +98,5 @@ interactions.curse.major.vampire=function(idx,tok)
 		    "[CDI:MAX_TARGET_NUMBER:A:1]",
 		    "[CDI:FREE_ACTION]",
 		    "[CDI:WAIT_PERIOD:172800]",
-    },weight=1}
+    },weight=2}
 end

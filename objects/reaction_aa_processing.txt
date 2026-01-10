@@ -15,6 +15,7 @@ reaction_aa_processing
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:PROCESSPLANTS]
+	[DESCRIPTION:Pick fruits or leaves from gathered whole plants, such as quarry bushes.]
 
 [REACTION:AA_PROCESS_CACAO_FRUIT]
 	[NAME:Roast cacao bean]

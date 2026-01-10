@@ -162,6 +162,9 @@ creature_fantasy_elemental_creatures_fff
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:8]
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CREATURE_VARIATION:HAIR_CAN_BE_PADDED]{+     Revision: hair can be turned into padded wool.}
 
 [CREATURE:STEELBOAR_FFF]
 	[DESCRIPTION:A medium-sized beast, known for its tusks, powerful build and naturally-occuring armour.]
@@ -286,6 +289,8 @@ creature_fantasy_elemental_creatures_fff
 			[TL_COLOR_MODIFIER:IRIS_EYE_BROWN:1]
 				[TLCM_NOUN:eyes:PLURAL]
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
 
 [CREATURE:SMILING_STONE_FFF]
 	[DESCRIPTION:A small monster that resembles a boulder or stone with a tooth-filled mouth. It has four limbs and uses its natural camoflage and stone magic to ambush its enemies.]

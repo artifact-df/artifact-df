@@ -532,6 +532,9 @@ creature_fantasy_mammal_fff
 				[TLCM_NOUN:eyes:PLURAL]
 		[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:4]
+	[SELECT_CASTE:ALL]{+}
+		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
+		[APPLY_CREATURE_VARIATION:HAIR_CAN_BE_PADDED]{+     Revision: hair can be turned into padded wool.}
 
 [CREATURE:CHUPACABRA_FFF]
 	[DESCRIPTION:A hairless, dog-like creature found in evil deserts and shrublands. They are often blamed for mysterious livestock deaths and are said to have a preference for goat blood.]

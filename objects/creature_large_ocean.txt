@@ -73,7 +73,7 @@ creature_large_ocean
 		[DESCRIPTION:A huge sea mammal with giant tusks and dense whiskers.  His thick, blubbery body keeps him warm in arctic waters.  He bores holes in the ice with his tusks to feed on mussels.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -235,7 +235,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A small, eel-like ocean fish that latches onto the side of his prey and tears into them.  His toothed, funnel-like sucking mouth lacks jaws.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -320,7 +320,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A giant ocean fish with a white belly, a conical snout, and rows and rows of razor-sharp, pointy teeth.  He swims with great speed and is feared for his ferocity.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -405,7 +405,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, eel-like fish that swims in coastal waters.  He has six pairs of gill slits and many needle-like teeth.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -490,7 +490,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, bottom-dwelling fish that swims near the coast in temperate waters.  He has large eyes and two spines on his back, used for defense.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -575,7 +575,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, gentle fish covered with growths and spots which he uses to hide on the sea bed.  He lies still, his flat head and body pressed against the bottom.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -650,7 +650,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A giant spotted fish found in tropical oceans.  His wide mouth drinks and filter-feeds as he swims.  He has a wide, flat head and tall tailfins.  A gentle creature, he swims slowly and basks near the surface, close to the sun.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -725,7 +725,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A giant, slow-moving fish found in temperate ocean.  He has a conical snout and rough, mottled skin.  He basks lazily near the surface of the water, filter-feeding plankton with his large mouth.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -809,7 +809,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, bottom-dwelling fish with a broad head, a large mouth, and a flattened body.  He swims slowly and stays close to the shore of near-tropical waters.  Unlike most fish, he can breathe without swimming.  This lets him rest lazily on the sea bed for long periods of time.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -894,7 +894,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, aggressive ocean fish with a slender body and a mouth full of sharp teeth.  He's capable of great speed, sometimes leaping high out of the water.  His short fins distinguish him from his long-finned brethren.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -979,7 +979,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, elusive fish with a slender body and a mouth full of sharp teeth.  He preys on fish and squid in coastal waters.  His long fins distinguish him from his short-finned brethren.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1063,7 +1063,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A giant striped ocean fish with rows of sharp teeth and a strong stomach.  He can devour almost anything; his teeth tear through flesh, bone, and shell.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1147,7 +1147,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized, aggressive, and territorial fish with a stocky body and a broad, flat snout.  He swims in shallow ocean waters and, sometimes, in large rivers.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1232,7 +1232,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized, slender fish found in shallow ocean waters.  His fins are tipped in black, one of the only differences between him and his white-tipped brethren.  He's timid but fierce when provoked.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1316,7 +1316,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized, slender fish that shelters in caves on the shallow sea floor.  His fins are tipped in white, one of the few differences between him and his black-tipped brethren.  He hunts in a pack but is rarely aggressive.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1400,7 +1400,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large and dangerous fish that hunts in packs in deep waters.  He has a slender body and a pointy snout.  When not hunting he swims slowly and lazily.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BLUE:1]
@@ -1485,7 +1485,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large and dangerous fish that hunts by himself near the coast.  His flat head laterally extends into a hammer shape.  His eyes are far apart from each other.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1570,7 +1570,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large and flat fish that hides on temperate sea bed with mottled, camouflaged skin.  Patient and lazy, he buries himself in sand and waits for prey to swim close.  His strong jaws extend to bite his prey.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1647,7 +1647,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized, flat fish that swims on large wings.  He glides lazily near the sea bed.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1714,7 +1714,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A huge, curious, and gentle fish that glides through the water with his flat body, broad head, and great wings.  He filters plankton as he swims.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1797,7 +1797,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized, flat fish that lies in the sand of coastal sea beds and floats with the sway of the tide.  He defends himself with sharp barbs fatal to careless swimmers.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1884,7 +1884,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:An elusive medium-sized fish that swims near the coast.  His long body is covered in hard scales.  He has many fins; some are hollow spines while others are fleshy and stubby.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1975,7 +1975,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large and long-lived ocean fish with a slender, spindle-like body covered in bony plates.  He feeds near the sea bed and swims up rivers to spawn.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2049,7 +2049,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized, snake-like fish with a scaleless long body, a large head, and a wide mouth.  He bites with strong jaws, then thrashes and batters his prey as his teeth sink deeper.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2143,7 +2143,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized fish that swims in schools around coastal and island reefs.  An easy target for predators, he finds some safety in great numbers.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2232,7 +2232,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized ocean fish with rounded fins, a small tendril on his chin, and a white line from his gills to his tailfins.  He changes color subtly as he dives.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2320,7 +2320,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large and colorful ocean fish shaped like a disc.  His flat, round body is covered in white spots.  He can keep himself warm in the ocean deep.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2407,7 +2407,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, big-mouthed bony fish that swims around coral reefs.  His color changes with age.  He sucks his prey in whole, then swallows them.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2496,7 +2496,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A medium-sized, aggressive ocean fish with long jaws and a forked tail.  He preys on schools of fish; he churns the water as he feeds in a violent frenzy.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:BLUE:1]
@@ -2585,7 +2585,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A giant mottled fish that looks like a flattened fishhead connected to a wide, lumpy tail and strange fins.  He follows ocean currents and lives mostly on jellyfish.  He often swims far from the shore.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2674,7 +2674,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A huge, predatory fish that swims alone in open ocean.  Fast and agile, he charges his prey, slashing and ramming with his long, sharp snout.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2763,7 +2763,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A huge, crested ocean fish with a long, sharp snout that slashes prey.  He swims with great speed near the surface and dives occasionally to eat squid.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2851,7 +2851,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, flat ocean fish with both eyes on the top of his head.  He swims near the sea bed and feeds on bottom dwellers.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -2941,7 +2941,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A long, snake-like fish with strong jaws and many sharp teeth.  He ambushes his prey then takes his time tearing into them.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -3031,7 +3031,7 @@ creature_large_ocean
 		[MALE]
 		[DESCRIPTION:A large, predatory ocean fish that swims with speed and power.  He's warm-blooded, unlike most fish, and camouflaged with contrasting blue and silver.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -3140,7 +3140,7 @@ Narwhals were sponsored by the generous contributions of the Bay 12 community.
 		[MALE]
 		[DESCRIPTION:A medium-sized sea mammal with a long, thin horn on his nose and a large tailfins.  He breaks up ice with his horn, which he also uses to communicate with his kind.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:MOTTLED_BLACK_WHITE:1]

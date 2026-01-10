@@ -1,7 +1,7 @@
 interactions.secrets.necromancer=nil-- disables vanilla necromancy
 
--- redefined necromancy, increased summon wait periods, new abilities, resistances and weakness, etc.
-interactions.secrets.necromancer=function(idx,sph)
+-- redefined necromancy, increased summon wait periods, new abilities
+interactions.secrets.death=function(idx,sph)
     if sph and sph~="DEATH" then return nil end -- no sph means it generates anyway!
     local ropar=random_object_parameters
     local animate_token=ropar.token_prefix.."SECRET_ANIMATE_"..tostring(idx)
@@ -52,18 +52,9 @@ interactions.secrets.necromancer=function(idx,sph)
             [CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0:ABRUPT]
             [CE_ADD_TAG:NOEXERT:NO_AGING:STERILE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]// added sterile
             [CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-25:FACET:EMOTIONALLY_OBSESSIVE:-25:FACET:SWAYED_BY_EMOTIONS:-25:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
-			[CE_MENT_ATT_CHANGE:EMPATHY:75:-150]// necromancers are less empathetic
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]",-- 0.5x damage taken from all materials
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:STEEL:1:1:ABRUPT]",-- 1.0x damage taken from steel
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:BRONZE:4:5]",-- 0.75x damage taken from bronze
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:SILVER:6:4:ABRUPT]",-- 1.5x damage taken from silver
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:MITHRIL:5:4:ABRUPT]"-- 1.25x damage taken from mithril
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:DWARFSTEEL:5:4:ABRUPT]"-- 1.25x damage taken from dwarfsteel
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:TITANSTEEL:5:4:ABRUPT]"-- 1.25x damage taken from titansteel
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:ORICHALCUM:5:4:ABRUPT]"-- 1.25x damage taken from orichalcum
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:VOLCANIC:5:4:ABRUPT]"--   1.25x damage taken from volcanite
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:INORGANIC:ADAMANTINE:5:4:ABRUPT]"-- 1.25x damage taken from adamantine
+			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-33:FACET:EMOTIONALLY_OBSESSIVE:-33:FACET:SWAYED_BY_EMOTIONS:-33:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
+			[CE_MENT_ATT_CHANGE:EMPATHY:75:0]// necromancers are less empathetic
+			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]
             [CE_CAN_DO_INTERACTION:START:0:ABRUPT]
                 [CDI:ADV_NAME:Animate corpse]
                 str="[CDI:INTERACTION:]]..animate_token..[[]
@@ -101,7 +92,7 @@ interactions.secrets.necromancer=function(idx,sph)
                 [CDI:TARGET_RANGE:A:1]
                 [CDI:MAX_TARGET_NUMBER:A:1]
                 [CDI:FREE_ACTION]
-                [CDI:WAIT_PERIOD:100]
+                [CDI:WAIT_PERIOD:1000]
         ]])
     local adj = pick_random(necromancer_raise_adjectives)
     local noun = pick_random(necromancer_raise_nouns)
@@ -235,12 +226,14 @@ interactions.secrets.necromancer=function(idx,sph)
 						[IE_IMMEDIATE]
 						[SYNDROME]
 							[SYN_CLASS:RAISED_GHOST]
+							[SYN_NO_HOSPITAL]//new
 							[SYN_CONCENTRATION_ADDED:1000:0]//just in case
 							[CE_DISPLAY_TILE:TILE:165:7:0:1:START:0:ABRUPT]
                             [CE_DISPLAY_NAME:NAME:]]..ghost_name..":"..ghost_name_plural..":"..ghost_name..[[:START:0:ABRUPT]
 							[CE_PHYS_ATT_CHANGE:STRENGTH:200:1000:TOUGHNESS:200:1000:START:0:ABRUPT]
 							[CE_ADD_TAG:NO_AGING:NOT_LIVING:STERILE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]
 							[CE_REMOVE_TAG:HAS_BLOOD:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
+							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]//new
         ]])
         local t,et=basic_lieutenant_powers(ghost_token)
         tbl=table_merge(tbl,table_merge(t,et))
@@ -280,6 +273,7 @@ interactions.secrets.necromancer=function(idx,sph)
             [IE_ARENA_NAME:Infected ghoul]
             [SYNDROME]
                 [SYN_CLASS:GHOUL]
+				[SYN_NO_HOSPITAL]//new
                 [SYN_CONCENTRATION_ADDED:1000:0]//just in case
                 [CE_FLASH_TILE:TILE:165:4:0:1:FREQUENCY:2000:1000:START:0:ABRUPT]
                 [CE_DISPLAY_NAME:NAME:]]..g_name_sing..":"..g_name_plur..":"..g_name_sing..[[:START:0:ABRUPT]
@@ -288,6 +282,7 @@ interactions.secrets.necromancer=function(idx,sph)
                 else 1/2 chance CE_SPEED_CHANGE:SPEED_PERC:20:START:0:ABRUPT
                 [CE_ADD_TAG:NO_AGING:NOT_LIVING:OPPOSED_TO_LIFE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]
                 [CE_REMOVE_TAG:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
+				[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]//new
                 [CE_SPECIAL_ATTACK_INTERACTION:INTERACTION:]]..ghoul_token..":BP:BY_CATEGORY:MOUTH:BP:BY_CATEGORY:TOOTH:START:0:ABRUPT]"
         )
     end

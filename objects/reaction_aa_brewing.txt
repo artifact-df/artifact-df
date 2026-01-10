@@ -27,6 +27,7 @@ reaction_aa_brewing
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
+	[DESCRIPTION:Brew alcohol from whole plants, such as sweet pods, plump helmets or grains.]{+}
 
 [REACTION:BREW_DRINK_FROM_PLANT_GROWTH]
 	[NAME:brew drinks from plant growths]
@@ -48,6 +49,7 @@ reaction_aa_brewing
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
+	[DESCRIPTION:Brew alcohol from fruits, such as strawberries or apples.]{+}
 
 [REACTION:MAKE_MEAD]
 	[NAME:Make mead from any type of honey]
@@ -73,6 +75,7 @@ reaction_aa_brewing
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
+	[DESCRIPTION:Brew alcohol from honey. Honey is pressed from honeycombs at a screw press.]{+}
 
 [REACTION:AA_BREW_DRINKS_FROM_APPLE_FRUIT]
 	[NAME:brew some apple cider]

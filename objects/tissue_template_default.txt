@@ -7,9 +7,12 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SKIN]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:85]{:100           Lower is faster.
+
+	Lower is faster.
+	[HEALING_RATE:100]
+
 	[VASCULAR:1]
-	[PAIN_RECEPTORS:3]{:5        Revision: on the other hand, cuts were too painful.}
+	[PAIN_RECEPTORS:2]{:5        Revision: on the other hand, cuts were too painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -34,9 +37,9 @@ tissue_template_default
 	[MUSCULAR]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE]
 	[RELATIVE_THICKNESS:3]
-	[HEALING_RATE:120]{:100
-	[VASCULAR:10]{:3
-	[PAIN_RECEPTORS:7]{:5       Revision: increased pain to compensate for lowered pain on skin.}
+	[HEALING_RATE:110]{:100
+	[VASCULAR:4]{:3
+	[PAIN_RECEPTORS:6]{:5       Revision: increased pain to compensate for lowered pain on skin.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -45,9 +48,9 @@ tissue_template_default
 	[STRUCTURAL]
 	[CONNECTIVE_TISSUE_ANCHOR]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:BONE]
-	[RELATIVE_THICKNESS:2]
+	[RELATIVE_THICKNESS:3]{:2    Revision: bone fractured too easily.}
 	[HEALING_RATE:1000]
-	[VASCULAR:3]
+	[VASCULAR:1]{:3              Revision: bone fractures don't bleed that much.}
 	[PAIN_RECEPTORS:65]{:50      Revision: bone fractures should be more painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -70,7 +73,7 @@ tissue_template_default
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HORN]
 	[RELATIVE_THICKNESS:2]
-	[HEALING_RATE:500]{+  Revision: horn damage shouldn't cause permanent injury.}
+	[HEALING_RATE:500]{+    Revision: horn damage shouldn't cause permanent injury.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -79,10 +82,10 @@ tissue_template_default
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HOOF]
 	[RELATIVE_THICKNESS:2]
-	[HEALING_RATE:1000]{+  Revision: hoof damage shouldn't cause permanent injury.}
+	[HEALING_RATE:500]{+    Revision: hoof damage shouldn't cause permanent injury.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
-	[SETTABLE]{+  Revision: these wounds need to be fixed by bone doctors.}
+	[SETTABLE]{+    Revision: these wounds need to be fixed by bone doctors.}
 	[SPLINTABLE]{+}
 
 [TISSUE_TEMPLATE:CARTILAGE_TEMPLATE]
@@ -90,8 +93,8 @@ tissue_template_default
 	[STRUCTURAL]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:CARTILAGE]
 	[RELATIVE_THICKNESS:2]
-	[HEALING_RATE:300]{+  Revision: cartilage damage shouldn't cause permanent injury. Heals pretty fast.}
-	[PAIN_RECEPTORS:5]    Sver: shattered ears, noses etc. are painful
+	[HEALING_RATE:150]{+    Revision: cartilage damage shouldn't cause permanent injury. Heals pretty fast.}
+	[PAIN_RECEPTORS:5]{+    Sver: shattered ears, noses etc. are painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -103,7 +106,7 @@ tissue_template_default
 	[COSMETIC]
 	[STYLEABLE]
 	[INSULATION:100]
-	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
+	[HEALING_RATE:50]{+  Revision: hair grows back fairly quick.}
 	[TISSUE_SHAPE:STRANDS]
 
 [TISSUE_TEMPLATE:CHEEK_WHISKERS_TEMPLATE]
@@ -111,7 +114,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HAIR]
 	[RELATIVE_THICKNESS:2]
 	[SUBORDINATE_TO_TISSUE:SKIN]
-	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
+	[HEALING_RATE:50]{+  Revision: hair grows back fairly quick.}
 	[COSMETIC]
 	[STYLEABLE]
 	[TISSUE_SHAPE:STRANDS]
@@ -121,7 +124,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HAIR]
 	[RELATIVE_THICKNESS:2]
 	[SUBORDINATE_TO_TISSUE:SKIN]
-	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
+	[HEALING_RATE:50]{+  Revision: hair grows back fairly quick.}
 	[COSMETIC]
 	[STYLEABLE]
 	[TISSUE_SHAPE:STRANDS]
@@ -131,7 +134,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HAIR]
 	[RELATIVE_THICKNESS:2]
 	[SUBORDINATE_TO_TISSUE:SKIN]
-	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
+	[HEALING_RATE:50]{+  Revision: hair grows back fairly quick.}
 	[COSMETIC]
 	[STYLEABLE]
 	[TISSUE_SHAPE:STRANDS]
@@ -141,7 +144,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HAIR]
 	[RELATIVE_THICKNESS:2]
 	[SUBORDINATE_TO_TISSUE:SKIN]
-	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
+	[HEALING_RATE:50]{+  Revision: hair grows back fairly quick.}
 	[COSMETIC]
 	[STYLEABLE]
 	[TISSUE_SHAPE:STRANDS]
@@ -151,7 +154,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HAIR]
 	[RELATIVE_THICKNESS:2]
 	[SUBORDINATE_TO_TISSUE:SKIN]
-	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
+	[HEALING_RATE:50]{+  Revision: hair grows back fairly quick.}
 	[COSMETIC]
 	[STYLEABLE]
 	[TISSUE_SHAPE:STRANDS]
@@ -161,7 +164,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HAIR]
 	[RELATIVE_THICKNESS:2]
 	[SUBORDINATE_TO_TISSUE:SKIN]
-	[HEALING_RATE:50]{+  Revision: hair grows back fairly rapidly.}
+	[HEALING_RATE:50]{+  Revision: hair grows back fairly quick.}
 	[COSMETIC]
 	[STYLEABLE]
 	[TISSUE_SHAPE:STRANDS]
@@ -181,7 +184,7 @@ tissue_template_default
 	[SCARS]
 	[RELATIVE_THICKNESS:2]{:1
 	[HEALING_RATE:300]{:100    Revision: scale was healing too quickly.}
-	{VASCULAR:1                Revision: scale doesn't bleed anymore.}
+	--VASCULAR:1               Revision: scale doesn't bleed anymore.}
 	[PAIN_RECEPTORS:2]{:5      Revision: scale injuries are also less painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:SCALES]
@@ -241,8 +244,8 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:EYE]
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100 Revision: eyes don't heal overnight.}
-	[VASCULAR:3]
-	[PAIN_RECEPTORS:40]{:5   Revision: eye injuries are damn painful.}
+	[VASCULAR:1]{:3
+	[PAIN_RECEPTORS:25]{:5   Revision: eye injuries are damn painful.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -266,8 +269,9 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:BRAIN]
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1500]{+   Revision: brain tissue heals eventually.}
-	[VASCULAR:100]{:3       Revision: brain injuries should bleed profusely.}
-	[MAJOR_ARTERIES]        Revision: experimental; should hopefully cause internal organ trauma to be even more severe.  -zey.}
+	[VASCULAR:50]{:3       Revision: brain injuries should bleed profusely.}
+	[MAJOR_ARTERIES]{+      Revision: the brain contain many large arteries.}
+	[ARTERIES]{+            Revision: the brain contain many minor arteries.}
 	Sver: no pain, same as vanilla. It appears to be redundant, as even bruising usually causes unconsciousness.
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -280,8 +284,8 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LUNG]
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100  Revision: lungs healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:40]{:8          Revision: lungs bleed more when cut.  Internal wounds should be punishing.}
-	[ARTERIES]                Revision: experimental; should hopefully cause internal organ trauma to be even more severe.  -zey.}
+	[VASCULAR:24]{:8          Revision: lungs bleed more when cut.  Internal wounds should be punishing.}
+	[ARTERIES]{+              Revision: the lungs contain many arteries.}
 	[PAIN_RECEPTORS:100]{:5   Revision: lungs injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -294,8 +298,9 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:HEART]
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100  Revision: hearts healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:250]{:50        Revision: heart injuries bleed profusely, who thought? - zey}
-	[MAJOR_ARTERIES]          Revision: experimental; should hopefully cause internal organ trauma to be even more severe.  -zey.}
+	[VASCULAR:100]{:50        Revision: heart injuries bleed profusely, how about that..}
+	[MAJOR_ARTERIES]{+        Revision: the heart contain many large arteries, surprisingly..}
+	[ARTERIES]{+              Revision: the heart contain many minor arteries.}
 	[PAIN_RECEPTORS:200]{:5   Revision: heart injuries are EXTREMELY painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -308,9 +313,10 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:LIVER]
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100  Revision: livers healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:40]{:8          Revision: liver bleeds more when cut.  Internal wounds should be punishing.}
-	[MAJOR_ARTERIES]          Revision: liver has major arteries.}
-	[PAIN_RECEPTORS:200]{:5   Revision: liver trauma is EXTREMELY painful, hence why it's banned almost every single fighting sport.}
+	[VASCULAR:50]{:8          Revision: liver bleeds more when cut.  Internal wounds should be punishing.}
+	[MAJOR_ARTERIES]{+        Revision: the liver contain many large arteries.}
+	[ARTERIES]{+              Revision: the liver contain many minor arteries.}
+	[PAIN_RECEPTORS:100]{:5   Revision: liver trauma is EXTREMELY painful, hence why it's banned almost every single fighting sport.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -321,9 +327,9 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GUT]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1000]{:100 Revision: guts healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:15]{:3         Revision: gut bleeds more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:100]{:5  Revision: gut injuries are painful.  Internal wounds should be punishing.}
+	[HEALING_RATE:1000]{:100    Revision: guts healed too quickly; internal wounds need recovery time.}
+	[VASCULAR:15]{:3            Revision: gut bleeds more when cut.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:25]{:5     Revision: gut injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -334,9 +340,9 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:STOMACH]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1000]{:100 Revision: stomachs healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:15]{:3         Revision: stomachs bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:100]{:5  Revision: stomach injuries are painful.  Internal wounds should be punishing.}
+	[HEALING_RATE:1000]{:100    Revision: stomachs healed too quickly; internal wounds need recovery time.}
+	[VASCULAR:12]{:3            Revision: stomachs bleed more when cut.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:15]{:5      Revision: stomach injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -347,9 +353,9 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:GIZZARD]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1000]{:100 Revision: gizzards healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:15]{:3         Revision: gizzards bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:100]{:5  Revision: gizzard injuries are painful.  Internal wounds should be punishing.}
+	[HEALING_RATE:1000]{:100    Revision: gizzards healed too quickly; internal wounds need recovery time.}
+	[VASCULAR:12]{:3            Revision: gizzards bleed more when cut.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:15]{:5      Revision: gizzard injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -360,9 +366,9 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:PANCREAS]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1000]{:100 Revision: pancreases healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:15]{:3         Revision: pancreases bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:80]{:5   Revision: pancreas injuries are painful.  Internal wounds should be punishing.}
+	[HEALING_RATE:1000]{:100    Revision: pancreases healed too quickly; internal wounds need recovery time.}
+	[VASCULAR:12]{:3            Revision: pancreases bleed more when cut.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:15]{:5      Revision: pancreas injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -373,10 +379,10 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPLEEN]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1000]{:100 Revision: spleens healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:40]{:5         Revision: spleens bleed more when cut.  Internal wounds should be punishing.}
-	[ARTERIES]               Revision: experimental; should hopefully cause internal organ trauma to be even more severe.  -zey.}
-	[PAIN_RECEPTORS:80]{:5   Revision: spleen injuries are painful.  Internal wounds should be punishing.}
+	[HEALING_RATE:1000]{:100    Revision: spleens healed too quickly; internal wounds need recovery time.}
+	[VASCULAR:15]{:5            Revision: spleens bleed more when cut.  Internal wounds should be punishing.}
+	[ARTERIES]{+                Revision: the spleen contain many minor arteries.}
+	[PAIN_RECEPTORS:25]{:5      Revision: spleen injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -387,9 +393,9 @@ tissue_template_default
 	[SCARS]
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:KIDNEY]
 	[RELATIVE_THICKNESS:1]
-	[HEALING_RATE:1000]{:100 Revision: kidneys healed too quickly; internal wounds need recovery time.}
-	[VASCULAR:40]{:8         Revision: kidneys bleed more when cut.  Internal wounds should be punishing.}
-	[PAIN_RECEPTORS:80]{:5   Revision: kidney injuries are painful.  Internal wounds should be punishing.}
+	[HEALING_RATE:1000]{:100    Revision: kidneys healed too quickly; internal wounds need recovery time.}
+	[VASCULAR:24]{:8            Revision: kidneys bleed more when cut.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:25]{:5      Revision: kidney injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -426,7 +432,7 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:SPINE]
 	[HEALING_RATE:1500]{+      Revision: spine injuries shouldn't be permanent.}
 	[RELATIVE_THICKNESS:2]
-	[PAIN_RECEPTORS:200]{+     Revision: spinal injuries are very painful.  Internal wounds should be punishing.}
+	[PAIN_RECEPTORS:100]{+     Revision: spinal injuries are very painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 

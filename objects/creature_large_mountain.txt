@@ -112,7 +112,7 @@ creature_large_mountain
 		[DESCRIPTION:A medium-sized climbing herbivore with shaggy fur and curved horns.  He lives in the high mountains, able to navigate the slopes despite his hooved feet.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -281,7 +281,7 @@ creature_large_mountain
 		[DESCRIPTION:A large and bulky rodent with silver fur on his back, a pointy muzzle, round ears, and a long, flat tail.  He lives in a group in the high mountains and whistles when he senses danger.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]

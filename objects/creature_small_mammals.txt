@@ -88,7 +88,7 @@ creature_small_mammals
 		[DESCRIPTION:A tiny, intelligent vermin with a long naked tail.  A common pest, he raids stored food and spreads disease.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1:BROWN:1]
@@ -213,7 +213,7 @@ creature_small_mammals
 		[DESCRIPTION:A tiny gray rodent with a bushy tail and a white belly, often found chirping in the trees of temperate woodland.  He gathers food and stores it in small caches.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -370,7 +370,7 @@ creature_small_mammals
 		[DESCRIPTION:A tiny, bulky red rodent with a bushy tail and tall, bushy ears.  Found in the trees of temperate woodland, he collects and store food in caches for later.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -527,7 +527,7 @@ creature_small_mammals
 		[DESCRIPTION:A tiny striped rodent that scurries through the bushes and trees of temperate forest.  He stuffs food in his cheek pouches and carries it to small caches for storage, looking funny with his fat cheeks.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]

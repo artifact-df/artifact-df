@@ -29,8 +29,6 @@ creature_civ_orc_masterwork
 	[NATURAL_SKILL:DISCIPLINE:1]
 	[NATURAL_SKILL:SWIMMING:1]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
-	[NATURAL_SKILL:INTIMIDATION:2]  orc specific
-	[NATURAL_SKILL:MELEE_COMBAT:2]  orc specific
 	
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:25:50]---- Substantial Aversion
@@ -114,6 +112,9 @@ creature_civ_orc_masterwork
 	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+	[RELSIZE:BY_CATEGORY:ARM_UPPER:220]{+    Revision: orcs have larger arms than other races.  default: 200 }
+	[RELSIZE:BY_CATEGORY:ARM_LOWER:220]{+    default: 200 }
+	[RELSIZE:BY_CATEGORY:HAND:88]{+           default: 80 }
 	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
 	[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
 	[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
@@ -304,7 +305,7 @@ creature_civ_orc_masterwork
 	[BABY:1]
 	[GENERAL_BABY_NAME:orcling:orclings]
 	[BABYNAME:orcling:orclings]
-	[CHILD:22]
+	[CHILD:10]
 	[GENERAL_CHILD_NAME:orc child:orc children]
 	[CHILDNAME:orc child:orc children]
 	[HOMEOTHERM:10067]
@@ -313,13 +314,13 @@ creature_civ_orc_masterwork
 	[ODOR_LEVEL:100]
 	[ODOR_STRING:foulness]
 	[NOCTURNAL]
-	[LOW_LIGHT_VISION:10000]
+	[LOW_LIGHT_VISION:8000]
 	[SYNDROME_DILUTION_FACTOR:INEBRIATION:125]{+  less barfights.}
 	[SYNDROME_DILUTION_FACTOR:FEAR:120]{+         Revision: orcs are inherently resistant to some of the effects of fear.}
-	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:5951:5419:4898:1463:6944:8233] 6 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:5951:5419:4898:1463:6944:8233] 6 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:730:561:351:1900:2900]       25 kph orcs are lumbering
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:8390:8204:8040:4388:8989:9567] 2 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:7171:6811:6469:2193:7967:8900] 4 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:7171:6811:6469:2193:7967:8900] 4 kph
 	[SWIMS_LEARNED]
 	[SKILL_RATES:40]
 	[SKILL_RATE:MELEE_COMBAT:80]
@@ -381,7 +382,7 @@ from Splint's Urks:
 		[FEMALE]
 		[ORIENTATION:MALE:5:0:95]
 		[ORIENTATION:FEMALE:95:0:5]
-		[POP_RATIO:1]
+		[POP_RATIO:4]
 		--MULTIPLE_LITTER_RARE]
 		[LITTERSIZE:4:8]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
@@ -389,8 +390,8 @@ from Splint's Urks:
 		[MALE]
 		[ORIENTATION:FEMALE:5:0:95]
 		[ORIENTATION:MALE:95:0:5]
-		[POP_RATIO:3]
-		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
+		[POP_RATIO:5]
+		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  He is spartan and rough, like much of his kin he live in tribal camps and are frequently in conflict with their neighbors.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:NECKBEARD_TISSUE_LAYERS]
 

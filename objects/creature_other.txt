@@ -79,7 +79,7 @@ creature_other
 		[DESCRIPTION:A small critter noted for his tenacity.  He has long, triangular ears, a long snout, and a bushy tail.  His inquisitive eyes flash as he watches from a distance.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -162,7 +162,7 @@ creature_other
 		[MALE]
 		[DESCRIPTION:A small, mud-dwelling amphibian with large, glassy eyes and a big, round belly.  His kind are captured and dissected for mog juice, used in cooking.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -243,7 +243,7 @@ creature_other
 		[MALE]
 		[DESCRIPTION:A ragged and insidious form of vermin.  He has sharp teeth and a strong bite; his tail is much longer than other rodents.  He lives to steal food.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:RED:1]
@@ -320,7 +320,7 @@ creature_other
 		[MALE]
 		[DESCRIPTION:A small, pudge-filled being with a round, fluffy body, stubby limbs, and a warm heart.  He has large eyes and a small black nose, but is otherwise featureless.  He wanders aimlessly, stumbling and bumbling without purpose.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -409,7 +409,7 @@ creature_other
 		[MALE]
 		[DESCRIPTION:A tiny, stout reptile that runs on two legs.  He has a leathery hide, a pointy snout, and a horn on the end of his nose.  He's hardier than he looks.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -533,7 +533,7 @@ creature_other
 		[MALE]
 		[DESCRIPTION:A tiny, filmy critter that spins webs in certain forests.  His ghostly appearance and small size makes him hard to see and find.  His bite injects venom that causes numbness and dizziness.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -594,7 +594,7 @@ creature_other
 		[MALE]
 		[DESCRIPTION:A tiny flying insect many times the size of other flies; his buzz is deafening.  He swarms about corpses and murky pools.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -655,7 +655,7 @@ creature_other
 		[MALE]
 		[DESCRIPTION:A tiny, flying pest with a pulsating, lumpy body and long antennae.  He seeks blood and swarms about rotting meat and garbage.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:RED:1]

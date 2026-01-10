@@ -123,7 +123,6 @@ creature_domestic
 		[DESCRIPTION:A canine companion with pack instincts and a keen sense of smell.  Highly social and loyal to a fault, he can be trained to obey commands.  His tail wags when he's happy.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
@@ -179,7 +178,6 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:CAT]
 	[DESCRIPTION:A small mammalian carnivore.  It is usually domestic and hunts vermin.]
@@ -280,7 +278,6 @@ creature_domestic
 		[DESCRIPTION:A small and aloof feline that hunts vermin and makes for a pleasant companion.  Territorial and curious, he won't stop exploring until he's visited everywhere he can.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
@@ -360,7 +357,6 @@ creature_domestic
 		[CDI:WAIT_PERIOD:20]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:MULE]
 	[DESCRIPTION:The compact offspring of horse and donkey, bred to be a beast of burden.  He's hardier than most horses but less stubborn than most donkeys.]{:A compact offspring of horse and donkey, bred to be a beast of burden.}
@@ -458,7 +454,6 @@ creature_domestic
 			[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
 
 [CREATURE:DONKEY]
 	[DESCRIPTION:A medium-sized, hooved herbivore.  Some are domesticated as beasts of burden.]
@@ -571,7 +566,7 @@ creature_domestic
 		[DESCRIPTION:A medium-sized, hooved pack animal with a reputation for stubbornness.  He's often used as a beast of burden.  He has long ears, a tufted tail, and a noisy, braying attitude.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -584,7 +579,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:HORSE]
 	[DESCRIPTION:A large hooved, maned herbivore.  They can run swiftly and many are domesticated as steeds.]
@@ -701,7 +696,7 @@ creature_domestic
 		[DESCRIPTION:A large, hooved, maned herbivore, often domesticated as a steed for his stamina and great speed.  A skittish creature, he sleeps standing up so he can escape more quickly.  He's quick to run from danger unless trained for war.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -714,7 +709,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:COW]
 	[DESCRIPTION:A large mammalian herbivore.  They often bear large horns and the males are ill-tempered.  They are domesticated for milk and meat.]
@@ -764,7 +759,7 @@ creature_domestic
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
 	[MAXAGE:10:20]
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_FRONT]{+    Revision: hooved animals should kick much harder.}
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
@@ -843,7 +838,7 @@ creature_domestic
 		[CHILDNAME:bull calf:bull calves]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -859,7 +854,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:SHEEP]
 	[DESCRIPTION:A medium-sized herding animal.  It is prized for its thick wool coat.]
@@ -867,7 +862,7 @@ creature_domestic
 	[CHILD:1][GENERAL_CHILD_NAME:lamb:lambs]
 	[CREATURE_TILE:'s'][COLOR:7:0:1]
 	[CREATURE_CLASS:MAMMAL]
-	--PETVALUE:100]
+	--PETVALUE:100] increased value to 115 due to increasing wool value
 	[PREFSTRING:tendency to flock]
 	[PREFSTRING:wool]
 	[LARGE_ROAMING]
@@ -966,7 +961,7 @@ creature_domestic
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:ewe:ewes:ewe]
 		[FEMALE]
-		[PETVALUE:120]
+		[PETVALUE:138]
 		[DESCRIPTION:A medium-sized herding animal prized for her thick wool coat.  She has a bulky body and a short tail.  She flocks with her kind for protection.]{+}
 		[MULTIPLE_LITTER_RARE]
 		[USE_MATERIAL_TEMPLATE:MILK:MILK_TEMPLATE]
@@ -991,11 +986,11 @@ creature_domestic
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:ram:rams:ram]
 		[MALE]
-		[PETVALUE:80]
+		[PETVALUE:92]
 		[DESCRIPTION:A medium-sized herding animal prized for his thick wool coat.  He has lateral spiral horns, a bulky body, and a short tail.  He flocks with his kind for protection.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1013,7 +1008,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		[APPLY_CREATURE_VARIATION:HAIR_CAN_BE_PADDED]{+     Revision: hair can be turned into padded wool.}
 
 [CREATURE:PIG]
 	[DESCRIPTION:A medium-sized domestic animal.  It has a distinctive snout and corkscrew tail.  It is thought by some to be intelligent.]
@@ -1131,7 +1126,7 @@ creature_domestic
 		[DESCRIPTION:A medium-sized domestic mammal that lives in filth but keeps himself clean (given the circumstances).  He has a corkscrew tail and a flat snout.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -1144,7 +1139,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:GOAT]
 	[DESCRIPTION:A medium-sized herding animal.  It is known for its short horns and beard.]
@@ -1274,7 +1269,7 @@ creature_domestic
 		[DESCRIPTION:A medium-sized, hooved grazer with coarse fur, short horns and a scraggly beard.  He lives in herds with his kind and is kept for milk and meat.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -1290,7 +1285,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BIRD_CHICKEN]
 	[DESCRIPTION:A small domestic bird capable of flying short distances.  It is prized for its tasty eggs.]
@@ -1386,7 +1381,7 @@ creature_domestic
 		[PETVALUE:9]
 		[DESCRIPTION:A small domestic bird with a red crest on his head.  Noisy by nature and ill suited for long flights, he's prized for being tasty.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1399,7 +1394,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:CAVY]
 	[DESCRIPTION:A small rodent with no tail.  It can be found roaming the grassland in herds.  It has three toes on its hind feet.]
@@ -1490,7 +1485,7 @@ creature_domestic
 		[DESCRIPTION:A tiny, stocky rodent with small ears, short legs, and no tail.  He roams the grasslands with his herd and watches for danger.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -1503,7 +1498,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BIRD_DUCK]
 	[DESCRIPTION:A small water bird.  It has a long neck and powerful legs meant for swimming and diving.]
@@ -1591,7 +1586,7 @@ creature_domestic
 		[PETVALUE:11]
 		[DESCRIPTION:A small water bird with a long neck and powerful legs for swimming and diving.  He strains the water with his beak to fish.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1604,7 +1599,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:WATER_BUFFALO]
 	[DESCRIPTION:A large mammalian herbivore.  It is powerfully built and has long curved horns.]
@@ -1735,7 +1730,7 @@ creature_domestic
 		[DESCRIPTION:A large hooved herbivore, powerfully built with long, curved horns.  He spends much of his time in the water.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -1748,7 +1743,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:REINDEER]
 	[DESCRIPTION:A large mammalian herbivore living in cold climates.  It has large antlers and sought-after fur.]
@@ -1883,7 +1878,7 @@ creature_domestic
 		[DESCRIPTION:A large hooved herbivore that lives in cold climates.  Skittish by nature, he roams with his kind and bolts at the first sign of danger.  He has large antlers and sought-after fur.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -1896,7 +1891,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BIRD_GOOSE]
 	[DESCRIPTION:A small migratory bird.  It has a very long neck and can be found in lakes and other bodies of water.]
@@ -1984,7 +1979,7 @@ creature_domestic
 		[PETVALUE:10]
 		[DESCRIPTION:A small migratory water bird with a long neck, webbed feet, and a wide, flat bill.  He travels long distances to where food is plentiful.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1997,7 +1992,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:YAK]
 	[DESCRIPTION:A large mammalian herbivore.  It has long fur and curving horns.  It can be found in the mountains.]
@@ -2127,7 +2122,7 @@ creature_domestic
 		[DESCRIPTION:A large mammalian herbivore that lives in the mountains.  He has long, shaggy fur and curved horns.  His large lungs help keep him healthy at high altitudes.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -2140,7 +2135,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:LLAMA]
 	[DESCRIPTION:A large domestic pack animal.  It has a long neck.  It is prized for its hair.]
@@ -2264,7 +2259,7 @@ creature_domestic
 		[DESCRIPTION:A large, woolly-haired pack animal with curved ears and a tall neck, prize for his coarse fur.  He's curious and friendly, but can be aggressive if over-socialized.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -2282,7 +2277,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		[APPLY_CREATURE_VARIATION:HAIR_CAN_BE_PADDED]{+     Revision: hair can be turned into padded wool.}
 
 [CREATURE:ALPACA]
 	[DESCRIPTION:A large domestic animal with a long neck.  It has been bred for its valuable hair.]
@@ -2403,7 +2398,7 @@ creature_domestic
 		[DESCRIPTION:A large, silky-haired pack animal with a long neck and short, pointy ears, bred for his valuable fur.  He lives in a herd and brays in warning when predators arrive.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -2421,7 +2416,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		[APPLY_CREATURE_VARIATION:HAIR_CAN_BE_PADDED]{+     Revision: hair can be turned into padded wool.}
 
 [CREATURE:BIRD_GUINEAFOWL]
 	[DESCRIPTION:A small ground-dwelling bird.  It has a featherless head and eats seeds and insects.  It moves about in groups.]
@@ -2520,7 +2515,7 @@ creature_domestic
 		[CASTE_NAME:guineacock:guineacocks:guineacock]
 		[DESCRIPTION:A small, ground-dwelling bird that eats seeds and insects and flocks with his kind.  He has a black crest and a colorful, featherless head.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2533,7 +2528,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BIRD_PEAFOWL_BLUE]
 	[DESCRIPTION:A small forest bird.  The male's tail creates an extravagant display for females.  At night, they roost in the trees.]
@@ -2641,7 +2636,7 @@ creature_domestic
 				[TLCM_NOUN:feathers:PLURAL]
 		[CASTE_COLOR:1:0:1]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_PEACH:1:DARK_TAN:1:ECRU:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PEACH:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAN:1:TAUPE_PALE:1:TAUPE_SANDY:1]
@@ -2651,7 +2646,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:BIRD_TURKEY]
 	[DESCRIPTION:A small forest bird known for the distinctive flaps of skin hanging from its face.  It is prized for its meat.]
@@ -2753,7 +2748,7 @@ creature_domestic
 		[CASTE_NAME:turkey gobbler:turkey gobblers:turkey gobbler]
 		[DESCRIPTION:A small domesticated bird with distinctive flaps of skin hanging from his face.  He's prized for his tasty meat.  When attracting mates, he puffs up his feathers, flares his tail into a fan, and makes gobbling sounds while he struts.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2766,7 +2761,7 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
 
 [CREATURE:RABBIT]
 	[DESCRIPTION:A small lagomorph with long ears.  It has powerful hind legs which it uses to swiftly avoid predators.  It can be found anywhere from forests to deserts.]
@@ -2857,7 +2852,7 @@ creature_domestic
 		[DESCRIPTION:A small and skittish critter with long ears and a small bobtail.  He outruns predators on long hind legs.  He seems to live everywhere, from forest to desert.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	[APPLY_CURRENT_CREATURE_VARIATION]{+}
+	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:BLACK:1:BROWN:1:WHITE:1:GRAY:1:LIGHT_BROWN:1:DARK_BROWN:1:TAN:1:AUBURN:1:CHESTNUT:1:SLATE_GRAY:1:CREAM:1:CINNAMON:1:BUFF:1:BEIGE:1:CHOCOLATE:1:CHARCOAL:1:ASH_GRAY:1:RUSSET:1:IVORY:1:FLAX:1:PUMPKIN:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:COPPER:1:SAFFRON:1:AMBER:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:RAW_UMBER:1:BURNT_SIENNA:1:BURNT_UMBER:1:SEPIA:1:DARK_TAN:1:PALE_CHESTNUT:1:DARK_CHESTNUT:1:TAUPE_PALE:1:TAUPE_DARK:1:TAUPE_SANDY:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:ECRU:1]
@@ -2870,4 +2865,4 @@ creature_domestic
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		[APPLY_CURRENT_CREATURE_VARIATION]{+}
+		
