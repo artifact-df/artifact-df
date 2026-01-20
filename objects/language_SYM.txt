@@ -1073,6 +1073,14 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:ARMOK] the god of blood himself
 	+ expanded dictionary
 	[S_WORD:CRUSADE]
+	[S_WORD:SUBJUGATE]
+	[S_WORD:CONQUEST]
+	[S_WORD:AGGRESSION]
+	[S_WORD:CRISIS]
+	[S_WORD:DECEPTION]
+	[S_WORD:DECIMATE]
+	[S_WORD:CONFRONT]
+	[S_WORD:INVADE]
 
 [SYMBOL:PEACE]
 	[S_WORD:BUTTERFLY]
@@ -1556,6 +1564,8 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:LAW]
 	[S_WORD:ONE]
 	[S_WORD:OWNERSHIP]
+	+ expanded dictionary
+	[S_WORD:SUBJUGATE]
 
 [SYMBOL:NEW]
 	[S_WORD:BLOSSOM]
@@ -1958,6 +1968,7 @@ Misc verbs/adjectives
 	[S_WORD:SPHERE]
 	[S_WORD:NOTHING]
 	[S_WORD:CRUSADE]
+	[S_WORD:DECEPTION]
 
 [SYMBOL:ARTIFICE] *** This also needed some thematic redefining into being the list for gods of crafts, initially it was anything manmade. No precious metals are on the list.
 
@@ -2297,6 +2308,9 @@ Misc verbs/adjectives
 	[S_WORD:VESSEL]
 	[S_WORD:WANDER]
 	[S_WORD:YAWN]
+	+ expanded dictionary
+	[S_WORD:NOTHING]
+	[S_WORD:DECEPTION]
 
 [SYMBOL:NEGATIVE]
 	[S_WORD:ANGER]
@@ -2772,6 +2786,9 @@ Misc verbs/adjectives
 	[S_WORD:PRAISE]
 	[S_WORD:VOICE]
 	[S_WORD:ARMOK] the god of blood himself
+	+ expanded dictionary
+	[S_WORD:DEFIANCE]
+	[S_WORD:CONFRONT]
 
 [SYMBOL:AQUATIC]
 	[S_WORD:BATH]
@@ -2934,6 +2951,7 @@ Misc verbs/adjectives
 	[S_WORD:CANOPY]
 	[S_WORD:REFUGE]
 	[S_WORD:HAVEN]
+	[S_WORD:DEFIANCE]
 
 [SYMBOL:RESTRAIN]
 	[S_WORD:BRIDLE]
