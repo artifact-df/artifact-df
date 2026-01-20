@@ -38,8 +38,8 @@ tissue_template_default
 	[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:MUSCLE]
 	[RELATIVE_THICKNESS:3]
 	[HEALING_RATE:110]{:100
-	[VASCULAR:4]{:3
-	[PAIN_RECEPTORS:6]{:5       Revision: increased pain to compensate for lowered pain on skin.}
+	[VASCULAR:2]{:3             Revision: reduced bleeding slightly.}
+	[PAIN_RECEPTORS:4]{:5       Revision: reduced pain slightly.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
 
@@ -271,7 +271,6 @@ tissue_template_default
 	[HEALING_RATE:1500]{+   Revision: brain tissue heals eventually.}
 	[VASCULAR:50]{:3       Revision: brain injuries should bleed profusely.}
 	[MAJOR_ARTERIES]{+      Revision: the brain contain many large arteries.}
-	[ARTERIES]{+            Revision: the brain contain many minor arteries.}
 	Sver: no pain, same as vanilla. It appears to be redundant, as even bruising usually causes unconsciousness.
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -300,7 +299,6 @@ tissue_template_default
 	[HEALING_RATE:1000]{:100  Revision: hearts healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:100]{:50        Revision: heart injuries bleed profusely, how about that..}
 	[MAJOR_ARTERIES]{+        Revision: the heart contain many large arteries, surprisingly..}
-	[ARTERIES]{+              Revision: the heart contain many minor arteries.}
 	[PAIN_RECEPTORS:200]{:5   Revision: heart injuries are EXTREMELY painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -315,7 +313,6 @@ tissue_template_default
 	[HEALING_RATE:1000]{:100  Revision: livers healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:50]{:8          Revision: liver bleeds more when cut.  Internal wounds should be punishing.}
 	[MAJOR_ARTERIES]{+        Revision: the liver contain many large arteries.}
-	[ARTERIES]{+              Revision: the liver contain many minor arteries.}
 	[PAIN_RECEPTORS:100]{:5   Revision: liver trauma is EXTREMELY painful, hence why it's banned almost every single fighting sport.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
@@ -395,6 +392,7 @@ tissue_template_default
 	[RELATIVE_THICKNESS:1]
 	[HEALING_RATE:1000]{:100    Revision: kidneys healed too quickly; internal wounds need recovery time.}
 	[VASCULAR:24]{:8            Revision: kidneys bleed more when cut.  Internal wounds should be punishing.}
+	[ARTERIES]{+                Revision: the kidneys contain many minor arteries.}
 	[PAIN_RECEPTORS:25]{:5      Revision: kidney injuries are painful.  Internal wounds should be punishing.}
 	[CONNECTS]
 	[TISSUE_SHAPE:LAYER]
