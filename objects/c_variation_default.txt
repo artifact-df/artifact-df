@@ -1030,6 +1030,7 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:NATURAL_SKILL:BITE:3]{+}
 	[CV_NEW_TAG:NATURAL_SKILL:STANCE_STRIKE:3]{+}
 	[CV_NEW_TAG:NATURAL_SKILL:DODGING:1]{+}
+	[CV_NEW_TAG:NATURAL_SKILL:DISCIPLINE:3]{+}
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
 		[CV_NEW_TAG:CHANGE_BODY_SIZE_PERC:200]
 		[CV_NEW_TAG:CHANGE_FREQUENCY_PERC:50]
@@ -1114,6 +1115,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:PROFESSION_NAME:BLOWGUNMAN:Gunman:Gunmen]{+                         Revision: renamed from blowgunner, firearms use this skill now.}
 	[CV_NEW_TAG:PROFESSION_NAME:MASTER_BLOWGUNMAN:Veteran Gunman:Veteran Gunmen]{+
 	[CV_NEW_TAG:PROFESSION_NAME:PLANTER:Farmer:Farmers]{+                           Revision: renamed from planter, used to be farmer in older versions.}
+	[CV_NEW_TAG:PROFESSION_NAME:WRESTLER:Martial artist:Martial artists]{+                          Revision: renamed from wrestler.}
+	[CV_NEW_TAG:PROFESSION_NAME:MASTER_WRESTLER:Master Martial artist:Master Martial artists]{+}
 
 [CREATURE_VARIATION:STANDARD_FLYING_GAITS]
 	[CV_NEW_TAG:GAIT:FLY:Maximum Flight Speed:!ARG4:10:3:!ARG2:50:LAYERS_SLOW:STRENGTH:AGILITY:STEALTH_SLOWS:50]
