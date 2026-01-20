@@ -1,5 +1,3 @@
-interactions.secrets.necromancer=nil-- disables vanilla necromancy
-
 -- redefined necromancy, increased summon wait periods, new abilities
 interactions.secrets.death=function(idx,sph)
     if sph and sph~="DEATH" then return nil end -- no sph means it generates anyway!
@@ -38,8 +36,7 @@ interactions.secrets.death=function(idx,sph)
         [IT_REQUIRES:CAN_LEARN]
         [IT_REQUIRES:CAN_SPEAK]
 		[IT_CANNOT_HAVE_SYNDROME_CLASS:NECROMANCER]//new
-		[IT_AFFECTED_CREATURE:HUMAN:FEMALE_NOBLE]// only human nobles can initially learn the secret
-		[IT_AFFECTED_CREATURE:HUMAN:MALE_NOBLE]
+		[IT_AFFECTED_CLASS:HUMAN_NOBLE]// only human nobles can initially learn the secret
     [I_EFFECT:ADD_SYNDROME]
         [IE_TARGET:A]
         [IE_IMMEDIATE]
@@ -47,12 +44,13 @@ interactions.secrets.death=function(idx,sph)
         [SYNDROME]
             [SYN_CLASS:NECROMANCER]
             [SYN_CONCENTRATION_ADDED:1000:0]//just in case
+			[IT_AFFECTED_CLASS:GENERAL_POISON]//new
 			[SYN_NO_HOSPITAL]//new
             [CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT]
             [CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0:ABRUPT]
-            [CE_ADD_TAG:NOEXERT:NO_AGING:STERILE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]// added sterile
-            [CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-33:FACET:EMOTIONALLY_OBSESSIVE:-33:FACET:SWAYED_BY_EMOTIONS:-33:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
+			[CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:STERILE:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]// added sterile
+            [CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:40:FACET:TRUST:-40:START:0:ABRUPT]// reduced by 10
+			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-25:FACET:EMOTIONALLY_OBSESSIVE:-25:FACET:SWAYED_BY_EMOTIONS:-25:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
 			[CE_MENT_ATT_CHANGE:EMPATHY:75:0]// necromancers are less empathetic
 			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]
             [CE_CAN_DO_INTERACTION:START:0:ABRUPT]
@@ -92,7 +90,7 @@ interactions.secrets.death=function(idx,sph)
                 [CDI:TARGET_RANGE:A:1]
                 [CDI:MAX_TARGET_NUMBER:A:1]
                 [CDI:FREE_ACTION]
-                [CDI:WAIT_PERIOD:1000]
+                [CDI:WAIT_PERIOD:1200]
         ]])
     local adj = pick_random(necromancer_raise_adjectives)
     local noun = pick_random(necromancer_raise_nouns)
@@ -288,5 +286,5 @@ interactions.secrets.death=function(idx,sph)
     end
     local spheres={"DEATH"}
     if summon then spheres[2]="NIGHTMARES" end
-    return {raws=tbl,weight=1,spheres=spheres}
+    return {raws=tbl,weight=5,spheres=spheres}-- increased weight
 end
