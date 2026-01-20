@@ -22,6 +22,7 @@ creature_standard
 	[PREFSTRING:energetic nature]
 	[PREFSTRING:distaste for material wealth]
 	[PREFSTRING:problematic mischief]
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[PERSONALITY:EXCITEMENT_SEEKING:50:75:100]
 	[PERSONALITY:CURIOUS:50:75:100]
 	[PERSONALITY:HUMOR:50:75:100]
@@ -239,6 +240,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[CAN_LEARN][SLOW_LEARNER]
 	[EVIL]
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[GRASSTRAMPLE:20]
 	[BONECARN]
 	[PREFSTRING:terrifying features]
@@ -297,9 +299,6 @@ creature_standard
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tough.}
 	[SELECT_TISSUE:HAIR]{+}
 		[YARN]{+
-	[SELECT_TISSUE:FAT]{+}
-	    [RELATIVE_THICKNESS:2]{+
-		[INSULATION:150]{+
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
 		[APP_MOD_IMPORTANCE:480]{:500
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
@@ -496,6 +495,7 @@ creature_standard
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CURIOUSBEAST_EATER]{+}
 	[CURIOUSBEAST_GUZZLER]{+}
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[PREFSTRING:low howls]
 	[SOUND:ALERT:100:10000:VOCALIZATION:howl:howls:a howl echoing across the plains]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
@@ -564,9 +564,6 @@ creature_standard
 	[BODY_SIZE:0:0:200000]
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:20:0:6000000]
-	[SELECT_TISSUE:FAT]{+}
-	    [RELATIVE_THICKNESS:2]
-		[INSULATION:150]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
@@ -738,8 +735,7 @@ creature_standard
 	[CREATURE_CLASS:HIGH_ELF_PET]
 	[CREATURE_CLASS:HIGH_ELF_MOUNT]
 	[CREATURE_CLASS:HIGH_ELF_BEAST]
-	[PETVALUE:1500]{:1050
-	[FREQUENCY:10]{+}
+	[PETVALUE:1050]
 	[PREFSTRING:horns]
 	[PREFSTRING:swift gaits]
 	[PREFSTRING:elusiveness]
@@ -748,12 +744,13 @@ creature_standard
 	[PREFSTRING:horns of immeasurable value]
 	[VISION_ARC:50:310]
 	[GOOD]
-	[TRAINABLE]{+}
+	[TRAINABLE_WAR]{+}
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:25:50]{:5:10
 	[CLUSTER_NUMBER:1:5]
 	[GRASSTRAMPLE:0]
 	[NATURAL]{+}
+	[FANCIFUL]{+}
 	[NO_VEGETATION_PERTURB]
 	[STANDARD_GRAZER]
 	[TRADE_CAPACITY:2500]{+}
@@ -763,9 +760,10 @@ creature_standard
 	[BIOME:ANY_SHRUBLAND]
 	[BIOME:ANY_GRASSLAND]
 	[BENIGN][MEANDERER]
-	[NATURAL_SKILL:BITE:10]
-	[NATURAL_SKILL:DODGING:10]
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:10]
+	[NATURAL_SKILL:BITE:3]{+}
+	[NATURAL_SKILL:DODGING:3]{+}
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:5]{+}
+	[NATURAL_SKILL:DISCIPLINE:5]{+}
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:HEAD_HORN:EYELIDS:CHEEKS]
 	[RELSIZE:BY_CATEGORY:HORN:120]{:100
 	[PET_EXOTIC]
@@ -849,7 +847,7 @@ creature_standard
 	[CHILD:2][GENERAL_CHILD_NAME:unicorn foal:unicorn foals]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
-	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:300:200:100:1900:2900] 87+ (120) kph
+	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:327:218:109:1900:2900] 80 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[SWIMS_INNATE]
@@ -1087,6 +1085,7 @@ creature_standard
 	[NATURAL_SKILL:MELEE_COMBAT:6]
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]
+	[NATURAL_SKILL:DISCIPLINE:10]{+}
 	[SWIMS_INNATE]{+}
 	[HOMEOTHERM:10040]{+}
 	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:1]{+}
@@ -1107,8 +1106,6 @@ creature_standard
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years.]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1:BLACK:1:GREEN:1:BLUE:1:YELLOW:1:PURPLE:1:SILVER:1:AQUA:1]
@@ -1149,6 +1146,7 @@ creature_standard
 	[PETVALUE:250]
 	[LARGE_ROAMING][FREQUENCY:50]
 	[CURIOUSBEAST_GUZZLER]{+}
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_CONIFER]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
@@ -1450,7 +1448,7 @@ creature_standard
 	[SPHERE:METALS]
 	[SPHERE:STRENGTH]
 	[SPHERE:WAR]
-	--NOT_LIVING][CANNOT_UNDEAD]{+ hostile towards undead.}
+	[NOT_LIVING][CANNOT_UNDEAD]{+ hostile towards undead.}
 	[CANOPENDOORS]
 	[NOT_BUTCHERABLE]
 	[BIOME:ANY_LAND]
@@ -1587,8 +1585,6 @@ creature_standard
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
 		[TL_MAJOR_ARTERIES]
-	[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+  thicker fat.}
-		[TL_RELATIVE_THICKNESS:2]
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
 	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
@@ -1644,9 +1640,6 @@ creature_standard
 	[BODY_SIZE:1:168:3000000]
 	[BODY_SIZE:12:0:9000000]
 	[BODY_SIZE:1000:0:10800000]{+  Revision: 20% greater size after a millennium.}
-	[SELECT_TISSUE:FAT]{+}
-	    [RELATIVE_THICKNESS:2]
-		[INSULATION:150]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:550]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
@@ -1754,6 +1747,7 @@ creature_standard
 	[NATURAL_SKILL:WHIP:4]{+
 	[NATURAL_SKILL:SPEAR:4]{+
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+
+	[NATURAL_SKILL:DISCIPLINE:8]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -1761,7 +1755,7 @@ creature_standard
 	[SWIMS_LEARNED]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
 		[BABYNAME:giantess baby girl:giantess baby girls]{+}
@@ -1769,7 +1763,7 @@ creature_standard
 		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[BABYNAME:giant baby boy:giant baby boys]{+}
 		[CHILDNAME:giant boy:giant boys]{+}
 		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -1786,8 +1780,6 @@ creature_standard
 		[DESCRIPTION:A gigantic and monstrous overweight humanoid almost unparalleled in size.  They has a hairy, strong body, shaggy hair, and an almost primitive appearance.  They live quietly in a cozy burrow and keeps to themselves.  They steps over fortifications and crushes buildings underfoot, whether they means to or not.  Their great size makes their nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_NAME:giant:giants:giant]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -1846,6 +1838,13 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_AMBER:1:IRIS_EYE_AQUA:1:IRIS_EYE_AQUAMARINE:1:IRIS_EYE_ASH_GRAY:1:IRIS_EYE_AUBURN:1:IRIS_EYE_AZURE:1:IRIS_EYE_BLUE:1:IRIS_EYE_BRASS:1:IRIS_EYE_BRONZE:1:IRIS_EYE_BROWN:1:IRIS_EYE_CERULEAN:1:IRIS_EYE_CHESTNUT:1:IRIS_EYE_CHOCOLATE:1:IRIS_EYE_CINNAMON:1:IRIS_EYE_COPPER:1:IRIS_EYE_DARK_BLUE:1:IRIS_EYE_DARK_BROWN:1:IRIS_EYE_DARK_CHESTNUT:1:IRIS_EYE_DARK_GREEN:1:IRIS_EYE_DARK_OLIVE:1:IRIS_EYE_DARK_TAN:1:IRIS_EYE_ECRU:1:IRIS_EYE_EMERALD:1:IRIS_EYE_FERN_GREEN:1:IRIS_EYE_GRAY:1:IRIS_EYE_GREEN:1:IRIS_EYE_JADE:1:IRIS_EYE_LIGHT_BLUE:1:IRIS_EYE_LIGHT_BROWN:1:IRIS_EYE_MAHOGANY:1:IRIS_EYE_MIDNIGHT_BLUE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_OLIVE:1:IRIS_EYE_PALE_BLUE:1:IRIS_EYE_PALE_BROWN:1:IRIS_EYE_PALE_CHESTNUT:1:IRIS_EYE_PERIWINKLE:1:IRIS_EYE_PINE_GREEN:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUSSET:1:IRIS_EYE_SEA_GREEN:1:IRIS_EYE_SEPIA:1:IRIS_EYE_SKY_BLUE:1:IRIS_EYE_SLATE_GRAY:1:IRIS_EYE_SPRING_GREEN:1:IRIS_EYE_TAN:1:IRIS_EYE_TAUPE_DARK:1:IRIS_EYE_TAUPE_GRAY:1:IRIS_EYE_TAUPE_MEDIUM:1:IRIS_EYE_TAUPE_PALE:1:IRIS_EYE_TAUPE_SANDY:1:IRIS_EYE_TEAL:1:IRIS_EYE_TURQUOISE:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+  Revision: thicker skin, skull bone and fat.}
+		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:2]{+
+		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]{+
+		  [TL_RELATIVE_THICKNESS:4]{+
+		[SELECT_TISSUE_LAYER:FAT:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:2]{+
 	[SELECT_MATERIAL:ALL]{+}
 		[MULTIPLY_VALUE:5]{+
 
@@ -1969,9 +1968,6 @@ creature_standard
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:12:0:8000000]
 	[BODY_SIZE:1000:0:9600000]{+  Revision: 20% greater size after a millennium.}
-	[SELECT_TISSUE:FAT]{+}
-	    [RELATIVE_THICKNESS:2]
-		[INSULATION:150]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
@@ -2074,6 +2070,7 @@ creature_standard
 	[NATURAL_SKILL:WHIP:4]{+
 	[NATURAL_SKILL:SPEAR:4]{+
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]{+
+	[NATURAL_SKILL:DISCIPLINE:6]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -2082,14 +2079,14 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]{+}
 		[CHILDNAME:cyclops girl:cyclops girls]{+}
 		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[BABYNAME:cyclops baby boy:cyclops baby boys]{+}
 		[CHILDNAME:cyclops boy:cyclops boys]{+}
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -2104,8 +2101,6 @@ creature_standard
 		[CHILDNAME:cyclops child:cyclops children]
 		[DESCRIPTION:A giant, monstrous humanoid with leathery, veined skin and a primitive-looking face with one large eye set in their forehead.  They mostly stays in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2164,6 +2159,13 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 	[TL_COLOR_MODIFIER:IRIS_EYE_AMBER:1:IRIS_EYE_AQUA:1:IRIS_EYE_AQUAMARINE:1:IRIS_EYE_ASH_GRAY:1:IRIS_EYE_AUBURN:1:IRIS_EYE_AZURE:1:IRIS_EYE_BLUE:1:IRIS_EYE_BRASS:1:IRIS_EYE_BRONZE:1:IRIS_EYE_BROWN:1:IRIS_EYE_CERULEAN:1:IRIS_EYE_CHESTNUT:1:IRIS_EYE_CHOCOLATE:1:IRIS_EYE_CINNAMON:1:IRIS_EYE_COPPER:1:IRIS_EYE_DARK_BLUE:1:IRIS_EYE_DARK_BROWN:1:IRIS_EYE_DARK_CHESTNUT:1:IRIS_EYE_DARK_GREEN:1:IRIS_EYE_DARK_OLIVE:1:IRIS_EYE_DARK_TAN:1:IRIS_EYE_ECRU:1:IRIS_EYE_EMERALD:1:IRIS_EYE_FERN_GREEN:1:IRIS_EYE_GRAY:1:IRIS_EYE_GREEN:1:IRIS_EYE_JADE:1:IRIS_EYE_LIGHT_BLUE:1:IRIS_EYE_LIGHT_BROWN:1:IRIS_EYE_MAHOGANY:1:IRIS_EYE_MIDNIGHT_BLUE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_OLIVE:1:IRIS_EYE_PALE_BLUE:1:IRIS_EYE_PALE_BROWN:1:IRIS_EYE_PALE_CHESTNUT:1:IRIS_EYE_PERIWINKLE:1:IRIS_EYE_PINE_GREEN:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUSSET:1:IRIS_EYE_SEA_GREEN:1:IRIS_EYE_SEPIA:1:IRIS_EYE_SKY_BLUE:1:IRIS_EYE_SLATE_GRAY:1:IRIS_EYE_SPRING_GREEN:1:IRIS_EYE_TAN:1:IRIS_EYE_TAUPE_DARK:1:IRIS_EYE_TAUPE_GRAY:1:IRIS_EYE_TAUPE_MEDIUM:1:IRIS_EYE_TAUPE_PALE:1:IRIS_EYE_TAUPE_SANDY:1:IRIS_EYE_TEAL:1:IRIS_EYE_TURQUOISE:1]
 				[TLCM_NOUN:eye:SINGULAR]
+	[SELECT_CASTE:ALL]{+  Revision: thicker skin, skull bone and fat.}
+		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:2]{+
+		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]{+
+		  [TL_RELATIVE_THICKNESS:4]{+
+		[SELECT_TISSUE_LAYER:FAT:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:2]{+
 	[SELECT_MATERIAL:ALL]{+}
 		[MULTIPLY_VALUE:5]{+
 
@@ -2285,9 +2287,6 @@ creature_standard
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:12:0:8000000]
 	[BODY_SIZE:1000:0:9600000]{+  Revision: 20% greater size after a millennium.}
-	[SELECT_TISSUE:FAT]{+}
-	    [RELATIVE_THICKNESS:2]
-		[INSULATION:150]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
@@ -2396,6 +2395,7 @@ creature_standard
 	[NATURAL_SKILL:WHIP:4]{+
 	[NATURAL_SKILL:SPEAR:4]{+
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:8]{+
+	[NATURAL_SKILL:DISCIPLINE:8]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -2404,14 +2404,14 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]{+}
 		[CHILDNAME:ettin girl:ettin girls]{+}
 		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[BABYNAME:ettin baby boy:ettin baby boys]{+}
 		[CHILDNAME:ettin boy:ettin boys]{+}
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -2426,8 +2426,6 @@ creature_standard
 		[CHILDNAME:ettin child:ettin children]
 		[DESCRIPTION:A giant and monstrous overweight humanoid with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  They mostly lives in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2486,6 +2484,13 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_AMBER:1:IRIS_EYE_AQUA:1:IRIS_EYE_AQUAMARINE:1:IRIS_EYE_ASH_GRAY:1:IRIS_EYE_AUBURN:1:IRIS_EYE_AZURE:1:IRIS_EYE_BLUE:1:IRIS_EYE_BRASS:1:IRIS_EYE_BRONZE:1:IRIS_EYE_BROWN:1:IRIS_EYE_CERULEAN:1:IRIS_EYE_CHESTNUT:1:IRIS_EYE_CHOCOLATE:1:IRIS_EYE_CINNAMON:1:IRIS_EYE_COPPER:1:IRIS_EYE_DARK_BLUE:1:IRIS_EYE_DARK_BROWN:1:IRIS_EYE_DARK_CHESTNUT:1:IRIS_EYE_DARK_GREEN:1:IRIS_EYE_DARK_OLIVE:1:IRIS_EYE_DARK_TAN:1:IRIS_EYE_ECRU:1:IRIS_EYE_EMERALD:1:IRIS_EYE_FERN_GREEN:1:IRIS_EYE_GRAY:1:IRIS_EYE_GREEN:1:IRIS_EYE_JADE:1:IRIS_EYE_LIGHT_BLUE:1:IRIS_EYE_LIGHT_BROWN:1:IRIS_EYE_MAHOGANY:1:IRIS_EYE_MIDNIGHT_BLUE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_OLIVE:1:IRIS_EYE_PALE_BLUE:1:IRIS_EYE_PALE_BROWN:1:IRIS_EYE_PALE_CHESTNUT:1:IRIS_EYE_PERIWINKLE:1:IRIS_EYE_PINE_GREEN:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUSSET:1:IRIS_EYE_SEA_GREEN:1:IRIS_EYE_SEPIA:1:IRIS_EYE_SKY_BLUE:1:IRIS_EYE_SLATE_GRAY:1:IRIS_EYE_SPRING_GREEN:1:IRIS_EYE_TAN:1:IRIS_EYE_TAUPE_DARK:1:IRIS_EYE_TAUPE_GRAY:1:IRIS_EYE_TAUPE_MEDIUM:1:IRIS_EYE_TAUPE_PALE:1:IRIS_EYE_TAUPE_SANDY:1:IRIS_EYE_TEAL:1:IRIS_EYE_TURQUOISE:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+  Revision: thicker skin, skull bone and fat.}
+		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:2]{+
+		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]{+
+		  [TL_RELATIVE_THICKNESS:4]{+
+		[SELECT_TISSUE_LAYER:FAT:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:2]{+
 	[SELECT_MATERIAL:ALL]{+}
 		[MULTIPLY_VALUE:5]{+
 
@@ -2650,6 +2655,7 @@ creature_standard
 	[NATURAL_SKILL:WHIP:8]
 	[NATURAL_SKILL:SPEAR:8]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:12]
+	[NATURAL_SKILL:DISCIPLINE:12]{+}
 	[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4500:5000]             +++
 	[PHYS_ATT_RANGE:ENDURANCE:1000:1200:1400:1500:1600:2000:3000]            ++
 	[PHYS_ATT_RANGE:TOUGHNESS:1000:1200:1400:1500:1600:2000:3000]            ++
@@ -2676,7 +2682,7 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:minotauress:minotauresses:minotauress]{+}
 		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
@@ -2684,7 +2690,7 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:100]{+}
+		[POP_RATIO:50]{+}
 		[CASTE_NAME:minotaur:minotaurs:minotaur]{+}
 		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
@@ -2722,6 +2728,11 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+  Revision: thicker skull and skin.}
+		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:3]{+
+		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]{+
+		  [TL_RELATIVE_THICKNESS:5]{+
 	[SELECT_MATERIAL:ALL]{+}
 		[MULTIPLY_VALUE:4]{+
 
@@ -3088,7 +3099,7 @@ creature_standard
 			[TLCM_NOUN:eyes:PLURAL]
 
 [CREATURE:WOLF_ICE]
-	[DESCRIPTION:A fierce creature from the evil snowy wilds.  It has white fur and a piercing howl.]
+	[DESCRIPTION:A fierce creature from the snowy wilds.  It has white fur and a piercing howl.]{:A fierce creature from the evil snowy wilds.  It has white fur and a piercing howl.}
 	[NAME:ice wolf:ice wolves:ice wolf]
 	[CASTE_NAME:ice wolf:ice wolves:ice wolf]
 	[CHILD:1][GENERAL_CHILD_NAME:ice wolf pup:ice wolf pups]
@@ -3109,6 +3120,8 @@ creature_standard
 	[TRAINABLE]{+}
 	[PET_EXOTIC]{+}
 	[MOUNT_EXOTIC]{+}
+	[NATURAL_SKILL:BITE:3]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
 	[PREFSTRING:piercing howls]
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:snarl:snarls:a vicious snarl]{+}
@@ -3686,6 +3699,8 @@ creature_standard
 	[COMMON_DOMESTIC]
 	[BONECARN]
 	[TRAINABLE_WAR]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:BITE:3]{+}
 	[PREFSTRING:chatters and clicks]
 	[PREFSTRING:hunched, razor-like backs]
 	[PREFSTRING:large blackened beaks]
@@ -4252,6 +4267,7 @@ creature_standard
 	[CAN_SPEAK]
 	[CHILD:10]
 	[ALL_ACTIVE]
+	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
@@ -4566,6 +4582,7 @@ creature_standard
 	[NATURAL_SKILL:MELEE_COMBAT:6]
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:14]
+	[NATURAL_SKILL:DISCIPLINE:10]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:730:561:351:1900:2900] 25 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:3512:2634:1756:878:4900:6900] 10 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
@@ -4579,7 +4596,6 @@ creature_standard
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  His armored tail whips and thrashes aggressively.  He preys on his victims with a flurry of attacks as his heads all bite at once.  His wounds heal quickly.  His scales are akin to metal.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GOLD:1:RED:1]
@@ -4592,6 +4608,9 @@ creature_standard
 		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:85:95:98:100:102:105:115]{+
 				[APP_MOD_NOUN:claws:PLURAL]{+
 				[APP_MOD_DESC_RANGE:86:94:98:102:106:114]{+
+	[SELECT_CASTE:ALL]{+  Revision: thicker scales.}
+		[SELECT_TISSUE_LAYER:SCALE:BY_CATEGORY:ALL]{+
+		  [TL_RELATIVE_THICKNESS:4]{+
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:10]
 	[SELECT_TISSUE_LAYER:ALL]
@@ -5109,6 +5128,7 @@ creature_standard
 	[NATURAL_SKILL:MELEE_COMBAT:6]
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]
+	[NATURAL_SKILL:DISCIPLINE:10]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:528:352:176:1900:2900] 50 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:3512:2634:1756:878:4900:6900] 10 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
@@ -5195,8 +5215,6 @@ creature_standard
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath his mighty wings should fear the sky.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:WHITE:1]
