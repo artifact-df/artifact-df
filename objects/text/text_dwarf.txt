@@ -1,0 +1,29 @@
+text_dwarf
+
+[OBJECT:TEXT_SET]
+
+[TEXT_SET:SLAIN_DWARF]
+
+who was too short to live
+who tunneled away from me like a frightened mole
+who sucked plump helmets like a purring maggot
+whose hammer shattered on the anvil of my power
+who forged [PRO_POS] own doom by challenging me
+who was returned to the rock and muck from which it was spawned
+whose tall tales of bravery were all the more embarrassing because of [PRO_POS] height
+who stood shivering before my terrible might
+who choose to run in the wrong direction
+who was too drunk to put up a real fight
+whose cowardly screams were a shame to [PRO_POS] race
+who fought valiantly, only to lose it all in the end
+who drank [PRO_POS] way out of life
+whose hammer was as soft as wood
+whose hammer was as softer than lead
+who took [PRO_POS] own sweet time fumbling around before facing me
+who wasted three minutes of my life speaking to me
+the poor deluded fool who thought to challenge me
+the drunken wretch who wasted [PRO_POS] entire life
+whose pickaxe was no match for my weapon
+who should have not picked on someone larger than [PRO_OBJ]
+whose magma could not save [PRO_OBJ]
+who, although brave, was a complete idiot

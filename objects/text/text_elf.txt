@@ -1,0 +1,20 @@
+text_elf
+
+[OBJECT:TEXT_SET]
+
+[TEXT_SET:SLAIN_ELF]
+
+who was felled like a slender sapling
+whom I sent back to the home-tree as fertilizer
+whose fragile bones shattered before the power of my contempt
+who came down from the home-tree and was devoured
+who should have stayed in the trees when the real elves came down to fight
+who was too frail to withstand me
+who chose to throw [PRO_POS] endless life away by fighting me
+who needed to be taught [PRO_POS] place
+who quivered in disgraceful fear before me
+who time will soon forget about forever
+whose weakness was only matched by [PRO_POS] arrogance
+who should have stayed home, hugging trees
+who banged wood over my armor, to no effect
+who was shown why elves don't go to war with [SPEAKER:RACE]s

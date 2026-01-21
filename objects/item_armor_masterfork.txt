@@ -181,8 +181,8 @@ squamous's notes on armor spawning:
 [PREPLURAL:suits of]
 [ADJECTIVE:heavy]
 [ARMORLEVEL:3]
-[UBSTEP:1] protects the neck
-[LBSTEP:0]
+[UBSTEP:2] protects the neck + shoulders
+[LBSTEP:1] protects the hips
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:200]
@@ -197,8 +197,8 @@ squamous's notes on armor spawning:
 [ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT]
 [NAME:mail hauberk:mail hauberks]
 [ARMORLEVEL:2]
-[UBSTEP:1]
-[LBSTEP:1]
+[UBSTEP:1] protects the neck
+[LBSTEP:1] protects the hips
 [LAYER:OVER]
 [COVERAGE:100]
 [LAYER_SIZE:10]
@@ -247,25 +247,12 @@ squamous's notes on armor spawning:
 [SCALED]
 [LEATHER]
 
-[ITEM_PANTS:ITEM_PANTS_LEGGINGS_LEATHER]
-[NAME:padded leggings:padded leggings]
-[MATERIAL_PLACEHOLDER:leather]
-[ARMORLEVEL:1]
-[LBSTEP:3]
-[SHAPED]
-[LAYER:ARMOR]
-[COVERAGE:200]
-[LAYER_SIZE:5]
-[LAYER_PERMIT:25]
-[MATERIAL_SIZE:9] 3 bars
-[LEATHER]
-
 [ITEM_ARMOR:ITEM_ARMOR_PAULDRONS_ZM5]
 [NAME:plate pauldrons:plate pauldrons]
 [PREPLURAL:pairs of]
 [ADJECTIVE:heavy]
 [ARMORLEVEL:3]  so that ai uniforms combine it with other plate
-[UBSTEP:2]
+[UBSTEP:2] protects the neck + shoulders
 [LBSTEP:0]
 [LAYER:COVER]
 [COVERAGE:25]
@@ -339,7 +326,7 @@ squamous's notes on armor spawning:
 [COVERAGE:100]
 [LAYER_SIZE:15]
 [LAYER_PERMIT:15]
-[MATERIAL_SIZE:12]
+[MATERIAL_SIZE:12] 4 bars
 [HARD]
 [METAL]
 [BARRED]
@@ -352,18 +339,33 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:1]
 [METAL_ARMOR_LEVELS]
 [LBSTEP:3]
-[SHAPED]
+--SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:100]
 [LAYER_SIZE:10]
 [LAYER_PERMIT:35]
-[MATERIAL_SIZE:6]
+[MATERIAL_SIZE:6] 2 bars
 [HARD]
 [METAL]
 [BARRED]
 [SCALED]
 [LEATHER]
 [STRUCTURAL_ELASTICITY_CHAIN_METAL]
+[STRUCTURAL_ELASTICITY_CHAIN_ALL]
+
+[ITEM_PANTS:ITEM_PANTS_LEGGINGS_LEATHER]
+[NAME:padded leggings:padded leggings]
+[MATERIAL_PLACEHOLDER:leather]
+[ARMORLEVEL:1]
+[LBSTEP:3]
+--SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:200]
+[LAYER_SIZE:5]
+[LAYER_PERMIT:25]
+[MATERIAL_SIZE:9] 3 bars
+[LEATHER]
+[STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
 [ITEM_SHOES:ITEM_SHOES_CHAUSSE]
 [NAME:chausse:chausses]
@@ -381,6 +383,7 @@ squamous's notes on armor spawning:
 [METAL_ARMOR_LEVELS]
 [CHAIN_METAL_TEXT]
 [STRUCTURAL_ELASTICITY_CHAIN_METAL]
+[STRUCTURAL_ELASTICITY_CHAIN_ALL]
 
 // boots
 

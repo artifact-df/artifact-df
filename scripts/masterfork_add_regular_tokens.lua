@@ -6,4 +6,5 @@ function add_regular_tokens(lines,options)
 	lines[#lines+1]="[APPLY_CURRENT_CREATURE_VARIATION]"-- just to be safe?
 	lines[#lines+1]="[STANCE_CLIMBER]"-- so rcp creatures can climb
 	lines[#lines+1]="[NATURAL_SKILL:CLIMBING:1]"-- nat climbing skill
+	lines[#lines+1]="[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]"-- immortal creatures learn all skills at 33%, but have no rust
 end

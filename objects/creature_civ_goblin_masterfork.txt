@@ -167,7 +167,7 @@ creature_civ_goblin_mfork
 	[MENT_ATT_RANGE:SOCIAL_AWARENESS:700:1200:1400:1500:1600:1800:2500]      ++
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:20:0:60000]{:12:0:60000
+	[BODY_SIZE:12:0:60000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
 		[APP_MOD_IMPORTANCE:520]{:500
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
@@ -285,10 +285,12 @@ creature_civ_goblin_mfork
 	[PROFESSION_NAME:MESSENGER:runner:runners]
 	[PROFESSION_NAME:THIEF:scout:scouts]
 	[PROFESSION_NAME:MASTER_THIEF:veteran scout:veteran scouts]
+	[PROFESSION_NAME:STANDARD:laborer:laborers]{+}
+	[PROFESSION_NAME:RECRUIT:skulker:skulkers]{+}
 	[BABY:1]
-	[GENERAL_BABY_NAME:runtling:runtlings]
-	[BABYNAME:runtling:runtlings]
-	[CHILD:18]
+	[GENERAL_BABY_NAME:goblin runtling:goblin runtlings]
+	[BABYNAME:goblin runtling:goblin runtlings]
+	[CHILD:30]{:18}
 	[GENERAL_CHILD_NAME:goblin runt:goblin runts]
 	[CHILDNAME:goblin runt:goblin runts]
 	[EQUIPS]
@@ -326,19 +328,17 @@ creature_civ_goblin_mfork
 	[MANNERISM_POSTURE]
 	[MANNERISM_STRETCH]
 	[MANNERISM_EYELIDS]
-	[PROFESSION_NAME:STANDARD:laborer:laborers]{+}
-	[PROFESSION_NAME:RECRUIT:skulker:skulkers]{+}
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-		[POP_RATIO:4]{+}
-		[ORIENTATION:MALE:15:0:85]{+}
+		[POP_RATIO:1]{+}
+		[ORIENTATION:MALE:20:5:75]{+}
 		[ORIENTATION:FEMALE:95:0:5]{+}
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:5]{+}
-		[ORIENTATION:FEMALE:10:0:90]{+}
+		[POP_RATIO:3]{+}
+		[ORIENTATION:FEMALE:20:5:75]{+}
 		[ORIENTATION:MALE:95:0:5]{+}
 		[DESCRIPTION:A medium-sized, cruel man with leathery skin, glowing eyes, sharply-defined features and a lanky body.  He only eats meat and only sleep and distractions from her boredom.  He works with others to dig pits and trenches that connect many towers.  He does not appear to age.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
@@ -379,7 +379,7 @@ creature_civ_goblin_mfork
 			[TISSUE_STYLE_UNIT:BEARD:STANDARD_BEARD_SHAPINGS]
 				[TSU_NOUN:beard:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:MOUSTACHE]
-			[TISSUE_STYLE_UNIT:MOUSTACHE:STANDARD_MOUSTACHE_SHAPINGS]
+			[TISSUE_STYLE_UNIT:MOUSTACHE:CLEAN_SHAVEN]{:STANDARD_MOUSTACHE_SHAPINGS  Revision: goblin moustaches should be rarer.}
 				[TSU_NOUN:moustache:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
 			[TISSUE_STYLE_UNIT:SIDEBURNS:STANDARD_SIDEBURNS_SHAPINGS]

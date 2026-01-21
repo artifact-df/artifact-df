@@ -1,5 +1,3 @@
-interactions.curse.major.vampire=nil-- disables vanilla vampires
-
 -- redefined vampires
 interactions.curse.major.vampirism=function(idx,tok)
     return {raws={
@@ -35,9 +33,9 @@ interactions.curse.major.vampirism=function(idx,tok)
         "[SYN_CLASS:VAMPCURSE]",
         "[SYN_CONCENTRATION_ADDED:1000:0]",--just in case
 		"[SYN_NO_HOSPITAL]",--new
-        "[CE_ADD_TAG:BLOODSUCKER:NO_AGING:STERILE:NOT_LIVING:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:PARALYZEIMMUNE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0:ABRUPT]",
+        "[CE_ADD_TAG:BLOODSUCKER:NO_AGING:NOT_LIVING:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:PARALYZEIMMUNE:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:STERILE:START:0:ABRUPT]",
 		"[CE_PHYS_ATT_CHANGE:STRENGTH:50:0:TOUGHNESS:50:0:AGILITY:50:0:ENDURANCE:50:0:DISEASE_RESISTANCE:50:0:START:0:ABRUPT]",-- weakens the target always
-		"[CE_MENT_ATT_CHANGE:EMPATHY:50:0]",-- vampires are less empathetic
+		"[CE_MENT_ATT_CHANGE:EMPATHY:75:0]",-- vampires are less empathetic
 		"[CE_SPEED_CHANGE:SPEED_PERC:80:START:0:ABRUPT]",
 		"[CE_MENT_ATT_CHANGE:FOCUS:50:0:START:0:ABRUPT]",
 		"[CE_MENT_ATT_CHANGE:INTUITION:50:0:START:0:ABRUPT]",
@@ -51,8 +49,7 @@ interactions.curse.major.vampirism=function(idx,tok)
             "[CE:SYNDROME_TAG:SYN_INGESTED]",
                     "[CE:SYNDROME_TAG:SYN_INJECTED]",
         "[CE_DISPLAY_TILE:TILE:165:4:0:0:START:0:CAN_BE_HIDDEN:ABRUPT]",
-		"[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-33:FACET:BASHFUL:33:FACET:PRIVACY:33:FACET:TRUST:-33:FACET:EMOTIONALLY_OBSESSIVE:-33:FACET:SWAYED_BY_EMOTIONS:-33:START:0:ABRUPT]",-- new personality facets
-		"[CE_MENT_ATT_CHANGE:EMPATHY:80:0]",-- vampires are less empathetic
+		"[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-25:FACET:BASHFUL:25:FACET:PRIVACY:25:FACET:TRUST:-25:FACET:EMOTIONALLY_OBSESSIVE:-25:FACET:SWAYED_BY_EMOTIONS:-25:START:0:ABRUPT]",-- new personality facets
         "[CE_DISPLAY_NAME:NAME:vampire:vampires:vampiric:START:0:CAN_BE_HIDDEN:ABRUPT]",
         "[CE_BP_APPEARANCE_MODIFIER:START:0:BP:BY_CATEGORY:TOOTH:APPEARANCE_MODIFIER:LENGTH:150:ABRUPT]",
             "[CE:COUNTER_TRIGGER:DRINKING_BLOOD:1:NONE:REQUIRED]",
@@ -85,7 +82,7 @@ interactions.curse.major.vampirism=function(idx,tok)
 		    "[CDI:USAGE_HINT:FLEEING]",
 		    "[CDI:VERB:begin to vanish:begins to vanish:NA]",
 		    "[CDI:TARGET_VERB:vanish completely:vanishes completely]",
-		    "[CDI:WAIT_PERIOD:172800]",
+		    "[CDI:WAIT_PERIOD:2400]",
 		"[CE_CAN_DO_INTERACTION]",-- new regeneration ability
 		    "[CDI:ADV_NAME:Regenerate]",
 			"[CDI:INTERACTION:REGENERATE_CREATURE]",
@@ -93,10 +90,10 @@ interactions.curse.major.vampirism=function(idx,tok)
 		    "[CDI:USAGE_HINT:DEFEND]",
 		    "[CDI:BP_REQUIRED:BY_CATEGORY:HEAD]",
 		    "[CDI:VERB:reform your body:begins to reform:begin to reform]",
-		    "[CDI:TARGET:A:SELF_ONLY:TOUCHABLE]",
+		    "[CDI:TARGET:A:SELF_ONLY]",
 		    "[CDI:TARGET_RANGE:A:1]",
 		    "[CDI:MAX_TARGET_NUMBER:A:1]",
 		    "[CDI:FREE_ACTION]",
-		    "[CDI:WAIT_PERIOD:172800]",
-    },weight=2}
+		    "[CDI:WAIT_PERIOD:1200]",
+    },weight=5}-- increased weight
 end

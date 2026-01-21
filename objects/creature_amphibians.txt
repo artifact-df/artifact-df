@@ -132,8 +132,7 @@ creature_amphibians
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR][AMBUSHPREDATOR]{+}
-	[HUNTS_VERMIN]{+}
+	[LARGE_PREDATOR]{+}
 	[GO_TO_END]
 	[SOUND:ALERT:100:10000:VOCALIZATION:croak:croaks:loud croaking]{+}
 	[PREFSTRING:beauty]
