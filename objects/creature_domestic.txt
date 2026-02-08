@@ -21,7 +21,7 @@ creature_domestic
 	[PRONE_TO_RAGE:2]{+}
 	[SMELL_TRIGGER:5]{+  Revision: canids have an acute sense of smell.}
 	[NATURAL_SKILL:BITE:3]{+}
-	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:snarl:snarls:a vicious snarl]{+}
 	[SOUND:ALERT:25:10000:VOCALIZATION:bark:bark:a loud bark]{+}
@@ -69,7 +69,7 @@ creature_domestic
 	[MAXAGE:10:20]
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:maul:mauls]{:bite:bites
+		[ATTACK_VERB:maul:mauls]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]

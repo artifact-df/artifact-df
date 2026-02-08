@@ -154,9 +154,9 @@ creature_large_mountain
 	[GO_TO_START]
 	[NAME:mountain goat man:mountain goat men:mountain goat man]
 	[DESCRIPTION:A horned person with the head of a mountain goat.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'g']
 	[COLOR:7:0:1]
 
@@ -184,6 +184,7 @@ creature_large_mountain
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:beards]
 	[PREFSTRING:long horns]
@@ -319,9 +320,9 @@ creature_large_mountain
 	[GO_TO_START]
 	[NAME:hoary marmot man:hoary marmot men:hoary marmot man]
 	[DESCRIPTION:A person with the head and fur of a hoary marmot.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -351,6 +352,7 @@ creature_large_mountain
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:whistles]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:750:600:439:1900:2900] 20 kph
@@ -442,7 +444,9 @@ creature_large_mountain
 	[BODY_SIZE:1:168:7500]
 	[BODY_SIZE:20:0:15000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+		[APP_MOD_IMPORTANCE:500]
 
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
@@ -513,8 +517,7 @@ creature_large_mountain
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:110]{:         +10% }
-		[ATTACK_VELOCITY_MODIFIER:1100]{+   +10% }
+		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
@@ -523,18 +526,20 @@ creature_large_mountain
 		[ATTACK_VERB:scratch:scratches]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_EDGE]
 		[ATTACK_PRIORITY:SECOND]
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:bite:bites]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
 		[ATTACK_PRIORITY:SECOND]
-		[ATTACK_FLAG_CANLATCH]
+		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
+	    { removed latching }
 	[BABY:1]
 	[CHILD:20]
 	[EQUIPS]
@@ -774,8 +779,7 @@ creature_large_mountain
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:110]{:         +10% }
-		[ATTACK_VELOCITY_MODIFIER:1100]{+   +10% }
+		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
@@ -792,10 +796,12 @@ creature_large_mountain
 		[ATTACK_VERB:bite:bites]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
 		[ATTACK_PRIORITY:SECOND]
-		[ATTACK_FLAG_CANLATCH]
+		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
+	    { removed latching }
 	[BABY:1]
 	[CHILD:20]
 	[EQUIPS]

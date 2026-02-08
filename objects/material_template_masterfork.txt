@@ -92,7 +92,10 @@ material_template_masterfork
 	[ABSORPTION:100]
 	[EDIBLE_VERMIN]
 	[IMPLIES_ANIMAL_KILL]
-	[ITEMS_SOFT]
+	--ITEMS_SOFT]
+	[LEATHER]
+	[ITEMS_LEATHER]
+	[REACTION_CLASS:FUR]
 
 [MATERIAL_TEMPLATE:THREAD_PADDED_CLOTH]  more durable cloth as an alternative for leather armor
 	[STATE_COLOR:ALL_SOLID:GRAY]

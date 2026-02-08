@@ -1639,9 +1639,9 @@ Squids were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:squid man:squid men:squid man]
 	[DESCRIPTION:A small person with a head bearing ten tentacles.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:1]
 

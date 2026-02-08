@@ -11,6 +11,7 @@ creature_ent_masterfork
 	[NATURAL]
 	[ALL_ACTIVE]
 	[TRAINABLE_WAR]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[CHILD:3][GENERAL_CHILD_NAME:ent seedling:ent seedlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[FANCIFUL]
 	[MEANDERER]

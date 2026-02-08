@@ -23,12 +23,13 @@ Adds in giant variations of all the domestic creatures
 	
 	[GENERAL_CHILD_NAME:giant puppy:giant puppies]
 	[DESCRIPTION:A large monster in the form of a dog.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:5]
 	
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:loyalty]
 	
@@ -57,12 +58,13 @@ Adds in giant variations of all the domestic creatures
 	
 	[GENERAL_CHILD_NAME:giant kitten:giant kittens]
 	[DESCRIPTION:A large monster in the form of a cat.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:3]
 	
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:aloofness]
 	

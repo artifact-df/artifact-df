@@ -12,6 +12,7 @@ creature_fantasy_reptile_fff
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[AMPHIBIOUS]
 	[BIOME:ANY_RIVER]
 	[SAVAGE]

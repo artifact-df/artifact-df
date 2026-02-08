@@ -146,9 +146,9 @@ Crows were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:crow man:crow men:crow man]
 	[DESCRIPTION:A small person with the head and wings of a crow.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -179,6 +179,7 @@ Crows were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:VOCALIZATION:caw angrily:caws angrily:angry cawing]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:caw:caws:distant cawing]{+}
 	[GO_TO_END]
@@ -335,9 +336,9 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:raven man:raven men:raven man]
 	[DESCRIPTION:A person with the head and wings of a raven.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'r']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -361,13 +362,14 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant raven:giant ravens:giant raven]
 	[GENERAL_CHILD_NAME:giant raven hatchling:giant raven hatchlings]
 	[DESCRIPTION:A large bird-like monster, even more deadly when found in groups.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:5]
 	[CREATURE_TILE:'R']
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -392,7 +394,7 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:100]
-	--BENIGN]--MEANDERER]
+	--BENIGN][MEANDERER]
 	[PET_EXOTIC]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -521,9 +523,9 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:cassowary man:cassowary men:cassowary man]
 	[DESCRIPTION:A brightly-colored person with the head of a cassowary.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -552,6 +554,7 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:casques]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -700,9 +703,9 @@ Kea were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:kea man:kea men:kea man]
 	[DESCRIPTION:A green person with the head of a kea.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'k']
 	[COLOR:2:0:0]
 	[SKILL_LEARN_RATE:DODGING:300]{+  Revision: help kea people feel more unique.}
@@ -732,6 +735,7 @@ Kea were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:curiosity]
 	[PREFSTRING:intelligence]
@@ -885,9 +889,9 @@ Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:snowy owl man:snowy owl men:snowy owl man]
 	[DESCRIPTION:A person with the wings and head of a snowy owl.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:1]
 	[SKILL_LEARN_RATE:TEACHING:200]{+}
@@ -920,6 +924,7 @@ Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:yellow eyes]
 	[PREFSTRING:coloration]
@@ -1073,9 +1078,9 @@ Sparrows were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:sparrow man:sparrow men:sparrow man]
 	[DESCRIPTION:A person with the head and wings of a sparrow.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -1107,6 +1112,7 @@ Sparrows were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:lovely songs]
 	[PREFSTRING:dust baths]
@@ -1239,9 +1245,9 @@ Storks were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:white stork man:white stork men:white stork man]
 	[DESCRIPTION:A person with the head and wings of a stork, also standing on long legs.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:1]
 
@@ -1269,6 +1275,7 @@ Storks were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:long necks]
 	[PREFSTRING:long legs]
@@ -1402,9 +1409,9 @@ Loons were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:loon man:loon men:loon man]
 	[DESCRIPTION:A person with the head and wings of a loon.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:0:0:1]
 
@@ -1432,6 +1439,7 @@ Loons were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:haunting call]
 	[PREFSTRING:coloration]
@@ -1587,9 +1595,9 @@ Barn owl were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:barn owl man:barn owl men:barn owl man]
 	[DESCRIPTION:A person with the arms and wings of a barn owl.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'b']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:TEACHING:200]{+}
@@ -1622,6 +1630,7 @@ Barn owl were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -1771,9 +1780,9 @@ Parakeets were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:parakeet man:parakeet men:parakeet man]
 	[DESCRIPTION:A person with the head and wings of a parakeet.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:2:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -1805,6 +1814,7 @@ Parakeets were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 	[PREFSTRING:ability to speak]
@@ -1937,9 +1947,9 @@ Kakapo were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:kakapo man:kakapo men:kakapo man]
 	[DESCRIPTION:A person with the head and wings of a kakapo.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'k']
 	[COLOR:2:0:0]
 
@@ -1967,6 +1977,7 @@ Kakapo were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:longevity]
 	[PREFSTRING:flightlessness]
@@ -2098,9 +2109,9 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 	[GO_TO_START]
 	[NAME:gray parrot man:gray parrot men:gray parrot man]{:grey parrot man:grey parrot men:grey parrot man}
 	[DESCRIPTION:A person with the head and wings of a grey parrot.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:3:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:7:0:0]
 
@@ -2128,6 +2139,7 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 	[PREFSTRING:social nature]
@@ -2256,9 +2268,9 @@ Puffins were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:puffin man:puffin men:puffin man]
 	[DESCRIPTION:A feathered person with the head of a puffin.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:0:0:1]
 
@@ -2286,6 +2298,7 @@ Puffins were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:colorful beaks]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -2414,9 +2427,9 @@ Swans were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:swan man:swan men:swan man]
 	[DESCRIPTION:A person with the head and wings of a swan.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:2]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:1]
 
@@ -2444,6 +2457,7 @@ Swans were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:beauty]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -2587,9 +2601,9 @@ Lorikeets were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:lorikeet man:lorikeet men:lorikeet man]
 	[DESCRIPTION:A colorful person with the head and wings of a lorikeet.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:4:0:1]
 
@@ -2617,6 +2631,7 @@ Lorikeets were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:bright coloration]
 	[PREFSTRING:playful personalities]
@@ -2767,9 +2782,9 @@ Wrens were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:wren man:wren men:wren man]
 	[DESCRIPTION:A person with the head and wings of a wren.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'w']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -2801,6 +2816,7 @@ Wrens were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:intricate songs]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -2819,7 +2835,7 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:osprey:ospreys:osprey]
 	[GENERAL_CHILD_NAME:osprey chick:osprey chicks]
 	[CREATURE_TILE:'o'][COLOR:7:0:1]
-	[POPULATION_NUMBER:10:20]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30
 	[NATURAL]
 	[LARGE_ROAMING]
 	[PETVALUE:25]
@@ -2845,6 +2861,7 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[SWIMS_INNATE]
 	[PREFSTRING:fishing ability]
 	[TRAINABLE_HUNTING]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:shriek angrily:shrieks angrily:the shriek of a bird of prey]{+}
 	[BODY:HUMANOID_ARMLESS_NECK:2WINGS:2EYES:2LUNGS:HEART:GUTS:ORGANS:GIZZARD:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES:BEAK:TONGUE:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_NOLEATHER_MATERIALS]{:STANDARD_MATERIALS}
@@ -2953,9 +2970,9 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:osprey man:osprey men:osprey man]
 	[DESCRIPTION:A person with the head and wings of an osprey.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:1]
 	[SKILL_LEARN_RATE:TRAPPING:200]{+}
@@ -2985,6 +3002,8 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:fishing ability]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -3128,9 +3147,9 @@ Emus were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:emu man:emu men:emu man]
 	[DESCRIPTION:A feathered person with the head of an emu.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'E']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DANCE:300]{+  Revision: emus are silly creatures.}
@@ -3160,6 +3179,7 @@ Emus were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:size]
 	[PREFSTRING:inquisitive nature]
@@ -3302,9 +3322,9 @@ Cockatiels were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:cockatiel man:cockatiel men:cockatiel man]
 	[DESCRIPTION:A crested person with the head and wings of a cockatiel.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:7:0:1]
 
@@ -3332,6 +3352,7 @@ Cockatiels were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:crests]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -3475,9 +3496,9 @@ Peach-faced lovebirds were sponsored by the generous contributions of the Bay 12
 	[GO_TO_START]
 	[NAME:peach-faced lovebird man:peach-faced lovebird men:peach-faced lovebird man]
 	[DESCRIPTION:A colorful person with the head and wings of a peach-faced lovebird.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:2:0:1]
 
@@ -3505,6 +3526,7 @@ Peach-faced lovebirds were sponsored by the generous contributions of the Bay 12
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:loving nature]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -3650,9 +3672,9 @@ Magpies were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:magpie man:magpie men:magpie man]
 	[DESCRIPTION:A person with the head and wings of a magpie.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -3678,13 +3700,14 @@ Magpies were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant magpie:giant magpies:giant magpie]
 	[GENERAL_CHILD_NAME:giant magpie hatchling:giant magpie hatchlings]
 	[DESCRIPTION:A huge monster in the shape of a magpie.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:10]
 	[CREATURE_TILE:'M']
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 	[PREFSTRING:fondness of shiny objects]
@@ -3721,6 +3744,7 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:ANY_GRASSLAND]
 	[HOMEOTHERM:10067]
 	[TRAINABLE_HUNTING]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:shriek angrily:shrieks angrily:the shriek of a bird of prey]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
@@ -3838,9 +3862,9 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:kestrel man:kestrel men:kestrel man]
 	[DESCRIPTION:A person with the head and wings of a kestrel.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'k']
 	[COLOR:4:0:0]
 	[SKILL_LEARN_RATE:TRAPPING:200]{+}
@@ -3870,7 +3894,7 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 	[PREFSTRING:hunting prowess]
@@ -3999,9 +4023,9 @@ Albatrosses were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:albatross man:albatross men:albatross man]
 	[DESCRIPTION:A person with the head and wings of an albatross.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:1]
 
@@ -4029,6 +4053,7 @@ Albatrosses were sponsored by the generous contributions of the Bay 12 community
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:large wings]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -4185,9 +4210,9 @@ Great horned owls were sponsored by the generous contributions of the Bay 12 com
 	[GO_TO_START]
 	[NAME:great horned owl man:great horned owl men:great horned owl man]
 	[DESCRIPTION:A feathered person with the head and wings of a great horned owl.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:0]
 	[SKILL_LEARN_RATE:TEACHING:3]{+}
@@ -4220,6 +4245,7 @@ Great horned owls were sponsored by the generous contributions of the Bay 12 com
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:piercing yellow eyes]
 	[PREFSTRING:ear tufts]
@@ -4258,6 +4284,7 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:TUNDRA]
 	[HOMEOTHERM:10067]
 	[TRAINABLE_HUNTING]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:shriek angrily:shrieks angrily:the shriek of an eagle]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
@@ -4374,9 +4401,9 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:eagle man:eagle men:eagle man]
 	[DESCRIPTION:A feathered person with the head and wings of an eagle.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'e']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:TRAPPING:200]{+}
@@ -4407,6 +4434,7 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:high soaring]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -4550,9 +4578,9 @@ Hornbills were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:hornbill man:hornbill men:hornbill man]
 	[DESCRIPTION:A feathered person with a brightly-colored bill.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'h']
 	[COLOR:0:0:1]
 
@@ -4579,6 +4607,7 @@ Hornbills were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:great bills]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -4721,9 +4750,9 @@ Masked lovebirds were sponsored by the generous contributions of the Bay 12 comm
 	[GO_TO_START]
 	[NAME:masked lovebird man:masked lovebird men:masked lovebird man]
 	[DESCRIPTION:A colorful person with the head and wings of a masked lovebird.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:2:0:1]
 
@@ -4751,6 +4780,7 @@ Masked lovebirds were sponsored by the generous contributions of the Bay 12 comm
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:loving nature]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -4892,9 +4922,9 @@ Bushtits were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:bushtit man:bushtit men:bushtit man]
 	[DESCRIPTION:A person with the head and wings of a bushtit.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'b']
 	[COLOR:6:0:0]
 

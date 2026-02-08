@@ -19,12 +19,17 @@ creature_civ_human_masterfork
 	[PREFSTRING:individualistic nature]{+}
 	[GNAWER:picked]{+  Revision: creature can get out of non-metal cages.}
 	// BASE SKILLS //
-	[NATURAL_SKILL:DISCIPLINE:1]
-	[NATURAL_SKILL:SWIMMING:1]
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
+	[NATURAL_SKILL:DISCIPLINE:1]{+}
+	[NATURAL_SKILL:SWIMMING:1]{+}
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]{+}
 	// RACIAL SKILLS //
-	[NATURAL_SKILL:CONVERSATION:1]
-	[NATURAL_SKILL:JUDGING_INTENT:1]
+	[NATURAL_SKILL:CONVERSATION:1]{+}
+	[NATURAL_SKILL:JUDGING_INTENT:1]{+}
+	[NATURAL_SKILL:NEGOTIATION:1]{+}
+	[NATURAL_SKILL:PERSUASION:1]{+}
+	[NATURAL_SKILL:CONSOLE:1]{+}
+	[NATURAL_SKILL:PACIFY:1]{+}
+	[NATURAL_SKILL:KNOWLEDGE_ACQUISITION:1]{+}
 
 	[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -149,7 +154,7 @@ creature_civ_human_masterfork
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:50:90]{:60:120  Revision: ordinary humans live shorter lives compared to nobles, avg: 70.}
+	[MAXAGE:60:120]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -188,7 +193,7 @@ creature_civ_human_masterfork
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	    { removed latching }
 	[BABY:1]
-	[CHILD:12]{:18}
+	[CHILD:16]{:18}
 	[EQUIPS]
 	[DIURNAL]
 	[SMELL_TRIGGER:90]
@@ -252,8 +257,8 @@ creature_civ_human_masterfork
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:5:10:85]{+}
-		[ORIENTATION:FEMALE:85:10:5]{+}
+		[ORIENTATION:MALE:2:18:80]{+}
+		[ORIENTATION:FEMALE:95:4:1]{+}
 		[POP_RATIO:20]{+}
 		--MULTIPLE_LITTER_RARE]
 		[LITTERSIZE:3:5]{+}
@@ -262,8 +267,8 @@ creature_civ_human_masterfork
 		[DESCRIPTION:A medium-sized woman of great ambition and potential.  She looks almost ordinary in a world of strange things.  She toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:MALE:85:10:5]{+}
-		[ORIENTATION:FEMALE:5:10:85]{+}
+		[ORIENTATION:FEMALE:2:18:80]{+}
+		[ORIENTATION:MALE:95:4:1]{+}
 		[POP_RATIO:20]{+}
 		[BABYNAME:human baby boy:human babies]{+}
 		[CHILDNAME:human boy:human children]{+}
@@ -279,6 +284,8 @@ creature_civ_human_masterfork
 		[OUTSIDER_CONTROLLABLE]
 	[CASTE:FEMALE_NOBLE]{+  noble castes are modified from Fantastic Fantasy Fortress.}
 		[FEMALE]
+		[ORIENTATION:MALE:2:18:80]{+}
+		[ORIENTATION:FEMALE:95:4:1]{+}
 		[POP_RATIO:1] 1/20
 		--MULTIPLE_LITTER_RARE]
 		[LITTERSIZE:2:3]{+}
@@ -286,6 +293,8 @@ creature_civ_human_masterfork
 		[CASTE_NAME:human noblewoman:humans:human]
 	[CASTE:MALE_NOBLE]{+}
 		[MALE]
+		[ORIENTATION:FEMALE:2:18:80]{+}
+		[ORIENTATION:MALE:95:4:1]{+}
 		[POP_RATIO:1] 1/20
 		[DESCRIPTION:A medium-sized man of great potential.  He is of noble birth, and is prone to great ambitions.  He rule others to rule villages, kingdoms, establishing trade networks and start wars.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
@@ -317,6 +326,7 @@ creature_civ_human_masterfork
 		[PERSONALITY:PRIDE:5:52:95] *reduced cap/necromancer propensity
 		[PERSONALITY:AMBITION:5:55:100]
 		[PERSONALITY:ANXIETY_PROPENSITY:0:52:95] *reduced cap/necromancer propensity
+		[PERSONALITY:STRESS_VULNERABILITY:0:52:95] *reduced cap/necromancer propensity
 		[PERSONALITY:LUST_PROPENSITY:5:55:100]
 		[PERSONALITY:GREED:5:55:100]
 		[PERSONALITY:IMMODERATION:5:55:100]
@@ -340,12 +350,11 @@ creature_civ_human_masterfork
 		[PERSONALITY:ACTIVITY_LEVEL:0:45:90]
 		[PERSONALITY:CONFIDENCE:5:55:100]
 		[PERSONALITY:EXCITEMENT_SEEKING:5:55:100]
+		[PERSONALITY:BRAVERY:10:55:100] *affects necromancer propensity
 		{ noble nat. skills }
 		[NATURAL_SKILL:LYING:1]
-		[NATURAL_SKILL:INTRIGUE:1]
+		--NATURAL_SKILL:INTRIGUE:1]
 		[NATURAL_SKILL:FLATTERY:1]
-		[NATURAL_SKILL:NEGOTIATION:1]
-		[NATURAL_SKILL:PERSUASION:1]
 		[NATURAL_SKILL:READING:1]
 		{ noble imp. skill learn rates }
 		[SKILL_RATE:LYING:120:NONE:NONE:NONE] no rust
@@ -381,7 +390,7 @@ creature_civ_human_masterfork
 		[SKILL_RATE:SHEARING:50:4:8:8][CASTE_PROFESSION_NAME:SHEARER:shearer -:shearers]
 		[SKILL_RATE:SPINNING:50:4:8:8][CASTE_PROFESSION_NAME:SPINNER:spinner -:spinners]
 		[SKILL_RATE:POTTERY:50:4:8:8][CASTE_PROFESSION_NAME:POTTER:potter -:potters]
-		[MAXAGE:60:120] default lifespan
+		[MAXAGE:65:125] slightly longer lifespan
 
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]

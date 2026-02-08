@@ -133,9 +133,9 @@ Stoats were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:stoat man:stoat men:stoat man]
 	[DESCRIPTION:A long-bodied person with the head of a stoat.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -166,7 +166,9 @@ Stoats were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[MAXAGE:5:7]{+  Revision: let them live long enough to be worth taming.}
+	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:ability to take down large prey]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:657:438:219:1900:2900] 40 kph
@@ -193,7 +195,7 @@ Lynx were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:20:39]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	--MEANDERER]
+	[MEANDERER]
 	[GRASSTRAMPLE:0]
 	[CAN_DO_INTERACTION:CLEANING]{+  Revision: all felines clean themselves.}
 		[CDI:ADV_NAME:Clean]
@@ -314,9 +316,9 @@ Lynx were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:lynx man:lynx men:lynx man]
 	[DESCRIPTION:A person with the head and tail of a lynx.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -347,6 +349,7 @@ Lynx were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:ear tufts]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:657:438:219:1900:2900] 40 kph

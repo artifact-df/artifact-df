@@ -14,6 +14,7 @@ creature_woodelf_pet_fff
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
 	[TRAINABLE_WAR]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:1:4]
 	[BIOME:FOREST_TAIGA][GOOD]

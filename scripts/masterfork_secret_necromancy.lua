@@ -36,7 +36,8 @@ interactions.secrets.death=function(idx,sph)
         [IT_REQUIRES:CAN_LEARN]
         [IT_REQUIRES:CAN_SPEAK]
 		[IT_CANNOT_HAVE_SYNDROME_CLASS:NECROMANCER]//new
-		[IT_AFFECTED_CLASS:HUMAN_NOBLE]// only human nobles can initially learn the secret
+		[IT_AFFECTED_CREATURE:HUMAN:FEMALE_NOBLE]// only human nobles can initially learn the secret
+		[IT_AFFECTED_CREATURE:HUMAN:MALE_NOBLE]// ditto
     [I_EFFECT:ADD_SYNDROME]
         [IE_TARGET:A]
         [IE_IMMEDIATE]
@@ -48,7 +49,7 @@ interactions.secrets.death=function(idx,sph)
 			[SYN_NO_HOSPITAL]//new
             [CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT]
             [CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0:ABRUPT]
-			[CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:STERILE:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]// added sterile
+			[CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]
             [CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:40:FACET:TRUST:-40:START:0:ABRUPT]// reduced by 10
 			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-25:FACET:EMOTIONALLY_OBSESSIVE:-25:FACET:SWAYED_BY_EMOTIONS:-25:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
 			[CE_MENT_ATT_CHANGE:EMPATHY:75:0]// necromancers are less empathetic
@@ -286,5 +287,5 @@ interactions.secrets.death=function(idx,sph)
     end
     local spheres={"DEATH"}
     if summon then spheres[2]="NIGHTMARES" end
-    return {raws=tbl,weight=5,spheres=spheres}-- increased weight
+    return {raws=tbl,weight=10,spheres=spheres}-- increased weight
 end

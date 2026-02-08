@@ -14,7 +14,7 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:249][COLOR:7:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:10]
-	[VERMIN_EATER][PENETRATEPOWER:3][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
+	[VERMIN_EATER][PENETRATEPOWER:2][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
 	[GNAWER:gnawed]
 	[BENIGN][SMALL_REMAINS][NATURAL][PET_EXOTIC]{:PET
 	[VISION_ARC:50:310]
@@ -122,9 +122,9 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:hamster man:hamster men:hamster man]
 	[DESCRIPTION:A person with the head and fur of a hamster.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'h']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -147,13 +147,14 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant hamster:giant hamsters:giant hamster]
 	[GENERAL_CHILD_NAME:giant hamster pup:giant hamster pups:giant hamster pup]{+}
 	[DESCRIPTION:A large creature the shape of a hamster.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'H']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[MAXAGE:6:8]{+  Revision: let them live long enough to be worth taming.}
 	[GO_TO_END]
 	[PREFSTRING:puffy cheeks]
@@ -291,9 +292,9 @@ Hedgehogs were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:hedgehog man:hedgehog men:hedgehog man]
 	[DESCRIPTION:A person with the head and spines of a hedgehog.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'h']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -316,13 +317,14 @@ Hedgehogs were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant hedgehog:giant hedgehogs:giant hedgehog]
 	[GENERAL_CHILD_NAME:giant hedgehog hoglet:giant hedgehog hoglets]{+}
 	[DESCRIPTION:A large monster with the shape of a hedgehog.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'H']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[GO_TO_END]
 	[PREFSTRING:many spines]
@@ -452,9 +454,9 @@ Flying squirrels were sponsored by the generous contributions of the Bay 12 comm
 	[GO_TO_START]
 	[NAME:flying squirrel man:flying squirrel men:flying squirrel man]
 	[DESCRIPTION:A person with the head and wings of a flying squirrel.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:3:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -477,13 +479,14 @@ Flying squirrels were sponsored by the generous contributions of the Bay 12 comm
 	[CASTE_NAME:giant flying squirrel:giant flying squirrels:giant flying squirrel]
 	[GENERAL_CHILD_NAME:giant flying squirrel kit:giant flying squirrel kits:giant flying squirrel kit]{+}
 	[DESCRIPTION:A large monster taking the shape of a flying squirrel.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:5]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:gliding]
 	[PREFSTRING:large eyes]

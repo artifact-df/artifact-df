@@ -1,3 +1,39 @@
+-- original script from "Remove Invisible Divine Items (Lua)" by dphkraken
+-- removing this means that the default angel entity wouldn't have *any* items
+angel_item_gens.default = nil
+
+local rarityless_items={
+    WEAPON=true,
+    AMMO=true,
+    SHIELD=true,
+    ARMOR=true,
+    HELM=true,
+    GLOVES=true,
+    SHOES=true,
+    PANTS=true,
+}
+
+-- so we have to overwrite
+entities.vault_guardian.default=function(idx,tok)
+	-- just copy from the dungeon guardian and give them all existing items
+	-- don't really care right now about replicating the specific system that they use, it'll do for now
+    local lines={}
+    for k,v in ipairs({"WEAPON","AMMO","SHIELD","ARMOR","HELM","GLOVES","SHOES","PANTS"}) do
+        for kk,vv in ipairs(world.itemdef[v:lower()]) do
+            if not vv.generated then
+                lines[#lines+1]="["..v..":"..vv.token..(rarityless_items[v] and "" or ":COMMON").."]"
+            end
+        end
+    end
+    lines[#lines+1]="[DIVINE_MAT_WEAPONS]"
+    lines[#lines+1]="[DIVINE_MAT_ARMOR]"
+    lines[#lines+1]="[DIVINE_MAT_CRAFTS]"
+    lines[#lines+1]="[DIVINE_MAT_CLOTHING]"
+    lines[#lines+1]="[CLOTHING]"
+    lines[#lines+1]="[TRANSLATION:GEN_DIVINE]"
+    return {entity=lines,weight=1}
+end
+
 -- randomly generated elementals
 fb_elements = {
 	{

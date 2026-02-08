@@ -10,21 +10,22 @@ creature_large_temperate
 	[CREATURE_TILE:'B'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[NATURAL]
-	[PETVALUE:520]{:500
-	[PET_EXOTIC]--PET]
+	[PETVALUE:500]
+	[PET_EXOTIC]{:PET}
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[MOUNT_EXOTIC]
-	[LARGE_ROAMING][FREQUENCY:4]{:2
+	[LARGE_ROAMING][FREQUENCY:10]{:2
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
-	--CURIOUSBEAST_EATER] removed or they break caravans
-	--CURIOUSBEAST_GUZZLER]
+	[CURIOUSBEAST_EATER]
+	[CURIOUSBEAST_GUZZLER]
 	[GRASSTRAMPLE:0]
 	[LARGE_PREDATOR]
-	[NO_WINTER]--MEANDERER]
-	[NATURAL_SKILL:BITE:5]{+}
+	[NO_WINTER][MEANDERER]
+	[NATURAL_SKILL:BITE:3][NATURAL_SKILL:GRASP_STRIKE:3]{+  Revision: large predator animals need to be more dangerous.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
@@ -58,9 +59,9 @@ creature_large_temperate
 		[INSULATION:150]
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
 	[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
-	[USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]{:NAIL:NAIL_TEMPLATE
-	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:CLAW:CLAW_TEMPLATE
-	[TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]{:TOE:NAIL
+	[USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]{:NAIL:NAIL_TEMPLATE}
+	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:CLAW:CLAW_TEMPLATE}
+	[TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]{:TOE:NAIL}
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
 		[TL_MAJOR_ARTERIES]
@@ -119,7 +120,6 @@ creature_large_temperate
 		[DESCRIPTION:A huge, shaggy, and stocky creature with long claws, a pointy muzzle, small round ears, and a hump on his shoulders.  Generally calm, he has a fierce temper if his family is threatened.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -134,7 +134,6 @@ creature_large_temperate
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:BEAR_GRIZZLY_MAN]
 	[COPY_TAGS_FROM:BEAR_GRIZZLY]
@@ -163,9 +162,9 @@ creature_large_temperate
 	[NAME:grizzly bear man:grizzly bear men:grizzly bear man]
 	[DESCRIPTION:A large person with the head of a grizzly bear.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'B']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
@@ -192,13 +191,15 @@ creature_large_temperate
 	[CASTE_NAME:giant grizzly bear:giant grizzly bears:giant grizzly bear]
 	[GENERAL_CHILD_NAME:giant grizzly bear cub:giant grizzly bear cubs]
 	[DESCRIPTION:A huge monster in the shape of a grizzly bear.]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:4:6]{:2:3  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'B']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:471:314:157:1900:2900] 56 kph
@@ -214,9 +215,11 @@ creature_large_temperate
 	[CREATURE_TILE:'B'][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:300]
-	[PET_EXOTIC]--PET]
+	[PET_EXOTIC]{:PET}
 	[NATURAL]
 	[TRAINABLE]{+}
+	[UBIQUITOUS]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING][FREQUENCY:8]{:4
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
@@ -226,7 +229,7 @@ creature_large_temperate
 	--CURIOUSBEAST_GUZZLER]
 	[GRASSTRAMPLE:0]
 	[LARGE_PREDATOR]
-	[NO_WINTER]--MEANDERER]
+	[NO_WINTER][MEANDERER]
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500][BENIGN]{+}
 	[NATURAL_SKILL:BITE:2]{+}
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
@@ -323,7 +326,6 @@ creature_large_temperate
 		[DESCRIPTION:A large and shaggy creature found in temperate woodland.  He has long claws, large ears, and a pointy muzzle.  He sates his large appetite with berries but sometimes steals carcasses from other hunters.  Normally docile, he can be ferocious when provoked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -338,7 +340,6 @@ creature_large_temperate
 		[MULTIPLY_VALUE:2]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:BEAR_BLACK_MAN]
 	[COPY_TAGS_FROM:BEAR_BLACK]
@@ -367,9 +368,9 @@ creature_large_temperate
 	[NAME:black bear man:black bear men:black bear man]
 	[DESCRIPTION:A large person with the head of a black bear.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
@@ -396,13 +397,15 @@ creature_large_temperate
 	[CASTE_NAME:giant black bear:giant black bears:giant black bear]
 	[GENERAL_CHILD_NAME:giant black bear cub:giant black bear cubs]
 	[DESCRIPTION:A huge monster in the shape of a black bear.]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:4:6]{:2:3  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:549:366:183:1900:2900] 48 kph
@@ -453,7 +456,6 @@ creature_large_temperate
 		[CASTE_NAME:stag:stags:stag]{+}
 		[DESCRIPTION:A gentle, medium-sized forest creature that wanders the forest and startles easily.  He jumps and runs on long, powerful, hooved legs.  His large antlers grow back yearly.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_ANTLER]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
@@ -539,7 +541,6 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:DEER_MAN]
 	[COPY_TAGS_FROM:DEER]
@@ -566,9 +567,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:deer man:deer men:deer man]
 	[DESCRIPTION:A person with the head of a deer.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'d']
 	[COLOR:6:0:0]
 
@@ -591,13 +592,14 @@ creature_large_temperate
 	[CASTE_NAME:giant deer:giant deer:giant deer]
 	[GENERAL_CHILD_NAME:giant deer fawn:giant deer fawns]
 	[DESCRIPTION:A huge monster in the form of a deer.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:4]
 	[CREATURE_TILE:'D']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:grace]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:411:274:137:1900:2900] 64 kph
@@ -622,7 +624,8 @@ creature_large_temperate
 	[BONECARN]
 	[BENIGN]
 	[TRAINABLE]{+}
-	[FREQUENCY:15]{+}
+	[UBIQUITOUS]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:1000:VOCALIZATION:yap:yaps:tiny yapping]{+}
 	[PREFSTRING:cunning]
@@ -698,7 +701,6 @@ creature_large_temperate
 		[DESCRIPTION:A small and clever canine that wanders temperate forest.  He has large ears, a pointy snout, and a bushy tail.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -713,7 +715,6 @@ creature_large_temperate
 		[MULTIPLY_VALUE:4]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:FOX_MAN]
 	[COPY_TAGS_FROM:FOX]
@@ -741,9 +742,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:fox man:fox men:fox man]
 	[DESCRIPTION:A person with the head and tail of a fox.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'f']
 	[COLOR:4:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -770,15 +771,15 @@ creature_large_temperate
 	[CASTE_NAME:giant fox:giant foxes:giant fox]
 	[GENERAL_CHILD_NAME:giant fox pup:giant fox pups]
 	[DESCRIPTION:A huge monster in the shape of a fox.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'F']
 	[COLOR:4:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[TRAINABLE]{+}
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:cunning]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:528:352:176:1900:2900] 50 kph
@@ -878,7 +879,6 @@ creature_large_temperate
 		[DESCRIPTION:A small and curious bandit-masked omnivore with a striped tail, nimble front paws, and a curious nature.  He lives in the forest but can thrive in civilization as a pest by stealing food and rummaging in garbage each night.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -891,7 +891,6 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:RACCOON_MAN]
 	[COPY_TAGS_FROM:RACCOON]
@@ -919,9 +918,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:raccoon man:raccoon men:raccoon man]
 	[DESCRIPTION:A person with the mask and tail of a raccoon.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'r']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -944,13 +943,15 @@ creature_large_temperate
 	[CASTE_NAME:giant raccoon:giant raccoons:giant raccoon]
 	[GENERAL_CHILD_NAME:giant raccoon pup:giant raccoon pups]
 	[DESCRIPTION:A huge monster in the shape of a raccoon.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:3]
 	[CREATURE_TILE:'R']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:cunning]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:734:568:366:1900:2900] 24 kph
@@ -1050,7 +1051,6 @@ creature_large_temperate
 		[DESCRIPTION:A medium-sized monkey that forages for roots and insects.  He lives with a large, hierarchical group in wood and grassland.  In civilized areas they can become pests by stealing and begging for scraps.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1063,7 +1063,6 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:MACAQUE_RHESUS_MAN]
 	[COPY_TAGS_FROM:MACAQUE_RHESUS]
@@ -1091,9 +1090,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:rhesus macaque man:rhesus macaque men:rhesus macaque man]
 	[DESCRIPTION:A person with the head and tail of a rhesus macaque.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1115,13 +1114,15 @@ creature_large_temperate
 	[NAME:giant rhesus macaque:giant rhesus macaques:giant rhesus macaque]
 	[CASTE_NAME:giant rhesus macaque:giant rhesus macaques:giant rhesus macaque]
 	[DESCRIPTION:A large monster in the form of a rhesus macaque.]
-	[POPULATION_NUMBER:20:50]
+	[POPULATION_NUMBER:40:100]{:20:50  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'M']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:mischief]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:900:711:521:293:1900:2900] 30 kph
@@ -1147,7 +1148,8 @@ creature_large_temperate
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]{+}
-	[LARGE_PREDATOR]--MEANDERER]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[PREFSTRING:cunning]
 	[PREFSTRING:many exotic names]{+}
@@ -1261,7 +1263,6 @@ creature_large_temperate
 		[DESCRIPTION:A large, tawny cat that lives by himself.  He hides in dense vegetation, waiting to ambush his prey.  He has a long tail, powerful paws, excellent vision, and a stealthy nature.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -1276,7 +1277,6 @@ creature_large_temperate
 		[MULTIPLY_VALUE:2]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:COUGAR_MAN]
 	[COPY_TAGS_FROM:COUGAR]
@@ -1304,9 +1304,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:cougar man:cougar men:cougar man]
 	[DESCRIPTION:A person with the head and tail of a cougar.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
@@ -1333,13 +1333,15 @@ creature_large_temperate
 	[CASTE_NAME:giant cougar:giant cougars:giant cougar]
 	[GENERAL_CHILD_NAME:giant cougar cub:giant cougar cubs]
 	[DESCRIPTION:A huge monster in the form of a cougar.]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:4:6]{:2:3  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:cunning]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:585:390:195:1900:2900] 45 kph
@@ -1354,18 +1356,20 @@ creature_large_temperate
 	[CHILD:1][GENERAL_CHILD_NAME:wolf pup:wolf pups]
 	[CREATURE_TILE:'w'][COLOR:7:0:0]
 	[CREATURE_CLASS:MAMMAL]
-	[LARGE_PREDATOR]--MEANDERER]
+	[LARGE_PREDATOR][MEANDERER]
 	[LARGE_ROAMING][FREQUENCY:10]{:5
 	[BIOME:TUNDRA]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:SHRUBLAND_TEMPERATE]
+	[UBIQUITOUS]{+}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:3:7]
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:65]{:50
 	[PET]{:PET_EXOTIC}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BONECARN]
 	[PREFSTRING:cunning]
 	[PREFSTRING:feral nature]{+}
@@ -1524,9 +1528,9 @@ creature_large_temperate
 	[NAME:wolf man:wolf men:wolf man]
 	[DESCRIPTION:A person with the head and tail of a wolf.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'w']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1553,13 +1557,15 @@ creature_large_temperate
 	[CASTE_NAME:giant wolf:giant wolves:giant wolf]
 	[GENERAL_CHILD_NAME:giant wolf pup:giant wolf pups]
 	[DESCRIPTION:A huge monster in the shape of a wolf.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'W']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:cunning]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:447:298:149:1900:2900] 59 kph
@@ -1585,7 +1591,6 @@ creature_large_temperate
 	[CLUSTER_NUMBER:1:4]
 	[NO_WINTER][BENIGN][MEANDERER]
 	[VISION_ARC:50:310]
-	[FREQUENCY:10]{+}
 	[PREFSTRING:ability to burrow]
 	[PREFSTRING:fame as excellent burrowers]{+}
 	[PREFSTRING:banded guard hairs]{+}
@@ -1701,9 +1706,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:groundhog man:groundhog men:groundhog man]
 	[DESCRIPTION:A person with the head and fur of a groundhog.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'g']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1726,13 +1731,14 @@ creature_large_temperate
 	[CASTE_NAME:giant groundhog:giant groundhogs:giant groundhog]
 	[GENERAL_CHILD_NAME:giant groundhog pup:giant groundhog pups]
 	[DESCRIPTION:A large creature the shape of a groundhog.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:4]
 	[CREATURE_TILE:'G']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:ability to burrow]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:1945:1504:1062:548:3100:4500] 16 kph
@@ -1758,12 +1764,12 @@ creature_large_temperate
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
-	--MEANDERER]
+	[MEANDERER]
 	[PETVALUE:650]
 	[PET_EXOTIC]
 	--MOUNT_EXOTIC]
-	[FREQUENCY:10]{+}
 	[AMBUSHPREDATOR]{+}
+	[UBIQUITOUS]{+}
 	[CANNOT_JUMP]
 	[LARGE_PREDATOR]
 	[GRASSTRAMPLE:20]
@@ -1890,9 +1896,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:alligator man:alligator men:alligator man]
 	[DESCRIPTION:A person with the head and tail of an alligator.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]{:CLAW:CLAW_TEMPLATE
@@ -1916,13 +1922,15 @@ creature_large_temperate
 	[CASTE_NAME:giant alligator:giant alligators:giant alligator]
 	[GENERAL_CHILD_NAME:giant alligator hatchling:giant alligator hatchlings]
 	[DESCRIPTION:A huge monster in the shape of an alligator.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:20]{:5:10  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:3]
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
-	--MOUNT_EXOTIC]
+	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:1422:1127:831:488:2500:3700] 18 kph
@@ -1947,7 +1955,6 @@ creature_large_temperate
 	[BONECARN]
 	[CHILD:1]
 	[ALL_ACTIVE]
-	[FREQUENCY:10]{+}
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
 	[BIOME:MARSH_TEMPERATE_SALTWATER]
 	[BIOME:GRASSLAND_TEMPERATE]
@@ -2073,9 +2080,9 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:buzzard man:buzzard men:buzzard man]
 	[DESCRIPTION:A person with the head and wings of a buzzard.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'b']
 	[COLOR:0:0:1]
 
@@ -2096,13 +2103,15 @@ creature_large_temperate
 	[CASTE_NAME:giant buzzard:giant buzzards:giant buzzard]
 	[GENERAL_CHILD_NAME:giant buzzard hatchling:giant buzzard hatchlings]
 	[DESCRIPTION:A huge monster in the form of a buzzard.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:striking red face]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -2135,7 +2144,6 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:5]{+}
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]{:ANY_TEMPERATE_FOREST
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]{+}
 	[GRASSTRAMPLE:0]
@@ -2266,7 +2274,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:gigantic panda:gigantic pandas:gigantic panda]
 	[GENERAL_CHILD_NAME:gigantic panda cub:gigantic panda cubs]
 	[DESCRIPTION:A giant bear-like creature found in the wildest parts of the world.  It has striking black and white fur.]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:4:6]{:2:3  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'P']
 	[COLOR:7:0:1]
@@ -2274,6 +2282,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:1000]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[PREFSTRING:enormous size]
 	[PREFSTRING:striking coloration]
 	[PREFSTRING:gigantic fluffy heads and bellies]
@@ -2327,9 +2336,9 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:panda man:panda men:panda man]
 	[DESCRIPTION:A humanoid creature with the head and belly of a panda.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'P']
 	[COLOR:7:0:1]
 	[SKILL_LEARN_RATE:HERBALISM:200]{+}
@@ -2359,13 +2368,13 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[STANDARD_GRAZER]
 	[AMPHIBIOUS]
 	[LARGE_ROAMING]
+	[UBIQUITOUS]{+}
 	[POPULATION_NUMBER:200:300]{:20:30
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:ANY_TROPICAL_WETLAND]{:ANY_WETLAND}
 	[GRASSTRAMPLE:0]
 	[MEANDERER]
 	[VISION_ARC:50:310]
-	[FREQUENCY:10]{+}
 	[SOUND:ALERT:100:1000:VOCALIZATION:bark:barks:a loud bark]
 	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:whistle:whistles:whistling]
 	[SOUND:PEACEFUL_INTERMITTENT:25:10000:VOCALIZATION:grunt:grunts:a grunt]
@@ -2473,13 +2482,14 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant capybara:giant capybaras:giant capybara]
 	[GENERAL_CHILD_NAME:giant capybara pup:giant capybara pups]
 	[DESCRIPTION:A huge rodent that walks on tall legs.  Its bark can be heard at large distances.  It is fond of swimming.]
-	[POPULATION_NUMBER:20:30]
+	[POPULATION_NUMBER:40:60]{:20:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[SOUND:ALERT:200:1000:VOCALIZATION:bark:barks:a resounding bark]
 	[SOUND:PEACEFUL_INTERMITTENT:200:10000:VOCALIZATION:whistle:whistles:deep whistling]
 	[SOUND:PEACEFUL_INTERMITTENT:50:10000:VOCALIZATION:grunt:grunts:a loud grunt]
@@ -2520,9 +2530,9 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:capybara man:capybara men:capybara man]
 	[DESCRIPTION:A humanoid with the head of a capybara.  It is fond of swimming.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
 
@@ -2552,7 +2562,6 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[BONECARN]
 	[BENIGN][PRONE_TO_RAGE:1]
 	[GRASSTRAMPLE:0]
-	[FREQUENCY:10]{+}
 	[PREFSTRING:underground communities]
 	[PREFSTRING:striped faces]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
@@ -2683,9 +2692,9 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:badger man:badger men:badger man]
 	[DESCRIPTION:A humanoid with the head and stripes of a badger.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'b']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:SET_TL_GROUP:BY_CATEGORY:LEG_FRONT:HAIR]
@@ -2717,13 +2726,15 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:giant badger:giant badgers:giant badger]
 	[GENERAL_CHILD_NAME:giant badger cub:giant badger cubs]
 	[DESCRIPTION:A huge monster the shape of a badger.  It is ferocious in combat.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:4:12]
 	[CREATURE_TILE:'B']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant badger boar:giant badger boars:giant badger boar]
@@ -2758,11 +2769,11 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:FOREST_TEMPERATE_CONIFER]{:ANY_TEMPERATE_FOREST}
-	--BENIGN]--MEANDERER][NATURAL][PET_EXOTIC][MOUNT_EXOTIC]
+	--BENIGN][MEANDERER][NATURAL][PET_EXOTIC][MOUNT_EXOTIC]
+	[UBIQUITOUS]{+}
 	[MAXAGE:15:25]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
-	[FREQUENCY:20]{+}
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:471:314:157:1900:2900] 56 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
@@ -2776,7 +2787,7 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 		[MULTIPLE_LITTER_RARE]
 		[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
 		[STANDARD_GRAZER]
-		[BENIGN]{+}
+		[BENIGN]{+ the cows are benign}
 		[BODY_SIZE:0:0:31500]
 		[BODY_SIZE:1:0:157500]
 		[BODY_SIZE:2:0:315000]
@@ -2905,9 +2916,9 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:moose man:moose men:moose man]
 	[DESCRIPTION:A humanoid with the head and antlers of a moose.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 
@@ -2926,13 +2937,14 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:giant moose:giant moose:giant moose]
 	[GENERAL_CHILD_NAME:giant moose calf:giant moose calves]
 	[DESCRIPTION:A huge monster the shape of a moose.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:1000]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:giant moose cow:giant moose cows:giant moose cow]
@@ -2972,7 +2984,6 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	--SPECIFIC_FOOD:PLANT:BAMBOO, HEDGE]
 	[BENIGN]
 	[GRASSTRAMPLE:0]
-	[FREQUENCY:5]{+}
 	[PREFSTRING:large striped tails]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
@@ -3122,9 +3133,9 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:red panda man:red panda men:red panda man]
 	[DESCRIPTION:A medium-sized, walking red panda with arms and a tail.  It prefers the forest and its beloved trees.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:4:0:0]
 	[GO_TO_TAG:SET_TL_GROUP:BY_CATEGORY:LEG_FRONT:HAIR]
@@ -3153,13 +3164,14 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:giant red panda:giant red pandas:giant red panda]
 	[GENERAL_CHILD_NAME:giant red panda cub:giant red panda cubs]
 	[DESCRIPTION:A large monster with the shape of a red panda.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'P']
 	[COLOR:4:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant red panda boar:giant red panda boars:giant red panda boar]

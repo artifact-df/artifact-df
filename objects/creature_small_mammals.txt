@@ -9,13 +9,10 @@ creature_small_mammals
 	[CREATURE_TILE:249][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:10]
-	[VERMIN_EATER][PENETRATEPOWER:6]{:2}[FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
-	[VERMIN_ROTTER]{+}
-	[UBIQUITOUS]{+}
-	[CLUSTER_NUMBER:1:20]{+}
+	[VERMIN_EATER][PENETRATEPOWER:3]{:2}[FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
 	[GNAWER:gnawed]
 	[VISION_ARC:50:310]
-	[SMALL_REMAINS][NATURAL]{:PET}[PET_EXOTIC]
+	[SMALL_REMAINS][NATURAL][PET_EXOTIC]{:PET}
 	[NOT_BUTCHERABLE]
 	[BIOME:NOT_FREEZING]
 	[POPULATION_NUMBER:250:500]
@@ -88,7 +85,6 @@ creature_small_mammals
 		[DESCRIPTION:A tiny, intelligent vermin with a long naked tail.  A common pest, he raids stored food and spreads disease.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1:BROWN:1]
@@ -128,7 +124,7 @@ creature_small_mammals
 	[DESCRIPTION:A person with the head and tail of a rat.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'r']
 	[COLOR:0:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -145,7 +141,6 @@ creature_small_mammals
 	[SMALL_REMAINS][NATURAL][PET_EXOTIC][NO_WINTER]
 	[VISION_ARC:50:310]
 	[NOT_BUTCHERABLE]
-	[FREQUENCY:50]{+}
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[POPULATION_NUMBER:250:500]
 	[PREFSTRING:tails]
@@ -213,7 +208,6 @@ creature_small_mammals
 		[DESCRIPTION:A tiny gray rodent with a bushy tail and a white belly, often found chirping in the trees of temperate woodland.  He gathers food and stores it in small caches.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -253,7 +247,7 @@ creature_small_mammals
 	[DESCRIPTION:A person with the head and tail of a gray squirrel.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -265,10 +259,6 @@ creature_small_mammals
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
-	[SELECT_CASTE:FEMALE]
-		[DESCRIPTION:A fluffy, squirrel-like monster with a bushy tail and a white belly.  She gathers food for herself and stores it in large caches for later.]{+}
-	[SELECT_CASTE:MALE]
-		[DESCRIPTION:A fluffy, squirrel-like monster with a bushy tail and a white belly.  He gathers food for himself and stores it in large caches for later.]{+}
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:67367]
 	[GO_TO_START]
@@ -302,7 +292,6 @@ creature_small_mammals
 	[SMALL_REMAINS][NATURAL][PET_EXOTIC][NO_WINTER]
 	[VISION_ARC:50:310]
 	[NOT_BUTCHERABLE]
-	[UBIQUITOUS]{+}
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[POPULATION_NUMBER:250:500]
 	[PREFSTRING:tails]
@@ -370,7 +359,6 @@ creature_small_mammals
 		[DESCRIPTION:A tiny, bulky red rodent with a bushy tail and tall, bushy ears.  Found in the trees of temperate woodland, he collects and store food in caches for later.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -410,7 +398,7 @@ creature_small_mammals
 	[DESCRIPTION:A person with the head and tail of a red squirrel.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -422,9 +410,9 @@ creature_small_mammals
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
-	[SELECT_CASTE:FEMALE]
+	[SELECT_CASTE:FEMALE]{+}
 		[DESCRIPTION:A fluffy, squirrel-like monster with a bushy tail and tall, bushy ears.  She gathers food for herself and stores it in large caches for later.]{+}
-	[SELECT_CASTE:MALE]
+	[SELECT_CASTE:MALE]{+}
 		[DESCRIPTION:A fluffy, squirrel-like monster with a bushy tail and tall, bushy ears.  He gathers food for himself and stores it in large caches for later.]{+}
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:67367]
@@ -459,7 +447,6 @@ creature_small_mammals
 	[SMALL_REMAINS][NATURAL][PET_EXOTIC][NO_WINTER]
 	[VISION_ARC:50:310]
 	[NOT_BUTCHERABLE]
-	[UBIQUITOUS]{+}
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[POPULATION_NUMBER:250:500]
 	[PREFSTRING:stripes]
@@ -527,7 +514,6 @@ creature_small_mammals
 		[DESCRIPTION:A tiny striped rodent that scurries through the bushes and trees of temperate forest.  He stuffs food in his cheek pouches and carries it to small caches for storage, looking funny with his fat cheeks.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -567,7 +553,7 @@ creature_small_mammals
 	[DESCRIPTION:A striped person with the head and tail of a chipmunk.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -579,9 +565,9 @@ creature_small_mammals
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
-	[SELECT_CASTE:FEMALE]
+	[SELECT_CASTE:FEMALE]{+}
 		[DESCRIPTION:A fluffy, striped, squirrel-like monster with a bushy tail and small, round ears.  She stuffs food in her cheek pouches while carrying it to large caches, giving her a funny, fat-cheeked look.]{+}
-	[SELECT_CASTE:MALE]
+	[SELECT_CASTE:MALE]{+}
 		[DESCRIPTION:A fluffy, striped, squirrel-like monster with a bushy tail and small, round ears.  He stuffs food in his cheek pouches while carrying it to large caches, giving him a funny, fat-cheeked look.]{+}
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:67367]
@@ -597,7 +583,6 @@ creature_small_mammals
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[GO_TO_END]
 	[PREFSTRING:stripes]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:750:600:439:1900:2900] 20 kph

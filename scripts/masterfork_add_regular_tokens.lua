@@ -7,4 +7,5 @@ function add_regular_tokens(lines,options)
 	lines[#lines+1]="[STANCE_CLIMBER]"-- so rcp creatures can climb
 	lines[#lines+1]="[NATURAL_SKILL:CLIMBING:1]"-- nat climbing skill
 	lines[#lines+1]="[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]"-- immortal creatures learn all skills at 33%, but have no rust
+	lines[#lines+1]="[FANCIFUL]"-- "The creature is a thing of legend and known to all civilizations. Its materials cannot be requested or preferred. The tag also adds some art value modifiers. Used by a number of creatures. Conflicts with [COMMON_DOMESTIC]"
 end

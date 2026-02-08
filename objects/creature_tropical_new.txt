@@ -21,7 +21,6 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:20]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BONECARN]
@@ -134,9 +133,9 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:mongoose man:mongoose men:mongoose man]
 	[DESCRIPTION:A small person with the head and tail of a mongoose.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -160,7 +159,7 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant mongoose:giant mongooses:giant mongoose]
 	[GENERAL_CHILD_NAME:giant mongoose pup:giant mongoose pups]
 	[DESCRIPTION:A large mongoose-like monster known for hunting people amongst other things.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'M']
 	[COLOR:7:0:0]
@@ -168,6 +167,7 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:agility]
 	[PREFSTRING:cunning]
@@ -186,7 +186,7 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[CHILD:1][GENERAL_CHILD_NAME:hyena cub:hyena cubs]
 	[CREATURE_TILE:'h'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
-	[LARGE_PREDATOR]--MEANDERER]
+	[LARGE_PREDATOR][MEANDERER]
 	[LARGE_ROAMING][FREQUENCY:20]{:5
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
@@ -198,6 +198,7 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[BONECARN]
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[PREFSTRING:distinctive laugh]
 	[PREFSTRING:coordinated hunting]
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -310,9 +311,9 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:hyena man:hyena men:hyena man]
 	[DESCRIPTION:A person with the head and markings of a hyena.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'h']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -338,13 +339,15 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant hyena:giant hyenas:giant hyena]
 	[GENERAL_CHILD_NAME:giant hyena cub:giant hyena cubs]
 	[DESCRIPTION:A huge monster the shape of a hyena.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:15]
 	[CREATURE_TILE:'H']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:distinctive laugh]
 	[PREFSTRING:coordinated hunting]
@@ -468,9 +471,9 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:anaconda man:anaconda men:anaconda man]
 	[DESCRIPTION:A large anaconda with the torso and arms of a man.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[LISP]{+}
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:1]
@@ -499,6 +502,8 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:great size]
@@ -524,7 +529,6 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:20]{+}
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
 	[PETVALUE:400]
@@ -638,9 +642,9 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_START]
 	[NAME:monitor lizard man:monitor lizard men:monitor lizard man]
 	[DESCRIPTION:A person with the head and tail of a monitor lizard.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[LISP]{+}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
@@ -672,6 +676,8 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:900:657:438:219:1900:2900] 40 kph
@@ -836,9 +842,9 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:king cobra man:king cobra men:king cobra man]
 	[DESCRIPTION:A legless person with the head and tail of a king cobra.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[LISP]{+}
 	[CREATURE_TILE:'k']
 	[COLOR:0:0:1]
@@ -877,7 +883,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[CASTE_NAME:giant king cobra:giant king cobras:giant king cobra]
 	[GENERAL_CHILD_NAME:giant king cobra hatchling:giant king cobra hatchlings]{+}
 	[DESCRIPTION:A large monster in the shape of a king cobra.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'K']
 	[COLOR:0:0:1]
@@ -885,6 +891,8 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:charming hood]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:900:750:600:439:1900:2900] 20 kph
@@ -905,6 +913,7 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE_HUNTING]{TRAINABLE  Revision: ocelots are cute but not big enough for war.}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SWAMP_MANGROVE]
 	[BIOME:SAVANNA_TROPICAL]
@@ -913,7 +922,7 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	--MEANDERER]
+	[MEANDERER]
 	[GRASSTRAMPLE:0]
 	[PREFSTRING:coat patterns]
 	[SOUND:ALERT:100:10000:VOCALIZATION:yowl:yowls:a loud yowl]{+}
@@ -1040,9 +1049,9 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:ocelot man:ocelot men:ocelot man]
 	[DESCRIPTION:A person with the head and tail of an ocelot.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'o']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -1074,8 +1083,8 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[TRAINABLE]{+}
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:coat patterns]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:711:521:293:1900:2900] 30 kph
@@ -1104,6 +1113,7 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:50]
 	[PET_EXOTIC]
 	[TRAINABLE_HUNTING]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BONECARN]
 	[PREFSTRING:resourceful nature]
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -1217,9 +1227,9 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:jackal man:jackal men:jackal man]
 	[DESCRIPTION:A person with the head and tail of a jackal.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'j']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1244,15 +1254,15 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant jackal:giant jackals:giant jackal]
 	[GENERAL_CHILD_NAME:giant jackal pup:giant jackal pups]
 	[DESCRIPTION:A large monster in the form of a jackal.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:5]
 	[CREATURE_TILE:'J']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[TRAINABLE]{+}
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:resourceful nature]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:549:366:183:1900:2900] 48 kph
@@ -1387,9 +1397,9 @@ Capuchins were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:capuchin man:capuchin men:capuchin man]
 	[DESCRIPTION:A person with the head and tail of a capuchin.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:7:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1418,6 +1428,7 @@ Capuchins were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:intelligence]
 	[PREFSTRING:social nature]
@@ -1548,9 +1559,9 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:sloth man:sloth men:sloth man]
 	[DESCRIPTION:A person with the head of a sloth.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1579,6 +1590,7 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:slow movement]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:7780:7508:7254:2925:8478:9233] 3 kph
@@ -1715,9 +1727,9 @@ Spider monkeys were sponsored by the generous contributions of the Bay 12 commun
 	[GO_TO_START]
 	[NAME:spider monkey man:spider monkey men:spider monkey man]
 	[DESCRIPTION:A long-limbed person with the head and tail of a spider monkey.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:0:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1746,6 +1758,7 @@ Spider monkeys were sponsored by the generous contributions of the Bay 12 commun
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:long limbs]
 	[PREFSTRING:prehensile tails]
@@ -1775,7 +1788,6 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:20]{+}
 	[BENIGN][MEANDERER]
 	[PREFSTRING:overlapping scales]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:RIBCAGE]
@@ -1890,9 +1902,9 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:pangolin man:pangolin men:pangolin man]
 	[DESCRIPTION:A person with the head and scales of a pangolin.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1915,13 +1927,14 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant pangolin:giant pangolins:giant pangolin]
 	[GENERAL_CHILD_NAME:baby giant pangolin:baby giant pangolins]
 	[DESCRIPTION:A huge monster in the form of a pangolin.]
-	[POPULATION_NUMBER:10:20]{:10:20
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'P']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:overlapping scales]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:3512:2634:1756:878:4900:6900] 10 kph
@@ -2091,9 +2104,9 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[GO_TO_START]
 	[NAME:black mamba man:black mamba men:black mamba man]
 	[DESCRIPTION:A person in the form of a large black mamba with arms.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[LISP]{+}
 	[CREATURE_TILE:'s']
 	[COLOR:0:0:1]
@@ -2140,6 +2153,8 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[PETVALUE:600]{:500
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:aggression]
 	[PREFSTRING:deadly bite]
@@ -2274,9 +2289,9 @@ Sloth bears were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:sloth bear man:sloth bear men:sloth bear man]
 	[DESCRIPTION:A person with the head and claws of a sloth bear.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -2306,6 +2321,7 @@ Sloth bears were sponsored by the generous contributions of the Bay 12 community
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:large floppy ears]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:711:521:293:1900:2900] 30 kph
@@ -2437,9 +2453,9 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:aye-aye man:aye-aye men:aye-aye man]
 	[DESCRIPTION:A person with the head and fingers of an aye-aye.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -2461,13 +2477,14 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:giant aye-aye:giant aye-ayes:giant aye-aye]
 	[CASTE_NAME:giant aye-aye:giant aye-ayes:giant aye-aye]
 	[DESCRIPTION:A huge monster shaped like an aye-aye.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'A']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:interesting fingers]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:900:703:505:274:1900:2900] 32 kph
@@ -2687,6 +2704,8 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[PETVALUE:600]{:500
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:deadly bite]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:3512:2634:1756:878:4900:6900] 10 kph
@@ -2844,7 +2863,9 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:600]{:500
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR][AMBUSHPREDATOR]{+}
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:great size]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:3512:2634:1756:878:4900:6900] 10 kph
@@ -3007,9 +3028,9 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:tapir man:tapir men:tapir man]
 	[DESCRIPTION:A person with the head of a tapir.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'T']
 	[COLOR:7:0:1]
 
@@ -3045,6 +3066,7 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:floppy noses]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:703:505:274:1900:2900] 32 kph
@@ -3194,9 +3216,9 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:impala man:impala men:impala man]
 	[DESCRIPTION:A slender, horned man with the head and tail of a impala.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'i']
 	[COLOR:6:0:0]
 
@@ -3224,6 +3246,7 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:mighty leaps]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:438:292:146:1900:2900] 60 kph
@@ -3360,9 +3383,9 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:aardvark man:aardvark men:aardvark man]
 	[DESCRIPTION:A person with the head and tail of an aardvark.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -3392,6 +3415,7 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:long ears]
 	[PREFSTRING:snout]
@@ -3520,9 +3544,9 @@ Lion tamarins were sponsored by the generous contributions of the Bay 12 communi
 	[GO_TO_START]
 	[NAME:lion tamarin man:lion tamarin men:lion tamarin man]
 	[DESCRIPTION:An orange person with the head and tail of a lion tamarin.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -3545,13 +3569,14 @@ Lion tamarins were sponsored by the generous contributions of the Bay 12 communi
 	[CASTE_NAME:giant lion tamarin:giant lion tamarins:giant lion tamarin]
 	[GENERAL_CHILD_NAME:giant lion tamarin infant:giant lion tamarin infants]{+}
 	[DESCRIPTION:A huge monster in the form of a lion tamarin.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'L']
 	[COLOR:6:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[GO_TO_END]
 	[PREFSTRING:small size]

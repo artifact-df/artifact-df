@@ -530,6 +530,7 @@ creature_fantasy_flying_fff
 	[PETVALUE:1000][SAVAGE]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC][TRAINABLE_WAR]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:MOUNTAIN]
 	[LARGE_ROAMING][DIFFICULTY:5]
 	[POPULATION_NUMBER:5:10]
@@ -641,6 +642,7 @@ creature_fantasy_flying_fff
 	[PETVALUE:500][SAVAGE]
 	[PET_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[MOUNT_EXOTIC]
 	[BIOME:MOUNTAIN]
 	[SOUND:ALERT:100:15000:VOCALIZATION:let out a shrieking cry:lets out a shrieking cry:the distant cry of a titanic bird]{+}
@@ -753,6 +755,7 @@ creature_fantasy_flying_fff
 	[NATURAL]
 	[FANCIFUL]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_PREDATOR]
 	[FLIER]
 	[BONECARN]
@@ -861,6 +864,7 @@ creature_fantasy_flying_fff
 	[NATURAL]
 	[FANCIFUL]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[STANDARD_GRAZER]
 	[VISION_ARC:50:310]
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2WINGS]

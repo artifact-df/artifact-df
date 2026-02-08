@@ -98,9 +98,9 @@ creature_amphibians
 	[GO_TO_START]
 	[NAME:toad man:toad men:toad man]
 	[DESCRIPTION:A dark green man with the distinct head of a toad.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'t']
 	[COLOR:2:0:0]
 	[SKILL_LEARN_RATE:CLIMBING:200]{+}
@@ -124,7 +124,7 @@ creature_amphibians
 	[CASTE_NAME:giant toad:giant toads:giant toad]
 	[CHILD:1][GENERAL_CHILD_NAME:giant toadlet:giant toadlets]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A huge monster in the shape of a toad.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:15:30]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'T']
 	[COLOR:2:0:0]
@@ -133,6 +133,7 @@ creature_amphibians
 	[MOUNT_EXOTIC]
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[SOUND:ALERT:100:10000:VOCALIZATION:croak:croaks:loud croaking]{+}
 	[PREFSTRING:beauty]

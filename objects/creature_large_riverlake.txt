@@ -22,9 +22,10 @@ creature_large_riverlake
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[FREQUENCY:20]{+}
-	--MEANDERER][NATURAL]--BENIGN]
+	[MEANDERER][NATURAL]--BENIGN]
 	[PRONE_TO_RAGE:10]{+}
 	[TRAINABLE_WAR]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[PREFSTRING:strength]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -67,17 +68,16 @@ creature_large_riverlake
 		[ATTACK_VERB:kick:kicks]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
-		[ATTACK_PRIORITY:SECOND]{:MAIN
+		[ATTACK_PRIORITY:SECOND]{:MAIN}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:maul:mauls]
-		[ATTACK_CONTACT_PERC:90]
+		[ATTACK_VERB:gore:gores]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_WITH]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -135,9 +135,9 @@ creature_large_riverlake
 	[NAME:hippo man:hippo men:hippo man]
 	[DESCRIPTION:A large person with the head of a hippo.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'H']
 	[COLOR:7:0:0]
 
@@ -165,6 +165,7 @@ creature_large_riverlake
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:711:521:293:1900:2900] 30 kph
@@ -733,9 +734,9 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:platypus man:platypus men:platypus man]
 	[DESCRIPTION:A humanoid with the head, tail and poison spurs of a platypus.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:6:0:0]
 
@@ -779,6 +780,7 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[PREFSTRING:great size]
 	[PREFSTRING:bizarre appearance]
 	[PREFSTRING:venomous spurs]

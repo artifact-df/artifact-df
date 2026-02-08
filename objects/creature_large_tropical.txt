@@ -13,18 +13,19 @@ creature_large_tropical
 	[PET]
 	[STANDARD_GRAZER] don't have browsing trees yet
 	[PACK_ANIMAL]
-	--MOUNT_EXOTIC]
-	[TRAINABLE]
-	[MOUNT]{+}
+	[MOUNT_EXOTIC]
+	[TRAINABLE_WAR]--TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING]
 	[TRADE_CAPACITY:5000]{+}
-	[FREQUENCY:15]{+}
+	[COMMON_DOMESTIC]{+}
+	[CANNOT_JUMP]{+ makes sense.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]{+}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	--BENIGN]--MEANDERER][NATURAL]
+	[BENIGN][MEANDERER][NATURAL]
 	[NATURAL_SKILL:BITE:3]{+}
 	[PREFSTRING:strength]
 	[PREFSTRING:amazing trunks]
@@ -48,8 +49,7 @@ creature_large_tropical
 		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
 			[STATE_NAME:ALL_SOLID:ivory]
 			[STATE_ADJ:ALL_SOLID:ivory]
-	[SELECT_MATERIAL:IVORY]{+  revision: more valuable ivory.}
-		[MATERIAL_VALUE:3]{+
+			[MATERIAL_VALUE:4]{+  revision: more valuable ivory.}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]
 			[TISSUE_NAME:ivory:NP]
@@ -105,7 +105,6 @@ creature_large_tropical
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[BENIGN]{+ elephant cows are mostly benign.}
 		[POP_RATIO:3]{+}
 		[CASTE_NAME:elephant cow:elephant cows:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  She lifts plants with her trunk and attacks with long tusks when she gets angry.  Her large ears flap in the heat.]{+}
@@ -113,11 +112,11 @@ creature_large_tropical
 		[MALE]
 		[POP_RATIO:2]{+ males are less common in herds.}
 		[PRONE_TO_RAGE:10]{+}
+		[TRANCES]{+  can enter battle trances.}
 		[CASTE_NAME:elephant bull:elephant bulls:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  He lifts plants with his trunk and attacks with long tusks when he gets angry.  His large ears flap in the heat.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -132,7 +131,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:6]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:ELEPHANT_MAN]
 	[COPY_TAGS_FROM:ELEPHANT]
@@ -161,9 +159,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:elephant man:elephant men:elephant man]
 	[DESCRIPTION:A large person with the trunk and ears of an elephant.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'E']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
@@ -188,13 +186,14 @@ creature_large_tropical
 	[CASTE_NAME:giant elephant:giant elephants:giant elephant]
 	[GENERAL_CHILD_NAME:giant elephant calf:giant elephant calves]
 	[DESCRIPTION:A gigantic monster in elephant form.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:7]
 	[CREATURE_TILE:'E']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:1500]{:500
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[PREFSTRING:amazing trunks]
@@ -232,10 +231,10 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:15]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
+	[UBIQUITOUS]{+}
 	[MEANDERER][NATURAL][BENIGN]
 	[SOUND:ALERT:100:10000:VOCALIZATION:squeal:squeals:a loud squeal]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
@@ -364,9 +363,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:warthog man:warthog men:warthog man]
 	[DESCRIPTION:A person with the head of a warthog.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -391,13 +390,14 @@ creature_large_tropical
 	[CASTE_NAME:giant warthog:giant warthogs:giant warthog]
 	[GENERAL_CHILD_NAME:giant warthog piglet:giant warthog piglets]
 	[DESCRIPTION:A huge monster warthog with jagged tusks.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:7]
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:short tempers]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:549:366:183:1900:2900] 48 kph
@@ -415,14 +415,16 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
+	[UBIQUITOUS]{+}
 	[LARGE_ROAMING][FREQUENCY:15]{:5
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR]--MEANDERER]
+	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -513,7 +515,8 @@ creature_large_tropical
 	[HOMEOTHERM:10067]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:327:218:109:1900:2900] 80 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
-	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+  Revision: all felines should be able to expertly climb.}
+	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:15]{+
 	[SWIMS_INNATE]
 	[MUNDANE]
 	[CASTE:FEMALE]
@@ -570,9 +573,9 @@ creature_large_tropical
 	[NAME:lion man:lion men:lion man]
 	[DESCRIPTION:A person with the head of a lion.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'L']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -597,18 +600,21 @@ creature_large_tropical
 	[CASTE_NAME:giant lion:giant lions:giant lion]
 	[GENERAL_CHILD_NAME:giant lion cub:giant lion cubs]
 	[DESCRIPTION:A gigantic version of the feline predator.  Its giant prides can be found in the wildest, most savage parts of the world.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:20]{:5:10  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:3]
 	[CREATURE_TILE:'L']
 	[COLOR:6:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:roars]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:327:218:109:1900:2900] 80 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+}
 
 [CREATURE:LEOPARD]
 	[DESCRIPTION:A large spotted feline found in grass and woodland.  It is known for great speed in hunting.]
@@ -620,15 +626,17 @@ creature_large_tropical
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL]
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
+	[UBIQUITOUS]{+}
 	[LARGE_ROAMING][FREQUENCY:15]{:5
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR]--MEANDERER]
+	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -719,6 +727,8 @@ creature_large_tropical
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:453:302:151:1900:2900] 58 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+  Revision: all felines should be able to expertly climb.}
+	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:15]{+
 	[SWIMS_INNATE]
 	[MUNDANE]
 	[CASTE:FEMALE]
@@ -772,9 +782,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:leopard man:leopard men:leopard man]
 	[DESCRIPTION:A spotted person with the head and tail of a leopard.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -799,18 +809,21 @@ creature_large_tropical
 	[CASTE_NAME:giant leopard:giant leopards:giant leopard]
 	[GENERAL_CHILD_NAME:giant leopard cub:giant leopard cubs]
 	[DESCRIPTION:A gigantic spotted predator, dwarfing its small cousins.  It is found in the wild lands.]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:4:6]{:2:3  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'L']
 	[COLOR:6:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:spotted coats]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:453:302:151:1900:2900] 58 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+}
 
 [CREATURE:JAGUAR]
 	[DESCRIPTION:A large, muscular, spotted feline found in tropical jungles.  It is solitary and stalks and ambushes its prey.]
@@ -822,15 +835,17 @@ creature_large_tropical
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL]
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
+	[UBIQUITOUS]{+}
 	[LARGE_ROAMING][FREQUENCY:15]{:5
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR]--MEANDERER]
+	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -921,6 +936,8 @@ creature_large_tropical
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:411:274:137:1900:2900] 64 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+  Revision: all felines should be able to expertly climb.}
+	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:15]{+
 	[SWIMS_INNATE]
 	[MUNDANE]
 	[CASTE:FEMALE]
@@ -974,9 +991,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:jaguar man:jaguar men:jaguar man]
 	[DESCRIPTION:A spotted person with the head and tail of a jaguar.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'J']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -1001,18 +1018,21 @@ creature_large_tropical
 	[CASTE_NAME:giant jaguar:giant jaguars:giant jaguar]
 	[GENERAL_CHILD_NAME:giant jaguar cub:giant jaguar cubs]
 	[DESCRIPTION:A gigantic feline predator, similar to its cousins in all but size.  It can be found in the savage wilderness.]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:4:6]{:2:3  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'J']
 	[COLOR:6:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:spotted coats]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:411:274:137:1900:2900] 64 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+}
 
 [CREATURE:TIGER]
 	[DESCRIPTION:A huge, striped predator.  It is found in almost any climate on a lone hunt for its prey.]
@@ -1025,17 +1045,19 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
 	[BIOME:SWAMP_TROPICAL_SALTWATER]
 	[BIOME:SWAMP_MANGROVE]
+	[UBIQUITOUS]{+}
 	[LARGE_ROAMING][FREQUENCY:15]{:5
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[AMBUSHPREDATOR]{+}
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR]--MEANDERER]
+	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -1126,6 +1148,8 @@ creature_large_tropical
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:471:314:157:1900:2900] 56 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+  Revision: all felines should be able to expertly climb.}
+	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:15]{+
 	[SWIMS_INNATE]
 	[MUNDANE]
 	[CASTE:FEMALE]
@@ -1180,9 +1204,9 @@ creature_large_tropical
 	[NAME:tiger man:tiger men:tiger man]
 	[DESCRIPTION:An orange striped person with the head of a tiger.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -1207,18 +1231,21 @@ creature_large_tropical
 	[CASTE_NAME:giant tiger:giant tigers:giant tiger]
 	[GENERAL_CHILD_NAME:giant tiger cub:giant tiger cubs]
 	[DESCRIPTION:The largest of the giant cats.  It can be found hunting alone in the most savage countryside.]
-	[POPULATION_NUMBER:2:3]
+	[POPULATION_NUMBER:4:6]{:2:3  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:large stripes, of course]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:471:314:157:1900:2900] 56 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+}
 
 [CREATURE:CHEETAH]
 	[DESCRIPTION:A large spotted feline predator.  It is capable of incredible speed when ambushing its prey.]
@@ -1230,14 +1257,16 @@ creature_large_tropical
 	[PETVALUE:200]
 	[PET_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
+	[UBIQUITOUS]{+}
 	[LARGE_ROAMING][FREQUENCY:15]{:5
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
-	[LARGE_PREDATOR]--MEANDERER]
+	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:10000:VOCALIZATION:yowl:yowls:a loud yowl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
@@ -1317,6 +1346,8 @@ creature_large_tropical
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:300:200:100:1900:2900] 87+ (120) kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph, NO DATA
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+  Revision: all felines should be able to expertly climb.}
+	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:15]{+
 	[SWIMS_INNATE]
 	[MUNDANE]
 	[CASTE:FEMALE]
@@ -1370,9 +1401,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:cheetah man:cheetah men:cheetah man]
 	[DESCRIPTION:A spotted person with the head and tail of a cheetah.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -1397,18 +1428,21 @@ creature_large_tropical
 	[CASTE_NAME:giant cheetah:giant cheetahs:giant cheetah]
 	[GENERAL_CHILD_NAME:giant cheetah cub:giant cheetah cubs]
 	[DESCRIPTION:A gigantic spotted cat.  It is possibly the fastest animal on land and is found in the savage wilds.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:20]{:5:10  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:speed]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:300:200:100:1900:2900] 87+ (120) kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph {+}
 
 [CREATURE:GAZELLE]
 	[DESCRIPTION:A small hooved creature found in large groups in the grasslands.  It has short horns and moves by leaps and bounds.]
@@ -1431,9 +1465,9 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:5:10]
-	[FREQUENCY:50]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
+	[UBIQUITOUS]{+}
 	[BENIGN][MEANDERER][NATURAL]
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN]{:RIBCAGE  Revision: added horns.}
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -1556,9 +1590,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:gazelle man:gazelle men:gazelle man]
 	[DESCRIPTION:A horned person with the head of a gazelle.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'g']
 	[COLOR:6:0:0]
 
@@ -1579,13 +1613,14 @@ creature_large_tropical
 	[CASTE_NAME:giant gazelle:giant gazelles:giant gazelle]
 	[GENERAL_CHILD_NAME:giant gazelle fawn:giant gazelle fawns]
 	[DESCRIPTION:A huge monster in the form of a gazelle.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'G']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:grace]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:327:218:109:1900:2900] 80 kph
@@ -1601,6 +1636,7 @@ creature_large_tropical
 	[PETVALUE:50]
 	[PET_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[NATURAL]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][LOOSE_CLUSTERS][FREQUENCY:15]{:10
@@ -1725,9 +1761,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:mandrill man:mandrill men:mandrill man]
 	[DESCRIPTION:A blue-rumped person with the head and tail of a mandrill.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:1:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1749,13 +1785,14 @@ creature_large_tropical
 	[NAME:giant mandrill:giant mandrills:giant mandrill]
 	[CASTE_NAME:giant mandrill:giant mandrills:giant mandrill]
 	[DESCRIPTION:A large monster in the form of a mandrill.]
-	[POPULATION_NUMBER:20:50]
+	[POPULATION_NUMBER:40:100]{:20:50  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'M']
 	[COLOR:1:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:colorful faces]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:900:657:438:219:1900:2900] 40 kph
@@ -1775,7 +1812,7 @@ creature_large_tropical
 	[CURIOUSBEAST_ITEM]{+}
 	[PET_EXOTIC]
 	[NATURAL]
-	--MEANDERER]--BENIGN]
+	[MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:15]{:5
 	[POPULATION_NUMBER:200:500]{:20:50
@@ -1854,7 +1891,6 @@ creature_large_tropical
 		[MALE]
 		[POP_RATIO:2]{+}
 		[PRONE_TO_RAGE:5]{+}
-		[LARGE_PREDATOR]{+}
 		[DESCRIPTION:A large, intelligent, sometimes vicious ape which lives with a large, complex tribe in tropical forest.  He has a round and mostly hairless face, prominent ears, and arms longer than his legs.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
@@ -1992,8 +2028,9 @@ creature_large_tropical
 	[CURIOUSBEAST_ITEM]{+}
 	[PET_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[NATURAL]
-	--MEANDERER]--BENIGN]
+	[MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING][FREQUENCY:15]{:5
 	[POPULATION_NUMBER:200:500]{:20:50
@@ -2087,7 +2124,6 @@ creature_large_tropical
 		[DESCRIPTION:A large ape that lives quietly in the forest.  His arms are longer than his legs, allowing him to walk upright on his knuckles and feet.  He lives in a complex social group lead by a large, dominant, silver-backed male.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -3188,6 +3224,7 @@ creature_large_tropical
 	[BIOME:ANY_DESERT]
 	[TRADE_CAPACITY:3000]
 	[WAGON_PULLER]{+}
+	[COMMON_DOMESTIC]{+}
 	[BENIGN][MEANDERER][NATURAL]
 	[BODY:QUADRUPED_NECK:TAIL:1HUMP:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -3345,9 +3382,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:one-humped camel man:one-humped camel men:one-humped camel man]
 	[DESCRIPTION:A person with the head and hump of a one-humped camel.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -3380,13 +3417,14 @@ creature_large_tropical
 	[CASTE_NAME:giant one-humped camel:giant one-humped camels:giant one-humped camel]
 	[GENERAL_CHILD_NAME:giant one-humped camel calf:giant one-humped camel calves]
 	[DESCRIPTION:A huge monster the shape of a one-humped camel.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:7]
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:hump]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:405:270:135:1900:2900] 65 kph
@@ -3419,6 +3457,7 @@ creature_large_tropical
 	[BIOME:ANY_DESERT]
 	[TRADE_CAPACITY:3000]
 	[WAGON_PULLER]{+}
+	[COMMON_DOMESTIC]{+}
 	[BENIGN][MEANDERER][NATURAL]
 	[BODY:QUADRUPED_NECK:TAIL:2HUMPS:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -3553,9 +3592,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:two-humped camel man:two-humped camel men:two-humped camel man]
 	[DESCRIPTION:A person with the head and humps of a two-humped camel.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -3588,13 +3627,14 @@ creature_large_tropical
 	[CASTE_NAME:giant two-humped camel:giant two-humped camels:giant two-humped camel]
 	[GENERAL_CHILD_NAME:giant two-humped camel calf:giant two-humped camel calves]
 	[DESCRIPTION:A huge monster the shape of a two-humped camel.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:7]
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:hump]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:405:270:135:1900:2900] 65 kph
@@ -3623,7 +3663,7 @@ creature_large_tropical
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
-	--MEANDERER]
+	[MEANDERER]
 	[LARGE_PREDATOR]
 	[AMBUSHPREDATOR]{+  Revision: as their description indicates, they prefer to ambush their prey.}
 	[GRASSTRAMPLE:20]
@@ -3749,9 +3789,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:saltwater crocodile man:saltwater crocodile men:saltwater crocodile man]
 	[DESCRIPTION:A person with the head and tail of a saltwater crocodile.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'C']
 	[COLOR:2:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]{:CLAW:CLAW_TEMPLATE
@@ -3775,13 +3815,15 @@ creature_large_tropical
 	[CASTE_NAME:giant saltwater crocodile:giant saltwater crocodiles:giant saltwater crocodile]
 	[GENERAL_CHILD_NAME:giant saltwater crocodile hatchling:giant saltwater crocodile hatchlings]
 	[DESCRIPTION:A huge monster in the shape of a saltwater crocodile.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:20]{:5:10  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:3]
 	[CREATURE_TILE:'C']
 	[COLOR:2:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:1683:1315:947:516:2800:4100] 17 kph
@@ -3809,7 +3851,6 @@ creature_large_tropical
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:ANY_DESERT]
-	[FREQUENCY:15]{+}
 	[HOMEOTHERM:10067]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -3930,9 +3971,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:vulture man:vulture men:vulture man]
 	[DESCRIPTION:A person with the head and wings of a vulture.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'v']
 	[COLOR:4:0:0]
 
@@ -3953,13 +3994,15 @@ creature_large_tropical
 	[CASTE_NAME:giant vulture:giant vultures:giant vulture]
 	[GENERAL_CHILD_NAME:giant vulture hatchling:giant vulture hatchlings]
 	[DESCRIPTION:A huge monster in the form of a vulture.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'V']
 	[COLOR:4:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:patience]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:691:482:251:1900:2900] 35 kph
@@ -3980,15 +4023,15 @@ creature_large_tropical
 	[STANDARD_GRAZER]
 	[VISION_ARC:50:310]
 	[TRAINABLE_WAR]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING]
 	[NATURAL_SKILL:BITE:3]{+}
-	[FREQUENCY:15]{+}
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	--MEANDERER][NATURAL]--BENIGN]
+	[MEANDERER][NATURAL]--BENIGN]
 	[PREFSTRING:horns]
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN_NUMBERED]
@@ -3996,11 +4039,10 @@ creature_large_tropical
 		[USE_MATERIAL_TEMPLATE:HORN:HORN_TEMPLATE]
 			[STATE_NAME:ALL_SOLID:ivory]{+}
 			[STATE_ADJ:ALL_SOLID:ivory]{+}
+			[MATERIAL_VALUE:3]{+  revision: more valuable ivory.}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]
 			[TISSUE_NAME:ivory:NP]{+}
-	[SELECT_MATERIAL:HORN]{+  revision: more valuable ivory.}
-		[MATERIAL_VALUE:2]{+
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
@@ -4111,9 +4153,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:rhinoceros man:rhinoceros men:rhinoceros man]
 	[DESCRIPTION:A person with the head and horns of a rhinoceros.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'R']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
@@ -4138,13 +4180,14 @@ creature_large_tropical
 	[CASTE_NAME:giant rhinoceros:giant rhinoceroses:giant rhinoceros]
 	[GENERAL_CHILD_NAME:giant rhinoceros calf:giant rhinoceros calves]
 	[DESCRIPTION:A huge monster the shape of a rhinoceros.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:7]
 	[CREATURE_TILE:'R']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:600]{:500
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:horns]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:471:314:157:1900:2900] 56 kph
@@ -4167,7 +4210,6 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:15]{+}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[BENIGN][MEANDERER][NATURAL]
@@ -4269,9 +4311,9 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:giraffe man:giraffe men:giraffe man]
 	[DESCRIPTION:A person with the head and neck of a giraffe.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'G']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -4296,13 +4338,14 @@ creature_large_tropical
 	[CASTE_NAME:giant giraffe:giant giraffes:giant giraffe]
 	[GENERAL_CHILD_NAME:giant giraffe calf:giant giraffe calves]
 	[DESCRIPTION:A huge monster the shape of a giraffe.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:3:7]
 	[CREATURE_TILE:'G']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:hump]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:900:438:292:146:1900:2900] 60 kph
@@ -4321,7 +4364,6 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:15]{+}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
@@ -4458,9 +4500,9 @@ creature_large_tropical
 	[NAME:honey badger man:honey badger men:honey badger man]
 	[DESCRIPTION:A humanoid with the head and stripes of a honey badger.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'b']
 	[COLOR:7:0:1]
 	[GO_TO_TAG:SET_TL_GROUP:BY_CATEGORY:LEG_FRONT:HAIR]
@@ -4493,13 +4535,15 @@ creature_large_tropical
 	[CASTE_NAME:giant honey badger:giant honey badgers:giant honey badger]
 	[GENERAL_CHILD_NAME:giant honey badger cub:giant honey badger cubs]
 	[DESCRIPTION:A huge monster the shape of a honey badger.  It is ferocious in combat.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'B']
 	[COLOR:7:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[SELECT_CASTE:ALL]
 	[PREFSTRING:great size]
@@ -4526,7 +4570,6 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[LARGE_ROAMING]
-	[FREQUENCY:15]{+}
 	[POPULATION_NUMBER:100:300]{:10:30
 	[CLUSTER_NUMBER:5:10]
 	[PREFSTRING:great size]
@@ -4640,9 +4683,9 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_START]
 	[NAME:giant tortoise man:giant tortoise men:giant tortoise man]
 	[DESCRIPTION:A person with a large shell and the head of a giant tortoise.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:0]
 
@@ -4663,12 +4706,13 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[CASTE_NAME:gigantic tortoise:gigantic tortoises:gigantic tortoise]
 	[GENERAL_CHILD_NAME:gigantic tortoise hatchling:gigantic tortoise hatchlings]
 	[DESCRIPTION:A huge monster with an enormous shell.]
-	[POPULATION_NUMBER:10:30]
+	[POPULATION_NUMBER:20:60]{:10:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[PETVALUE:1500]
 	[GO_TO_END]
 	[PREFSTRING:great size]
@@ -4695,7 +4739,6 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[GRASSTRAMPLE:0]
 	[VISION_ARC:50:310]
 	[LARGE_ROAMING]
-	[FREQUENCY:15]{+}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:SAVANNA_TROPICAL]
@@ -4805,9 +4848,9 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:armadillo man:armadillo men:armadillo man]
 	[DESCRIPTION:A person with the hide and head of an armadillo.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:0]
 
@@ -4827,12 +4870,14 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:giant armadillo:giant armadillos:giant armadillo]
 	[GENERAL_CHILD_NAME:giant armadillo pup:giant armadillo pups]
 	[DESCRIPTION:A large monster the shape of an armadillo.  It has thick armor for skin.]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:30:60]{:15:30  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'A']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:1000]
+	[MOUNT_EXOTIC]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:giant armadillo boar:giant armadillo boars:giant armadillo boar]

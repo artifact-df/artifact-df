@@ -48,7 +48,11 @@ entity_kobold_masterfork
 	[FRIENDLY_COLOR:6:0:0]
 	[DEFAULT_SITE_TYPE:CAVE]
 	[LIKES_SITE:CAVE]
+	[LIKES_SITE:PLAYER_FORTRESS]{+}
 	[TOLERATES_SITE:CAVE]
+	[TOLERATES_SITE:CAVE_DETAILED]{+}
+	[TOLERATES_SITE:CITY]{+}
+	[TOLERATES_SITE:TREE_CITY]{+}
 	[START_BIOME:MOUNTAIN]
 	[START_BIOME:NOT_FREEZING]
 	[BIOME_SUPPORT:ANY_WETLAND:3]
@@ -78,7 +82,7 @@ entity_kobold_masterfork
 	[WANDERER]
 	[BEAST_HUNTER]
 	[SCOUT]
-	[MAX_STARTING_CIV_NUMBER:3]{:100
+	[MAX_STARTING_CIV_NUMBER:5]{:100
 	[MAX_POP_NUMBER:2500]
 	[MAX_SITE_POP_NUMBER:1000]{:120
 	[PERMITTED_JOB:MINER]
@@ -185,8 +189,6 @@ entity_kobold_masterfork
     [POSITION:CHIEFTAIN]
         [NAME:chieftain:chieftains]
         [NUMBER:1]
-        [SPOUSE_MALE:Tribe Father:Tribe Fathers]
-        [SPOUSE_FEMALE:Tribe Mother:Tribe Mothers]
         [SUCCESSION:BY_HEIR]
         [RESPONSIBILITY:LAW_MAKING]
         [RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -224,11 +226,12 @@ entity_kobold_masterfork
         [RESPONSIBILITY:RECEIVE_DIPLOMATS]
         [RESPONSIBILITY:MILITARY_GOALS]
         [PRECEDENCE:110]
+		[EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
         [ACCOUNT_EXEMPT]
         [DUTY_BOUND]
     [POSITION:VILLAGE_CHIEF]
-        [NAME:village chief:village chiefs]
+        [NAME:warren chief:warren chiefs]
         [SITE]
         [NUMBER:1]
         [RESPONSIBILITY:MEET_WORKERS]
@@ -314,7 +317,7 @@ entity_kobold_masterfork
 		[DUTY_BOUND]
 		[REQUIRED_OFFICE:1]
     [POSITION:WITCH_DOCTOR]
-        [NAME:witch doctor:witch doctors]
+        [NAME:seer:seers]
         [SITE]
         [NUMBER:1]
         [RESPONSIBILITY:HEALTH_MANAGEMENT]
@@ -363,7 +366,7 @@ entity_kobold_masterfork
 		[COLOR:7:0:1]
 		[DUTY_BOUND]
 	[POSITION:DIPLOMAT]
-		[NAME:Tribe Speaker:Tribe Speakers]
+		[NAME:tribe speaker:tribe speakers]
 		[NUMBER:1]
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
