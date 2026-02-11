@@ -274,7 +274,7 @@ creature_civ_elf_forest_masterfork
 	    { removed latching }
 	[BABY:1]
 	[GENERAL_BABY_NAME:elven baby:elven babies]{+}
-	[CHILD:36]{:18  Revision: elves mature much slower than other races.}
+	[CHILD:18]
 	[GENERAL_CHILD_NAME:elven child:elven children]{+}
 	[EQUIPS]
 	[DIURNAL]

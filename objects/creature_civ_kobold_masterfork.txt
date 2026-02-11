@@ -7,6 +7,7 @@ creature_civ_kobold
 	[NAME:kobold:kobolds:kobold]
 	[CASTE_NAME:kobold:kobolds:kobold]
 	[BABYNAME:kobold hatchling:kobold hatchlings]{+}
+	[OUTSIDER_CONTROLLABLE]{+  Revision: kobolds can also be outsiders.}
 	[CREATURE_TILE:'k'][COLOR:6:0:0]
 	[GLOWTILE:'"'][GLOWCOLOR:6:0:1]
 	[LOCKPICKER][TRAPAVOID]--FLEEQUICK]
@@ -263,7 +264,7 @@ creature_civ_kobold
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 	[BABY:1]
-	[CHILD:12]{:18}
+	[CHILD:18]
 	[EQUIPS]
 	[CAVE_ADAPT]{+}
 		[APPLY_CREATURE_VARIATION:DWARF_CAVE_ADAPTATION_STATS]{+  revision: kobolds get bonus stats when they've been underground for a long time.}

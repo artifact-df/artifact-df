@@ -87,6 +87,21 @@ tile_page_creatures
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:128:864]
 
+[TILE_PAGE:DWARF_WIELDABLES_RIGHT]{+ VWO }
+	[FILE:images/dwarf/dwarf_wieldables_right.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:DWARF_WIELDABLES_LEFT]{+ VWO }
+	[FILE:images/dwarf/dwarf_wieldables_left.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:DWARF_WIELDABLES_TWOHANDED]{+ VWO }
+	[FILE:images/dwarf/dwarf_wieldables_twohanded.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:928]
+
 [TILE_PAGE:HUMAN_BODY]
 	[FILE:images/human/human_body.png]
 	[TILE_DIM:32:32]
@@ -102,6 +117,21 @@ tile_page_creatures
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:128:864]
 
+[TILE_PAGE:HUMAN_WIELDABLES_RIGHT]{+ VWO }
+	[FILE:images/human/human_wieldables_right.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:HUMAN_WIELDABLES_LEFT]{+ VWO }
+	[FILE:images/human/human_wieldables_left.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:HUMAN_WIELDABLES_TWOHANDED]{+ VWO }
+	[FILE:images/human/human_wieldables_twohanded.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:928]
+
 [TILE_PAGE:GOBLIN_BODY]
 	[FILE:images/goblin/goblin_body.png]
 	[TILE_DIM:32:32]
@@ -111,6 +141,21 @@ tile_page_creatures
 	[FILE:images/goblin/goblin_wearables.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:128:864]
+
+[TILE_PAGE:GOBLIN_WIELDABLES_RIGHT]{+ VWO }
+	[FILE:images/goblin/goblin_wieldables_right.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:GOBLIN_WIELDABLES_LEFT]{+ VWO }
+	[FILE:images/goblin/goblin_wieldables_left.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:GOBLIN_WIELDABLES_TWOHANDED]{+ VWO }
+	[FILE:images/goblin/goblin_wieldables_twohanded.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:928]
 
 [TILE_PAGE:ELF_BODY]
 	[FILE:images/elf/elf_body.png]
@@ -127,6 +172,21 @@ tile_page_creatures
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:128:864]
 
+[TILE_PAGE:ELF_WIELDABLES_RIGHT]{+ VWO }
+	[FILE:images/elf/elf_wieldables_right.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:ELF_WIELDABLES_LEFT]{+ VWO }
+	[FILE:images/elf/elf_wieldables_left.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:ELF_WIELDABLES_TWOHANDED]{+ VWO }
+	[FILE:images/elf/elf_wieldables_twohanded.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:928]
+
 [TILE_PAGE:KOBOLD_BODY]
 	[FILE:images/kobold/kobold_body.png]
 	[TILE_DIM:32:32]
@@ -136,6 +196,21 @@ tile_page_creatures
 	[FILE:images/kobold/kobold_wearables.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:128:864]
+
+[TILE_PAGE:KOBOLD_WIELDABLES_RIGHT]{+ VWO }
+	[FILE:images/kobold/kobold_wieldables_right.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:KOBOLD_WIELDABLES_LEFT]{+ VWO }
+	[FILE:images/kobold/kobold_wieldables_left.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:224:928]
+
+[TILE_PAGE:KOBOLD_WIELDABLES_TWOHANDED]{+ VWO }
+	[FILE:images/kobold/kobold_wieldables_twohanded.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:128:928]
 
 [TILE_PAGE:CREATURES_MEGABEAST]
     [FILE:images/creatures_megabeast.png]

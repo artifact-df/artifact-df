@@ -6,7 +6,7 @@ creature_civ_human_masterfork
 	[DESCRIPTION:A medium-sized woman of great ambition and potential.]
 	[NAME:human:humans:human]
 	[CASTE_NAME:human:humans:human]
-	--OUTSIDER_CONTROLLABLE] moved to castes
+	[OUTSIDER_CONTROLLABLE]
 	[CREATURE_TILE:'U'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:154]
 	[CREATURE_CLASS:MAMMAL]
@@ -193,7 +193,7 @@ creature_civ_human_masterfork
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	    { removed latching }
 	[BABY:1]
-	[CHILD:16]{:18}
+	[CHILD:18]
 	[EQUIPS]
 	[DIURNAL]
 	[SMELL_TRIGGER:90]
@@ -281,7 +281,6 @@ creature_civ_human_masterfork
       [SELECT_ADDITIONAL_CASTE:MALE]
         [CASTE_PROFESSION_NAME:RECRUIT:levy:levies]
 		[CASTE_PROFESSION_NAME:STANDARD:serf:serfs]
-		[OUTSIDER_CONTROLLABLE]
 	[CASTE:FEMALE_NOBLE]{+  noble castes are modified from Fantastic Fantasy Fortress.}
 		[FEMALE]
 		[ORIENTATION:MALE:2:18:80]{+}
@@ -443,10 +442,10 @@ creature_civ_human_masterfork
 				[TSU_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHIN_WHISKERS]
-			[TISSUE_STYLE_UNIT:BEARD:CLEAN_SHAVEN]{:STANDARD_BEARD_SHAPINGS  Revision: beards are too common for humans.}
+			[TISSUE_STYLE_UNIT:BEARD:STANDARD_BEARD_SHAPINGS]
 				[TSU_NOUN:beard:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:MOUSTACHE]
-			[TISSUE_STYLE_UNIT:MOUSTACHE:NEATLY_COMBED]{:STANDARD_MOUSTACHE_SHAPINGS  Revision: human moustaches are neatly combed.}
+			[TISSUE_STYLE_UNIT:MOUSTACHE:STANDARD_MOUSTACHE_SHAPINGS]
 				[TSU_NOUN:moustache:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
 			[TISSUE_STYLE_UNIT:SIDEBURNS:STANDARD_SIDEBURNS_SHAPINGS]

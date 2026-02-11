@@ -8,6 +8,7 @@ reaction_other
 	[REAGENT:hide:1:NONE:NONE:NONE:NONE][USE_BODY_COMPONENT][UNROTTEN]
 		[HAS_MATERIAL_REACTION_PRODUCT:TAN_MAT]
 	[PRODUCT:100:1:SKIN_TANNED:NONE:GET_MATERIAL_FROM_REAGENT:hide:TAN_MAT]
+		[PRODUCT_TOKEN:leather]{+}
 	[SKILL:TANNER]
 	[AUTOMATIC]
 	[DESCRIPTION:Make leather from animal skin.]{+}
@@ -18,6 +19,7 @@ reaction_other
 	[REAGENT:furred hide:1:NONE:NONE:NONE:NONE][USE_BODY_COMPONENT][UNROTTEN]
 		[HAS_MATERIAL_REACTION_PRODUCT:FUR_MAT]
 	[PRODUCT:100:1:SKIN_TANNED:NONE:GET_MATERIAL_FROM_REAGENT:furred hide:FUR_MAT]
+		[PRODUCT_TOKEN:fur]{+}
 	[SKILL:TANNER]
 	[AUTOMATIC]
 	[DESCRIPTION:Make fur from furred animal skin.]{+}
@@ -29,6 +31,7 @@ reaction_other
 	[REAGENT:A:150:GLOB:NONE:NONE:NONE][REACTION_CLASS:FAT][UNROTTEN]
 		[HAS_MATERIAL_REACTION_PRODUCT:RENDER_MAT]
 	[PRODUCT:100:1:GLOB:NONE:GET_MATERIAL_FROM_REAGENT:A:RENDER_MAT]
+		[PRODUCT_TOKEN:fat]{+}
 	[SKILL:COOK]
 	[AUTOMATIC]
 	[DESCRIPTION:Render animal fat into tallow.]{+}
@@ -45,6 +48,7 @@ reaction_other
 		[HAS_MATERIAL_REACTION_PRODUCT:SOAP_MAT]
 	[PRODUCT:100:1:BAR:NONE:GET_MATERIAL_FROM_REAGENT:tallow:SOAP_MAT]
 		[PRODUCT_DIMENSION:150]
+		[PRODUCT_TOKEN:soap]{+}
 	[SKILL:SOAP_MAKING]
 	[DESCRIPTION:Make soap from animal tallow and lye.]{+}
 
@@ -65,6 +69,7 @@ reaction_other
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:1:BAR:NONE:GET_MATERIAL_FROM_REAGENT:oil:SOAP_MAT]
 		[PRODUCT_DIMENSION:150]
+		[PRODUCT_TOKEN:soap]{+}
 	[SKILL:SOAP_MAKING]
 	[DESCRIPTION:Make soap from plant oil and lye.]{+}
 
@@ -73,6 +78,7 @@ reaction_other
 	[BUILDING:KILN:CUSTOM_P]
 	[REAGENT:A:150:BAR:NONE:POTASH:NONE]
 	[PRODUCT:100:1:BAR:NONE:PEARLASH:NONE][PRODUCT_DIMENSION:150]
+		[PRODUCT_TOKEN:pearlash]{+}
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
@@ -81,9 +87,10 @@ reaction_other
 [REACTION:MAKE_PLASTER_POWDER]
 	[NAME:make plaster powder]
 	[BUILDING:KILN:CUSTOM_SHIFT_P]
-	[REAGENT:A:1:BOULDER:NONE:NONE:NONE][REACTION_CLASS:GYPSUM]
+	[REAGENT:gypsum mineral:1:BOULDER:NONE:NONE:NONE][REACTION_CLASS:GYPSUM]
 	[REAGENT:B:1:BAG:NONE:NONE:NONE][EMPTY][PRESERVE_REAGENT]
 	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:PLASTER][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:B]
+		[PRODUCT_TOKEN:plaster powder]{+}
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
@@ -173,7 +180,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
-	[DESCRIPTION:Glaze a pottery jug with ash, cassiterite, uranium oxide or rutile/titania. Earthenware must be glazed in order to hold liquids.]{+}
+	[DESCRIPTION:Glaze a pottery jug with ash, cassiterite, uranium oxide, tin or rutile/titania. Earthenware must be glazed in order to hold liquids.]{+}
 
 [REACTION:GLAZE_STATUE]
 	[NAME:glaze clay/stone statue]
@@ -189,7 +196,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
-	[DESCRIPTION:Glaze a pottery statue with ash, cassiterite, uranium oxide or rutile/titania. This will increase its value.]{+}
+	[DESCRIPTION:Glaze a pottery statue with ash, cassiterite, uranium oxide, tin or rutile/titania. This will increase its value.]{+}
 
 [REACTION:GLAZE_LARGE_POT]
 	[NAME:glaze large clay/stone pot]
@@ -221,7 +228,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
-	[DESCRIPTION:Glaze a pottery craft with ash, cassiterite, uranium oxide or rutile/titania. This will increase its value.]{+}
+	[DESCRIPTION:Glaze a pottery craft with ash, cassiterite, uranium oxide, tin or rutile/titania. This will increase its value.]{+}
 
 REACTION:PRESS_OIL  replaced by AA
 
@@ -263,6 +270,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 	[REAGENT:boulder:1:BOULDER:NONE:NONE:NONE][REACTION_CLASS:CALCIUM_CARBONATE]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE][EMPTY][PRESERVE_REAGENT]
 	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:QUICKLIME][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:bag]
+		[PRODUCT_TOKEN:quicklime]{+}
 	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
@@ -297,6 +305,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:1:SHEET:NONE:GET_MATERIAL_FROM_REAGENT:A:PARCHMENT_MAT]
+		[PRODUCT_TOKEN:parchment]{+}
 	[SKILL:TANNER] close enough for now!
 	[DESCRIPTION:Make parchment from animal skin using milk of lime.]{+}
 
@@ -316,6 +325,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 	[BUILDING:CRAFTSMAN:NONE]
 	[REAGENT:sheet:10000:SHEET:NONE:NONE:NONE]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_QUIRE:GET_MATERIAL_FROM_REAGENT:sheet:NONE]
+		[PRODUCT_TOKEN:quire]{+}
 	[SKILL:BOOKBINDING]
 	[DESCRIPTION:Fold a blank sheet of paper or parchment into a quire. Quires can be bound into books once written on.]{+}
 
@@ -327,6 +337,7 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 		[UNROTTEN]
 	[PRODUCT:100:1:SHEET:NONE:GET_MATERIAL_FROM_REAGENT:plant:NONE]
 		[PRODUCT_PRESSED]
+		[PRODUCT_TOKEN:sheet]{+}
 	[PRODUCT:100:1:SEEDS:NONE:GET_MATERIAL_FROM_REAGENT:plant:SEED_MAT]
 	[SKILL:PAPERMAKING]
 	[DESCRIPTION:Make a sheet directly from a plant, such as papyrus.]{+}
@@ -341,6 +352,7 @@ REACTION:MAKE_SLURRY_FROM_PLANT replaced by AA
 		[NOT_PRESSED]
 	[PRODUCT:100:1:SHEET:NONE:GET_MATERIAL_FROM_REAGENT:paste:NONE]
 		[PRODUCT_PRESSED]
+		[PRODUCT_TOKEN:sheet]{+}
 	[SKILL:PAPERMAKING]
 	[DESCRIPTION:Press fibrous plant slurry into paper. Plants are mashed into slurry at a quern or millstone.]{+}
 
