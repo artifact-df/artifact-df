@@ -24,13 +24,20 @@ creature_civ_elf_dark_masterfork
 	[PREFSTRING:vanity]
 	[GNAWER:picked]{+  revision: creature can get out of non-metal cages.}
 	// BASE SKILLS //
-	[NATURAL_SKILL:DISCIPLINE:1]
+	--NATURAL_SKILL:DISCIPLINE:1]
 	[NATURAL_SKILL:SWIMMING:1]
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
+	--NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
 	// RACIAL SKILLS //
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]
 	[NATURAL_SKILL:DODGING:1]
+	[NATURAL_SKILL:DISCIPLINE:2]
+	[NATURAL_SKILL:DAGGER:1]
+	[NATURAL_SKILL:BOW:1]
 	[NATURAL_SKILL:MELEE_COMBAT:1]
+	[NATURAL_SKILL:RANGED_COMBAT:1]
+	[NATURAL_SKILL:INTIMIDATION:2]
+	[NATURAL_SKILL:LYING:2]
+	[NATURAL_SKILL:SNEAK:2]
 	
 	[PRONE_TO_RAGE:5]
 	[PERSONALITY:VENGEFUL:50:80:100]
@@ -121,11 +128,11 @@ creature_civ_elf_dark_masterfork
 	[PHYS_ATT_CAP_PERC:TOUGHNESS:150]{+ reduced toughness cap.}
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:12:0:62000]{:12:0:60000}
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:94:96:98:100:110:116:133]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
-		[APP_MOD_IMPORTANCE:525]{:500  Revision: height is more important than the other descriptors.}
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:80:95:98:100:102:105:120]{:75:95:98:100:102:105:125  Revision: elves are less broad than tall.}
-		[APP_MOD_IMPORTANCE:475]{:500  Revision: broadness is less important than the other descriptors.}
+	[BODY_SIZE:12:0:60000]
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:83:104:107:110:112:115:138]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
+		[APP_MOD_IMPORTANCE:520]{:500  Revision: height is more important than the other descriptors.}
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:480]{:500  Revision: broadness is less important than the other descriptors.}
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
 			[APP_MOD_NOUN:glowing eyes:PLURAL]{:eyes:PLURAL
@@ -221,11 +228,9 @@ creature_civ_elf_dark_masterfork
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	    { removed latching }
 	[BABY:1]
-	[GENERAL_BABY_NAME:elven baby:elven babies]
-	[BABYNAME:elven baby:elven babies]
-	[CHILD:30]{:18}
-	[GENERAL_CHILD_NAME:elven child:elven children]
-	[CHILDNAME:elven child:elven children]
+	[GENERAL_BABY_NAME:elven baby:elven babies]{+}
+	[CHILD:25]{:18  Revision: elves mature slower than other races.}
+	[GENERAL_CHILD_NAME:elven child:elven children]{+}
 	[EQUIPS]
 	[CAVE_ADAPT]
 	[NOCTURNAL]
@@ -271,8 +276,25 @@ creature_civ_elf_dark_masterfork
 	[SPOUSE_CONVERSION_TARGET]
 	[PROFESSION_NAME:RECRUIT:Ranger:Rangers]
 	[PROFESSION_NAME:MASTER_BOWMAN:Master Ranger:Master Rangers]
-    [PROFESSION_NAME:MASTER_SPEARMAN:Speardancer:Speardancers]{+}
+    [PROFESSION_NAME:MASTER_SPEARMAN:Speardancer:Speardancers]{+  Revision: elven profession names.}
     [PROFESSION_NAME:MASTER_SWORDSMAN:Bladedancer:Bladedancers]{+}
+	[PROFESSION_NAME:CRAFTSMAN:crafts elf:crafts elves]{+}
+	[PROFESSION_NAME:FISHERMAN:fisher elf:fisher elves]{+}
+	[PROFESSION_NAME:HAMMERMAN:hammer elf:hammer elves]{+}
+	[PROFESSION_NAME:SPEARMAN:spear elf:spear elves]{+}
+	[PROFESSION_NAME:CROSSBOWMAN:marks elf:marks elves]{+}
+	[PROFESSION_NAME:AXEMAN:axe elf:axe elves]{+}
+	[PROFESSION_NAME:SWORDSMAN:swords elf:swords elves]{+}
+	[PROFESSION_NAME:MACEMAN:mace elf:mace elves]{+}
+	[PROFESSION_NAME:PIKEMAN:pike elf:pike elves]{+}
+	[PROFESSION_NAME:BOWMAN:bow elf:bow elves]{+}
+	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Markself:Elite Markselves]{+}
+	[PROFESSION_NAME:BLOWGUNMAN:gun elf:gun elves]{+}  used by firearms
+	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Elite Gun-elf:Elite Gun-elves]{+}
+	[PROFESSION_NAME:CRIMINAL:exile:exiles]{+}
+	[PROFESSION_NAME:STANDARD:resident:residents]{+}
+	[PROFESSION_NAME:THIEF:scout:scouts]{+}
+	[PROFESSION_NAME:MASTER_THIEF:Veteran Scout:Veteran Scouts]{+}
 	--MAXAGE:200:300]
 	[GENERAL_BABY_NAME:elf baby:elven babies]
 	[GENERAL_CHILD_NAME:elf child:elven children]

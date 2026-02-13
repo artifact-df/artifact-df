@@ -103,7 +103,7 @@ creature_hornbeetle_masterfork
 		[CASTE_NAME:horned cave beetle:horned cave beetles:horned cave beetle]
 		[DESCRIPTION:A round herbivorous beetle slightly slightly larger than a horse found in deep caverns.  He grazes on cave fungus and has an ornery disposition.  He is short-tempered and is slightly larger than the females.  He have a long horn that he often spends time sharpening against the cave walls whilst grazing.]
 	    [CHILDNAME:horned cave beetle nymph:horned cave beetle nymphs]
-		[DIFFICULTY:3]
+		[DIFFICULTY:2]
          undescended, not geldable
 		[BODY_SIZE:0:0:750]
 		[BODY_SIZE:1:0:52000]
@@ -123,7 +123,7 @@ creature_hornbeetle_masterfork
 		[CASTE_NAME:longhorn cave beetle: longhorn cave beetle: longhorn cave beetle]
 		[DESCRIPTION:A round herbivorous beetle slightly slightly larger than a horse found in deep caverns.  He grazes on cave fungus and has an ornery disposition.  He is hot-tempered and is slightly larger than the other males.  He is of a rare breed that have an exceptionally long horn that he often spends time sharpening against cave walls whilst protecting his herd.]
 		[CHILDNAME:longhorn cave beetle nymph:longhorn cave beetle nymphs]
-		[DIFFICULTY:4]
+		[DIFFICULTY:3]
 		[RELSIZE:BY_CATEGORY:HORN:532]{:700  were too large; 33% larger than ordinary males.}
 		[PETVALUE:792]
 		[BODY_SIZE:0:0:750]
@@ -145,7 +145,7 @@ creature_hornbeetle_masterfork
 		[CASTE_NAME:albino longhorn cave beetle:albino longhorn cave beetle:albino longhorn cave beetle]
 		[DESCRIPTION:A round herbivorous beetle slightly slightly larger than a horse found in deep caverns.  He grazes on cave fungus and has an ornery disposition.  He is hot-tempered and is slightly larger than the other males.  He is of a very rare breed that have an extraordinarily long horn that he often spends time sharpening against the cave walls whilst protecting his herd.]
 		[CHILDNAME:longhorn cave beetle nymph:longhorn cave beetle nymphs]
-		[DIFFICULTY:5]
+		[DIFFICULTY:4]
 		[RELSIZE:BY_CATEGORY:HORN:532]{:700  were too large; 33% larger than ordinary males.}
 		[PETVALUE:1584]
 		[BODY_SIZE:0:0:750]
@@ -184,7 +184,7 @@ creature_hornbeetle_masterfork
     	[USE_MATERIAL_TEMPLATE:TOOTH:TOOTH_TEMPLATE]
     	[USE_TISSUE_TEMPLATE:TOOTH:TOOTH_TEMPLATE]
         	[TISSUE_LAYER:BY_CATEGORY:HEAD:TOOTH:BOTTOM]
-		[USE_MATERIAL_TEMPLATE:HAIR:HAIR_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:HAIR:KOSHER_WOOL_TEMPLATE] can be traded to elves
 	    [SELECT_MATERIAL:HAIR]
 			[STATE_NAME:ALL_SOLID:beard]
 		    [STATE_ADJ:ALL_SOLID:beard]

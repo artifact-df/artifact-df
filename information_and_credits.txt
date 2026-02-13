@@ -59,6 +59,6 @@ Masterfork contains RAWs and other assets from the following mods, either in par
  - 'More Book Titles'                      author(s): La Creatura                                                                     # https://steamcommunity.com/sharedfiles/filedetails/?id=2925944109
  - 'Vanilla Weapon Overhaul'               author(s): lmlsna                                                                          # https://steamcommunity.com/sharedfiles/filedetails/?id=2912571821
  - 'Real Alloys'                           author(s): Haethei                                                                         # https://steamcommunity.com/workshop/filedetails/?id=2917475915
- - ''                                      author(s):                                                                                 # https://
- - ''                                      author(s):                                                                                 # https://
+ - 'Remove Invisible Divine Items (Lua)'   author(s): DPh Kraken                                                                      # https://steamcommunity.com/sharedfiles/filedetails/?id=3479977620
+ - 'Perspective Walls Rewalled'            author(s): Kahzel, Thomrade, Glentgm                                                       # https://steamcommunity.com/sharedfiles/filedetails/?id=3641516321
  - ''                                      author(s):                                                                                 # https://

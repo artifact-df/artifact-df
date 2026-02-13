@@ -88,9 +88,9 @@ Damselflies were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:damselfly man:damselfly men:damselfly man]
 	[DESCRIPTION:A person with the wings and head of a damselfly.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'d']
 	[COLOR:3:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -114,17 +114,18 @@ Damselflies were sponsored by the generous contributions of the Bay 12 community
 	[CASTE_NAME:giant damselfly:giant damselflies:giant damselfly]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a damselfly.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:5]
 	[CREATURE_TILE:'D']
 	[COLOR:3:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 	[APPLY_CREATURE_VARIATION:MOUTH_BITE_EDGE_ATTACK]{+}
@@ -219,9 +220,9 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:moth man:moth men:moth man]
 	[DESCRIPTION:A person with the head and wings of a moth.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -245,13 +246,14 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant moth:giant moths:giant moth]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the form of a moth.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
@@ -348,9 +350,9 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[GO_TO_START]
 	[NAME:grasshopper man:grasshopper men:grasshopper man]
 	[DESCRIPTION:A person with the head and legs of a grasshopper.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'g']
 	[COLOR:2:0:1]
 	[SKILL_LEARN_RATE:CLIMBING:200]{+}
@@ -374,13 +376,15 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[CASTE_NAME:giant grasshopper:giant grasshoppers:giant grasshopper]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A huge creature in the shape of a grasshopper.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'G']
 	[COLOR:2:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:10000:NONE:chirp:chirps:deep chirping]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
@@ -520,9 +524,9 @@ Bark scorpions were sponsored by the generous contributions of the Bay 12 commun
 	[GO_TO_START]
 	[NAME:bark scorpion man:bark scorpion men:bark scorpion man]
 	[DESCRIPTION:A person with the head, pincers and tail of a bark scorpion.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:1]
 	[SKILL_LEARN_RATE:STANCE_STRIKE:200]{+}
@@ -562,17 +566,18 @@ Bark scorpions were sponsored by the generous contributions of the Bay 12 commun
 	[CASTE_NAME:giant bark scorpion:giant bark scorpions:giant bark scorpion]
 	[DESCRIPTION:A huge monster in the form of a bark scorpion.]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:10]{+     Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:pincers]
 	[PREFSTRING:stinging tail]
@@ -668,9 +673,9 @@ Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:mantis man:mantis men:mantis man]
 	[DESCRIPTION:A green person with the head and arms of a mantis.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:2:0:1]
 	[SKILL_LEARN_RATE:GRASP_STRIKE:200]{+}
@@ -701,10 +706,11 @@ Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:predatory nature]
 	[PREFSTRING:grasping legs]
@@ -802,9 +808,9 @@ Ticks were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:tick man:tick men:tick man]
 	[DESCRIPTION:A person with the head and legs of a tick.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'t']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -827,17 +833,17 @@ Ticks were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant tick:giant ticks:giant tick]
 	[DESCRIPTION:A large monster taking the shape of a tick.]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:ability to expand]
 	[APPLY_CREATURE_VARIATION:MOUTH_SUCK_ATTACK]{+}
@@ -933,9 +939,9 @@ Lice were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:louse man:louse men:louse man]
 	[DESCRIPTION:A person with the head and legs of a louse.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -958,13 +964,14 @@ Lice were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant louse:giant lice:giant louse]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A huge monster in the shape of a louse.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'L']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
@@ -1063,9 +1070,9 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:thrips man:thrips men:thrips man]
 	[DESCRIPTION:A person with the head and wings of a thrips.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'t']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -1096,6 +1103,8 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
@@ -1182,9 +1191,9 @@ Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:slug man:slug men:slug man]
 	{CASTE_NAME:slug man:slug men:slug man}
 	[DESCRIPTION:A great slug with the torso of a man.  It pulls itself across the ground with its hands for greater speed.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+}
@@ -1204,13 +1213,14 @@ Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant slug:giant slugs:giant slug]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A mucus-coated, slug-like monster with eyes at the end of long stalks and a long mantle on its back.]{:A huge monster in the form of a slug.}
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[GO_TO_END]
 	[PREFSTRING:slime trails]
@@ -1308,9 +1318,9 @@ Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:mosquito man:mosquito men:mosquito man]
 	[DESCRIPTION:A person with the head and wings of a mosquito.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -1344,6 +1354,7 @@ Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:buzz:buzzes:deep buzzing]{+}
 	[GO_TO_END]
@@ -1439,9 +1450,9 @@ Jumping spiders were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_START]
 	[NAME:jumping spider man:jumping spider men:jumping spider man]
 	[DESCRIPTION:A person with the head and arms of a jumping spider.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'j']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -1470,7 +1481,7 @@ Jumping spiders were sponsored by the generous contributions of the Bay 12 commu
 	[CASTE_NAME:giant jumping spider:giant jumping spiders:giant jumping spider]
 	[CHILD:1][GENERAL_CHILD_NAME:giant jumping spiderling:giant jumping spiderlings:giant jumping spiderling]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A huge monster in the form of a jumping spider.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'J']
 	[COLOR:0:0:1]
@@ -1479,9 +1490,10 @@ Jumping spiders were sponsored by the generous contributions of the Bay 12 commu
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[PETVALUE:500]
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR]{+}
-	[HUNTS_VERMIN]{+}
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:striking appearance]
 	[PREFSTRING:ability to leap]
@@ -1652,9 +1664,9 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:moon snail man:moon snail men:moon snail man]
 	[DESCRIPTION:A colorful person with the head and shell of a moon snail.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:4:0:1]
 	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into <pro_pos> shell:retracts into <pro_pos> shell:come out of <pro_pos> shell:comes out of <pro_pos> shell]{+  Revision: in lieu of stat boosts, moon snail men gain the ability to hide in their shell.}
@@ -1676,15 +1688,17 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 	[CASTE_NAME:giant moon snail:giant moon snails:giant moon snail]
 	[DESCRIPTION:A huge monster in the shape of a moon snail.]
 	[CHILD:1][GENERAL_CHILD_NAME:giant moon snail larva:giant moon snail larvae:giant moon snail larva]{+  Revision: taming requires a child tag (bug 7983).}
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:4:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR][AMBUSHPREDATOR]{+}
+	[AMBUSHPREDATOR]{+}
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:predatory nature]
 	[PREFSTRING:striking coloration]
@@ -1818,9 +1832,9 @@ Brown recluse spiders were sponsored by the generous contributions of the Bay 12
 	[GO_TO_START]
 	[NAME:brown recluse spider man:brown recluse spider men:brown recluse spider man]
 	[DESCRIPTION:A person with the head and arms of a brown recluse spider.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -1865,18 +1879,19 @@ Brown recluse spiders were sponsored by the generous contributions of the Bay 12
 	[NAME:giant brown recluse spider:giant brown recluse spiders:giant brown recluse spider]
 	[CASTE_NAME:giant brown recluse spider:giant brown recluse spiders:giant brown recluse spider]
 	[DESCRIPTION:A huge monster in the shape of a brown recluse spider.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR]{+}
-	[HUNTS_VERMIN]{+}
 	[THICKWEB]{+  Revision: their webs can trap.}
 	[GO_TO_END]
 	[PREFSTRING:venomous bite]
@@ -1967,9 +1982,9 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:snail man:snail men:snail man]
 	{CASTE_NAME:snail man:snail men:snail man}
 	[DESCRIPTION:A creature with the shape of a man, but with stalks for eyes, and a great shell on its back.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
 	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into <pro_pos> shell:retracts into <pro_pos> shell:come out of <pro_pos> shell:comes out of <pro_pos> shell]{+  Revision: in lieu of stat boosts, snail men gain the ability can hide in their shell.}
@@ -1986,13 +2001,14 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:giant snail:giant snails:giant snail]
 	[CASTE_NAME:giant snail:giant snails:giant snail]
 	[DESCRIPTION:A lumbering and mucus-coated mollusk-like monster with wandering eyestalks and a great shell that it carries effortlessly.]{:A huge monster in the form of a snail.}
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:shells]
 	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]{+  Revision: biting seems appropriate here.}

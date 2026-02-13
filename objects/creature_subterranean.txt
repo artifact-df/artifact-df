@@ -20,7 +20,7 @@ creature_subterranean
 	[LARGE_PREDATOR]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
-	[FREQUENCY:20]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[GRASSTRAMPLE:20]
 	[PREFSTRING:strength]
 	[BUILDINGDESTROYER:1]
@@ -128,8 +128,8 @@ creature_subterranean
 	[NATURAL]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[GRASSTRAMPLE:20]
-	[FREQUENCY:20]{+}
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:2:3]{:1:2
 	[LARGE_ROAMING][DIFFICULTY:2]
@@ -216,8 +216,8 @@ creature_subterranean
 	[NATURAL]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[GRASSTRAMPLE:20]
-	[FREQUENCY:20]{+}
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:2:3]{:1:2
 	[LARGE_ROAMING][DIFFICULTY:2]
@@ -301,11 +301,11 @@ creature_subterranean
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE_HUNTING]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[CAVE_ADAPT]{+}
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[BIOME:SUBTERRANEAN_CHASM]
-	[FREQUENCY:20]{+}
 	[UNDERGROUND_DEPTH:2:3]{:1:2
 	[LARGE_PREDATOR]
 	[NATURAL]
@@ -402,6 +402,7 @@ creature_subterranean
 	--BENIGN]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
@@ -502,6 +503,7 @@ creature_subterranean
 	[BENIGN]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:1]
@@ -600,6 +602,7 @@ creature_subterranean
 	[BENIGN]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -904,6 +907,7 @@ creature_subterranean
 	[NATURAL]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING][FREQUENCY:100]
 	--BENIGN]
 	[POPULATION_NUMBER:150:300]{:15:30
@@ -1203,6 +1207,7 @@ creature_subterranean
 	[NO_VEGETATION_PERTURB]{+}
 	[NATURAL_SKILL:SNEAK:15]{+}
 	[NATURAL_SKILL:BITE:5]{+}
+	[NATURAL_SKILL:DISCIPLINE:5]
 	[PREFSTRING:mystery]
 	[PREFSTRING:eerie nature]{+}
 	[PREFSTRING:terrifying size]{+}
@@ -1279,7 +1284,7 @@ creature_subterranean
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:2]
+		[MULTIPLY_VALUE:4]
 
 [CREATURE:SPIDER_CAVE]
 	[DESCRIPTION:A tiny underground bug, sought after for its thread.]
@@ -1476,9 +1481,9 @@ creature_subterranean
 	[GO_TO_START]
 	[NAME:cave fish man:cave fish men:cave fish man]
 	[DESCRIPTION:A humanoid creature with the head of a blind cave fish.  They live in colonies in watery regions far underground.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'f']
 	[COLOR:7:0:1]
 	[EXTRAVISION]
@@ -1691,9 +1696,9 @@ creature_subterranean
 	[GO_TO_START]
 	[NAME:olm man:olm men:olm man]
 	[DESCRIPTION:An animal person with the head of the amphibious olm.  It lives underground near water.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:1]
 	[LOW_LIGHT_VISION:10000]
@@ -2431,6 +2436,7 @@ creature_subterranean
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE_HUNTING]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[FLIER]
 	[BONECARN]
 	[CHILD:1]

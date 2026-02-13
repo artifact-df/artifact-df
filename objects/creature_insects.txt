@@ -17,11 +17,12 @@ creature_insects
 	[VERMIN_NOTRAP]
 	[POPULATION_NUMBER:2500:5000]
 	[CLUSTER_NUMBER:100:200]
-	[SMALL_REMAINS]
+	[SMALL_REMAINS][NO_WINTER]{+NO_WINTER}
 	[PREFSTRING:ability to annoy]
 	[FLIER]
 	[DIURNAL]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -30,7 +31,6 @@ creature_insects
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
 	[NOBONES]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -55,18 +55,16 @@ creature_insects
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A tiny pest that flies around rotting meat and garbage.  The buzzing is the worst part.  He flits about, persistent yet evasive.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BLACK:1:DARK_OLIVE:1:DARK_GREEN:1:CHARCOAL:1]{:BLACK:1}
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:WING:CHITIN]{+}
 			[TL_COLOR_MODIFIER:CLEAR:1]
 				[TLCM_NOUN:wings:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1:RED:1:CRIMSON:1]{:BLACK:1}
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:FLY_MAN]
 	[COPY_TAGS_FROM:FLY]
@@ -85,23 +83,23 @@ creature_insects
 		[DESCRIPTION:A small, four-armed horror with gaunt limbs and enormous compound eyes on the long head of a fly.  Her veined back-wings press flat against each other, straight into the air behind her.  Her body is unusually light.  She doesn't care that she's naked.]{+}
 	[SELECT_CASTE:ALL]
 	[USE_MATERIAL_TEMPLATE:VENOM:CREATURE_EXTRACT_TEMPLATE]{+  Revision: add acid puke.  It lacks SYN_INJECTED, so it's spewed over a bitten part.}
-		[STATE_NAME:ALL_SOLID:crusty fly man acid vomit]
-		[STATE_ADJ:ALL_SOLID:crusty fly man acid vomit]
-		[STATE_NAME:LIQUID:fly man acid vomit]
-		[STATE_ADJ:LIQUID:fly man acid vomit]
-		[STATE_NAME:GAS:boiling fly man acid vomit]
-		[STATE_ADJ:GAS:boiling fly man acid vomit]
-		[PREFIX:NONE]
-		[SYNDROME]
-			[SYN_NAME:fly man acid burn]
-			[SYN_AFFECTED_CLASS:GENERAL_POISON]
-			[SYN_IMMUNE_CREATURE:FLY_MAN:ALL]
-			[SYN_IMMUNE_CREATURE:GIANT_FLY:ALL]
-		[SYN_CONTACT]
-	[CE_NAUSEA:SEV:50:PROB:50:RESISTABLE:START:50:PEAK:250:END:500:DWF_STRETCH:12]
-	[CE_PAIN:SEV:750:PROB:100:SIZE_DILUTES:LOCALIZED:START:50:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]
-	[CE_BLISTERS:SEV:500:PROB:100:RESISTABLE:SIZE_DILUTES:LOCALIZED:VASCULAR_ONLY:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]
-	[CE_NECROSIS:SEV:5000:PROB:100:LOCALIZED:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]
+		[STATE_NAME:ALL_SOLID:crusty fly man acid vomit]{+
+		[STATE_ADJ:ALL_SOLID:crusty fly man acid vomit]{+
+		[STATE_NAME:LIQUID:fly man acid vomit]{+
+		[STATE_ADJ:LIQUID:fly man acid vomit]{+
+		[STATE_NAME:GAS:boiling fly man acid vomit]{+
+		[STATE_ADJ:GAS:boiling fly man acid vomit]{+
+		[PREFIX:NONE]{+
+		[SYNDROME]{+
+			[SYN_NAME:fly man acid burn]{+
+			[SYN_AFFECTED_CLASS:GENERAL_POISON]{+
+			[SYN_IMMUNE_CREATURE:FLY_MAN:ALL]{+
+			[SYN_IMMUNE_CREATURE:GIANT_FLY:ALL]{+
+			[SYN_CONTACT]{+
+			[CE_NAUSEA:SEV:100:PROB:50:RESISTABLE:START:50:PEAK:250:END:500:DWF_STRETCH:12]{+
+			[CE_PAIN:SEV:750:PROB:100:SIZE_DILUTES:LOCALIZED:START:50:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]{+
+			[CE_BLISTERS:SEV:500:PROB:100:RESISTABLE:SIZE_DILUTES:LOCALIZED:VASCULAR_ONLY:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]{+
+			[CE_NECROSIS:SEV:5000:PROB:100:LOCALIZED:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]{+
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
 	[APPLY_CREATURE_VARIATION:MOUTH_BITE_VENOM_ATTACK]{+  Revision: they puke acid.}
@@ -114,7 +112,7 @@ creature_insects
 	[DESCRIPTION:A person with the wings and head of a fly.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'f']
 	[COLOR:0:0:1]
 
@@ -135,36 +133,37 @@ creature_insects
 	[CASTE_NAME:giant fly:giant flies:giant fly]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a fly.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'F']
 	[COLOR:0:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[SOUND:ALERT:100:10000:NONE:buzz angrily:buzzes angrily:angry buzzing]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:buzz:buzzes:deep buzzing]{+}
 	[GO_TO_END]
 	[PREFSTRING:ability to annoy]
 	[USE_MATERIAL_TEMPLATE:VENOM:CREATURE_EXTRACT_TEMPLATE]{+  Revision: add acid puke.  It lacks SYN_INJECTED, so it's spewed over a bitten part.}
-		[STATE_NAME:ALL_SOLID:crusty giant fly acid vomit]
-		[STATE_ADJ:ALL_SOLID:crusty giant fly acid vomit]
-		[STATE_NAME:LIQUID:giant fly acid vomit]
-		[STATE_ADJ:LIQUID:giant fly acid vomit]
-		[STATE_NAME:GAS:boiling giant fly acid vomit]
-		[STATE_ADJ:GAS:boiling giant fly acid vomit]
-		[PREFIX:NONE]
-		[SYNDROME]
-			[SYN_NAME:giant fly acid burn]
-			[SYN_AFFECTED_CLASS:GENERAL_POISON]
-			[SYN_IMMUNE_CREATURE:FLY_MAN:ALL]
-			[SYN_IMMUNE_CREATURE:GIANT_FLY:ALL]
-		[SYN_CONTACT]
-	[CE_NAUSEA:SEV:50:PROB:50:RESISTABLE:START:50:PEAK:250:END:500:DWF_STRETCH:12]
-	[CE_PAIN:SEV:750:PROB:100:SIZE_DILUTES:LOCALIZED:START:50:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]
-	[CE_BLISTERS:SEV:500:PROB:100:RESISTABLE:SIZE_DILUTES:LOCALIZED:VASCULAR_ONLY:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]
-	[CE_NECROSIS:SEV:5000:PROB:100:LOCALIZED:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]
+		[STATE_NAME:ALL_SOLID:crusty giant fly acid vomit]{+
+		[STATE_ADJ:ALL_SOLID:crusty giant fly acid vomit]{+
+		[STATE_NAME:LIQUID:giant fly acid vomit]{+
+		[STATE_ADJ:LIQUID:giant fly acid vomit]{+
+		[STATE_NAME:GAS:boiling giant fly acid vomit]{+
+		[STATE_ADJ:GAS:boiling giant fly acid vomit]{+
+		[PREFIX:NONE]{+
+		[SYNDROME]{+
+			[SYN_NAME:giant fly acid burn]{+
+			[SYN_AFFECTED_CLASS:GENERAL_POISON]{+
+			[SYN_IMMUNE_CREATURE:FLY_MAN:ALL]{+
+			[SYN_IMMUNE_CREATURE:GIANT_FLY:ALL]{+
+			[SYN_CONTACT]{+
+			[CE_NAUSEA:SEV:100:PROB:50:RESISTABLE:START:50:PEAK:250:END:500:DWF_STRETCH:12]{+
+			[CE_PAIN:SEV:750:PROB:100:SIZE_DILUTES:LOCALIZED:START:50:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]{+
+			[CE_BLISTERS:SEV:500:PROB:100:RESISTABLE:SIZE_DILUTES:LOCALIZED:VASCULAR_ONLY:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]{+
+			[CE_NECROSIS:SEV:5000:PROB:100:LOCALIZED:START:0:PEAK:500:END:1500:ABRUPT_START:ABRUPT_END:DWF_STRETCH:12]{+
 	[APPLY_CREATURE_VARIATION:MOUTH_BITE_VENOM_ATTACK]{+  Revision: they puke acid.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -176,12 +175,11 @@ creature_insects
 	[NAME:large roach:large roaches:large roach]
 	[CASTE_NAME:large roach:large roaches:large roach]
 	[CREATURE_TILE:249][COLOR:6:0:0]
-	[NATURAL][PET_EXOTIC]{PET}
+	[NATURAL][PET_EXOTIC]{:PET}
 	[PETVALUE:5]
 	[VISION_ARC:30:360]{+  Revision: compound eyes have a wide field of view.}
 	[BIOME:NOT_FREEZING]
-	[VERMIN_EATER][PENETRATEPOWER:4][VERMIN_HATEABLE][VERMIN_GROUNDER]
-	[VERMIN_ROTTER]{+}
+	[VERMIN_EATER][PENETRATEPOWER:2][VERMIN_HATEABLE][VERMIN_GROUNDER]
 	[VERMIN_NOTRAP]
 	[POPULATION_NUMBER:250:500]
 	[TRIGGERABLE_GROUP:5:50]
@@ -190,6 +188,7 @@ creature_insects
 	[FLIER]
 	[ALL_ACTIVE]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -199,7 +198,6 @@ creature_insects
 	[NOT_BUTCHERABLE]
 	[NOBONES]
 	[CREATURE_CLASS:EDIBLE_GROUND_BUG]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -224,15 +222,13 @@ creature_insects
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A scuttling pest that seeks out unwatched food and garbage.  He fears light and is hard to kill.  He can thrive where little else can.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:ROACH_MAN]
 	[COPY_TAGS_FROM:ROACH_LARGE]
@@ -261,7 +257,7 @@ creature_insects
 	[DESCRIPTION:A person with the wings and head of a roach.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'r']
 	[COLOR:6:0:0]
 
@@ -271,10 +267,6 @@ creature_insects
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
-	[SELECT_CASTE:FEMALE]
-		[DESCRIPTION:A scuttling insect-like monster with long antennae and a segmented carapace on a broad, flat body.  She's a hardy creature, surviving where little else can.]{+}
-	[SELECT_CASTE:MALE]
-		[DESCRIPTION:A scuttling insect-like monster with long antennae and a segmented carapace on a broad, flat body.  He's a hardy creature, surviving where little else can.]{+}
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:20000700]
 	[GO_TO_START]
@@ -282,13 +274,14 @@ creature_insects
 	[CASTE_NAME:giant roach:giant roaches:giant roach]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a roach.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:5:10]
 	[CREATURE_TILE:'R']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
@@ -311,12 +304,14 @@ creature_insects
 	[VERMIN_SOIL][FREQUENCY:100]
 	[UBIQUITOUS]
 	[VERMIN_NOTRAP]
+	[VERMIN_HATEABLE]{+}
 	[POPULATION_NUMBER:250:500]
-	[SMALL_REMAINS]
+	[SMALL_REMAINS][NO_WINTER]{+NO_WINTER}
 	[PREFSTRING:protective shells]
 	Could be FLIER but leaving it off so they crawl around.
 	[ALL_ACTIVE]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -325,7 +320,6 @@ creature_insects
 	[NOT_BUTCHERABLE]
 	[NOBONES]
 	[CREATURE_CLASS:EDIBLE_GROUND_BUG]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -350,15 +344,13 @@ creature_insects
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A tiny oval insect that can be found almost anywhere outside.  His forewings are hardened carapaces, protecting him when he isn't flying.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:RED:1]
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:BEETLE_MAN]
 	[COPY_TAGS_FROM:BEETLE]
@@ -386,7 +378,7 @@ creature_insects
 	[DESCRIPTION:A person with the carapace and head of a beetle.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'b']
 	[COLOR:4:0:0]
 
@@ -407,7 +399,7 @@ creature_insects
 	[CASTE_NAME:giant beetle:giant beetles:giant beetle]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a beetle.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'B']
 	[COLOR:4:0:0]
@@ -417,6 +409,7 @@ creature_insects
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:protective shells]
 	[APPLY_CREATURE_VARIATION:MOUTH_BITE_EDGE_ATTACK]{+}
@@ -429,16 +422,18 @@ creature_insects
 	[NAME:ant:ants:ant]
 	[CREATURE_TILE:250][COLOR:7:0:0]
 	[NATURAL]
+	[VISION_ARC:30:360]{+  Revision: compound eyes have a wide field of view.}
 	[BIOME:NOT_FREEZING]
 	[VERMIN_SOIL_COLONY][FREQUENCY:100]
 	[UBIQUITOUS]
 	[VERMIN_NOTRAP]
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:100:200]
-	[SMALL_REMAINS]
+	[SMALL_REMAINS][NO_WINTER]{+NO_WINTER}
 	[PREFSTRING:propensity to dig]
 	[DIURNAL]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[CREATURE_CLASS:EDIBLE_GROUND_BUG]
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
@@ -457,7 +452,6 @@ creature_insects
 	[BODY_SIZE:0:0:1]
 	[MAXAGE:1:1]
 	[NOBONES]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[CASTE:WORKER]
 		[CASTE_NAME:worker ant:worker ants:worker ant]
 		[DESCRIPTION:A tiny digging insect found in huge colonies comprised of many physical castes, some of which have poison bites.  The colony overwhelms its enemies with swarms.  It forages for food and maintains the colony.]{+}
@@ -477,7 +471,7 @@ creature_insects
 		[FEMALE]
 		[CASTE_NAME:queen ant:queen ants:queen ant]
 		[DESCRIPTION:A tiny digging insect found in huge colonies comprised of many physical castes, some of which have poison bites.  The colony overwhelms its enemies with swarms.  She lives to breed with her drones and lay eggs for her colony's future.]{+}
-		[POP_RATIO:2]
+		[POP_RATIO:1]
 	[SELECT_CASTE:WORKER]
 	 [SELECT_ADDITIONAL_CASTE:SOLDIER]
 	 [SELECT_ADDITIONAL_CASTE:QUEEN]
@@ -503,10 +497,10 @@ creature_insects
 		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:BUTTERFLY_MONARCH]
 	[DESCRIPTION:A small insect with large orange wings.  It is admired for its beauty.]
@@ -524,6 +518,7 @@ creature_insects
 	[FLIER]
 	[DIURNAL]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -533,7 +528,6 @@ creature_insects
 	[NOT_BUTCHERABLE]
 	[NOBONES]
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
 	[BODY_DETAIL_PLAN:EXOSKELETON_TISSUE_LAYERS:CHITIN:FAT:MUSCLE]
@@ -557,15 +551,13 @@ creature_insects
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A small, fluttering insect with large, orange, and patterned wings, admired for his beauty.  Born as a caterpillar, he develops into adulthood in a chrysalis.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:ORANGE:1] *** This obviously needs work.
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:BUTTERFLY_MONARCH_MAN]
 	[COPY_TAGS_FROM:BUTTERFLY_MONARCH]
@@ -581,7 +573,7 @@ creature_insects
 		[CASTE_NAME:monarch butterfly woman:monarch butterfly women:monarch butterfly woman]
 		[BABYNAME:monarch butterfly baby girl:monarch butterfly baby girls]{+}
 		[CHILDNAME:monarch butterfly girl:monarch butterfly girls]{+}
-		[DESCRIPTION:A small and unsettling horror with a strange beauty; her patterned orange wings are much wider than her gaunt body.  She has four thin arms, long antennae, and large, compound eyes wide-set on the head of a monarch butterfly.  Her long probiscis curls down into a spiral.  Her body is unusually light.  She doesn't care that she's naked.]{+}
+		[DESCRIPTION:A small and unsettling horror with a strange beauty; her patterned orange wings are much wider than her gaunt body.  She has four thin arms, long antennae, and large, compound eyes wide-set on the head of a monarch butterfly.  Her long probiscis curls down into a spiral.  Her body is unusually light.  She doesn't care that she's naked.]{+
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
@@ -594,7 +586,7 @@ creature_insects
 	[DESCRIPTION:A person with the wings and head of a monarch butterfly.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'b']
 	[COLOR:4:0:1]
 
@@ -604,9 +596,9 @@ creature_insects
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
-	[SELECT_CASTE:FEMALE]
+	[SELECT_CASTE:FEMALE]{+}
 		[DESCRIPTION:A majestic insect-like monster with patterned, beautiful wings much wider than her thin body.  Her bright colors warn of her foul, mildly toxic taste.]{+}
-	[SELECT_CASTE:MALE]
+	[SELECT_CASTE:MALE]{+}
 		[DESCRIPTION:A majestic insect-like monster with patterned, beautiful wings much wider than his thin body.  His bright colors warn of his foul, mildly toxic taste.]{+}
 	[SELECT_CASTE:ALL]
 	[CHANGE_BODY_SIZE_PERC:20000700]
@@ -615,7 +607,7 @@ creature_insects
 	[CASTE_NAME:giant monarch butterfly:giant monarch butterflies:giant monarch butterfly]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a monarch butterfly.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:5]
 	[CREATURE_TILE:'B']
 	[COLOR:4:0:1]
@@ -625,6 +617,7 @@ creature_insects
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:coloration]
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
@@ -650,6 +643,7 @@ creature_insects
 	[VESPERTINE]
 	[LIGHT_GEN]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -658,7 +652,6 @@ creature_insects
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
 	[NOBONES]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -683,15 +676,13 @@ creature_insects
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A tiny flying insect that can be seen at night by his glowing tail.  His leathery forewings are hardened carapaces, protecting him when he's not flying.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:FIREFLY_MAN]
 	[COPY_TAGS_FROM:FIREFLY]
@@ -720,7 +711,7 @@ creature_insects
 	[DESCRIPTION:A person with the wings and head of a firefly.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'f']
 	[COLOR:2:0:1]
 
@@ -741,7 +732,7 @@ creature_insects
 	[CASTE_NAME:giant firefly:giant fireflies:giant firefly]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a firefly.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:10]
 	[CREATURE_TILE:'F']
 	[COLOR:2:0:1]
@@ -751,9 +742,9 @@ creature_insects
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:enchanting glow]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_ATTACK]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -775,6 +766,7 @@ creature_insects
 	[FLIER]
 	[DIURNAL]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -783,7 +775,6 @@ creature_insects
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
 	[NOBONES]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
 	[BODY_DETAIL_PLAN:CHITIN_NOYIELD_MATERIALS]{:CHITIN_MATERIALS}
 	[BODY_DETAIL_PLAN:CHITIN_TISSUES]
@@ -808,15 +799,13 @@ creature_insects
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A relatively large, colorful insect with filmy wings and a long body.  He preys on insects in flight and devours them in the air.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:AQUAMARINE:1]
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:DRAGONFLY_MAN]
 	[COPY_TAGS_FROM:DRAGONFLY]
@@ -845,7 +834,7 @@ creature_insects
 	[DESCRIPTION:A person with the wings and head of a dragonfly.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'d']
 	[COLOR:3:0:1]
 
@@ -866,7 +855,7 @@ creature_insects
 	[CASTE_NAME:giant dragonfly:giant dragonflies:giant dragonfly]
 	[CHILD:1]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a dragonfly.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'D']
 	[COLOR:3:0:1]
@@ -876,9 +865,9 @@ creature_insects
 	[SOUND:ALERT:100:10000:NONE:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:NONE:chitter:chitters:chittering]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:faceted eyes]
-	[APPLY_CREATURE_VARIATION:MOUTH_BITE_EDGE_ATTACK]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -896,18 +885,20 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:honey bee:honey bees:honey bee]
 	[CREATURE_TILE:250][COLOR:6:0:1]
 	[NATURAL]
+	[VISION_ARC:30:360]{+  Revision: compound eyes have a wide field of view.}
 	[BIOME:NOT_FREEZING]
 	[VERMIN_SOIL_COLONY][FREQUENCY:100]
 	[VERMIN_NOTRAP]
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:100:200]
-	[SMALL_REMAINS]
+	[SMALL_REMAINS][NO_WINTER]{+NO_WINTER}
 	[PETVALUE:1]
 	[PETVALUE_DIVISOR:1000]
 	[PREFSTRING:busy nature]
 	[PREFSTRING:buzzing]
 	[PREFSTRING:ability to organize]
 	[DIURNAL]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -916,7 +907,6 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[NO_SLEEP]
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[USE_MATERIAL_TEMPLATE:WAX:WAX_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:honey bee wax]
 		[STATE_NAME_ADJ:SOLID_PRESSED:honey bee wax cake]
@@ -988,6 +978,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[HIVE_PRODUCT:1:201600:LIQUID_MISC:NONE:LOCAL_CREATURE_MAT:ROYAL_JELLY]
 	[CASTE:WORKER]
 		[CASTE_NAME:honey bee worker:honey bee workers:honey bee worker]
+		[DESCRIPTION:A flying insect that lives in a large colony prized for its honey.  It finds food and cleans the hive.  It has a striped yellow and black body and a powerful stinger on its tail.]{+}
 		[POP_RATIO:10000]
 		[COLONY_EXTERNAL]
 		[EXTRACT:LOCAL_CREATURE_MAT:VENOM]
@@ -996,10 +987,12 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 		[REMAINS_ON_VERMIN_BITE_DEATH]
 	[CASTE:DRONE]
 		[MALE]
+		[DESCRIPTION:A flying insect that lives in a large colony prized for its honey.  He lives to breed with his queen.  He has a striped yellow and black body and a powerful stinger on his tail.]{+}
 		[CASTE_NAME:honey bee drone:honey bee drones:honey bee drone]
 		[POP_RATIO:5]
 	[CASTE:QUEEN]
 		[FEMALE]
+		[DESCRIPTION:A flying insect that lives in a large colony prized for its honey.  She breeds with her drones and lays the eggs needed for the hive's future.  She has a striped yellow and black body and a powerful stinger on her tail.]{+}
 		[CASTE_NAME:honey bee queen:honey bee queens:honey bee queen]
 		[POP_RATIO:1]
 	[SELECT_CASTE:ALL]
@@ -1012,16 +1005,17 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:YELLOW:1]
-				[TLCM_NOUN:chitin:SINGULAR]
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}
 
 [CREATURE:BUMBLEBEE]
 	[DESCRIPTION:A small woolly insect that lives in hive colonies.  It has an annoying sting which it rarely uses.]
 	[NAME:bumblebee:bumblebees:bumblebee]
 	[CREATURE_TILE:250][COLOR:6:0:1]
 	[NATURAL]
+	[VISION_ARC:30:360]{+  Revision: compound eyes have a wide field of view.}
 	[BIOME:NOT_FREEZING]
 	[VERMIN_SOIL_COLONY][FREQUENCY:100]
 	[VERMIN_NOTRAP]
@@ -1031,6 +1025,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:woolly appearance]
 	[DIURNAL]
 	[NO_SLEEP]
+	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:2206:1692:1178:585:3400:4900] 15 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -1038,7 +1033,6 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:15]
 	[MUNDANE]
 	[NOT_BUTCHERABLE]
-	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[USE_MATERIAL_TEMPLATE:WAX:WAX_TEMPLATE]
 		[STATE_NAME_ADJ:ALL_SOLID:bumblebee wax]
 		[STATE_NAME_ADJ:SOLID_PRESSED:bumblebee wax cake]
@@ -1108,6 +1102,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[HIVE_PRODUCT:1:201600:LIQUID_MISC:NONE:LOCAL_CREATURE_MAT:ROYAL_JELLY]
 	[CASTE:WORKER]
 		[CASTE_NAME:bumblebee worker:bumblebee workers:bumblebee worker]
+		[DESCRIPTION:A woolly insect that lives in underground colonies.  It finds food and cleans the hive.  It has a striped yellow and black body and an annoying sting that it rarely uses.]{+}
 		[POP_RATIO:10000]
 		[COLONY_EXTERNAL]
 		[EXTRACT:LOCAL_CREATURE_MAT:VENOM]
@@ -1115,10 +1110,12 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE:DRONE]
 		[MALE]
 		[CASTE_NAME:bumblebee drone:bumblebee drones:bumblebee drone]
+		[DESCRIPTION:A woolly insect that lives in underground colonies.  He lives to breed with his queen.  He has a striped yellow and black body and an annoying sting that he rarely uses.]{+}
 		[POP_RATIO:5]
 	[CASTE:QUEEN]
 		[FEMALE]
 		[CASTE_NAME:bumblebee queen:bumblebee queens:bumblebee queen]
+		[DESCRIPTION:A woolly insect that lives in underground colonies.  She breeds with her drones and lays the eggs needed for her hive's future.  She has a striped yellow and black body and an annoying sting that she rarely uses.]{+}
 		[POP_RATIO:1]
 	[SELECT_CASTE:ALL]
 		[BODY:INSECT:2EYES:HEART:GUTS:BRAIN:MOUTH:2WINGS]
@@ -1130,7 +1127,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 		[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:YELLOW:1]
-				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR
+				[TLCM_NOUN:exoskeleton:SINGULAR]{:chitin:SINGULAR}
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
-				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:compound eyes:PLURAL]{:eyes:PLURAL}

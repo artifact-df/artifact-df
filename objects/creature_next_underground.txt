@@ -67,6 +67,7 @@ creature_next_underground
 	[NATURAL]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_ITEM]
 	[LARGE_ROAMING][FREQUENCY:20]{:10
@@ -218,7 +219,6 @@ creature_next_underground
 	[UNDERGROUND_DEPTH:2:3]
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:100:200]{:10:20
-	[FREQUENCY:20]{+}
 	[CARNIVORE][NATURAL]
 	[PETVALUE:1000]
 	[PET_EXOTIC]
@@ -230,6 +230,7 @@ creature_next_underground
 	[NOBONES]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE_WAR]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:chitter angrily:chitters angrily:angry chittering]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:100:2500:VOCALIZATION:chitter:chitters:chittering]{+}
 	[BODY:BASIC_1PARTBODY:BASIC_HEAD:TAIL:HEART:GUTS:BRAIN:MOUTH:GENERIC_TEETH]
@@ -769,7 +770,6 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]
 	[CLUSTER_NUMBER:5:10]
-	[FREQUENCY:20]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
 	[LARGE_PREDATOR]
@@ -901,6 +901,7 @@ creature_next_underground
 	[ALL_ACTIVE]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[PACK_ANIMAL]
 	[WAGON_PULLER]{+}
 	[TRADE_CAPACITY:1500]{+}
@@ -1224,9 +1225,9 @@ creature_next_underground
 	[UNDERGROUND_DEPTH:2:3]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:20]{+}
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	--BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:enormous tails]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
@@ -1373,6 +1374,7 @@ creature_next_underground
 	[FREQUENCY:20]{+}
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	--BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:lustrous manes]
 	[BODY:QUADRUPED_NECK:2EYES:2EARS:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
@@ -1471,6 +1473,7 @@ creature_next_underground
 	[CANNOT_JUMP]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE_WAR]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BODY:BODY_WITH_HEAD_FLAG:HEART:GUTS:BRAIN:MOUTH]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 		[REMOVE_MATERIAL:HAIR]
@@ -1794,6 +1797,7 @@ creature_next_underground
 	[NOPAIN]
 	[CAVE_ADAPT]{+}
 	[TRAINABLE_WAR]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:squeak in alarm:squeaks in alarm:panicked squeaking]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:10000:VOCALIZATION:squeak:squeaks:squeaking]{+}
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
@@ -1888,6 +1892,7 @@ creature_next_underground
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[NATURAL]
 	[CAVE_ADAPT]{+}
 	[LARGE_ROAMING][DIFFICULTY:3]
@@ -2088,6 +2093,7 @@ creature_next_underground
 	[LARGE_PREDATOR]
 	[CARNIVORE]{+}
 	[TRAINABLE_WAR]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[MEANDERER]
 	[EXTRAVISION]  I wonder if they should still be called eye teeth...  eye socket teeth...
 	[PREFSTRING:drooping ears]
@@ -2843,7 +2849,7 @@ creature_next_underground
 	[BODY_SIZE:12:0:50000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
-	[MAXAGE:200:300]{:60:80
+	[MAXAGE:80:160]{:60:80
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]

@@ -17,7 +17,7 @@ creature_large_ocean
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[FREQUENCY:20]{+}
-	--BENIGN]--MEANDERER][NATURAL]
+	--BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:tusks]
 	[PREFSTRING:whiskers]
 	[BODY:BASIC_2PARTBODY:BASIC_HEAD_NECK:FRONT_BODY_FLIPPERS:REAR_BODY_FLIPPERS:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:2TUSKS:GENERIC_TEETH:RIBCAGE]
@@ -25,8 +25,7 @@ creature_large_ocean
 		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
 			[STATE_NAME:ALL_SOLID:ivory]
 			[STATE_ADJ:ALL_SOLID:ivory]
-	[SELECT_MATERIAL:IVORY]{+  revision: more valuable ivory.}
-		[MATERIAL_VALUE:2]{+
+			[MATERIAL_VALUE:3]{+  revision: more valuable ivory.}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]
 			[TISSUE_NAME:ivory:NP]
@@ -116,9 +115,9 @@ creature_large_ocean
 	[GO_TO_START]
 	[NAME:walrus man:walrus men:walrus man]
 	[DESCRIPTION:A legless person with the head and back flippers of a walrus.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
 
@@ -146,6 +145,7 @@ creature_large_ocean
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:tusks]
 	[PREFSTRING:whiskers]
@@ -3071,8 +3071,7 @@ Narwhals were sponsored by the generous contributions of the Bay 12 community.
 		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
 			[STATE_NAME:ALL_SOLID:ivory]
 			[STATE_ADJ:ALL_SOLID:ivory]
-	[SELECT_MATERIAL:IVORY]{+  revision: more valuable ivory.}
-		[MATERIAL_VALUE:2]{+
+			[MATERIAL_VALUE:3]{+  revision: more valuable ivory.}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[REMOVE_TISSUE:HAIR]
 		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]
@@ -3180,9 +3179,9 @@ Narwhals were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:narwhal man:narwhal men:narwhal man]
 	[DESCRIPTION:A medium-sized creature with the arms and torso on a man, but with the head and tail of a narwhal.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'N']
 	[COLOR:7:0:0]
 	[SKILL_LEARN_RATE:SING:200]{+}

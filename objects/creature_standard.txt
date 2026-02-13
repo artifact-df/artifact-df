@@ -9,13 +9,14 @@ creature_standard
 	[CREATURE_TILE:'g'][COLOR:2:0:1]
 	[LARGE_ROAMING][BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:3]
-	[POPULATION_NUMBER:5:5]{:1:1
+	[POPULATION_NUMBER:1:10]{:1:1}
 	[CAN_LEARN][CAN_SPEAK]
 	[PET_EXOTIC]
 	[LOCKPICKER][TRAPAVOID][MISCHIEVOUS]
 	[NATURAL_SKILL:SNEAK:6]{:3
 	[CANOPENDOORS]
 	[BONECARN]
+	[FANCIFUL]{+}
 	[PREFSTRING:mischief]
 	[PREFSTRING:ball-shaped heads]
 	[PREFSTRING:saucer-sized eyes]
@@ -235,11 +236,12 @@ creature_standard
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:3]
 	[LARGE_ROAMING][DIFFICULTY:2]
-	[POPULATION_NUMBER:25:50]{:5:10
+	[POPULATION_NUMBER:50:100]{:5:10
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR]
 	[CAN_LEARN][SLOW_LEARNER]
 	[EVIL]
+	[FANCIFUL]{+}
 	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[GRASSTRAMPLE:20]
 	[BONECARN]
@@ -253,10 +255,12 @@ creature_standard
 		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
 			[STATE_NAME:ALL_SOLID:ivory]
 			[STATE_ADJ:ALL_SOLID:ivory]
+			[MATERIAL_VALUE:2]{+  revision: more valuable ivory.}
 		[SELECT_MATERIAL:HAIR]
 			[STATE_NAME:ALL_SOLID:fur]
 			[STATE_ADJ:ALL_SOLID:fur]
 			[YARN]
+			[MATERIAL_VALUE:2]{+  revision: more valuable fur.}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[USE_TISSUE_TEMPLATE:HORN:HORN_TEMPLATE]
 		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]
@@ -360,7 +364,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:400:500]{:800:1000  reduced to limit troll populations at goblin pits
+	[MAXAGE:500:1000]{:800:1000  reduced to limit troll populations at goblin pits.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -484,7 +488,7 @@ creature_standard
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[LARGE_ROAMING][EVIL][DIFFICULTY:4][FREQUENCY:50]
-	[POPULATION_NUMBER:25:50]{:5:10
+	[POPULATION_NUMBER:50:100]{:5:10}
 	[CLUSTER_NUMBER:1:3]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
@@ -492,6 +496,7 @@ creature_standard
 	[GRASSTRAMPLE:20]
 	[SMELL_TRIGGER:30]{+}
 	[BONECARN]
+	[FANCIFUL]{+}
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CURIOUSBEAST_EATER]{+}
 	[CURIOUSBEAST_GUZZLER]{+}
@@ -625,7 +630,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:20:30]
+	[MAXAGE:25:35]{:20:30}
 	[CHILD:10][BABY:1][MULTIPLE_LITTER_RARE]
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
@@ -735,7 +740,7 @@ creature_standard
 	[CREATURE_CLASS:HIGH_ELF_PET]
 	[CREATURE_CLASS:HIGH_ELF_MOUNT]
 	[CREATURE_CLASS:HIGH_ELF_BEAST]
-	[PETVALUE:1050]
+	[PETVALUE:1050]{:1000}
 	[PREFSTRING:horns]
 	[PREFSTRING:swift gaits]
 	[PREFSTRING:elusiveness]
@@ -746,7 +751,7 @@ creature_standard
 	[GOOD]
 	[TRAINABLE_WAR]{+}
 	[LARGE_ROAMING]
-	[POPULATION_NUMBER:25:50]{:5:10
+	[POPULATION_NUMBER:50:100]{:5:10}
 	[CLUSTER_NUMBER:1:5]
 	[GRASSTRAMPLE:0]
 	[NATURAL]{+}
@@ -765,10 +770,10 @@ creature_standard
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:5]{+}
 	[NATURAL_SKILL:DISCIPLINE:5]{+}
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:HEAD_HORN:EYELIDS:CHEEKS]
-	[RELSIZE:BY_CATEGORY:HORN:120]{:100
-	[PET_EXOTIC]
-	[MOUNT_EXOTIC]
+	[PET]
+	[MOUNT]
 	[PACK_ANIMAL]
+	[RELSIZE:BY_CATEGORY:HORN:120]{:100
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 		[USE_MATERIAL_TEMPLATE:HOOF:HOOF_TEMPLATE]
 		[USE_MATERIAL_TEMPLATE:HORN:HORN_TEMPLATE]
@@ -805,7 +810,7 @@ creature_standard
 	[MENT_ATT_RANGE:SPATIAL_SENSE:1000:1200:1350:1500:1650:2250:5000]{+}
 	[PHYS_ATT_RANGE:ENDURANCE:1000:1200:1350:1500:1650:2250:5000]{+}
 	[PHYS_ATT_RANGE:AGILITY:1000:1200:1350:1500:1650:2250:5000]{+}
-	[MAXAGE:80:120]
+	[MAXAGE:80:120]{:10:20}
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
@@ -844,7 +849,7 @@ creature_standard
 		[ATTACK_PRIORITY:SECOND]
 		--ATTACK_FLAG_CANLATCH]
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
-	[CHILD:2][GENERAL_CHILD_NAME:unicorn foal:unicorn foals]
+	[CHILD:1][GENERAL_CHILD_NAME:unicorn foal:unicorn foals]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:327:218:109:1900:2900] 80 kph
@@ -900,55 +905,55 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_GOLD:1]
 				[TLCM_NOUN:eyes:PLURAL]
+	[SELECT_CASTE:ALL]{+  Revision: unicorn horns are as tough as mithril and absurdly valuable.}
+	[SELECT_TISSUE:HAIR]{+
+		[TISSUE_NAME:mane:NP]{+
+		[YARN]{+
+	    [MATERIAL_VALUE:3]{+
+	[SELECT_MATERIAL:HORN]{+ // based on mithril
+		[PREFIX:NONE]{+
+		[STATE_COLOR:ALL_SOLID:LIGHT_BLUE]{+
+		[STATE_COLOR:LIQUID:LIGHT_BLUE]{+
+		[STATE_COLOR:GAS:LIGHT_BLUE]{+
+		[DISPLAY_COLOR:7:6:1]{+
+		[SPEC_HEAT:129]{+
+		[MATERIAL_VALUE:11]{+  gets multiplied by 4
+		[MELTING_POINT:20000]{+
+		[BOILING_POINT:25000]{+
+		[SOLID_DENSITY:3500]{+  mithril is 2000
+		[LIQUID_DENSITY:2600]{+
+		[MOLAR_MASS:45845]{+
+		[IMPACT_YIELD:2005000]{+
+		[IMPACT_FRACTURE:3020000]{+
+		[IMPACT_STRAIN_AT_YIELD:1140]{+
+		[COMPRESSIVE_YIELD:2005000]{+
+		[COMPRESSIVE_FRACTURE:3020000]{+
+		[COMPRESSIVE_STRAIN_AT_YIELD:1140]{+  160
+		[TENSILE_YIELD:530000]{+
+		[TENSILE_FRACTURE:820000]{+
+		[TENSILE_STRAIN_AT_YIELD:125]{+  200
+		[TORSION_YIELD:530000]{+
+		[TORSION_FRACTURE:820000]{+
+		[TORSION_STRAIN_AT_YIELD:315]{+
+		[SHEAR_YIELD:530000]{+
+		[SHEAR_FRACTURE:820000]{+
+		[SHEAR_STRAIN_AT_YIELD:115]{+
+		[BENDING_YIELD:600000]{+
+		[BENDING_FRACTURE:900000]{+
+		[BENDING_STRAIN_AT_YIELD:415]{+
+		[MAX_EDGE:11000]{+
+		[ABSORPTION:100]{+
+		[IMPLIES_ANIMAL_KILL]{+
+		[HORN]{+
+		[BONE]{+
+		[ITEMS_HARD]{+
+		[ITEMS_METAL]{+
+		[ITEMS_BARRED]{+
+		[ITEMS_SCALED]{+
+		[ITEMS_WEAPON]{+
 	[SELECT_CASTE:ALL]
-	[SELECT_TISSUE:HAIR]
-		[TISSUE_NAME:mane:NP]
-		[YARN]
-	    [MATERIAL_VALUE:2]
-	[SELECT_MATERIAL:HORN] // based on mithril
-		[PREFIX:NONE]
-		[STATE_COLOR:ALL_SOLID:LIGHT_BLUE]
-		[STATE_COLOR:LIQUID:LIGHT_BLUE]
-		[STATE_COLOR:GAS:LIGHT_BLUE]
-		[DISPLAY_COLOR:7:6:1]
-		[SPEC_HEAT:129]
-		[MATERIAL_VALUE:2]
-		[MELTING_POINT:20000]
-		[BOILING_POINT:25000]
-		[SOLID_DENSITY:3500] mithril is 2000
-		[LIQUID_DENSITY:2600]
-		[MOLAR_MASS:45845]
-		[IMPACT_YIELD:2005000]
-		[IMPACT_FRACTURE:3020000]
-		[IMPACT_STRAIN_AT_YIELD:1140]
-		[COMPRESSIVE_YIELD:2005000]
-		[COMPRESSIVE_FRACTURE:3020000]
-		[COMPRESSIVE_STRAIN_AT_YIELD:1140] 160
-		[TENSILE_YIELD:530000]
-		[TENSILE_FRACTURE:820000]
-		[TENSILE_STRAIN_AT_YIELD:125] 200
-		[TORSION_YIELD:530000]
-		[TORSION_FRACTURE:820000]
-		[TORSION_STRAIN_AT_YIELD:315]
-		[SHEAR_YIELD:530000]
-		[SHEAR_FRACTURE:820000]
-		[SHEAR_STRAIN_AT_YIELD:115]
-		[BENDING_YIELD:600000]
-		[BENDING_FRACTURE:900000]
-		[BENDING_STRAIN_AT_YIELD:415]
-		[MAX_EDGE:11000]
-		[ABSORPTION:100]
-		[IMPLIES_ANIMAL_KILL]
-		[HORN]
-		[BONE]
-		[ITEMS_HARD]
-		[ITEMS_METAL]
-		[ITEMS_BARRED]
-		[ITEMS_SCALED]
-		[ITEMS_WEAPON]
-	[SELECT_CASTE:ALL]
-	    [SELECT_MATERIAL:ALL]
-		    [MULTIPLY_VALUE:6]
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:4]
 
 [CREATURE:DRAGON] red dragon by deon used as base
 	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years.  Its scales are akin to metal.]
@@ -961,7 +966,7 @@ creature_standard
 	[TRAINABLE_WAR]{TRAINABLE  Revision: dragons are too deadly to hunt.}
 	[MOUNT_EXOTIC]
 	[BIOME:ANY_LAND]
-	[FREQUENCY:5]
+	[FREQUENCY:8]{:5}
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 	    [CDI:TOKEN:BREATHE_FIRE]
@@ -978,7 +983,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:2:0:4]{:3:3:3
+		[ATTACK_TRIGGER:3:3:3]
 	[SPHERE:FIRE]
 	[SPHERE:WEALTH]
 	[SPHERE:MOUNTAINS]{+}
@@ -1052,6 +1057,7 @@ creature_standard
 			[APP_MOD_IMPORTANCE:1000]
 			[APP_MOD_NOUN:pointy teeth:PLURAL]
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
+	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:chomp:chomps]{:bite:bites
@@ -1096,7 +1102,8 @@ creature_standard
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[CASTE:FEMALE]
 		[FEMALE]
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years.  Her scales are akin to metal.]
+		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years.  Her scales are akin to metal.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
@@ -1105,7 +1112,8 @@ creature_standard
 			[CLUTCH_SIZE:1:2]{:1:3
 	[CASTE:MALE]
 		[MALE]
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years.]
+		[POP_RATIO:5]{+}
+		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years.]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1:BLACK:1:GREEN:1:BLUE:1:YELLOW:1:PURPLE:1:SILVER:1:AQUA:1]
@@ -1433,10 +1441,9 @@ creature_standard
 	[CREATURE_TILE:'C'][COLOR:6:0:0]
 	[CREATURE_CLASS:FOOTWEAR_TRACKING_SYMBOL]
 	[MEGABEAST][DIFFICULTY:15] 11 or higher does not get assigned as adv mode quests
-		[ATTACK_TRIGGER:3:0:3]{:3:3:3
+		[ATTACK_TRIGGER:3:3:3]
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[FANCIFUL]
-	[AT_PEACE_WITH_WILDLIFE]{+  makes sense to ignore wild animals.}
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 		[NOTHOUGHT][NOEXERT]
@@ -1533,7 +1540,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[CAN_LEARN][SLOW_LEARNER][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -1701,6 +1708,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
+	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -1755,7 +1763,7 @@ creature_standard
 	[SWIMS_LEARNED]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:giantess:giantesses:giantess]
 		[BABYNAME:giantess baby girl:giantess baby girls]{+}
@@ -1763,7 +1771,7 @@ creature_standard
 		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:60]{+}
 		[BABYNAME:giant baby boy:giant baby boys]{+}
 		[CHILDNAME:giant boy:giant boys]{+}
 		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -1859,7 +1867,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2024,6 +2032,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
+	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2079,14 +2088,14 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:cyclops baby girl:cyclops baby girls]{+}
 		[CHILDNAME:cyclops girl:cyclops girls]{+}
 		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:60]{+}
 		[BABYNAME:cyclops baby boy:cyclops baby boys]{+}
 		[CHILDNAME:cyclops boy:cyclops boys]{+}
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -2180,7 +2189,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2348,6 +2357,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
+	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2404,14 +2414,14 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:ettin baby girl:ettin baby girls]{+}
 		[CHILDNAME:ettin girl:ettin girls]{+}
 		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:60]{+}
 		[BABYNAME:ettin baby boy:ettin baby boys]{+}
 		[CHILDNAME:ettin boy:ettin boys]{+}
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
@@ -2505,7 +2515,7 @@ creature_standard
 	[BONECARN]
 	[LARGE_PREDATOR]
 	[SEMIMEGABEAST][DIFFICULTY:6]{:5
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN]--CAN_SPEAK][UTTERANCES]
 	[SLOW_LEARNER]{+}
@@ -2600,6 +2610,7 @@ creature_standard
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:600]
+	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2682,7 +2693,7 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:minotauress:minotauresses:minotauress]{+}
 		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
@@ -2690,7 +2701,7 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:50]{+}
+		[POP_RATIO:60]{+}
 		[CASTE_NAME:minotaur:minotaurs:minotaur]{+}
 		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
@@ -2748,7 +2759,7 @@ creature_standard
 	[BIOME:GLACIER]
 	[BIOME:TUNDRA]
 	[LARGE_ROAMING][SAVAGE][DIFFICULTY:2][FREQUENCY:5]
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20}
 	[CLUSTER_NUMBER:1:5]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
@@ -2883,7 +2894,7 @@ creature_standard
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:FOREST_TAIGA]
 	[LARGE_ROAMING][SAVAGE][DIFFICULTY:2][FREQUENCY:10]{:5
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:5]
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
@@ -3021,12 +3032,13 @@ creature_standard
 	[BIOME:TUNDRA]
 	[BIOME:TAIGA]{+}
 	[LARGE_ROAMING][EVIL][DIFFICULTY:2][FREQUENCY:25]
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20}
 	[CLUSTER_NUMBER:1:5]
 	[LARGE_PREDATOR][MEANDERER]
 	[CAN_LEARN][SLOW_LEARNER]
 	[GRASSTRAMPLE:0]
 	[BONECARN]
+	[FANCIFUL]{+}
 	[PREFSTRING:translucent skin]
 	[PREFSTRING:icicle teeth]
 	[PREFSTRING:glowing red eyes]
@@ -3112,7 +3124,7 @@ creature_standard
 	[BIOME:TUNDRA]
 	[BIOME:TAIGA]{+}
 	[BIOME:MOUNTAIN]{+}
-	[POPULATION_NUMBER:100:300]{:10:250
+	[POPULATION_NUMBER:100:350]{:10:250}
 	[CLUSTER_NUMBER:1:10]
 	--EVIL]
 	[GRASSTRAMPLE:0]
@@ -3698,6 +3710,7 @@ creature_standard
 	[MOUNT_EXOTIC]
 	[COMMON_DOMESTIC]
 	[BONECARN]
+	[FANCIFUL]{+}
 	[TRAINABLE_WAR]{+}
 	[NATURAL_SKILL:DISCIPLINE:3]{+}
 	[NATURAL_SKILL:BITE:3]{+}
@@ -3810,13 +3823,14 @@ creature_standard
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
 	[BIOME:MARSH_TROPICAL_SALTWATER]
 	[LARGE_ROAMING][EVIL][FREQUENCY:50]
-	[POPULATION_NUMBER:100:300]{:10:250
+	[POPULATION_NUMBER:100:350]{:10:250}
 	[CLUSTER_NUMBER:1:10]
 	[LARGE_PREDATOR]
 	[GRASSTRAMPLE:0]
 	[AMPHIBIOUS][UNDERSWIM]
 	[NOT_BUTCHERABLE][VEGETATION]
 	[AMBUSHPREDATOR]{+}
+	[FANCIFUL]{+}
 	[PREFSTRING:slithering nature]
 	[PREFSTRING:weedy bodies]
 	[PREFSTRING:cowardly watery ambushes]
@@ -3885,14 +3899,17 @@ creature_standard
 	[CASTE_NAME:foul blendec:foul blendecs:foul blendec]
 	[CREATURE_TILE:'b'][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20}
 	[CLUSTER_NUMBER:3:5]
 	[CANOPENDOORS]
 	[LARGE_PREDATOR][EVIL]
+	[CAN_LEARN][SLOW_LEARNER]{+}
 	[BONECARN]
 	[GRASSTRAMPLE:0]
 	[PETVALUE:250]
+	[FANCIFUL]{+}
 	[LARGE_ROAMING][FREQUENCY:10]{:5
+	[FANCIFUL]{+}
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_CONIFER]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
@@ -4038,8 +4055,10 @@ creature_standard
 	[PETVALUE:250]
 	[GRASSTRAMPLE:0]
 	[BONECARN]
+	[TRAINABLE_WAR]{+}
+	[FANCIFUL]{+}
 	[LARGE_ROAMING][FREQUENCY:50]
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20}
 	[CLUSTER_NUMBER:1:10]
 	[LARGE_PREDATOR][EVIL]
 	--BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -4142,12 +4161,13 @@ creature_standard
 	[CREATURE_CLASS:MAMMAL]
 	[LARGE_PREDATOR][EVIL]
 	[FANCIFUL]
+	[TRAINABLE_WAR]{+}
 	[LARGE_ROAMING][FREQUENCY:100]
 	[BIOME:ANY_DESERT]
 	[BIOME:SHRUBLAND_TROPICAL]{+}
 	[BIOME:SAVANNA_TROPICAL]{+}
 	[PETVALUE:1000]
-	[POPULATION_NUMBER:100:300]{:10:250
+	[POPULATION_NUMBER:100:350]{:10:250}
 	[CLUSTER_NUMBER:1:10]
 	[GRASSTRAMPLE:0]
 	[NO_DRINK][NO_EAT][NO_SLEEP]
@@ -4256,7 +4276,7 @@ creature_standard
 	[CASTE_NAME:harpy:harpies:harpy]
 	[CREATURE_TILE:'h'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL] hybrid
-	[POPULATION_NUMBER:100:300]{:10:250
+	[POPULATION_NUMBER:100:350]{:10:250}
 	[CLUSTER_NUMBER:1:10]
 	[PETVALUE:30]
 	[LARGE_ROAMING][FREQUENCY:50]
@@ -4476,13 +4496,13 @@ creature_standard
 	[TRAINABLE_WAR]{+}
 	[CHILD:1][GENERAL_CHILD_NAME:hydra hatchling:hydra hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:ANY_LAND]
-	[FREQUENCY:5]
+	[FREQUENCY:8]{:5}
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:0:3]{:3:3:3
+		[ATTACK_TRIGGER:3:3:3]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[SPHERE:MUCK]
 	[SPHERE:REBIRTH]
@@ -4555,6 +4575,7 @@ creature_standard
 			[APP_MOD_IMPORTANCE:1000]{+
 			[APP_MOD_NOUN:pointy teeth:PLURAL]{+
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]{+
+	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:chomp:chomps]{:bite:bites
@@ -4591,10 +4612,12 @@ creature_standard
 	[HOMEOTHERM:10040]
 	[CASTE:FEMALE]
 		[FEMALE]
+		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  Her armored tail whips and thrashes aggressively.  She preys on her victims with a flurry of attacks as her heads all bite at once.  Her wounds heal quickly.  Her scales are akin to metal.]{+}
 	[CASTE:MALE]
 		[MALE]
+		[POP_RATIO:5]{+}
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  His armored tail whips and thrashes aggressively.  He preys on his victims with a flurry of attacks as his heads all bite at once.  His wounds heal quickly.  His scales are akin to metal.]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -4622,7 +4645,7 @@ creature_standard
 	[CREATURE_TILE:'M'][COLOR:3:0:1]
 	[CREATURE_CLASS:MAMMAL] hybrid
 	[CAN_LEARN][CAN_SPEAK]
-	[POPULATION_NUMBER:100:300]{:10:250
+	[POPULATION_NUMBER:100:350]{:10:250}
 	[CLUSTER_NUMBER:1:10]
 	[BENIGN]
 	[CANOPENDOORS]
@@ -4893,8 +4916,9 @@ creature_standard
 	[CREATURE_TILE:'S'][COLOR:3:0:1]
 	[PETVALUE:1000]
 	[PET_EXOTIC]
+	[FANCIFUL]{+}
 	[IMMOBILE_LAND][AQUATIC]
-	[POPULATION_NUMBER:50:100]{:10:20
+	[POPULATION_NUMBER:100:200]{:10:20}
 	[LARGE_ROAMING]
 	[BIOME:ANY_OCEAN]
 	[NO_DRINK]
@@ -4996,12 +5020,13 @@ creature_standard
 	[CREATURE_TILE:'M'][COLOR:0:0:1]
 	[PETVALUE:1000]
 	[AQUATIC][IMMOBILE_LAND]
-	[POPULATION_NUMBER:100:300]{:10:250
+	[POPULATION_NUMBER:100:350]{:10:250}
 	[LARGE_ROAMING]
 	[BIOME:ANY_OCEAN]
 	[NO_DRINK]
 	[LARGE_PREDATOR][EVIL]
 	[BONECARN]
+	[FANCIFUL]{+}
 	[PREFSTRING:horrifying freakish appearance]
 	[CHILD:6][CHILDNAME:sea monster hatchling:sea monster hatchlings]
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
@@ -5087,11 +5112,11 @@ creature_standard
 	[MOUNT_EXOTIC]
 	[CHILD:1][GENERAL_CHILD_NAME:roc chick:roc chicks]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]
+	[FREQUENCY:8]{:5}
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:0:3]{:3:3:3
+		[ATTACK_TRIGGER:3:3:3]
     [VIEWRANGE:35]{:20  Revision: flying megabeasts can see farther.}
 	[SPHERE:SKY]
 	[SPHERE:WIND]
@@ -5185,6 +5210,7 @@ creature_standard
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:550]
+	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
@@ -5205,6 +5231,7 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 	[CASTE:FEMALE]
 		[FEMALE]
+		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[DESCRIPTION:A graceful bird of prey so large she dwarfs many dragons.  She has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath her mighty wings should fear the sky.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
@@ -5214,6 +5241,7 @@ creature_standard
 			[CLUTCH_SIZE:1:2]{:1:3
 	[CASTE:MALE]
 		[MALE]
+		[POP_RATIO:5]{+}
 		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath his mighty wings should fear the sky.]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]

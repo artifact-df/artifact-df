@@ -523,6 +523,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:SILVER]
+	[MATERIAL_REACTION_PRODUCT:GLAZE_MAT:INORGANIC:TIN_GLAZE]{+  Revision: normally only cassiterite can be used to glaze and tin bars should too.}
 
 [INORGANIC:PEWTER_FINE]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]

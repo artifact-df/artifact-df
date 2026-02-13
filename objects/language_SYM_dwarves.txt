@@ -186,6 +186,7 @@ Squads don't use the MILITARY_UNIT symbol, but I've defined them for all of the 
 	[S_WORD:WISDOM] <>
 	+
 	[S_WORD:ANGER]
+	[S_WORD:SQUAT] * stout
 
 [SYMBOL:DWARF_NAME_MAIN]
 As the primary name symbol, this uses exclusivity to prevent too much overlap on things dwarves feel strongly about - no dwarf would be caught dead being named "Clanbane" or so.

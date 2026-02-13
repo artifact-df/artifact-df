@@ -1,6 +1,5 @@
-item_ic_weapon_tool
+item_weapon_tool_masterfork
 
-# // from DPh Krakens' Immaterial Cultures // #
 
 [OBJECT:ITEM]
 

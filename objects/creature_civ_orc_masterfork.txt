@@ -23,12 +23,13 @@ creature_civ_orc_masterwork
 	[PREFSTRING:brutal cunning]
 	[GNAWER:picked]{+  revision: creature can get out of non-metal cages.}
 	// BASE SKILLS //
-	[NATURAL_SKILL:DISCIPLINE:1]
+	--NATURAL_SKILL:DISCIPLINE:1]
 	[NATURAL_SKILL:SWIMMING:1]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
 	// RACIAL SKILLS //
 	[NATURAL_SKILL:INTIMIDATION:1]
 	[NATURAL_SKILL:MELEE_COMBAT:1]
+	[NATURAL_SKILL:DISCIPLINE:2]
 
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:40:85]--- Great Aversion
@@ -180,9 +181,9 @@ creature_civ_orc_masterwork
 	[BODY_SIZE:100:0:85000]
 	[BODY_SIZE:150:0:90000] old orcs are quite big
 	[PRONE_TO_RAGE:10]
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125] less variance  default: 75:95:98:100:102:105:125
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]
 		[APP_MOD_IMPORTANCE:480]
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125] more variance  default: 75:95:98:100:102:105:125
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:85:95:98:100:102:105:135] more variance  default: 75:95:98:100:102:105:125
 		[APP_MOD_IMPORTANCE:520]
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
@@ -250,7 +251,7 @@ creature_civ_orc_masterwork
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:30:200] orc lifespans can vary wildly but some individuals can get quite old, avg: 115
+	[MAXAGE:50:200] orc lifespans can vary wildly but some individuals can get quite old, avg: 125
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -298,14 +299,19 @@ creature_civ_orc_masterwork
 	[PROFESSION_NAME:MACEMAN:maceorc:maceorcs]
 	[PROFESSION_NAME:PIKEMAN:pikeorc:pikeorcs]
 	[PROFESSION_NAME:BOWMAN:boworc:boworcs]
+    [PROFESSION_NAME:RECRUIT:grunt:grunts]
+    from Splint's Urks:
 	[PROFESSION_NAME:CRIMINAL:outcast:outcasts]
 	[PROFESSION_NAME:MESSENGER:runner:runners]
 	[PROFESSION_NAME:THIEF:scout:scouts]
-	[PROFESSION_NAME:MASTER_THIEF:veteran scout:veteran scouts]
+	[PROFESSION_NAME:MASTER_THIEF:Veteran Scout:Veteran Scouts]
+	[PROFESSION_NAME:STANDARD:peon:peons]
+	[PROFESSION_NAME:BLOWGUNMAN:gunorc:gunorc]
+	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Master Gunorc:Master Gunorcs]
 	[BABY:1]
 	[GENERAL_BABY_NAME:orcling:orclings]
 	[BABYNAME:orcling:orclings]
-	[CHILD:6]
+	[CHILD:15]
 	[GENERAL_CHILD_NAME:orc child:orc children]
 	[CHILDNAME:orc child:orc children]
 	[HOMEOTHERM:10067]
@@ -323,14 +329,6 @@ creature_civ_orc_masterwork
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:7171:6811:6469:2193:7967:8900] 4 kph
 	[APPLY_CREATURE_VARIATION:ATTRIBUTES_ORC]{+ contains the orc racial attributes and more.}
 	[SWIMS_LEARNED]
-    from Splint's Urks:
-	[PROFESSION_NAME:CRIMINAL:outcast:outcasts]
-	[PROFESSION_NAME:MESSENGER:runner:runners]
-	[PROFESSION_NAME:THIEF:scout:scouts]
-	[PROFESSION_NAME:MASTER_THIEF:Veteran Scout:Veteran Scouts]
-	[PROFESSION_NAME:STANDARD:peon:peons]
-	[PROFESSION_NAME:BLOWGUNMAN:chukka:chukkas]
-	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Master Chukka:Master Chukka]
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]
 	[MANNERISM_EAR:ear]
@@ -355,18 +353,16 @@ creature_civ_orc_masterwork
 	[MANNERISM_STRETCH]
 	[MANNERISM_EYELIDS]	
 	[SPOUSE_CONVERSION_TARGET]
-    [PROFESSION_NAME:STANDARD:peon:peons]
-    [PROFESSION_NAME:RECRUIT:grunt:grunts]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:5:10:85]
+		[ORIENTATION:MALE:2:0:98]
 		[ORIENTATION:FEMALE:95:0:5]
 		--MULTIPLE_LITTER_RARE]
 		[LITTERSIZE:6:12]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:FEMALE:5:10:85]
+		[ORIENTATION:FEMALE:2:0:98]
 		[ORIENTATION:MALE:95:0:5]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  He is spartan and rough, like much of his kin he live in tribal camps and are frequently in conflict with their neighbors.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]

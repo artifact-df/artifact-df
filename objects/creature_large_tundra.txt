@@ -152,9 +152,9 @@ creature_large_tundra
 	[GO_TO_START]
 	[NAME:muskox man:muskox men:muskox man]
 	[DESCRIPTION:A horned person with the head of a muskox.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 
@@ -182,6 +182,7 @@ creature_large_tundra
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:438:292:146:1900:2900] 60 kph
@@ -342,9 +343,9 @@ creature_large_tundra
 	[GO_TO_START]
 	[NAME:elk man:elk men:elk man]
 	[DESCRIPTION:A person with the head of an elk.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'E']
 	[COLOR:6:0:0]
 
@@ -372,6 +373,7 @@ creature_large_tundra
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:grace]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:366:244:122:1900:2900] 72 kph
@@ -391,13 +393,14 @@ creature_large_tundra
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_PREDATOR]
 	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[FREQUENCY:20]{:2
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
-	--MEANDERER]
+	[MEANDERER]
 	[BIOME:GLACIER]
 	[BIOME:TUNDRA]
 	[GRASSTRAMPLE:0]
@@ -532,9 +535,9 @@ creature_large_tundra
 	[NAME:polar bear man:polar bear men:polar bear man]
 	[DESCRIPTION:A large person with the head of a polar bear.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'B']
 	[COLOR:7:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
@@ -566,6 +569,8 @@ creature_large_tundra
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:657:438:219:1900:2900] 40 kph

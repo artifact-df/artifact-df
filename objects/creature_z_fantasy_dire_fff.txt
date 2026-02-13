@@ -15,7 +15,7 @@ creature_fantasy_dire_fff
 	[CASTE_NAME:dire rat:dire rats:dire rat]
 	[GENERAL_CHILD_NAME:dire rat cub:dire rat cubs]
 	[DESCRIPTION:A large, angry monster in the shape of a rat.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:25:50]{:10:20}
 	[CLUSTER_NUMBER:3:5]
 	[CREATURE_TILE:'R']
 	[CREATURE_CLASS:ORC_PET]
@@ -31,7 +31,6 @@ creature_fantasy_dire_fff
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	--APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tougher.}
 
-
 [CREATURE:BEAR_DIRE_FFF]
     [COPY_TAGS_FROM:BEAR_GRIZZLY]
 	[APPLY_CREATURE_VARIATION:DIRE]
@@ -45,7 +44,7 @@ creature_fantasy_dire_fff
 	[CASTE_NAME:dire bear:dire bears:dire bear]
 	[GENERAL_CHILD_NAME:dire bear cub:dire bear cubs]
 	[DESCRIPTION:A massive, angry monster in the shape of a bear.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:25:50]{:10:20}
 	[CLUSTER_NUMBER:3:5]
 	[CREATURE_TILE:'B']
 	[CREATURE_CLASS:ORC_PET]
@@ -74,7 +73,7 @@ creature_fantasy_dire_fff
 	[CASTE_NAME:dire wolf:dire wolves:dire wolf]
 	[GENERAL_CHILD_NAME:dire wolf pup:dire wolf pups]
 	[DESCRIPTION:A large aggressive canine monster with a shaggy tail and a howl can be heard from far away.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:25:50]{:10:20}
 	[CLUSTER_NUMBER:3:5]
 	[CREATURE_TILE:'W']
 	[COLOR:7:0:0]
@@ -147,6 +146,7 @@ creature_fantasy_dire_fff
 	[MAXAGE:10:20]
 	[PRONE_TO_RAGE:30]
 	[TRAINABLE_WAR]
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_FRONT]{+    Revision: hooved animals should kick much harder.}
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]

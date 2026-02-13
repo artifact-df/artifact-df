@@ -30,7 +30,7 @@ reaction_aa_brewing
 	[DESCRIPTION:Brew alcohol from whole plants, such as sweet pods, plump helmets or grains.]{+}
 
 [REACTION:BREW_DRINK_FROM_PLANT_GROWTH]
-	[NAME:brew drinks from plant growths]
+	[NAME:brew drinks from plants (fruit/growths)]
 	[BUILDING:STILL:HOTKEY_STILL_BREW]
 	[REAGENT:growth:1:PLANT_GROWTH:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:DRINK_MAT]
@@ -51,11 +51,11 @@ reaction_aa_brewing
 	[SKILL:BREWING]
 	[DESCRIPTION:Brew alcohol from fruits, such as strawberries or apples.]{+}
 
+
 [REACTION:MAKE_MEAD]
-	[NAME:Make mead from any type of honey]
+	[NAME:brew some mead]
 	[BUILDING:STILL:CUSTOM_M]
-	[REAGENT:honey:150:LIQUID_MISC:NONE:NONE:NONE]
-		[HAS_MATERIAL_REACTION_PRODUCT:DRINK_MAT]
+	[REAGENT:honey:150:LIQUID_MISC:NONE:CREATURE_MAT:HONEY_BEE:HONEY]
 		[UNROTTEN]
 	[REAGENT:honey container:1:NONE:NONE:NONE:NONE]
 		[CONTAINS:honey]
@@ -69,16 +69,12 @@ reaction_aa_brewing
 	[PRODUCT:100:5:DRINK:NONE:GET_MATERIAL_FROM_REAGENT:honey:DRINK_MAT]
 		[PRODUCT_TO_CONTAINER:barrel/pot]
 		[PRODUCT_DIMENSION:150]
-	[CATEGORY:AA_BREWING]
-		[CATEGORY_NAME:Specific Brewing]
-		[CATEGORY_DESCRIPTION:Reactions for brewing out of specific plants or fruits]
-	[WORLDGEN_ENABLED]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
+		[SKILL_IP:36]{+  1.2x more exp than ordinary brewing.}
 	[DESCRIPTION:Brew alcohol from honey. Honey is pressed from honeycombs at a screw press.]{+}
 
 [REACTION:AA_BREW_DRINKS_FROM_APPLE_FRUIT]
-	[NAME:brew some apple cider]
+	[NAME:brew one drink of apple cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APPLE:FRUIT]
 		[UNROTTEN]
@@ -93,12 +89,12 @@ reaction_aa_brewing
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
 	[CATEGORY:BREW_SOME_DRINKS]
-		[CATEGORY_NAME:brew some drinks (5-25)]
+		[CATEGORY_NAME:brew one drink of drinks (5-25)]
 		[CATEGORY_PARENT:AA_BREWING]
-		[CATEGORY_DESCRIPTION:Brew a single stack of plants or fruits]
+		[CATEGORY_DESCRIPTION:Brew a single stack of plants or fruits into alcohol]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_APPLE_FRUIT]
-	[NAME:brew five apple cider]
+	[NAME:brew five drinks of apple cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APPLE:FRUIT]
 		[UNROTTEN]
@@ -114,12 +110,12 @@ reaction_aa_brewing
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
 	[CATEGORY:BREW_FIVE_DRINKS]
-		[CATEGORY_NAME:brew five drinks per barrel for cooking]
+		[CATEGORY_NAME:brew five drinks of drinks per barrel for cooking]
 		[CATEGORY_PARENT:AA_BREWING]
 		[CATEGORY_DESCRIPTION:Brew exactly 5 drinks per barrel for cooking]
 
 [REACTION:AA_BREW_BARREL_FROM_APPLE_FRUIT]
-	[NAME:brew a barrel/pot of apple cider]
+	[NAME:brew a barrel of apple cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:APPLE:FRUIT]
 		[UNROTTEN]
@@ -141,7 +137,7 @@ reaction_aa_brewing
 		[CATEGORY_DESCRIPTION:Brew 100 drinks per barrel for tavern or export]
 
 [REACTION:AA_BREW_DRINKS_FROM_APRICOT_FRUIT]
-	[NAME:brew some apricot wine]
+	[NAME:brew one drink of apricot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APRICOT:FRUIT]
 		[UNROTTEN]
@@ -158,7 +154,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_APRICOT_FRUIT]
-	[NAME:brew five apricot wine]
+	[NAME:brew five drinks of apricot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:APRICOT:FRUIT]
 		[UNROTTEN]
@@ -176,7 +172,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_APRICOT_FRUIT]
-	[NAME:brew a barrel/pot of apricot wine]
+	[NAME:brew a barrel of apricot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:APRICOT:FRUIT]
 		[UNROTTEN]
@@ -195,7 +191,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BANANA_FRUIT]
-	[NAME:brew some banana wine]
+	[NAME:brew one drink of banana wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BANANA:FRUIT]
 		[UNROTTEN]
@@ -214,7 +210,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BANANA_FRUIT]
-	[NAME:brew five banana wine]
+	[NAME:brew five drinks of banana wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BANANA:FRUIT]
 		[UNROTTEN]
@@ -234,7 +230,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BANANA_FRUIT]
-	[NAME:brew a barrel/pot of banana wine]
+	[NAME:brew a barrel of banana wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BANANA:FRUIT]
 		[UNROTTEN]
@@ -255,7 +251,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BARLEY_STRUCTURAL]
-	[NAME:brew some barley beer]
+	[NAME:brew one drink of barley beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BARLEY:STRUCTURAL]
 		[UNROTTEN]
@@ -273,7 +269,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BARLEY_STRUCTURAL]
-	[NAME:brew five barley beer]
+	[NAME:brew five drinks of barley beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BARLEY:STRUCTURAL]
 		[UNROTTEN]
@@ -292,7 +288,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BARLEY_STRUCTURAL]
-	[NAME:brew a barrel/pot of barley beer]
+	[NAME:brew a barrel of barley beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BARLEY:STRUCTURAL]
 		[UNROTTEN]
@@ -312,7 +308,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BAYBERRY_FRUIT]
-	[NAME:brew some bayberry wine]
+	[NAME:brew one drink of bayberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BAYBERRY:FRUIT]
 		[UNROTTEN]
@@ -329,7 +325,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BAYBERRY_FRUIT]
-	[NAME:brew five bayberry wine]
+	[NAME:brew five drinks of bayberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BAYBERRY:FRUIT]
 		[UNROTTEN]
@@ -347,7 +343,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BAYBERRY_FRUIT]
-	[NAME:brew a barrel/pot of bayberry wine]
+	[NAME:brew a barrel of bayberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BAYBERRY:FRUIT]
 		[UNROTTEN]
@@ -366,7 +362,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BEET_STRUCTURAL]
-	[NAME:brew some beetroot wine]
+	[NAME:brew one drink of beetroot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BEET:STRUCTURAL]
 		[UNROTTEN]
@@ -383,7 +379,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BEET_STRUCTURAL]
-	[NAME:brew five beetroot wine]
+	[NAME:brew five drinks of beetroot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BEET:STRUCTURAL]
 		[UNROTTEN]
@@ -401,7 +397,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BEET_STRUCTURAL]
-	[NAME:brew a barrel/pot of beetroot wine]
+	[NAME:brew a barrel of beetroot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BEET:STRUCTURAL]
 		[UNROTTEN]
@@ -420,7 +416,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BERRIES_FISHER_FRUIT]
-	[NAME:brew some fisher berry wine]
+	[NAME:brew one drink of fisher berry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_FISHER:FRUIT]
 		[UNROTTEN]
@@ -438,7 +434,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BERRIES_FISHER_FRUIT]
-	[NAME:brew five fisher berry wine]
+	[NAME:brew five drinks of fisher berry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_FISHER:FRUIT]
 		[UNROTTEN]
@@ -457,7 +453,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BERRIES_FISHER_FRUIT]
-	[NAME:brew a barrel/pot of fisher berry wine]
+	[NAME:brew a barrel of fisher berry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_FISHER:FRUIT]
 		[UNROTTEN]
@@ -477,7 +473,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BERRIES_PRICKLE_FRUIT]
-	[NAME:brew some prickle berry wine]
+	[NAME:brew one drink of prickle berry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_PRICKLE:FRUIT]
 		[UNROTTEN]
@@ -495,7 +491,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BERRIES_PRICKLE_FRUIT]
-	[NAME:brew five prickle berry wine]
+	[NAME:brew five drinks of prickle berry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_PRICKLE:FRUIT]
 		[UNROTTEN]
@@ -514,7 +510,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BERRIES_PRICKLE_FRUIT]
-	[NAME:brew a barrel/pot of prickle berry wine]
+	[NAME:brew a barrel of prickle berry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_PRICKLE:FRUIT]
 		[UNROTTEN]
@@ -534,7 +530,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BERRIES_STRAW_FRUIT]
-	[NAME:brew some strawberry wine]
+	[NAME:brew one drink of strawberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_STRAW:FRUIT]
 		[UNROTTEN]
@@ -552,7 +548,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BERRIES_STRAW_FRUIT]
-	[NAME:brew five strawberry wine]
+	[NAME:brew five drinks of strawberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_STRAW:FRUIT]
 		[UNROTTEN]
@@ -571,7 +567,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BERRIES_STRAW_FRUIT]
-	[NAME:brew a barrel/pot of strawberry wine]
+	[NAME:brew a barrel of strawberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_STRAW:FRUIT]
 		[UNROTTEN]
@@ -591,7 +587,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BERRY_SUN_FRUIT]
-	[NAME:brew some sunshine]
+	[NAME:brew one drink of sunshine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRY_SUN:FRUIT]
 		[UNROTTEN]
@@ -609,7 +605,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BERRY_SUN_FRUIT]
-	[NAME:brew five sunshine]
+	[NAME:brew five drinks of sunshine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRY_SUN:FRUIT]
 		[UNROTTEN]
@@ -628,7 +624,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BERRY_SUN_FRUIT]
-	[NAME:brew a barrel/pot of sunshine]
+	[NAME:brew a barrel of sunshine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRY_SUN:FRUIT]
 		[UNROTTEN]
@@ -648,7 +644,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BILBERRY_FRUIT]
-	[NAME:brew some bilberry wine]
+	[NAME:brew one drink of bilberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BILBERRY:FRUIT]
 		[UNROTTEN]
@@ -666,7 +662,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BILBERRY_FRUIT]
-	[NAME:brew five bilberry wine]
+	[NAME:brew five drinks of bilberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BILBERRY:FRUIT]
 		[UNROTTEN]
@@ -685,7 +681,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BILBERRY_FRUIT]
-	[NAME:brew a barrel/pot of bilberry wine]
+	[NAME:brew a barrel of bilberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BILBERRY:FRUIT]
 		[UNROTTEN]
@@ -705,7 +701,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BIRCH_SAP_BUCKET]
-	[NAME:brew some birch beer]
+	[NAME:brew one drink of birch beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:BIRCH:SAP_BUCKET]
 		[UNROTTEN]
@@ -722,7 +718,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BIRCH_SAP_BUCKET]
-	[NAME:brew five birch beer]
+	[NAME:brew five drinks of birch beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:BIRCH:SAP_BUCKET]
 		[UNROTTEN]
@@ -740,7 +736,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BIRCH_SAP_BUCKET]
-	[NAME:brew a barrel/pot of birch beer]
+	[NAME:brew a barrel of birch beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:BIRCH:SAP_BUCKET]
 		[UNROTTEN]
@@ -759,7 +755,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BLACKBERRY_FRUIT]
-	[NAME:brew some blackberry wine]
+	[NAME:brew one drink of blackberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLACKBERRY:FRUIT]
 		[UNROTTEN]
@@ -777,7 +773,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BLACKBERRY_FRUIT]
-	[NAME:brew five blackberry wine]
+	[NAME:brew five drinks of blackberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLACKBERRY:FRUIT]
 		[UNROTTEN]
@@ -796,7 +792,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BLACKBERRY_FRUIT]
-	[NAME:brew a barrel/pot of blackberry wine]
+	[NAME:brew a barrel of blackberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BLACKBERRY:FRUIT]
 		[UNROTTEN]
@@ -816,7 +812,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BLOOD_AMARANTH_STRUCTURAL]
-	[NAME:brew some blood amaranth beer]
+	[NAME:brew one drink of blood amaranth beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BLOOD_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
@@ -834,7 +830,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BLOOD_AMARANTH_STRUCTURAL]
-	[NAME:brew five blood amaranth beer]
+	[NAME:brew five drinks of blood amaranth beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BLOOD_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
@@ -853,7 +849,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BLOOD_AMARANTH_STRUCTURAL]
-	[NAME:brew a barrel/pot of blood amaranth beer]
+	[NAME:brew a barrel of blood amaranth beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BLOOD_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
@@ -873,7 +869,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BLUEBERRY_FRUIT]
-	[NAME:brew some blueberry wine]
+	[NAME:brew one drink of blueberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLUEBERRY:FRUIT]
 		[UNROTTEN]
@@ -891,7 +887,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BLUEBERRY_FRUIT]
-	[NAME:brew five blueberry wine]
+	[NAME:brew five drinks of blueberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:BLUEBERRY:FRUIT]
 		[UNROTTEN]
@@ -910,7 +906,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BLUEBERRY_FRUIT]
-	[NAME:brew a barrel/pot of blueberry wine]
+	[NAME:brew a barrel of blueberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:BLUEBERRY:FRUIT]
 		[UNROTTEN]
@@ -930,7 +926,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_BUCKWHEAT_STRUCTURAL]
-	[NAME:brew some buckwheat beer]
+	[NAME:brew one drink of buckwheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BUCKWHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -948,7 +944,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_BUCKWHEAT_STRUCTURAL]
-	[NAME:brew five buckwheat beer]
+	[NAME:brew five drinks of buckwheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:BUCKWHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -967,7 +963,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_BUCKWHEAT_STRUCTURAL]
-	[NAME:brew a barrel/pot of buckwheat beer]
+	[NAME:brew a barrel of buckwheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:BUCKWHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -987,7 +983,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CACAO_BEAN]
-	[NAME:brew some cocoa drink]
+	[NAME:brew one drink of cocoa drink]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:CACAO:BEAN]
 		[UNROTTEN]
@@ -1004,7 +1000,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CACAO_BEAN]
-	[NAME:brew five cocoa drink]
+	[NAME:brew five drinks of cocoa drink]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:CACAO:BEAN]
 		[UNROTTEN]
@@ -1022,7 +1018,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CACAO_BEAN]
-	[NAME:brew a barrel/pot of cocoa drink]
+	[NAME:brew a barrel of cocoa drink]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:BEAN:PLANT_MAT:CACAO:BEAN]
 		[UNROTTEN]
@@ -1041,7 +1037,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CARAMBOLA_FRUIT]
-	[NAME:brew some carambola wine]
+	[NAME:brew one drink of carambola wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CARAMBOLA:FRUIT]
 		[UNROTTEN]
@@ -1058,7 +1054,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CARAMBOLA_FRUIT]
-	[NAME:brew five carambola wine]
+	[NAME:brew five drinks of carambola wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CARAMBOLA:FRUIT]
 		[UNROTTEN]
@@ -1076,7 +1072,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CARAMBOLA_FRUIT]
-	[NAME:brew a barrel/pot of carambola wine]
+	[NAME:brew a barrel of carambola wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CARAMBOLA:FRUIT]
 		[UNROTTEN]
@@ -1095,7 +1091,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CARROT_STRUCTURAL]
-	[NAME:brew some carrot wine]
+	[NAME:brew one drink of carrot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CARROT:STRUCTURAL]
 		[UNROTTEN]
@@ -1112,7 +1108,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CARROT_STRUCTURAL]
-	[NAME:brew five carrot wine]
+	[NAME:brew five drinks of carrot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CARROT:STRUCTURAL]
 		[UNROTTEN]
@@ -1130,7 +1126,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CARROT_STRUCTURAL]
-	[NAME:brew a barrel/pot of carrot wine]
+	[NAME:brew a barrel of carrot wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:CARROT:STRUCTURAL]
 		[UNROTTEN]
@@ -1149,7 +1145,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CASSAVA_STRUCTURAL]
-	[NAME:brew some cassava beer]
+	[NAME:brew one drink of cassava beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CASSAVA:STRUCTURAL]
 		[UNROTTEN]
@@ -1167,7 +1163,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CASSAVA_STRUCTURAL]
-	[NAME:brew five cassava beer]
+	[NAME:brew five drinks of cassava beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CASSAVA:STRUCTURAL]
 		[UNROTTEN]
@@ -1186,7 +1182,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CASSAVA_STRUCTURAL]
-	[NAME:brew a barrel/pot of cassava beer]
+	[NAME:brew a barrel of cassava beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:CASSAVA:STRUCTURAL]
 		[UNROTTEN]
@@ -1206,7 +1202,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CATTAIL_STRUCTURAL]
-	[NAME:brew some cattail ale]
+	[NAME:brew one drink of cattail ale]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CATTAIL:STRUCTURAL]
 		[UNROTTEN]
@@ -1223,7 +1219,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CATTAIL_STRUCTURAL]
-	[NAME:brew five cattail ale]
+	[NAME:brew five drinks of cattail ale]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CATTAIL:STRUCTURAL]
 		[UNROTTEN]
@@ -1241,7 +1237,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CATTAIL_STRUCTURAL]
-	[NAME:brew a barrel/pot of cattail ale]
+	[NAME:brew a barrel of cattail ale]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:CATTAIL:STRUCTURAL]
 		[UNROTTEN]
@@ -1260,7 +1256,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CHERRY_FRUIT]
-	[NAME:brew some cherry wine]
+	[NAME:brew one drink of cherry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CHERRY:FRUIT]
 		[UNROTTEN]
@@ -1277,7 +1273,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CHERRY_FRUIT]
-	[NAME:brew five cherry wine]
+	[NAME:brew five drinks of cherry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CHERRY:FRUIT]
 		[UNROTTEN]
@@ -1295,7 +1291,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CHERRY_FRUIT]
-	[NAME:brew a barrel/pot of cherry wine]
+	[NAME:brew a barrel of cherry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CHERRY:FRUIT]
 		[UNROTTEN]
@@ -1314,7 +1310,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CHESTNUT_NUT]
-	[NAME:brew some chestnut coffee]
+	[NAME:brew one drink of chestnut coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:NUT:PLANT_MAT:CHESTNUT:NUT]
 		[UNROTTEN]
@@ -1333,7 +1329,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CHESTNUT_NUT]
-	[NAME:brew five chestnut coffee]
+	[NAME:brew five drinks of chestnut coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:NUT:PLANT_MAT:CHESTNUT:NUT]
 		[UNROTTEN]
@@ -1353,7 +1349,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CHESTNUT_NUT]
-	[NAME:brew a barrel/pot of chestnut coffee]
+	[NAME:brew a barrel of chestnut coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:NUT:PLANT_MAT:CHESTNUT:NUT]
 		[UNROTTEN]
@@ -1374,7 +1370,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CHICORY_STRUCTURAL]
-	[NAME:brew some chicory coffee]
+	[NAME:brew one drink of chicory coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CHICORY:STRUCTURAL]
 		[UNROTTEN]
@@ -1391,7 +1387,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CHICORY_STRUCTURAL]
-	[NAME:brew five chicory coffee]
+	[NAME:brew five drinks of chicory coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:CHICORY:STRUCTURAL]
 		[UNROTTEN]
@@ -1409,7 +1405,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CHICORY_STRUCTURAL]
-	[NAME:brew a barrel/pot of chicory coffee]
+	[NAME:brew a barrel of chicory coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:CHICORY:STRUCTURAL]
 		[UNROTTEN]
@@ -1428,7 +1424,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_COFFEE_BEAN]
-	[NAME:brew some coffee]
+	[NAME:brew one drink of coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:COFFEE:BEAN]
 		[UNROTTEN]
@@ -1445,7 +1441,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_COFFEE_BEAN]
-	[NAME:brew five coffee]
+	[NAME:brew five drinks of coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:BEAN:PLANT_MAT:COFFEE:BEAN]
 		[UNROTTEN]
@@ -1463,7 +1459,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_COFFEE_BEAN]
-	[NAME:brew a barrel/pot of coffee]
+	[NAME:brew a barrel of coffee]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:BEAN:PLANT_MAT:COFFEE:BEAN]
 		[UNROTTEN]
@@ -1482,7 +1478,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CRANBERRY_FRUIT]
-	[NAME:brew some cranberry wine]
+	[NAME:brew one drink of cranberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CRANBERRY:FRUIT]
 		[UNROTTEN]
@@ -1500,7 +1496,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CRANBERRY_FRUIT]
-	[NAME:brew five cranberry wine]
+	[NAME:brew five drinks of cranberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CRANBERRY:FRUIT]
 		[UNROTTEN]
@@ -1519,7 +1515,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CRANBERRY_FRUIT]
-	[NAME:brew a barrel/pot of cranberry wine]
+	[NAME:brew a barrel of cranberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CRANBERRY:FRUIT]
 		[UNROTTEN]
@@ -1539,7 +1535,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_CUSTARD-APPLE_FRUIT]
-	[NAME:brew some custard-apple cider]
+	[NAME:brew one drink of custard-apple cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CUSTARD-APPLE:FRUIT]
 		[UNROTTEN]
@@ -1556,7 +1552,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_CUSTARD-APPLE_FRUIT]
-	[NAME:brew five custard-apple cider]
+	[NAME:brew five drinks of custard-apple cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:CUSTARD-APPLE:FRUIT]
 		[UNROTTEN]
@@ -1574,7 +1570,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_CUSTARD-APPLE_FRUIT]
-	[NAME:brew a barrel/pot of custard-apple cider]
+	[NAME:brew a barrel of custard-apple cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:CUSTARD-APPLE:FRUIT]
 		[UNROTTEN]
@@ -1593,7 +1589,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_DATE_PALM_FRUIT]
-	[NAME:brew some date wine]
+	[NAME:brew one drink of date wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DATE_PALM:FRUIT]
 		[UNROTTEN]
@@ -1610,7 +1606,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_DATE_PALM_FRUIT]
-	[NAME:brew five date wine]
+	[NAME:brew five drinks of date wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DATE_PALM:FRUIT]
 		[UNROTTEN]
@@ -1628,7 +1624,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_DATE_PALM_FRUIT]
-	[NAME:brew a barrel/pot of date wine]
+	[NAME:brew a barrel of date wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:DATE_PALM:FRUIT]
 		[UNROTTEN]
@@ -1647,7 +1643,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_DURIAN_FRUIT]
-	[NAME:brew some durian wine]
+	[NAME:brew one drink of durian wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DURIAN:FRUIT]
 		[UNROTTEN]
@@ -1664,7 +1660,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_DURIAN_FRUIT]
-	[NAME:brew five durian wine]
+	[NAME:brew five drinks of durian wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:DURIAN:FRUIT]
 		[UNROTTEN]
@@ -1682,7 +1678,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_DURIAN_FRUIT]
-	[NAME:brew a barrel/pot of durian wine]
+	[NAME:brew a barrel of durian wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:DURIAN:FRUIT]
 		[UNROTTEN]
@@ -1701,7 +1697,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_FINGER_MILLET_STRUCTURAL]
-	[NAME:brew some finger millet beer]
+	[NAME:brew one drink of finger millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FINGER_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -1719,7 +1715,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_FINGER_MILLET_STRUCTURAL]
-	[NAME:brew five finger millet beer]
+	[NAME:brew five drinks of finger millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FINGER_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -1738,7 +1734,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_FINGER_MILLET_STRUCTURAL]
-	[NAME:brew a barrel/pot of finger millet beer]
+	[NAME:brew a barrel of finger millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:FINGER_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -1758,7 +1754,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_FONIO_STRUCTURAL]
-	[NAME:brew some fonio beer]
+	[NAME:brew one drink of fonio beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FONIO:STRUCTURAL]
 		[UNROTTEN]
@@ -1776,7 +1772,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_FONIO_STRUCTURAL]
-	[NAME:brew five fonio beer]
+	[NAME:brew five drinks of fonio beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FONIO:STRUCTURAL]
 		[UNROTTEN]
@@ -1795,7 +1791,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_FONIO_STRUCTURAL]
-	[NAME:brew a barrel/pot of fonio beer]
+	[NAME:brew a barrel of fonio beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:FONIO:STRUCTURAL]
 		[UNROTTEN]
@@ -1815,7 +1811,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_FOXTAIL_MILLET_STRUCTURAL]
-	[NAME:brew some foxtail millet beer]
+	[NAME:brew one drink of foxtail millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FOXTAIL_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -1833,7 +1829,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_FOXTAIL_MILLET_STRUCTURAL]
-	[NAME:brew five foxtail millet beer]
+	[NAME:brew five drinks of foxtail millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:FOXTAIL_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -1852,7 +1848,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_FOXTAIL_MILLET_STRUCTURAL]
-	[NAME:brew a barrel/pot of foxtail millet beer]
+	[NAME:brew a barrel of foxtail millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:FOXTAIL_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -1872,7 +1868,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_GRAPE_FRUIT]
-	[NAME:brew some wine]
+	[NAME:brew one drink of wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GRAPE:FRUIT]
 		[UNROTTEN]
@@ -1890,7 +1886,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_GRAPE_FRUIT]
-	[NAME:brew five wine]
+	[NAME:brew five drinks of wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GRAPE:FRUIT]
 		[UNROTTEN]
@@ -1909,7 +1905,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_GRAPE_FRUIT]
-	[NAME:brew a barrel/pot of wine]
+	[NAME:brew a barrel of wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:GRAPE:FRUIT]
 		[UNROTTEN]
@@ -1929,7 +1925,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_GRASS_LONGLAND_STRUCTURAL]
-	[NAME:brew some Longland beer]
+	[NAME:brew one drink of Longland beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:STRUCTURAL]
 		[UNROTTEN]
@@ -1947,7 +1943,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_GRASS_LONGLAND_STRUCTURAL]
-	[NAME:brew five Longland beer]
+	[NAME:brew five drinks of Longland beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:STRUCTURAL]
 		[UNROTTEN]
@@ -1966,7 +1962,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_GRASS_LONGLAND_STRUCTURAL]
-	[NAME:brew a barrel/pot of Longland beer]
+	[NAME:brew a barrel of Longland beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:GRASS_LONGLAND:STRUCTURAL]
 		[UNROTTEN]
@@ -1986,7 +1982,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_GRASS_TAIL_PIG_PANICLE]
-	[NAME:brew some dwarven ale]
+	[NAME:brew one drink of dwarven ale]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:GRASS_TAIL_PIG:PANICLE]
 		[UNROTTEN]
@@ -2004,7 +2000,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_GRASS_TAIL_PIG_PANICLE]
-	[NAME:brew five dwarven ale]
+	[NAME:brew five drinks of dwarven ale]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:GRASS_TAIL_PIG:PANICLE]
 		[UNROTTEN]
@@ -2023,7 +2019,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_GRASS_TAIL_PIG_PANICLE]
-	[NAME:brew a barrel/pot of dwarven ale]
+	[NAME:brew a barrel of dwarven ale]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:PANICLE:PLANT_MAT:GRASS_TAIL_PIG:PANICLE]
 		[UNROTTEN]
@@ -2043,7 +2039,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_GRASS_WHEAT_CAVE_STRUCTURAL]
-	[NAME:brew some dwarven beer]
+	[NAME:brew one drink of dwarven beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_WHEAT_CAVE:STRUCTURAL]
 		[UNROTTEN]
@@ -2061,7 +2057,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_GRASS_WHEAT_CAVE_STRUCTURAL]
-	[NAME:brew five dwarven beer]
+	[NAME:brew five drinks of dwarven beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:GRASS_WHEAT_CAVE:STRUCTURAL]
 		[UNROTTEN]
@@ -2080,7 +2076,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_GRASS_WHEAT_CAVE_STRUCTURAL]
-	[NAME:brew a barrel/pot of dwarven beer]
+	[NAME:brew a barrel of dwarven beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:GRASS_WHEAT_CAVE:STRUCTURAL]
 		[UNROTTEN]
@@ -2100,7 +2096,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_GUAVA_FRUIT]
-	[NAME:brew some guava wine]
+	[NAME:brew one drink of guava wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GUAVA:FRUIT]
 		[UNROTTEN]
@@ -2117,7 +2113,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_GUAVA_FRUIT]
-	[NAME:brew five guava wine]
+	[NAME:brew five drinks of guava wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:GUAVA:FRUIT]
 		[UNROTTEN]
@@ -2135,7 +2131,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_GUAVA_FRUIT]
-	[NAME:brew a barrel/pot of guava wine]
+	[NAME:brew a barrel of guava wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:GUAVA:FRUIT]
 		[UNROTTEN]
@@ -2154,7 +2150,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_HARD_WHEAT_STRUCTURAL]
-	[NAME:brew some hard wheat beer]
+	[NAME:brew one drink of hard wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:HARD_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -2172,7 +2168,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_HARD_WHEAT_STRUCTURAL]
-	[NAME:brew five hard wheat beer]
+	[NAME:brew five drinks of hard wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:HARD_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -2191,7 +2187,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_HARD_WHEAT_STRUCTURAL]
-	[NAME:brew a barrel/pot of hard wheat beer]
+	[NAME:brew a barrel of hard wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:HARD_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -2211,7 +2207,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_KANIWA_STRUCTURAL]
-	[NAME:brew some kaniwa beer]
+	[NAME:brew one drink of kaniwa beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:KANIWA:STRUCTURAL]
 		[UNROTTEN]
@@ -2229,7 +2225,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_KANIWA_STRUCTURAL]
-	[NAME:brew five kaniwa beer]
+	[NAME:brew five drinks of kaniwa beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:KANIWA:STRUCTURAL]
 		[UNROTTEN]
@@ -2248,7 +2244,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_KANIWA_STRUCTURAL]
-	[NAME:brew a barrel/pot of kaniwa beer]
+	[NAME:brew a barrel of kaniwa beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:KANIWA:STRUCTURAL]
 		[UNROTTEN]
@@ -2268,7 +2264,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_LYCHEE_FRUIT]
-	[NAME:brew some lychee wine]
+	[NAME:brew one drink of lychee wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:LYCHEE:FRUIT]
 		[UNROTTEN]
@@ -2285,7 +2281,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_LYCHEE_FRUIT]
-	[NAME:brew five lychee wine]
+	[NAME:brew five drinks of lychee wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:LYCHEE:FRUIT]
 		[UNROTTEN]
@@ -2303,7 +2299,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_LYCHEE_FRUIT]
-	[NAME:brew a barrel/pot of lychee wine]
+	[NAME:brew a barrel of lychee wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:LYCHEE:FRUIT]
 		[UNROTTEN]
@@ -2322,7 +2318,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_MAIZE_EAR]
-	[NAME:brew some maize beer]
+	[NAME:brew one drink of maize beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:EAR:PLANT_MAT:MAIZE:EAR]
 		[UNROTTEN]
@@ -2340,7 +2336,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_MAIZE_EAR]
-	[NAME:brew five maize beer]
+	[NAME:brew five drinks of maize beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:EAR:PLANT_MAT:MAIZE:EAR]
 		[UNROTTEN]
@@ -2359,7 +2355,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_MAIZE_EAR]
-	[NAME:brew a barrel/pot of maize beer]
+	[NAME:brew a barrel of maize beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:EAR:PLANT_MAT:MAIZE:EAR]
 		[UNROTTEN]
@@ -2379,7 +2375,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_MANGO_FRUIT]
-	[NAME:brew some mango wine]
+	[NAME:brew one drink of mango wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MANGO:FRUIT]
 		[UNROTTEN]
@@ -2396,7 +2392,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_MANGO_FRUIT]
-	[NAME:brew five mango wine]
+	[NAME:brew five drinks of mango wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MANGO:FRUIT]
 		[UNROTTEN]
@@ -2414,7 +2410,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_MANGO_FRUIT]
-	[NAME:brew a barrel/pot of mango wine]
+	[NAME:brew a barrel of mango wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:MANGO:FRUIT]
 		[UNROTTEN]
@@ -2433,7 +2429,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_MAPLE_SAP_BUCKET]
-	[NAME:brew some maple wine]
+	[NAME:brew one drink of maple wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:MAPLE:SAP_BUCKET]
 		[UNROTTEN]
@@ -2450,7 +2446,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_MAPLE_SAP_BUCKET]
-	[NAME:brew five maple wine]
+	[NAME:brew five drinks of maple wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:MAPLE:SAP_BUCKET]
 		[UNROTTEN]
@@ -2468,7 +2464,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_MAPLE_SAP_BUCKET]
-	[NAME:brew a barrel/pot of maple wine]
+	[NAME:brew a barrel of maple wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:MAPLE:SAP_BUCKET]
 		[UNROTTEN]
@@ -2487,7 +2483,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_MUSHROOM_HELMET_PLUMP_STRUCTURAL]
-	[NAME:brew some dwarven whiskey]
+	[NAME:brew one drink of dwarven whiskey]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:STRUCTURAL]
 		[UNROTTEN]
@@ -2500,12 +2496,11 @@ reaction_aa_brewing
 		[PRODUCT_TO_CONTAINER:barrel/pot]
 		[PRODUCT_DIMENSION:150]
 	[PRODUCT:100:1:SEEDS:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:SEED]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_MUSHROOM_HELMET_PLUMP_STRUCTURAL]
-	[NAME:brew five dwarven whiskey]
+	[NAME:brew five drinks of dwarven whiskey]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:STRUCTURAL]
 		[UNROTTEN]
@@ -2519,12 +2514,11 @@ reaction_aa_brewing
 		[PRODUCT_DIMENSION:150]
 	[PRODUCT:100:1:SEEDS:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:SEED]
 	[MAX_MULTIPLIER:1]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_MUSHROOM_HELMET_PLUMP_STRUCTURAL]
-	[NAME:brew a barrel/pot of dwarven whiskey]
+	[NAME:brew a barrel of dwarven whiskey]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:STRUCTURAL]
 		[UNROTTEN]
@@ -2538,13 +2532,12 @@ reaction_aa_brewing
 		[PRODUCT_DIMENSION:150]
 	[PRODUCT:100:20:SEEDS:NONE:PLANT_MAT:MUSHROOM_HELMET_PLUMP:SEED]
 	[MAX_MULTIPLIER:1]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
 		[SKILL_IP:400]
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_MUSKMELON_FRUIT]
-	[NAME:brew some muskmelon wine]
+	[NAME:brew one drink of muskmelon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MUSKMELON:FRUIT]
 		[UNROTTEN]
@@ -2562,7 +2555,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_MUSKMELON_FRUIT]
-	[NAME:brew five muskmelon wine]
+	[NAME:brew five drinks of muskmelon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:MUSKMELON:FRUIT]
 		[UNROTTEN]
@@ -2581,7 +2574,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_MUSKMELON_FRUIT]
-	[NAME:brew a barrel/pot of muskmelon wine]
+	[NAME:brew a barrel of muskmelon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:MUSKMELON:FRUIT]
 		[UNROTTEN]
@@ -2601,7 +2594,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_OATS_STRUCTURAL]
-	[NAME:brew some oat beer]
+	[NAME:brew one drink of oat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:OATS:STRUCTURAL]
 		[UNROTTEN]
@@ -2619,7 +2612,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_OATS_STRUCTURAL]
-	[NAME:brew five oat beer]
+	[NAME:brew five drinks of oat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:OATS:STRUCTURAL]
 		[UNROTTEN]
@@ -2638,7 +2631,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_OATS_STRUCTURAL]
-	[NAME:brew a barrel/pot of oat beer]
+	[NAME:brew a barrel of oat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:OATS:STRUCTURAL]
 		[UNROTTEN]
@@ -2658,7 +2651,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PALM_SAP_BUCKET]
-	[NAME:brew some palm wine]
+	[NAME:brew one drink of palm wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:PALM:SAP_BUCKET]
 		[UNROTTEN]
@@ -2675,7 +2668,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PALM_SAP_BUCKET]
-	[NAME:brew five palm wine]
+	[NAME:brew five drinks of palm wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:PALM:SAP_BUCKET]
 		[UNROTTEN]
@@ -2693,7 +2686,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PALM_SAP_BUCKET]
-	[NAME:brew a barrel/pot of palm wine]
+	[NAME:brew a barrel of palm wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:SAP_BUCKET:PLANT_MAT:PALM:SAP_BUCKET]
 		[UNROTTEN]
@@ -2712,7 +2705,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PAPAYA_FRUIT]
-	[NAME:brew some papaya wine]
+	[NAME:brew one drink of papaya wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PAPAYA:FRUIT]
 		[UNROTTEN]
@@ -2729,7 +2722,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PAPAYA_FRUIT]
-	[NAME:brew five papaya wine]
+	[NAME:brew five drinks of papaya wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PAPAYA:FRUIT]
 		[UNROTTEN]
@@ -2747,7 +2740,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PAPAYA_FRUIT]
-	[NAME:brew a barrel/pot of papaya wine]
+	[NAME:brew a barrel of papaya wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PAPAYA:FRUIT]
 		[UNROTTEN]
@@ -2766,7 +2759,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PARSNIP_STRUCTURAL]
-	[NAME:brew some parsnip wine]
+	[NAME:brew one drink of parsnip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PARSNIP:STRUCTURAL]
 		[UNROTTEN]
@@ -2783,7 +2776,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PARSNIP_STRUCTURAL]
-	[NAME:brew five parsnip wine]
+	[NAME:brew five drinks of parsnip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PARSNIP:STRUCTURAL]
 		[UNROTTEN]
@@ -2801,7 +2794,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PARSNIP_STRUCTURAL]
-	[NAME:brew a barrel/pot of parsnip wine]
+	[NAME:brew a barrel of parsnip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:PARSNIP:STRUCTURAL]
 		[UNROTTEN]
@@ -2820,7 +2813,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PASSION_FRUIT_FRUIT]
-	[NAME:brew some passion fruit wine]
+	[NAME:brew one drink of passion fruit wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PASSION_FRUIT:FRUIT]
 		[UNROTTEN]
@@ -2838,7 +2831,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PASSION_FRUIT_FRUIT]
-	[NAME:brew five passion fruit wine]
+	[NAME:brew five drinks of passion fruit wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PASSION_FRUIT:FRUIT]
 		[UNROTTEN]
@@ -2857,7 +2850,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PASSION_FRUIT_FRUIT]
-	[NAME:brew a barrel/pot of passion fruit wine]
+	[NAME:brew a barrel of passion fruit wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PASSION_FRUIT:FRUIT]
 		[UNROTTEN]
@@ -2877,7 +2870,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PEACH_FRUIT]
-	[NAME:brew some peach cider]
+	[NAME:brew one drink of peach cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEACH:FRUIT]
 		[UNROTTEN]
@@ -2894,7 +2887,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PEACH_FRUIT]
-	[NAME:brew five peach cider]
+	[NAME:brew five drinks of peach cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEACH:FRUIT]
 		[UNROTTEN]
@@ -2912,7 +2905,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PEACH_FRUIT]
-	[NAME:brew a barrel/pot of peach cider]
+	[NAME:brew a barrel of peach cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PEACH:FRUIT]
 		[UNROTTEN]
@@ -2931,7 +2924,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PEAR_FRUIT]
-	[NAME:brew some perry]
+	[NAME:brew one drink of perry]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEAR:FRUIT]
 		[UNROTTEN]
@@ -2948,7 +2941,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PEAR_FRUIT]
-	[NAME:brew five perry]
+	[NAME:brew five drinks of perry]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PEAR:FRUIT]
 		[UNROTTEN]
@@ -2966,7 +2959,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PEAR_FRUIT]
-	[NAME:brew a barrel/pot of perry]
+	[NAME:brew a barrel of perry]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PEAR:FRUIT]
 		[UNROTTEN]
@@ -2985,7 +2978,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PEARL_MILLET_STRUCTURAL]
-	[NAME:brew some pearl millet beer]
+	[NAME:brew one drink of pearl millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PEARL_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -3003,7 +2996,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PEARL_MILLET_STRUCTURAL]
-	[NAME:brew five pearl millet beer]
+	[NAME:brew five drinks of pearl millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PEARL_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -3022,7 +3015,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PEARL_MILLET_STRUCTURAL]
-	[NAME:brew a barrel/pot of pearl millet beer]
+	[NAME:brew a barrel of pearl millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:PEARL_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -3042,7 +3035,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PENDANT_AMARANTH_STRUCTURAL]
-	[NAME:brew some pendant amaranth beer]
+	[NAME:brew one drink of pendant amaranth beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PENDANT_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
@@ -3060,7 +3053,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PENDANT_AMARANTH_STRUCTURAL]
-	[NAME:brew five pendant amaranth beer]
+	[NAME:brew five drinks of pendant amaranth beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:PENDANT_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
@@ -3079,7 +3072,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PENDANT_AMARANTH_STRUCTURAL]
-	[NAME:brew a barrel/pot of pendant amaranth beer]
+	[NAME:brew a barrel of pendant amaranth beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:PENDANT_AMARANTH:STRUCTURAL]
 		[UNROTTEN]
@@ -3099,7 +3092,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PERSIMMON_FRUIT]
-	[NAME:brew some persimmon wine]
+	[NAME:brew one drink of persimmon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PERSIMMON:FRUIT]
 		[UNROTTEN]
@@ -3116,7 +3109,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PERSIMMON_FRUIT]
-	[NAME:brew five persimmon wine]
+	[NAME:brew five drinks of persimmon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PERSIMMON:FRUIT]
 		[UNROTTEN]
@@ -3134,7 +3127,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PERSIMMON_FRUIT]
-	[NAME:brew a barrel/pot of persimmon wine]
+	[NAME:brew a barrel of persimmon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PERSIMMON:FRUIT]
 		[UNROTTEN]
@@ -3153,7 +3146,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PINEAPPLE_FRUIT]
-	[NAME:brew some pineapple wine]
+	[NAME:brew one drink of pineapple wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PINEAPPLE:FRUIT]
 		[UNROTTEN]
@@ -3171,7 +3164,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PINEAPPLE_FRUIT]
-	[NAME:brew five pineapple wine]
+	[NAME:brew five drinks of pineapple wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PINEAPPLE:FRUIT]
 		[UNROTTEN]
@@ -3190,7 +3183,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PINEAPPLE_FRUIT]
-	[NAME:brew a barrel/pot of pineapple wine]
+	[NAME:brew a barrel of pineapple wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PINEAPPLE:FRUIT]
 		[UNROTTEN]
@@ -3210,7 +3203,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_PLUM_FRUIT]
-	[NAME:brew some plum wine]
+	[NAME:brew one drink of plum wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PLUM:FRUIT]
 		[UNROTTEN]
@@ -3227,7 +3220,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_PLUM_FRUIT]
-	[NAME:brew five plum wine]
+	[NAME:brew five drinks of plum wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:PLUM:FRUIT]
 		[UNROTTEN]
@@ -3245,7 +3238,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_PLUM_FRUIT]
-	[NAME:brew a barrel/pot of plum wine]
+	[NAME:brew a barrel of plum wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:PLUM:FRUIT]
 		[UNROTTEN]
@@ -3264,7 +3257,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_POD_SWEET_STRUCTURAL]
-	[NAME:brew some dwarven rum]
+	[NAME:brew one drink of dwarven rum]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POD_SWEET:STRUCTURAL]
 		[UNROTTEN]
@@ -3277,12 +3270,12 @@ reaction_aa_brewing
 		[PRODUCT_TO_CONTAINER:barrel/pot]
 		[PRODUCT_DIMENSION:150]
 	[PRODUCT:100:1:SEEDS:NONE:PLANT_MAT:POD_SWEET:SEED]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
+		[SKILL_IP:36]  1.2x exp
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_POD_SWEET_STRUCTURAL]
-	[NAME:brew five dwarven rum]
+	[NAME:brew five drinks of dwarven rum]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POD_SWEET:STRUCTURAL]
 		[UNROTTEN]
@@ -3296,12 +3289,12 @@ reaction_aa_brewing
 		[PRODUCT_DIMENSION:150]
 	[PRODUCT:100:1:SEEDS:NONE:PLANT_MAT:POD_SWEET:SEED]
 	[MAX_MULTIPLIER:1]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
+		[SKILL_IP:36]  1.2x exp
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_POD_SWEET_STRUCTURAL]
-	[NAME:brew a barrel/pot of dwarven rum]
+	[NAME:brew a barrel of dwarven rum]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:POD_SWEET:STRUCTURAL]
 		[UNROTTEN]
@@ -3315,13 +3308,12 @@ reaction_aa_brewing
 		[PRODUCT_DIMENSION:150]
 	[PRODUCT:100:20:SEEDS:NONE:PLANT_MAT:POD_SWEET:SEED]
 	[MAX_MULTIPLIER:1]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:BREWING]
-		[SKILL_IP:400]
+		[SKILL_IP:480]  1.2x exp
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_POMEGRANATE_FRUIT]
-	[NAME:brew some pomegranate wine]
+	[NAME:brew one drink of pomegranate wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:POMEGRANATE:FRUIT]
 		[UNROTTEN]
@@ -3340,7 +3332,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_POMEGRANATE_FRUIT]
-	[NAME:brew five pomegranate wine]
+	[NAME:brew five drinks of pomegranate wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:POMEGRANATE:FRUIT]
 		[UNROTTEN]
@@ -3360,7 +3352,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_POMEGRANATE_FRUIT]
-	[NAME:brew a barrel/pot of pomegranate wine]
+	[NAME:brew a barrel of pomegranate wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:POMEGRANATE:FRUIT]
 		[UNROTTEN]
@@ -3381,7 +3373,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_POTATO_STRUCTURAL]
-	[NAME:brew some potato wine]
+	[NAME:brew one drink of potato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POTATO:STRUCTURAL]
 		[UNROTTEN]
@@ -3401,7 +3393,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_POTATO_STRUCTURAL]
-	[NAME:brew five potato wine]
+	[NAME:brew five drinks of potato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:POTATO:STRUCTURAL]
 		[UNROTTEN]
@@ -3422,7 +3414,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_POTATO_STRUCTURAL]
-	[NAME:brew a barrel/pot of potato wine]
+	[NAME:brew a barrel of potato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:POTATO:STRUCTURAL]
 		[UNROTTEN]
@@ -3444,7 +3436,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_QUINOA_STRUCTURAL]
-	[NAME:brew some quinoa beer]
+	[NAME:brew one drink of quinoa beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:QUINOA:STRUCTURAL]
 		[UNROTTEN]
@@ -3462,7 +3454,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_QUINOA_STRUCTURAL]
-	[NAME:brew five quinoa beer]
+	[NAME:brew five drinks of quinoa beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:QUINOA:STRUCTURAL]
 		[UNROTTEN]
@@ -3481,7 +3473,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_QUINOA_STRUCTURAL]
-	[NAME:brew a barrel/pot of quinoa beer]
+	[NAME:brew a barrel of quinoa beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:QUINOA:STRUCTURAL]
 		[UNROTTEN]
@@ -3501,7 +3493,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_RADISH_STRUCTURAL]
-	[NAME:brew some radish wine]
+	[NAME:brew one drink of radish wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RADISH:STRUCTURAL]
 		[UNROTTEN]
@@ -3518,7 +3510,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_RADISH_STRUCTURAL]
-	[NAME:brew five radish wine]
+	[NAME:brew five drinks of radish wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RADISH:STRUCTURAL]
 		[UNROTTEN]
@@ -3536,7 +3528,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_RADISH_STRUCTURAL]
-	[NAME:brew a barrel/pot of radish wine]
+	[NAME:brew a barrel of radish wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:RADISH:STRUCTURAL]
 		[UNROTTEN]
@@ -3555,7 +3547,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_RAMBUTAN_FRUIT]
-	[NAME:brew some rambutan wine]
+	[NAME:brew one drink of rambutan wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RAMBUTAN:FRUIT]
 		[UNROTTEN]
@@ -3572,7 +3564,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_RAMBUTAN_FRUIT]
-	[NAME:brew five rambutan wine]
+	[NAME:brew five drinks of rambutan wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RAMBUTAN:FRUIT]
 		[UNROTTEN]
@@ -3590,7 +3582,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_RAMBUTAN_FRUIT]
-	[NAME:brew a barrel/pot of rambutan wine]
+	[NAME:brew a barrel of rambutan wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:RAMBUTAN:FRUIT]
 		[UNROTTEN]
@@ -3609,7 +3601,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_RASPBERRY_FRUIT]
-	[NAME:brew some raspberry wine]
+	[NAME:brew one drink of raspberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RASPBERRY:FRUIT]
 		[UNROTTEN]
@@ -3627,7 +3619,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_RASPBERRY_FRUIT]
-	[NAME:brew five raspberry wine]
+	[NAME:brew five drinks of raspberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:RASPBERRY:FRUIT]
 		[UNROTTEN]
@@ -3646,7 +3638,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_RASPBERRY_FRUIT]
-	[NAME:brew a barrel/pot of raspberry wine]
+	[NAME:brew a barrel of raspberry wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:RASPBERRY:FRUIT]
 		[UNROTTEN]
@@ -3666,7 +3658,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_REED_ROPE_STRUCTURAL]
-	[NAME:brew some river spirits]
+	[NAME:brew one drink of river spirits]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:REED_ROPE:STRUCTURAL]
 		[UNROTTEN]
@@ -3684,7 +3676,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_REED_ROPE_STRUCTURAL]
-	[NAME:brew five river spirits]
+	[NAME:brew five drinks of river spirits]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:REED_ROPE:STRUCTURAL]
 		[UNROTTEN]
@@ -3703,7 +3695,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_REED_ROPE_STRUCTURAL]
-	[NAME:brew a barrel/pot of river spirits]
+	[NAME:brew a barrel of river spirits]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:REED_ROPE:STRUCTURAL]
 		[UNROTTEN]
@@ -3723,7 +3715,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_RICE_STRUCTURAL]
-	[NAME:brew some rice beer]
+	[NAME:brew one drink of rice beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RICE:STRUCTURAL]
 		[UNROTTEN]
@@ -3743,7 +3735,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_RICE_STRUCTURAL]
-	[NAME:brew five rice beer]
+	[NAME:brew five drinks of rice beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RICE:STRUCTURAL]
 		[UNROTTEN]
@@ -3764,7 +3756,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_RICE_STRUCTURAL]
-	[NAME:brew a barrel/pot of rice beer]
+	[NAME:brew a barrel of rice beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:RICE:STRUCTURAL]
 		[UNROTTEN]
@@ -3786,7 +3778,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_ROOT_MUCK_STRUCTURAL]
-	[NAME:brew some swamp whiskey]
+	[NAME:brew one drink of swamp whiskey]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:ROOT_MUCK:STRUCTURAL]
 		[UNROTTEN]
@@ -3804,7 +3796,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_ROOT_MUCK_STRUCTURAL]
-	[NAME:brew five swamp whiskey]
+	[NAME:brew five drinks of swamp whiskey]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:ROOT_MUCK:STRUCTURAL]
 		[UNROTTEN]
@@ -3823,7 +3815,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_ROOT_MUCK_STRUCTURAL]
-	[NAME:brew a barrel/pot of swamp whiskey]
+	[NAME:brew a barrel of swamp whiskey]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:ROOT_MUCK:STRUCTURAL]
 		[UNROTTEN]
@@ -3843,7 +3835,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_RYE_STRUCTURAL]
-	[NAME:brew some rye beer]
+	[NAME:brew one drink of rye beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RYE:STRUCTURAL]
 		[UNROTTEN]
@@ -3861,7 +3853,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_RYE_STRUCTURAL]
-	[NAME:brew five rye beer]
+	[NAME:brew five drinks of rye beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:RYE:STRUCTURAL]
 		[UNROTTEN]
@@ -3880,7 +3872,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_RYE_STRUCTURAL]
-	[NAME:brew a barrel/pot of rye beer]
+	[NAME:brew a barrel of rye beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:RYE:STRUCTURAL]
 		[UNROTTEN]
@@ -3900,7 +3892,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SAGUARO_FRUIT]
-	[NAME:brew some saguaro wine]
+	[NAME:brew one drink of saguaro wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAGUARO:FRUIT]
 		[UNROTTEN]
@@ -3917,7 +3909,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SAGUARO_FRUIT]
-	[NAME:brew five saguaro wine]
+	[NAME:brew five drinks of saguaro wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAGUARO:FRUIT]
 		[UNROTTEN]
@@ -3935,7 +3927,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SAGUARO_FRUIT]
-	[NAME:brew a barrel/pot of saguaro wine]
+	[NAME:brew a barrel of saguaro wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:SAGUARO:FRUIT]
 		[UNROTTEN]
@@ -3954,7 +3946,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SAND_PEAR_FRUIT]
-	[NAME:brew some sand pear cider]
+	[NAME:brew one drink of sand pear cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAND_PEAR:FRUIT]
 		[UNROTTEN]
@@ -3971,7 +3963,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SAND_PEAR_FRUIT]
-	[NAME:brew five sand pear cider]
+	[NAME:brew five drinks of sand pear cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:SAND_PEAR:FRUIT]
 		[UNROTTEN]
@@ -3989,7 +3981,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SAND_PEAR_FRUIT]
-	[NAME:brew a barrel/pot of sand pear cider]
+	[NAME:brew a barrel of sand pear cider]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:SAND_PEAR:FRUIT]
 		[UNROTTEN]
@@ -4008,7 +4000,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SINGLE-GRAIN_WHEAT_STRUCTURAL]
-	[NAME:brew some single-grain wheat beer]
+	[NAME:brew one drink of single-grain wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SINGLE-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4026,7 +4018,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SINGLE-GRAIN_WHEAT_STRUCTURAL]
-	[NAME:brew five single-grain wheat beer]
+	[NAME:brew five drinks of single-grain wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SINGLE-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4045,7 +4037,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SINGLE-GRAIN_WHEAT_STRUCTURAL]
-	[NAME:brew a barrel/pot of single-grain wheat beer]
+	[NAME:brew a barrel of single-grain wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SINGLE-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4065,7 +4057,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SLIVER_BARB_STRUCTURAL]
-	[NAME:brew some gutter cruor]
+	[NAME:brew one drink of gutter cruor]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SLIVER_BARB:STRUCTURAL]
 		[UNROTTEN]
@@ -4083,7 +4075,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SLIVER_BARB_STRUCTURAL]
-	[NAME:brew five gutter cruor]
+	[NAME:brew five drinks of gutter cruor]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SLIVER_BARB:STRUCTURAL]
 		[UNROTTEN]
@@ -4102,7 +4094,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SLIVER_BARB_STRUCTURAL]
-	[NAME:brew a barrel/pot of gutter cruor]
+	[NAME:brew a barrel of gutter cruor]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SLIVER_BARB:STRUCTURAL]
 		[UNROTTEN]
@@ -4122,7 +4114,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SOFT_WHEAT_STRUCTURAL]
-	[NAME:brew some soft wheat beer]
+	[NAME:brew one drink of soft wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SOFT_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4140,7 +4132,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SOFT_WHEAT_STRUCTURAL]
-	[NAME:brew five soft wheat beer]
+	[NAME:brew five drinks of soft wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SOFT_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4159,7 +4151,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SOFT_WHEAT_STRUCTURAL]
-	[NAME:brew a barrel/pot of soft wheat beer]
+	[NAME:brew a barrel of soft wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SOFT_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4179,7 +4171,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SORGHUM_PANICLE]
-	[NAME:brew some sorghum beer]
+	[NAME:brew one drink of sorghum beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:SORGHUM:PANICLE]
 		[UNROTTEN]
@@ -4197,7 +4189,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SORGHUM_PANICLE]
-	[NAME:brew five sorghum beer]
+	[NAME:brew five drinks of sorghum beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:PANICLE:PLANT_MAT:SORGHUM:PANICLE]
 		[UNROTTEN]
@@ -4216,7 +4208,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SORGHUM_PANICLE]
-	[NAME:brew a barrel/pot of sorghum beer]
+	[NAME:brew a barrel of sorghum beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:PANICLE:PLANT_MAT:SORGHUM:PANICLE]
 		[UNROTTEN]
@@ -4236,7 +4228,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SPELT_STRUCTURAL]
-	[NAME:brew some spelt beer]
+	[NAME:brew one drink of spelt beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SPELT:STRUCTURAL]
 		[UNROTTEN]
@@ -4254,7 +4246,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SPELT_STRUCTURAL]
-	[NAME:brew five spelt beer]
+	[NAME:brew five drinks of spelt beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SPELT:STRUCTURAL]
 		[UNROTTEN]
@@ -4273,7 +4265,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SPELT_STRUCTURAL]
-	[NAME:brew a barrel/pot of spelt beer]
+	[NAME:brew a barrel of spelt beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SPELT:STRUCTURAL]
 		[UNROTTEN]
@@ -4293,7 +4285,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_SWEET_POTATO_STRUCTURAL]
-	[NAME:brew some sweet potato wine]
+	[NAME:brew one drink of sweet potato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SWEET_POTATO:STRUCTURAL]
 		[UNROTTEN]
@@ -4313,7 +4305,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_SWEET_POTATO_STRUCTURAL]
-	[NAME:brew five sweet potato wine]
+	[NAME:brew five drinks of sweet potato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:SWEET_POTATO:STRUCTURAL]
 		[UNROTTEN]
@@ -4334,7 +4326,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_SWEET_POTATO_STRUCTURAL]
-	[NAME:brew a barrel/pot of sweet potato wine]
+	[NAME:brew a barrel of sweet potato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:SWEET_POTATO:STRUCTURAL]
 		[UNROTTEN]
@@ -4356,7 +4348,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_TEA_TEA_LEAVES]
-	[NAME:brew some tea]
+	[NAME:brew one drink of tea]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:TEA_LEAVES:PLANT_MAT:TEA:TEA_LEAVES]
 		[UNROTTEN]
@@ -4373,7 +4365,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_TEA_TEA_LEAVES]
-	[NAME:brew five tea]
+	[NAME:brew five drinks of tea]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:TEA_LEAVES:PLANT_MAT:TEA:TEA_LEAVES]
 		[UNROTTEN]
@@ -4391,7 +4383,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_TEA_TEA_LEAVES]
-	[NAME:brew a barrel/pot of tea]
+	[NAME:brew a barrel of tea]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:TEA_LEAVES:PLANT_MAT:TEA:TEA_LEAVES]
 		[UNROTTEN]
@@ -4410,7 +4402,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_TEFF_STRUCTURAL]
-	[NAME:brew some teff beer]
+	[NAME:brew one drink of teff beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TEFF:STRUCTURAL]
 		[UNROTTEN]
@@ -4428,7 +4420,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_TEFF_STRUCTURAL]
-	[NAME:brew five teff beer]
+	[NAME:brew five drinks of teff beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TEFF:STRUCTURAL]
 		[UNROTTEN]
@@ -4447,7 +4439,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_TEFF_STRUCTURAL]
-	[NAME:brew a barrel/pot of teff beer]
+	[NAME:brew a barrel of teff beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TEFF:STRUCTURAL]
 		[UNROTTEN]
@@ -4467,7 +4459,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_TOMATO_FRUIT]
-	[NAME:brew some tomato wine]
+	[NAME:brew one drink of tomato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:TOMATO:FRUIT]
 		[UNROTTEN]
@@ -4487,7 +4479,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_TOMATO_FRUIT]
-	[NAME:brew five tomato wine]
+	[NAME:brew five drinks of tomato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:TOMATO:FRUIT]
 		[UNROTTEN]
@@ -4508,7 +4500,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_TOMATO_FRUIT]
-	[NAME:brew a barrel/pot of tomato wine]
+	[NAME:brew a barrel of tomato wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:TOMATO:FRUIT]
 		[UNROTTEN]
@@ -4530,7 +4522,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_TUBER_BLOATED_STRUCTURAL]
-	[NAME:brew some tuber beer]
+	[NAME:brew one drink of tuber beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:STRUCTURAL]
 		[UNROTTEN]
@@ -4548,7 +4540,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_TUBER_BLOATED_STRUCTURAL]
-	[NAME:brew five tuber beer]
+	[NAME:brew five drinks of tuber beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:STRUCTURAL]
 		[UNROTTEN]
@@ -4567,7 +4559,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_TUBER_BLOATED_STRUCTURAL]
-	[NAME:brew a barrel/pot of tuber beer]
+	[NAME:brew a barrel of tuber beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TUBER_BLOATED:STRUCTURAL]
 		[UNROTTEN]
@@ -4587,7 +4579,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_TURNIP_STRUCTURAL]
-	[NAME:brew some turnip wine]
+	[NAME:brew one drink of turnip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TURNIP:STRUCTURAL]
 		[UNROTTEN]
@@ -4606,7 +4598,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_TURNIP_STRUCTURAL]
-	[NAME:brew five turnip wine]
+	[NAME:brew five drinks of turnip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TURNIP:STRUCTURAL]
 		[UNROTTEN]
@@ -4626,7 +4618,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_TURNIP_STRUCTURAL]
-	[NAME:brew a barrel/pot of turnip wine]
+	[NAME:brew a barrel of turnip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TURNIP:STRUCTURAL]
 		[UNROTTEN]
@@ -4647,7 +4639,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_TWO-GRAIN_WHEAT_STRUCTURAL]
-	[NAME:brew some two-grain wheat beer]
+	[NAME:brew one drink of two-grain wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TWO-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4665,7 +4657,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_TWO-GRAIN_WHEAT_STRUCTURAL]
-	[NAME:brew five two-grain wheat beer]
+	[NAME:brew five drinks of two-grain wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:TWO-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4684,7 +4676,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_TWO-GRAIN_WHEAT_STRUCTURAL]
-	[NAME:brew a barrel/pot of two-grain wheat beer]
+	[NAME:brew a barrel of two-grain wheat beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:TWO-GRAIN_WHEAT:STRUCTURAL]
 		[UNROTTEN]
@@ -4704,7 +4696,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_VINE_WHIP_STRUCTURAL]
-	[NAME:brew some whip wine]
+	[NAME:brew one drink of whip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:VINE_WHIP:STRUCTURAL]
 		[UNROTTEN]
@@ -4722,7 +4714,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_VINE_WHIP_STRUCTURAL]
-	[NAME:brew five whip wine]
+	[NAME:brew five drinks of whip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:VINE_WHIP:STRUCTURAL]
 		[UNROTTEN]
@@ -4741,7 +4733,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_VINE_WHIP_STRUCTURAL]
-	[NAME:brew a barrel/pot of whip wine]
+	[NAME:brew a barrel of whip wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:VINE_WHIP:STRUCTURAL]
 		[UNROTTEN]
@@ -4761,7 +4753,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_WATERMELON_FRUIT]
-	[NAME:brew some watermelon wine]
+	[NAME:brew one drink of watermelon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:WATERMELON:FRUIT]
 		[UNROTTEN]
@@ -4779,7 +4771,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_WATERMELON_FRUIT]
-	[NAME:brew five watermelon wine]
+	[NAME:brew five drinks of watermelon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:FRUIT:PLANT_MAT:WATERMELON:FRUIT]
 		[UNROTTEN]
@@ -4798,7 +4790,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_WATERMELON_FRUIT]
-	[NAME:brew a barrel/pot of watermelon wine]
+	[NAME:brew a barrel of watermelon wine]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:FRUIT:PLANT_MAT:WATERMELON:FRUIT]
 		[UNROTTEN]
@@ -4818,7 +4810,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_WEED_RAT_LEAF]
-	[NAME:brew some sewer brew]
+	[NAME:brew one drink of sewer brew]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:LEAVES:PLANT_MAT:WEED_RAT:LEAF]
 		[UNROTTEN]
@@ -4835,7 +4827,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_WEED_RAT_LEAF]
-	[NAME:brew five sewer brew]
+	[NAME:brew five drinks of sewer brew]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:1:PLANT_GROWTH:LEAVES:PLANT_MAT:WEED_RAT:LEAF]
 		[UNROTTEN]
@@ -4853,7 +4845,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_WEED_RAT_LEAF]
-	[NAME:brew a barrel/pot of sewer brew]
+	[NAME:brew a barrel of sewer brew]
 	[BUILDING:STILL:NONE]
 	[REAGENT:growth:20:PLANT_GROWTH:LEAVES:PLANT_MAT:WEED_RAT:LEAF]
 		[UNROTTEN]
@@ -4872,7 +4864,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_WHITE_MILLET_STRUCTURAL]
-	[NAME:brew some white millet beer]
+	[NAME:brew one drink of white millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:WHITE_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -4890,7 +4882,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_WHITE_MILLET_STRUCTURAL]
-	[NAME:brew five white millet beer]
+	[NAME:brew five drinks of white millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:1:PLANT:NONE:PLANT_MAT:WHITE_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -4909,7 +4901,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_WHITE_MILLET_STRUCTURAL]
-	[NAME:brew a barrel/pot of white millet beer]
+	[NAME:brew a barrel of white millet beer]
 	[BUILDING:STILL:NONE]
 	[REAGENT:plant:20:PLANT:NONE:PLANT_MAT:WHITE_MILLET:STRUCTURAL]
 		[UNROTTEN]
@@ -4929,7 +4921,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FULL_BARRELS]
 
 [REACTION:AA_BREW_DRINKS_FROM_HONEY_BEE_HONEY]
-	[NAME:brew some mead]
+	[NAME:brew one drink of mead]
 	[BUILDING:STILL:NONE]
 	[REAGENT:honey:150:LIQUID_MISC:NONE:CREATURE_MAT:HONEY_BEE:HONEY]
 		[UNROTTEN]
@@ -4950,7 +4942,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_SOME_DRINKS]
 
 [REACTION:AA_BREW_FIVE_DRINKS_FROM_HONEY_BEE_HONEY]
-	[NAME:brew five mead]
+	[NAME:brew five drinks of mead]
 	[BUILDING:STILL:NONE]
 	[REAGENT:honey:150:LIQUID_MISC:NONE:CREATURE_MAT:HONEY_BEE:HONEY]
 		[UNROTTEN]
@@ -4972,7 +4964,7 @@ reaction_aa_brewing
 	[CATEGORY:BREW_FIVE_DRINKS]
 
 [REACTION:AA_BREW_BARREL_FROM_HONEY_BEE_HONEY]
-	[NAME:brew a barrel/pot of mead]
+	[NAME:brew a barrel of mead]
 	[BUILDING:STILL:NONE]
 	[REAGENT:honey:3000:LIQUID_MISC:NONE:CREATURE_MAT:HONEY_BEE:HONEY]
 		[UNROTTEN]

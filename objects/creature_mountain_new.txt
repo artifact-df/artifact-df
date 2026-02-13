@@ -23,6 +23,8 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:FOREST_TAIGA]
 	[BIOME:MOUNTAIN]
 	[FREQUENCY:20]{+}
+	[TRAINABLE]{+}
+	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[BONECARN]
 	[BENIGN][PRONE_TO_RAGE:10]
 	[GRASSTRAMPLE:0]
@@ -144,9 +146,9 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:wolverine man:wolverine men:wolverine man]
 	[DESCRIPTION:A person with the head and tail of a wolverine.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'w']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -169,15 +171,15 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:giant wolverine:giant wolverines:giant wolverine]
 	[GENERAL_CHILD_NAME:giant wolverine kit:giant wolverine kits]
 	[DESCRIPTION:A large, terrifying monster the shape of a wolverine.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[TRAINABLE]{+}
 	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:tenacity]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:657:438:219:1900:2900] 40 kph
@@ -309,9 +311,9 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:chinchilla man:chinchilla men:chinchilla man]
 	[DESCRIPTION:A hairy person with the head and tail of a chinchilla.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:3:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -341,6 +343,7 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:fur]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:657:438:219:1900:2900] 40 kph

@@ -72,7 +72,7 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
 	[CV_REMOVE_TAG:ORIENTATION]{+	should restore orientations to default 5/20/75
-	[CV_REMOVE_TAG:APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+  same as above
+	[CV_REMOVE_TAG:ANIMAL_ORIENTATIONS]{+  same as above
 	[CV_REMOVE_TAG:GRAZER]{+         Revision: animal people ought to be able to eat normal food.}
 	[CV_REMOVE_TAG:STANDARD_GRAZER]{+}
 	[CV_REMOVE_TAG:SPECIFIC_FOOD]{+  Revision: adventurers that depend on specific plants to survive are difficult to play.}
@@ -80,19 +80,20 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:EGG_MATERIAL]{+}
 	[CV_REMOVE_TAG:EGG_SIZE]{+}
 	[CV_REMOVE_TAG:CLUTCH_SIZE]{+}
-	[CV_REMOVE_TAG:MILKABLE]{+
-	[CV_REMOVE_TAG:NATURAL]{+
-	[CV_REMOVE_TAG:NOTHOUGHT]{+
-	[CV_REMOVE_TAG:DIVE_HUNTS_VERMIN]{+
-	[CV_REMOVE_TAG:NOSMELLYROT]{+
-	[CV_REMOVE_TAG:HUNTS_VERMIN]{+
-	[CV_REMOVE_TAG:PACK_ANIMAL]{+
-	[CV_REMOVE_TAG:WAGON_PULLER]{+
-	[CV_REMOVE_TAG:VERMIN_BITE]{+
-	[CV_REMOVE_TAG:VERMIN_MICRO]{+
-	[CV_REMOVE_TAG:VERMIN_NOFISH]{+
-	[CV_REMOVE_TAG:VERMIN_NOROAM]{+
-	[CV_REMOVE_TAG:BEACH_FREQUENCY]{+
+	[CV_REMOVE_TAG:MILKABLE]{+}
+	[CV_REMOVE_TAG:NATURAL]{+}
+	[CV_REMOVE_TAG:NOTHOUGHT]{+}
+	[CV_REMOVE_TAG:DIVE_HUNTS_VERMIN]{+}
+	[CV_REMOVE_TAG:NOSMELLYROT]{+}
+	[CV_REMOVE_TAG:HUNTS_VERMIN]{+}
+	[CV_REMOVE_TAG:PACK_ANIMAL]{+}
+	[CV_REMOVE_TAG:WAGON_PULLER]{+}
+	[CV_REMOVE_TAG:VERMIN_BITE]{+}
+	[CV_REMOVE_TAG:VERMIN_MICRO]{+}
+	[CV_REMOVE_TAG:VERMIN_NOFISH]{+}
+	[CV_REMOVE_TAG:VERMIN_NOROAM]{+}
+	[CV_REMOVE_TAG:BEACH_FREQUENCY]{+}
+	[CV_REMOVE_TAG:HOMEOTHERM]{+}
 	[CV_REMOVE_TAG:SWIMS_INNATE]{+    Revision: converts innate to learned.}
 	[CV_NEW_TAG:SWIMS_LEARNED]{+
 	[CV_CONVERT_TAG]{+                                      Revision: humanoid head features.}
@@ -260,6 +261,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_TARGET:SCALE_NOLEATHER_TEMPLATE]
 		[CVCT_REPLACEMENT:SCALE_TEMPLATE]
 	[CV_NEW_TAG:LARGE_ROAMING]
+	[CV_REMOVE_TAG:GOOD]{+  just in case.}
+	[CV_REMOVE_TAG:EVIL]{+}
 	[CV_NEW_TAG:SAVAGE]
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
 		[CV_NEW_TAG:GRAVITATE_BODY_SIZE:72000]{:70000  Revision: animal people are slightly larger than humans.}
@@ -280,9 +283,28 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CV_NEW_TAG:CDI:TARGET_RANGE:B:1]
 		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:B:1]
 		[CV_NEW_TAG:CDI:WAIT_PERIOD:20]
-	[CV_NEW_TAG:MULTIPLE_LITTER_RARE]{+  Revision: they're humanoid; they give birth like humans.}
-	[CV_NEW_TAG:CHILD:18]{+              Revision: animal people live long lives, so give them children by default at age 18.}
-	[CV_NEW_TAG:SUPERNATURAL]{+          Revision: prevent animal people from becoming werebeasts or vampires.  This fixes insects turning into mammals and makes their mercenaries more valuable.}
+	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]{+    Revision: animal people can now sweat, cry and spit.}
+	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:TEARS:TEARS_TEMPLATE]{+
+	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SPIT:SPIT_TEMPLATE]{+
+	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:SWEAT:LIQUID:BY_CATEGORY:ALL:SKIN:EXERTION]{+
+	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:TEARS:LIQUID:BY_CATEGORY:EYE:ALL:EXTREME_EMOTION]{+
+	[CV_NEW_TAG:CAN_DO_INTERACTION:MATERIAL_EMISSION]{+    Revision: animal people can now spit.}
+	    [CV_NEW_TAG:CDI:TOKEN:SPIT]{+
+		[CV_NEW_TAG:CDI:ADV_NAME:Spit]{+
+		[CV_NEW_TAG:CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]{+
+		[CV_NEW_TAG:CDI:USAGE_HINT:TORMENT]{+
+		[CV_NEW_TAG:CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]{+
+		[CV_NEW_TAG:CDI:MATERIAL:LOCAL_CREATURE_MAT:SPIT:LIQUID_GLOB]{+
+		[CV_NEW_TAG:CDI:VERB:spit:spits:NA]{+
+		[CV_NEW_TAG:CDI:TARGET:C:LINE_OF_SIGHT]{+
+		[CV_NEW_TAG:CDI:TARGET_RANGE:C:15]{+
+		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:C:1]{+
+		[CV_NEW_TAG:CDI:WAIT_PERIOD:30]{+
+	[CV_NEW_TAG:HOMEOTHERM:10067]{+  Revision: animal people should have a homeotherm, same as other civ creatures.}
+	[CV_NEW_TAG:CHILD:18]{+      Revision: animal people live long lives, so give them children by default at age 18.}
+	[CV_NEW_TAG:BABY:1]{+        Revision: animal people are missing this tag, all civ creatures have it.}
+	[CV_NEW_TAG:SELECT_CASTE:FEMALE]{+}
+		[CV_NEW_TAG:MULTIPLE_LITTER_RARE]{+  Revision: they're humanoid; they give birth like humans.}
 	[CV_NEW_TAG:MANNERISM_HEAD:head]{+   Revision: animal people now have mannerisms, like other humanoids.}
 	[CV_NEW_TAG:MANNERISM_EYES:eyes]{+
 	[CV_NEW_TAG:MANNERISM_MOUTH:mouth]{+
@@ -297,42 +319,26 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:MANNERISM_BREATH]{+
 	[CV_NEW_TAG:MANNERISM_POSTURE]{+
 	[CV_NEW_TAG:MANNERISM_STRETCH]{+
-	[CV_NEW_TAG:PERSONALITY:BASHFUL:0:45:85]{+  Revision: some weighted personalities.}
-	[CV_NEW_TAG:PERSONALITY:TOLERANT:5:55:100]{+
-	[CV_NEW_TAG:PERSONALITY:ENVY_PROPENSITY:0:45:85]{+  Revision: these make necromancers less likely.}
-	[CV_NEW_TAG:PERSONALITY:ANXIETY_PROPENSITY:0:45:85]{+
-	[CV_NEW_TAG:PERSONALITY:STRESS_VULNERABILITY:0:45:85]{+
-	[CV_NEW_TAG:PERSONALITY:VANITY:0:45:85]{+
-	[CV_NEW_TAG:PERSONALITY:AMBITION:0:45:85]{+
+	[CV_NEW_TAG:PERSONALITY:BASHFUL:5:40:85]{+              Revision: animal people don't care about being nude.}
+	[CV_NEW_TAG:PERSONALITY:TOLERANT:10:55:100]{+           Revision: some weighted personalities.}
+	[CV_NEW_TAG:PERSONALITY:ENVY_PROPENSITY:0:45:95]{+      Revision: these make necromancers less likely.}
+	[CV_NEW_TAG:PERSONALITY:ANXIETY_PROPENSITY:0:45:95]{+
+	[CV_NEW_TAG:PERSONALITY:STRESS_VULNERABILITY:0:45:95]{+
+	[CV_NEW_TAG:PERSONALITY:VANITY:0:45:95]{+
+	[CV_NEW_TAG:PERSONALITY:AMBITION:0:45:95]{+
 	[CV_NEW_TAG:PERSONALITY:HOPEFUL:5:55:100]{+
 	[CV_NEW_TAG:PERSONALITY:CURIOUS:5:55:100]{+
 	[CV_NEW_TAG:PERSONALITY:BRAVERY:5:55:100]{+
 	[CV_NEW_TAG:CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]{+}
 	[CV_NEW_TAG:CREATURE_CLASS:ANIMAL_PERSON]{+}
-	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]{+    Revision: animal people can now sweat, cry and spit.}
-	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:TEARS:TEARS_TEMPLATE]{+
-	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SPIT:SPIT_TEMPLATE]{+
-	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:SWEAT:LIQUID:BY_CATEGORY:ALL:SKIN:EXERTION]{+
-	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:TEARS:LIQUID:BY_CATEGORY:EYE:ALL:EXTREME_EMOTION]{+
-	[CV_NEW_TAG:CAN_DO_INTERACTION:MATERIAL_EMISSION]{+    Revision: animal people can now spit.}
-	    [CV_NEW_TAG:CDI:TOKEN:SPIT]
-		[CV_NEW_TAG:CDI:ADV_NAME:Spit]
-		[CV_NEW_TAG:CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]
-		[CV_NEW_TAG:CDI:USAGE_HINT:TORMENT]
-		[CV_NEW_TAG:CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]
-		[CV_NEW_TAG:CDI:MATERIAL:LOCAL_CREATURE_MAT:SPIT:LIQUID_GLOB]
-		[CV_NEW_TAG:CDI:VERB:spit:spits:NA]
-		[CV_NEW_TAG:CDI:TARGET:C:LINE_OF_SIGHT]
-		[CV_NEW_TAG:CDI:TARGET_RANGE:C:15]
-		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:C:1]
-		[CV_NEW_TAG:CDI:WAIT_PERIOD:30]
 	[CV_REMOVE_TAG:BODY_APPEARANCE_MODIFIER]{+         Revision: animal peoples height and broadness varies like other civ creatures.}
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
 	[CV_REMOVE_TAG:FREQUENCY]{+}
-	[CV_NEW_TAG:FREQUENCY:10]{+                        Revision: a high frequency should hopefully allow them to be absorbed into civs easier.}
+	[CV_NEW_TAG:FREQUENCY:25]{+                        Revision: a high frequency should hopefully allow them to be absorbed into civs easier.}
+	[CV_NEW_TAG:FANCIFUL]{+                            Revision: animal people should be counted as fanciful creatures.}
 	[CV_NEW_TAG:SKILL_RATES:75:10:18:18]{+             Revision: animal people learn all skills at 75% rate but rust slower.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:BITE:125]{+           Revision: animal people should learn these skills faster than normal.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:GRASP_STRIKE:125]{+
@@ -405,24 +411,25 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
 	[CV_REMOVE_TAG:ORIENTATION]{+	should restore orientations to default 5/20/75
-	[CV_REMOVE_TAG:APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+  same as above
+	[CV_REMOVE_TAG:ANIMAL_ORIENTATIONS]{+  same as above
 	[CV_REMOVE_TAG:LAYS_EGGS]{+      Revision: egg laying is broken for civilized humanoids (10209).}
 	[CV_REMOVE_TAG:EGG_MATERIAL]{+}
 	[CV_REMOVE_TAG:EGG_SIZE]{+}
 	[CV_REMOVE_TAG:CLUTCH_SIZE]{+}
-	[CV_REMOVE_TAG:MILKABLE]{+
-	[CV_REMOVE_TAG:NATURAL]{+
-	[CV_REMOVE_TAG:NOTHOUGHT]{+
-	[CV_REMOVE_TAG:DIVE_HUNTS_VERMIN]{+
-	[CV_REMOVE_TAG:NOSMELLYROT]{+
-	[CV_REMOVE_TAG:HUNTS_VERMIN]{+
-	[CV_REMOVE_TAG:PACK_ANIMAL]{+
-	[CV_REMOVE_TAG:WAGON_PULLER]{+
-	[CV_REMOVE_TAG:VERMIN_BITE]{+
-	[CV_REMOVE_TAG:VERMIN_MICRO]{+
-	[CV_REMOVE_TAG:VERMIN_NOFISH]{+
-	[CV_REMOVE_TAG:VERMIN_NOROAM]{+
-	[CV_REMOVE_TAG:BEACH_FREQUENCY]{+
+	[CV_REMOVE_TAG:MILKABLE]{+}
+	[CV_REMOVE_TAG:NATURAL]{+}
+	[CV_REMOVE_TAG:NOTHOUGHT]{+}
+	[CV_REMOVE_TAG:DIVE_HUNTS_VERMIN]{+}
+	[CV_REMOVE_TAG:NOSMELLYROT]{+}
+	[CV_REMOVE_TAG:HUNTS_VERMIN]{+}
+	[CV_REMOVE_TAG:PACK_ANIMAL]{+}
+	[CV_REMOVE_TAG:WAGON_PULLER]{+}
+	[CV_REMOVE_TAG:VERMIN_BITE]{+}
+	[CV_REMOVE_TAG:VERMIN_MICRO]{+}
+	[CV_REMOVE_TAG:VERMIN_NOFISH]{+}
+	[CV_REMOVE_TAG:VERMIN_NOROAM]{+}
+	[CV_REMOVE_TAG:BEACH_FREQUENCY]{+}
+	[CV_REMOVE_TAG:HOMEOTHERM]{+}
 	[CV_REMOVE_TAG:SWIMS_INNATE]{+    Revision: converts innate to learned.}
 	[CV_NEW_TAG:SWIMS_LEARNED]{+
 	[CV_CONVERT_TAG]{+                                      Revision: humanoid head features.}
@@ -568,6 +575,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_TARGET:SCALE_NOLEATHER_TEMPLATE]
 		[CVCT_REPLACEMENT:SCALE_TEMPLATE]
 	[CV_NEW_TAG:LARGE_ROAMING]
+	[CV_REMOVE_TAG:GOOD]{+  just in case.}
+	[CV_REMOVE_TAG:EVIL]{+}
 	[CV_NEW_TAG:SAVAGE]
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
 		[CV_NEW_TAG:GRAVITATE_BODY_SIZE:72000]{:70000  Revision: animal people are slightly larger than humans.}
@@ -588,9 +597,28 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CV_NEW_TAG:CDI:TARGET_RANGE:B:1]
 		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:B:1]
 		[CV_NEW_TAG:CDI:WAIT_PERIOD:20]
-	[CV_NEW_TAG:MULTIPLE_LITTER_RARE]{+  Revision: they're humanoid; they give birth like humans.}
-	[CV_NEW_TAG:CHILD:18]{+              Revision: animal people live long lives, so give them children by default at age 18.}
-	[CV_NEW_TAG:SUPERNATURAL]{+          Revision: prevent animal people from becoming werebeasts or vampires.  This fixes insects turning into mammals and makes their mercenaries more valuable.}
+	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]{+    Revision: animal people can now sweat, cry and spit.}
+	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:TEARS:TEARS_TEMPLATE]{+
+	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SPIT:SPIT_TEMPLATE]{+
+	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:SWEAT:LIQUID:BY_CATEGORY:ALL:SKIN:EXERTION]{+
+	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:TEARS:LIQUID:BY_CATEGORY:EYE:ALL:EXTREME_EMOTION]{+
+	[CV_NEW_TAG:CAN_DO_INTERACTION:MATERIAL_EMISSION]{+    Revision: animal people can now spit.}
+	    [CV_NEW_TAG:CDI:TOKEN:SPIT]{+
+		[CV_NEW_TAG:CDI:ADV_NAME:Spit]{+
+		[CV_NEW_TAG:CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]{+
+		[CV_NEW_TAG:CDI:USAGE_HINT:TORMENT]{+
+		[CV_NEW_TAG:CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]{+
+		[CV_NEW_TAG:CDI:MATERIAL:LOCAL_CREATURE_MAT:SPIT:LIQUID_GLOB]{+
+		[CV_NEW_TAG:CDI:VERB:spit:spits:NA]{+
+		[CV_NEW_TAG:CDI:TARGET:C:LINE_OF_SIGHT]{+
+		[CV_NEW_TAG:CDI:TARGET_RANGE:C:15]{+
+		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:C:1]{+
+		[CV_NEW_TAG:CDI:WAIT_PERIOD:30]{+
+	[CV_NEW_TAG:HOMEOTHERM:10067]{+  Revision: animal people should have a homeotherm, same as other civ creatures.}
+	[CV_NEW_TAG:CHILD:18]{+      Revision: animal people live long lives, so give them children by default at age 18.}
+	[CV_NEW_TAG:BABY:1]{+        Revision: animal people are missing this tag, all civ creatures have it.}
+	[CV_NEW_TAG:SELECT_CASTE:FEMALE]{+}
+		[CV_NEW_TAG:MULTIPLE_LITTER_RARE]{+  Revision: they're humanoid; they give birth like humans.}
 	[CV_NEW_TAG:MANNERISM_HEAD:head]{+   Revision: animal people now have mannerisms, like other humanoids.}
 	[CV_NEW_TAG:MANNERISM_EYES:eyes]{+
 	[CV_NEW_TAG:MANNERISM_MOUTH:mouth]{+
@@ -601,40 +629,26 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:MANNERISM_BREATH]{+
 	[CV_NEW_TAG:MANNERISM_POSTURE]{+
 	[CV_NEW_TAG:MANNERISM_STRETCH]{+
-	[CV_NEW_TAG:PERSONALITY:BASHFUL:0:40:80]{+  Revision: some weighted personalities.}
-	[CV_NEW_TAG:PERSONALITY:TOLERANT:20:60:100]{+
-	[CV_NEW_TAG:PERSONALITY:ENVY_PROPENSITY:0:45:80]{+  Revision: these make necromancers less likely.}
-	[CV_NEW_TAG:PERSONALITY:ANXIETY_PROPENSITY:0:45:80]{+
-	[CV_NEW_TAG:PERSONALITY:STRESS_VULNERABILITY:0:45:80]{+
-	[CV_NEW_TAG:PERSONALITY:VANITY:0:45:80]{+
-	[CV_NEW_TAG:PERSONALITY:AMBITION:0:40:80]{+
-	[CV_NEW_TAG:PERSONALITY:HOPEFUL:10:55:100]{+
+	[CV_NEW_TAG:PERSONALITY:BASHFUL:5:40:85]{+              Revision: animal people don't care about being nude.}
+	[CV_NEW_TAG:PERSONALITY:TOLERANT:10:55:100]{+           Revision: some weighted personalities.}
+	[CV_NEW_TAG:PERSONALITY:ENVY_PROPENSITY:0:45:95]{+      Revision: these make necromancers less likely.}
+	[CV_NEW_TAG:PERSONALITY:ANXIETY_PROPENSITY:0:45:95]{+
+	[CV_NEW_TAG:PERSONALITY:STRESS_VULNERABILITY:0:45:95]{+
+	[CV_NEW_TAG:PERSONALITY:VANITY:0:45:95]{+
+	[CV_NEW_TAG:PERSONALITY:AMBITION:0:45:95]{+
+	[CV_NEW_TAG:PERSONALITY:HOPEFUL:5:55:100]{+
+	[CV_NEW_TAG:PERSONALITY:CURIOUS:5:55:100]{+
+	[CV_NEW_TAG:PERSONALITY:BRAVERY:5:55:100]{+
 	[CV_NEW_TAG:CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]{+}
 	[CV_NEW_TAG:CREATURE_CLASS:ANIMAL_PERSON]{+}
-	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]{+    Revision: animal people can now sweat, cry and spit.}
-	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:TEARS:TEARS_TEMPLATE]{+
-	[CV_NEW_TAG:USE_MATERIAL_TEMPLATE:SPIT:SPIT_TEMPLATE]{+
-	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:SWEAT:LIQUID:BY_CATEGORY:ALL:SKIN:EXERTION]{+
-	[CV_NEW_TAG:SECRETION:LOCAL_CREATURE_MAT:TEARS:LIQUID:BY_CATEGORY:EYE:ALL:EXTREME_EMOTION]{+
-	[CV_NEW_TAG:CAN_DO_INTERACTION:MATERIAL_EMISSION]{+    Revision: animal people can now spit.}
-	    [CV_NEW_TAG:CDI:TOKEN:SPIT]
-		[CV_NEW_TAG:CDI:ADV_NAME:Spit]
-		[CV_NEW_TAG:CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]
-		[CV_NEW_TAG:CDI:USAGE_HINT:TORMENT]
-		[CV_NEW_TAG:CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]
-		[CV_NEW_TAG:CDI:MATERIAL:LOCAL_CREATURE_MAT:SPIT:LIQUID_GLOB]
-		[CV_NEW_TAG:CDI:VERB:spit:spits:NA]
-		[CV_NEW_TAG:CDI:TARGET:C:LINE_OF_SIGHT]
-		[CV_NEW_TAG:CDI:TARGET_RANGE:C:15]
-		[CV_NEW_TAG:CDI:MAX_TARGET_NUMBER:C:1]
-		[CV_NEW_TAG:CDI:WAIT_PERIOD:30]
 	[CV_REMOVE_TAG:BODY_APPEARANCE_MODIFIER]{+         Revision: animal peoples height and broadness varies like other civ creatures.}
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
 	[CV_REMOVE_TAG:FREQUENCY]{+}
-	[CV_NEW_TAG:FREQUENCY:10]{+                        Revision: a high frequency should hopefully allow them to be absorbed into civs easier.}
+	[CV_NEW_TAG:FREQUENCY:25]{+                        Revision: a high frequency should hopefully allow them to be absorbed into civs easier.}
+	[CV_NEW_TAG:FANCIFUL]{+                            Revision: animal people should be counted as fanciful creatures.}
 	[CV_NEW_TAG:SKILL_RATES:75:10:18:18]{+             Revision: animal people learn all skills at 75% rate but rust slower.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:BITE:125]{+           Revision: animal people should learn these skills faster than normal.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:GRASP_STRIKE:125]{+
@@ -1026,7 +1040,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:SAVAGE]
 	[CV_NEW_TAG:DIFFICULTY:4]{+                             Revision: slaying giant creatures should be a tough quest.}
 	[CV_REMOVE_TAG:FREQUENCY]{+}
-	[CV_NEW_TAG:FREQUENCY:10]{+}
+	[CV_NEW_TAG:FREQUENCY:25]{+}
+	[CV_NEW_TAG:FANCIFUL]{+                            Revision: giant creatures should be counted as fanciful creatures.}
 	[CV_NEW_TAG:NATURAL_SKILL:BITE:3]{+}
 	[CV_NEW_TAG:NATURAL_SKILL:STANCE_STRIKE:3]{+}
 	[CV_NEW_TAG:NATURAL_SKILL:DODGING:1]{+}

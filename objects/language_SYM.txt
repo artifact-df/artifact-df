@@ -2786,6 +2786,7 @@ Misc verbs/adjectives
 	[S_WORD:PRAISE]
 	[S_WORD:VOICE]
 	[S_WORD:ARMOK] the god of blood himself
+	[S_WORD:CREED]
 	+ expanded dictionary
 	[S_WORD:DEFIANCE]
 	[S_WORD:CONFRONT]
@@ -3720,6 +3721,7 @@ Misc verbs/adjectives
 	[S_WORD:SOUTH]
 	[S_WORD:EAST]
 	[S_WORD:WEST]
+	[S_WORD:CREED]
 	+ expanded dictionary
 	[S_WORD:REFUGE]
 	[S_WORD:HAVEN]

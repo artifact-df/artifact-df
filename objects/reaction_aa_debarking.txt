@@ -3,11 +3,12 @@ reaction_aa_debarking
 [OBJECT:REACTION]
 
 [REACTION:AA_DEBARK_LOGS]
-	[NAME:Debark logs]
+	[NAME:debark logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:BYPRODUCT_MAT]
 		[NOT_PRESSED]
+		[ANY_PLANT_MATERIAL]
 	[PRODUCT:100:1:WOOD:NONE:GET_MATERIAL_FROM_REAGENT:log:NONE]
 		[PRODUCT_PRESSED]
 	[PRODUCT:100:5:GLOB:NONE:GET_MATERIAL_FROM_REAGENT:log:BYPRODUCT_MAT]
@@ -20,7 +21,7 @@ reaction_aa_debarking
 		[CATEGORY_DESCRIPTION:Reactions for using any available plants or growths]
 
 [REACTION:AA_DEBARK_ALDER_WOOD_LOGS]
-	[NAME:Debark alder logs]
+	[NAME:debark alder logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:ALDER:WOOD]
 		[NOT_PRESSED]
@@ -30,11 +31,11 @@ reaction_aa_debarking
 		[PRODUCT_PASTE]
 	[FORTRESS_MODE_ENABLED]
 	[CATEGORY:DEBARK_LOGS]
-		[CATEGORY_NAME:Debark logs]
+		[CATEGORY_NAME:debark logs]
 		[CATEGORY_DESCRIPTION:Remove bark from logs to use in other products]
 
 [REACTION:AA_DEBARK_APPLE_WOOD_LOGS]
-	[NAME:Debark apple wood logs]
+	[NAME:debark apple wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:APPLE:WOOD]
 		[NOT_PRESSED]
@@ -46,7 +47,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_APRICOT_WOOD_LOGS]
-	[NAME:Debark apricot wood logs]
+	[NAME:debark apricot wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:APRICOT:WOOD]
 		[NOT_PRESSED]
@@ -58,7 +59,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_ASH_WOOD_LOGS]
-	[NAME:Debark ash logs]
+	[NAME:debark ash logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:ASH:WOOD]
 		[NOT_PRESSED]
@@ -70,7 +71,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_BAYBERRY_WOOD_LOGS]
-	[NAME:Debark bayberry wood logs]
+	[NAME:debark bayberry wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:BAYBERRY:WOOD]
 		[NOT_PRESSED]
@@ -82,7 +83,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_BIRCH_WOOD_LOGS]
-	[NAME:Debark birch logs]
+	[NAME:debark birch logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:BIRCH:WOOD]
 		[NOT_PRESSED]
@@ -94,7 +95,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_CHERRY_WOOD_LOGS]
-	[NAME:Debark cherry wood logs]
+	[NAME:debark cherry wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:CHERRY:WOOD]
 		[NOT_PRESSED]
@@ -106,7 +107,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_CHESTNUT_WOOD_LOGS]
-	[NAME:Debark chestnut logs]
+	[NAME:debark chestnut logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:CHESTNUT:WOOD]
 		[NOT_PRESSED]
@@ -118,7 +119,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_GUAVA_WOOD_LOGS]
-	[NAME:Debark guava wood logs]
+	[NAME:debark guava wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:GUAVA:WOOD]
 		[NOT_PRESSED]
@@ -130,7 +131,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_HAZEL_WOOD_LOGS]
-	[NAME:Debark hazel wood logs]
+	[NAME:debark hazel wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:HAZEL:WOOD]
 		[NOT_PRESSED]
@@ -142,7 +143,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_LARCH_WOOD_LOGS]
-	[NAME:Debark larch logs]
+	[NAME:debark larch logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:LARCH:WOOD]
 		[NOT_PRESSED]
@@ -154,7 +155,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_MAHOGANY_WOOD_LOGS]
-	[NAME:Debark mahogany logs]
+	[NAME:debark mahogany logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:MAHOGANY:WOOD]
 		[NOT_PRESSED]
@@ -166,7 +167,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_MANGROVE_WOOD_LOGS]
-	[NAME:Debark mangrove logs]
+	[NAME:debark mangrove logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:MANGROVE:WOOD]
 		[NOT_PRESSED]
@@ -178,7 +179,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_MAPLE_WOOD_LOGS]
-	[NAME:Debark maple logs]
+	[NAME:debark maple logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:MAPLE:WOOD]
 		[NOT_PRESSED]
@@ -190,7 +191,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_OAK_WOOD_LOGS]
-	[NAME:Debark oak logs]
+	[NAME:debark oak logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:OAK:WOOD]
 		[NOT_PRESSED]
@@ -202,7 +203,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_OLIVE_WOOD_LOGS]
-	[NAME:Debark olive wood logs]
+	[NAME:debark olive wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:OLIVE:WOOD]
 		[NOT_PRESSED]
@@ -214,7 +215,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_PEACH_WOOD_LOGS]
-	[NAME:Debark peach wood logs]
+	[NAME:debark peach wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:PEACH:WOOD]
 		[NOT_PRESSED]
@@ -226,7 +227,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_PEAR_WOOD_LOGS]
-	[NAME:Debark pear wood logs]
+	[NAME:debark pear wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:PEAR:WOOD]
 		[NOT_PRESSED]
@@ -238,7 +239,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_PINE_WOOD_LOGS]
-	[NAME:Debark pine logs]
+	[NAME:debark pine logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:PINE:WOOD]
 		[NOT_PRESSED]
@@ -250,7 +251,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_PLUM_WOOD_LOGS]
-	[NAME:Debark plum wood logs]
+	[NAME:debark plum wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:PLUM:WOOD]
 		[NOT_PRESSED]
@@ -262,7 +263,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_POMEGRANATE_WOOD_LOGS]
-	[NAME:Debark pomegranate wood logs]
+	[NAME:debark pomegranate wood logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:POMEGRANATE:WOOD]
 		[NOT_PRESSED]
@@ -274,7 +275,7 @@ reaction_aa_debarking
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:AA_DEBARK_WILLOW_WOOD_LOGS]
-	[NAME:Debark willow logs]
+	[NAME:debark willow logs]
 	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:PLANT_MAT:WILLOW:WOOD]
 		[NOT_PRESSED]

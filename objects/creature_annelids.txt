@@ -78,9 +78,9 @@ creature_annelids
 	[NAME:worm man:worm men:worm man]
 	{CASTE_NAME:worm man:worm men:worm man}
 	[DESCRIPTION:A worm-like creature with the torso of a man.]
-	[POPULATION_NUMBER:5:10]
+	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:80:120]{:60:80
+	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'w']
 	[COLOR:7:0:0]
 	[EXTRAVISION]

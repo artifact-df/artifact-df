@@ -16,29 +16,28 @@ Shield stats by Sver
 
 [ITEM_SHIELD:ITEM_SHIELD_BUCKLER]
 [NAME:buckler:buckler]
-[ARMORLEVEL:1]  not sure who can use it, needs testing
-[BLOCKCHANCE:16]
-[UPSTEP:1]
+[ARMORLEVEL:1]
+[BLOCKCHANCE:12]
+[UPSTEP:0]
 [MATERIAL_SIZE:3] 1 bar
 
 [ITEM_SHIELD:ITEM_SHIELD_SHIELD]
 [NAME:heater shield:heater shield]
-[ARMORLEVEL:2]  bodyguards and lawmen can use it
-[BLOCKCHANCE:20]
-[UPSTEP:2]
+[ARMORLEVEL:3]
+[BLOCKCHANCE:24]
+[UPSTEP:1]
 [MATERIAL_SIZE:6] 2 bars
 
 [ITEM_SHIELD:ITEM_SHIELD_KITE_SPL]
-[NAME:kite shield:kite shields]
+[NAME:kite shield:kite shield]
 [ARMORLEVEL:2]
-[BLOCKCHANCE:24]
+[BLOCKCHANCE:36]
 [UPSTEP:2]
 [MATERIAL_SIZE:9] 3 bars
 
 [ITEM_SHIELD:ITEM_SHIELD_TOWER_SPL]
-[NAME:tower shield:tower shields]
-[ADJECTIVE:heavy]
+[NAME:tower shield:tower shield]
 [ARMORLEVEL:3]
-[BLOCKCHANCE:28]
-[UPSTEP:2]
+[BLOCKCHANCE:50]
+[UPSTEP:3]
 [MATERIAL_SIZE:15] 5 bars

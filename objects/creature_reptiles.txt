@@ -142,6 +142,8 @@ creature_reptiles
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
 	[GO_TO_END]
 	[PREFSTRING:beauty]
@@ -289,13 +291,15 @@ creature_reptiles
 	[CASTE_NAME:giant skink:giant skinks:giant skink]
 	[CHILD:1][GENERAL_CHILD_NAME:juvenile giant skink:juvenile giant skinks]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a skink.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'S']
 	[COLOR:7:0:0]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
 	[GO_TO_END]
@@ -445,13 +449,16 @@ creature_reptiles
 	[CASTE_NAME:giant chameleon:giant chameleons:giant chameleon]
 	[CHILD:1][GENERAL_CHILD_NAME:juvenile giant chameleon:juvenile giant chameleons]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of a chameleon.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'C']
 	[COLOR:2:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
+	[AMBUSHPREDATOR]{+}
 	[GO_TO_END]
 	[PREFSTRING:ability to change color]
 	[PREFSTRING:eyes]
@@ -598,13 +605,15 @@ creature_reptiles
 	[CASTE_NAME:giant anole:giant anoles:giant anole]
 	[CHILD:1][GENERAL_CHILD_NAME:juvenile giant anole:juvenile giant anoles]{+  Revision: taming requires a child tag (bug 7983).}
 	[DESCRIPTION:A large monster in the shape of an anole.]
-	[POPULATION_NUMBER:10:20]
+	[POPULATION_NUMBER:20:40]{:10:20  Revision: increased giant animal populations.}
 	[CLUSTER_NUMBER:1:1]
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:1]
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[LARGE_PREDATOR]{+}
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:ability to change color]
 	[PREFSTRING:dewlaps]
@@ -770,6 +779,7 @@ creature_reptiles
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
+	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:head bobs]
 	[PREFSTRING:dewlaps]

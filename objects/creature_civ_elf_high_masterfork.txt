@@ -21,9 +21,19 @@ creature_civ_elf_high_masterfork
 	[PREFSTRING:vanity]
 	[GNAWER:picked]{+  revision: creature can get out of non-metal cages.}
 	// BASE SKILLS //
-	[NATURAL_SKILL:DISCIPLINE:1]
-	[NATURAL_SKILL:SWIMMING:1]
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
+	--NATURAL_SKILL:DISCIPLINE:1]{+}
+	[NATURAL_SKILL:SWIMMING:1]{+}
+	--NATURAL_SKILL:SITUATIONAL_AWARENESS:1]{+}
+	// RACIAL SKILLS //
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]{+}
+	[NATURAL_SKILL:DODGING:1]{+}
+	[NATURAL_SKILL:DISCIPLINE:2]{+}
+	[NATURAL_SKILL:SPEAR:1]{+}
+	[NATURAL_SKILL:SWORD:1]{+}
+	[NATURAL_SKILL:MELEE_COMBAT:2]{+}
+	[NATURAL_SKILL:FLATTERY:2]{+}
+	[NATURAL_SKILL:LYING:2]{+}
+	--NATURAL_SKILL:INTRIGUE:1]{+}
 	
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:55:100]+   Minor Inclination
@@ -207,11 +217,11 @@ creature_civ_elf_high_masterfork
 	[PHYS_ATT_CAP_PERC:TOUGHNESS:150]{+ reduced toughness cap.}
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:12:0:62000]{:12:0:60000}
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:94:96:98:100:110:116:133]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
-		[APP_MOD_IMPORTANCE:525]{:500  Revision: height is more important than the other descriptors.}
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:80:95:98:100:102:105:120]{:75:95:98:100:102:105:125  Revision: elves are less broad than tall.}
-		[APP_MOD_IMPORTANCE:475]{:500  Revision: broadness is less important than the other descriptors.}
+	[BODY_SIZE:12:0:60000]
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:83:104:107:110:112:115:138]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
+		[APP_MOD_IMPORTANCE:520]{:500  Revision: height is more important than the other descriptors.}
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]
+		[APP_MOD_IMPORTANCE:480]{:500  Revision: broadness is less important than the other descriptors.}
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
 			[APP_MOD_NOUN:glowing eyes:PLURAL]{:eyes:PLURAL
@@ -308,10 +318,8 @@ creature_civ_elf_high_masterfork
 	    { removed latching }
 	[BABY:1]
 	[GENERAL_BABY_NAME:elven baby:elven babies]
-	[BABYNAME:elven baby:elven babies]
-	[CHILD:30]{:18}
+	[CHILD:25]{:18  Revision: elves mature slower than other races.}
 	[GENERAL_CHILD_NAME:elven child:elven children]
-	[CHILDNAME:elven child:elven children]
 	[EQUIPS]
 	[DIURNAL]
 	[SMELL_TRIGGER:10]
@@ -323,6 +331,15 @@ creature_civ_elf_high_masterfork
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2728:2069:1409:675:4000:5700] 13 kph
 	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
+	[SKILL_RATE:SITUATIONAL_AWARENESS:55:NONE:NONE:NONE]{+  Revision: high elves learn these skills faster than normal.}
+	[SKILL_RATE:DODGING:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:DISCIPLINE:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:SPEAR:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:SWORD:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:MELEE_COMBAT:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:FLATTERY:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:LYING:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:INTRIGUE:55:NONE:NONE:NONE]{+
 	[SWIMS_LEARNED]
 	[GRASSTRAMPLE:0]
 	[NO_VEGETATION_PERTURB]
@@ -353,10 +370,29 @@ creature_civ_elf_high_masterfork
 	[SPOUSE_CONVERSION_TARGET]
 	[PROFESSION_NAME:RECRUIT:Ranger:Rangers]
 	[PROFESSION_NAME:MASTER_BOWMAN:Master Ranger:Master Rangers]
-    [PROFESSION_NAME:MASTER_SPEARMAN:Speardancer:Speardancers]
-    [PROFESSION_NAME:MASTER_SWORDSMAN:Bladedancer:Bladedancers]
+    [PROFESSION_NAME:MASTER_SPEARMAN:Speardancer:Speardancers]{+  Revision: elven profession names.}
+    [PROFESSION_NAME:MASTER_SWORDSMAN:Bladedancer:Bladedancers]{+}
+	[PROFESSION_NAME:CRAFTSMAN:crafts elf:crafts elves]{+}
+	[PROFESSION_NAME:FISHERMAN:fisher elf:fisher elves]{+}
+	[PROFESSION_NAME:HAMMERMAN:hammer elf:hammer elves]{+}
+	[PROFESSION_NAME:SPEARMAN:spear elf:spear elves]{+}
+	[PROFESSION_NAME:CROSSBOWMAN:marks elf:marks elves]{+}
+	[PROFESSION_NAME:AXEMAN:axe elf:axe elves]{+}
+	[PROFESSION_NAME:SWORDSMAN:swords elf:swords elves]{+}
+	[PROFESSION_NAME:MACEMAN:mace elf:mace elves]{+}
+	[PROFESSION_NAME:PIKEMAN:pike elf:pike elves]{+}
+	[PROFESSION_NAME:BOWMAN:bow elf:bow elves]{+}
+	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Markself:Elite Markselves]{+}
+	[PROFESSION_NAME:BLOWGUNMAN:gun elf:gun elves]{+}  used by firearms
+	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Elite Gun-elf:Elite Gun-elves]{+}
+	[PROFESSION_NAME:CRIMINAL:exile:exiles]{+}
+	[PROFESSION_NAME:STANDARD:resident:residents]{+}
+	[PROFESSION_NAME:THIEF:scout:scouts]{+}
+	[PROFESSION_NAME:MASTER_THIEF:Veteran Scout:Veteran Scouts]{+}
 	[CASTE:FEMALE]
 		[FEMALE]
+		[ORIENTATION:MALE:5:70:25]
+		[ORIENTATION:FEMALE:90:20:5]
 		[POP_RATIO:1]
 		[BABYNAME:elf baby girl:elven baby girls]
 		[CHILDNAME:elf girl:elven girls]
@@ -375,6 +411,8 @@ creature_civ_elf_high_masterfork
 		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace, beauty and court intrigue.  She has a natural talent of magic.  She does not appear to age.]
 	[CASTE:MALE]
 		[MALE]
+		[ORIENTATION:MALE:90:20:5]
+		[ORIENTATION:FEMALE:5:70:25]
 		[POP_RATIO:1]
 		[BABYNAME:elf baby boy:elven baby boys]
 		[CHILDNAME:elf boy:elven boys]
@@ -401,7 +439,7 @@ creature_civ_elf_high_masterfork
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
 		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
-	[TL_COLOR_MODIFIER:GOLDEN_YELLOW:1:GOLDENROD:1:SAFFRON:1:SILVER:1:WHITE:1]{+  Revision: elves have golden or silver hair.}
+	[TL_COLOR_MODIFIER:GOLDEN_YELLOW:1:GOLDENROD:1:SAFFRON:1:SILVER:2:WHITE:2]{:GOLDEN_YELLOW:1:GOLDENROD:1:MOSS_GREEN:1:ORANGE:1:PUMPKIN:1:RED:1:SAFFRON:1:SCARLET:1:SILVER:1:WHITE:1  Revision: elves have predominantly white/silver hair and shades of gold.}
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
 			[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:50:80:90:100:110:120:150]
@@ -438,4 +476,4 @@ creature_civ_elf_high_masterfork
 				[TLCM_NOUN:skin:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 	[TL_COLOR_MODIFIER:IRIS_EYE_AQUA:1:IRIS_EYE_AQUAMARINE:1:IRIS_EYE_AZURE:1:IRIS_EYE_BLUE:1:IRIS_EYE_CERULEAN:1:IRIS_EYE_DARK_BLUE:1:IRIS_EYE_DARK_GREEN:1:IRIS_EYE_DARK_OLIVE:1:IRIS_EYE_EMERALD:1:IRIS_EYE_FERN_GREEN:1:IRIS_EYE_GREEN:1:IRIS_EYE_JADE:1:IRIS_EYE_LIGHT_BLUE:1:IRIS_EYE_MINT_GREEN:1:IRIS_EYE_MOSS_GREEN:1:IRIS_EYE_OLIVE:1:IRIS_EYE_PALE_BLUE:1:IRIS_EYE_PINE_GREEN:1:IRIS_EYE_SEA_GREEN:1:IRIS_EYE_SKY_BLUE:1:IRIS_EYE_SPRING_GREEN:1:IRIS_EYE_TEAL:1:IRIS_EYE_TURQUOISE:1:IRIS_EYE_AMBER:1:IRIS_EYE_GOLD:1:IRIS_EYE_GOLDEN_YELLOW:1:IRIS_EYE_YELLOW:1]
-				[TLCM_NOUN:glowing eyes:PLURAL]{:eyes:PLURAL
+				[TLCM_NOUN:glowing eyes:PLURAL]{:eyes:PLURAL}
