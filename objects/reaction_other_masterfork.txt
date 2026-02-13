@@ -776,7 +776,7 @@ reaction_other_masterfork
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:GRIND_CARBONATE_STONE_POWDER]  turn 4 flux rocks into 5 powder, +25% efficiency
-	[NAME:grind calcium carbonate rock into powder]
+	[NAME:grind calcium carbonate boulder into powder]
 	[BUILDING:QUERN:NONE]
 	[BUILDING:MILLSTONE:NONE]
 	[REAGENT:calcium carbonate boulder:4:BOULDER:NONE:NONE:NONE]

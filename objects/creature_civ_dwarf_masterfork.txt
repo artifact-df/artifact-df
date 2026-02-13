@@ -258,7 +258,7 @@ creature_civ_dwarf_mfork
 	[BABY:1]
 	[GENERAL_BABY_NAME:dwarven baby:dwarven babies]
 	--BABYNAME:dwarven baby:dwarven babies] moved to castes
-	[CHILD:18]
+	[CHILD:16]{:18}
 	[GENERAL_CHILD_NAME:dwarven child:dwarven children]
 	--CHILDNAME:dwarven child:dwarven children] moved to castes
 	[EQUIPS]

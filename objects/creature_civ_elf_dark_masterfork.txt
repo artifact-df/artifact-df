@@ -229,7 +229,7 @@ creature_civ_elf_dark_masterfork
 	    { removed latching }
 	[BABY:1]
 	[GENERAL_BABY_NAME:elven baby:elven babies]{+}
-	[CHILD:18]
+	[CHILD:25]{:18  Revision: elves mature slower than other races.}
 	[GENERAL_CHILD_NAME:elven child:elven children]{+}
 	[EQUIPS]
 	[CAVE_ADAPT]
