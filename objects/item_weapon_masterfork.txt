@@ -823,7 +823,7 @@ no shot force requirements
 [AIM_DIFFICULTY:1] easier to aim than crossbows
 [LOADED:30:15]
 [INITIATE_SHOT_TIME:1]
-[SHOT_RECOVERY_TIME:1]
+[SHOT_RECOVERY_TIME:0]
 [SHOOT_FORCE:1000]
 no shot force requirements
 [SHOOT_MAXVEL:300]

@@ -100,7 +100,6 @@ creature_subterranean
 		[MALE]
 		[DESCRIPTION:A huge, low-slung reptile with a thick tail and a crushing bite.  His scales are pale and colorless from lack of light; he waits in the darkness to ambush prey.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{:SCALE
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -688,6 +687,8 @@ creature_subterranean
 	[NAME:troglodyte:troglodytes:troglodyte]
 	[CASTE_NAME:troglodyte:troglodytes:troglodyte]
 	[CHILD:10][BABY:1][MULTIPLE_LITTER_RARE]
+	[GENERAL_CHILD_NAME:troglodyte child:troglodyte children]{+}
+	[GENERAL_BABY_NAME:troglodyte baby:troglodyte babies]{+}
 	[CREATURE_TILE:'t'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -883,7 +884,6 @@ creature_subterranean
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[DESCRIPTION:A short and hairy brute with a searching expression and a primitive, almost simian appearance.  Stooped and long-limbed, he searches for food and comfort in the darkness.  He doesn't care that he's naked.  He is quite mischievous.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:AMBER:1:AUBURN:1:BLACK:1:BROWN:1:BUFF:1:BURNT_SIENNA:1:BURNT_UMBER:1:CHARCOAL:1:CHESTNUT:1:CHOCOLATE:1:CINNAMON:1:COPPER:1:DARK_BROWN:1:DARK_CHESTNUT:1:DARK_TAN:1:ECRU:1:FLAX:1:GOLD:1:GOLDEN_YELLOW:1:GOLDENROD:1:LIGHT_BROWN:1:MAHOGANY:1:OCHRE:1:PALE_BROWN:1:PALE_CHESTNUT:1:PUMPKIN:1:RAW_UMBER:1:RUSSET:1:SAFFRON:1:SEPIA:1:TAN:1:TAUPE_DARK:1:TAUPE_GRAY:1:TAUPE_MEDIUM:1:TAUPE_PALE:1:TAUPE_SANDY:1]

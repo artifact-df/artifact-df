@@ -24,7 +24,12 @@ creature_civ_goblin_mfork
 	[NATURAL_SKILL:DISCIPLINE:1]
 	[NATURAL_SKILL:SWIMMING:1]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
-	
+	// RACIAL SKILLS //
+	[NATURAL_SKILL:INTIMIDATION:1]
+	[NATURAL_SKILL:LYING:1]
+	[NATURAL_SKILL:SNEAK:1]
+	[NATURAL_SKILL:DODGING:1]
+
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:25:50]---- Substantial Aversion
 	[PERSONALITY:HATE_PROPENSITY:50:75:100]++++ Substantial Inclination
@@ -112,8 +117,8 @@ creature_civ_goblin_mfork
 			[SYN_NAME:demonic blood burn]
 			[SYN_IMMUNE_CREATURE:GOBLIN:ALL]
 			[SYN_CONTACT]
-			[CE_PAIN:SEV:15:PROB:100:LOCALIZED:VASCULAR_ONLY:RESISTABLE:START:50:PEAK:1000:END:2000]
-			[CE_BLISTERS:SEV:25:PROB:100:LOCALIZED:VASCULAR_ONLY:RESISTABLE:START:50:PEAK:1000:END:2000]
+			[CE_PAIN:SEV:7:PROB:100:LOCALIZED:VASCULAR_ONLY:RESISTABLE:START:50:PEAK:500:END:1000]
+			[CE_BLISTERS:SEV:12:PROB:100:LOCALIZED:VASCULAR_ONLY:RESISTABLE:START:50:PEAK:500:END:1000]
 		[SYNDROME]
 			[SYN_NAME:demonic blood ingestion]
 			[SYN_IMMUNE_CREATURE:GOBLIN:ALL]
@@ -332,6 +337,7 @@ creature_civ_goblin_mfork
 		[FEMALE]
 		--MULTIPLE_LITTER_RARE]
 		[POP_RATIO:4]{+}
+		[LITTERSIZE:2:4]
 		[ORIENTATION:MALE:2:0:98]{+}
 		[ORIENTATION:FEMALE:98:0:2]{+}
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}

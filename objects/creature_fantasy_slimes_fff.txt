@@ -16,6 +16,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:black colour]
 	[CREATURE_CLASS:SLIME]
@@ -118,7 +120,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
-	[SAVAGE]{+}
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:brown colour]
 	[CREATURE_CLASS:SLIME]
@@ -220,7 +223,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
-	[SAVAGE]{+}
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:temperature]
 	[CREATURE_CLASS:SLIME]
@@ -329,7 +333,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
-	[SAVAGE]{+}
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:clear colour]
 	[CREATURE_CLASS:SLIME]
@@ -430,6 +435,7 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
+	[FANCIFUL]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:rainbow pattern]
 	[CREATURE_CLASS:SLIME]
@@ -548,6 +554,7 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
+	[FANCIFUL]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:purple colour]
 	[CREATURE_CLASS:SLIME]
@@ -650,7 +657,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
-	[SAVAGE]{+}
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:green colour]
 	[CREATURE_CLASS:SLIME]
@@ -754,7 +762,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER][AMPHIBIOUS]
-	[SAVAGE]{+}
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:valuable cores]
 	[PREFSTRING:blue colour]
 	[CREATURE_CLASS:SLIME]
@@ -855,7 +864,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
-	[SAVAGE]{+}
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:sandy texture]
 	[PREFSTRING:yellow colour]
 	[PREFSTRING:valuable cores]
@@ -957,6 +967,8 @@ creature_fantasy_slimes_fff
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
 	[MEANDERER]
+	[FANCIFUL]
+	[SAVAGE]
 	[PREFSTRING:heat immunity]
 	[PREFSTRING:red colour]
 	[PREFSTRING:valuable cores]

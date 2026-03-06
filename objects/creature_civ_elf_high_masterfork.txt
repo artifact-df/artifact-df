@@ -57,7 +57,7 @@ creature_civ_elf_high_masterfork
 	[PERSONALITY:BRAVERY:0:55:100]+   Minor Inclination
 	[PERSONALITY:CONFIDENCE:10:60:100]+++ Great Inclination
 	[PERSONALITY:VANITY:10:60:100]+++ Great Inclination
-	[PERSONALITY:AMBITION:0:55:100]+   Minor Inclination
+	[PERSONALITY:AMBITION:0:55:75]+   Minor Inclination * capped
 	[PERSONALITY:GRATITUDE:0:55:100]+   Minor Inclination
 	[PERSONALITY:IMMODESTY:0:45:95]--  Moderate Aversion
 	[PERSONALITY:HUMOR:0:45:95]--  Moderate Aversion

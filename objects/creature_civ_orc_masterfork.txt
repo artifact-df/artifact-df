@@ -12,6 +12,7 @@ creature_civ_orc_masterwork
 	[CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]
 	[CREATURE_CLASS:ORC]
 	[CREATURE_CLASS:EVIL_CREATURE]
+	[EVIL]
 	[INTELLIGENT]
 	[CANOPENDOORS]
 	[TRANCES]
@@ -30,6 +31,8 @@ creature_civ_orc_masterwork
 	[NATURAL_SKILL:INTIMIDATION:1]
 	[NATURAL_SKILL:MELEE_COMBAT:1]
 	[NATURAL_SKILL:DISCIPLINE:2]
+	[NATURAL_SKILL:MILITARY_TACTICS:1]
+	[NATURAL_SKILL:WRESTLING:1]
 
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:40:85]--- Great Aversion
@@ -82,7 +85,6 @@ creature_civ_orc_masterwork
 	[PERSONALITY:IMAGINATION:0:40:85]--- Great Aversion
 	[PERSONALITY:ABSTRACT_INCLINED:0:40:85]--- Great Aversion
 	[PERSONALITY:ART_INCLINED:0:40:85]--- Great Aversion
-	
 	[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE:2TUSKS]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 	[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
@@ -251,7 +253,7 @@ creature_civ_orc_masterwork
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:50:200] orc lifespans can vary wildly but some individuals can get quite old, avg: 125
+	[MAXAGE:90:180] orcs can live about 50% longer than humans
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -311,7 +313,7 @@ creature_civ_orc_masterwork
 	[BABY:1]
 	[GENERAL_BABY_NAME:orcling:orclings]
 	[BABYNAME:orcling:orclings]
-	[CHILD:15]
+	[CHILD:10]
 	[GENERAL_CHILD_NAME:orc child:orc children]
 	[CHILDNAME:orc child:orc children]
 	[HOMEOTHERM:10067]
@@ -358,7 +360,7 @@ creature_civ_orc_masterwork
 		[ORIENTATION:MALE:2:0:98]
 		[ORIENTATION:FEMALE:95:0:5]
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:6:12]
+		[LITTERSIZE:8:16]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]

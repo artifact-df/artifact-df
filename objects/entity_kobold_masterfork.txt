@@ -379,6 +379,7 @@ entity_kobold_masterfork
 		[PUNISHMENT_EXEMPTION]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
+	[VARIABLE_POSITIONS:ALL]{+  Revision: if conquered the ruler can create a custom ruler position. experimental.}
 	[VALUE:LAW:0]
 	[VALUE:LOYALTY:0]
 	[VALUE:FAMILY:0]

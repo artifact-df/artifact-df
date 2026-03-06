@@ -3946,6 +3946,8 @@ Misc verbs/adjectives
 	[S_WORD:SUMMIT]
 	[S_WORD:ANVIL]
 	[S_WORD:PILLAR]
+	[S_WORD:RED]
+	[S_WORD:CRIMSON]
 	+ expanded dictionary
 	[S_WORD:CHIMNEY]
 	[S_WORD:ERUPT]

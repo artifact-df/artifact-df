@@ -126,6 +126,8 @@ creature_next_underground
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 	[CHILD:2]
+	[BABY:1][MULTIPLE_LITTER_RARE]{+}
+	[GENERAL_CHILD_NAME:drunian cub:drunian cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[ALL_ACTIVE]
 	[HOMEOTHERM:10050]
 	[LOW_LIGHT_VISION:10000]
@@ -143,7 +145,6 @@ creature_next_underground
 		[DESCRIPTION:A large, shaggy-furred man that walks on all fours.  He has hands for feet and has a mane that circles his hairless, strangely human face.  He resembles a lion-like ape twisted into a bestial form and unable to stand.  He wanders dark caverns, scavenging and raiding supplies.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -215,6 +216,7 @@ creature_next_underground
 	[NAME:voracious cave crawler:voracious cave crawlers:voracious cave crawler]
 	[CASTE_NAME:voracious cave crawler:voracious cave crawlers:voracious cave crawler]
 	[CREATURE_TILE:'C'][COLOR:1:0:0]
+	[CHILD:1][GENERAL_CHILD_NAME:voracious cave crawler cub:voracious cave crawler cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[LARGE_ROAMING][DIFFICULTY:2]
@@ -282,7 +284,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A huge, wriggling insect with a ravenous appetite.  Hundreds of tiny, carapaced feet move along the bottom of his long body.  His writhing, segmented body is covered in fleshy plates.  In place of a head he has an enormous, toothy maw.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[NO_DIZZINESS]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -292,7 +293,6 @@ creature_next_underground
 		[MULTIPLY_VALUE:4]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:BLIND_CAVE_OGRE]
 	[DESCRIPTION:A large cavern-dwelling humanoid monster.  It has a gaping mouth with many sharp teeth.  It has no eyes and only two digits on each hand and foot.  It emits an aura of fear.]{:A large cavern-dwelling humanoid monster.  It has a gaping mouth with many sharp teeth.  It has no eyes and only two digits on each hand and foot.}
@@ -312,7 +312,6 @@ creature_next_underground
 	[LARGE_PREDATOR][MEANDERER]
 	[CAN_LEARN][SLOW_LEARNER]
 	[GRASSTRAMPLE:20]
-	[SMELL_TRIGGER:25]{+}
 	[BONECARN]
 	[EXTRAVISION]
 	[CAVE_ADAPT]{+}
@@ -389,6 +388,7 @@ creature_next_underground
 		[APP_MOD_IMPORTANCE:520]{+}
 	[MAXAGE:20:30]
 	[CHILD:10][BABY:1][MULTIPLE_LITTER_RARE]
+	[GENERAL_CHILD_NAME:blind cave ogre cub:blind cave ogre cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -424,19 +424,19 @@ creature_next_underground
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
 	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
-	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]              +
-	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]             +
-	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]             +
-	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                 -
-	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]		    --
-	[MENT_ATT_RANGE:LINGUISTIC_ABILITY:0:400:600:750:800:900:1100]		    --
-	[MENT_ATT_RANGE:SOCIAL_AWARENESS:0:400:600:750:800:900:1100]		    --
-	[MENT_ATT_RANGE:EMPATHY:0:0:0:0:0:0:0]                                  unattainable
-		[MENT_ATT_RATES:EMPATHY:NONE:NONE:NONE:NONE]
-	[MENT_ATT_RANGE:MEMORY:0:400:600:750:800:900:1100]		                --
-	[MENT_ATT_RANGE:FOCUS:0:400:600:750:800:900:1100]		                --
-	[MENT_ATT_RANGE:WILLPOWER:150:600:800:900:1000:1100:1500]               -
-	[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+}              +
+	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]{+}             +
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+}             +
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+}                 -
+	[MENT_ATT_RANGE:ANALYTICAL_ABILITY:0:400:600:750:800:900:1100]{+}		   --
+	[MENT_ATT_RANGE:LINGUISTIC_ABILITY:0:400:600:750:800:900:1100]{+}		   --
+	[MENT_ATT_RANGE:SOCIAL_AWARENESS:0:400:600:750:800:900:1100]{+}		       --
+	[MENT_ATT_RANGE:EMPATHY:0:0:0:0:0:0:0]{+}                                  unattainable
+		[MENT_ATT_RATES:EMPATHY:NONE:NONE:NONE:NONE]{+}
+	[MENT_ATT_RANGE:MEMORY:0:400:600:750:800:900:1100]{+}		               --
+	[MENT_ATT_RANGE:FOCUS:0:400:600:750:800:900:1100]{+}		               --
+	[MENT_ATT_RANGE:WILLPOWER:150:600:800:900:1000:1100:1500]{+}               -
+	[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]{+}        ++
 	[NATURAL_SKILL:BITE:4]{+  revision: natural combat skills.}
 	[NATURAL_SKILL:GRASP_STRIKE:4]{+
 	[NATURAL_SKILL:MELEE_COMBAT:4]{+
@@ -444,6 +444,9 @@ creature_next_underground
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:5]{+
 	[NATURAL_SKILL:DISCIPLINE:2]{+
 	[EQUIPS]
+	[SMELL_TRIGGER:30]{+}
+	[ODOR_LEVEL:100]{+}
+	[ODOR_STRING:foulness]{+}
 	[CANOPENDOORS]
 	[ALL_ACTIVE]
 	[HOMEOTHERM:10040]
@@ -461,7 +464,6 @@ creature_next_underground
 		[DESCRIPTION:A large, hairless, and monstrous man with only two digits on each hand and foot.  He has no eyes yet somehow sees; he scarcely seems to have more than a gaping, toothy grin.  Barrel-chested, his neck seems to disappear into his broad shoulders.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -536,7 +538,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A tiny amphibian with a long, gripping tail.  He lives and feeds in dark underground swamp and tower-cap forest.  Playful and lively, he uses his tail for balance as he hops about energetically.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:PALE_BLUE:1]
@@ -551,6 +552,7 @@ creature_next_underground
 	[CASTE_NAME:magma crab:magma crabs:magma crab]
 	[CREATURE_TILE:'C'][COLOR:0:0:1]
 	[PETVALUE:200]
+	[CHILD:1][GENERAL_CHILD_NAME:magma crab hatchling:magma crab hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[NATURAL]
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_LAVA]
@@ -568,6 +570,7 @@ creature_next_underground
 	[SWIMS_INNATE]
 	[FIREIMMUNE]
 	[PET_EXOTIC]{+}
+	[TRAINABLE_WAR]{+}
 	[NOT_BUTCHERABLE]
 	[EXTRAVISION]
 	[CANNOT_JUMP]
@@ -604,7 +607,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A small, rock-eating crab that thrives in extreme heat.  He has clacking pincers and hardened carapace for protection.  He swims through liquid rock on sharp, flightless wings; the magma helps him digest rock.  He spits out the excess as a burning glob, sent with surpring force.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -751,7 +753,6 @@ creature_next_underground
 		[DESCRIPTION:A pint-sized, scaly imp with large claws and horns.  He walks on two legs and is an incredible climber.  While weak and cowardly, he roams the caverns with large numbers of his kind.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:CRIMSON:1]
@@ -766,6 +767,7 @@ creature_next_underground
 	[CASTE_NAME:hungry head:hungry heads:hungry head]
 	[CREATURE_TILE:'h'][COLOR:0:0:1]
 	[PETVALUE:50]
+	[CHILD:1][GENERAL_CHILD_NAME:hungry head cub:hungry head cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[FLIER]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]
@@ -829,7 +831,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A small, gaping, long-toothed mouth that flies in dark caverns on large, bat-like wings.  He lacks eyes, ears, and limbs.  He rests by clinging to rock with his strong wings.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -992,7 +993,6 @@ creature_next_underground
 		[DESCRIPTION:A large, flightless bird that walks on two legs and has great, velvety antlers on his head.  He roams in the dark deep underground and grazes on mushrooms as he walks.  While usually harmless, his natural curiosity can get the best of him sometimes.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1007,7 +1007,6 @@ creature_next_underground
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:HELMET_SNAKE]
 	[DESCRIPTION:A snake-like creature living deep underground.  Its head is covered in armor so that is resembles the head of a dragon.]
@@ -1016,6 +1015,7 @@ creature_next_underground
 	[CREATURE_TILE:'s'][COLOR:7:0:1]
 	[CREATURE_CLASS:POISONOUS]
 	[PETVALUE:50]
+	[CHILD:1][GENERAL_CHILD_NAME:helmet snake hatchling:helmet snake hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
 	[FREQUENCY:30]
@@ -1118,7 +1118,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A medium-sized, aggressive, and poisonous snake with a dragon-like head covered in hardened plates.  He slithers in dark caverns and preys on anything smaller than himself.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -1135,6 +1134,7 @@ creature_next_underground
 	[CASTE_NAME:green devourer:green devourers:green devourer]
 	[CREATURE_TILE:'G'][COLOR:2:0:1]
 	[PETVALUE:200]
+	[GENERAL_CHILD_NAME:green devourer cub:green devourer cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[NATURAL]
 	[LARGE_ROAMING][FREQUENCY:20]{:10
 	[POPULATION_NUMBER:100:200]{:10:20
@@ -1201,7 +1201,6 @@ creature_next_underground
 		[DESCRIPTION:A medium-sized, headless horror that wanders dark caverns on two clawed legs.  Instead of arms he has a pair of tentacles that end in mouths; he uses them to carve into the flesh of his victims with rows of razor-like teeth, then digests their flesh with acid.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -1214,6 +1213,7 @@ creature_next_underground
 	[NAME:rutherer:rutherers:rutherer]
 	[CASTE_NAME:rutherer:rutherers:rutherer]
 	[CHILD:10]
+	[GENERAL_CHILD_NAME:rutherer cub:rutherer cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[CREATURE_TILE:'R'][COLOR:7:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:600]
@@ -1290,7 +1290,6 @@ creature_next_underground
 		[DESCRIPTION:A huge, shaggy-furred monster with tall, pointy ears, a long snout, and an enormous, furry tail.  He makes for a fearsome sight but is actually benign.  He runs deep under the earth on four strong legs and large paws; he whips his long tail about as he passes.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -1305,7 +1304,6 @@ creature_next_underground
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:CREEPY_CRAWLER]
 	[DESCRIPTION:A tiny mass of appendages shaped like fingers that creeps around dark caverns.  It eats with the mouth on the bottom of its strange, starfish-shaped body.  The fingers writhe as it moves; they sometimes pull the thing around and sometimes they pointlessly wriggle.]{:A tiny underground creature made of a mass of appendages resembling human fingers.  It creeps across the ground like a starfish and eats with amouth on the bottom of its body.}
@@ -1361,6 +1359,7 @@ creature_next_underground
 	[NAME:draltha:dralthas:draltha]
 	[CASTE_NAME:draltha:dralthas:draltha]
 	[CHILD:5]
+	[GENERAL_CHILD_NAME:draltha cub:draltha cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[CREATURE_TILE:'D'][COLOR:6:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:500]
@@ -1438,7 +1437,6 @@ creature_next_underground
 		[DESCRIPTION:A large, long-bodied grazer with warm fur, a pointy, narrow snout, floppy ears, and a thick, horse-like mane.  His long legs end in sharp hooves.  He grazes on what meager vegetation he can find deep under the earth; his long neck helps him feed on the tops of tower-cap mushrooms.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:YELLOW:1]
@@ -1453,7 +1451,6 @@ creature_next_underground
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIANT_EARTHWORM]
 	[DESCRIPTION:A gigantic version of its tiny cousin, this long, slimy creature tunnels through the rocks deep underground.]
@@ -1461,6 +1458,7 @@ creature_next_underground
 	[CASTE_NAME:giant earthworm:giant earthworms:giant earthworm]
 	[CREATURE_TILE:'W'][COLOR:7:0:0]
 	[PETVALUE:500]
+	[CHILD:1][GENERAL_CHILD_NAME:giant earthworm hatchling:giant earthworm hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[FREQUENCY:20]
 	[NATURAL][NOBONES]
 	[LARGE_ROAMING]
@@ -1676,7 +1674,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A small, bat-like creature with large wings and the carapaced head of an insect.  His large mandibles clack together as he flies deep underground, and he chitters in an unsettling way.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:DARK_VIOLET:1]
@@ -1751,6 +1748,7 @@ creature_next_underground
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:SECOND]
 	[CHILD:2]
+	[GENERAL_CHILD_NAME:manera cub:manera cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[ALL_ACTIVE]
 	[LOW_LIGHT_VISION:10000]
 	[HOMEOTHERM:10050]
@@ -1767,7 +1765,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A strange, medium-sized creature that crawls along the cavern ceiling with four long, double-jointed arms.  His body looks like an ape-like head with a mouth full of razer-sharp teeth.  He watches in the dark, waiting to drop from above to feast on flesh.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -1871,7 +1868,6 @@ creature_next_underground
 		[DESCRIPTION:A tall, monstrous man with the long body of a naked mole-rat and a man's torso.  Savage and unintelligent, he's more beast than man.  The wrinkles on his hairless skin smooth at his hips and chest.  He has a long, slender, pointy snout, small ears, and many sharp teeth, and his long tail whips about as he wanders the deep caverns.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:PINK:1]
@@ -1983,7 +1979,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A huge, flightless bird of prey with tall, featherless legs, a long neck, and a serrated beak almost as big as his patterned head.  He wanders underground caverns and plucks up unsuspecting victims in the dark.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:PURPLE:1]
@@ -1998,7 +1993,6 @@ creature_next_underground
 		[MULTIPLY_VALUE:4]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:POND_GRABBER]
 	[DESCRIPTION:A small, strange squid-like thing that swims in the calm underground pools.  It has four clawed tentacles and a sharp beak larger than its small body.  It buries itself near the bottom, waiting for its opportunity to strangle and drown something.  It often feeds for weeks on each decaying carcass.]{:A small creature that lives in watery ditches deep underground.  It has a sharp beak and four tentacles with claws at the end.}
@@ -2018,6 +2012,7 @@ creature_next_underground
 	[BONECARN]
 	[PREFSTRING:patience]
 	[CHILD:2]
+	[GENERAL_CHILD_NAME:pond grabber hatchling:pond grabber hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[EXTRAVISION]
 	[CAVE_ADAPT]{+}
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_FEAR]{+  fear inducing presence.}
@@ -2315,7 +2310,6 @@ creature_next_underground
 		[MALE]
 		[DESCRIPTION:A gigantic, pale monster, once a dragon, now adapted to and polluted by the underground.  His maw is full of incredibly long teeth, and his eyes are large enough to penetrate the darkness.  He can no longer breathe fire.  His scales are akin to metal.]{+}
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -2435,6 +2429,7 @@ creature_next_underground
 		[ATTACK_FLAG_CANLATCH]
 	[BABY:1]
 	[CHILD:4]
+	[GENERAL_CHILD_NAME:reacher cub:reacher cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[EQUIPS]
 	[ALL_ACTIVE]
 	[HOMEOTHERM:10030]
@@ -2669,6 +2664,8 @@ creature_next_underground
 		[ATTACK_PRIORITY:SECOND]
 	[BABY:1]
 	[CHILD:12]
+	[GENERAL_CHILD_NAME:gorlak child:gorlak children]{+}
+	[GENERAL_BABY_NAME:gorlak baby:gorlak babies]{+}
 	[EQUIPS]
 	[CANOPENDOORS]
 	[ALL_ACTIVE]
@@ -2695,7 +2692,6 @@ creature_next_underground
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GOLDENROD:1]
@@ -2877,6 +2873,8 @@ creature_next_underground
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[BABY:1]
 	[CHILD:12]
+	[GENERAL_CHILD_NAME:plump helmet child:plump helmet children]{+}
+	[GENERAL_BABY_NAME:plump helmet baby:plump helmet babies]{+}
 	[EQUIPS]
 	[ALL_ACTIVE]
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:750:600:439:1900:2900] 20 kph

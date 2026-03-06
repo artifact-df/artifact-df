@@ -12,7 +12,7 @@ creature_fantasy_flying_fff
 	[PREFSTRING:horns]
 	[PREFSTRING:wings]
 	[VISION_ARC:50:310]
-	[GOOD][SAVAGE]
+	[GOOD]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:15:30]
 	[CLUSTER_NUMBER:3:7]
@@ -863,6 +863,7 @@ creature_fantasy_flying_fff
 	[BENIGN][MEANDERER][PET_EXOTIC]
 	[NATURAL]
 	[FANCIFUL]
+	[GOOD]
 	[TRAINABLE]
 	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
 	[STANDARD_GRAZER]

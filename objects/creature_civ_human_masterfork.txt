@@ -261,7 +261,7 @@ creature_civ_human_masterfork
 		[ORIENTATION:FEMALE:95:4:1]{+}
 		[POP_RATIO:20]{+}
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:2:4]{+}
+		[LITTERSIZE:2:5]{+}
 		[BABYNAME:human baby girl:human babies]{+}
 		[CHILDNAME:human girl:human children]{+}
 		[DESCRIPTION:A medium-sized woman of great ambition and potential.  She looks almost ordinary in a world of strange things.  She toils with others to build villages, kingdoms, trade networks and die in wars.]{+}

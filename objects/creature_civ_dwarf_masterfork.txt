@@ -664,7 +664,7 @@ creature_civ_dwarf_mfork
     [CASTE_PROFESSION_NAME:WOODCRAFTER:woodcrafter*:woodcrafters*]
 	[CASTE_PROFESSION_NAME:WOODWORKER:artisan woodworker:artisan woodworkers]
 	[CASTE_PROFESSION_NAME:STANDARD:carpenters guild*:carpenters guild dwarves*]
-	[DESCRIPTION:*CARPENTERS GUILD* This dwarf is a member of the carpenters guild, an organization of woodworkers, lumberjacks and bowyers. Its not the most popular guild among dwarves, since the work is mostly outdoors, but the fact that elves hate it with a passion makes more then up for it.]
+	[DESCRIPTION:*CARPENTERS GUILD* This dwarf is a member of the carpenters guild, an organization of woodworkers, lumberjacks and bowyers. They're not the most popular guild among dwarves since the work is mostly outdoors, but the fact that the elves hate it with a passion more than makes up for it.]
 	[SKILL_LEARN_RATE:BOWYER:150]
 	[SKILL_LEARN_RATE:CARPENTRY:150]
 	[SKILL_LEARN_RATE:WOODCRAFT:150]

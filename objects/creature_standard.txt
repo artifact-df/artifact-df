@@ -230,7 +230,7 @@ creature_standard
 	[CASTE_NAME:troll:trolls:troll]
 	[CREATURE_TILE:'T'][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
-	[CHILD:20]{:10
+	[CHILD:10]
 	[BABY:1][MULTIPLE_LITTER_RARE]
 	[GENERAL_CHILD_NAME:troll cub:troll cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -983,7 +983,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
 	[SPHERE:FIRE]
 	[SPHERE:WEALTH]
 	[SPHERE:MOUNTAINS]{+}
@@ -1102,7 +1102,7 @@ creature_standard
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years.  Her scales are akin to metal.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
@@ -1114,6 +1114,7 @@ creature_standard
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years.]{+}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1:BLACK:1:GREEN:1:BLUE:1:YELLOW:1:PURPLE:1:SILVER:1:AQUA:1]
@@ -1441,7 +1442,7 @@ creature_standard
 	[CREATURE_TILE:'C'][COLOR:6:0:0]
 	[CREATURE_CLASS:FOOTWEAR_TRACKING_SYMBOL]
 	[MEGABEAST][DIFFICULTY:15] 11 or higher does not get assigned as adv mode quests
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
@@ -1540,7 +1541,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[CAN_LEARN][SLOW_LEARNER][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -1788,6 +1789,7 @@ creature_standard
 		[DESCRIPTION:A gigantic and monstrous overweight humanoid almost unparalleled in size.  They has a hairy, strong body, shaggy hair, and an almost primitive appearance.  They live quietly in a cozy burrow and keeps to themselves.  They steps over fortifications and crushes buildings underfoot, whether they means to or not.  Their great size makes their nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_NAME:giant:giants:giant]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -1867,7 +1869,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2110,6 +2112,7 @@ creature_standard
 		[CHILDNAME:cyclops child:cyclops children]
 		[DESCRIPTION:A giant, monstrous humanoid with leathery, veined skin and a primitive-looking face with one large eye set in their forehead.  They mostly stays in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2189,7 +2192,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2436,6 +2439,7 @@ creature_standard
 		[CHILDNAME:ettin child:ettin children]
 		[DESCRIPTION:A giant and monstrous overweight humanoid with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  They mostly lives in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2515,9 +2519,9 @@ creature_standard
 	[BONECARN]
 	[LARGE_PREDATOR]
 	[SEMIMEGABEAST][DIFFICULTY:6]{:5
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
-	[CAN_LEARN]--CAN_SPEAK][UTTERANCES]
+	[CAN_LEARN][CAN_SPEAK][UTTERANCES]
 	[SLOW_LEARNER]{+}
 	[CANOPENDOORS]
 	[CURIOUSBEAST_GUZZLER]{+}
@@ -2709,7 +2713,7 @@ creature_standard
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[CASTE:FEMALE_CRAZED]
 		[FEMALE]
-		[POP_RATIO:1]{+}
+		[POP_RATIO:5]{+}
 		[MULTIPLE_LITTER_RARE]
 		[CRAZED][ARENA_RESTRICTED]
 		[ORIENTATION:MALE:0:0:1]
@@ -2720,7 +2724,7 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked. She is crazed and in a state of bloodlust.]{+}
 	[CASTE:MALE_CRAZED]
 		[MALE]
-		[POP_RATIO:1]{+}
+		[POP_RATIO:5]{+}
 		[CRAZED][ARENA_RESTRICTED]
 		[ORIENTATION:FEMALE:1:0:0]
 		[ORIENTATION:MALE:0:0:1]
@@ -2729,6 +2733,7 @@ creature_standard
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
 		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked. He is crazed and in a state of bloodlust.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -4502,7 +4507,7 @@ creature_standard
 	[BONECARN]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[SPHERE:MUCK]
 	[SPHERE:REBIRTH]
@@ -4612,13 +4617,14 @@ creature_standard
 	[HOMEOTHERM:10040]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  Her armored tail whips and thrashes aggressively.  She preys on her victims with a flurry of attacks as her heads all bite at once.  Her wounds heal quickly.  Her scales are akin to metal.]{+}
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  His armored tail whips and thrashes aggressively.  He preys on his victims with a flurry of attacks as his heads all bite at once.  His wounds heal quickly.  His scales are akin to metal.]{+}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GOLD:1:RED:1]
@@ -5116,7 +5122,7 @@ creature_standard
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
     [VIEWRANGE:35]{:20  Revision: flying megabeasts can see farther.}
 	[SPHERE:SKY]
 	[SPHERE:WIND]
@@ -5231,7 +5237,7 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[DESCRIPTION:A graceful bird of prey so large she dwarfs many dragons.  She has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath her mighty wings should fear the sky.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
@@ -5243,6 +5249,7 @@ creature_standard
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath his mighty wings should fear the sky.]{+}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:WHITE:1]
