@@ -76,10 +76,10 @@ reaction_other
 [REACTION:MAKE_PEARLASH]
 	[NAME:make pearlash]
 	[BUILDING:KILN:CUSTOM_P]
-	[REAGENT:A:150:BAR:NONE:POTASH:NONE]
+	[REAGENT:potash:150:BAR:NONE:POTASH:NONE]
 	[PRODUCT:100:1:BAR:NONE:PEARLASH:NONE][PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:pearlash]{+}
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 	[DESCRIPTION:Make pearlash from potash for use in the production of clear glass.]{+}
@@ -88,10 +88,10 @@ reaction_other
 	[NAME:make plaster powder]
 	[BUILDING:KILN:CUSTOM_SHIFT_P]
 	[REAGENT:gypsum mineral:1:BOULDER:NONE:NONE:NONE][REACTION_CLASS:GYPSUM]
-	[REAGENT:B:1:BAG:NONE:NONE:NONE][EMPTY][PRESERVE_REAGENT]
-	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:PLASTER][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:B]
+	[REAGENT:empty bag:1:BAG:NONE:NONE:NONE][EMPTY][PRESERVE_REAGENT]
+	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:PLASTER][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:empty bag]
 		[PRODUCT_TOKEN:plaster powder]{+}
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 	[DESCRIPTION:Make plaster powder from gypsum, alabaster, selenite, or satinspar.]{+}
@@ -112,7 +112,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_JUG:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
 	[DESCRIPTION:Make an earthenware jug from clay, a stoneware jug from fire clay, or a porcelain jug from kaolinite.]{+}
@@ -123,7 +123,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
 	[PRODUCT:100:3:BLOCKS:NONE:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]{:PRODUCT:100:1} 2 additional bricks
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
 	[DESCRIPTION:Make earthenware bricks from clay, stoneware bricks from fire clay, or porcelain bricks from kaolinite.]{+}
@@ -134,7 +134,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
 	[PRODUCT:100:1:STATUE:NONE:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
 	[DESCRIPTION:Make an earthenware statue from clay, a stoneware statue from fire clay, or a porcelain statue from kaolinite.]{+}
@@ -145,7 +145,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_LARGE_POT:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
 	[DESCRIPTION:Make an earthenware pot from clay, a stoneware pot from fire clay, or a porcelain pot from kaolinite.]{+}
@@ -156,7 +156,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
 	[PRODUCT:100:1:CRAFTS:NONE:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
 	[DESCRIPTION:Make earthenware crafts from clay, stoneware crafts from fire clay, or porcelain crafts from kaolinite.]{+}
@@ -177,7 +177,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 	GLAZED is a type of item improvement (similar to "covered with <mat>").
 
 	[IMPROVEMENT:100:jug:GLAZED:GET_MATERIAL_FROM_REAGENT:glaze:GLAZE_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
 	[DESCRIPTION:Glaze a pottery jug with ash, cassiterite, uranium oxide, tin or rutile/titania. Earthenware must be glazed in order to hold liquids.]{+}
@@ -193,7 +193,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 		[NOT_IMPROVED]
 		[PRESERVE_REAGENT]
 	[IMPROVEMENT:100:statue:GLAZED:GET_MATERIAL_FROM_REAGENT:glaze:GLAZE_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
 	[DESCRIPTION:Glaze a pottery statue with ash, cassiterite, uranium oxide, tin or rutile/titania. This will increase its value.]{+}
@@ -209,7 +209,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 		[NOT_IMPROVED]
 		[PRESERVE_REAGENT]
 	[IMPROVEMENT:100:large pot:GLAZED:GET_MATERIAL_FROM_REAGENT:glaze:GLAZE_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
 	[DESCRIPTION:Earthenware must be glazed in order to hold liquids.]{+}
@@ -225,7 +225,7 @@ REACTION:MILL_SEEDS_NUTS_TO_PASTE replaced by AA
 		[NOT_IMPROVED]
 		[PRESERVE_REAGENT]
 	[IMPROVEMENT:100:craft:GLAZED:GET_MATERIAL_FROM_REAGENT:glaze:GLAZE_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:GLAZING]
 	[DESCRIPTION:Glaze a pottery craft with ash, cassiterite, uranium oxide, tin or rutile/titania. This will increase its value.]{+}
@@ -240,7 +240,7 @@ REACTION:PRESS_OIL_FRUIT  replaced by AA
 	[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_HIVE:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:POTTERY]
 	[DESCRIPTION:Make an earthenware hive from clay, a stoneware hive from fire clay, or a porcelain hive from kaolinite.]{+}
@@ -267,11 +267,11 @@ REACTION:PROCESS_PLANT_TO_BAG  replaced by AA
 [REACTION:MAKE_QUICKLIME]
 	[NAME:make quicklime]
 	[BUILDING:KILN:CUSTOM_Q]
-	[REAGENT:boulder:1:BOULDER:NONE:NONE:NONE][REACTION_CLASS:CALCIUM_CARBONATE]
-	[REAGENT:bag:1:BAG:NONE:NONE:NONE][EMPTY][PRESERVE_REAGENT]
-	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:QUICKLIME][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:bag]
+	[REAGENT:calcium carbonate boulder:1:BOULDER:NONE:NONE:NONE][REACTION_CLASS:CALCIUM_CARBONATE]
+	[REAGENT:empty bag:1:BAG:NONE:NONE:NONE][EMPTY][PRESERVE_REAGENT]
+	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:QUICKLIME][PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:empty bag]
 		[PRODUCT_TOKEN:quicklime]{+}
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 	[DESCRIPTION:Make quicklime from calcium carbonate rock such as marble, limestone, chalk, borax or calcite.]{+}
@@ -364,7 +364,9 @@ REACTION:MAKE_SLURRY_FROM_PLANT replaced by AA
 		[CAN_USE_ARTIFACT]
 		[CAN_USE_LOCATION_RESERVED]
 	[REAGENT:binding:1:TOOL:ITEM_TOOL_BOOK_BINDING:NONE:NONE]
-	[REAGENT:thread:15000:THREAD:NONE:NONE:NONE]
+    [REAGENT:thread:15000:THREAD:NONE:NONE:NONE]
+        [DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+        [MIN_DIMENSION:15000]
 		[NOT_WEB]
 	[PRODUCT:100:1:BOOK:NONE:GET_MATERIAL_FROM_REAGENT:binding:NONE]
 		[PRODUCT_TOKEN:book]

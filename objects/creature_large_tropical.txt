@@ -15,7 +15,7 @@ creature_large_tropical
 	[PACK_ANIMAL]
 	[MOUNT_EXOTIC]
 	[TRAINABLE_WAR]--TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING]
 	[TRADE_CAPACITY:5000]{+}
 	[COMMON_DOMESTIC]{+}
@@ -415,7 +415,7 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:2]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -626,7 +626,7 @@ creature_large_tropical
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:2]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL]
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
@@ -835,7 +835,7 @@ creature_large_tropical
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:2]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL]
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
@@ -1045,7 +1045,7 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:2]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
@@ -1257,7 +1257,7 @@ creature_large_tropical
 	[PETVALUE:200]
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:2]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -4023,7 +4023,7 @@ creature_large_tropical
 	[STANDARD_GRAZER]
 	[VISION_ARC:50:310]
 	[TRAINABLE_WAR]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:2]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING]
 	[NATURAL_SKILL:BITE:3]{+}
 	[BIOME:GRASSLAND_TROPICAL]

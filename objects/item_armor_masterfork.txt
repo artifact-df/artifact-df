@@ -51,10 +51,10 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:200]
+[COVERAGE:150]
 [LAYER_SIZE:35]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:9] 3 bars
+[MATERIAL_SIZE:6] 2 bars
 [HARD]
 [METAL]
 [BARRED]
@@ -66,10 +66,10 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:200]
+[COVERAGE:150]
 [LAYER_SIZE:35]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:9] 3 bars
+[MATERIAL_SIZE:6] 2 bars
 [HARD]
 [METAL]
 [BARRED]
@@ -81,10 +81,10 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:200]
+[COVERAGE:150]
 [LAYER_SIZE:35]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:9] 3 bars
+[MATERIAL_SIZE:6] 2 bars
 [HARD]
 [METAL]
 [BARRED]
@@ -149,7 +149,7 @@ squamous's notes on armor spawning:
 [COVERAGE:150]
 [LAYER_SIZE:35]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:9] 3 bars
+[MATERIAL_SIZE:6] 2 bars
 [HARD]
 [METAL]
 [BARRED]
@@ -188,14 +188,14 @@ squamous's notes on armor spawning:
 [NAME:cuirass:cuirass]
 [PREPLURAL:suits of]
 [ARMORLEVEL:3]
-[UBSTEP:1] protects the neck
+[UBSTEP:0]
 [LBSTEP:0]
 [SHAPED]
 [LAYER:ARMOR]
 [COVERAGE:100]
 [LAYER_SIZE:20]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:12] 4 bars
+[MATERIAL_SIZE:9] 3 bars
 [HARD]
 [METAL]
 [BARRED]
@@ -206,14 +206,14 @@ squamous's notes on armor spawning:
 [PREPLURAL:suits of]
 [ADJECTIVE:heavy]
 [ARMORLEVEL:3]
-[UBSTEP:2] protects the neck + shoulders
-[LBSTEP:1] protects the hips
+[UBSTEP:1] protects the neck
+[LBSTEP:0]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:200]
+[COVERAGE:150]
 [LAYER_SIZE:30]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:15] 5 bars
+[MATERIAL_SIZE:12] 4 bars
 [HARD]
 [METAL]
 [BARRED]
@@ -298,7 +298,7 @@ squamous's notes on armor spawning:
 [COVERAGE:100]
 [LAYER_SIZE:8]
 [LAYER_PERMIT:50]
-[MATERIAL_SIZE:9] 3 bars
+[MATERIAL_SIZE:6] 2 bars
 [SOFT]
 [STRUCTURAL_ELASTICITY_WOVEN_THREAD]
 
@@ -345,7 +345,7 @@ squamous's notes on armor spawning:
 [UPSTEP:1]
 [SHAPED]
 [LAYER:ARMOR]
-[COVERAGE:200]
+[COVERAGE:150]
 [LAYER_SIZE:25]
 [LAYER_PERMIT:15]
 [MATERIAL_SIZE:6] 2 bars
@@ -398,7 +398,7 @@ squamous's notes on armor spawning:
 [LBSTEP:3]
 --SHAPED]
 [LAYER:OVER]{:ARMOR}
-[COVERAGE:200]
+[COVERAGE:125]
 [LAYER_SIZE:6]
 [LAYER_PERMIT:25]
 [MATERIAL_SIZE:9] 3 bars
@@ -433,10 +433,10 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [UPSTEP:1]
 [LAYER:OVER]
-[COVERAGE:150]
+[COVERAGE:100]
 [LAYER_SIZE:25]
 [LAYER_PERMIT:20]
-[MATERIAL_SIZE:6]
+[MATERIAL_SIZE:6] 2 bars
 [SHAPED]
 [HARD]
 [METAL]
@@ -449,7 +449,7 @@ squamous's notes on armor spawning:
 [ARMORLEVEL:3]
 [UPSTEP:1]
 [LAYER:OVER]
-[COVERAGE:250]
+[COVERAGE:150]
 [LAYER_SIZE:30]
 [LAYER_PERMIT:20]
 [MATERIAL_SIZE:9] 3 bars

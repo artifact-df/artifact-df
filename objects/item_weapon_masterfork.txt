@@ -25,7 +25,7 @@ item_weapon
 
 [ITEM_WEAPON:ITEM_WEAPON_AXE_BATTLE]
 [NAME:battle axe:battle axes]
-[SIZE:400]
+[SIZE:600]
 [SKILL:AXE]
 [TWO_HANDED:20000]
 [MINIMUM_SIZE:15000]
@@ -250,7 +250,7 @@ no shot force requirements
 
 [ITEM_WEAPON:ITEM_WEAPON_MAUL]
 [NAME:maul:mauls]
-[SIZE:700]
+[SIZE:1000]
 [SKILL:HAMMER]
 [TWO_HANDED:5000000]
 [MINIMUM_SIZE:58500]{:62500
@@ -567,7 +567,7 @@ no shot force requirements
 [SIZE:1000]
 [SKILL:HAMMER]
 [TWO_HANDED:5000000]
-[MINIMUM_SIZE:71500] orcs and above
+[MINIMUM_SIZE:75000] orcs and above
 [MATERIAL_SIZE:15] 5 bars
 [ATTACK:BLUNT:75:10000:swipe:swipes at:NO_SUB:5610]
 	[ATTACK_PREPARE_AND_RECOVER:3:4]
@@ -583,7 +583,7 @@ no shot force requirements
 [SIZE:600]
 [SKILL:SWORD]
 [TWO_HANDED:5000000]
-[MINIMUM_SIZE:71500] orcs and above
+[MINIMUM_SIZE:75000] orcs and above
 [MATERIAL_SIZE:15] 5 bars
 [ATTACK:EDGE:2000:2000:slash:slashes:NO_SUB:1800]
 	[ATTACK_PREPARE_AND_RECOVER:2:5]
@@ -599,7 +599,7 @@ no shot force requirements
 [SIZE:800]
 [SKILL:AXE]
 [TWO_HANDED:5000000]
-[MINIMUM_SIZE:71500] orcs and above
+[MINIMUM_SIZE:75000] orcs and above
 [MATERIAL_SIZE:15] 5 bars
 [ATTACK:EDGE:1000:3000:hack:hacks:NO_SUB:2600]
 	[ATTACK_PREPARE_AND_RECOVER:2:6]
@@ -786,7 +786,7 @@ no shot force requirements
 [NAME:quarterstaff:quarterstaves]
 [SIZE:350]
 [SKILL:SPEAR]
-[TWO_HANDED:20000]
+[TWO_HANDED:5000000]
 [MINIMUM_SIZE:15000]
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:25:1:bash:bashes:NO_SUB:2000]
@@ -804,7 +804,7 @@ no shot force requirements
 [SKILL:HAMMER]
 [CAN_STONE] added
 [TWO_HANDED:5000000]
-[MINIMUM_SIZE:15000]
+[MINIMUM_SIZE:58500]  dwarves and larger
 [MATERIAL_SIZE:18] 6 bars
 [ATTACK:BLUNT:60:6000:swipe:swipes at:NO_SUB:4590]
 	[ATTACK_PREPARE_AND_RECOVER:3:2]
@@ -935,7 +935,7 @@ no shot force requirements
 [SIZE:450]
 [SKILL:HAMMER]
 [TWO_HANDED:5000000]
-[MINIMUM_SIZE:15000]
+[MINIMUM_SIZE:58500]  dwarves and larger
 [MATERIAL_SIZE:9]
 [ATTACK:EDGE:12:1:swipe:swipes at:NO_SUB:2210]
 	[ATTACK_PREPARE_AND_RECOVER:1:4]
@@ -955,7 +955,7 @@ no shot force requirements
 [SIZE:450]
 [SKILL:AXE]
 [TWO_HANDED:5000000]
-[MINIMUM_SIZE:15000]
+[MINIMUM_SIZE:58500]  dwarves and larger
 [MATERIAL_SIZE:9]
 [ATTACK:EDGE:200:800:hack:hacks:NO_SUB:2160]
 	[ATTACK_PREPARE_AND_RECOVER:1:5]

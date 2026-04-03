@@ -250,7 +250,7 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]	
 	[PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:TITANIUM][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -279,7 +279,7 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:TITANIUM][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -292,7 +292,8 @@ reaction_dwarf_civ
 	[REAGENT:mithril:300:BAR:NO_SUBTYPE:METAL:MITHRIL]
 	[REAGENT:obsidian boulder:2:BOULDER:NONE:INORGANIC:OBSIDIAN]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:VOLCANIC][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
 	[CATEGORY:ADV_SMELTING]
@@ -303,12 +304,12 @@ reaction_dwarf_civ
 	[NAME:smelt dwarfsteel bars (5)]
 	[CATEGORY:ADV_SMELTING]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
-	[REAGENT:steel:450:BAR:NO_SUBTYPE:METAL:STEEL]
-	[REAGENT:gold:150:BAR:NO_SUBTYPE:METAL:GOLD]
-	[REAGENT:pig iron:150:BAR:NO_SUBTYPE:METAL:PIG_IRON]
+	[REAGENT:steel:600:BAR:NO_SUBTYPE:METAL:STEEL] 4 bars
+	[REAGENT:pig iron:150:BAR:NO_SUBTYPE:METAL:PIG_IRON] 1 bar
 	[REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:DWARFSTEEL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
 
@@ -320,7 +321,7 @@ reaction_dwarf_civ
 	[REAGENT:adamantine:150:BAR:NO_SUBTYPE:METAL:ADAMANTINE]
 	[REAGENT:coal:300:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:TITANSTEEL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
@@ -332,7 +333,7 @@ reaction_dwarf_civ
 	[REAGENT:boulder:4:BLOCKS:NONE:NONE:NONE]
 		[WORTHLESS_STONE_ONLY]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:OBSIDIAN]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -350,7 +351,7 @@ reaction_dwarf_civ
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
@@ -373,7 +374,7 @@ reaction_dwarf_civ
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
@@ -390,7 +391,7 @@ reaction_dwarf_civ
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 	[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -412,7 +413,7 @@ reaction_dwarf_civ
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 	[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -436,7 +437,7 @@ reaction_dwarf_civ
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 	[SKILL_IP:225]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -450,7 +451,7 @@ reaction_dwarf_civ
 	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -465,7 +466,7 @@ reaction_dwarf_civ
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 	[FORTRESS_MODE_ENABLED]
@@ -479,7 +480,7 @@ reaction_dwarf_civ
 	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:COBALT][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -496,7 +497,7 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:COBALT][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -510,7 +511,7 @@ reaction_dwarf_civ
 	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
@@ -527,7 +528,7 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
@@ -543,7 +544,7 @@ reaction_dwarf_civ
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
@@ -564,7 +565,7 @@ reaction_dwarf_civ
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
@@ -579,7 +580,7 @@ reaction_dwarf_civ
 	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -598,7 +599,7 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -612,7 +613,7 @@ reaction_dwarf_civ
 	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:TUNGSTEN][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -629,7 +630,7 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:TUNGSTEN][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -643,7 +644,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -662,7 +663,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 	[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -678,7 +679,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:NICKEL]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:nickel]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -694,7 +695,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:GOLD]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:gold]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -710,7 +711,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -726,7 +727,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -742,7 +743,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -761,7 +762,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -777,7 +778,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:ZINC]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:zinc]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -793,7 +794,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:TIN]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:tin]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[FORTRESS_MODE_ENABLED]
@@ -808,7 +809,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:PLATINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:platinum]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -827,7 +828,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -843,7 +844,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -859,7 +860,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:BISMUTH]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:bismuth]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -875,7 +876,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:ALUMINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:aluminum]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -891,7 +892,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -907,7 +908,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -923,7 +924,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -939,7 +940,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:NICKEL]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:nickel]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -955,7 +956,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:GOLD]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:gold]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -971,7 +972,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -987,7 +988,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1003,7 +1004,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1022,7 +1023,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:12:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1038,7 +1039,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:ZINC]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:zinc]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1054,7 +1055,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:TIN]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:tin]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1070,7 +1071,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:PLATINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:platinum]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1089,7 +1090,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:6:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1105,7 +1106,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1121,7 +1122,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:BISMUTH]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:bismuth]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1137,7 +1138,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:ALUMINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:aluminum]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1153,7 +1154,7 @@ reaction_dwarf_civ
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[MAX_MULTIPLIER:1] for consistency
@@ -1166,7 +1167,7 @@ reaction_dwarf_civ
 	[REAGENT:lead:1350:BAR:NO_SUBTYPE:METAL:LEAD] 9 bars
 	[REAGENT:antimony:150:BAR:NO_SUBTYPE:METAL:ANTIMONY] 1 bar
 	[PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:225]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 	[FUEL]
@@ -1176,7 +1177,7 @@ reaction_dwarf_civ
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD]
 	[PRODUCT:100:25:AMMO:ITEM_AMMO_PELLETS_ZM5:METAL:ANTIMONIAL_LEAD]--PRODUCT_DIMENSION:20]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
 	[FORTRESS_MODE_ENABLED]
@@ -1191,7 +1192,7 @@ reaction_dwarf_civ
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD]
 	[PRODUCT:100:25:AMMO:ITEM_AMMO_HANDCANNON_SHELL_ZM5:METAL:ANTIMONIAL_LEAD]--PRODUCT_DIMENSION:20]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
 	[FORTRESS_MODE_ENABLED]
@@ -1203,7 +1204,7 @@ reaction_dwarf_civ
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD]
 	[PRODUCT:100:25:AMMO:ITEM_AMMO_HANDCANNON_SHRAPNEL_SHELL_ZM5:METAL:ANTIMONIAL_LEAD]--PRODUCT_DIMENSION:20]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
 	[FORTRESS_MODE_ENABLED]
@@ -1242,7 +1243,7 @@ reaction_dwarf_civ
 	[REAGENT:metal:300:BAR:NO_SUBTYPE:METAL:NONE]  2 metal bars
 		[METAL_ITEM_MATERIAL]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_TABLET_METAL:GET_MATERIAL_FROM_REAGENT:metal:NONE]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:FORGE_FURNITURE]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
@@ -1259,7 +1260,7 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:ORICHALCUM][PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}

@@ -16,7 +16,7 @@ creature_civ_orc_masterwork
 	[INTELLIGENT]
 	[CANOPENDOORS]
 	[TRANCES]
-	--SPREAD_EVIL_SPHERES_IF_RULER]
+	[SPREAD_EVIL_SPHERES_IF_RULER]
 	[PREFSTRING:tusks]
 	[PREFSTRING:green skin]
 	[PREFSTRING:ruthless savagery]
@@ -30,9 +30,10 @@ creature_civ_orc_masterwork
 	// RACIAL SKILLS //
 	[NATURAL_SKILL:INTIMIDATION:1]
 	[NATURAL_SKILL:MELEE_COMBAT:1]
-	[NATURAL_SKILL:DISCIPLINE:2]
+	[NATURAL_SKILL:DISCIPLINE:3]
 	[NATURAL_SKILL:MILITARY_TACTICS:1]
 	[NATURAL_SKILL:WRESTLING:1]
+	[NATURAL_SKILL:ARMOR:1]
 
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:40:85]--- Great Aversion
@@ -174,11 +175,11 @@ creature_civ_orc_masterwork
 	[MENT_ATT_RANGE:MEMORY:450:950:1150:1250:1350:1550:2250]                +
 	[MENT_ATT_RANGE:SPATIAL_SENSE:700:1200:1400:1500:1600:1800:2500]        ++
 	[MENT_ATT_RANGE:INTUITION:0:100:200:300:400:450:500]				    ---
-	[MENT_ATT_RANGE:EMPATHY:0:0:0:0:0:0:0]                                  none
+	[MENT_ATT_RANGE:EMPATHY:0:400:600:750:800:900:1100]				        --
 	[MENT_ATT_RANGE:FOCUS:0:400:600:750:800:900:1100]		                --
 	[BODY_SIZE:0:0:7500] 1/10th adult size
 	[BODY_SIZE:1:0:21000]
-	[BODY_SIZE:6:0:75000] slightly larger than humans
+	[BODY_SIZE:5:0:75000] slightly larger than humans
 	[BODY_SIZE:50:0:80000]
 	[BODY_SIZE:100:0:85000]
 	[BODY_SIZE:150:0:90000] old orcs are quite big
@@ -357,15 +358,17 @@ creature_civ_orc_masterwork
 	[SPOUSE_CONVERSION_TARGET]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:2:0:98]
-		[ORIENTATION:FEMALE:95:0:5]
+		[ORIENTATION:MALE:0:0:100]
+		[ORIENTATION:FEMALE:100:0:0]
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:8:16]
+		[LITTERSIZE:10:20]
+		[POP_RATIO:4]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:FEMALE:2:0:98]
-		[ORIENTATION:MALE:95:0:5]
+		[ORIENTATION:FEMALE:0:0:100]
+		[ORIENTATION:MALE:100:0:0]
+		[POP_RATIO:5]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  He is spartan and rough, like much of his kin he live in tribal camps and are frequently in conflict with their neighbors.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:NECKBEARD_TISSUE_LAYERS]
@@ -436,8 +439,6 @@ creature_civ_orc_masterwork
 		[SET_TL_GROUP:BY_CATEGORY:ALL:IVORY]{+ varied ivory coloring.}
 			[TL_COLOR_MODIFIER:WHITE:1:BEIGE:1:IVORY:1:CREAM:1]{+
 				[TLCM_NOUN:tusks:PLURAL]{+
-
-	[SELECT_CASTE:ALL]
 		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]  thicker skin
 		  [TL_RELATIVE_THICKNESS:2]
 		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]  thicker skull

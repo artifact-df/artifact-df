@@ -325,23 +325,23 @@ creature_civ_elf_forest_masterfork
 	[MANNERISM_STRETCH]
 	[MANNERISM_EYELIDS]
 	[SPOUSE_CONVERSION_TARGET]
-	[PROFESSION_NAME:RECRUIT:Ranger:Rangers]
+	[PROFESSION_NAME:RECRUIT:ranger:rangers]
 	[PROFESSION_NAME:MASTER_BOWMAN:Master Ranger:Master Rangers]
     [PROFESSION_NAME:MASTER_SPEARMAN:Speardancer:Speardancers]{+  Revision: elven profession names.}
     [PROFESSION_NAME:MASTER_SWORDSMAN:Bladedancer:Bladedancers]{+}
-	[PROFESSION_NAME:CRAFTSMAN:crafts elf:crafts elves]{+}
-	[PROFESSION_NAME:FISHERMAN:fisher elf:fisher elves]{+}
-	[PROFESSION_NAME:HAMMERMAN:hammer elf:hammer elves]{+}
-	[PROFESSION_NAME:SPEARMAN:spear elf:spear elves]{+}
-	[PROFESSION_NAME:CROSSBOWMAN:marks elf:marks elves]{+}
-	[PROFESSION_NAME:AXEMAN:axe elf:axe elves]{+}
-	[PROFESSION_NAME:SWORDSMAN:swords elf:swords elves]{+}
+	[PROFESSION_NAME:CRAFTSMAN:craftself:crafts elves]{+}
+	[PROFESSION_NAME:FISHERMAN:fisherelf:fisher elves]{+}
+	[PROFESSION_NAME:HAMMERMAN:hammerelf:hammer elves]{+}
+	[PROFESSION_NAME:SPEARMAN:spearelf:spear elves]{+}
+	[PROFESSION_NAME:CROSSBOWMAN:markself:marks elves]{+}
+	[PROFESSION_NAME:AXEMAN:axe-elf:axe elves]{+}
+	[PROFESSION_NAME:SWORDSMAN:swordself:swords elves]{+}
 	[PROFESSION_NAME:MACEMAN:mace elf:mace elves]{+}
 	[PROFESSION_NAME:PIKEMAN:pike elf:pike elves]{+}
-	[PROFESSION_NAME:BOWMAN:bow elf:bow elves]{+}
+	[PROFESSION_NAME:BOWMAN:bowelf:bowelves]{+}
 	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Markself:Elite Markselves]{+}
-	[PROFESSION_NAME:BLOWGUNMAN:gun elf:gun elves]{+}  used by firearms
-	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Elite Gun-elf:Elite Gun-elves]{+}
+	[PROFESSION_NAME:BLOWGUNMAN:gunelf:gunelves]{+}  used by firearms
+	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Elite Gunelf:Elite Gunelves]{+}
 	[PROFESSION_NAME:CRIMINAL:exile:exiles]{+}
 	[PROFESSION_NAME:STANDARD:resident:residents]{+}
 	[PROFESSION_NAME:THIEF:scout:scouts]{+}
