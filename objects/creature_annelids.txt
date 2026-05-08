@@ -17,6 +17,7 @@ creature_annelids
 	[BIOME:ANY_TEMPERATE]
 	[BIOME:ANY_TROPICAL]
 	[POPULATION_NUMBER:250:500]
+	[UBIQUITOUS]{+}
 	[PREFSTRING:wriggling]
 	[BODY:BODY_WITH_HEAD_FLAG:TAIL_ANIMALMAN_GRASP:HEART:GUTS:BRAIN:MOUTH]{:BODY_WITH_HEAD_FLAG:HEART  Revision: add a tail that will be converted to a grasping one.}
 	[BODY_DETAIL_PLAN:STANDARD_NOLEATHER_MATERIALS]{:STANDARD_MATERIALS}
@@ -78,7 +79,7 @@ creature_annelids
 	[NAME:worm man:worm men:worm man]
 	{CASTE_NAME:worm man:worm men:worm man}
 	[DESCRIPTION:A worm-like creature with the torso of a man.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'w']

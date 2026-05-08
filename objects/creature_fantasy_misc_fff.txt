@@ -13,7 +13,7 @@ creature_fantasy_misc_fff
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[FANCIFUL]{+}
 	[BIOME:ANY_TROPICAL_FOREST][SAVAGE]
 	[LARGE_ROAMING][FREQUENCY:5]

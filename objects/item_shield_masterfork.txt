@@ -17,15 +17,15 @@ Shield stats by Sver
 [ITEM_SHIELD:ITEM_SHIELD_BUCKLER]
 [NAME:buckler:buckler]
 [ARMORLEVEL:1]
-[BLOCKCHANCE:12]
-[UPSTEP:0]
+[BLOCKCHANCE:12]{:10}
+[UPSTEP:1]
 [MATERIAL_SIZE:3] 1 bar
 
 [ITEM_SHIELD:ITEM_SHIELD_SHIELD]
-[NAME:heater shield:heater shield]
-[ARMORLEVEL:3]
-[BLOCKCHANCE:24]
-[UPSTEP:1]
+[NAME:shield:shield] used to be heater shield but just caused confusion
+[ARMORLEVEL:2]
+[BLOCKCHANCE:24]{:20}
+[UPSTEP:2]
 [MATERIAL_SIZE:6] 2 bars
 
 [ITEM_SHIELD:ITEM_SHIELD_KITE_SPL]

@@ -88,7 +88,7 @@ Damselflies were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:damselfly man:damselfly men:damselfly man]
 	[DESCRIPTION:A person with the wings and head of a damselfly.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'d']
@@ -220,9 +220,10 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:moth man:moth men:moth man]
 	[DESCRIPTION:A person with the head and wings of a moth.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'m']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -350,7 +351,7 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[GO_TO_START]
 	[NAME:grasshopper man:grasshopper men:grasshopper man]
 	[DESCRIPTION:A person with the head and legs of a grasshopper.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'g']
@@ -524,7 +525,7 @@ Bark scorpions were sponsored by the generous contributions of the Bay 12 commun
 	[GO_TO_START]
 	[NAME:bark scorpion man:bark scorpion men:bark scorpion man]
 	[DESCRIPTION:A person with the head, pincers and tail of a bark scorpion.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
@@ -673,7 +674,7 @@ Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:mantis man:mantis men:mantis man]
 	[DESCRIPTION:A green person with the head and arms of a mantis.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
@@ -808,7 +809,7 @@ Ticks were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:tick man:tick men:tick man]
 	[DESCRIPTION:A person with the head and legs of a tick.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'t']
@@ -939,7 +940,7 @@ Lice were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:louse man:louse men:louse man]
 	[DESCRIPTION:A person with the head and legs of a louse.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'l']
@@ -1070,7 +1071,7 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:thrips man:thrips men:thrips man]
 	[DESCRIPTION:A person with the head and wings of a thrips.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'t']
@@ -1191,7 +1192,7 @@ Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:slug man:slug men:slug man]
 	{CASTE_NAME:slug man:slug men:slug man}
 	[DESCRIPTION:A great slug with the torso of a man.  It pulls itself across the ground with its hands for greater speed.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
@@ -1318,7 +1319,7 @@ Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:mosquito man:mosquito men:mosquito man]
 	[DESCRIPTION:A person with the head and wings of a mosquito.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
@@ -1450,7 +1451,7 @@ Jumping spiders were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_START]
 	[NAME:jumping spider man:jumping spider men:jumping spider man]
 	[DESCRIPTION:A person with the head and arms of a jumping spider.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'j']
@@ -1664,7 +1665,7 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:moon snail man:moon snail men:moon snail man]
 	[DESCRIPTION:A colorful person with the head and shell of a moon snail.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
@@ -1832,7 +1833,7 @@ Brown recluse spiders were sponsored by the generous contributions of the Bay 12
 	[GO_TO_START]
 	[NAME:brown recluse spider man:brown recluse spider men:brown recluse spider man]
 	[DESCRIPTION:A person with the head and arms of a brown recluse spider.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']
@@ -1982,7 +1983,7 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:snail man:snail men:snail man]
 	{CASTE_NAME:snail man:snail men:snail man}
 	[DESCRIPTION:A creature with the shape of a man, but with stalks for eyes, and a great shell on its back.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']

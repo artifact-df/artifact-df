@@ -16,7 +16,7 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:10]
 	[VERMIN_EATER][PENETRATEPOWER:2][FREQUENCY:100][VERMIN_HATEABLE][VERMIN_GROUNDER]
 	[GNAWER:gnawed]
-	[BENIGN][SMALL_REMAINS][NATURAL][PET_EXOTIC]{:PET
+	[BENIGN][SMALL_REMAINS][NATURAL][PET]
 	[VISION_ARC:50:310]
 	[NOT_BUTCHERABLE]
 	[BIOME:NOT_FREEZING]
@@ -122,9 +122,10 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:hamster man:hamster men:hamster man]
 	[DESCRIPTION:A person with the head and fur of a hamster.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'h']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -177,7 +178,7 @@ Hedgehogs were sponsored by the generous contributions of the Bay 12 community.
 	[FREQUENCY:100][VERMIN_GROUNDER]
 	[BENIGN][SMALL_REMAINS][NATURAL][PET][NO_WINTER]
 	[NOT_BUTCHERABLE]
-	[FREQUENCY:50][UBIQUITOUS]{+}
+	[UBIQUITOUS]{+}
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:ANY_TEMPERATE_FOREST]{+}
@@ -292,7 +293,7 @@ Hedgehogs were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:hedgehog man:hedgehog men:hedgehog man]
 	[DESCRIPTION:A person with the head and spines of a hedgehog.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'h']
@@ -454,7 +455,7 @@ Flying squirrels were sponsored by the generous contributions of the Bay 12 comm
 	[GO_TO_START]
 	[NAME:flying squirrel man:flying squirrel men:flying squirrel man]
 	[DESCRIPTION:A person with the head and wings of a flying squirrel.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:3:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'s']

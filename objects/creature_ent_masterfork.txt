@@ -7,23 +7,26 @@ creature_ent_masterfork
 	[NAME:ent:ents:ent]
 	[CHILD:1][GENERAL_CHILD_NAME:ent sapling:ent saplings]
 	[CREATURE_TILE:'E'][COLOR:2:0:1]
-	[PETVALUE:39500] --should never arrive in a cage, too large
+	[PETVALUE:10000] --should never arrive in a cage, too large
 	[NATURAL]
 	[ALL_ACTIVE]
 	[TRAINABLE_WAR]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[PET_EXOTIC]
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[CHILD:3][GENERAL_CHILD_NAME:ent seedling:ent seedlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[FANCIFUL]
 	[MEANDERER]
 	[CANNOT_JUMP]
 	[GRASSTRAMPLE:0] walking very carefully around friends
 	[SAVAGE]
-	[FREQUENCY:5][POPULATION_NUMBER:1:3]
+	[FREQUENCY:5][POPULATION_NUMBER:2:6]
 	[BIOME:ANY_FOREST]
 	[AT_PEACE_WITH_WILDLIFE]
 	[LARGE_ROAMING][LARGE_PREDATOR] --predator of dwarves coz dwarves hurt forests.
 	[AMBUSHPREDATOR][NATURAL_SKILL:SNEAK:10]  blending in
-	[CLUSTER_NUMBER:1:1]
+	[NATURAL_SKILL:GRASP_STRIKE:5]
+	[NATURAL_SKILL:STANCE_STRIKE:3]
+	[CLUSTER_NUMBER:2:4]
 	[NO_SLEEP][NO_DRINK][NOSTUN][NONAUSEA][NOPAIN][NOFEAR][NOEXERT][NOBREATHE]
 	[CANOPENDOORS]
 	[NO_THOUGHT_CENTER_FOR_MOVEMENT]
@@ -39,6 +42,9 @@ creature_ent_masterfork
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:900:750:600:439:1900:2900] 20 kph like big elephant burst. (was 5 kph)
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:900:750:600:439:1900:2900] 20 kph, river and pool DOES NOT slow an ent down.
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph, ok
+	[PHYS_ATT_RANGE:AGILITY:0:400:600:750:800:900:1100]                    --
+	[PHYS_ATT_RANGE:STRENGTH:700:1200:1400:1500:1600:1800:2500]            ++
+	[PHYS_ATT_RANGE:TOUGHNESS:700:1200:1400:1500:1600:1800:2500]           ++
 	--no climbing!
 	[SWIMS_INNATE] --floats well.	
 	[USE_MATERIAL_TEMPLATE:FAT:FAT_TEMPLATE] --product of some declaration. Cremated hair?
@@ -178,50 +184,62 @@ creature_ent_masterfork
 	[SWIMS_INNATE]
 	[CASTE:MALE_OAK]
 		[MALE]
+		[POP_RATIO:10]
 		[CASTE_NAME:oak ent:oak ents:oak ent]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[CASTE:MALE_BIRCH]
 		[MALE]
+		[POP_RATIO:10]
 		[CASTE_NAME:birch ent:birch ents:birch ent]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[CASTE:MALE_ROWAN]
 		[MALE]
+		[POP_RATIO:10]
 		[CASTE_NAME:rowan ent:rowan ents:rowan ent]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[CASTE:MALE_ALDER]
 		[MALE]
+		[POP_RATIO:10]
 		[CASTE_NAME:alder ent:alder ents:alder ent]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[CASTE:MALE_YEW]
 		[MALE]
+		[POP_RATIO:10]
 		[CASTE_NAME:yew ent:yew ents:yew ent]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[CASTE:MALE_LINDEN]
 		[MALE]
+		[POP_RATIO:10]
 		[CASTE_NAME:linden ent:linden ents:linden ent]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[CASTE:FEMALE_APPLE]
 		[FEMALE]
+		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:apple entwife:apple entwives:apple entwife]
 	[CASTE:FEMALE_PEAR]
 		[FEMALE]
+		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:pear entwife:pear entwives:pear entwife]
 	[CASTE:FEMALE_PLUM]
 		[FEMALE]
+		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:plum entwife:plum entwives:plum entwife]
 	[CASTE:FEMALE_OLIVE]
 		[FEMALE]
+		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:olive entwife:olive entwives:olive entwife]
 	[CASTE:FEMALE_APRICOT]
 		[FEMALE]
+		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:apricot entwife:apricot entwives:apricot entwife]
 	[CASTE:FEMALE_PEACH]
 		[FEMALE]
+		[POP_RATIO:1]
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:peach entwife:peach entwives:peach entwife]
 	[SELECT_CASTE:ALL]

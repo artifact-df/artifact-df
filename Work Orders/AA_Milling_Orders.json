@@ -1,0 +1,2749 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ACACIA:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:ACACIA:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_ACACIA_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_ACACIA_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_ACACIA_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ALMOND:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:ALMOND:NUT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_ALMOND_NUT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_ALMOND_NUT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_ALMOND_NUT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BAMBARA_GROUNDNUT:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BAMBARA_GROUNDNUT:FRUIT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BAMBARA_GROUNDNUT_FRUIT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BAMBARA_GROUNDNUT_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_BAMBARA_GROUNDNUT_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BARLEY:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BARLEY:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BARLEY_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BARLEY_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_BARLEY_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 4,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BLOOD_AMARANTH:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BLOOD_AMARANTH:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BLOOD_AMARANTH_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BLOOD_AMARANTH_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_BLOOD_AMARANTH_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 5,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BROAD_BEAN:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BROAD_BEAN:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BROAD_BEAN_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BROAD_BEAN_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_BROAD_BEAN_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 6,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BUCKWHEAT:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BUCKWHEAT:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BUCKWHEAT_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BUCKWHEAT_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_BUCKWHEAT_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 7,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BUSH_QUARRY:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BUSH_QUARRY:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BUSH_QUARRY_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_BUSH_QUARRY_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_BUSH_QUARRY_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 8,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CACAO:POWDER",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CACAO:BEAN",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CACAO_BEAN",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CACAO_BEAN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_CACAO_BEAN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 9,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CASHEW:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CASHEW:CASHEW",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CASHEW_CASHEW",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CASHEW_CASHEW",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_CASHEW_CASHEW"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 10,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CASSAVA:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:CASSAVA:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CASSAVA_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CASSAVA_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_CASSAVA_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 11,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CASSAVA:STARCH",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:CASSAVA:STRUCTURAL",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CASSAVA_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CASSAVA_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_CASSAVA_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 12,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CATTAIL:STARCH",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:CATTAIL:STRUCTURAL",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CATTAIL_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CATTAIL_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_CATTAIL_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 13,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CELERY:POWDER",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CELERY:SEED_HEAD",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CELERY_SEED_HEAD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_CELERY_SEED_HEAD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_CELERY_SEED_HEAD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 14,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CHESTNUT:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CHESTNUT:NUT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CHESTNUT_NUT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CHESTNUT_NUT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_CHESTNUT_NUT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 15,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CHICKPEA:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CHICKPEA:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CHICKPEA_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_CHICKPEA_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_CHICKPEA_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 16,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:COWPEA:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:COWPEA:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_COWPEA_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_COWPEA_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_COWPEA_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 17,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:DATE_PALM:POWDER",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:DATE_PALM:FRUIT",
+				"reaction_id" : "AA_MILL_POWDER_FROM_DATE_PALM_FRUIT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_DATE_PALM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_DATE_PALM_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 18,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:FINGER_MILLET:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FINGER_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FINGER_MILLET_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FINGER_MILLET_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_FINGER_MILLET_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 19,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:FLAX:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:FLAX:CAPSULE",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FLAX_CAPSULE",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FLAX_CAPSULE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_FLAX_CAPSULE"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 20,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:FONIO:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FONIO:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FONIO_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FONIO_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_FONIO_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 21,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:FOXTAIL_MILLET:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FOXTAIL_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FOXTAIL_MILLET_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_FOXTAIL_MILLET_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_FOXTAIL_MILLET_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 22,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GARLIC:POWDER",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GARLIC:STRUCTURAL",
+				"reaction_id" : "AA_MILL_POWDER_FROM_GARLIC_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_GARLIC_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_GARLIC_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 23,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GRASS_LONGLAND:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GRASS_LONGLAND:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_GRASS_LONGLAND_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_GRASS_LONGLAND_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_GRASS_LONGLAND_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 24,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GRASS_TAIL_PIG:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GRASS_TAIL_PIG:PANICLE",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_GRASS_TAIL_PIG_PANICLE",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_GRASS_TAIL_PIG_PANICLE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_GRASS_TAIL_PIG_PANICLE"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 25,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GRASS_WHEAT_CAVE:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GRASS_WHEAT_CAVE:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_GRASS_WHEAT_CAVE_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_GRASS_WHEAT_CAVE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_GRASS_WHEAT_CAVE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 26,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:HARD_WHEAT:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:HARD_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_HARD_WHEAT_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_HARD_WHEAT_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_HARD_WHEAT_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 27,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:HAZEL:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:HAZEL:NUT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_HAZEL_NUT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_HAZEL_NUT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_HAZEL_NUT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 28,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:HEMP:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:HEMP:PANICLE",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_HEMP_PANICLE",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_HEMP_PANICLE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_HEMP_PANICLE"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 29,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:KANIWA:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:KANIWA:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_KANIWA_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_KANIWA_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_KANIWA_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 30,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:LEEK:POWDER",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:LEEK:LEAF",
+				"reaction_id" : "AA_MILL_POWDER_FROM_LEEK_LEAF",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_LEEK_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_LEEK_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 31,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:LENTIL:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:LENTIL:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_LENTIL_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_LENTIL_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_LENTIL_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 32,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:LESSER_YAM:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:LESSER_YAM:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_LESSER_YAM_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_LESSER_YAM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_LESSER_YAM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 33,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:LONG_YAM:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:LONG_YAM:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_LONG_YAM_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_LONG_YAM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_LONG_YAM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 34,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MACADAMIA:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MACADAMIA:NUT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_MACADAMIA_NUT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_MACADAMIA_NUT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_MACADAMIA_NUT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 35,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MAIZE:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MAIZE:EAR",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_MAIZE_EAR",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_MAIZE_EAR",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_MAIZE_EAR"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 36,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MUNG_BEAN:STARCH",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MUNG_BEAN:POD",
+				"reaction_id" : "AA_MILL_POWDER_FROM_MUNG_BEAN_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_MUNG_BEAN_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_MUNG_BEAN_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 37,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MUNG_BEAN:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MUNG_BEAN:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_MUNG_BEAN_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_MUNG_BEAN_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_MUNG_BEAN_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 38,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:OAK:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:OAK:NUT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_OAK_NUT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_OAK_NUT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_OAK_NUT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 39,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:OATS:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:OATS:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_OATS_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_OATS_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_OATS_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 40,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ONION:POWDER",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:ONION:STRUCTURAL",
+				"reaction_id" : "AA_MILL_POWDER_FROM_ONION_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_ONION_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_ONION_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 41,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PALM:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PALM:FRUIT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PALM_FRUIT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PALM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_PALM_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 42,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEA:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PEA:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PEA_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PEA_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_PEA_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 43,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEANUT:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PEANUT:FRUIT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PEANUT_FRUIT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PEANUT_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_PEANUT_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 44,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEARL_MILLET:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:PEARL_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PEARL_MILLET_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PEARL_MILLET_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_PEARL_MILLET_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 45,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PECAN:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PECAN:NUT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PECAN_NUT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PECAN_NUT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_PECAN_NUT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 46,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PENDANT_AMARANTH:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:PENDANT_AMARANTH:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PENDANT_AMARANTH_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PENDANT_AMARANTH_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_PENDANT_AMARANTH_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 47,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEPPER:POWDER",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PEPPER:FRUIT",
+				"reaction_id" : "AA_MILL_POWDER_FROM_PEPPER_FRUIT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_PEPPER_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_PEPPER_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 48,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:POD_SWEET:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:POD_SWEET:STRUCTURAL",
+				"reaction_id" : "AA_MILL_POWDER_FROM_POD_SWEET_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_POD_SWEET_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_POD_SWEET_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 49,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:POTATO:STARCH",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:POTATO:STRUCTURAL",
+				"reaction_id" : "AA_MILL_POWDER_FROM_POTATO_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_POWDER_FROM_POTATO_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_POWDER_FROM_POTATO_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 50,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PURPLE_YAM:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:PURPLE_YAM:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PURPLE_YAM_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_PURPLE_YAM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_PURPLE_YAM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 51,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:QUINOA:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:QUINOA:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_QUINOA_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_QUINOA_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_QUINOA_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 52,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:RICE:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RICE:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_RICE_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_RICE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_RICE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 53,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:RYE:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RYE:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_RYE_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_RYE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_RYE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 54,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SINGLE-GRAIN_WHEAT:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SINGLE-GRAIN_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SINGLE-GRAIN_WHEAT_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SINGLE-GRAIN_WHEAT_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_SINGLE-GRAIN_WHEAT_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 55,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SOFT_WHEAT:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SOFT_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SOFT_WHEAT_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SOFT_WHEAT_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_SOFT_WHEAT_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 56,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SORGHUM:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:SORGHUM:PANICLE",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SORGHUM_PANICLE",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SORGHUM_PANICLE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_SORGHUM_PANICLE"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 57,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SOYBEAN:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:SOYBEAN:POD",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SOYBEAN_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SOYBEAN_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_SOYBEAN_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 58,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SPELT:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SPELT:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SPELT_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SPELT_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_SPELT_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 59,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SWEET_POTATO:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SWEET_POTATO:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SWEET_POTATO_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_SWEET_POTATO_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_SWEET_POTATO_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 60,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:TARO:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TARO:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_TARO_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_TARO_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_TARO_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 61,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:TEFF:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TEFF:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_TEFF_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_TEFF_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_TEFF_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 62,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:TWO-GRAIN_WHEAT:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TWO-GRAIN_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_TWO-GRAIN_WHEAT_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_TWO-GRAIN_WHEAT_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_TWO-GRAIN_WHEAT_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 63,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:VINE_WHIP:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:VINE_WHIP:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_VINE_WHIP_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_VINE_WHIP_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_VINE_WHIP_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 64,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WALNUT:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:WALNUT:NUT",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_WALNUT_NUT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_WALNUT_NUT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_WALNUT_NUT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 65,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WHITE_MILLET:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:WHITE_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_WHITE_MILLET_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_WHITE_MILLET_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_WHITE_MILLET_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 66,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WHITE_YAM:FLOUR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:WHITE_YAM:STRUCTURAL",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_WHITE_YAM_STRUCTURAL",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_MILL_FLOUR_FROM_WHITE_YAM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MILL_FLOUR_FROM_WHITE_YAM_STRUCTURAL"
+	}
+]

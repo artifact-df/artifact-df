@@ -11,11 +11,12 @@ creature_large_tropical
 	[CREATURE_CLASS:MAMMAL]
 	[PETVALUE:600]{:500
 	[PET]
+	[DIFFICULTY:1]{+ should hopefully stop dwarves hunting elephants.}
 	[STANDARD_GRAZER] don't have browsing trees yet
 	[PACK_ANIMAL]
 	[MOUNT_EXOTIC]
 	[TRAINABLE_WAR]--TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING]
 	[TRADE_CAPACITY:5000]{+}
 	[COMMON_DOMESTIC]{+}
@@ -25,8 +26,10 @@ creature_large_tropical
 	[BIOME:SAVANNA_TROPICAL]{+}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BENIGN][MEANDERER][NATURAL]
 	[NATURAL_SKILL:BITE:3]{+}
+	[PRONE_TO_RAGE:5]{+}
 	[PREFSTRING:strength]
 	[PREFSTRING:amazing trunks]
 	[PREFSTRING:calves' spirited antics]
@@ -90,8 +93,9 @@ creature_large_tropical
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:TUSK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -111,7 +115,7 @@ creature_large_tropical
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:2]{+ males are less common in herds.}
-		[PRONE_TO_RAGE:10]{+}
+		[PRONE_TO_RAGE:5]{+}
 		[TRANCES]{+  can enter battle trances.}
 		[CASTE_NAME:elephant bull:elephant bulls:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  He lifts plants with his trunk and attacks with long tusks when he gets angry.  His large ears flap in the heat.]{+}
@@ -159,9 +163,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:elephant man:elephant men:elephant man]
 	[DESCRIPTION:A large person with the trunk and ears of an elephant.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'E']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
@@ -231,6 +236,7 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -363,9 +369,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:warthog man:warthog men:warthog man]
 	[DESCRIPTION:A person with the head of a warthog.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -415,12 +422,12 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[UBIQUITOUS]{+}
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
@@ -443,23 +450,19 @@ creature_large_tropical
 		[CDI:TARGET_RANGE:A:1]
 		[CDI:MAX_TARGET_NUMBER:A:1]
 		[CDI:WAIT_PERIOD:10]
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[PREFSTRING:roars]
 	[PREFSTRING:thunderous roars]{+}
 	[PREFSTRING:widely recognized manes]{+}
 	[PREFSTRING:status as the pinnacle of hunting prowess]{+}
 	[PREFSTRING:ceaseless pride]{+}
 	[PREFSTRING:regal nature]{+}
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: feline natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]{+:    ++
+	[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]{+:      ++
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    +
+	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+:     -
+	[PHYS_ATT_RANGE:ENDURANCE:150:600:800:900:1000:1100:1500]{+:     -
 	[PRONE_TO_RAGE:5]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
@@ -573,9 +576,10 @@ creature_large_tropical
 	[NAME:lion man:lion men:lion man]
 	[DESCRIPTION:A person with the head of a lion.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'L']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -607,7 +611,6 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:roars]
@@ -626,13 +629,13 @@ creature_large_tropical
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL]
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
 	[UBIQUITOUS]{+}
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
@@ -655,23 +658,19 @@ creature_large_tropical
 		[CDI:TARGET_RANGE:A:1]
 		[CDI:MAX_TARGET_NUMBER:A:1]
 		[CDI:WAIT_PERIOD:10]
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[PREFSTRING:spotted coats]
 	[PREFSTRING:striking irregular black rosettes]{+}
 	[PREFSTRING:considerable ability to survive anywhere]{+}
 	[PREFSTRING:graceful hunting technique]{+}
 	[PREFSTRING:stealth]{+}
 	[PREFSTRING:comical resting poses]{+}
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: feline natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]{+:    ++
+	[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]{+:      ++
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    +
+	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+:     -
+	[PHYS_ATT_RANGE:ENDURANCE:150:600:800:900:1000:1100:1500]{+:     -
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -782,9 +781,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:leopard man:leopard men:leopard man]
 	[DESCRIPTION:A spotted person with the head and tail of a leopard.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -816,7 +816,6 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:spotted coats]
@@ -835,13 +834,13 @@ creature_large_tropical
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL]
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
 	[UBIQUITOUS]{+}
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
@@ -864,23 +863,19 @@ creature_large_tropical
 		[CDI:TARGET_RANGE:A:1]
 		[CDI:MAX_TARGET_NUMBER:A:1]
 		[CDI:WAIT_PERIOD:10]
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[PREFSTRING:spotted coats]
 	[PREFSTRING:densly spotted fur]{+}
 	[PREFSTRING:short and stocky limbs]{+}
 	[PREFSTRING:association with the presence of water]{+}
 	[PREFSTRING:vivid yellow eyes]{+}
 	[PREFSTRING:exceptional piercing bite]{+}
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: feline natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]{+:    ++
+	[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]{+:      ++
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    +
+	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+:     -
+	[PHYS_ATT_RANGE:ENDURANCE:150:600:800:900:1000:1100:1500]{+:     -
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -991,9 +986,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:jaguar man:jaguar men:jaguar man]
 	[DESCRIPTION:A spotted person with the head and tail of a jaguar.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'J']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -1025,7 +1021,6 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:spotted coats]
@@ -1045,14 +1040,14 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
 	[BIOME:SWAMP_TROPICAL_SALTWATER]
 	[BIOME:SWAMP_MANGROVE]
 	[UBIQUITOUS]{+}
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[AMBUSHPREDATOR]{+}
@@ -1076,23 +1071,19 @@ creature_large_tropical
 		[CDI:TARGET_RANGE:A:1]
 		[CDI:MAX_TARGET_NUMBER:A:1]
 		[CDI:WAIT_PERIOD:10]
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[PREFSTRING:stripes, of course]
 	[PREFSTRING:dark, vertical stripes, of course]{+}
 	[PREFSTRING:dark stripes contrasting reddish-orange fur]{+}
 	[PREFSTRING:luxurious coats bearing dark stripes]{+}
 	[PREFSTRING:beautiful dark-striped fur]{+}
 	[PREFSTRING:stripes]{+}
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: feline natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]{+:    ++
+	[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]{+:      ++
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    +
+	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+:     -
+	[PHYS_ATT_RANGE:ENDURANCE:150:600:800:900:1000:1100:1500]{+:     -
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -1204,9 +1195,10 @@ creature_large_tropical
 	[NAME:tiger man:tiger men:tiger man]
 	[DESCRIPTION:An orange striped person with the head of a tiger.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -1238,7 +1230,6 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:large stripes, of course]
@@ -1257,12 +1248,12 @@ creature_large_tropical
 	[PETVALUE:200]
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[UBIQUITOUS]{+}
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
@@ -1291,6 +1282,12 @@ creature_large_tropical
 	[PREFSTRING:deep chests and narrow waists]{+}
 	[PREFSTRING:adorable mohawk-adorned cubs]{+}
 	[PREFSTRING:fraternal social lives]{+}
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: feline natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]{+:    ++
+	[MENT_ATT_RANGE:FOCUS:700:1200:1400:1500:1600:1800:2500]{+:      ++
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    +
+	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+:     -
+	[PHYS_ATT_RANGE:ENDURANCE:150:600:800:900:1000:1100:1500]{+:     -
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -1401,9 +1398,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:cheetah man:cheetah men:cheetah man]
 	[DESCRIPTION:A spotted person with the head and tail of a cheetah.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -1435,7 +1433,6 @@ creature_large_tropical
 	[PET_EXOTIC]
 	[PETVALUE:650]{:500
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:speed]
@@ -1465,6 +1462,7 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:5:10]
+	[FREQUENCY:100]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[UBIQUITOUS]{+}
@@ -1590,9 +1588,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:gazelle man:gazelle men:gazelle man]
 	[DESCRIPTION:A horned person with the head of a gazelle.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'g']
 	[COLOR:6:0:0]
 
@@ -1636,10 +1635,10 @@ creature_large_tropical
 	[PETVALUE:50]
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[NATURAL]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][LOOSE_CLUSTERS][FREQUENCY:15]{:10
+	[LARGE_ROAMING][LOOSE_CLUSTERS][FREQUENCY:100]{:10}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -1761,7 +1760,7 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:mandrill man:mandrill men:mandrill man]
 	[DESCRIPTION:A blue-rumped person with the head and tail of a mandrill.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
@@ -1814,7 +1813,7 @@ creature_large_tropical
 	[NATURAL]
 	[MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -1923,7 +1922,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2028,11 +2027,11 @@ creature_large_tropical
 	[CURIOUSBEAST_ITEM]{+}
 	[PET_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[NATURAL]
 	[MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2152,7 +2151,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:colorful hair]
@@ -2259,7 +2258,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2366,7 +2365,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2474,7 +2473,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2582,7 +2581,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2689,7 +2688,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2791,7 +2790,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2896,7 +2895,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -3003,7 +3002,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -3105,7 +3104,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:15]{:5
+	[LARGE_ROAMING][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -3225,6 +3224,7 @@ creature_large_tropical
 	[TRADE_CAPACITY:3000]
 	[WAGON_PULLER]{+}
 	[COMMON_DOMESTIC]{+}
+	[UBIQUITOUS]{+}
 	[BENIGN][MEANDERER][NATURAL]
 	[BODY:QUADRUPED_NECK:TAIL:1HUMP:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -3382,9 +3382,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:one-humped camel man:one-humped camel men:one-humped camel man]
 	[DESCRIPTION:A person with the head and hump of a one-humped camel.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -3458,6 +3459,7 @@ creature_large_tropical
 	[TRADE_CAPACITY:3000]
 	[WAGON_PULLER]{+}
 	[COMMON_DOMESTIC]{+}
+	[UBIQUITOUS]{+}
 	[BENIGN][MEANDERER][NATURAL]
 	[BODY:QUADRUPED_NECK:TAIL:2HUMPS:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -3592,9 +3594,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:two-humped camel man:two-humped camel men:two-humped camel man]
 	[DESCRIPTION:A person with the head and humps of a two-humped camel.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -3659,7 +3662,7 @@ creature_large_tropical
 	[BIOME:RIVER_TROPICAL_SALTWATER]
 	[BIOME:RIVER_TROPICAL_BRACKISHWATER]
 	[BIOME:RIVER_TROPICAL_FRESHWATER]
-	[LARGE_ROAMING][DIFFICULTY:2][FREQUENCY:15]{:5
+	[LARGE_ROAMING][DIFFICULTY:2][FREQUENCY:100]{:5}
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
@@ -3789,9 +3792,10 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:saltwater crocodile man:saltwater crocodile men:saltwater crocodile man]
 	[DESCRIPTION:A person with the head and tail of a saltwater crocodile.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'C']
 	[COLOR:2:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]{:CLAW:CLAW_TEMPLATE
@@ -3837,6 +3841,7 @@ creature_large_tropical
 	[GENERAL_CHILD_NAME:vulture hatchling:vulture hatchlings]
 	[CREATURE_TILE:'v'][COLOR:4:0:0]
 	[POPULATION_NUMBER:150:300]{:15:30
+	[FREQUENCY:100]{+}
 	[CLUSTER_NUMBER:5:10]
 	[LOOSE_CLUSTERS]
 	[PETVALUE:30]
@@ -3971,7 +3976,7 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:vulture man:vulture men:vulture man]
 	[DESCRIPTION:A person with the head and wings of a vulture.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'v']
@@ -4023,7 +4028,7 @@ creature_large_tropical
 	[STANDARD_GRAZER]
 	[VISION_ARC:50:310]
 	[TRAINABLE_WAR]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING]
 	[NATURAL_SKILL:BITE:3]{+}
 	[BIOME:GRASSLAND_TROPICAL]
@@ -4031,6 +4036,7 @@ creature_large_tropical
 	[BIOME:SHRUBLAND_TROPICAL]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:100]{+}
 	[MEANDERER][NATURAL]--BENIGN]
 	[PREFSTRING:horns]
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500]{+}
@@ -4079,8 +4085,9 @@ creature_large_tropical
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -4140,8 +4147,9 @@ creature_large_tropical
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -4153,7 +4161,7 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:rhinoceros man:rhinoceros men:rhinoceros man]
 	[DESCRIPTION:A person with the head and horns of a rhinoceros.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'R']
@@ -4212,6 +4220,7 @@ creature_large_tropical
 	[BIOME:SHRUBLAND_TROPICAL]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:100]{+}
 	[BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:long necks]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN]
@@ -4311,7 +4320,7 @@ creature_large_tropical
 	[GO_TO_START]
 	[NAME:giraffe man:giraffe men:giraffe man]
 	[DESCRIPTION:A person with the head and neck of a giraffe.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'G']
@@ -4364,6 +4373,7 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
@@ -4500,9 +4510,10 @@ creature_large_tropical
 	[NAME:honey badger man:honey badger men:honey badger man]
 	[DESCRIPTION:A humanoid with the head and stripes of a honey badger.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'b']
 	[COLOR:7:0:1]
 	[GO_TO_TAG:SET_TL_GROUP:BY_CATEGORY:LEG_FRONT:HAIR]
@@ -4572,6 +4583,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:300]{:10:30
 	[CLUSTER_NUMBER:5:10]
+	[FREQUENCY:100]{+}
 	[PREFSTRING:great size]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:RIBCAGE:SHELL]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -4683,7 +4695,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[GO_TO_START]
 	[NAME:giant tortoise man:giant tortoise men:giant tortoise man]
 	[DESCRIPTION:A person with a large shell and the head of a giant tortoise.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'T']
@@ -4741,6 +4753,7 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -4848,8 +4861,9 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:armadillo man:armadillo men:armadillo man]
 	[DESCRIPTION:A person with the hide and head of an armadillo.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:0]

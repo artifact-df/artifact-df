@@ -13,11 +13,12 @@ creature_large_temperate
 	[PETVALUE:500]
 	[PET_EXOTIC]{:PET}
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[MOUNT_EXOTIC]
-	[LARGE_ROAMING][FREQUENCY:10]{:2
+	[LARGE_ROAMING]--FREQUENCY:2]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[CURIOUSBEAST_EATER]
@@ -25,7 +26,6 @@ creature_large_temperate
 	[GRASSTRAMPLE:0]
 	[LARGE_PREDATOR]
 	[NO_WINTER][MEANDERER]
-	[NATURAL_SKILL:BITE:3][NATURAL_SKILL:GRASP_STRIKE:3]{+  Revision: large predator animals need to be more dangerous.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
@@ -37,17 +37,12 @@ creature_large_temperate
 	[PREFSTRING:lengthy hibernating periods]{+}
 	[PREFSTRING:interspecies rivalry]{+}
 	[PREFSTRING:motherly instinct]{+}
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: ursine natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+:       -
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    ++
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+:   ++
+	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]{+:   +
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -162,17 +157,15 @@ creature_large_temperate
 	[NAME:grizzly bear man:grizzly bear men:grizzly bear man]
 	[DESCRIPTION:A large person with the head of a grizzly bear.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'B']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT]{:FINGER:NAIL
 	[SKILL_LEARN_RATE:FISH:200]{+}
-	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+}
-	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+}
-	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+}
 
 [CREATURE:GIANT_BEAR_GRIZZLY]
 	[COPY_TAGS_FROM:BEAR_GRIZZLY]
@@ -198,7 +191,6 @@ creature_large_temperate
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]
@@ -219,10 +211,11 @@ creature_large_temperate
 	[NATURAL]
 	[TRAINABLE]{+}
 	[UBIQUITOUS]{+}
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
-	[LARGE_ROAMING][FREQUENCY:8]{:4
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
+	[LARGE_ROAMING]--FREQUENCY:4]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	--CURIOUSBEAST_EATER] removed or they break caravans
@@ -231,7 +224,6 @@ creature_large_temperate
 	[LARGE_PREDATOR]
 	[NO_WINTER][MEANDERER]
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500][BENIGN]{+}
-	[NATURAL_SKILL:BITE:2]{+}
 	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
@@ -243,17 +235,12 @@ creature_large_temperate
 	[PREFSTRING:beautiful black coats]{+}
 	[PREFSTRING:playful cubs]{+}
 	[PREFSTRING:motherly teaching skill]{+}
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: ursine natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+:       -
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    ++
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+:   ++
+	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]{+:   +
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -368,17 +355,15 @@ creature_large_temperate
 	[NAME:black bear man:black bear men:black bear man]
 	[DESCRIPTION:A large person with the head of a black bear.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT]{:FINGER:NAIL
 	[SKILL_LEARN_RATE:FISH:200]{+}
-	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+}
-	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+}
-	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+}
 
 [CREATURE:GIANT_BEAR_BLACK]
 	[COPY_TAGS_FROM:BEAR_BLACK]
@@ -432,6 +417,7 @@ creature_large_temperate
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[UBIQUITOUS]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CLUSTER_NUMBER:1:4]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
@@ -461,8 +447,9 @@ creature_large_temperate
 		[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 			[ATTACK_SKILL:BITE]
 			[ATTACK_VERB:gore:gores]
-			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_CONTACT_PERC:90]{:100}
 			[ATTACK_PENETRATION_PERC:110]{+}
+			[ATTACK_VELOCITY_MODIFIER:1100]{+}
 			[ATTACK_FLAG_EDGE]{+}
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
 			[ATTACK_PRIORITY:MAIN]
@@ -567,9 +554,10 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:deer man:deer men:deer man]
 	[DESCRIPTION:A person with the head of a deer.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'d']
 	[COLOR:6:0:0]
 
@@ -623,9 +611,10 @@ creature_large_temperate
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BONECARN]
 	[BENIGN]
-	[TRAINABLE]{+}
+	[TRAINABLE_HUNTING]{+}
 	[UBIQUITOUS]{+}
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:1000:VOCALIZATION:yap:yaps:tiny yapping]{+}
 	[PREFSTRING:cunning]
@@ -742,7 +731,7 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:fox man:fox men:fox man]
 	[DESCRIPTION:A person with the head and tail of a fox.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'f']
@@ -796,9 +785,10 @@ creature_large_temperate
 	[NATURAL]
 	[PETVALUE:25]
 	[PET_EXOTIC]
-	[LARGE_ROAMING][FREQUENCY:20]{:10
+	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:3][LOOSE_CLUSTERS]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[CURIOUSBEAST_EATER]
@@ -918,9 +908,10 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:raccoon man:raccoon men:raccoon man]
 	[DESCRIPTION:A person with the mask and tail of a raccoon.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'r']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -972,7 +963,7 @@ creature_large_temperate
 	[CURIOUSBEAST_ITEM]
 	[CURIOUSBEAST_GUZZLER]{+}
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:20]{:10
+	[LARGE_ROAMING][FREQUENCY:100]{:10}
 	[POPULATION_NUMBER:200:1000]{:20:100
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[BIOME:SHRUBLAND_TEMPERATE]
@@ -1090,7 +1081,7 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:rhesus macaque man:rhesus macaque men:rhesus macaque man]
 	[DESCRIPTION:A person with the head and tail of a rhesus macaque.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
@@ -1141,14 +1132,15 @@ creature_large_temperate
 	[BIOME:FOREST_TROPICAL_CONIFER]{:ANY_TROPICAL_FOREST
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CARNIVORE][NATURAL]
 	[PETVALUE:100]
 	[PET_EXOTIC]
 	[TRAINABLE]{+}
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_PREDATOR][MEANDERER]
 	[GRASSTRAMPLE:0]
 	[PREFSTRING:cunning]
@@ -1157,17 +1149,11 @@ creature_large_temperate
 	[PREFSTRING:territorial nature]{+}
 	[PREFSTRING:comparatively small head contrasting a contrarily large body]{+}
 	[PREFSTRING:plain colouring]{+}
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[NATURAL_SKILL:BITE:5][NATURAL_SKILL:GRASP_STRIKE:5]{+  Revision: large predator animals need to be more dangerous.}
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+  Revision: animal stat weights.}
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+}
+	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+}
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:yowl:yowls:a loud yowl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:snarl:snarls:a vicious snarl]{+}
@@ -1304,9 +1290,10 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:cougar man:cougar men:cougar man]
 	[DESCRIPTION:A person with the head and tail of a cougar.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
@@ -1357,7 +1344,7 @@ creature_large_temperate
 	[CREATURE_TILE:'w'][COLOR:7:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[LARGE_PREDATOR][MEANDERER]
-	[LARGE_ROAMING][FREQUENCY:10]{:5
+	[LARGE_ROAMING]--FREQUENCY:5]
 	[BIOME:TUNDRA]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
@@ -1365,11 +1352,12 @@ creature_large_temperate
 	[UBIQUITOUS]{+}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:3:7]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:65]{:50
-	[PET]{:PET_EXOTIC}
+	[PET_EXOTIC]
 	[TRAINABLE]{+}
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BONECARN]
 	[PREFSTRING:cunning]
 	[PREFSTRING:feral nature]{+}
@@ -1377,19 +1365,14 @@ creature_large_temperate
 	[PREFSTRING:stamina-built bodies]{+}
 	[PREFSTRING:bulky, double-layered coats]{+}
 	[PREFSTRING:social predatory lifestyle]{+}
-	[PRONE_TO_RAGE:2]{+}
+	[NATURAL_SKILL:BITE:6]{+  Revision: canine natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+:             +
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:            +
+	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]{+:           +
+	[MENT_ATT_RANGE:FOCUS:450:950:1150:1250:1350:1550:2250]{+:               +
+	[MENT_ATT_RANGE:SOCIAL_AWARENESS:450:950:1150:1250:1350:1550:2250]{+:    +
 	[SMELL_TRIGGER:5]{+  Revision: canids have an acute sense of smell.}
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:snarl:snarls:a vicious snarl]{+}
 	[SOUND:ALERT:25:10000:VOCALIZATION:bark:bark:a loud bark]{+}
@@ -1528,7 +1511,7 @@ creature_large_temperate
 	[NAME:wolf man:wolf men:wolf man]
 	[DESCRIPTION:A person with the head and tail of a wolf.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'w']
@@ -1536,9 +1519,6 @@ creature_large_temperate
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
 	[SKILL_LEARN_RATE:TRACKING:200]{+}
-	[MENT_ATT_RANGE:FOCUS:450:950:1150:1250:1350:1550:2250]{+}
-	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+}
-	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]{+}
 
 [CREATURE:GIANT_WOLF]
 	[COPY_TAGS_FROM:WOLF]
@@ -1564,7 +1544,6 @@ creature_large_temperate
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:cunning]
@@ -1588,6 +1567,7 @@ creature_large_temperate
 	[BIOME:GRASSLAND_TEMPERATE]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CLUSTER_NUMBER:1:4]
 	[NO_WINTER][BENIGN][MEANDERER]
 	[VISION_ARC:50:310]
@@ -1706,7 +1686,7 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:groundhog man:groundhog men:groundhog man]
 	[DESCRIPTION:A person with the head and fur of a groundhog.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'g']
@@ -1770,6 +1750,7 @@ creature_large_temperate
 	--MOUNT_EXOTIC]
 	[AMBUSHPREDATOR]{+}
 	[UBIQUITOUS]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CANNOT_JUMP]
 	[LARGE_PREDATOR]
 	[GRASSTRAMPLE:20]
@@ -1779,6 +1760,10 @@ creature_large_temperate
 	[PREFSTRING:wild convulses]{+}
 	[PREFSTRING:grip]{+}
 	[PREFSTRING:dragon-like appearance]{+}
+	[NATURAL_SKILL:BITE:6]{+  Revision: large predator animals need to be more dangerous.}
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+  Revision: animal stat weights.}
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+}
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
@@ -1896,7 +1881,7 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:alligator man:alligator men:alligator man]
 	[DESCRIPTION:A person with the head and tail of an alligator.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'A']
@@ -1931,6 +1916,7 @@ creature_large_temperate
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[GO_TO_END]
 	[PREFSTRING:strength]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:1422:1127:831:488:2500:3700] 18 kph
@@ -1944,6 +1930,7 @@ creature_large_temperate
 	[GENERAL_CHILD_NAME:buzzard hatchling:buzzard hatchlings]
 	[CREATURE_TILE:'b'][COLOR:0:0:1]
 	[POPULATION_NUMBER:150:300]{:15:30
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CLUSTER_NUMBER:5:10]
 	[LOOSE_CLUSTERS]
 	[PETVALUE:30]
@@ -2080,7 +2067,7 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:buzzard man:buzzard men:buzzard man]
 	[DESCRIPTION:A person with the head and wings of a buzzard.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'b']
@@ -2144,6 +2131,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]{:ANY_TEMPERATE_FOREST
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]{+}
 	[GRASSTRAMPLE:0]
@@ -2151,6 +2139,11 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[PREFSTRING:striking coloration]
 	[PREFSTRING:big fluffy heads and bellies]
 	[PREFSTRING:lazy nature]
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: ursine natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+:       -
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    ++
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+:   ++
+	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]{+:   +
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500][BENIGN]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
@@ -2336,9 +2329,10 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:panda man:panda men:panda man]
 	[DESCRIPTION:A humanoid creature with the head and belly of a panda.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'P']
 	[COLOR:7:0:1]
 	[SKILL_LEARN_RATE:HERBALISM:200]{+}
@@ -2369,6 +2363,7 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[AMPHIBIOUS]
 	[LARGE_ROAMING]
 	[UBIQUITOUS]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:200:300]{:20:30
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:ANY_TROPICAL_WETLAND]{:ANY_WETLAND}
@@ -2530,7 +2525,7 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:capybara man:capybara men:capybara man]
 	[DESCRIPTION:A humanoid with the head of a capybara.  It is fond of swimming.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
@@ -2554,6 +2549,7 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:4:12]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:SHRUBLAND_TEMPERATE]
@@ -2692,9 +2688,10 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:badger man:badger men:badger man]
 	[DESCRIPTION:A humanoid with the head and stripes of a badger.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'b']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:SET_TL_GROUP:BY_CATEGORY:LEG_FRONT:HAIR]
@@ -2771,6 +2768,7 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:FOREST_TEMPERATE_CONIFER]{:ANY_TEMPERATE_FOREST}
 	--BENIGN][MEANDERER][NATURAL][PET_EXOTIC][MOUNT_EXOTIC]
 	[UBIQUITOUS]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[MAXAGE:15:25]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -2800,8 +2798,9 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 			[ATTACK_SKILL:BITE]
 			[ATTACK_VERB:gore:gores]
-			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_CONTACT_PERC:90]{:100}
 			[ATTACK_PENETRATION_PERC:110]{+}
+			[ATTACK_VELOCITY_MODIFIER:1100]{+}
 			[ATTACK_FLAG_EDGE]{+}
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
 			[ATTACK_PRIORITY:MAIN]
@@ -2916,9 +2915,10 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:moose man:moose men:moose man]
 	[DESCRIPTION:A humanoid with the head and antlers of a moose.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 
@@ -2976,6 +2976,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]{:ANY_TEMPERATE_FOREST
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]{+}
 	[STANDARD_GRAZER]
@@ -3133,9 +3134,10 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:red panda man:red panda men:red panda man]
 	[DESCRIPTION:A medium-sized, walking red panda with arms and a tail.  It prefers the forest and its beloved trees.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'p']
 	[COLOR:4:0:0]
 	[GO_TO_TAG:SET_TL_GROUP:BY_CATEGORY:LEG_FRONT:HAIR]

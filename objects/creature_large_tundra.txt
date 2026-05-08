@@ -15,7 +15,7 @@ creature_large_tundra
 	[BIOME:GRASSLAND_TEMPERATE]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[MEANDERER]--BENIGN]
 	[PETVALUE:300]
 	[PET_EXOTIC]
@@ -152,9 +152,10 @@ creature_large_tundra
 	[GO_TO_START]
 	[NAME:muskox man:muskox men:muskox man]
 	[DESCRIPTION:A horned person with the head of a muskox.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
 
@@ -204,7 +205,8 @@ creature_large_tundra
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[UBIQUITOUS]{+}
 	[GRASSTRAMPLE:0]
 	[BIOME:TUNDRA]
 	[BIOME:GRASSLAND_TEMPERATE]
@@ -343,9 +345,10 @@ creature_large_tundra
 	[GO_TO_START]
 	[NAME:elk man:elk men:elk man]
 	[DESCRIPTION:A person with the head of an elk.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'E']
 	[COLOR:6:0:0]
 
@@ -393,11 +396,12 @@ creature_large_tundra
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_PREDATOR]
 	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:20]{:2
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	--FREQUENCY:2]
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
 	[MEANDERER]
@@ -409,18 +413,13 @@ creature_large_tundra
 	[SOUND:ALERT:50:1000:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:25:2500:VOCALIZATION:growl idly:growls idly:an idle growl]{+}
-	[CAN_DO_INTERACTION:FEARFUL_GROWL]{+  Revision: this creature can let loose a fearful growl.}
-		[CDI:ADV_NAME:Growl!]
-		[CDI:USAGE_HINT:ATTACK]
-		[CDI:USAGE_HINT:DEFEND]
-		[CDI:VERB:growl:growls:NA]
-		[CDI:TARGET:A:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:A:3]
-		[CDI:MAX_TARGET_NUMBER:A:2]
-		[CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
-		[CDI:WAIT_PERIOD:100]
-	[CREATURE_CLASS:IMMUNE_GROWL]{+
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[PREFSTRING:strength]
+	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: ursine natural skills, and attribute weights.}
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+:       -
+	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    ++
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+:   ++
+	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]{+:   +
 	[PRONE_TO_RAGE:10]{+}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
@@ -535,15 +534,15 @@ creature_large_tundra
 	[NAME:polar bear man:polar bear men:polar bear man]
 	[DESCRIPTION:A large person with the head of a polar bear.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'B']
 	[COLOR:7:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT]{:FINGER:NAIL
 	[SKILL_LEARN_RATE:FISH:200]{+}
-	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+}
 
 [CREATURE:GIANT_BEAR_POLAR]
 	[COPY_TAGS_FROM:BEAR_POLAR]
@@ -569,7 +568,6 @@ creature_large_tundra
 	[PET_EXOTIC]
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
-	[LARGE_PREDATOR]{+}
 	[TRAINABLE]{+}
 	[GO_TO_END]
 	[PREFSTRING:strength]

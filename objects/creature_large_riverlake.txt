@@ -21,11 +21,11 @@ creature_large_riverlake
 	[BIOME:LAKE_TROPICAL_FRESHWATER]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[MEANDERER][NATURAL]--BENIGN]
 	[PRONE_TO_RAGE:10]{+}
 	[TRAINABLE_WAR]{+}
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[PREFSTRING:strength]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -135,9 +135,10 @@ creature_large_riverlake
 	[NAME:hippo man:hippo men:hippo man]
 	[DESCRIPTION:A large person with the head of a hippo.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'H']
 	[COLOR:7:0:0]
 
@@ -186,7 +187,7 @@ creature_large_riverlake
 	[BIOME:RIVER_TEMPERATE_BRACKISHWATER]
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[BIOME:LAKE_TEMPERATE_BRACKISHWATER]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[PREFSTRING:long noses]
 	[BODY:BASIC_2PARTBODY:BASIC_HEAD:SIDE_FINS:TAIL:2EYES:HEART:GUTS:ORGANS:SPINE:BRAIN:SKULL:MOUTH:RIBCAGE:GENERIC_TEETH]
@@ -278,7 +279,7 @@ creature_large_riverlake
 	[BIOME:RIVER_TROPICAL_FRESHWATER]
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[BIOME:LAKE_TROPICAL_FRESHWATER]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:5:10]
 	[PREFSTRING:protruding mouths]
@@ -367,7 +368,7 @@ creature_large_riverlake
 	[PETVALUE:200]
 	[BIOME:RIVER_TROPICAL_FRESHWATER]
 	[BIOME:LAKE_TROPICAL_FRESHWATER]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[PREFSTRING:spirit]
@@ -460,7 +461,7 @@ creature_large_riverlake
 	[BIOME:RIVER_TEMPERATE_BRACKISHWATER]
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
 	[BIOME:LAKE_TEMPERATE_BRACKISHWATER]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[PREFSTRING:distinct markings]
 	[BODY:BASIC_2PARTBODY:BASIC_HEAD:SIDE_FINS:DORSAL_FIN:TAIL:2EYES:HEART:GUTS:ORGANS:SPINE:BRAIN:SKULL:MOUTH:RIBCAGE:GENERIC_TEETH]
@@ -560,7 +561,7 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[AMPHIBIOUS][UNDERSWIM]
 	[LARGE_ROAMING]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:ANY_RIVER]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
@@ -734,9 +735,10 @@ Platypuses were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:platypus man:platypus men:platypus man]
 	[DESCRIPTION:A humanoid with the head, tail and poison spurs of a platypus.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'p']
 	[COLOR:6:0:0]
 

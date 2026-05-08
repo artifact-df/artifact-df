@@ -13,6 +13,7 @@ creature_amphibians
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
 	[BIOME:ANY_POOL]
+	[UBIQUITOUS]{+}
 	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[POPULATION_NUMBER:250:500]
 	[SOUND:ALERT:100:10000:VOCALIZATION:croak:croaks:loud croaking]{+}
@@ -98,9 +99,10 @@ creature_amphibians
 	[GO_TO_START]
 	[NAME:toad man:toad men:toad man]
 	[DESCRIPTION:A dark green man with the distinct head of a toad.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'t']
 	[COLOR:2:0:0]
 	[SKILL_LEARN_RATE:CLIMBING:200]{+}

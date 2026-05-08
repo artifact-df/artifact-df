@@ -631,9 +631,11 @@ creature_reptiles
 	[CHILD:1][GENERAL_CHILD_NAME:iguana hatchling:iguana hatchlings]
 	[CREATURE_TILE:'i'][COLOR:2:0:1]
 	[BIOME:ANY_TROPICAL_FOREST]
+	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]{+}
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NATURAL]{CARNIVORE  Revision: as their description indicates, they're not carnivores.}
 	[MEANDERER]
 	[PETVALUE:400]

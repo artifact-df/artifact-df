@@ -99,6 +99,7 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [STATE_NAME:POWDER:dolomite powder]{+}
 [STATE_ADJ:POWDER:dolomite powder]{+}
 [REACTION_CLASS:FLUX] not CaCO3, has Mg, makes "calcined dolomite" in calcination instead of quicklime, not sure of effective differences
+[REACTION_CLASS:CALCIUM_CARBONATE]{+}
 [SEDIMENTARY]
 [MATERIAL_VALUE:2]
 [IS_STONE]

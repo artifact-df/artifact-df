@@ -36,8 +36,6 @@ interactions.secrets.death=function(idx,sph)
         [IT_REQUIRES:CAN_LEARN]
         [IT_REQUIRES:CAN_SPEAK]
 		[IT_CANNOT_HAVE_SYNDROME_CLASS:NECROMANCER]//new
-		[IT_AFFECTED_CREATURE:HUMAN:FEMALE_NOBLE]// only human nobles can initially learn the secret
-		[IT_AFFECTED_CREATURE:HUMAN:MALE_NOBLE]// ditto
     [I_EFFECT:ADD_SYNDROME]
         [IE_TARGET:A]
         [IE_IMMEDIATE]
@@ -47,19 +45,21 @@ interactions.secrets.death=function(idx,sph)
             [SYN_CONCENTRATION_ADDED:1000:0]//just in case
 			[IT_AFFECTED_CLASS:GENERAL_POISON]//new
 			[SYN_NO_HOSPITAL]//new
+			[SYN_IMMUNE_CLASS:DWARF_GUILD]//new
             [CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT]
             [CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0:ABRUPT]
 			[CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]
             [CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:40:FACET:TRUST:-40:START:0:ABRUPT]// reduced by 10
-			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-25:FACET:EMOTIONALLY_OBSESSIVE:-25:FACET:SWAYED_BY_EMOTIONS:-25:START:0:ABRUPT]// new personality alterations, necromancers are less emotional
-			[CE_MENT_ATT_CHANGE:EMPATHY:75:0]// necromancers are less empathetic
-			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]
+			[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-20:FACET:EMOTIONALLY_OBSESSIVE:-20:FACET:SWAYED_BY_EMOTIONS:-20:FACET:GREGARIOUSNESS:-20:FACET:BASHFUL:20:START:0:ABRUPT]// intelligent undead are less emotional and social than they were in life
+			[CE_MENT_ATT_CHANGE:EMPATHY:75:0]// intelligent undead are less empathetic than they were in life
+			[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// undead creatures get a 50% resistance against damage
             [CE_CAN_DO_INTERACTION:START:0:ABRUPT]
                 [CDI:ADV_NAME:Animate corpse]
                 str="[CDI:INTERACTION:]]..animate_token..[[]
                 [CDI:TARGET:A:LINE_OF_SIGHT]
                 [CDI:TARGET_RANGE:A:10]
                 [CDI:VERB:gesture:gestures:NA]
+				[CDI:BP_REQUIRED:BY_CATEGORY:GRASP]//new - the spell need hands to gesture
                 [CDI:TARGET_VERB:shudder and begin to move:shudders and begins to move]
                 [CDI:WAIT_PERIOD:100]
                 [CDI:DEFAULT_ICON:ADVENTURE_INTERACTION_ICON_ANIMATE_CORPSE]
@@ -67,8 +67,9 @@ interactions.secrets.death=function(idx,sph)
 				[CDI:ADV_NAME:Summon skeleton]
 				[CDI:INTERACTION:SUMMON_SKELETON]
 				[CDI:VERB:gesture:gestures:NA]
+				[CDI:BP_REQUIRED:BY_CATEGORY:GRASP]//new - the spell need hands to gesture
 				[CDI:TARGET_VERB:breaks free from the ground:breaks free from the ground]
-				[CDI:WAIT_PERIOD:600]
+				[CDI:WAIT_PERIOD:1200]
                 [CDI:DEFAULT_ICON:ADVENTURE_INTERACTION_ICON_ANIMATE_CORPSE]
             [CE_CAN_DO_INTERACTION:START:0:ABRUPT]// new fear aura ability
                 [CDI:ADV_NAME:Fearsome]
@@ -114,6 +115,7 @@ interactions.secrets.death=function(idx,sph)
         [CDI:TARGET:A:LINE_OF_SIGHT]
         [CDI:TARGET_RANGE:A:10]
         [CDI:VERB:gesture:gestures:NA]
+		[CDI:BP_REQUIRED:BY_CATEGORY:GRASP]//new - the spell need hands to gesture
         [CDI:TARGET_VERB:shudder and begin to move:shudders and begins to move]
     //************************ RITUALS
         [CDI:WAIT_PERIOD:100]
@@ -159,6 +161,7 @@ interactions.secrets.death=function(idx,sph)
         [CDI:TARGET:A:LINE_OF_SIGHT]
         [CDI:TARGET_RANGE:A:10]
         [CDI:VERB:gesture:gestures:NA]
+		[CDI:BP_REQUIRED:BY_CATEGORY:GRASP]//new - the spell need hands to gesture
         [CDI:TARGET_VERB:shudder and a spirit rises:shudders and a spirit rises]
     //************************ RITUALS
         [CDI:WAIT_PERIOD:100]
@@ -166,11 +169,11 @@ interactions.secrets.death=function(idx,sph)
     end
     tbl[#tbl+1]="[INTERACTION:"..animate_token.."]"
     tbl=add_generated_info(tbl)
-    tbl=table_merge(tbl,basic_animation(false))
+    tbl=table_merge(tbl,basic_animation_mfork(false))
     if raise then
         tbl[#tbl+1]="[INTERACTION:"..iu_token.."]"
         tbl=add_generated_info(tbl)
-        local t,et=basic_lieutenant(raise_name,raise_name_plural,iu_token)
+        local t,et=basic_lieutenant_mfork(raise_name,raise_name_plural,iu_token)
         tbl=table_merge(tbl,table_merge(t,et))
     end
     if bogeyman then
@@ -232,7 +235,7 @@ interactions.secrets.death=function(idx,sph)
 							[CE_PHYS_ATT_CHANGE:STRENGTH:200:1000:TOUGHNESS:200:1000:START:0:ABRUPT]
 							[CE_ADD_TAG:NO_AGING:NOT_LIVING:STERILE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]
 							[CE_REMOVE_TAG:HAS_BLOOD:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
-							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]//new
+							[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// undead creatures get a 50% resistance against damage
         ]])
         local t,et=basic_lieutenant_powers(ghost_token)
         tbl=table_merge(tbl,table_merge(t,et))
@@ -281,11 +284,141 @@ interactions.secrets.death=function(idx,sph)
                 else 1/2 chance CE_SPEED_CHANGE:SPEED_PERC:20:START:0:ABRUPT
                 [CE_ADD_TAG:NO_AGING:NOT_LIVING:OPPOSED_TO_LIFE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]
                 [CE_REMOVE_TAG:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
-				[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]//new
+				[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// undead creatures get a 50% resistance against damage
                 [CE_SPECIAL_ATTACK_INTERACTION:INTERACTION:]]..ghoul_token..":BP:BY_CATEGORY:MOUTH:BP:BY_CATEGORY:TOOTH:START:0:ABRUPT]"
         )
     end
     local spheres={"DEATH"}
     if summon then spheres[2]="NIGHTMARES" end
-    return {raws=tbl,weight=10,spheres=spheres}-- increased weight
+    return {raws=tbl,weight=10,spheres=spheres}-- 10x increased weight
+end
+
+function basic_animation_mfork(regional)
+    local tbl={}
+    tbl[#tbl+1]="[I_TARGET:A:CORPSE]"
+    if regional then
+        tbl[#tbl+1]="[IT_LOCATION:CONTEXT_REGION]"
+    else
+        tbl[#tbl+1]="[IT_LOCATION:CONTEXT_ITEM]"
+    end
+    tbl[#tbl+1]="[IT_AFFECTED_CLASS:GENERAL_POISON]"
+    tbl[#tbl+1]="[IT_REQUIRES:FIT_FOR_ANIMATION]"
+    tbl[#tbl+1]="[IT_FORBIDDEN:NOT_LIVING]"
+    tbl[#tbl+1]="[IT_MANUAL_INPUT:corpses]"
+    tbl[#tbl+1]="[I_EFFECT:ANIMATE]"
+    tbl[#tbl+1]="  [IE_TARGET:A]"
+    if regional then
+        tbl[#tbl+1]="  [IE_INTERMITTENT:WEEKLY]"
+    else
+        tbl[#tbl+1]="  [IE_IMMEDIATE]"
+    end
+    tbl[#tbl+1]="  [IE_ARENA_NAME:Animated corpse]"
+    tbl[#tbl+1]="  [SYNDROME]"
+    tbl[#tbl+1]="    [SYN_CLASS:ZOMBIE]"
+	tbl[#tbl+1]="    [SYN_NO_HOSPITAL]"--new
+    tbl[#tbl+1]="    [SYN_CONCENTRATION_ADDED:1000:0]" --just in case
+    tbl[#tbl+1]="    [CE_FLASH_TILE:TILE:165:3:0:0:FREQUENCY:2000:1000:START:0:ABRUPT]"
+    tbl[#tbl+1]="    [CE_PHYS_ATT_CHANGE:STRENGTH:130:0:TOUGHNESS:300:1000:START:0:ABRUPT]"
+    tbl[#tbl+1]="    [CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]"-- undead creatures get a 50% resistance against damage
+    tbl[#tbl+1]="    [CE_CAN_DO_INTERACTION:START:0:ABRUPT]"-- new fear aura ability
+    tbl[#tbl+1]="    [CDI:ADV_NAME:Fearsome]"
+    tbl[#tbl+1]="    [CDI:INTERACTION:AURA_FEAR]"
+    tbl[#tbl+1]="    [CDI:USAGE_HINT:ATTACK]"
+    tbl[#tbl+1]="    [CDI:TARGET:A:LINE_OF_SIGHT]"
+    tbl[#tbl+1]="    [CDI:TARGET_RANGE:A:4]"
+    tbl[#tbl+1]="    [CDI:MAX_TARGET_NUMBER:A:99]"
+    tbl[#tbl+1]="    [CDI:TARGET_VERB:are shaken:is visibly afraid:NA]"
+    tbl[#tbl+1]="    [CDI:FREE_ACTION]"
+    tbl[#tbl+1]="    [CDI:WAIT_PERIOD:10]"
+    tbl[#tbl+1]="    [CE_CAN_DO_INTERACTION:START:0:ABRUPT]"-- new regeneration ability
+    tbl[#tbl+1]="    [CDI:ADV_NAME:Regenerate]"
+    tbl[#tbl+1]="    [CDI:INTERACTION:REGENERATE_CREATURE]"
+    tbl[#tbl+1]="    [CDI:USAGE_HINT:DEFEND]"
+    tbl[#tbl+1]="    [CDI:BP_REQUIRED:BY_CATEGORY:HEAD]"
+    tbl[#tbl+1]="    [CDI:VERB:reform your body:begins to reform:begin to reform]"
+    tbl[#tbl+1]="    [CDI:TARGET:A:SELF_ONLY:TOUCHABLE]"
+    tbl[#tbl+1]="    [CDI:TARGET_RANGE:A:1]"
+    tbl[#tbl+1]="    [CDI:MAX_TARGET_NUMBER:A:1]"
+    tbl[#tbl+1]="    [CDI:FREE_ACTION]"
+    tbl[#tbl+1]="    [CDI:WAIT_PERIOD:1200]"
+    if not one_in(4) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:80:START:0:ABRUPT]"
+    elseif one_in(3) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:60:START:0:ABRUPT]"
+    elseif one_in(2) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:40:START:0:ABRUPT]"
+    elseif one_in(2) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:20:START:0:ABRUPT]"
+    end
+    tbl[#tbl+1]="    [CE_ADD_TAG:NO_AGING:NOT_LIVING:OPPOSED_TO_LIFE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]"
+    tbl[#tbl+1]="    [CE_REMOVE_TAG:HAS_BLOOD:TRANCES:MISCHIEVOUS:START:0:ABRUPT]"
+    return tbl
+end
+
+function basic_lieutenant_mfork(name,name_plural,token)
+    local tbl={}
+    local end_tbl={}
+    tbl=split_to_lines(tbl,[[
+        [I_TARGET:A:CORPSE]
+        [IT_LOCATION:CONTEXT_ITEM]
+        [IT_AFFECTED_CLASS:GENERAL_POISON]
+        [IT_REQUIRES:FIT_FOR_RESURRECTION]
+        [IT_REQUIRES:CAN_LEARN]
+        [IT_FORBIDDEN:NOT_LIVING]
+        [IT_MANUAL_INPUT:corpses]
+        [IT_CANNOT_HAVE_SYNDROME_CLASS:WERECURSE]
+        [IT_CANNOT_HAVE_SYNDROME_CLASS:VAMPCURSE]
+        [IT_CANNOT_HAVE_SYNDROME_CLASS:DISTURBANCE_CURSE]
+        [IT_CANNOT_HAVE_SYNDROME_CLASS:RAISED_UNDEAD]
+        [IT_CANNOT_HAVE_SYNDROME_CLASS:RAISED_GHOST]
+        [IT_CANNOT_HAVE_SYNDROME_CLASS:GHOUL]
+    [I_EFFECT:RESURRECT]
+        [IE_TARGET:A]
+        [IE_IMMEDIATE]
+        [IE_ARENA_NAME:Raised ]]..name..[[]
+        [SYNDROME]
+        [SYN_CLASS:RAISED_UNDEAD]
+		[SYN_NO_HOSPITAL]//new
+        [SYN_CONCENTRATION_ADDED:1000:0]//just in case
+        [CE_DISPLAY_TILE:TILE:165:3:0:1:START:0:ABRUPT]
+        [CE_DISPLAY_NAME:NAME:]]..name..":"..name_plural..":"..name..[[:START:0:ABRUPT]
+        [CE_PHYS_ATT_CHANGE:STRENGTH:200:1000:TOUGHNESS:200:1000:START:0:ABRUPT]
+        [CE_ADD_TAG:NO_AGING:NOT_LIVING:STERILE:EXTRAVISION:NOEXERT:NOPAIN:NOBREATHE:NOSTUN:NONAUSEA:NO_DIZZINESS:NO_FEVERS:NOEMOTION:PARALYZEIMMUNE:NOFEAR:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:NOTHOUGHT:NO_THOUGHT_CENTER_FOR_MOVEMENT:NO_CONNECTIONS_FOR_MOVEMENT:START:0:ABRUPT]
+        [CE_REMOVE_TAG:HAS_BLOOD:TRANCES:MISCHIEVOUS:START:0:ABRUPT]
+		[CE_MATERIAL_FORCE_MULTIPLIER:MAT_MULT:NONE:NONE:1:2:ABRUPT]// undead creatures get a 50% resistance against damage
+		[CE_CHANGE_PERSONALITY:FACET:LOVE_PROPENSITY:-20:FACET:EMOTIONALLY_OBSESSIVE:-20:FACET:SWAYED_BY_EMOTIONS:-20:FACET:GREGARIOUSNESS:-20:FACET:BASHFUL:20:START:0:ABRUPT]// intelligent undead are less emotional and social than they were in life
+		[CE_MENT_ATT_CHANGE:EMPATHY:66:0]// intelligent undead are less empathetic than they were in life
+            [CE_CAN_DO_INTERACTION:START:0:ABRUPT]// new fear aura ability
+                [CDI:ADV_NAME:Fearsome]
+				[CDI:INTERACTION:AURA_FEAR]
+                [CDI:USAGE_HINT:ATTACK]
+                [CDI:TARGET:A:LINE_OF_SIGHT]
+                [CDI:TARGET_RANGE:A:4]
+                [CDI:MAX_TARGET_NUMBER:A:99]
+                [CDI:TARGET_VERB:are shaken:is visibly afraid:NA]
+                [CDI:FREE_ACTION]
+                [CDI:WAIT_PERIOD:10]
+            [CE_CAN_DO_INTERACTION:START:0:ABRUPT]// new regeneration ability
+                [CDI:ADV_NAME:Regenerate]
+				[CDI:INTERACTION:REGENERATE_CREATURE]
+                [CDI:USAGE_HINT:DEFEND]
+                [CDI:BP_REQUIRED:BY_CATEGORY:HEAD]
+                [CDI:VERB:reform your body:begins to reform:begin to reform]
+                [CDI:TARGET:A:SELF_ONLY:TOUCHABLE]
+                [CDI:TARGET_RANGE:A:1]
+                [CDI:MAX_TARGET_NUMBER:A:1]
+                [CDI:FREE_ACTION]
+                [CDI:WAIT_PERIOD:1200]
+    ]])
+    if not one_in(4) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:80:START:0:ABRUPT]"
+    elseif one_in(3) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:60:START:0:ABRUPT]"
+    elseif one_in(2) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:40:START:0:ABRUPT]"
+    elseif one_in(2) then 
+        tbl[#tbl+1]="    [CE_SPEED_CHANGE:SPEED_PERC:20:START:0:ABRUPT]"
+    end
+    local t,et=basic_lieutenant_powers(token)
+    return table_merge(tbl,t),table_merge(end_tbl,et)
 end

@@ -6,19 +6,20 @@ creature_civ_elf_dark_masterfork
 
 [CREATURE:DARK_ELF_FFF]
 	[DESCRIPTION:A medium-sized creature banished to the underground, dedicated to cruelty and malice.]
-	[NAME:dark elf:dark elves:dark elven]
-	[CASTE_NAME:dark elf:dark elves:dark elven]
+	[NAME:dark elf:dark elves:elven]
+	[CASTE_NAME:dark elf:dark elves:elven]
 	[CREATURE_TILE:'e'][COLOR:5:0:0]
 	[CREATURE_SOLDIER_TILE:137]
 	[CREATURE_CLASS:MAMMAL]
 	[CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]
 	[CREATURE_CLASS:DARK_ELF]
-	[CREATURE_CLASS:ELF]{+}
+	[CREATURE_CLASS:ELF]
+	[CREATURE_CLASS:RUTHLESS]
+	[EVIL]
 	[INTELLIGENT]
+	[CANOPENDOORS][TRAPAVOID][LOCKPICKER]
+	[TRANCES]  can enter battle trances
 	[VIEWRANGE:22] elves can see farther. 20 default
-	[CANOPENDOORS][TRAPAVOID]
-	[BENIGN]
-	[OUTSIDER_CONTROLLABLE]{+  can be played in adv mode.}
 	[PREFSTRING:cruelty]
 	[PREFSTRING:arrogance]
 	[PREFSTRING:vanity]
@@ -28,9 +29,9 @@ creature_civ_elf_dark_masterfork
 	[NATURAL_SKILL:SWIMMING:1]
 	--NATURAL_SKILL:SITUATIONAL_AWARENESS:1]
 	// RACIAL SKILLS //
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]
-	[NATURAL_SKILL:DODGING:1]
-	[NATURAL_SKILL:DISCIPLINE:2]
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:3]
+	[NATURAL_SKILL:DODGING:3]
+	[NATURAL_SKILL:DISCIPLINE:3]
 	[NATURAL_SKILL:DAGGER:1]
 	[NATURAL_SKILL:BOW:1]
 	[NATURAL_SKILL:MELEE_COMBAT:1]
@@ -228,24 +229,33 @@ creature_civ_elf_dark_masterfork
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	    { removed latching }
 	[BABY:1]
-	[GENERAL_BABY_NAME:elven baby:elven babies]{+}
+	[GENERAL_BABY_NAME:elven baby:elven babies]
 	[CHILD:25]{:18  Revision: elves mature slower than other races.}
-	[GENERAL_CHILD_NAME:elven child:elven children]{+}
+	[GENERAL_CHILD_NAME:elven child:elven children]
 	[EQUIPS]
 	[CAVE_ADAPT]
 	[NOCTURNAL]
-	[SMELL_TRIGGER:20]
+	[SMELL_TRIGGER:10]
 	[LOW_LIGHT_VISION:10000]
 	[SLAIN_SPEECH:SLAIN_ELF]
 	[HOMEOTHERM:10067]
-	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:133]{+ resistant to venom.}
+	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:120]{+  Revision: elves are resistant to many poisons/venoms.}
 	[SYNDROME_DILUTION_FACTOR:INEBRIATION:110]{+  less barfights.}
-	[SYNDROME_DILUTION_FACTOR:FEAR:133]
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:642:428:214:1900:2900] 41 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2728:2069:1409:675:4000:5700] 13 kph
 	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
+	[SKILL_RATE:SITUATIONAL_AWARENESS:55:NONE:NONE:NONE]{+  Revision: elves learn these skills faster than normal.}
+	[SKILL_RATE:DODGING:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:DISCIPLINE:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:ANIMALTRAIN:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:ANIMALCARE:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:BOW:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:RANGED_COMBAT:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:SNEAK:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:TRACKING:55:NONE:NONE:NONE]{+
+	[SKILL_RATE:FLATTERY:55:NONE:NONE:NONE]{+
 	[SWIMS_LEARNED]
 	[GRASSTRAMPLE:0]
 	[NO_VEGETATION_PERTURB]
@@ -274,30 +284,27 @@ creature_civ_elf_dark_masterfork
 	[MANNERISM_STRETCH]
 	[MANNERISM_EYELIDS]
 	[SPOUSE_CONVERSION_TARGET]
-	[PROFESSION_NAME:RECRUIT:Ranger:Rangers]
+	[PROFESSION_NAME:RECRUIT:ranger:rangers]
 	[PROFESSION_NAME:MASTER_BOWMAN:Master Ranger:Master Rangers]
     [PROFESSION_NAME:MASTER_SPEARMAN:Speardancer:Speardancers]{+  Revision: elven profession names.}
     [PROFESSION_NAME:MASTER_SWORDSMAN:Bladedancer:Bladedancers]{+}
-	[PROFESSION_NAME:CRAFTSMAN:crafts elf:crafts elves]{+}
-	[PROFESSION_NAME:FISHERMAN:fisher elf:fisher elves]{+}
-	[PROFESSION_NAME:HAMMERMAN:hammer elf:hammer elves]{+}
-	[PROFESSION_NAME:SPEARMAN:spear elf:spear elves]{+}
-	[PROFESSION_NAME:CROSSBOWMAN:marks elf:marks elves]{+}
-	[PROFESSION_NAME:AXEMAN:axe elf:axe elves]{+}
-	[PROFESSION_NAME:SWORDSMAN:swords elf:swords elves]{+}
+	[PROFESSION_NAME:CRAFTSMAN:craftself:crafts elves]{+}
+	[PROFESSION_NAME:FISHERMAN:fisherelf:fisher elves]{+}
+	[PROFESSION_NAME:HAMMERMAN:hammerelf:hammer elves]{+}
+	[PROFESSION_NAME:SPEARMAN:spearelf:spear elves]{+}
+	[PROFESSION_NAME:CROSSBOWMAN:markself:marks elves]{+}
+	[PROFESSION_NAME:AXEMAN:axe-elf:axe elves]{+}
+	[PROFESSION_NAME:SWORDSMAN:swordself:swords elves]{+}
 	[PROFESSION_NAME:MACEMAN:mace elf:mace elves]{+}
 	[PROFESSION_NAME:PIKEMAN:pike elf:pike elves]{+}
-	[PROFESSION_NAME:BOWMAN:bow elf:bow elves]{+}
+	[PROFESSION_NAME:BOWMAN:bowelf:bowelves]{+}
 	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Markself:Elite Markselves]{+}
-	[PROFESSION_NAME:BLOWGUNMAN:gun elf:gun elves]{+}  used by firearms
-	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Elite Gun-elf:Elite Gun-elves]{+}
+	[PROFESSION_NAME:BLOWGUNMAN:gunelf:gunelves]{+}  used by firearms
+	[PROFESSION_NAME:MASTER_BLOWGUNMAN:Elite Gunelf:Elite Gunelves]{+}
 	[PROFESSION_NAME:CRIMINAL:exile:exiles]{+}
 	[PROFESSION_NAME:STANDARD:resident:residents]{+}
 	[PROFESSION_NAME:THIEF:scout:scouts]{+}
 	[PROFESSION_NAME:MASTER_THIEF:Veteran Scout:Veteran Scouts]{+}
-	--MAXAGE:200:300]
-	[GENERAL_BABY_NAME:elf baby:elven babies]
-	[GENERAL_CHILD_NAME:elf child:elven children]
 	[CASTE:FEMALE]
 		[FEMALE]
 		[BABYNAME:elf baby girl:elven baby girls]
@@ -306,10 +313,10 @@ creature_civ_elf_dark_masterfork
 		[MULTIPLE_LITTER_RARE]
 	[CASTE:MALE]
 		[MALE]
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[BABYNAME:elf baby boy:elven baby boys]
 		[CHILDNAME:elf boy:elven boys]
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]{+  Revision: elves are clean-shaven.}
 		[DESCRIPTION:A medium-sized, tall, graceful man with flawless dark-purple skin, glowing eldritch eyes, dark hair, and a reputation for cruelty and malice.  He is seething after being driven underground by his elven cousins centuries ago.  He does not appear to age.]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
@@ -335,17 +342,17 @@ creature_civ_elf_dark_masterfork
 				[APP_MOD_NOUN:hair:SINGULAR]
 				[APP_MOD_DESC_RANGE:10:25:75:125:200:300]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
-			[TISSUE_STYLE_UNIT:HAIR:PONY_TAILS]{:STANDARD_HAIR_SHAPINGS  Revision: seems thematic, also less bald elves.}
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
 				[TSU_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHIN_WHISKERS]
-			[TISSUE_STYLE_UNIT:BEARD:CLEAN_SHAVEN]{:STANDARD_BEARD_SHAPINGS  Revision: elves are clean-shaven.}
+			[TISSUE_STYLE_UNIT:BEARD:STANDARD_BEARD_SHAPINGS]
 				[TSU_NOUN:beard:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:MOUSTACHE]
-			[TISSUE_STYLE_UNIT:MOUSTACHE:CLEAN_SHAVEN]{:STANDARD_MOUSTACHE_SHAPINGS  Revision: elves are clean-shaven.}
+			[TISSUE_STYLE_UNIT:MOUSTACHE:STANDARD_MOUSTACHE_SHAPINGS]
 				[TSU_NOUN:moustache:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
-			[TISSUE_STYLE_UNIT:SIDEBURNS:CLEAN_SHAVEN]{:STANDARD_SIDEBURNS_SHAPINGS  Revision: elves are clean-shaven.}
+			[TISSUE_STYLE_UNIT:SIDEBURNS:STANDARD_SIDEBURNS_SHAPINGS]
 				[TSU_NOUN:sideburns:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:CHARCOAL:1:DARK_VIOLET:1:DARK_INDIGO:1:INDIGO:1:PURPLE:1:PLUM:1:TAUPE_PURPLE:1:EGGPLANT:1:MAUVE:1:MIDNIGHT_BLUE:1:DARK_BLUE:1:CHARCOAL:1:DARK_VIOLET:1:DARK_INDIGO:1:INDIGO:1:PURPLE:1:PLUM:1:TAUPE_PURPLE:1]

@@ -99,7 +99,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'d']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
@@ -205,7 +205,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'c']
 	[COLOR:0:0:1]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT]
@@ -238,7 +238,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'M']
 	[COLOR:7:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_DONKEY]
@@ -264,7 +264,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'D']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_HORSE]
@@ -292,7 +292,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'H']
 	[COLOR:7:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_COW]
@@ -311,8 +311,9 @@ Adds in animal people variations of all the domestic creatures
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -327,7 +328,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_SHEEP]
@@ -351,8 +352,9 @@ Adds in animal people variations of all the domestic creatures
 		[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 			[ATTACK_SKILL:BITE]
 			[ATTACK_VERB:gore:gores]
-			[ATTACK_CONTACT_PERC:100]
+			[ATTACK_CONTACT_PERC:90]{:100}
 			[ATTACK_PENETRATION_PERC:110]{+}
+			[ATTACK_VELOCITY_MODIFIER:1100]{+}
 			[ATTACK_FLAG_EDGE]{+}
 			[ATTACK_PREPARE_AND_RECOVER:3:3]
 			[ATTACK_PRIORITY:MAIN]
@@ -364,7 +366,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:1]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_PIG]
@@ -390,7 +392,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'p']
 	[COLOR:5:0:1]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_GOAT]
@@ -409,8 +411,9 @@ Adds in animal people variations of all the domestic creatures
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -425,7 +428,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'g']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_BIRD_CHICKEN]
@@ -453,7 +456,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:5:10]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_CAVY]
@@ -482,7 +485,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'c']
 	[COLOR:7:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
@@ -513,7 +516,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'d']
 	[COLOR:2:0:0]
 	[CLUSTER_NUMBER:5:10]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_WATER_BUFFALO]
@@ -534,8 +537,9 @@ Adds in animal people variations of all the domestic creatures
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -550,7 +554,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'W']
 	[COLOR:0:0:1]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_REINDEER]
@@ -571,8 +575,9 @@ Adds in animal people variations of all the domestic creatures
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -587,7 +592,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'R']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_BIRD_GOOSE]
@@ -616,7 +621,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'g']
 	[COLOR:7:0:1]
 	[CLUSTER_NUMBER:5:10]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_YAK]
@@ -637,8 +642,9 @@ Adds in animal people variations of all the domestic creatures
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -653,7 +659,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'Y']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_LLAMA]
@@ -679,7 +685,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'L']
 	[COLOR:7:0:1]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_ALPACA]
@@ -705,7 +711,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'a'] -- Shouldn't they technically be classified as 'A' because they're human sized?
 	[COLOR:7:0:1]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_BIRD_GUINEAFOWL]
@@ -733,7 +739,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'g']
 	[COLOR:0:0:1]
 	[CLUSTER_NUMBER:5:10]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_BIRD_PEAFOWL_BLUE]
@@ -763,7 +769,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'p']
 	[COLOR:1:0:1]
 	[CLUSTER_NUMBER:5:10]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_BIRD_TURKEY]
@@ -793,7 +799,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'t']
 	[COLOR:4:0:1]
 	[CLUSTER_NUMBER:5:10]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 
 [CREATURE:SAVDOM_PERSON_RABBIT]
@@ -822,7 +828,7 @@ Adds in animal people variations of all the domestic creatures
 	[CREATURE_TILE:'r']
 	[COLOR:6:0:0]
 	[CLUSTER_NUMBER:1:5]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]

@@ -140,7 +140,7 @@ creature_birds
 	[GO_TO_START]
 	[NAME:bluejay man:bluejay men:bluejay man]
 	[DESCRIPTION:A person with the head and wings of a bluejay.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'b']
@@ -322,7 +322,7 @@ creature_birds
 	[GO_TO_START]
 	[NAME:cardinal man:cardinal men:cardinal man]
 	[DESCRIPTION:A person with the head and wings of a cardinal.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'c']
@@ -499,7 +499,7 @@ creature_birds
 	[GO_TO_START]
 	[NAME:grackle man:grackle men:grackle man]
 	[DESCRIPTION:A person with the head and wings of a grackle.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'g']
@@ -677,7 +677,7 @@ creature_birds
 	[GO_TO_START]
 	[NAME:oriole man:oriole men:oriole man]
 	[DESCRIPTION:A person with the head and wings of an oriole.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'o']
@@ -853,7 +853,7 @@ creature_birds
 	[GO_TO_START]
 	[NAME:red-winged blackbird man:red-winged blackbird men:red-winged blackbird man]
 	[DESCRIPTION:A person with the head and wings of a red-winged blackbird.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'r']
@@ -1258,7 +1258,7 @@ Penguins were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:penguin man:penguin men:penguin man]
 	[DESCRIPTION:A humanoid with the head, feet, and feathers of a penguin.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
@@ -1324,7 +1324,7 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 	[ALL_ACTIVE]
 	[MUNDANE]
 	[TRAINABLE_HUNTING]{+}
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[SOUND:ALERT:100:10000:VOCALIZATION:shriek angrily:shrieks angrily:the shriek of a falcon]{+}
 	everywhere but oceans, glaciers and tropical rainforests
 	[BIOME:ANY_WETLAND]
@@ -1468,7 +1468,7 @@ Peregrine falcons were sponsored by the generous contributions of the Bay 12 com
 	[GO_TO_START]
 	[NAME:peregrine falcon man:peregrine falcon men:peregrine falcon man]
 	[DESCRIPTION:A person with the head and wings of a peregrine falcon.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'p']
@@ -1642,7 +1642,7 @@ Kiwis were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:kiwi man:kiwi men:kiwi man]
 	[DESCRIPTION:A person with the head and feathers of a kiwi.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'k']
@@ -1857,7 +1857,7 @@ Ostriches were sponsored by the generous contributions of the Bay 12 community.
 	[GO_TO_START]
 	[NAME:ostrich man:ostrich men:ostrich man]
 	[DESCRIPTION:This is a medium-sized creature with legs and arms, but the long neck and head of an ostrich.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'O']

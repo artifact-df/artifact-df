@@ -1,0 +1,43 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "GLOB",
+				"material" : "PLANT:AA_WAX_MYRTLE:WAX",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:AA_WAX_MYRTLE:FRUIT",
+				"reaction_id" : "AA_EXTRACT_WAX_FROM_AA_WAX_MYRTLE_FRUIT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_EXTRACT_WAX_FROM_AA_WAX_MYRTLE_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_EXTRACT_WAX_FROM_AA_WAX_MYRTLE_FRUIT"
+	}
+]

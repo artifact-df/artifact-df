@@ -9,7 +9,6 @@ reaction_smelter
 	[REAGENT:bituminous coal:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
 	[PRODUCT:100:9:BAR:NO_SUBTYPE:COAL:COKE]
 		[PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:SMELT]
@@ -23,7 +22,6 @@ reaction_smelter
 	[REAGENT:lignite:1:BOULDER:NO_SUBTYPE:INORGANIC:LIGNITE]
 	[PRODUCT:100:5:BAR:NO_SUBTYPE:COAL:COKE]
 		[PRODUCT_DIMENSION:150]
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[WORLDGEN_ENABLED]
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:SMELT]
@@ -31,14 +29,13 @@ reaction_smelter
 	[DESCRIPTION:Smelt 5 bars of coke from one unit of lignite.]{+}
 
 [REACTION:ADAMANTINE_WAFERS]
-	[NAME:smelt adamantine wafers]
-	--BUILDING:SMELTER:NONE] moved to the blast furnace
+	[NAME:smelt adamantine wafers (1)]
+	--BUILDING:SMELTER:NONE]{  Revision: moved to the blast furnace.}
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
-	[REAGENT:adamantine:15000:THREAD:NO_SUBTYPE:METAL:ADAMANTINE]
+	[REAGENT:adamantine thread:15000:THREAD:NO_SUBTYPE:METAL:ADAMANTINE]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:ADAMANTINE]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:adamantine]{+}
-	[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 	[FUEL]
 	[DESCRIPTION:Smelt 1 adamantine wafer from 1 spool of adamatine thread.]{+}
@@ -53,7 +50,6 @@ REACTION:BRASS_MAKING  alloys can only be smelted using bars
 [REAGENT:copper:300:BAR:NO_SUBTYPE:METAL:COPPER]
 [PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:BRASS][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:brass]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 3 brass bars from 1 zinc bar and 2 copper bars.]{+}
@@ -68,7 +64,6 @@ REACTION:BRONZE_MAKING  alloys can only be smelted using bars
 [REAGENT:copper:1350:BAR:NO_SUBTYPE:METAL:COPPER] 9 bars
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:bronze]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 10 bronze bars from 1 tin bar and 9 copper bars.]{+}
@@ -83,7 +78,6 @@ REACTION:ELECTRUM_MAKING  alloys can only be smelted using bars
 [REAGENT:gold:150:BAR:NO_SUBTYPE:METAL:GOLD]
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:ELECTRUM][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:electrum]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 2 electrum bars from 1 silver bar and 1 gold bar.]{+}
@@ -93,11 +87,10 @@ REACTION:BILLON_MAKING  alloys can only be smelted using bars
 [REACTION:BILLON_MAKING2]
 [NAME:smelt billon bars (5)]
 [BUILDING:SMELTER:NONE]
-[REAGENT:silver:300:BAR:NO_SUBTYPE:METAL:SILVER]
-[REAGENT:copper:450:BAR:NO_SUBTYPE:METAL:COPPER]
+[REAGENT:silver:300:BAR:NO_SUBTYPE:METAL:SILVER] 2 bars
+[REAGENT:copper:450:BAR:NO_SUBTYPE:METAL:COPPER] 3 bars
 [PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:BILLON][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:billon]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 5 billon bars from 2 silver bars and 3 copper bars.]{+}
@@ -113,7 +106,6 @@ REACTION:PEWTER_FINE_MAKING  alloys can only be smelted using bars
 [REAGENT:antimony:150:BAR:NO_SUBTYPE:METAL:ANTIMONY] 1 bar
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:PEWTER_FINE][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:fine pewter]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 10 fine pewter bars from 8 tin bars, 1 copper bar, and 1 antimony bar.]{+}
@@ -131,7 +123,6 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [REAGENT:lead:150:BAR:NO_SUBTYPE:METAL:LEAD] 1 bar
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:PEWTER_LAY][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:lay pewter]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 10 lay pewter bars from 8 tin bars, 1 copper bar, and 1 lead bar.]{+}
@@ -141,11 +132,10 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [NAME:smelt pig iron bars (1)]
 [BUILDING:SMELTER:NONE]
 [REAGENT:iron:300:BAR:NO_SUBTYPE:METAL:IRON]{:150:BAR  requires an additional bar of iron
-[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
+[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
 [REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 [PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:pig iron]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 1 pig iron bar from 2 iron bars, 1 calcium carbonate containing stone boulder, and 1 bar of coal/coke (in addition to that used for fuel).]{+}
@@ -155,11 +145,10 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [BUILDING:SMELTER:NONE]
 [REAGENT:iron:150:BAR:NO_SUBTYPE:METAL:IRON]
 [REAGENT:pig iron:150:BAR:NO_SUBTYPE:METAL:PIG_IRON]
-[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
+[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
 [REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:steel]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 2 steel bars from 1 iron bar, 1 pig iron bar, 1 calcium carbonate containing stone boulder, and 1 bar of coal/coke (in addition to that used for fuel).]{+}
@@ -173,7 +162,6 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [REAGENT:zinc:150:BAR:NO_SUBTYPE:METAL:ZINC]
 [PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:NICKEL_SILVER][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:nickel silver]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 5 nickel silver bars from 1 nickel bar, 3 copper bars, and 1 zinc bar.]{+}
@@ -187,7 +175,6 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [REAGENT:gold:150:BAR:NO_SUBTYPE:METAL:GOLD]
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:BLACK_BRONZE][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:black bronze]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 10 black bronze bars from 8 copper bars, 1 silver bar, and 1 gold bar.]{+}
@@ -196,11 +183,10 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [REACTION:STERLING_SILVER_MAKING]
 [NAME:smelt sterling silver bars (10)]
 [BUILDING:SMELTER:NONE]
-[REAGENT:silver:1350:BAR:NO_SUBTYPE:METAL:SILVER]
-[REAGENT:copper:150:BAR:NO_SUBTYPE:METAL:COPPER]
+[REAGENT:silver:1350:BAR:NO_SUBTYPE:METAL:SILVER] 9 bars
+[REAGENT:copper:150:BAR:NO_SUBTYPE:METAL:COPPER] 1 bar
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:STERLING_SILVER][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:sterling silver]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 10 sterling silver bars from 9 copper bars and 1 silver bar.]{+}
@@ -213,7 +199,6 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [REAGENT:copper:150:BAR:NO_SUBTYPE:METAL:COPPER]
 [PRODUCT:100:4:BAR:NO_SUBTYPE:METAL:ROSE_GOLD][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:rose gold]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 [DESCRIPTION:Smelt 4 rose gold bars from 3 gold bars and 1 copper bar.]{+}
@@ -225,8 +210,8 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [REAGENT:bismuth:150:BAR:NO_SUBTYPE:METAL:BISMUTH]
 [PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:BISMUTH_BRONZE][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:bismuth bronze]{+}
-[PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
+[FORTRESS_MODE_ENABLED]{+  Revision: bismuth bronze is fairly poor in combat, will be restricted to fortress mode.}
 [DESCRIPTION:Smelt 10 bismuth bronze bars from 9 bronze bars and 1 bismuth bar.]{+}
 [SKILL_IP:112]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}

@@ -1,0 +1,2929 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:AA_WAX_MYRTLE:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:AA_WAX_MYRTLE:BAY_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_AA_WAX_MYRTLE_BAY_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_AA_WAX_MYRTLE_BAY_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_AA_WAX_MYRTLE_BAY_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:AA_WAX_MYRTLE:BERRY_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:AA_WAX_MYRTLE:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_AA_WAX_MYRTLE_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_AA_WAX_MYRTLE_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_AA_WAX_MYRTLE_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ACACIA:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"material" : "PLANT:ACACIA:WOOD",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ACACIA_WOOD",
+				"value" : 3
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ACACIA_WOOD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_ACACIA_WOOD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ALDER:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:ALDER:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ALDER_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ALDER_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_ALDER_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 4,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ALDER:CONE_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:ALDER:CONE",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ALDER_CONE",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ALDER_CONE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_ALDER_CONE"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 5,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ALMOND:SHELL_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:ALMOND:SHELL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ALMOND_SHELL",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ALMOND_SHELL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_ALMOND_SHELL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 6,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:APPLE:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:APPLE:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_APPLE_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_APPLE_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_APPLE_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 7,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:APPLE:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:APPLE:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_APPLE_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_APPLE_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_APPLE_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 8,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:APRICOT:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:APRICOT:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_APRICOT_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_APRICOT_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_APRICOT_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 9,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ASH:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:ASH:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ASH_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ASH_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_ASH_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 10,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:AVOCADO:SKIN_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:AVOCADO:SKIN",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_AVOCADO_SKIN",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_AVOCADO_SKIN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_AVOCADO_SKIN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 11,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BANANA:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BANANA:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BANANA_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BANANA_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_BANANA_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 12,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BANANA:PEEL_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:BANANA:PEEL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BANANA_PEEL",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BANANA_PEEL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_BANANA_PEEL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 13,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BAYBERRY:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:BAYBERRY:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BAYBERRY_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BAYBERRY_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_BAYBERRY_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 14,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BILBERRY:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BILBERRY:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BILBERRY_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BILBERRY_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_BILBERRY_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 15,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BIRCH:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:BIRCH:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BIRCH_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BIRCH_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_BIRCH_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 16,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BLACKBERRY:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BLACKBERRY:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BLACKBERRY_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BLACKBERRY_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_BLACKBERRY_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 17,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BLUEBERRY:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BLUEBERRY:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BLUEBERRY_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_BLUEBERRY_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_BLUEBERRY_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 18,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CABBAGE:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CABBAGE:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CABBAGE_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CABBAGE_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CABBAGE_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 19,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CARROT:ROOT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:CARROT:STRUCTURAL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CARROT_STRUCTURAL",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CARROT_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CARROT_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 20,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CHERRY:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:CHERRY:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHERRY_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHERRY_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CHERRY_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 21,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CHERRY:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CHERRY:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHERRY_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHERRY_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CHERRY_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 22,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CHESTNUT:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:CHESTNUT:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 23,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CHESTNUT:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CHESTNUT:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 24,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CHESTNUT:HULL_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:CHESTNUT:HULL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_HULL",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_HULL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CHESTNUT_HULL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 25,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:COFFEE:BEAN_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:COFFEE:BEAN",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_COFFEE_BEAN",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_COFFEE_BEAN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_COFFEE_BEAN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 26,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:CRANBERRY:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CRANBERRY:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CRANBERRY_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_CRANBERRY_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_CRANBERRY_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 27,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:EGGPLANT:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:EGGPLANT:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_EGGPLANT_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_EGGPLANT_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_EGGPLANT_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 28,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GINKGO:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GINKGO:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GINKGO_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GINKGO_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_GINKGO_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 29,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GRAPE:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GRAPE:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GRAPE_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GRAPE_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_GRAPE_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 30,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GUAVA:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:GUAVA:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GUAVA_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GUAVA_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_GUAVA_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 31,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:GUAVA:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GUAVA:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GUAVA_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_GUAVA_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_GUAVA_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 32,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:HAZEL:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:HAZEL:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_HAZEL_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_HAZEL_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_HAZEL_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 33,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:HAZEL:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:HAZEL:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_HAZEL_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_HAZEL_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_HAZEL_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 34,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:LARCH:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:LARCH:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_LARCH_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_LARCH_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_LARCH_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 35,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MAHOGANY:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:MAHOGANY:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MAHOGANY_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MAHOGANY_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_MAHOGANY_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 36,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MANGROVE:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:MANGROVE:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MANGROVE_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MANGROVE_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_MANGROVE_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 37,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MANGROVE:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MANGROVE:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MANGROVE_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MANGROVE_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_MANGROVE_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 38,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MAPLE:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:MAPLE:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MAPLE_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MAPLE_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_MAPLE_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 39,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MUSHROOM_CUP_DIMPLE:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:MUSHROOM_CUP_DIMPLE:STRUCTURAL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MUSHROOM_CUP_DIMPLE_STRUCTURAL",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_MUSHROOM_CUP_DIMPLE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_MUSHROOM_CUP_DIMPLE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 40,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:OAK:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:OAK:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_OAK_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_OAK_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_OAK_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 41,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:OLIVE:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:OLIVE:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_OLIVE_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_OLIVE_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_OLIVE_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 42,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:OLIVE:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:OLIVE:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_OLIVE_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_OLIVE_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_OLIVE_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 43,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ONION:SKIN_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:ONION:SKIN",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ONION_SKIN",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ONION_SKIN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_ONION_SKIN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 44,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEACH:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:PEACH:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEACH_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEACH_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PEACH_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 45,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEANUT:SHELL_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:PEANUT:SHELL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEANUT_SHELL",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEANUT_SHELL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PEANUT_SHELL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 46,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEAR:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:PEAR:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEAR_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEAR_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PEAR_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 47,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PEAR:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PEAR:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEAR_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PEAR_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PEAR_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 48,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PECAN:SHELL_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:PECAN:SHELL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PECAN_SHELL",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PECAN_SHELL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PECAN_SHELL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 49,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PERSIMMON:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PERSIMMON:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PERSIMMON_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PERSIMMON_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PERSIMMON_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 50,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PINE:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:PINE:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PINE_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PINE_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PINE_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 51,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PINEAPPLE:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PINEAPPLE:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PINEAPPLE_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PINEAPPLE_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PINEAPPLE_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 52,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PLUM:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:PLUM:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PLUM_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_PLUM_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_PLUM_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 53,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:POMEGRANATE:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:POMEGRANATE:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 54,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:POMEGRANATE:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:POMEGRANATE:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_DYE_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 55,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:POMEGRANATE:RIND_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:POMEGRANATE:RIND",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_RIND",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_RIND",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_POMEGRANATE_RIND"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 56,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:POTATO:SKIN_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:POTATO:SKIN",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POTATO_SKIN",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_POTATO_SKIN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_POTATO_SKIN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 57,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:RADISH:ROOT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RADISH:STRUCTURAL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RADISH_STRUCTURAL",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RADISH_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_RADISH_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 58,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:RASPBERRY:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:RASPBERRY:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RASPBERRY_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RASPBERRY_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_RASPBERRY_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 59,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:RED_SPINACH:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:RED_SPINACH:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RED_SPINACH_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RED_SPINACH_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_RED_SPINACH_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 60,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:RHUBARB:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:RHUBARB:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RHUBARB_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RHUBARB_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_RHUBARB_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 61,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:RICE:HUSK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:RICE:HUSK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RICE_HUSK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_RICE_HUSK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_RICE_HUSK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 62,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:ROOT_HIDE:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:ROOT_HIDE:STRUCTURAL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ROOT_HIDE_STRUCTURAL",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_ROOT_HIDE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_ROOT_HIDE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 63,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SLIVER_BARB:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SLIVER_BARB:STRUCTURAL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SLIVER_BARB_STRUCTURAL",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SLIVER_BARB_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_SLIVER_BARB_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 64,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SORGHUM:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:SORGHUM:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SORGHUM_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SORGHUM_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_SORGHUM_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 65,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SPINACH:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:SPINACH:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SPINACH_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SPINACH_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_SPINACH_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 66,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:SWEET_POTATO:SKIN_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:SWEET_POTATO:SKIN",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SWEET_POTATO_SKIN",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_SWEET_POTATO_SKIN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_SWEET_POTATO_SKIN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 67,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:TEA:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:TEA:TEA_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_TEA_TEA_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_TEA_TEA_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_TEA_TEA_LEAVES"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 68,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:TOMATO:SKIN_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:TOMATO:SKIN",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_TOMATO_SKIN",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_TOMATO_SKIN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_TOMATO_SKIN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 69,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:TURNIP:SKIN_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:TURNIP:SKIN",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_TURNIP_SKIN",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_TURNIP_SKIN",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_TURNIP_SKIN"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 70,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WALNUT:HULL_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:WALNUT:HULL",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WALNUT_HULL",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WALNUT_HULL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_WALNUT_HULL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 71,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WATERMELON:FRUIT_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:WATERMELON:FRUIT",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WATERMELON_FRUIT",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WATERMELON_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_WATERMELON_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 72,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WEED_BLADE:MILL",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:WEED_BLADE:LEAF",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WEED_BLADE_LEAF",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WEED_BLADE_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_WEED_BLADE_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 73,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WILLOW:BARK_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "GLOB",
+				"material" : "PLANT:WILLOW:BARK",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WILLOW_BARK",
+				"value" : 4500
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WILLOW_BARK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_WILLOW_BARK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 74,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:WILLOW:LEAF_DYE",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:WILLOW:DYE_LEAVES",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WILLOW_DYE_LEAVES",
+				"value" : 30
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CONCENTRATE_BULK_DYE_FROM_WILLOW_DYE_LEAVES",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CONCENTRATE_BULK_DYE_FROM_WILLOW_DYE_LEAVES"
+	}
+]

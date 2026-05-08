@@ -12,12 +12,12 @@ creature_megabeasts_fff
 	[PETVALUE:8000]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[TRAINABLE]
 	[BIOME:ANY_LAND]
 	[LARGE_ROAMING][FREQUENCY:5]
 	[SEMIMEGABEAST][DIFFICULTY:6]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[FANCIFUL]
 	[BUILDINGDESTROYER:2]
 	[FIREIMMUNE]
@@ -140,11 +140,12 @@ creature_megabeasts_fff
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:TAN:1]
@@ -169,10 +170,10 @@ creature_megabeasts_fff
 	[PET_EXOTIC]
 	[TRAINABLE] (but good luck with a permanently on-fire bird in your fortress)
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:8]{:5}
+	[FREQUENCY:5]
 	[FANCIFUL]
 	[MEGABEAST][DIFFICULTY:10]
-	    [ATTACK_TRIGGER:3:3:3]
+	    [ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
 	[SPHERE:REBIRTH]
 	[SPHERE:FIRE]
 	[SPHERE:DEATH]
@@ -266,7 +267,7 @@ creature_megabeasts_fff
 	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[CASTE:FEMALE]
 	    [FEMALE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 	    [LAYS_EGGS]
 	        [EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
 	        [EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
@@ -276,6 +277,7 @@ creature_megabeasts_fff
 	[CASTE:MALE]
 	    [MALE]
 		[POP_RATIO:5]{+}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 	    [SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 	        [TL_COLOR_MODIFIER:RED:1]

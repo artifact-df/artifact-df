@@ -137,3 +137,7 @@ The Key to [NAME]
 The [NO_ART_NAME] Anthem
 The [ADJ] Revelations
 The [NO_ART_NAME], Solely
+It Started With [NAME]
+[ADJ] [NAME]
+[ADJ] [NOUN]
+[ADJ] Fables

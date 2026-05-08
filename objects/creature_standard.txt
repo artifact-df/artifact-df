@@ -230,7 +230,7 @@ creature_standard
 	[CASTE_NAME:troll:trolls:troll]
 	[CREATURE_TILE:'T'][COLOR:0:0:1]
 	[CREATURE_CLASS:MAMMAL]
-	[CHILD:20]{:10
+	[CHILD:10]
 	[BABY:1][MULTIPLE_LITTER_RARE]
 	[GENERAL_CHILD_NAME:troll cub:troll cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:SUBTERRANEAN_CHASM]
@@ -238,6 +238,7 @@ creature_standard
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:50:100]{:5:10
 	[BUILDINGDESTROYER:2]
+	[NATURAL_SKILL:DISCIPLINE:5]{+}
 	[LARGE_PREDATOR]
 	[CAN_LEARN][SLOW_LEARNER]
 	[EVIL]
@@ -410,8 +411,9 @@ creature_standard
 	[ATTACK:TGORE:BODYPART:BY_CATEGORY:TUSK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -419,8 +421,9 @@ creature_standard
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -701,7 +704,7 @@ creature_standard
 	[NATURAL_SKILL:MELEE_COMBAT:3]{+
 	[NATURAL_SKILL:DODGING:1]{+
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:3]{+
-	[NATURAL_SKILL:DISCIPLINE:1]{+
+	[NATURAL_SKILL:DISCIPLINE:5]{+
 	[EQUIPS]
 	[CANOPENDOORS]
 	[NOCTURNAL]
@@ -740,7 +743,7 @@ creature_standard
 	[CREATURE_CLASS:HIGH_ELF_PET]
 	[CREATURE_CLASS:HIGH_ELF_MOUNT]
 	[CREATURE_CLASS:HIGH_ELF_BEAST]
-	[PETVALUE:1050]{:1000}
+	[PETVALUE:1500]{:1000}
 	[PREFSTRING:horns]
 	[PREFSTRING:swift gaits]
 	[PREFSTRING:elusiveness]
@@ -956,7 +959,7 @@ creature_standard
 		[MULTIPLY_VALUE:4]
 
 [CREATURE:DRAGON] red dragon by deon used as base
-	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years.  Its scales are akin to metal.]
+	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years and are drawn to great wealth.  *Its scales are akin to metal.]
 	[NAME:dragon:dragons:draconic]
 	[CASTE_NAME:dragon:dragons:draconic]
 	[CREATURE_TILE:'D'][COLOR:4:0:0]
@@ -983,7 +986,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:2:0:4]{:3:3:3  Revision: dragon attacks should be more reliant on wealth.}
 	[SPHERE:FIRE]
 	[SPHERE:WEALTH]
 	[SPHERE:MOUNTAINS]{+}
@@ -1020,8 +1023,6 @@ creature_standard
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 	 [PLUS_TISSUE_LAYER:SCALE:BY_CATEGORY:THROAT]
 		[TL_MAJOR_ARTERIES]
-	[SELECT_TISSUE_LAYER:SCALE:BY_CATEGORY:ALL]{+  thicker scales.}
-		[TL_RELATIVE_THICKNESS:4]
 	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
 	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
@@ -1057,7 +1058,6 @@ creature_standard
 			[APP_MOD_IMPORTANCE:1000]
 			[APP_MOD_NOUN:pointy teeth:PLURAL]
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
-	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:chomp:chomps]{:bite:bites
@@ -1102,8 +1102,8 @@ creature_standard
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years.  Her scales are akin to metal.]{+}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years and are drawn to great wealth.  *Her scales are akin to metal.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
@@ -1113,7 +1113,8 @@ creature_standard
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years.]{+}
+		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years and are drawn to great wealth.  *His scales are akin to metal.]{+}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:RED:1:BLACK:1:GREEN:1:BLUE:1:YELLOW:1:PURPLE:1:SILVER:1:AQUA:1]
@@ -1320,8 +1321,9 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -1441,7 +1443,7 @@ creature_standard
 	[CREATURE_TILE:'C'][COLOR:6:0:0]
 	[CREATURE_CLASS:FOOTWEAR_TRACKING_SYMBOL]
 	[MEGABEAST][DIFFICULTY:15] 11 or higher does not get assigned as adv mode quests
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
@@ -1452,6 +1454,7 @@ creature_standard
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR]
 	[NO_DRINK][NO_EAT][NO_SLEEP]
+	[CRAZED]{+  Revision: more rampages during worldgen.}
 	[SPHERE:METALS]
 	[SPHERE:STRENGTH]
 	[SPHERE:WAR]
@@ -1518,12 +1521,11 @@ creature_standard
 	[ITEMCORPSE_QUALITY:10]{:5
 	[DIURNAL]
 	[LAIR:SHRINE:100]
-	[NATURAL_SKILL:MELEE_COMBAT:8]{+ megabeast combat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:8]{+
-	[NATURAL_SKILL:STANCE_STRIKE:8]{+
+	[NATURAL_SKILL:MELEE_COMBAT:6]{+ megabeast combat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:9]{+
 	[NATURAL_SKILL:DODGING:4]{+
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+
-	[NATURAL_SKILL:DISCIPLINE:10]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -1540,7 +1542,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[CAN_LEARN][SLOW_LEARNER][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -1708,7 +1710,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
+	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -1742,9 +1744,9 @@ creature_standard
 	[DIURNAL]
 	[LAIR:SIMPLE_BURROW:100]
 	[HOMEOTHERM:10067]
-	[NATURAL_SKILL:WRESTLING:4]{+  revision: base nat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:4]{+
-	[NATURAL_SKILL:STANCE_STRIKE:4]{+
+	[NATURAL_SKILL:WRESTLING:5]{+  revision: base nat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:6]{+
 	[NATURAL_SKILL:MELEE_COMBAT:6]{+
 	[NATURAL_SKILL:AXE:4]{+
 	[NATURAL_SKILL:SWORD:4]{+
@@ -1778,11 +1780,12 @@ creature_standard
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_NAME:giant:giants:giant]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[NO_GENDER]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:500] so they cant rule forever
-		[POP_RATIO:1]
+		[MAXAGE:400:500] so they cant rule forever
+		[POP_RATIO:5] 1/20
 		[BABYNAME:giant baby:giant babies]
 		[CHILDNAME:giant child:giant children]
 		[DESCRIPTION:A gigantic and monstrous overweight humanoid almost unparalleled in size.  They has a hairy, strong body, shaggy hair, and an almost primitive appearance.  They live quietly in a cozy burrow and keeps to themselves.  They steps over fortifications and crushes buildings underfoot, whether they means to or not.  Their great size makes their nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
@@ -1867,7 +1870,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2032,7 +2035,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
+	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2066,9 +2069,9 @@ creature_standard
 	[DIURNAL]
 	[LAIR:SIMPLE_BURROW:100]
 	[HOMEOTHERM:10067]
-	[NATURAL_SKILL:WRESTLING:4]{+  revision: base nat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:4]{+
-	[NATURAL_SKILL:STANCE_STRIKE:4]{+
+	[NATURAL_SKILL:WRESTLING:5]{+  revision: base nat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:6]{+
 	[NATURAL_SKILL:MELEE_COMBAT:6]{+
 	[NATURAL_SKILL:AXE:4]{+
 	[NATURAL_SKILL:SWORD:4]{+
@@ -2078,8 +2081,8 @@ creature_standard
 	[NATURAL_SKILL:HAMMER:4]{+
 	[NATURAL_SKILL:WHIP:4]{+
 	[NATURAL_SKILL:SPEAR:4]{+
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]{+
-	[NATURAL_SKILL:DISCIPLINE:6]{+
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+
+	[NATURAL_SKILL:DISCIPLINE:8]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -2101,11 +2104,12 @@ creature_standard
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[NO_GENDER]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:500] so they cant rule forever
-		[POP_RATIO:1]
+		[MAXAGE:400:500] so they cant rule forever
+		[POP_RATIO:5] 1/20
 		[BABYNAME:cyclops baby:cyclops babies]
 		[CHILDNAME:cyclops child:cyclops children]
 		[DESCRIPTION:A giant, monstrous humanoid with leathery, veined skin and a primitive-looking face with one large eye set in their forehead.  They mostly stays in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
@@ -2189,7 +2193,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:2:2]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2357,7 +2361,7 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
+	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2392,9 +2396,9 @@ creature_standard
 	[MULTIPART_FULL_VISION]
 	[LAIR:SIMPLE_BURROW:100]
 	[HOMEOTHERM:10067]
-	[NATURAL_SKILL:WRESTLING:4]{+  revision: base nat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:4]{+
-	[NATURAL_SKILL:STANCE_STRIKE:4]{+
+	[NATURAL_SKILL:WRESTLING:5]{+  revision: base nat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:6]{+
 	[NATURAL_SKILL:MELEE_COMBAT:6]{+
 	[NATURAL_SKILL:AXE:4]{+
 	[NATURAL_SKILL:SWORD:4]{+
@@ -2404,7 +2408,7 @@ creature_standard
 	[NATURAL_SKILL:HAMMER:4]{+
 	[NATURAL_SKILL:WHIP:4]{+
 	[NATURAL_SKILL:SPEAR:4]{+
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:8]{+
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+
 	[NATURAL_SKILL:DISCIPLINE:8]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -2427,11 +2431,12 @@ creature_standard
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[NO_GENDER]
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:150:500] so they cant rule forever
-		[POP_RATIO:1]
+		[MAXAGE:400:500] so they cant rule forever
+		[POP_RATIO:5] 1/20
 		[BABYNAME:ettin baby:ettin babies]
 		[CHILDNAME:ettin child:ettin children]
 		[DESCRIPTION:A giant and monstrous overweight humanoid with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  They mostly lives in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
@@ -2514,21 +2519,22 @@ creature_standard
 	[FANCIFUL]
 	[BONECARN]
 	[LARGE_PREDATOR]
-	[SEMIMEGABEAST][DIFFICULTY:6]{:5
-		[ATTACK_TRIGGER:2:2:2]
+	[SEMIMEGABEAST][DIFFICULTY:5]
+		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
-	[CAN_LEARN]--CAN_SPEAK][UTTERANCES]
-	[SLOW_LEARNER]{+}
+	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
-	[CURIOUSBEAST_GUZZLER]{+}
 	[BUILDINGDESTROYER:2]
-	[PRONE_TO_RAGE:25]{+}
-	[NOSTUN][NOFEAR][NOEXERT]{+}
+	[NOSTUN][NOFEAR]
 	[TRANCES]{+}
+	[PRONE_TO_RAGE:25]{+}
+	[CURIOUSBEAST_GUZZLER]{+}
 	[PREFSTRING:horns]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[BIOME:ANY_LAND]
-	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
+	[PERSONALITY:BRAVERY:75:90:100]
+	[PERSONALITY:HATE_PROPENSITY:75:90:100]{+}
+	[PERSONALITY:ANGER_PROPENSITY:75:90:100]{+}
 	[SYNDROME_DILUTION_FACTOR:FEAR:150]{+}
 	[SYNDROME_DILUTION_FACTOR:INEBRIATION:133]{+}
 	[SPHERE:CAVERNS]
@@ -2602,15 +2608,16 @@ creature_standard
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
 	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_BERSERKING]{+  bloodlust ability.}
 	[BODY_SIZE:0:0:10000]
 	[BODY_SIZE:1:168:50000]
 	[BODY_SIZE:12:0:220000]
 	[BODY_SIZE:1000:0:292600]{+  Revision: 50% greater size after a millennium.}
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:500]
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:600]
-	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]{:90:95:98:100:102:105:110}
+		[APP_MOD_IMPORTANCE:480]{+}
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:135]{:90:95:98:100:102:105:110}
+		[APP_MOD_IMPORTANCE:520]{+}
+	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
@@ -2639,8 +2646,9 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -2695,7 +2703,7 @@ creature_standard
 		[FEMALE]
 		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
-		[CASTE_NAME:minotauress:minotauresses:minotauress]{+}
+		[CASTE_NAME:minotauress:minotauresses:minotaur]{+}
 		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
 		[CHILDNAME:minotauress girl:minotauress girls]{+}
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked.]{+}
@@ -2707,28 +2715,7 @@ creature_standard
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
 		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[CASTE:FEMALE_CRAZED]
-		[FEMALE]
-		[POP_RATIO:1]{+}
-		[MULTIPLE_LITTER_RARE]
-		[CRAZED][ARENA_RESTRICTED]
-		[ORIENTATION:MALE:0:0:1]
-		[ORIENTATION:FEMALE:1:0:0]
-		[CASTE_NAME:minotauress berserker:minotauress berserkers:minotauress]{+}
-		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
-		[CHILDNAME:minotauress girl:minotauress girls]{+}
-		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked. She is crazed and in a state of bloodlust.]{+}
-	[CASTE:MALE_CRAZED]
-		[MALE]
-		[POP_RATIO:1]{+}
-		[CRAZED][ARENA_RESTRICTED]
-		[ORIENTATION:FEMALE:1:0:0]
-		[ORIENTATION:MALE:0:0:1]
-		[CASTE_NAME:minotaur berserker:minotaur berserkers:minotaur]{+}
-		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
-		[CHILDNAME:minotaur boy:minotaur boys]{+}
-		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked. He is crazed and in a state of bloodlust.]{+}
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2739,8 +2726,7 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
-	[SELECT_CASTE:ALL]{+  Revision: thicker skull and skin.}
-		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+
+		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+  Revision: thicker skull and skin.}
 		  [TL_RELATIVE_THICKNESS:3]{+
 		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]{+
 		  [TL_RELATIVE_THICKNESS:5]{+
@@ -3986,8 +3972,9 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -4502,7 +4489,7 @@ creature_standard
 	[BONECARN]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[SPHERE:MUCK]
 	[SPHERE:REBIRTH]
@@ -4575,7 +4562,7 @@ creature_standard
 			[APP_MOD_IMPORTANCE:1000]{+
 			[APP_MOD_NOUN:pointy teeth:PLURAL]{+
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]{+
-	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
+	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:chomp:chomps]{:bite:bites
@@ -4603,7 +4590,6 @@ creature_standard
 	[NATURAL_SKILL:MELEE_COMBAT:6]
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:14]
-	[NATURAL_SKILL:DISCIPLINE:10]{+}
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:730:561:351:1900:2900] 25 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:3512:2634:1756:878:4900:6900] 10 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
@@ -4612,13 +4598,14 @@ creature_standard
 	[HOMEOTHERM:10040]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  Her armored tail whips and thrashes aggressively.  She preys on her victims with a flurry of attacks as her heads all bite at once.  Her wounds heal quickly.  Her scales are akin to metal.]{+}
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  His armored tail whips and thrashes aggressively.  He preys on his victims with a flurry of attacks as his heads all bite at once.  His wounds heal quickly.  His scales are akin to metal.]{+}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GOLD:1:RED:1]
@@ -5116,7 +5103,7 @@ creature_standard
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:3:3]
+		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
     [VIEWRANGE:35]{:20  Revision: flying megabeasts can see farther.}
 	[SPHERE:SKY]
 	[SPHERE:WIND]
@@ -5210,7 +5197,7 @@ creature_standard
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:550]
-	[MAXAGE:600:1400]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
+	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:peck:pecks]{:bite:bites
@@ -5231,7 +5218,7 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:3]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
+		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[DESCRIPTION:A graceful bird of prey so large she dwarfs many dragons.  She has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath her mighty wings should fear the sky.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
@@ -5243,6 +5230,7 @@ creature_standard
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath his mighty wings should fear the sky.]{+}
+	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:WHITE:1]
