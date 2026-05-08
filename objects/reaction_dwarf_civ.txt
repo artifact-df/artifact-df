@@ -572,7 +572,7 @@ reaction_dwarf_civ
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
 	[FORTRESS_MODE_ENABLED] so it's not available during worldgen
 
-[REACTION:EXTRACT_TRUESILVER_FROM_SILVER]
+[REACTION:SILVER_MITHRIL]
 	[NAME:extract truesilver from silver (2-5)]
 	--CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]
@@ -588,7 +588,7 @@ reaction_dwarf_civ
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
-[REACTION:EXTRACT_TRUESILVER_FROM_SILVER_POWDER]
+[REACTION:SILVER_MITHRIL_POWDER]
 	[NAME:extract truesilver from silver (2-5, powder)]
 	--CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]

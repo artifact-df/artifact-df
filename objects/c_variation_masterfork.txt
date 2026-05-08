@@ -570,7 +570,7 @@ c_variation_masterwork
 		[CV_NEW_TAG:CDI:WAIT_PERIOD:100]
 
 [CREATURE_VARIATION:CREATURE_ABILITY_BERSERKING]
-	[CV_NEW_TAG:CAN_DO_INTERACTION:ABILITY_BERSERKING] orc adrenaline from fantastic fantasy fortress, edited by zey
+	[CV_NEW_TAG:CAN_DO_INTERACTION:ADRENALINE_FFF] orc adrenaline from fantastic fantasy fortress, edited by zey
 		[CV_NEW_TAG:CDI:ADV_NAME:Berserk!]
 		[CV_NEW_TAG:CDI:USAGE_HINT:DEFEND] 
 		[CV_NEW_TAG:CDI:TARGET:A:SELF_ONLY]

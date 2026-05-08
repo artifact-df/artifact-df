@@ -2,7 +2,7 @@ material_template_masterfork
 
 [OBJECT:MATERIAL_TEMPLATE]
 
-[MATERIAL_TEMPLATE:HAIR_TEMPLATE_KOSHER] hair but doesn't count as killed animal product
+[MATERIAL_TEMPLATE:KOSHER_WOOL_TEMPLATE] hair but doesn't count as killed animal product
 	[STATE_COLOR:ALL_SOLID:ECRU]
 	[STATE_NAME:ALL_SOLID:hair]
 	[STATE_ADJ:ALL_SOLID:hair]
