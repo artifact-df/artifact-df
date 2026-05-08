@@ -22,9 +22,9 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[TRAINABLE]{+}
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BONECARN]
 	[BENIGN][PRONE_TO_RAGE:10]
 	[GRASSTRAMPLE:0]
@@ -146,7 +146,7 @@ Wolverines were sponsored by the generous contributions of the Bay 12 community.
 	[NAME:wolverine man:wolverine men:wolverine man]
 	[DESCRIPTION:A person with the head and tail of a wolverine.]
 	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'w']
@@ -200,7 +200,7 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 	[NATURAL]
 	[LARGE_ROAMING]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:5]
 	[BENIGN][MEANDERER]
@@ -311,9 +311,10 @@ Chinchillas were sponsored by the generous contributions of the Bay 12 community
 	[GO_TO_START]
 	[NAME:chinchilla man:chinchilla men:chinchilla man]
 	[DESCRIPTION:A hairy person with the head and tail of a chinchilla.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:3:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'c']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]

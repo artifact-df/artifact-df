@@ -19,6 +19,7 @@ creature_goblin_pet_fff
 	[POPULATION_NUMBER:3:4]
 	[CARNIVORE][NATURAL]
 	[BUILDINGDESTROYER:1]
+	[FREQUENCY:5]
 	[LARGE_PREDATOR]
 	[EVIL]
 	[FANCIFUL]
@@ -103,7 +104,7 @@ creature_goblin_pet_fff
 	[PETVALUE:30][NATURAL]
 	[LARGE_ROAMING]
 	[TRAINABLE][PET_EXOTIC]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BONECARN][EVIL]
 	[BIOME:ANY_SHRUBLAND]
 	[BIOME:ANY_GRASSLAND]

@@ -6,230 +6,244 @@ reaction_dwarf_civ
 // ORE PROCESSING
 
 [REACTION:PROCESS_HEMATITE]
-	[NAME:process hematite]
+	[NAME:process hematite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[CATEGORY_PARENT:MFORK_INORGANIC]
 		[CATEGORY_NAME:Ore Processing]
-		[CATEGORY_DESCRIPTION:Process ore containing rock for extra yields]
+		[CATEGORY_DESCRIPTION:Grind ore containing rock for extra yields.]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:hematite boulder:1:BOULDER:NONE:INORGANIC:HEMATITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_HEMATITE]
+		[PRODUCT_TOKEN:hematite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
+	[FORTRESS_MODE_ENABLED]
+
+[REACTION:PROCESS_GOETHITE]
+	[NAME:process goethite ore into concentrate]
+	[CATEGORY:ORE_REFINEMENT]
+	[BUILDING:MILLSTONE:NONE]
+	--BUILDING:QUERN:NONE] allows too early scaling
+	[REAGENT:goethite boulder:1:BOULDER:NONE:INORGANIC:GOETHITE]
+	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_GOETHITE]
+		[PRODUCT_TOKEN:goethite concentrate]
+	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:PEAT_SOIL]
+	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:PEAT]
+	[SKILL:MILLING]
+		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_LIMONITE]
-	[NAME:process limonite]
+	[NAME:process limonite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:limonite boulder:1:BOULDER:NONE:INORGANIC:LIMONITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_LIMONITE]
+		[PRODUCT_TOKEN:limonite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_GARNIERITE]
-	[NAME:process garnierite]
+	[NAME:process garnierite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:garnierite boulder:1:BOULDER:NONE:INORGANIC:GARNIERITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_GARNIERITE]
+		[PRODUCT_TOKEN:garnierite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_NATIVE_GOLD]
-	[NAME:process native gold]
+	[NAME:process native gold ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:native gold boulder:1:BOULDER:NONE:INORGANIC:NATIVE_GOLD]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_GOLD]
+		[PRODUCT_TOKEN:gold concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_NATIVE_SILVER]
-	[NAME:process native silver]
+	[NAME:process native silver ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:native silver boulder:1:BOULDER:NONE:INORGANIC:NATIVE_SILVER]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_SILVER]
+		[PRODUCT_TOKEN:silver concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_NATIVE_COPPER]
-	[NAME:process native copper]
+	[NAME:process native copper ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:native copper boulder:1:BOULDER:NONE:INORGANIC:NATIVE_COPPER]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_COPPER]
+		[PRODUCT_TOKEN:copper concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_MALACHITE]
-	[NAME:process malachite]
+	[NAME:process malachite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[BUILDING:MILLSTONE:NONE]
 	[REAGENT:malachite boulder:1:BOULDER:NONE:INORGANIC:MALACHITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_MALACHITE]
+		[PRODUCT_TOKEN:malachite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_GALENA]
-	[NAME:process galena]
+	[NAME:process galena ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:galena boulder:1:BOULDER:NONE:INORGANIC:GALENA]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_GALENA]
+		[PRODUCT_TOKEN:galena concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_SPHALERITE]
-	[NAME:process sphalerite]
+	[NAME:process sphalerite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:sphalerite boulder:1:BOULDER:NONE:INORGANIC:SPHALERITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_SPHALERITE]
+		[PRODUCT_TOKEN:sphalerite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_CASSITERITE]
-	[NAME:process cassiterite]
+	[NAME:process cassiterite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:cassiterite boulder:1:BOULDER:NONE:INORGANIC:CASSITERITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_CASSITERITE]
+		[PRODUCT_TOKEN:cassiterite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_NATIVE_PLATINUM]
-	[NAME:process native platinum]
+	[NAME:process native platinum ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:native platinum boulder:1:BOULDER:NONE:INORGANIC:NATIVE_PLATINUM]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_PLATINUM]
+		[PRODUCT_TOKEN:platinum concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_TETRAHEDRITE]
-	[NAME:process tetrahedrite]
+	[NAME:process tetrahedrite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:tetrahedrite boulder:1:BOULDER:NONE:INORGANIC:TETRAHEDRITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_TETRAHEDRITE]
+		[PRODUCT_TOKEN:tetrahedrite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_HORN_SILVER]
-	[NAME:process horn silver]
+	[NAME:process horn silver ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:horn silver boulder:1:BOULDER:NONE:INORGANIC:HORN_SILVER]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_HORN_SILVER]
+		[PRODUCT_TOKEN:horn silver concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_BISMUTHINITE]
-	[NAME:process bismuthinite]
+	[NAME:process bismuthinite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:bismuthinite boulder:1:BOULDER:NONE:INORGANIC:BISMUTHINITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_BISMUTHINITE]
+		[PRODUCT_TOKEN:bismuthinite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_MAGNETITE]
-	[NAME:process magnetite]
+	[NAME:process magnetite ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:magnetite boulder:1:BOULDER:NONE:INORGANIC:MAGNETITE]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_MAGNETITE]
+		[PRODUCT_TOKEN:magnetite concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PROCESS_NATIVE_ALUMINUM]
-	[NAME:process native aluminum]
+	[NAME:process native aluminum ore into concentrate]
 	[CATEGORY:ORE_REFINEMENT]
 	[BUILDING:MILLSTONE:NONE]
 	--BUILDING:QUERN:NONE] allows too early scaling
 	[REAGENT:native aluminum boulder:1:BOULDER:NONE:INORGANIC:NATIVE_ALUMINUM]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_ALUMINUM]
+		[PRODUCT_TOKEN:aluminum concentrate]
 	[PRODUCT:25:1:BOULDER:NONE:INORGANIC:GRANITE]
 	[PRODUCT:3:1:ROUGH:NONE:INORGANIC:CRYSTAL_ROCK]
 	[SKILL:MILLING]
 		[SKILL_IP:45]{+ 30 default  revision: advanced milling should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 
@@ -240,7 +254,7 @@ reaction_dwarf_civ
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:rutile/ilmenite:5:BOULDER:NONE:NONE:NONE]
 		[REACTION_CLASS:TITANIUM_ORE]
-	[REAGENT:B:1:BOULDER:NONE:NONE:NONE]
+	[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:oil:150:LIQUID_MISC:NONE:NONE:NONE]
 		[UNROTTEN]
@@ -250,11 +264,9 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]	
 	[PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:TITANIUM][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[CATEGORY:MISC_SMELTING]
 		[CATEGORY_NAME:Miscellaneous Smelting]
 		[CATEGORY_DESCRIPTION:Alternate miscellaneous smelting reactions.]
@@ -265,7 +277,7 @@ reaction_dwarf_civ
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:rutile/ilmenite:5:BOULDER:NONE:NONE:NONE]
 		[REACTION_CLASS:TITANIUM_ORE]
-	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+	[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate]
@@ -279,7 +291,6 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:TITANIUM][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -292,10 +303,10 @@ reaction_dwarf_civ
 	[REAGENT:mithril:300:BAR:NO_SUBTYPE:METAL:MITHRIL]
 	[REAGENT:obsidian boulder:2:BOULDER:NONE:INORGANIC:OBSIDIAN]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:VOLCANIC][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
+	[FORTRESS_MODE_ENABLED] so it's not available during worldgen
 	[CATEGORY:ADV_SMELTING]
 		[CATEGORY_NAME:Advanced Smelting]
 		[CATEGORY_DESCRIPTION:Produce advanced metals and more efficiently smelt ores.]
@@ -303,12 +314,11 @@ reaction_dwarf_civ
 [REACTION:DWARFSTEEL_MAKING]
 	[NAME:smelt dwarfsteel bars (5)]
 	[CATEGORY:ADV_SMELTING]
-	[BUILDING:BLAST_FURNACE_FFF:NONE]
+	[BUILDING:SMELTER:NONE]
 	[REAGENT:steel:600:BAR:NO_SUBTYPE:METAL:STEEL] 4 bars
 	[REAGENT:pig iron:150:BAR:NO_SUBTYPE:METAL:PIG_IRON] 1 bar
 	[REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:DWARFSTEEL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
@@ -321,10 +331,10 @@ reaction_dwarf_civ
 	[REAGENT:adamantine:150:BAR:NO_SUBTYPE:METAL:ADAMANTINE]
 	[REAGENT:coal:300:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:TITANSTEEL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
+	[FORTRESS_MODE_ENABLED] so it's not available during worldgen
 
 [REACTION:OBSIDIAN_BOULDER]
 	[NAME:melt stone blocks into obsidian]
@@ -333,37 +343,32 @@ reaction_dwarf_civ
 	[REAGENT:boulder:4:BLOCKS:NONE:NONE:NONE]
 		[WORTHLESS_STONE_ONLY]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:OBSIDIAN]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
 [REACTION:STEEL_MAKING_CRUCIBLE]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
 	[NAME:smelt steel bars efficiently (3-6)]
-	[CATEGORY:ADV_SMELTING]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:iron:150:BAR:NO_SUBTYPE:METAL:IRON]
 	[REAGENT:pig iron:150:BAR:NO_SUBTYPE:METAL:PIG_IRON]
-	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
+	[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 
 [REACTION:STEEL_MAKING_CRUCIBLE_POWDER]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
 	[NAME:smelt steel bars efficiently (3-6, powder)]
-	[CATEGORY:ADV_SMELTING]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:IRON]
 	[REAGENT:B:150:BAR:NO_SUBTYPE:METAL:PIG_IRON]
-	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+	[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate]
@@ -374,36 +379,30 @@ reaction_dwarf_civ
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:PIG_IRON_MAKING_CRUCIBLE]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
 [NAME:smelt pig iron bars efficiently (2-4)]
-[CATEGORY:ADV_SMELTING]
 [BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:iron:300:BAR:NO_SUBTYPE:METAL:IRON]  requires an additional bar of iron
-[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
+[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
 [REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
---PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 	[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
-[MAX_MULTIPLIER:1] for consistency
 [FORTRESS_MODE_ENABLED]
 
 [REACTION:PIG_IRON_MAKING_CRUCIBLE_POWDER]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
 [NAME:smelt pig iron bars efficiently (2-4, powder)]
-[CATEGORY:ADV_SMELTING]
 [BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:iron:300:BAR:NO_SUBTYPE:METAL:IRON]  requires an additional bar of iron
-[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 	[REACTION_CLASS:FLUX]
 [REAGENT:bag:1:BAG:NONE:NONE:NONE]
 	[CONTAINS:calcium carbonate]
@@ -413,16 +412,13 @@ reaction_dwarf_civ
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
---PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 	[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
-[MAX_MULTIPLIER:1] for consistency
 [FORTRESS_MODE_ENABLED]
 
 [REACTION:BRONZE_MAKING_CRUCIBLE]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
 [NAME:smelt bronze bars efficiently (10-20)]
-[CATEGORY:ADV_SMELTING]
 [BUILDING:BLAST_FURNACE_FFF:NONE]
 [REAGENT:tin:150:BAR:NO_SUBTYPE:METAL:TIN]
 [REAGENT:copper:1200:BAR:NO_SUBTYPE:METAL:COPPER]
@@ -437,50 +433,48 @@ reaction_dwarf_civ
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
 [PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:BRONZE][PRODUCT_DIMENSION:150]
---PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 [FUEL]
 [SKILL:SMELT]
 	[SKILL_IP:225]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
-[MAX_MULTIPLIER:1] for consistency
 
 [REACTION:BAUXITE_ALU]
-	[NAME:extract aluminum from bauxite (1)]
-	[CATEGORY:MISC_SMELTING]
+	[NAME:extract aluminum from bauxite (1-4)]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
-	[REAGENT:bauxite boulder:3:BOULDER:NONE:INORGANIC:BAUXITE]
-	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
+	[REAGENT:bauxite boulder:5:BOULDER:NONE:INORGANIC:BAUXITE]
+	[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	[PRODUCT:50:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
+	[PRODUCT:25:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
+	[PRODUCT:12:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
 [REACTION:BAUXITE_ALU_POWDER]
-	[NAME:extract aluminum from bauxite (1, powder)]
-	[CATEGORY:MISC_SMELTING]
+	[NAME:extract aluminum from bauxite (1-4, powder)]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:bauxite boulder:3:BOULDER:NONE:INORGANIC:BAUXITE]
-	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+	[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	[PRODUCT:50:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
+	[PRODUCT:25:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
+	[PRODUCT:12:1:BAR:NO_SUBTYPE:METAL:ALUMINUM][PRODUCT_DIMENSION:150]
 	[FUEL]
 	[SKILL:SMELT]
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:COBALTITE_COBALT]
 	[NAME:extract cobalt from cobaltite]
-	[CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:cobaltite boulder:3:BOULDER:NONE:INORGANIC:COBALTITE]
-	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
+	[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:COBALT][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -490,36 +484,47 @@ reaction_dwarf_civ
 	[CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:cobaltite boulder:3:BOULDER:NONE:INORGANIC:COBALTITE]
-	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+	[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:COBALT][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 	[FORTRESS_MODE_ENABLED]
+
+[REACTION:MITHRIL_THREADS]
+	[NAME:extract mithril threads]
+	[BUILDING:CRAFTSMAN:NONE]
+	[REAGENT:mithril wafer:150:BAR:NO_SUBTYPE:METAL:MITHRIL]
+	[PRODUCT:100:1:THREAD:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:15000]
+	[SKILL:EXTRACT_STRAND]
+
+[REACTION:MITHRIL_CLOTH]
+	[NAME:weave mithril cloth from threads]
+	[BUILDING:CRAFTSMAN:NONE]
+	[REAGENT:mithril strands:15000:THREAD:NO_SUBTYPE:METAL:MITHRIL]
+	[PRODUCT:100:1:CLOTH:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:10000]
+	[SKILL:WEAVING]
 
 [REACTION:TRUESILVER_MITHRIL]
 	[NAME:extract mithril from truesilver (2)]
-	[CATEGORY:MISC_SMELTING]
-	[BUILDING:SMELTER:NONE]
+	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:truesilver:450:BAR:NO_SUBTYPE:METAL:TRUESILVER]
 	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
+	[FORTRESS_MODE_ENABLED] so it's not available during worldgen
 
 [REACTION:TRUESILVER_MITHRIL_POWDER]
 	[NAME:extract mithril from truesilver (2, powder)]
-	[CATEGORY:MISC_SMELTING]
-	[BUILDING:SMELTER:NONE]
+	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:truesilver:450:BAR:NO_SUBTYPE:METAL:TRUESILVER]
 	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
@@ -528,14 +533,13 @@ reaction_dwarf_civ
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
+	[FORTRESS_MODE_ENABLED] so it's not available during worldgen
 
 [REACTION:TRUESILVER_MITHRIL_CRUCIBLE]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
 	[NAME:extract mithril from truesilver efficiently (3-6)]
-	[CATEGORY:ADV_SMELTING]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:truesilver:450:BAR:NO_SUBTYPE:METAL:TRUESILVER]
 	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
@@ -544,15 +548,13 @@ reaction_dwarf_civ
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
+	[FORTRESS_MODE_ENABLED] so it's not available during worldgen
 
 [REACTION:TRUESILVER_MITHRIL_CRUCIBLE_POWDER]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
 	[NAME:extract mithril from truesilver efficiently (3-6, powder)]
-	[CATEGORY:ADV_SMELTING]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:truesilver:450:BAR:NO_SUBTYPE:METAL:TRUESILVER]
 	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
@@ -565,55 +567,55 @@ reaction_dwarf_civ
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
 	[PRODUCT:4:1:BAR:NO_SUBTYPE:METAL:MITHRIL][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:60]{+ 30 default  revision: advanced smelting should yield more experience than normal. 2x multiplier.}
-	[MAX_MULTIPLIER:1] for consistency
+	[FORTRESS_MODE_ENABLED] so it's not available during worldgen
 
-[REACTION:SILVER_MITHRIL]
-	[NAME:extract truesilver from silver (1)]
-	[CATEGORY:MISC_SMELTING]
+[REACTION:EXTRACT_TRUESILVER_FROM_SILVER]
+	[NAME:extract truesilver from silver (2-5)]
+	--CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
-	[REAGENT:silver:750:BAR:NO_SUBTYPE:METAL:SILVER]
-	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
+	[REAGENT:silver:1500:BAR:NO_SUBTYPE:METAL:SILVER] 10 bars
+	[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
-	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
+	[PRODUCT:33:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
+	[PRODUCT:33:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
+	[PRODUCT:33:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
-	[FORTRESS_MODE_ENABLED]
 
-[REACTION:SILVER_MITHRIL_POWDER]
-	[NAME:extract truesilver from silver (1, powder)]
-	[CATEGORY:MISC_SMELTING]
+[REACTION:EXTRACT_TRUESILVER_FROM_SILVER_POWDER]
+	[NAME:extract truesilver from silver (2-5, powder)]
+	--CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
-	[REAGENT:silver:750:BAR:NO_SUBTYPE:METAL:SILVER]
-	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+	[REAGENT:silver:1500:BAR:NO_SUBTYPE:METAL:SILVER] 10 bars
+	[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
+	[PRODUCT:33:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
+	[PRODUCT:33:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
+	[PRODUCT:33:1:BAR:NO_SUBTYPE:METAL:TRUESILVER][PRODUCT_DIMENSION:150]
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
-	[FORTRESS_MODE_ENABLED]
 
 [REACTION:WOLFRAMITE_TUNGSTEN]
 	[NAME:extract tungsten from wolframite (1)]
 	[CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:wolframite boulder:1:BOULDER:NONE:INORGANIC:WOLFRAMITE]
-	[REAGENT:calcium carbonate:1:BOULDER:NO_SUBTYPE:NONE:NONE]
+	[REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:TUNGSTEN][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
@@ -623,541 +625,539 @@ reaction_dwarf_civ
 	[CATEGORY:MISC_SMELTING]
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:wolframite boulder:1:BOULDER:NONE:INORGANIC:WOLFRAMITE]
-	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+	[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:TUNGSTEN][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:BATCH_SMELT_HEMATITE]
-	[NAME:batch smelt hematite into iron]
+	[NAME:smelt hematite concentrate into iron bars]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:HEMATITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 	[CATEGORY:BATCH_SMELTING]
 		[CATEGORY_NAME:Batch Smelting]
 		[CATEGORY_DESCRIPTION:Smelt metal bars in larger quantities.]
 
+[REACTION:BATCH_SMELT_GOETHITE]
+	[NAME:smelt goethite concentrate into iron bars]
+	[CATEGORY:BATCH_SMELTING]
+	[BUILDING:SMELTER:NONE]
+		--AUTOMATIC]
+	[REAGENT:A:5:BOULDER:NONE:INORGANIC:GOETHITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
+	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:IRON]
+		[PRODUCT_DIMENSION:150]
+		[PRODUCT_TOKEN:iron]
+	[SKILL:SMELT]
+	[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
+	[FORTRESS_MODE_ENABLED]
+	[FUEL]
+
 [REACTION:BATCH_SMELT_LIMONITE]
-	[NAME:batch smelt limonite into iron]
+	[NAME:smelt limonite concentrate into iron bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:LIMONITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 	[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_GARNIERITE]
-	[NAME:batch smelt garnierite into nickel]
+	[NAME:smelt garnierite concentrate into nickel bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:GARNIERITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:NICKEL]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:nickel]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_NATIVE_GOLD]
-	[NAME:batch smelt native gold]
+	[NAME:smelt gold concentrate into gold bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:NATIVE_GOLD]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:GOLD]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:gold]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_NATIVE_SILVER]
-	[NAME:batch smelt native silver]
+	[NAME:smelt silver concentrate into silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:NATIVE_SILVER]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_NATIVE_COPPER]
-	[NAME:batch smelt native copper]
+	[NAME:smelt copper concentrate into copper bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:NATIVE_COPPER]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_MALACHITE]
-	[NAME:batch smelt malachite]
+	[NAME:smelt malachite concentrate into copper bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:MALACHITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_GALENA]
-	[NAME:batch smelt galena into lead and silver]
+	[NAME:smelt galena concentrate into lead and silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:GALENA]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:LEAD]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:lead]
 	[PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_SPHALERITE]
-	[NAME:batch smelt sphalerite into zinc]
+	[NAME:smelt sphalerite concentrate into zinc bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:SPHALERITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:ZINC]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:zinc]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_CASSITERITE]
-	[NAME:batch smelt cassiterite into tin]
+	[NAME:smelt cassiterite concentrate into tin bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:CASSITERITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:TIN]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:tin]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_NATIVE_PLATINUM]
-	[NAME:batch smelt native platinum]
+	[NAME:smelt platinum concentrate into platinum bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:NATIVE_PLATINUM]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:PLATINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:platinum]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_TETRAHEDRITE]
-	[NAME:batch smelt tetrahedrite into copper and silver]
+	[NAME:smelt tetrahedrite concentrate into copper and silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:TETRAHEDRITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
 	[PRODUCT:100:5:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_HORN_SILVER]
-	[NAME:batch smelt horn silver into silver]
+	[NAME:smelt horn silver concentrate into silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:HORN_SILVER]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_BISMUTHINITE]
-	[NAME:batch smelt bismuthinite into bismuth]
+	[NAME:smelt bismuthinite concentrate into bismuth bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:BISMUTHINITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:BISMUTH]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:bismuth]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_NATIVE_ALUMINUM]
-	[NAME:batch smelt native aluminum]
+	[NAME:smelt aluminum concentrate into aluminum bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:NATIVE_ALUMINUM]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:ALUMINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:aluminum]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_MAGNETITE]
-	[NAME:batch smelt magnetite into iron]
+	[NAME:smelt magnetite concentrate into iron bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:MAGNETITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:20:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_HEMATITE]
-	[NAME:batch smelt pure hematite into iron]
+	[NAME:smelt hematite concentrate into iron bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_HEMATITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
+	[FORTRESS_MODE_ENABLED]
+	[FUEL]
+
+[REACTION:BATCH_SMELT_PROCESSED_GOETHITE]
+	[NAME:smelt goethite concentrate into iron bars]
+	[CATEGORY:BATCH_SMELTING]
+	[BUILDING:SMELTER:NONE]
+		--AUTOMATIC]
+	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_GOETHITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
+	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:IRON]
+		[PRODUCT_DIMENSION:150]
+		[PRODUCT_TOKEN:iron]
+	[SKILL:SMELT]
+		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_LIMONITE]
-	[NAME:batch smelt pure limonite into iron]
+	[NAME:smelt limonite concentrate into iron bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_LIMONITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_GARNIERITE]
-	[NAME:batch smelt pure garnierite into nickel]
+	[NAME:smelt garnierite concentrate into nickel bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_GARNIERITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:NICKEL]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:nickel]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_NATIVE_GOLD]
-	[NAME:batch smelt pure gold]
+	[NAME:smelt gold concentrate into gold bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_GOLD]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:GOLD]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:gold]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_NATIVE_SILVER]
-	[NAME:batch smelt pure silver]
+	[NAME:smelt silver concentrate into silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_SILVER]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_NATIVE_COPPER]
-	[NAME:batch smelt pure copper]
+	[NAME:smelt copper concentrate into copper bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_COPPER]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_MALACHITE]
-	[NAME:batch smelt pure malachite into copper]
+	[NAME:smelt malachite concentrate into copper bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_MALACHITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_GALENA]
-	[NAME:batch smelt pure galena into lead and silver]
+	[NAME:smelt galena concentrate into lead and silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_GALENA]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:LEAD]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:lead]
 	[PRODUCT:100:12:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_SPHALERITE]
-	[NAME:batch smelt pure sphalerite into zinc]
+	[NAME:smelt sphalerite concentrate into zinc bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_SPHALERITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:ZINC]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:zinc]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_CASSITERITE]
-	[NAME:batch smelt pure cassiterite into tin]
+	[NAME:smelt cassiterite concentrate into tin bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_CASSITERITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:TIN]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:tin]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_NATIVE_PLATINUM]
-	[NAME:batch smelt pure platinum]
+	[NAME:smelt platinum concentrate into platinum bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_PLATINUM]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:PLATINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:platinum]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_TETRAHEDRITE]
-	[NAME:batch smelt pure tetrahedrite into copper and silver]
+	[NAME:smelt tetrahedrite concentrate into copper and silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_TETRAHEDRITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:COPPER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:copper]
 	[PRODUCT:100:6:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_HORN_SILVER]
-	[NAME:batch smelt pure horn silver into silver]
+	[NAME:smelt horn silver concentrate into silver bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_HORN_SILVER]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:SILVER]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:silver]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_BISMUTHINITE]
-	[NAME:batch smelt pure bismuthinite into bismuth]
+	[NAME:smelt bismuthinite concentrate into bismuth bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_BISMUTHINITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:BISMUTH]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:bismuth]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_NATIVE_ALUMINUM]
-	[NAME:batch smelt pure aluminum]
+	[NAME:smelt aluminum concentrate into aluminum bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_NATIVE_ALUMINUM]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:ALUMINUM]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:aluminum]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
 [REACTION:BATCH_SMELT_PROCESSED_MAGNETITE]
-	[NAME:batch smelt pure magnetite into iron]
+	[NAME:smelt magnetite concentrate into iron bars]
 	[CATEGORY:BATCH_SMELTING]
 	[BUILDING:SMELTER:NONE]
 		--AUTOMATIC]
 	[REAGENT:A:5:BOULDER:NONE:INORGANIC:PROCESSED_MAGNETITE]
+	[REAGENT:B:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 	[PRODUCT:100:25:BAR:NO_SUBTYPE:METAL:IRON]
 		[PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:iron]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:150]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
-	[MAX_MULTIPLIER:1] for consistency
 	[FORTRESS_MODE_ENABLED]
 	[FUEL]
 
@@ -1167,7 +1167,6 @@ reaction_dwarf_civ
 	[REAGENT:lead:1350:BAR:NO_SUBTYPE:METAL:LEAD] 9 bars
 	[REAGENT:antimony:150:BAR:NO_SUBTYPE:METAL:ANTIMONY] 1 bar
 	[PRODUCT:100:10:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:225]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 	[FUEL]
@@ -1177,7 +1176,6 @@ reaction_dwarf_civ
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD]
 	[PRODUCT:100:25:AMMO:ITEM_AMMO_PELLETS_ZM5:METAL:ANTIMONIAL_LEAD]--PRODUCT_DIMENSION:20]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
 	[FORTRESS_MODE_ENABLED]
@@ -1192,7 +1190,6 @@ reaction_dwarf_civ
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD]
 	[PRODUCT:100:25:AMMO:ITEM_AMMO_HANDCANNON_SHELL_ZM5:METAL:ANTIMONIAL_LEAD]--PRODUCT_DIMENSION:20]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
 	[FORTRESS_MODE_ENABLED]
@@ -1204,7 +1201,6 @@ reaction_dwarf_civ
 	[BUILDING:SMELTER:NONE]
 	[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:ANTIMONIAL_LEAD]
 	[PRODUCT:100:25:AMMO:ITEM_AMMO_HANDCANNON_SHRAPNEL_SHELL_ZM5:METAL:ANTIMONIAL_LEAD]--PRODUCT_DIMENSION:20]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[SKILL:SMELT]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
 	[FORTRESS_MODE_ENABLED]
@@ -1213,9 +1209,9 @@ reaction_dwarf_civ
 [REACTION:MAKE_WEAPON_BLUNDERBUSS]
 	[NAME:assemble a blunderbuss]
 	[BUILDING:SIEGE:NONE]
-	[REAGENT:A:450:BAR:NO_SUBTYPE:METAL:STEEL]
-	[REAGENT:B:1:TRAPPARTS:NO_SUBTYPE:METAL:BRASS]
-	[REAGENT:C:1:WOOD:NONE:NONE:NONE]
+	[REAGENT:steel:450:BAR:NO_SUBTYPE:METAL:STEEL]
+	[REAGENT:brass:1:TRAPPARTS:NO_SUBTYPE:METAL:BRASS]
+	[REAGENT:log:1:WOOD:NONE:NONE:NONE]
 		[ANY_PLANT_MATERIAL]
 	[PRODUCT:100:1:WEAPON:ITEM_WEAPON_BLUNDERBUSS_ZM5:GET_MATERIAL_FROM_REAGENT:A:NONE]
 	[SKILL:MECHANICS]
@@ -1225,11 +1221,11 @@ reaction_dwarf_civ
 [REACTION:MAKE_WEAPON_RIFLE]
 	[NAME:assemble a wheel-lock rifle]
 	[BUILDING:SIEGE:NONE]
-	[REAGENT:A:750:BAR:NO_SUBTYPE:METAL:STEEL]
-	[REAGENT:B:2:TRAPPARTS:NO_SUBTYPE:METAL:BRASS]
-	[REAGENT:C:1:WOOD:NONE:NONE:NONE]
+	[REAGENT:steel:750:BAR:NO_SUBTYPE:METAL:STEEL]
+	[REAGENT:brass:2:TRAPPARTS:NO_SUBTYPE:METAL:BRASS]
+	[REAGENT:log:1:WOOD:NONE:NONE:NONE]
 		[ANY_PLANT_MATERIAL]
-	[REAGENT:D:1:ROUGH:NONE:NONE:NONE]
+	[REAGENT:glass:1:ROUGH:NONE:NONE:NONE]
 		[GLASS_MATERIAL]
 	[PRODUCT:100:1:WEAPON:ITEM_WEAPON_HANDCANNON_ZM5:GET_MATERIAL_FROM_REAGENT:A:NONE]
 	[SKILL:MECHANICS]
@@ -1243,7 +1239,6 @@ reaction_dwarf_civ
 	[REAGENT:metal:300:BAR:NO_SUBTYPE:METAL:NONE]  2 metal bars
 		[METAL_ITEM_MATERIAL]
 	[PRODUCT:100:1:TOOL:ITEM_TOOL_TABLET_METAL:GET_MATERIAL_FROM_REAGENT:metal:NONE]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:FORGE_FURNITURE]
 		[SKILL_IP:36]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.2x multiplier.}
@@ -1253,16 +1248,14 @@ reaction_dwarf_civ
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:A:300:BAR:NO_SUBTYPE:METAL:MITHRIL]
 	[REAGENT:D:150:BAR:NO_SUBTYPE:METAL:ADAMANTINE]
-	[REAGENT:calcium carbonate:150:POWDER_MISC:NONE:NONE:NONE]
+	[REAGENT:calcium carbonate powder:150:POWDER_MISC:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:calcium carbonate]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:3:BAR:NO_SUBTYPE:METAL:ORICHALCUM][PRODUCT_DIMENSION:150]
-	--PRODUCT:50:1:GLOB:NONE:INORGANIC:SMOKE]{+ smoke effect }
 	[FUEL]
 	[SKILL:SMELT]
 		[SKILL_IP:90]{+ 30 default  revision: advanced smelting should yield more experience than normal. 3x multiplier.}
-	[FORTRESS_MODE_ENABLED]
-	[CATEGORY:ADV_SMELTING]
+	[FORTRESS_MODE_ENABLED] so it's not available during worldgen

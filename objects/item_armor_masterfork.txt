@@ -221,7 +221,7 @@ squamous's notes on armor spawning:
 
 [ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT]
 [NAME:mail hauberk:mail hauberks]
-[ARMORLEVEL:3]
+[ARMORLEVEL:2]
 [UBSTEP:1] protects the neck
 [LBSTEP:1] protects the hips
 [LAYER:OVER]
@@ -357,6 +357,7 @@ squamous's notes on armor spawning:
 
 [ITEM_PANTS:ITEM_PANTS_GREAVES]
 [NAME:greaves:greaves]
+[PREPLURAL:pairs of]
 [ARMORLEVEL:3]
 [METAL_ARMOR_LEVELS]
 [LBSTEP:3]

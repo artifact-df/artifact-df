@@ -712,6 +712,7 @@ creature_insects
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:5]
 	[MAXAGE:60:80]
+	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'f']
 	[COLOR:2:0:1]
 
@@ -1017,7 +1018,7 @@ Bees were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[VISION_ARC:30:360]{+  Revision: compound eyes have a wide field of view.}
 	[BIOME:NOT_FREEZING]
-	[VERMIN_SOIL_COLONY][FREQUENCY:100]
+	[VERMIN_SOIL_COLONY][FREQUENCY:50]{:100}
 	[VERMIN_NOTRAP]
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:100:200]

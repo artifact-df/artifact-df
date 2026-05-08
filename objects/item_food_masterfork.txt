@@ -1,6 +1,6 @@
-item_ic_food
+item_food_masterfork
 
-# // from DPh Krakens' Immaterial Cultures // #
+  // from DPh Krakens' Immaterial Cultures
 
 [OBJECT:ITEM]
 
@@ -18,7 +18,7 @@ item_ic_food
 [NAME:roast]
 [LEVEL:4]
 
-// new food types
+*** New Food
 
 [ITEM_FOOD:NEW_FOOD_LVL2_ROLL]
 [NAME:rolls]

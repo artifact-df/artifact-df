@@ -12,7 +12,7 @@ creature_megabeasts_fff
 	[PETVALUE:8000]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[TRAINABLE]
 	[BIOME:ANY_LAND]
 	[LARGE_ROAMING][FREQUENCY:5]
@@ -170,7 +170,7 @@ creature_megabeasts_fff
 	[PET_EXOTIC]
 	[TRAINABLE] (but good luck with a permanently on-fire bird in your fortress)
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:8]{:5}
+	[FREQUENCY:5]
 	[FANCIFUL]
 	[MEGABEAST][DIFFICULTY:10]
 	    [ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}

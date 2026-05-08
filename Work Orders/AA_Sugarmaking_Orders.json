@@ -1,0 +1,202 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:BIRCH:SUGAR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BIRCH:SYRUP",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_BIRCH_SYRUP",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"syrup"
+				],
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_BIRCH_SYRUP",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_BIRCH_SYRUP",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CRYSTALLIZE_SUGAR_FROM_BIRCH_SYRUP"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:MAPLE:SUGAR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:MAPLE:SYRUP",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_MAPLE_SYRUP",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"syrup"
+				],
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_MAPLE_SYRUP",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_MAPLE_SYRUP",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CRYSTALLIZE_SUGAR_FROM_MAPLE_SYRUP"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:PALM:SUGAR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PALM:SYRUP",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_PALM_SYRUP",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"syrup"
+				],
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_PALM_SYRUP",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_PALM_SYRUP",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CRYSTALLIZE_SUGAR_FROM_PALM_SYRUP"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "POWDER_MISC",
+				"material" : "PLANT:REED_ROPE:SUGAR",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:REED_ROPE:SYRUP",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_REED_ROPE_SYRUP",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"syrup"
+				],
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_REED_ROPE_SYRUP",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"empty"
+				],
+				"item_type" : "BAG",
+				"reaction_id" : "AA_CRYSTALLIZE_SUGAR_FROM_REED_ROPE_SYRUP",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_CRYSTALLIZE_SUGAR_FROM_REED_ROPE_SYRUP"
+	}
+]

@@ -257,24 +257,19 @@ creature_civ_human_masterfork
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[ORIENTATION:MALE:2:18:80]{+}
-		[ORIENTATION:FEMALE:95:4:1]{+}
-		[POP_RATIO:20]{+}
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:2:5]{+}
+		[POP_RATIO:20]{+}
 		[BABYNAME:human baby girl:human babies]{+}
 		[CHILDNAME:human girl:human children]{+}
 		[DESCRIPTION:A medium-sized woman of great ambition and potential.  She looks almost ordinary in a world of strange things.  She toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[ORIENTATION:FEMALE:2:18:80]{+}
-		[ORIENTATION:MALE:95:4:1]{+}
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[POP_RATIO:20]{+}
 		[BABYNAME:human baby boy:human babies]{+}
 		[CHILDNAME:human boy:human children]{+}
 		[DESCRIPTION:A medium-sized man of great ambition and potential.  He looks almost ordinary in a world of strange things.  He toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 	[SELECT_CASTE:MALE]{+}
 		[CREATURE_CLASS:HUMAN_MALE]
 	[SELECT_CASTE:FEMALE]{+}
@@ -283,21 +278,16 @@ creature_civ_human_masterfork
 		[CASTE_PROFESSION_NAME:STANDARD:serf:serfs]
 	[CASTE:FEMALE_NOBLE]{+  noble castes are modified from Fantastic Fantasy Fortress.}
 		[FEMALE]
-		[ORIENTATION:MALE:2:18:80]{+}
-		[ORIENTATION:FEMALE:95:4:1]{+}
 		[POP_RATIO:1] 1/20
 		--MULTIPLE_LITTER_RARE]
-		[LITTERSIZE:2:3]{+}
 		[DESCRIPTION:A medium-sized woman of great potential.  She is of noble birth, and is prone to great ambitions.  She rule others to rule villages, kingdoms, establishing trade networks and start wars.]{+}
 		[CASTE_NAME:human noblewoman:humans:human]
 	[CASTE:MALE_NOBLE]{+}
 		[MALE]
-		[ORIENTATION:FEMALE:2:18:80]{+}
-		[ORIENTATION:MALE:95:4:1]{+}
-		[POP_RATIO:1] 1/20
-		[DESCRIPTION:A medium-sized man of great potential.  He is of noble birth, and is prone to great ambitions.  He rule others to rule villages, kingdoms, establishing trade networks and start wars.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+		[POP_RATIO:1] 1/20
+		[DESCRIPTION:A medium-sized man of great potential.  He is of noble birth, and is prone to great ambitions.  He rule others to rule villages, kingdoms, establishing trade networks and start wars.]{+}
 		[CASTE_NAME:human nobleman:humans:human]
 	[SELECT_CASTE:FEMALE_NOBLE]{+}
 	    [SELECT_ADDITIONAL_CASTE:MALE_NOBLE]

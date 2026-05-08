@@ -1,0 +1,1104 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:AA_WAX_MYRTLE:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "GLOB",
+				"material" : "PLANT:AA_WAX_MYRTLE:WAX",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_AA_WAX_MYRTLE_WAX",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_AA_WAX_MYRTLE_WAX",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_AA_WAX_MYRTLE_WAX",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_AA_WAX_MYRTLE_WAX"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:ALMOND:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:ALMOND:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_ALMOND_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_ALMOND_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_ALMOND_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_ALMOND_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_ALMOND_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:AVOCADO:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:AVOCADO:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_AVOCADO_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_AVOCADO_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_AVOCADO_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_AVOCADO_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_AVOCADO_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:BUSH_QUARRY:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BUSH_QUARRY:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_BUSH_QUARRY_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_BUSH_QUARRY_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_BUSH_QUARRY_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_BUSH_QUARRY_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_BUSH_QUARRY_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 4,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:CASHEW:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:CASHEW:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_CASHEW_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_CASHEW_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_CASHEW_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_CASHEW_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_CASHEW_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 5,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:FLAX:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:FLAX:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_FLAX_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_FLAX_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_FLAX_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_FLAX_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_FLAX_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 6,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:GRAPE:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:GRAPE:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_GRAPE_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_GRAPE_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_GRAPE_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_GRAPE_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_GRAPE_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 7,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:HAZEL:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:HAZEL:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HAZEL_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HAZEL_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HAZEL_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HAZEL_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_HAZEL_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 8,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:HEMP:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:HEMP:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HEMP_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HEMP_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HEMP_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HEMP_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_HEMP_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 9,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:KENAF:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:KENAF:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_KENAF_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_KENAF_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_KENAF_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_KENAF_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_KENAF_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 10,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:MACADAMIA:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:MACADAMIA:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_MACADAMIA_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_MACADAMIA_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_MACADAMIA_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_MACADAMIA_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_MACADAMIA_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 11,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:OLIVE:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:OLIVE:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_OLIVE_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_OLIVE_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_OLIVE_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_OLIVE_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_OLIVE_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 12,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:PALM:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PALM:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PALM_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PALM_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PALM_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PALM_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_PALM_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 13,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:PEANUT:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PEANUT:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PEANUT_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PEANUT_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PEANUT_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PEANUT_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_PEANUT_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 14,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:PECAN:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PECAN:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PECAN_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PECAN_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PECAN_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_PECAN_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_PECAN_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 15,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:SOYBEAN:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:SOYBEAN:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_SOYBEAN_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_SOYBEAN_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_SOYBEAN_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_SOYBEAN_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_SOYBEAN_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 16,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:TEA:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:TEA:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_TEA_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_TEA_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_TEA_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_TEA_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_TEA_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 17,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:WALNUT:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:WALNUT:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WALNUT_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WALNUT_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WALNUT_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WALNUT_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_WALNUT_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 18,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "PLANT:WATERMELON:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:WATERMELON:OIL",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WATERMELON_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"oil"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WATERMELON_OIL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WATERMELON_OIL",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_WATERMELON_OIL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_WATERMELON_OIL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 19,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "BAR",
+				"material" : "CREATURE:HONEY_BEE:SOAP",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "GLOB",
+				"material" : "CREATURE:HONEY_BEE:WAX",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HONEY_BEE_WAX",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "LIQUID_MISC",
+				"material" : "LYE",
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HONEY_BEE_WAX",
+				"value" : 150
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"lye"
+				],
+				"reaction_id" : "AA_MAKE_SOAP_FROM_HONEY_BEE_WAX",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_SOAP_FROM_HONEY_BEE_WAX"
+	}
+]

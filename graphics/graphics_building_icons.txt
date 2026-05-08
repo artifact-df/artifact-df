@@ -1,4 +1,4 @@
-graphics_creatures_building_icons
+graphics_building_icons
 
 [OBJECT:GRAPHICS]
 
@@ -106,3 +106,7 @@ graphics_creatures_building_icons
 	[LIST_ICON:BUILDING_ICONS:1:12]
 [CUSTOM_WORKSHOP_GRAPHICS:SOAP_MAKER]
 	[LIST_ICON:BUILDING_ICONS:2:12]
+[CUSTOM_WORKSHOP_GRAPHICS:BLAST_FURNACE_FFF]
+	[LIST_ICON:BUILDING_ICONS:4:1] furnace icon
+[CUSTOM_WORKSHOP_GRAPHICS:RUNESMITH]
+	[LIST_ICON:BUILDING_ICONS:3:1] metalsmith icon

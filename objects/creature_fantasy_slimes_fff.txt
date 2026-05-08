@@ -7,14 +7,13 @@ creature_fantasy_slimes_fff
 	[NAME:black slime:black slimes:black slime]
 	[CASTE_NAME:black slime:black slimes:brown slime]
 	[CREATURE_TILE:'s'][COLOR:0:0:1]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:2:3]{:1:3
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[SAVAGE]
@@ -111,14 +110,13 @@ creature_fantasy_slimes_fff
 	[NAME:brown slime:brown slimes:brown slime]
 	[CASTE_NAME:brown slime:brown slimes:brown slime]
 	[CREATURE_TILE:'s'][COLOR:6:0:0]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:ANY_FOREST]
 	[BIOME:ANY_SHRUBLAND]
 	[BIOME:ANY_GRASSLAND]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[SAVAGE]
@@ -215,13 +213,12 @@ creature_fantasy_slimes_fff
 	[NAME:ice slime:ice slimes:ice slime]
 	[CASTE_NAME:ice slime:ice slimes:ice slime]
 	[CREATURE_TILE:'s'][COLOR:3:0:0]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:GLACIER]
 	[BIOME:TUNDRA]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[SAVAGE]
@@ -325,8 +322,6 @@ creature_fantasy_slimes_fff
 	[NAME:clear slime:clear slimes:clear slime]
 	[CASTE_NAME:clear slime:clear slimes:clear slime]
 	[CREATURE_TILE:'s'][COLOR:7:0:1]
-	[PETVALUE:100]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:ANY_LAND]
 	[FREQUENCY:5]
@@ -428,12 +423,11 @@ creature_fantasy_slimes_fff
 	[NAME:rainbow slime:rainbow slimes:rainbow slime]
 	[CASTE_NAME:rainbow slime:rainbow slimes:rainbow slime]
 	[CREATURE_TILE:'s'][COLOR:3:0:1]
-	[PETVALUE:250]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:ANY_LAND][GOOD]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[PREFSTRING:valuable cores]
@@ -547,12 +541,11 @@ creature_fantasy_slimes_fff
 	[NAME:purple slime:purple slimes:purple slime]
 	[CASTE_NAME:purple slime:purple slimes:purple slime]
 	[CREATURE_TILE:'s'][COLOR:5:0:0]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:ANY_LAND][EVIL]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[PREFSTRING:valuable cores]
@@ -648,14 +641,13 @@ creature_fantasy_slimes_fff
 	[NAME:green slime:green slimes:green slime]
 	[CASTE_NAME:green slime:green slimes:green slime]
 	[CREATURE_TILE:'s'][COLOR:2:0:1]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:ANY_FOREST]
 	[BIOME:ANY_SHRUBLAND]
 	[BIOME:ANY_GRASSLAND]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[SAVAGE]
@@ -752,8 +744,6 @@ creature_fantasy_slimes_fff
 	[NAME:blue slime:blue slimes:blue slime]
 	[CASTE_NAME:blue slime:blue slimes:blue slime]
 	[CREATURE_TILE:'s'][COLOR:1:0:1]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:ANY_OCEAN]
 	[BIOME:ANY_LAKE]
@@ -761,6 +751,7 @@ creature_fantasy_slimes_fff
 	[BIOME:ANY_POOL]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER][AMPHIBIOUS]
 	[FANCIFUL]
 	[SAVAGE]
@@ -857,12 +848,11 @@ creature_fantasy_slimes_fff
 	[NAME:yellow slime:yellow slimes:yellow slime]
 	[CASTE_NAME:yellow slime:yellow slimes:yellow slime]
 	[CREATURE_TILE:'s'][COLOR:4:0:1]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:DESERT_SAND]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[SAVAGE]
@@ -960,12 +950,11 @@ creature_fantasy_slimes_fff
 	[NAME:red slime:red slimes:red slime]
 	[CASTE_NAME:red slime:red slimes:red slime]
 	[CREATURE_TILE:'s'][COLOR:6:0:1]
-	[PETVALUE:50]
-	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_LAVA]
 	[POPULATION_NUMBER:5:20]{:20:50
 	[CLUSTER_NUMBER:1:2]{:2:3
+	[FREQUENCY:5]
 	[MEANDERER]
 	[FANCIFUL]
 	[SAVAGE]

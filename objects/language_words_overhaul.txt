@@ -1,4 +1,4 @@
-language_overhaul
+language_words_overhaul
 
 [OBJECT:LANGUAGE]
 
@@ -41,7 +41,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:act:acts:acted:acted:acting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:AFTER]
 	[PREFIX:after]
@@ -59,7 +59,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:age:ages:aged:aged:aging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:AGELESS]
 	[ADJ:ageless]
@@ -276,7 +276,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:bald:balds:balded:balded:balding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BAKE]
 	[NOUN:baker:bakers]
@@ -289,7 +289,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:bake:bakes:baked:baked:baking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BALL]
 	[NOUN:ball:balls]
@@ -349,7 +349,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:bathe:bathes:bathed:bathed:bathing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BATTLE]
 	[NOUN:battle:battles]
@@ -401,7 +401,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BEAR_VERB]
 	[VERB:bear:bears:bore:borne:bearing] *
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:bearable] +
 		[ADJ_DIST:4] +
 
@@ -448,7 +448,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		OF_NOUN_PLUR -
 	[VERB:beguile:beguiles:beguiled:beguiled:beguiling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BELCH]
 	[NOUN:belch:belches]
@@ -546,7 +546,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:blaze:blazes:blazed:blazed:blazing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLIND]
 	[NOUN:blindness:blindnesses]
@@ -556,7 +556,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:blind:blinds:blinded:blinded:blinding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLISTER]
 	[NOUN:blister:blisters]
@@ -589,9 +589,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_SING]
 		THE_NOUN_SING -
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:sanguine] +
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
@@ -603,6 +603,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:bloody]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
+		[THE_COMPOUND_ADJ] +
 
 [WORD:BLOSSOM]
 	[NOUN:blossom:blossoms]
@@ -613,7 +614,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:blossom:blossoms:blossomed:blossomed:blossoming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLUE]
 	[NOUN:blue:blues] * //synecdoche for ocean
@@ -675,7 +676,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BOIL_V]
 	[VERB:boil:boils:boiled:boiled:boiling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BOLD]
 	[NOUN:boldness:boldnesses]
@@ -696,7 +697,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:bolt:bolts:bolted:bolted:bolting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BONE]
 	[NOUN:bone:bones]
@@ -733,7 +734,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BOTHER]
 	[VERB:bother:bothers:bothered:bothered:bothering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:bothersome] +
 		[ADJ_DIST:4] +
 
@@ -750,7 +751,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BOW_VERB]
 	[VERB:bow:bows:bowed:bowed:bowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BRAIN]
 	[NOUN:brain:brains]
@@ -771,7 +772,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:breach:breaches:breached:breached:breaching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BREECHES]
 	[NOUN:breeches:breeches]
@@ -798,7 +799,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:break:breaks:broke:broken:breaking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BREAKFAST]
 	[NOUN:breakfast:breakfasts]
@@ -886,7 +887,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:bristle:bristles:bristled:bristled:bristling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BRILLIANT]
 	[NOUN:brilliance:brilliances]
@@ -910,7 +911,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BROIL]
 	[VERB:broil:broils:broiled:broiled:broiling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BROTHER]
 	[NOUN:brother:brothers]
@@ -989,7 +990,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:burn:burns:burned:burned:burning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BURY]
 	[NOUN:burial:burials]
@@ -1001,7 +1002,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:bury:buries:buried:buried:burying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BUSH]
 	[NOUN:bush:bushes]
@@ -1041,7 +1042,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:bust:busts:busted:busted:busting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BUSINESS]
 	[NOUN:business:businesses]
@@ -1090,7 +1091,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
 	[VERB:butter:butters:buttered:buttered:buttering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BUTTERFLY]
 	[NOUN:butterfly:butterflies]
@@ -1110,7 +1111,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:button:buttons:buttoned:buttoned:buttoning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BUZZARD]
 	[NOUN:buzzard:buzzards]
@@ -1123,7 +1124,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CACKLE]
 	[VERB:cackle:cackles:cackled:cackled:cackling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CAD]
 	[NOUN:cad:cads]
@@ -1169,7 +1170,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:call:calls:called:called:calling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CAMP]
 	[NOUN:camp:camps]
@@ -1182,7 +1183,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:camp:camps:camped:camped:camping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CANCER]
 	[NOUN:cancer:cancers]
@@ -1233,7 +1234,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
@@ -1306,7 +1307,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:chain:chains:chained:chained:chaining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHANT]
 	[NOUN:chant:chants]
@@ -1319,7 +1320,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:chant:chants:chanted:chanted:chanting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHAOS]
 	[NOUN:chaos:chaoses]
@@ -1345,7 +1346,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CHAR]
 	[VERB:char:chars:charred:charred:charring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHARM]
 	[NOUN:charm:charms]
@@ -1358,7 +1359,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:charm:charms:charmed:charmed:charming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHILD]
 	[NOUN:child:children]
@@ -1381,7 +1382,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:chill:chills:chilled:chilled:chilling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHIP_NOUN]
 	[NOUN:chip:chips]
@@ -1396,23 +1397,23 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CHIP_VERB]
 	[VERB:chip:chips:chipped:chipped:chipping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHIRP]
 	[VERB:chirp:chirps:chirped:chirped:chirping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHOKE]
 	[VERB:choke:chokes:choked:choked:choking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHOP]
 	[VERB:chop:chops:chopped:chopped:chopping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHUCK]
 	[VERB:chuck:chucks:chucked:chucked:chucking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CINDER]
 	[NOUN:cinder:cinders]
@@ -1436,7 +1437,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CLAP]
 	[VERB:clap:claps:clapped:clapped:clapping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLASP]
 	[NOUN:clasp:clasps]
@@ -1448,7 +1449,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:clasp:clasps:clasped:clasped:clasping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLAW]
 	[NOUN:claw:claws]
@@ -1470,7 +1471,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:clear:clears:cleared:cleared:clearing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLEARING]
 	[NOUN:clearing:clearings]
@@ -1490,7 +1491,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:cleave:cleaves:clove:cloven:cleaving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:cleft] *+
 		[ADJ_DIST:5] +
 		[FRONT_COMPOUND_ADJ] +
@@ -1499,7 +1500,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CLING]
 	[VERB:cling:clings:clinged:clung:clinging] *
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLOAK]
 	[NOUN:cloak:cloaks]
@@ -1516,7 +1517,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CLOBBER]
 	[VERB:clobber:clobbers:clobbered:clobbered:clobbering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLOCK]
 	[NOUN:clock:clocks]
@@ -1553,7 +1554,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:cloister:cloisters:cloistered:cloistered:cloistering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLOSET]
 	[NOUN:closet:closets]
@@ -1584,7 +1585,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:cluster:clusters:clustered:clustered:clustering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLUTTER]
 	[NOUN:clutter:clutter]
@@ -1596,7 +1597,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		THE_NOUN_PLUR -
 	[VERB:clutter:clutters:cluttered:cluttered:cluttering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COBRA]
 	[NOUN:cobra:cobras]
@@ -1618,7 +1619,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:coil:coils:coiled:coiled:coiling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COLD]
 	[NOUN:coldness:coldnesses]
@@ -1640,7 +1641,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:color:colors:colored:colored:coloring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COMET]
 	[NOUN:comet:comets]
@@ -1666,7 +1667,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:cook:cooks:cooked:cooked:cooking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COVER]
 	[NOUN:cover:covers]
@@ -1680,7 +1681,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:cover:covers:covered:covered:covering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COTTON]
 	[NOUN:cotton:cottons]
@@ -1716,7 +1717,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING] +
 		[THE_NOUN_SING] +
 	[VERB:crawl:crawls:crawled:crawled:crawling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CRAZE]
 	[NOUN:craze:crazes]
@@ -1775,7 +1776,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:creep:creeps:crept:crept:creeping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CREEPY]
 	[NOUN:creepiness:creepinesses]
@@ -1810,7 +1811,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING] +
 		[OF_NOUN_PLUR]
 	[VERB:cross:crosses:crossed:crossed:crossing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CROSS_ADJ]
 	[ADJ:cross]
@@ -1854,11 +1855,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CRUMBLE]
 	[VERB:crumble:crumbles:crumbled:crumbled:crumbling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CRUSH]
 	[VERB:crush:crushes:crushed:crushed:crushing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CRUSHER]
 	[NOUN:crusher:crushers]
@@ -1869,11 +1870,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CRY]
 	[VERB:cry:cries:cried:cried:crying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CRYPT]
 	[NOUN:crypt:crypts]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING 
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -1885,13 +1886,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:CRYSTAL]
 	[NOUN:crystal:crystals]
 		[REAR_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 	[ADJ:crystalline]
 		[ADJ_DIST:1]
 
 [WORD:CUDDLE]
 	[VERB:cuddle:cuddles:cuddled:cuddled:cuddling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CUDGEL]
 	[NOUN:cudgel:cudgels]
@@ -1917,7 +1918,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:curse:curses:cursed:cursed:cursing] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:CUT]
 	[NOUN:cut:cuts]
@@ -1928,8 +1929,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-	[VERB:cut:cuts:cut:cut:cutting] +
-		[STANDARD_VERB] +
+	[ADJ:cutter] +
+		[ADJ_DIST:2]
+		[REAR_COMPOUND_ADJ]
 
 [WORD:CYST]
 	[NOUN:cyst:cysts]
@@ -1952,11 +1954,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:dance:dances:danced:danced:dancing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DANGLE]
 	[VERB:dangle:dangles:dangled:dangled:dangling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DANK]
 	[NOUN:dankness:danknesses]
@@ -2009,7 +2011,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:date:dates:dated:dated:dating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DAWN]
 	[NOUN:dawn:dawns]
@@ -2021,7 +2023,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:dawn:dawns:dawned:dawned:dawning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:dawning] +
 		[ADJ_DIST:2] +
 		[THE_COMPOUND_ADJ] +
@@ -2065,7 +2067,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:die:dies:died:died:dying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DECAY]
 	[NOUN:decay:decays]
@@ -2076,7 +2078,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:decay:decays:decayed:decayed:decaying] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:DECEIVER]
 	[NOUN:deceiver:deceivers]
@@ -2162,11 +2164,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		OF_NOUN_PLUR -
 	[VERB:devourer:devourers:devoured:devoured:devouring] +
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DINE]
 	[VERB:dine:dines:dined:dined:dining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DINNER]
 	[NOUN:dinner:dinners]
@@ -2279,7 +2281,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:drain:drains:drained:drained:draining]
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:DRAWL]
 	[NOUN:drawl:drawls]
@@ -2355,7 +2357,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:drip:drips:dripped:dripped:dripping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DROOL]
 	[NOUN:drool:drools]
@@ -2368,7 +2370,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DROWNED]
 	[VERB:drown:drowns:drowned:drowned:drowning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DRUM]
 	[NOUN:drum:drums]
@@ -2397,7 +2399,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:dump:dumps:dumped:dumped:dumping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DUMPLING]
 	[NOUN:dumpling:dumplings]
@@ -2518,7 +2520,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:eat:eats:ate:eaten:eating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ECTO]
 	[PREFIX:ecto]
@@ -2653,7 +2655,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:fall:falls:fell:fallen:falling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FALSE]
 	[NOUN:falsehood:falsehoods]
@@ -2810,7 +2812,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:find:finds:found:found:finding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FINGER]
 	[NOUN:finger:fingers]
@@ -2861,7 +2863,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:fish:fishes:fished:fished:fishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FIST]
 	[NOUN:fist:fists]
@@ -2923,7 +2925,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FLING]
 	[VERB:fling:flings:flung:flung:flinging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FLOOD]
 	[NOUN:flood:floods]
@@ -2935,7 +2937,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:flood:floods:flooded:flooded:flooding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FLOWER]
 	[NOUN:flower:flowers]
@@ -2980,7 +2982,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:fly:flies:flew:flew:flying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FOCUS]
 	[NOUN:focus:focuses]
@@ -2991,7 +2993,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:focus:focuses:focused:focused:focusing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FOG]
 	[NOUN:fog:fogs]
@@ -3053,7 +3055,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:fork:forks:forked:forked:forking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FORTIFY]
 	[NOUN:fortification:fortifications]
@@ -3098,13 +3100,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:frame:frames:framed:framed:framing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FRAY]
 	[NOUN:fray:frays] +
 		[THE_NOUN_SING] +
 	[VERB:fray:frays:frayed:frayed:fraying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FREE]
 	[NOUN:freedom:freedoms]
@@ -3131,7 +3133,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FREEZE]
 	[VERB:freeze:freezes:froze:frozen:freezing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FRILL]
 	[NOUN:frill:frills]
@@ -3246,7 +3248,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		THE_NOUN_PLUR -
 	[VERB:garnish:garnishes:garnished:garnished:garnishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GATE]
 	[NOUN:gate:gates]
@@ -3335,7 +3337,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:gift:gifts:gifted:gifted:gifting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GILL]
 	[NOUN:gill:gills]
@@ -3385,7 +3387,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:glaze:glazes:glazed:glazed:glazing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GLEN]
 	[NOUN:glen:glens]
@@ -3399,7 +3401,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GLIDE]
 	[VERB:glide:glides:glided:glided:gliding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GLIMMER]
 	[NOUN:glimmer:glimmers]
@@ -3410,11 +3412,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:glimmer:glimmers:glimmered:glimmered:glimmering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GLISTEN]
 	[VERB:glisten:glistens:glistened:glistened:glistening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GLOSS]
 	[NOUN:gloss:glosses]
@@ -3426,7 +3428,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		THE_NOUN_PLUR -
 	[VERB:gloss:glosses:glossed:glossed:glossing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:glossy] +
 		[ADJ_DIST:5] +
 		[FRONT_COMPOUND_ADJ] +
@@ -3509,7 +3511,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GORE]
 	[VERB:gore:gores:gored:gored:goring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GORGE_NOUN]
 	[NOUN:gorge:gorges]
@@ -3522,7 +3524,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GORGE_VERB]
 	[VERB:gorge:gorges:gorged:gorged:gorging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GRAIN]
 	[NOUN:grain:grains]
@@ -3640,7 +3642,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:grill:grills] +
 		[THE_NOUN_SING] +
 	[VERB:grill:grills:grilled:grilled:grilling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GRIM]
 	[ADJ:grim]
@@ -3649,7 +3651,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GRIND]
 	[VERB:grind:grinds:ground:ground:grinding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GRIP]
 	[NOUN:grip:grips]
@@ -3661,7 +3663,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:grip:grips:gripped:gripped:gripping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GRISTLE]
 	[NOUN:gristle:gristles]
@@ -3712,7 +3714,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR -
 	[VERB:grow:grows:grew:grown:growing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GROWL]
 	[NOUN:growl:growls]
@@ -3724,7 +3726,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:growl:growls:growled:growled:growling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GROWTH]
 	[NOUN:growth:growths]
@@ -3759,7 +3761,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
 	[VERB:guard:guards:guarded:guarded:guarding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GUILE]
 	[NOUN:guile:guiles]
@@ -3852,7 +3854,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:hammer:hammers:hammered:hammered:hammering] +
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HAMMERER]
 	[NOUN:hammerer:hammerers]
@@ -3927,7 +3929,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:hateful]
 		[ADJ_DIST:2]
 	[VERB:hate:hates:hated:hated:hating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HAUNT]
 	[NOUN:haunt:haunts]
@@ -3940,7 +3942,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:haunt:haunts:haunted:haunted:haunting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HAWK]
 	[NOUN:hawk:hawks]
@@ -4005,11 +4007,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HEDGE]
 	[NOUN:hedge:hedges]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 		THE_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
@@ -4017,14 +4019,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:HELL]
 	[NOUN:hell:hells]
 		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
+		REAR_COMPOUND_NOUN_SING -
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR] +
 	[ADJ:hellish]
 		[ADJ_DIST:2]
+		[THE_COMPOUND_ADJ] +
 
 [WORD:HELM]
 	[NOUN:helm:helms]
@@ -4038,20 +4040,20 @@ Introduces additional forms, especially if they're fitting adjectives.
 		OF_NOUN_PLUR -
 	[ADJ:helmed]
 		[ADJ_DIST:5]
-		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ] +
+		FRONT_COMPOUND_ADJ 
 
 [WORD:HERO]
 	[NOUN:hero:heroes]
-		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
-		[THE_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
+		REAR_COMPOUND_NOUN_SING -
+		THE_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[ADJ:heroic]
 		[ADJ_DIST:5]
 		[FRONT_COMPOUND_ADJ]
+		[THE_COMPOUND_ADJ] +
 
 [WORD:HEX]
 	[NOUN:hex:hexes]
@@ -4071,12 +4073,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:hide:hides] //leather
 		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
-		[THE_COMPOUND_NOUN_SING]
+		THE_COMPOUND_NOUN_SING -
 		THE_NOUN_SING -
-		[OF_NOUN_SING]
+		OF_NOUN_SING -
 		REAR_COMPOUND_NOUN_PLUR
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 
 [WORD:HIDEOUS]
 	[ADJ:hideous]
@@ -4121,7 +4123,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HOBBLE]
 	[VERB:hobble:hobbles:hobbled:hobbled:hobbling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HOG]
 	[NOUN:hog:hogs]
@@ -4145,7 +4147,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HOIST]
 	[VERB:hoist:hoists:hoisted:hoisted:hoisting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HOLE]
 	[NOUN:hole:holes]
@@ -4223,7 +4225,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:hop:hops:hopped:hopped:hopping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HORN]
 	[NOUN:horn:horns]
@@ -4284,11 +4286,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:hug:hugs:hugged:hugged:hugging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HUM]
 	[VERB:hum:hums:hummed:hummed:humming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HUNGER]
 	[NOUN:hunger:hungers]
@@ -4303,7 +4305,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HUSTLE]
 	[VERB:hustle:hustles:hustled:hustled:hustling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ICE]
 	[NOUN:ice:ices]
@@ -4376,7 +4378,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:inch:inches:inched:inched:inching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:INK]
 	[NOUN:ink:inks]
@@ -4393,7 +4395,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:ink:inks:inked:inked:inking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:INN]
 	[NOUN:inn:inns]
@@ -4519,7 +4521,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:jest:jests:jested:jested:jesting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:JOKE]
 	[NOUN:joke:jokes]
@@ -4532,7 +4534,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:joke:jokes:joked:joked:joking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:JUGGLE]
 	[NOUN:juggler:jugglers]
@@ -4544,7 +4546,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR -
 	[VERB:juggle:juggles:juggled:juggled:juggling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:JUICE]
 	[NOUN:juice:juices]
@@ -4639,7 +4641,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:kill:kills:killed:killed:killing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:KISS]
 	[NOUN:kiss:kisses]
@@ -4651,28 +4653,24 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:kiss:kisses:kissed:kissed:kissing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:KING]
 	[NOUN:king:kings]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		REAR_COMPOUND_NOUN_SING - //since there's no social aspect to it
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
-	[ADJ:kingly] +
-		[ADJ_DIST:2] +
-		[FRONT_COMPOUND_ADJ] +
-		[THE_COMPOUND_ADJ] +
 
 [WORD:KNEAD]
 	[VERB:knead:kneads:kneaded:kneaded:kneading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:KNIFE]
 	[NOUN:knife:knives]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -4682,7 +4680,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:KNIGHT]
 	[NOUN:knight:knights]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -4693,11 +4691,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ] +
 	[VERB:knight:knights:knighted:knighted:knighting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:KNIT]
 	[VERB:knit:knits:knit:knitted:knitting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:KNOT]
 	[NOUN:knot:knots]
@@ -4818,7 +4816,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:lead:leads:led:led:leading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LEAF]
 	[NOUN:leaf:leaves]
@@ -4847,7 +4845,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:leak:leaks:leaked:leaked:leaking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LEAN]
 	[ADJ:lean]
@@ -4856,17 +4854,17 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LEECH]
 	[NOUN:leech:leeches]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
-		[THE_NOUN_SING]
+		THE_NOUN_SING -
+		OF_NOUN_SING -
 		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
 [WORD:LEGEND]
 	[NOUN:legend:legends]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		THE_NOUN_SING -
@@ -4907,6 +4905,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		THE_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
+	[ADJ:leper] +
+		[ADJ_DIST:4] +
+		[THE_COMPOUND_ADJ] +
 
 [WORD:LEPROSY]
 	[NOUN:leprosy:leprosies]
@@ -4926,7 +4927,6 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:4] +
 		[FRONT_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ] +
-		[REAR_COMPOUND_ADJ] +
 
 [WORD:LIE]
 	[NOUN:lie:lies]
@@ -4937,9 +4937,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
-	[ADJ:lying] +
+	[ADJ:liar] +
 		[ADJ_DIST:4] +
-		[FRONT_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ] +
 
 [WORD:LIGHT]
@@ -4953,9 +4952,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[ADJ:lit] *
-		[ADJ_DIST:4]
+		[ADJ_DIST:5]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ]
 
 [WORD:LIGHTNING]
@@ -4990,7 +4988,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LISTEN]
 	[VERB:listen:listens:listened:listened:listening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LIZARD]
 	[NOUN:lizard:lizards]
@@ -5020,7 +5018,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:lock:locks:locked:locked:locking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LONE]
 	[ADJ:lone]
@@ -5099,7 +5097,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:love:loves:loved:loved:loving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LOW]
 	[NOUN:lowness:lownesses]
@@ -5147,11 +5145,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LURCH]
 	[VERB:lurch:lurches:lurched:lurched:lurching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LURK]
 	[VERB:lurk:lurks:lurked:lurked:lurking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LUSH]
 	[ADJ:lush]
@@ -5267,7 +5265,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:martyr:martyrs:martyred:martyred:martyring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MASTER]
 	[NOUN:master:masters]
@@ -5356,7 +5354,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		OF_NOUN_SING -
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:menace:menaces:menaced:menaced:menacing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MESS]
 	[NOUN:mess:messes]
@@ -5416,7 +5414,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:MINCE]
 	[VERB:mince:minces:minced:minced:mincing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MIND]
 	[NOUN:mind:minds]
@@ -5450,7 +5448,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:mirror:mirrors:mirrored:mirrored:mirroring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MISERY]
 	[NOUN:misery:miseries]
@@ -5642,7 +5640,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:MUNCH]
 	[VERB:munch:munches:munched:munched:munching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MURDER]
 	[NOUN:murder:murders]
@@ -5654,7 +5652,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:murder:murders:murdered:murdered:murdering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MUSH]
 	[NOUN:mush:mushes]
@@ -5764,7 +5762,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		OF_NOUN_PLUR - *test
 	[VERB:negate:negates:negated:negated:negating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:NEO]
 	[PREFIX:neo]
@@ -5780,11 +5778,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:nest:nests:nested:nested:nesting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:NESTLE]
 	[VERB:nestle:nestles:nestled:nestled:nestling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:NET]
 	[NOUN:net:nets]
@@ -5822,7 +5820,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:NIBBLE]
 	[VERB:nibble:nibbles:nibbled:nibbled:nibbling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:NIGHT]
 	[NOUN:night:nights]
@@ -5909,7 +5907,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:NURTURE]
 	[VERB:nurture:nurtures:nurtured:nurtured:nurturing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:NUT]
 	[NOUN:nut:nuts]
@@ -6033,7 +6031,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2] +
 		[THE_COMPOUND_ADJ] +
 	[VERB:open:opens:opened:opened:opening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ORB]
 	[NOUN:orb:orbs]
@@ -6084,7 +6082,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:pack:packs:packed:packed:packing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PAD_NOUN]
 	[NOUN:pad:pads]
@@ -6103,7 +6101,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:PAD_VERB]
 	[VERB:pad:pads:padded:padded:padding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PAGE]
 	[NOUN:page:pages]
@@ -6116,7 +6114,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:page:pages:paged:paged:paging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PAIN]
 	[NOUN:pain:pains]
@@ -6141,7 +6139,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 	[VERB:paint:paints:painted:painted:painting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PALE]
 	[NOUN:paleness:palenesses]
@@ -6163,7 +6161,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:PANT]
 	[VERB:pant:pants:panted:panted:panting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PANTHER]
 	[NOUN:panther:panthers]
@@ -6314,7 +6312,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:plant:plants:planted:planted:planting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PLANTER]
 	[NOUN:planter:planters]
@@ -6335,7 +6333,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:plot:plots:plotted:plotted:plotting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:POCKET_NOUN]
 	[NOUN:pocket:pockets]
@@ -6486,7 +6484,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR -
 	[VERB:prowl:prowls:prowled:prowled:prowling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PUKE]
 	[NOUN:puke:pukes]
@@ -6503,7 +6501,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:PULL]
 	[VERB:pull:pulls:pulled:pulled:pulling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PULLEY]
 	[NOUN:pulley:pulleys]
@@ -6643,7 +6641,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:RACE_VERB]
 	[NOUN:race:races]
 	[VERB:race:races:raced:raced:racing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RACK]
 	[NOUN:rack:racks]
@@ -6696,11 +6694,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:rain:rains:rained:rained:raining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RAKE]
 	[VERB:rake:rakes:raked:raked:raking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RAM]
 	[NOUN:ram:rams]
@@ -6711,7 +6709,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:ram:ram:rammed:rammed:ramming] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:RAMPAGE]
 	[NOUN:rampage:rampages]
@@ -6724,7 +6722,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:rampage:rampages:rampaged:rampaged:rampaging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RANDOM]
 	[ADJ:random]
@@ -6735,7 +6733,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:sacking:] +
 		[THE_NOUN_SING] +
 	[VERB:ransack:ransacks:ransacked:ransacked:ransacking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RAPTOR]
 	[NOUN:raptor:raptors]
@@ -6830,14 +6828,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:reign:reigns:reigned:reigned:reigning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:REIN]
 	[NOUN:rein:reins]
 		[REAR_COMPOUND_NOUN_PLUR] +
 		[THE_NOUN_PLUR] +
 	[VERB:rein:reins:reined:reined:reining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:REND]
 	[ADJ:riven] + //not just tolkein
@@ -6845,7 +6843,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ] +
 	[VERB:rend:rends:rent:rent:rending]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RIDER]
 	[NOUN:rider:riders]
@@ -6879,7 +6877,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:RING_SOUND]
 	[VERB:ring:rings:rang:rung:ringing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RIP]
 	[NOUN:rip:rips]
@@ -6916,7 +6914,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ] +
 	[VERB:rise:rises:rose:risen:rising]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RITE]
 	[NOUN:rite:rites]
@@ -6979,7 +6977,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:romance:romances:romanced:romanced:romancing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ROOM]
 	[NOUN:room:rooms]
@@ -7029,19 +7027,19 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:rot:rots:rotten:rotten:rotting] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:ROUGH]
 	[NOUN:roughness:roughnesses]
 		FRONT_COMPOUND_NOUN_SING -
-		[REAR_COMPOUND_NOUN_SING]
+		REAR_COMPOUND_NOUN_SING -
 		THE_COMPOUND_NOUN_SING -
 		THE_NOUN_SING -
 		[OF_NOUN_SING]
 	[ADJ:rough]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:ROYAL]
@@ -7053,10 +7051,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:royal]
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
+		[THE_COMPOUND_ADJ] +
 
 [WORD:RUIN]
 	[NOUN:ruin:ruins]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -7082,7 +7081,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR -
 	[VERB:rule:rules:ruled:ruled:ruling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:sovereign] +
 		[ADJ_DIST:2] +
 		[FRONT_COMPOUND_ADJ] +
@@ -7111,7 +7110,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:rust:rusts:rusted:rusted:rusting] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 	[ADJ:rusted] +
 		[ADJ_DIST:4] +
 		[FRONT_COMPOUND_ADJ] +
@@ -7274,11 +7273,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:scar:scars:scarred:scarred:scarring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCOLD]
 	[VERB:scold:scolds:scolded:scolded:scolding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCORPION]
 	[NOUN:scorpion:scorpions]
@@ -7299,7 +7298,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:scratch:scratches:scratched:scratched:scratching] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:SCOURGE]
 	[NOUN:scourge:scourges]
@@ -7320,7 +7319,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:scream:screams:screamed:screamed:screaming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCUM]
 	[NOUN:scum:scum]
@@ -7400,7 +7399,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		THE_NOUN_PLUR -
 	[VERB:seduce:seduces:seduced:seduced:seducing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SEDUCER]
 	[NOUN:seducer:seducers]
@@ -7436,7 +7435,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:seize:seizes:seized:seized:seizing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SERPENT]
 	[NOUN:serpent:serpents]
@@ -7471,7 +7470,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		THE_COMPOUND_NOUN_PLUR -
 	[VERB:sever:severs:severed:severed:severing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SEWER]
 	[NOUN:sewer:sewers]
@@ -7529,7 +7528,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SHEAR]
 	[VERB:shear:shears:sheared:shorn:shearing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHEEN]
 	[NOUN:sheen:sheens]
@@ -7570,7 +7569,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:shelter:shelters:sheltered:sheltered:sheltering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHIELD]
 	[NOUN:shield:shields]
@@ -7583,13 +7582,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 		OF_NOUN_PLUR -
 	[ADJ:shielded] +
 		[ADJ_DIST:4] +
-		[FRONT_COMPOUND_ADJ] +
-		[REAR_COMPOUND_ADJ] +
+		[THE_COMPOUND_ADJ] +
 	[VERB:shield:shields:shielded:shielded:shielding]
 
 [WORD:SHIMMER]
 	[VERB:shimmer:shimmers:shimmered:shimmered:shimmering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHIP]
 	[NOUN:ship:ships]
@@ -7609,7 +7607,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR - *test +
 	[VERB:shoot:shoots:shot:shot:shooting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHOW]
 	[NOUN:show:shows]
@@ -7650,7 +7648,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SHUT]
 	[VERB:shut:shuts:shut:shut:shutting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SICK]
 	[NOUN:sick:sick]
@@ -7681,7 +7679,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:siege:sieges:sieged:sieged:sieging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SILENCE]
 	[NOUN:silence:silences]
@@ -7697,16 +7695,16 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:silence:silences:silenced:silenced:silencing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SILK]
 	[NOUN:silk:silks]
 		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
+		REAR_COMPOUND_NOUN_SING
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
 	[ADJ:silken]
 		[ADJ_DIST:4]
@@ -7789,7 +7787,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:sing:sings:sang:sung:singing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SISTER]
 	[NOUN:sister:sisters]
@@ -7814,7 +7812,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SKIRT_VERB]
 	[VERB:skirt:skirts:skirted:skirted:skirting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SKUNK]
 	[NOUN:skunk:skunks]
@@ -7923,7 +7921,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SLINK]
 	[VERB:slink:slinks:slunk:slunk:slinking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SLIT]
 	[NOUN:slit:slits]
@@ -7940,11 +7938,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:slit:slits:slit:slit:slitting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SLITHER]
 	[VERB:slither:slithers:slithered:slithered:slithering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SLIVER]
 	[NOUN:sliver:slivers]
@@ -7985,7 +7983,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SMASH]
 	[VERB:smash:smashes:smashed:smashed:smashing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SMILE]
 	[NOUN:smile:smiles]
@@ -7997,7 +7995,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:smile:smiles:smiled:smiled:smiling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SMITH]
 	[NOUN:smith:smiths]
@@ -8010,7 +8008,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:smith:smiths:smithed:smithed:smithing] +
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SMOKE]
 	[NOUN:smoke:smokes]
@@ -8023,7 +8021,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:smoke:smokes:smoked:smoked:smoking] +
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SMOOTH]
 	[NOUN:smoothness:smoothnesses]
@@ -8038,7 +8036,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SMOULDER]
 	[VERB:smolder:smolders:smoldered:smoldered:smoldering] * //american english
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SNACK]
 	[NOUN:snack:snacks]
@@ -8051,7 +8049,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:snack:snacks:snacked:snacked:snacking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SNAKE]
 	[NOUN:snake:snakes]
@@ -8088,7 +8086,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SNUGGLE]
 	[VERB:snuggle:snuggles:snuggled:snuggled:snuggling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SOIL]
 	[NOUN:soil:soils]
@@ -8127,7 +8125,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SOOTHE]
 	[VERB:soothe:soothes:soothed:soothed:soothing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SORROW]
 	[NOUN:sorrow:sorrows]
@@ -8162,7 +8160,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 	[VERB:sound:sounds:sounded:sounded:sounding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SOUTH]
 	[NOUN:south:] +
@@ -8203,18 +8201,17 @@ Introduces additional forms, especially if they're fitting adjectives.
 		OF_NOUN_PLUR -
 	[ADJ:speared] +
 		[ADJ_DIST:4] +
-		[FRONT_COMPOUND_ADJ] +
-		[REAR_COMPOUND_ADJ] +
+		[THE_COMPOUND_ADJ] +
 
 [WORD:SPELL]
 	[NOUN:spell:spells]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 
 [WORD:SPICE]
 	[NOUN:spice:spices]
@@ -8228,8 +8225,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		OF_NOUN_PLUR - *test
 	[ADJ:spicy]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
-		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:SPIDER]
 	[NOUN:spider:spiders]
@@ -8238,7 +8234,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
+		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 
 [WORD:SPIDERY]
@@ -8264,7 +8260,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SPIN]
 	[VERB:spin:spins:spun:spun:spinning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPINE]
 	[NOUN:spine:spines]
@@ -8315,7 +8311,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:spoil:spoils:spoiled:spoiled:spoiling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPOON]
 	[NOUN:spoon:spoons]
@@ -8329,7 +8325,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:spoon:spoons:spooned:spooned:spooning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPRING_NOUN]
 	[NOUN:spring:springs]
@@ -8358,7 +8354,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SPRING_VERB]
 	[VERB:spring:springs:sprang:sprung:springing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPRY]
 	[ADJ:spry]
@@ -8387,11 +8383,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SQUIRM]
 	[VERB:squirm:squirms:squirmed:squirmed:squirming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STAB]
 	[VERB:stab:stabs:stabbed:stabbed:stabbing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STAFF]
 	[NOUN:staff:staves]
@@ -8412,7 +8408,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 	[VERB:stalk:stalks:stalked:stalked:stalking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STAND]
 	[NOUN:stance:stances]
@@ -8424,7 +8420,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:stand:stands:stood:stood:standing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STAR]
 	[NOUN:star:stars]
@@ -8455,11 +8451,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		OF_NOUN_PLUR -
 	[VERB:starve:starves:starved:starved:starving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STEAL]
 	[VERB:steal:steals:stole:stolen:stealing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STEEL]
 	[NOUN:steel:steels]
@@ -8489,7 +8485,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:stern]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:STICK_WOOD]
@@ -8506,7 +8502,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:STICK_VERB]
 	[VERB:stick:sticks:stuck:stuck:sticking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STICKY]
 	[ADJ:sticky]
@@ -8516,16 +8512,15 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:STONE]
 	[NOUN:stone:stones]
 		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
+		REAR_COMPOUND_NOUN_SING -
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 	[ADJ:stony] +
 		[ADJ_DIST:2] +
-		[FRONT_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ] +
 	[PREFIX:litho] +
 		[THE_COMPOUND_PREFIX] +
@@ -8533,7 +8528,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:STORM]
 	[NOUN:storm:storms]
 		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
+		REAR_COMPOUND_NOUN_SING -
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
@@ -8541,6 +8536,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 	[ADJ:stormy]
 		[ADJ_DIST:2]
+		[THE_COMPOUND_ADJ] +
 	[PREFIX:kerauno] +
 		[THE_COMPOUND_PREFIX] +
 
@@ -8553,7 +8549,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:strange]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:STRAP]
@@ -8568,7 +8564,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:strap:straps:strapped:strapped:strapping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STRAPPING_ADJ]
 	[ADJ:strapping]
@@ -8598,7 +8594,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:stray:strays:strayed:strayed:straying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STRENGTH]
 	[NOUN:strength:strengths]
@@ -8611,12 +8607,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:strong]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:STRETCH]
 	[VERB:stretch:stretches:stretched:stretched:stretching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STRIKE]
 	[NOUN:strike:strikes]
@@ -8628,7 +8624,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:strike:strikes:struck:stricken:striking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STROKE]
 	[NOUN:stroke:strokes]
@@ -8640,7 +8636,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:stroke:strokes:stroked:stroked:stroking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STUNT]
 	[NOUN:stunt:stunts]
@@ -8668,7 +8664,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:STUTTER]
 	[VERB:stutter:stutters:stuttered:stuttered:stuttering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STYLE]
 	[NOUN:style:styles]
@@ -8682,7 +8678,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
 	[VERB:style:styles:styled:styled:styling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:stylish] +
 		[ADJ_DIST:2] +
 		[THE_COMPOUND_ADJ] +
@@ -8706,7 +8702,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:suck:sucks:sucked:sucked:sucking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SUFFERING]
 	[NOUN:suffering:sufferings]
@@ -8731,7 +8727,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SULLY]
 	[VERB:sully:sullies:sullied:sullied:sullying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SULLEN]
 	[ADJ:sullen]
@@ -8768,7 +8764,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SUNDER]
 	[VERB:sunder:sunders:sundered:sunder:sundering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SUPPER]
 	[NOUN:supper:suppers]
@@ -8793,7 +8789,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:surprise:surprises:surprised:surprised:surprising] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:SWAMP]
 	[NOUN:swamp:swamps]
@@ -8812,7 +8808,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:sweat:sweats:sweat:sweat:sweating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SWEET]
 	[NOUN:sweetness:sweetnesses]
@@ -8838,7 +8834,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SWIM]
 	[VERB:swim:swims:swam:swam:swimming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SWINE]
 	[NOUN:swine:swines]
@@ -8877,7 +8873,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_SING -
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:take:takes:took:taken:taking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TAIL]
 	[NOUN:tail:tails]
@@ -8921,11 +8917,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_SING -
 		[OF_NOUN_SING]
 	[VERB:tarnish:tarnishes:tarnished:tarnished:tarnishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TELL]
 	[VERB:tell:tells:told:told:telling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TEMPEST]
 	[NOUN:tempest:tempests]
@@ -9050,7 +9046,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:throw:throws:threw:thrown:throwing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:THUNDER]
 	[NOUN:thunder:thunders]
@@ -9063,7 +9059,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:thunder:thunders:thundered:thundered:thundering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:thunderous] +
 		[ADJ_DIST:5] +
 		[THE_COMPOUND_ADJ] +
@@ -9090,7 +9086,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:toll:tolls:tolled:tolled:tolling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TIGHT]
 	[NOUN:tightness:tightnesses]
@@ -9203,7 +9199,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		THE_NOUN_PLUR -
 	[VERB:touch:touches:touched:touched:touching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TOUCHY]
 	[ADJ:touchy]
@@ -9241,7 +9237,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:trail:trails:trailed:trailed:trailing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TRANCE]
 	[NOUN:trance:trances]
@@ -9263,7 +9259,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:trap:traps:trapped:trapped:trapping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TRASH]
 	[NOUN:trash:trashes]
@@ -9299,7 +9295,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:treat:treats:treated:treated:treating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TREATY]
 	[NOUN:treaty:treaties]
@@ -9346,7 +9342,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:trick:tricks:tricked:tricked:tricking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TRICKERY]
 	[NOUN:trickery:trickeries]
@@ -9370,7 +9366,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:trim:trims:trimmed:trimmed:trimming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TROUBLE]
 	[NOUN:trouble:troubles]
@@ -9382,11 +9378,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 	[VERB:trouble:troubles:troubled:troubled:troubling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TUG]
 	[VERB:tug:tugs:tugged:tugged:tugging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TULIP]
 	[NOUN:tulip:tulips]
@@ -9401,7 +9397,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:TUMBLE]
 	[VERB:tumble:tumbles:tumbled:tumbled:tumbling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TUMOR]
 	[NOUN:tumor:tumors]
@@ -9472,7 +9468,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR - *test +
 	[VERB:twist:twists:twisted:twisted:twisting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TWO]
 	[NOUN:twin:twins] +
@@ -9692,7 +9688,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:voice:voices:voiced:voiced:voicing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VOID]
 	[NOUN:void:voids]
@@ -9756,7 +9752,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 	[VERB:wander:wanders:wandered:wandered:wandering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WAR]
 	[NOUN:war:wars]
@@ -9769,7 +9765,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 	[ADJ:conflict] +
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:WARRIOR]
@@ -9784,7 +9780,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 	[ADJ:warring] +
 		[ADJ_DIST:3]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:WASP]
@@ -9809,7 +9805,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:waste:wastes:wasted:wasted:wasting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WATCH]
 	[NOUN:watch:watches]
@@ -9821,7 +9817,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:watch:watches:watched:watched:watching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WATCHFUL]
 	[NOUN:watchfulness:watchfulnesses]
@@ -9843,7 +9839,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:wave:waves:waved:waved:waving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WAVY]
 	[NOUN:waviness:wavinesses]
@@ -9857,7 +9853,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WEAR]
 	[VERB:wear:wears:wore:worn:wearing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WEASEL]
 	[NOUN:weasel:weasels]
@@ -9877,7 +9873,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:weave:weaves:wove:woven:weaving] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:WEED]
 	[NOUN:weed:weeds]
@@ -9944,7 +9940,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:wheel:wheels:wheeled:wheeled:wheeling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WHIP]
 	[NOUN:whip:whips]
@@ -9956,11 +9952,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:whip:whips:whipped:whipped:whipping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WHISK]
 	[VERB:whisk:whisks:whisked:whisked:whisking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WHISKY]
 	[NOUN:whisky:whiskies]
@@ -9979,7 +9975,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:whisper:whispers:whispered:whispered:whispering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WHITE]
 	[NOUN:whiteness:whitenesses]
@@ -10088,7 +10084,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WONDER_VERB]
 	[VERB:wonder:wonders:wondered:wondered:wondering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WOOD]
 	[NOUN:wood:woods]
@@ -10116,7 +10112,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
 	[VERB:work:works:wrought:wrought:working] *
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WORM]
 	[NOUN:worm:worms]
@@ -10265,7 +10261,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:EARTH]
 	[NOUN:earth:earths]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -10273,7 +10269,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 	[ADJ:earthen]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 	[PREFIX:geo] +
@@ -10303,7 +10299,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:bud:buds:budded:budded:budding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CAVORT]
 	[VERB:cavort:cavorts:cavorted:cavorted:cavorting]
@@ -10327,7 +10323,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		THE_NOUN_PLUR -
 	[VERB:daub:daubs:daubed:daubed:daubing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DESERT]
 	[NOUN:desert:deserts]
@@ -10371,11 +10367,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR] +
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 
 [WORD:DREAM]
 	[NOUN:dream:dreams]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -10385,16 +10381,16 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 	[ADJ:dreamy]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 	[VERB:dream:dreams:dreamed:dreamed:dreaming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TIN]
 	[NOUN:tin:tin]
 		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
+		REAR_COMPOUND_NOUN_SING -
 		[OF_NOUN_SING]
 	[ADJ:tin]
 		[ADJ_DIST:1]
@@ -10452,7 +10448,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:farm:farms:farmed:farmed:farming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[PREFIX:agri] +
 		[FRONT_COMPOUND_PREFIX]
 		[THE_COMPOUND_PREFIX]
@@ -10483,7 +10479,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 	[VERB:froth:froths:frothed:frothed:frothing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GENIUS]
 	[NOUN:genius:geniuses]
@@ -10509,26 +10505,26 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GURGLE]
 	[VERB:gurgle:gurgles:gurgled:gurgled:gurgling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:IMPALE]
 	[VERB:impale:impales:impaled:impaled:impaling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:JOIN]
 	[VERB:join:joins:joined:joined:joining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:JADE]
 	[NOUN:jade:jades]
 		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
+		REAR_COMPOUND_NOUN_SING -
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 	[ADJ:jade]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
@@ -10563,7 +10559,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LATHER]
 	[VERB:lather:lathers:lathered:lathered:lathering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LIMP]
 	[ADJ:limp]
@@ -10621,7 +10617,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ]
 	[VERB:pattern:patterns:patterned:patterned:patterning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PEBBLE]
 	[NOUN:pebble:pebbles]
@@ -10723,11 +10719,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:RUSH]
 	[VERB:rush:rushes:rushed:rushed:rushing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SLAP]
 	[VERB:slap:slaps:slapped:slapped:slapping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SLEEVE]
 	[NOUN:sleeve:sleeves]
@@ -10788,7 +10784,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:TROT]
 	[VERB:trot:trots:trotted:trotted:trotting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TUB]
 	[NOUN:tub:tubs]
@@ -10831,7 +10827,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WADDLE]
 	[VERB:waddle:waddles:waddled:waddled:waddling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WEALTH]
 	[NOUN:wealth:wealths]
@@ -10880,7 +10876,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:whirling]
 		[ADJ_DIST:2]
 	[VERB:whirl:whirls:whirled:whirled:whirling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WORLD]
 	[NOUN:world:worlds]
@@ -10904,15 +10900,15 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FANCYVERB]
 	[VERB:fancy:fancies:fancied:fancied:fancying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LIMPVERB]
 	[VERB:limp:limps:limped:limped:limping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:POINTVERB]
 	[VERB:point:points:pointed:pointed:pointing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PANTOMIME]
 	[NOUN:mime:mimes] *
@@ -10920,7 +10916,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		OF_NOUN_PLUR - *test
 	[VERB:mime:mimes:mimed:mimed:miming] *
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:SLUDGE]
 	[NOUN:sludge:sludges]
@@ -11085,8 +11081,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:federal] +
 		[ADJ_DIST:1] +
 		[FRONT_COMPOUND_ADJ] +
@@ -11150,7 +11146,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:clash:clashes:clashed:clashed:clashing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FOREVER]
 	[NOUN:forever:forever]
@@ -11181,7 +11177,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:puppeteer:puppeteers:puppeteered:puppeteered:puppeteering] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:HEGEMON]
 	[NOUN:hegemon:hegemons]
@@ -11202,7 +11198,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:4]
 		[THE_COMPOUND_ADJ]
 	[VERB:amaze:amazes:amazed:amazed:amazing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ALCHEMY]
 	[NOUN:alchemy:alchemies]
@@ -11241,21 +11237,21 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		FRONT_COMPOUND_NOUN_PLUR -
 		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:unified] +
 		[ADJ_DIST:1] +
 		[FRONT_COMPOUND_ADJ] +
 	[VERB:unite:unites:united:united:uniting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONFEDERACY]
 	[NOUN:confederacy:confederacies]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:confederate] +
 		[ADJ_DIST:1] +
 		[FRONT_COMPOUND_ADJ] +
@@ -11272,7 +11268,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:speak:speaks:spoke:spoken:speaking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPEAKER]
 	[NOUN:speaker:speakers]
@@ -11314,7 +11310,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:control:controls:controlled:controlled:controlling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONTROLLER]
 	[NOUN:controller:controllers]
@@ -11406,15 +11402,15 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 	[VERB:clean:cleans:cleaned:cleaned:cleaning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DRIVE]
 	[VERB:drive:drives:drove:driven:driving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SOAR]
 	[VERB:soar:soars:soared:soared:soaring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GLORY]
 	[NOUN:glory:glories]
@@ -11467,7 +11463,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[THE_NOUN_PLUR]
+		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[ADJ:messianic]
 		[ADJ_DIST:1]
@@ -11484,12 +11480,16 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
+	[ADJ:crafter] +
+		[ADJ_DIST:1] +
+		[THE_COMPOUND_ADJ] +
+		[REAR_COMPOUND_ADJ] +
 	[VERB:craft:crafts:crafted:crafted:crafting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LABOR]
 	[NOUN:labor:labors]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -11501,7 +11501,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
 	[VERB:labor:labors:labored:labored:laboring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DISCOVER]
 	[NOUN:discovery:discoveries]
@@ -11540,11 +11540,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
 	[VERB:slip:slips:slipped:slipped:slipping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SLIDE]
 	[VERB:slide:slides:slid:slid:sliding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SINGLE]
 	[ADJ:single]
@@ -11616,7 +11616,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:root:roots:rooted:rooted:rooting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLIZZARD]
 	[NOUN:blizzard:blizzards]
@@ -11685,7 +11685,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:toast:toasts:toasted:toasted:toasting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:toasty] +
 		[ADJ_DIST:2] +
 		[FRONT_COMPOUND_ADJ] +
@@ -11707,7 +11707,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:paddle:paddles:paddled:paddled:paddling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COUNCIL]
 	[NOUN:council:councils]
@@ -11725,7 +11725,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:counsel:counsels:counselled:counselled:counseling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GNARLED]
 	[ADJ:gnarled]
@@ -11767,7 +11767,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:play:plays:played:played:playing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PLAY PERFORM]
 	[NOUN:play:plays]
@@ -11817,8 +11817,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 	[ADJ:bearded]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
+		REAR_COMPOUND_ADJ -
 
 [WORD:DREAD]
 	[NOUN:dread:]
@@ -11847,7 +11847,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WALLOW]
 	[VERB:wallow:wallows:wallowed:wallowed:wallowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TAX]
 	[NOUN:tax:taxes]
@@ -11858,7 +11858,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:tax:taxes:taxed:taxed:taxing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FRAGRANCE]
 	[NOUN:fragrance:fragrances]
@@ -11942,7 +11942,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:mine:mines:mined:mined:mining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WAX]
 	[NOUN:wax:waxes]
@@ -11957,7 +11957,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:wax:waxes:waxed:waxed:waxing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHOVE]
 	[NOUN:shove:shoves]
@@ -11967,22 +11967,22 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:shove:shoves:shoved:shoved:shoving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHOVEL]
 	[NOUN:shovel:shovels]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:shovel:shovels:shoveled:shoveled:shoveling]
-		[STANDARD_VERB]
+		STANDARD_VERB -
 
 [WORD:MELT]
 	[VERB:melt:melts:melted:melted:melting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WRACK]
 	[NOUN:wrack:]
@@ -11990,7 +11990,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 	[VERB:wrack:wracks:wracked:wracked:wracking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GLITTER]
 	[NOUN:glitter:]
@@ -12001,7 +12001,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:glittery]
 		[ADJ_DIST:2]
 	[VERB:glitter:glitters:glittered:glittered:glittering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPARK]
 	[NOUN:spark:sparks]
@@ -12021,7 +12021,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:sparkle:sparkles:sparkled:sparkled:sparkling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FLASH]
 	[NOUN:flash:flashes]
@@ -12032,7 +12032,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:flash:flashes:flashed:flashed:flashing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GLEAM]
 	[NOUN:gleam:gleams]
@@ -12043,7 +12043,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:gleam:gleams:gleamed:gleamed:gleaming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RUN]
 	[NOUN:runner:runners] +
@@ -12052,11 +12052,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR - *test +
 	[VERB:run:runs:ran:run:running]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DASH]
 	[VERB:dash:dashes:dashed:dashed:dashing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SAVANT]
 	[NOUN:savant:savants]
@@ -12077,7 +12077,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:roar:roars:roared:roared:roaring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:YELL]
 	[NOUN:yell:yells]
@@ -12089,7 +12089,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:yell:yells:yelled:yelled:yelling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ECHO]
 	[NOUN:echo:echoes]
@@ -12100,7 +12100,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:echo:echoes:echoed:echoed:echoing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HOLLOW]
 	[NOUN:hollow:hollows]
@@ -12122,7 +12122,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:fill:fills:filled:filled:filling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:EMPTY]
 	[NOUN:emptiness:]
@@ -12134,7 +12134,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:empty:empties:emptied:emptied:emptying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WORD]
 	[NOUN:word:words]
@@ -12231,11 +12231,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:shock:shocks:shocked:shocked:shocking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PONDER]
 	[VERB:ponder:ponders:pondered:pondered:pondering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PONDEROUS]
 	[ADJ:ponderous]
@@ -12296,7 +12296,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:tame:tames:tamed:tamed:taming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:UNTAMED]
 	[ADJ:untamed]
@@ -12304,7 +12304,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BURST]
 	[VERB:burst:bursts:burst:burst:bursting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:METEOR]
 	[NOUN:meteor:meteors]
@@ -12385,7 +12385,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SWAY]
 	[VERB:sway:sways:swayed:swayed:swaying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LUXURY]
 	[NOUN:luxury:luxuries]
@@ -12426,7 +12426,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:taint:taints:tainted:tainted:tainting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CORRUPT]
 	[NOUN:corruption:]
@@ -12444,7 +12444,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:malign:maligns:maligned:maligned:maligning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MALIGN ADJ]
 	[ADJ:malign]
@@ -12463,7 +12463,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 	[VERB:trust:trusts:trusted:trusted:trusting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DISTRUST]
 	[NOUN:distrust:]
@@ -12498,7 +12498,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:blight:blights:blighted:blighted:blighting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CUNNING]
 	[NOUN:cunning:] +
@@ -12544,7 +12544,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:closed]
 		[ADJ_DIST:2]
 	[VERB:close:closes:closed:closed:closing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FORD]
 	[NOUN:ford:fords]
@@ -12621,7 +12621,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:sensitive]
 		[ADJ_DIST:2]
 	[VERB:sense:senses:sensed:sensed:sensing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:INSENSITIVE]
 	[ADJ:insensitive]
@@ -12800,7 +12800,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:snarl:snarls:snarled:snarled:snarling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LOYAL]
 	[NOUN:loyalty:]
@@ -12828,7 +12828,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:help:helps:helped:helped:helping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FRIEND]
 	[NOUN:friend:friends]
@@ -12863,7 +12863,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:cheer:cheering:cheered:cheered:cheering] +
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:THRIFT]
 	[NOUN:thrift:]
@@ -12882,10 +12882,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:brave]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[REAR_COMPOUND_ADJ]
 	[VERB:brave:braves:braved:braved:braving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:REVERE]
 	[NOUN:reverence:reverences]
@@ -12898,7 +12898,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:revere:reveres:revered:revered:revering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VENERATE]
 	[NOUN:veneration:]
@@ -12943,7 +12943,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:3]
 		[THE_COMPOUND_ADJ]
 	[VERB:drink:drinks:drank:drunken:drinking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONSIDERATE]
 	[NOUN:consideration:]
@@ -13002,7 +13002,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ] +
 	[VERB:gild:gilds:gilt:gilt:gilding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GUILD]
 	[NOUN:guild:guilds]
@@ -13013,7 +13013,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:associated]
-		[ADJ_DIST:3]
+		[ADJ_DIST:5]
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
@@ -13028,7 +13028,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:mercantile] +
-		[ADJ_DIST:2] +
+		[ADJ_DIST:5] +
 
 [WORD:TRADE]
 	[NOUN:trade:trades]
@@ -13042,7 +13042,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:commercial]
 		[ADJ_DIST:3]
 	[VERB:trade:trades:traded:traded:trading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PLAIT]
 	[NOUN:plait:plaits]
@@ -13062,7 +13062,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BRAID]
 	[NOUN:braid:braids]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
@@ -13070,9 +13070,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 	[ADJ:braided]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ 
 		REAR_COMPOUND_ADJ -
-		[THE_COMPOUND_ADJ]
+		THE_COMPOUND_ADJ -
 	[VERB:braid:braids:braided:braided:braiding]
 		STANDARD_VERB -
 
@@ -13090,7 +13090,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:pleat:pleats:pleated:pleated:pleating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FOLD]
 	[NOUN:fold:folds]
@@ -13105,7 +13105,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:fold:folds:folded:folded:folding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BUNION]
 	[NOUN:bunion:bunions]
@@ -13157,7 +13157,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:bend:bends:bent:bent:bending]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLAME]
 	[NOUN:blame:blames]
@@ -13168,7 +13168,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		THE_NOUN_PLUR -
 	[VERB:blame:blames:blamed:blamed:blaming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLAMELESS]
 	[ADJ:blameless]
@@ -13206,7 +13206,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[REAR_COMPOUND_ADJ]
 	[VERB:truss:trusses:trussed:trussed:trussing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SKEWER]
 	[NOUN:skewer:skewers]
@@ -13221,7 +13221,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:skewer:skewers:skewered:skewered:skewering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCULPT]
 	[NOUN:sculpture:sculptures]
@@ -13237,7 +13237,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:sculpt:sculpts:sculpted:sculpted:sculpting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TRESS]
 	[NOUN:tress:tresses]
@@ -13273,7 +13273,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[REAR_COMPOUND_ADJ]
 	[VERB:curl:curls:curled:curled:curling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TUFT]
 	[NOUN:tuft:tufts]
@@ -13322,7 +13322,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:shame:shames:shamed:shamed:shaming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ASHAMED]
 	[ADJ:ashamed]
@@ -13359,7 +13359,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:ferry:ferries:ferried:ferried:ferrying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GULLY]
 	[NOUN:gully:gullies]
@@ -13384,7 +13384,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:worry:worries:worried:worried:worrying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LION]
 	[NOUN:lion:lions]
@@ -13422,7 +13422,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:bottle:bottles:bottled:bottled:bottling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHINGLE]
 	[NOUN:shingle:shingles]
@@ -13499,7 +13499,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BLOCK DEFEND]
 	[VERB:block:blocks:blocked:blocked:blocking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLOCK SQUARE]
 	[NOUN:block:blocks]
@@ -13594,7 +13594,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:lash:lashes:lashed:lashed:lashing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SORCERY]
 	[NOUN:sorcery:]
@@ -13618,7 +13618,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:bewitch:bewitches:bewitched:bewitched:bewitching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MAGICIAN]
 	[NOUN:magician:magicians]
@@ -13628,7 +13628,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CONJURE]
 	[VERB:conjure:conjures:conjured:conjured:conjuring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONJURER]
 	[NOUN:conjurer:conjurers]
@@ -13663,7 +13663,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:lance:lances:lanced:lanced:lancing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LANCER]
 	[NOUN:lancer:lancers]
@@ -13680,7 +13680,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:stink:stinks:stank:stank:stinking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FRECKLE]
 	[NOUN:freckle:freckles]
@@ -13743,7 +13743,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WIND CLOCK]
 	[VERB:wind:winds:wound:wound:winding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HAZE]
 	[NOUN:haze:]
@@ -13786,7 +13786,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:torturous]
 		[ADJ_DIST:2]
 	[VERB:torture:tortures:tortured:tortured:torturing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TOOL]
 	[NOUN:tool:tools]
@@ -13810,7 +13810,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WEEP]
 	[VERB:weep:weeps:wept:wept:weeping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MASSIVE]
 	[ADJ:massive]
@@ -13869,7 +13869,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:seek:seeks:sought:sought:seeking] *
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STALE]
 	[ADJ:stale]
@@ -13885,7 +13885,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:RUB]
 	[VERB:rub:rubs:rubbed:rubbed:rubbing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:RUBY] +
 	[NOUN:ruby:rubies]
@@ -13929,7 +13929,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:frighten:frightens:frightened:frightened:frightening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:REVOLTING]
 	[ADJ:revolting]
@@ -14000,7 +14000,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SKIN VERB]
 	[VERB:skin:skins:skinned:skinned:skinning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SKINNY]
 	[ADJ:skinny]
@@ -14025,7 +14025,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:grieve:grieves:grieved:grieved:grieving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BELT]
 	[NOUN:belt:belts]
@@ -14091,7 +14091,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:bite:bites:bit:bitten:biting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPLIT]
 	[ADJ:split]
@@ -14099,7 +14099,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:split:splits:split:split:splitting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BRASH]
 	[ADJ:brash]
@@ -14122,7 +14122,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:strangle:strangles:strangled:strangled:strangling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GALLOWS]
 	[NOUN:gallows:gallows]
@@ -14151,7 +14151,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:dim:dims:dimmed:dimmed:dimming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPURT]
 	[NOUN:spurt:spurts]
@@ -14166,7 +14166,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:spurt:spurts:spurted:spurted:spurting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GRAVEL]
 	[NOUN:gravel:]
@@ -14190,7 +14190,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:risk:risks:risked:risked:risking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHANCE]
 	[NOUN:chance:chances]
@@ -14203,7 +14203,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:chance:chances:chanced:chanced:chancing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHANNEL]
 	[NOUN:channel:channels]
@@ -14214,7 +14214,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:channel:channels:channeled:channeled:channeling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MIRTH]
 	[NOUN:mirth:]
@@ -14292,7 +14292,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:utter:utters:uttered:uttered:uttering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DECIDE]
 	[NOUN:reckoning:reckonings] *
@@ -14320,7 +14320,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:author:authors:authored:authored:authoring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:AUTHORITY]
 	[NOUN:authority:]
@@ -14571,7 +14571,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BLEED]
 	[VERB:bleed:bleeds:bled:bled:bleeding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GIRL]
 	[NOUN:girl:girls]
@@ -14748,7 +14748,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:still:stills:stilled:stilled:stilling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CALM]
 	[NOUN:calm:]
@@ -14765,11 +14765,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:calm:calms:calmed:calmed:calming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HUSH]
 	[VERB:hush:hushes:hushed:hushed:hushing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LACONIC]
 	[ADJ:laconic]
@@ -14783,7 +14783,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:lull:lulls:lulled:lulled:lulling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MUTE]
 	[ADJ:mute]
@@ -14791,7 +14791,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:mute:mutes:muted:muted:muting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:NOISELESS]
 	[NOUN:noiselessness:]
@@ -14957,7 +14957,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:amusing]
 		[ADJ_DIST:2]
 	[VERB:amuse:amuses:amused:amused:amusing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PASTIME]
 	[NOUN:pastime:pastimes]
@@ -15033,7 +15033,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:match:matches:matched:matched:matching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MATCH EQUAL]
 	[NOUN:match:matches]
@@ -15048,7 +15048,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		FRONT_COMPOUND_ADJ -
 		REAR_COMPOUND_ADJ -
 	[VERB:match:matches:matched:matched:matching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TOURNAMENT]
 	[NOUN:tournament:tournaments]
@@ -15063,7 +15063,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:plan:plans:planned:planned:planning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCENARIO]
 	[NOUN:scenario:scenarios]
@@ -15138,7 +15138,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:release:releases:released:released:releasing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RELIEVE]
 	[NOUN:relief:]
@@ -15151,7 +15151,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:relieve:relieves:relieved:relieved:relieving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:EVEN]
 	[NOUN:evenness:]
@@ -15162,7 +15162,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:even:evens:evened:evened:evening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BALANCE]
 	[NOUN:balance:balances]
@@ -15175,7 +15175,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:balance:balances:balanced:balanced:balancing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:EQUITY]
 	[NOUN:equity:]
@@ -15222,7 +15222,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:equal:equals:equaled:equaled:equaling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HARMONY]
 	[NOUN:harmony:harmonies]
@@ -15261,7 +15261,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LULL MISLEAD]
 	[VERB:lull:lulls:lulled:lulled:lulling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DOUR]
 	[NOUN:dourness:]
@@ -15390,7 +15390,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:heat:heats:heated:heated:heating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SAND]
 	[NOUN:sand:sands]
@@ -15499,7 +15499,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[ADJ:relict] +
 		[ADJ_DIST:4] +
@@ -15546,7 +15546,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FAINT VERB]
 	[VERB:faint:faints:fainted:fainted:fainting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SOMBER]
 	[ADJ:somber]
@@ -15653,7 +15653,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:ache:aches:ached:ached:aching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:EPIDEMIC]
 	[NOUN:epidemic:epidemics]
@@ -15670,7 +15670,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:fight:fights:fought:fought:fighting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCUFFLE]
 	[NOUN:scuffle:scuffles]
@@ -15680,7 +15680,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:scuffle:scuffles:scuffled:scuffled:scuffling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:YAWN]
 	[NOUN:yawn:yawns]
@@ -15694,7 +15694,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:yawn:yawns:yawned:yawned:yawning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ACTION]
 	[NOUN:action:actions]
@@ -15910,7 +15910,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:save:saves:saved:saved:saving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GOAD]
 	[NOUN:goad:goads]
@@ -15920,7 +15920,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:goad:goads:goaded:goaded:goading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MACHINE]
 	[NOUN:machine:machines]
@@ -15934,7 +15934,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2] +
 		[REAR_COMPOUND_ADJ] +
 	[VERB:machine:machines:machined:machined:machining] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:FLAY]
 	[NOUN:flayer:flayers]
@@ -15948,7 +15948,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:flay:flays:flayed:flayed:flaying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:OIL]
 	[NOUN:oil:oils]
@@ -15962,7 +15962,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:oil:oils:oiled:oiled:oiling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SUICIDE]
 	[NOUN:suicide:suicides]
@@ -15990,7 +15990,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:bait:baits:baited:baited:baiting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LURE]
 	[NOUN:lure:lures]
@@ -16000,7 +16000,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:lure:lures:lured:lured:luring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:REWARD]
 	[NOUN:reward:rewards]
@@ -16023,7 +16023,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 	[VERB:ward:wards:warded:warded:warding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PRICE]
 	[NOUN:price:prices]
@@ -16033,7 +16033,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:price:prices:priced:priced:pricing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PRINCE]
 	[NOUN:prince:princes]
@@ -16061,7 +16061,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:tempt:tempts:tempted:tempted:tempting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPURN]
 	[NOUN:spurn:spurns]
@@ -16070,7 +16070,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:spurn:spurns:spurned:spurned:spurning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCORN]
 	[NOUN:scorn:scorns]
@@ -16080,7 +16080,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 	[VERB:scorn:scorns:scorned:scorned:scorning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONTEMPT]
 	[NOUN:contempt:]
@@ -16115,7 +16115,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CHERISH]
 	[VERB:cherish:cherishes:cherished:cherished:cherishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TRAMPLE]
 	[ADJ:trampled]
@@ -16123,7 +16123,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:trample:tramples:trampled:trampled:trampling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MALICE]
 	[NOUN:malice:]
@@ -16151,7 +16151,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:spite:spites:spited:spited:spiting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHORE]
 	[NOUN:shore:shores]
@@ -16171,7 +16171,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:beach:beaches:beached:beached:beaching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COAST]
 	[NOUN:coast:coasts]
@@ -16361,7 +16361,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:spiral:spirals:spiraled:spiraled:spiraling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLIMAX]
 	[NOUN:climax:climaxes]
@@ -16399,7 +16399,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:crest:crests:crested:crested:cresting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CULMINATE]
 	[NOUN:culmination:]
@@ -16430,7 +16430,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:peak:peaks:peaked:peaked:peaking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLUNT]
 	[ADJ:blunt]
@@ -16438,7 +16438,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:blunt:blunts:blunted:blunted:blunting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ROOF]
 	[NOUN:roof:roofs]
@@ -16515,7 +16515,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FLANK VERB]
 	[VERB:flank:flanks:flanked:flanked:flanking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PASS MOUNTAIN]
 	[NOUN:pass:passes]
@@ -16527,7 +16527,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:PASS VERB]
 	[VERB:pass:passes:passed:passed:passing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PASSAGE]
 	[NOUN:passage:passages]
@@ -16598,7 +16598,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:meet:meets:met:met:meeting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:THEATER]
 	[NOUN:theater:theaters]
@@ -16638,7 +16638,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:enter:enters:entered:entered:entering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VESTIBULE]
 	[NOUN:vestibule:vestibules]
@@ -16695,13 +16695,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:sizzling]
 		[ADJ_DIST:2]
 	[VERB:sizzle:sizzles:sizzled:sizzled:sizzling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SWELTER]
 	[ADJ:sweltering]
 		[ADJ_DIST:2]
 	[VERB:swelter:swelters:sweltered:sweltered:sweltering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WARM]
 	[NOUN:warmth:]
@@ -16816,7 +16816,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:dent:dents:dented:dented:denting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DEPRESS SAD]
 	[NOUN:depression:]
@@ -16826,7 +16826,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:depress:depresses:depressed:depressed:depressing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DEPRESSION LOW] //figure out a use for this
 	[NOUN:depression:depressions]
@@ -16845,7 +16845,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[REAR_COMPOUND_ADJ]
 	[VERB:dimple:dimples:dimpled:dimpled:dimpling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DIP]
 	[NOUN:dip:dips]
@@ -16859,7 +16859,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:dip:dips:dipped:dipped:dipping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DISH]
 	[NOUN:dish:dishes]
@@ -16892,7 +16892,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:groove:grooves:grooved:grooved:grooving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GULF SEA]
 	[NOUN:gulf:gulfs]
@@ -16941,7 +16941,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:notch:notches:notched:notched:notching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SAG]
 	[ADJ:sagging]
@@ -16949,7 +16949,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:sag:sags:sagged:sagged:sagging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCOOP]
 	[NOUN:scoop:scoops]
@@ -16959,7 +16959,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:scoop:scoops:scooped:scooped:scooping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SOCKET]
 	[NOUN:socket:sockets]
@@ -17033,7 +17033,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BOARD GET ON]
 	[VERB:board:boards:boarded:boarded:boarding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PLANK]
 	[NOUN:plank:planks]
@@ -17186,7 +17186,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:submerged]
 		[ADJ_DIST:7]
 	[VERB:submerge:submerges:submerged:submerged:submerging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CYCLONE]
 	[NOUN:cyclone:cyclones]
@@ -17225,7 +17225,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HAIL GREET]
 	[VERB:hearken:hearkens:hearkened:hearkened:hearkening] *
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HAIL ICE]
 	[NOUN:rime:] *
@@ -17288,7 +17288,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:splash:splashes:splashed:splashed:splashing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DABBLE]
 	[NOUN:dabbler:dabblers]
@@ -17303,7 +17303,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:dabble:dabbles:dabbled:dabbled:dabbling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DOUSE]
 	[ADJ:doused]
@@ -17311,14 +17311,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:douse:douses:doused:doused:dousing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DRENCH]
 	[ADJ:drenched]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:drench:drenches:drenched:drenched:drenching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MOIST]
 	[NOUN:moistness:]
@@ -17331,7 +17331,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:moisten:moistens:moistened:moistened:moistening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PLUNGE]
 	[NOUN:plunge:plunges]
@@ -17341,7 +17341,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:plunge:plunges:plunged:plunged:plunging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHOWER]
 	[NOUN:shower:showers]
@@ -17351,7 +17351,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:shower:showers:showered:showered:showering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SLOP]
 	[NOUN:slop:]
@@ -17368,28 +17368,28 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SLOSH]
 	[VERB:slosh:sloshes:sloshed:sloshed:sloshing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SOAK]
 	[ADJ:soaked]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:soak:soaks:soaked:soaked:soaking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPATTER]
 	[ADJ:spattered]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:spatter:spatters:spattered:spattered:spattering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPLATTER]
 	[ADJ:splattered]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:splatter:splatters:splattered:splattered:splattering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPRAY]
 	[NOUN:spray:sprays]
@@ -17403,18 +17403,18 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:spray:sprays:sprayed:sprayed:spraying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPREAD]
 	[ADJ:spread]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:spread:spreads:spread:spread:spreading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SPRINKLE]
 	[VERB:sprinkle:sprinkles:sprinkled:sprinkled:sprinkling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TWINKLE]
 	[NOUN:twinkle:twinkles]
@@ -17428,11 +17428,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:twinkle:twinkles:twinkled:twinkled:twinkling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SQUIRT]
 	[VERB:squirt:squirts:squirted:squirted:squirting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WAD]
 	[NOUN:wad:wads]
@@ -17444,7 +17444,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WADE]
 	[VERB:wade:wades:waded:waded:wading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WET]
 	[ADJ:wet]
@@ -17452,14 +17452,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:wet:wets:wet:wet:wetting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FADE]
 	[ADJ:faded]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:fade:fades:faded:faded:fading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COLORLESS]
 	[ADJ:colorless]
@@ -17467,19 +17467,19 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BLANCH]
 	[VERB:blanch:blanches:blanched:blanched:blanching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLEACH]
 	[VERB:bleach:bleaches:bleached:bleached:bleaching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLENCH]
 	[VERB:blench:blenches:blenched:blenched:blenching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FLINCH]
 	[VERB:flinch:flinches:flinched:flinched:flinching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:APPEAR]
 	[NOUN:appearance:appearances]
@@ -17487,7 +17487,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 		[OF_NOUN_PLUR]
 	[VERB:appear:appears:appeared:appeared:appearing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DISAPPEAR]
 	[NOUN:disappearance:disappearances]
@@ -17502,7 +17502,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:dissolution:] +
 		[OF_NOUN_SING] +
 	[VERB:dissolve:dissolves:dissolved:dissolved:dissolving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DULL]
 	[ADJ:dull]
@@ -17510,7 +17510,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:dull:dulls:dulled:dulled:dulling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:EVAPORATE]
 	[NOUN:evaporation:]
@@ -17542,7 +17542,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		OF_NOUN_PLUR - *test
 	[VERB:tone:tones:toned:toned:toning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VANISH]
 	[NOUN:vanishment:]
@@ -17552,14 +17552,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:vanish:vanishes:vanished:vanished:vanishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WASH]
 	[ADJ:washed]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:wash:washes:washed:washed:washing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ABATE]
 	[NOUN:abatement:]
@@ -17581,7 +17581,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:declining]
 		[ADJ_DIST:7]
 	[VERB:decline:declines:declined:declined:declining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DETERIORATE]
 	[NOUN:harrowing:] *
@@ -17590,7 +17590,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:harrowed] *
 		[ADJ_DIST:2]
 	[VERB:harrow:harrows:harrowed:harrowed:harrowing] *
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:DIMINISH]
 	[NOUN:diminishment:]
@@ -17608,7 +17608,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:disperse:disperses:dispersed:dispersed:dispersing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DROOP]
 	[NOUN:droopiness:]
@@ -17619,7 +17619,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:droop:droops:drooped:drooped:drooping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DWINDLE]
 	[ADJ:dwindling]
@@ -17627,7 +17627,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:dwindle:dwindles:dwindled:dwindled:dwindling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:KINDLE]
 	[NOUN:kindling:]
@@ -17639,7 +17639,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:kindle:kindles:kindled:kindled:kindling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STOKE]
 	[NOUN:stoker:stokers]
@@ -17652,7 +17652,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:stoke:stokes:stoked:stoked:stoking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:POKE]
 	[NOUN:poker:pokers]
@@ -17662,14 +17662,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:poke:pokes:poked:poked:poking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:STIR]
 	[ADJ:stirred]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:stir:stirs:stirred:stirred:stirring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FEED]
 	[NOUN:feed:]
@@ -17681,7 +17681,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:feed:feeds:fed:fed:feeding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FAIL]
 	[NOUN:failure:failures]
@@ -17696,20 +17696,20 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:fail:fails:failed:failed:failing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LANGUISH]
 	[ADJ:languishing]
 		[ADJ_DIST:2]
 	[VERB:languish:languishes:languished:languished:languishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LESSEN]
 	[ADJ:lessened]
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:lessen:lessens:lessened:lessened:lessening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LESSON]
 	[NOUN:lesson:lessons]
@@ -17730,7 +17730,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		OF_NOUN_PLUR - *test
 	[VERB:teach:teaches:taught:taught:teaching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MASTERY]
 	[NOUN:mastery:]
@@ -17743,14 +17743,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 	[VERB:perish:perishes:perished:perished:perishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHRIVEL]
 	[ADJ:shriveled]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:shrivel:shrivels:shriveled:shriveled:shriveling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SINK]
 	[ADJ:sunken]
@@ -17758,14 +17758,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:sink:sinks:sank:sunk:sinking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TAPER]
 	[ADJ:tapered]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:taper:tapers:tapered:tapered:tapering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:THIN]
 	[ADJ:thin]
@@ -17773,7 +17773,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:thin:thins:thinned:thinned:thinning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TIRE]
 	[NOUN:tiredness:]
@@ -17783,7 +17783,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:tire:tires:tired:tired:tiring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WANE]
 	[NOUN:waning:waning] *
@@ -17796,7 +17796,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:wane:wanes:waned:waned:waning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WEAK]
 	[NOUN:weakness:weaknesses]
@@ -17810,7 +17810,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:weaken:weakens:weakened:weakened:weakening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WILT]
 	[NOUN:wilt:wilts]
@@ -17825,14 +17825,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
 	[VERB:wilt:wilts:wilted:wilted:wilting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WITHER]
 	[ADJ:withered]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:wither:withers:withered:withered:withering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HONOR]
 	[NOUN:honor:]
@@ -17844,7 +17844,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
 	[VERB:honor:honors:honored:honored:honoring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ADORE]
 	[NOUN:adoration:]
@@ -17854,7 +17854,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[THE_COMPOUND_ADJ]
 	[VERB:adore:adores:adored:adored:adoring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ADULATE]
 	[NOUN:adulation:]
@@ -17924,7 +17924,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:7]
 		[THE_COMPOUND_ADJ]
 	[VERB:esteem:esteems:esteemed:esteemed:esteeming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:EXALT]
 	[NOUN:exaltation:]
@@ -17988,7 +17988,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:laud:lauds:lauded:lauded:lauding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:OBEISANCE]
 	[NOUN:obeisance:]
@@ -18011,7 +18011,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:praise:praises:praised:praised:praising]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PRESTIGE]
 	[NOUN:prestige:]
@@ -18039,13 +18039,13 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 	[ADJ:reputed]
 		[ADJ_DIST:7]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 	[VERB:repute:reputes:reputed:reputed:reputing]
 
 [WORD:TRIBUTE]
 	[NOUN:tribute:tributes]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
@@ -18064,10 +18064,10 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:worshipful]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 	[VERB:worship:worships:worshipped:worshipped:worshipping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CHASTITY]
 	[NOUN:chastity:]
@@ -18075,18 +18075,18 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:chaste]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:COURAGE]
 	[NOUN:courage:]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		THE_NOUN_SING -
 		[OF_NOUN_SING]
 	[ADJ:courageous]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:DECENT]
@@ -18095,7 +18095,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:decent]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:GOOD]
@@ -18106,7 +18106,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:good]
 		[ADJ_DIST:3]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:INNOCENT]
@@ -18115,7 +18115,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:innocent]
 		[ADJ_DIST:4]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:MODEST]
@@ -18124,7 +18124,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:modest]
 		[ADJ_DIST:4]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:PRINCIPLE]
@@ -18163,7 +18163,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:true]
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:TRUTHFUL]
@@ -18210,11 +18210,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:scald:scalds:scalded:scalded:scalding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCALE VERB]
 	[VERB:scale:scales:scaled:scaled:scaling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCALE SKIN]
 	[NOUN:scale:scales]
@@ -18262,7 +18262,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:web:webs:webbed:webbed:webbing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CROWD]
 	[NOUN:crowd:crowds]
@@ -18276,7 +18276,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:crowd:crowds:crowded:crowded:crowding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FAMILY]
 	[NOUN:family:families]
@@ -18309,7 +18309,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:mob:mobs:mobbed:mobbed:mobbing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ORGAN]
 	[NOUN:organ:organs]
@@ -18352,7 +18352,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:tangle:tangles:tangled:tangled:tangling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ENTANGLE]
 	[NOUN:entanglement:]
@@ -18376,7 +18376,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:puzzle:puzzles:puzzled:puzzled:puzzling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PERPLEX]
 	[ADJ:perplexing]
@@ -18384,7 +18384,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:perplex:perplexes:perplexed:perplexed:perplexing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:QUANDARY]
 	[NOUN:quandary:quandaries]
@@ -18400,7 +18400,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:combine:combines:combined:combined:combining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FLICKER]
 	[NOUN:flicker:flickers]
@@ -18414,7 +18414,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:flicker:flickers:flickered:flickered:flickering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BRAND]
 	[NOUN:brand:brands]
@@ -18436,7 +18436,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:singe:singes:singed:singed:singing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SEAR]
 	[ADJ:searing]
@@ -18444,7 +18444,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:sear:sears:seared:seared:searing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCORCH]
 	[ADJ:scorching]
@@ -18452,7 +18452,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:scorch:scorches:scorched:scorched:scorching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ROAST]
 	[ADJ:roasted]
@@ -18460,7 +18460,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:roast:roasts:roasted:roasted:roasting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PARCH]
 	[ADJ:parched]
@@ -18468,7 +18468,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:parch:parches:parched:parched:parching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:IGNITE]
 	[NOUN:ignition:]
@@ -18502,7 +18502,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:glow:glows:glowed:glowed:glowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CREMATE]
 	[NOUN:cremation:cremations]
@@ -18536,7 +18536,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:crew:crews:crewed:crewed:crewing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VESSEL]
 	[NOUN:vessel:vessels]
@@ -18585,7 +18585,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:group:groups:grouped:grouped:grouping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GANG]
 	[NOUN:gang:gangs]
@@ -18618,7 +18618,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:partner:partners:partnered:partnered:partnering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RIDDLE]
 	[NOUN:riddle:riddles]
@@ -18642,7 +18642,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:rout:routs:routed:routed:routing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCRAPE]
 	[NOUN:scrape:scrapes]
@@ -18653,9 +18653,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		OF_NOUN_PLUR - *test
 	[ADJ:scraped]
 		[ADJ_DIST:2]
-		[FRONT_COMPOUND_ADJ]
+		FRONT_COMPOUND_ADJ -
 	[VERB:scrape:scrapes:scraped:scraped:scraping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCRAP]
 	[NOUN:scrap:scraps]
@@ -18674,7 +18674,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:scour:scours:scoured:scoured:scouring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SCRUB]
 	[NOUN:scrub:scrubs] +
@@ -18686,7 +18686,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:scrub:scrubs:scrubbed:scrubbed:scrubbing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHAKE]
 	[NOUN:shaker:shakers] +
@@ -18697,7 +18697,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:shake:shakes:shook:shaken:shaking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SOAP]
 	[NOUN:soap:soaps]
@@ -18725,7 +18725,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SWEEP]
 	[VERB:sweep:sweeps:swept:swept:sweeping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WHISKER]
 	[NOUN:whisker:whiskers]
@@ -18742,22 +18742,22 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FASTEN]
 	[VERB:fasten:fastens:fastened:fastened:fastening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WINNOW]
 	[NOUN:winnower:winnowers]
 		[THE_NOUN_SING]
 		OF_NOUN_PLUR - *test
 	[VERB:winnow:winnows:winnowed:winnowed:winnowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WIPE]
 	[VERB:wipe:wipes:wiped:wiped:wiping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLENCH]
 	[VERB:clench:clenches:clenched:clenched:clenching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLINCH]
 	[NOUN:clinch:clinches]
@@ -18767,7 +18767,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:clinch:clinches:clinched:clinched:clinching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLOUT]
 	[NOUN:clout:clouts]
@@ -18777,7 +18777,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:clout:clouts:clouted:clouted:clouting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLUTCH]
 	[NOUN:clutch:clutches]
@@ -18788,7 +18788,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:clutch:clutches:clutched:clutched:clutching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DOMINATE]
 	[NOUN:domination:]
@@ -18812,7 +18812,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:domineer:domineers:domineered:domineered:domineering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:GRASP]
 	[NOUN:grasp:grasps]
@@ -18827,7 +18827,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:grasp:grasps:grasped:grasped:grasping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:INFLUENCE]
 	[NOUN:influence:influences]
@@ -18849,7 +18849,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:own:owns:owned:owned:owning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:OWNERSHIP]
 	[NOUN:ownership:]
@@ -18871,11 +18871,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 	[VERB:bind:binds:bound:bound:binding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CARRY]
 	[VERB:carry:carries:carried:carried:carrying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CATCH]
 	[NOUN:catch:catches]
@@ -18885,7 +18885,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:catch:catches:caught:caught:catching]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONFINE]
 	[NOUN:confinement:]
@@ -18894,7 +18894,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:confining]
 		[ADJ_DIST:2]
 	[VERB:confine:confines:confined:confined:confining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONTAIN]
 	[NOUN:container:containers]
@@ -18904,7 +18904,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:contain:contains:contained:contained:containing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CRADLE]
 	[NOUN:cradle:cradles]
@@ -18917,7 +18917,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:cradled]
 		[ADJ_DIST:7]
 	[VERB:cradle:cradles:cradled:cradled:cradling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:EMBRACE]
 	[NOUN:embrace:embraces]
@@ -18931,7 +18931,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:embrace:embraces:embraced:embraced:embracing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:POOL]
 	[NOUN:pool:pools]
@@ -18957,7 +18957,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ] +
 		[THE_COMPOUND_ADJ] +
 	[VERB:socialize:socializes:socialized:socialized:socializing] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:CIRCLE]
 	[NOUN:circle:circles]
@@ -18969,7 +18969,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:circular]
 		[ADJ_DIST:2]
 	[VERB:circle:circles:circled:circled:circling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SQUARE]
 	[NOUN:square:squares]
@@ -19009,7 +19009,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:merge:merges:merged:merged:merging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONFUSE]
 	[NOUN:confusion:]
@@ -19018,7 +19018,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:confusing]
 		[ADJ_DIST:2]
 	[VERB:confuse:confuses:confused:confused:confusing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:COMPLEX]
 	[NOUN:complexity:]
@@ -19038,7 +19038,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:muddle:muddles:muddled:muddled:muddling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BEWILDER]
 	[NOUN:bewilderment:]
@@ -19077,7 +19077,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FLUSH]
 	[VERB:flush:flushes:flushed:flushed:flushing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MOP]
 	[NOUN:mop:mops]
@@ -19087,7 +19087,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:mop:mops:mopped:mopped:mopping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:POLISH]
 	[NOUN:polish:]
@@ -19100,7 +19100,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:polish:polishes:polished:polished:polishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:PURGE]
 	[NOUN:purge:purges]
@@ -19114,7 +19114,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:purge:purges:purged:purged:purging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RASP]
 	[NOUN:rasp:rasps]
@@ -19125,11 +19125,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:rasp:rasps:rasped:rasped:rasping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RINSE]
 	[VERB:rinse:rinses:rinsed:rinsed:rinsing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BAND OBJECT]
 	[NOUN:band:bands]
@@ -19190,7 +19190,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:ally:allies:allied:allied:allying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ALLIANCE]
 	[NOUN:alliance:alliances]
@@ -19227,14 +19227,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:enjoyable]
 		[ADJ_DIST:2]
 	[VERB:enjoy:enjoys:enjoyed:enjoyed:enjoying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FONDLE]
 	[ADJ:fondled]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:fondle:fondles:fondled:fondled:fondling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HANDLE OBJECT]
 	[NOUN:handle:handles]
@@ -19247,7 +19247,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HANDLE VERB]
 	[VERB:handle:handles:handled:handled:handling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:IMPRISON]
 	[NOUN:imprisonment:]
@@ -19265,14 +19265,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:nourishing]
 		[ADJ_DIST:2]
 	[VERB:nourish:nourishes:nourished:nourished:nourishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SQUEEZE]
 	[ADJ:squeezing]
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:squeeze:squeezes:squeezed:squeezed:squeezing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TRAMMEL]
 	[NOUN:trammel:trammels]
@@ -19282,7 +19282,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:trammel:trammels:trammeled:trammeled:trammeling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VICE]
 	[NOUN:vice:]
@@ -19300,7 +19300,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:vise:vises:vised:vised:vising]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DEFECT FAULT]
 	[NOUN:defect:defects]
@@ -19351,7 +19351,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WRING]
 	[VERB:wring:wrings:wrung:wrung:wringing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CONJUNCTION]
 	[NOUN:conjunction:conjunctions]
@@ -19371,7 +19371,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:blot:blots:blotted:blotted:blotting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BLOW]
 	[ADJ:blowing]
@@ -19379,7 +19379,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:blow:blows:blew:blown:blowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BRUSH]
 	[NOUN:brush:brushes]
@@ -19392,7 +19392,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:brush:brushes:brushed:brushed:brushing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CLARIFY]
 	[NOUN:clarity:]
@@ -19402,11 +19402,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CLEANSE]
 	[VERB:cleanse:cleanses:cleansed:cleansed:cleansing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DREDGE]
 	[VERB:dredge:dredges:dredged:dredged:dredging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ERASE]
 	[NOUN:erasure:]
@@ -19416,7 +19416,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:7]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:erase:erases:erased:erased:erasing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MORSEL]
 	[NOUN:morsel:morsels]
@@ -19454,7 +19454,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:urge:urges:urged:urged:urging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MECHANISM]
 	[NOUN:mechanism:mechanisms]
@@ -19478,7 +19478,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:smear:smears:smeared:smeared:smearing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:TATTOO]
 	[NOUN:tattoo:tattoos]
@@ -19492,7 +19492,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:tattoo:tattoos:tattooed:tattooed:tattooing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WEATHER VERB]
 	[NOUN:weathering:]
@@ -19502,7 +19502,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:weather:weathers:weathered:weathered:weathering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CRUX]
 	[NOUN:crux:cruxes]
@@ -19520,11 +19520,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:peek:peeks:peeked:peeked:peeking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SNEAK]
 	[VERB:sneak:sneaks:sneaked:sneaked:sneaking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ATTIC]
 	[NOUN:attic:attics]
@@ -19565,19 +19565,19 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:TUNNEL]
 	[NOUN:tunnel:tunnels]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
+		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:tunnel:tunnels:tunneled:tunneled:tunneling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ENTRANCE VERB]
 	[ADJ:entrancing]
 		[ADJ_DIST:2]
 	[VERB:entrance:entrances:entranced:entranced:entrancing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DELIGHT]
 	[NOUN:delight:delights]
@@ -19679,7 +19679,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DRILL BORE]
 	[VERB:drill:drills:drilled:drilled:drilling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DRILL ROUTINE]
 	[NOUN:drill:drills]
@@ -19689,7 +19689,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:drill:drills:drilled:drilled:drilling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BORE DRILL]
 	[NOUN:burrow:burrows] +
@@ -19714,7 +19714,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:bore:bores:bored:bored:boring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FLECK]
 	[NOUN:fleck:flecks]
@@ -19786,16 +19786,19 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_NOUN_PLUR] +
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
+	[ADJ:poet] +
+		[ADJ_DIST:2]
+		[THE_COMPOUND_ADJ]
 
 [WORD:SCRIBE]
 	[NOUN:scribe:scribes]
-		[FRONT_COMPOUND_NOUN_SING]
+		FRONT_COMPOUND_NOUN_SING -
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:scribe:scribes:scribed:scribed:scribing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MONK]
 	[NOUN:monk:monks]
@@ -19845,7 +19848,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:name:names:named:named:naming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LANGUAGE]
 	[NOUN:language:languages]
@@ -19866,7 +19869,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:phrase:phrases:phrased:phrased:phrasing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RHYME]
 	[NOUN:rhyme:rhymes]
@@ -19882,7 +19885,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:rhyme:rhymes:rhymed:rhymed:rhyming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RHYTHM]
 	[NOUN:rhythm:rhythms]
@@ -19908,7 +19911,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DRUM VERB]
 	[VERB:drum:drums:drummed:drummed:drumming]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:CREATURE]
 	[NOUN:creature:creatures]
@@ -19942,7 +19945,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:squash:squashes:squashed:squashed:squashing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:NEVER]
 	[PREFIX:never]
@@ -19957,7 +19960,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[VERB:dwell:dwells:dwelled:dwelled:dwelling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HABIT]
 	[NOUN:habit:habits]
@@ -19972,7 +19975,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CHEW]
 	[VERB:chew:chews:chewed:chewed:chewing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SWALLOW]
 	[NOUN:swallow:swallows]
@@ -19984,7 +19987,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
 	[VERB:swallow:swallows:swallowed:swallowed:swallowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DISEMBOWEL]
 	[NOUN:disemboweler:disembowelers]
@@ -20038,7 +20041,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:heal:heals:healed:healed:healing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SELL]
 	[NOUN:seller:sellers] +
@@ -20063,7 +20066,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:slow:slows:slowed:slowed:slowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MIRE]
 	[NOUN:mire:mires]
@@ -20078,7 +20081,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:mire:mires:mired:mired:miring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ADMIRE]
 	[NOUN:admirer:admirers]
@@ -20090,7 +20093,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:admire:admires:admired:admired:admiring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DIRGE]
 	[NOUN:dirge:dirges]
@@ -20129,7 +20132,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:2] +
 		[THE_COMPOUND_ADJ]
 	[VERB:quest:quests:quested:quested:questing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:ADVENTURE]
 	[NOUN:adventure:adventures]
@@ -20150,7 +20153,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 	[VERB:mourn:mourns:mourned:mourned:mourning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MORNING]
 	[NOUN:morning:mornings]
@@ -20237,7 +20240,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:OBEY]
 	[VERB:obey:obeys:obeyed:obeyed:obeying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WORSHIPPER]
 	[NOUN:worshipper:worshippers]
@@ -20250,7 +20253,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		FRONT_COMPOUND_ADJ -
 		[REAR_COMPOUND_ADJ] +
 	[VERB:riddle:riddles:riddled:riddled:riddling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DWELLING]
 	[NOUN:dwelling:dwellings]
@@ -20325,6 +20328,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:AMETHYST]
 	[NOUN:amethyst:amethysts]
@@ -20339,7 +20343,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:amethyst]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:AQUA]
@@ -20347,16 +20351,17 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:AQUAMARINE]
 	[NOUN:aquamarine:aquamarines]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 	[ADJ:aquamarine]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:GRAY]
@@ -20364,28 +20369,28 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:gray]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:AUBURN]
 	[ADJ:auburn]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:AZURE]
 	[ADJ:azure]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:BEIGE]
 	[ADJ:beige]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:BRASS]
@@ -20395,34 +20400,35 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:brazen]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:BROWN]
 	[ADJ:brown]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:BUFF]
 	[ADJ:buff]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:SIENNA]
 	[ADJ:sienna]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:UMBER]
 	[ADJ:umber]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:CARDINAL_COLOR]
@@ -20433,7 +20439,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:carmine]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
 		[THE_COMPOUND_ADJ]
 
 [WORD:CERULEAN]
@@ -20463,7 +20469,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 		OF_NOUN_PLUR - *test
 	[ADJ:chestnut]
 		[ADJ_DIST:1]
-		[REAR_COMPOUND_ADJ]
+		[FRONT_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:CHOCOLATE]
 	[NOUN:chocolate:chocolates]
@@ -20478,6 +20486,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_SING]
 	[ADJ:cinnamon]
 		[ADJ_DIST:1]
+		[FRONT_COMPOUND_ADJ] +
 
 [WORD:COBALT]
 	[NOUN:cobalt:]
@@ -20488,6 +20497,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:indigo]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:OLIVE]
 	[NOUN:olive:olives]
@@ -20499,31 +20510,36 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:olive]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:PINK]
 	[ADJ:pink]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:SCARLET]
 	[ADJ:scarlet]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:TAN]
 	[ADJ:tan]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
-		[REAR_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:ECRU]
 	[ADJ:ecru]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:EMERALD]
 	[NOUN:emerald:emeralds]
@@ -20571,6 +20587,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:LAVENDER]
 	[ADJ:lavender]
 		[ADJ_DIST:1]
+		[FRONT_COMPOUND_ADJ]
 
 [WORD:BLUSH]
 	[NOUN:blush:blushes]
@@ -20580,7 +20597,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR - *test
 	[VERB:blush:blushes:blushed:blushed:blushing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LEMON]
 	[NOUN:lemon:lemons]
@@ -20757,7 +20774,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:warn:warns:warned:warned:warning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:FATE]
 	[NOUN:fate:fates]
@@ -20859,7 +20876,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:hope:hopes:hoped:hoped:hoping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BODY]
 	[NOUN:body:bodies]
@@ -20877,7 +20894,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		OF_NOUN_PLUR -
 	[VERB:walk:walks:walked:walked:walking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HOUR]
 	[NOUN:hour:hours]
@@ -20917,7 +20934,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:judge:judges:judged:judged:judging]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:WISH]
 	[NOUN:wish:wishful]
@@ -20931,7 +20948,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:wish:wishes:wished:wished:wishing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:RESPECT]
 	[NOUN:respect:]
@@ -20942,7 +20959,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[ADJ:respectful]
 		[ADJ_DIST:2]
 	[VERB:respect:respects:respected:respected:respecting]
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:MARK]
 	[NOUN:mark:marks]
@@ -20951,7 +20968,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:mark:marks:marked:marked:marking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:HEAVY]
 	[NOUN:heaviness:]
@@ -20978,7 +20995,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
 	[VERB:practice:practices:practiced:practiced:practicing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:END]
 	[NOUN:end:ends]
@@ -20993,7 +21010,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		FRONT_COMPOUND_ADJ -
 		[REAR_COMPOUND_ADJ]
 	[VERB:end:ends:ended:ended:ending]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:START]
 	[NOUN:start:starts]
@@ -21006,7 +21023,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[OF_NOUN_PLUR]
 	[VERB:begin:begins:began:begun:beginning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:BIRTH]
 	[NOUN:birth:births]
@@ -21032,7 +21049,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:learn:learns:learned:learned:learning]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:MISCHIEF]
 	[NOUN:mischief:]
@@ -21063,7 +21080,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		[REAR_COMPOUND_ADJ]
 	[VERB:know:knows:knew:known:knowing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:KNOWLEDGE]
 	[NOUN:knowledge:lore] *+
@@ -21088,7 +21105,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ]
 		REAR_COMPOUND_ADJ -
 	[VERB:crack:cracks:cracked:cracked:cracking]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SHATTER]
 	[ADJ:shattered]
@@ -21096,7 +21113,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[FRONT_COMPOUND_ADJ] +
 		[REAR_COMPOUND_ADJ]
 	[VERB:shatter:shatters:shattered:shattered:shattering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:LEAP]
 	[NOUN:leap:leaps]
@@ -21105,7 +21122,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:leap:leaps:leaped:leaped:leaping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:JUMP]
 	[NOUN:jump:jumps]
@@ -21114,7 +21131,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:jump:jumps:jumped:jumped:jumping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DIVE]
 	[NOUN:dive:dives]
@@ -21123,11 +21140,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:dive:dives:dove:dived:diving]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VAULT VERB]
 	[VERB:vault:vaults:vaulted:vaulted:vaulting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:VAULT PLACE]
 	[NOUN:vault:vaults]
@@ -21506,7 +21523,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:slope:slopes:sloped:sloped:sloping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:STEEP]
 	[ADJ:steep]
@@ -21521,7 +21538,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:steepen:steepens:steepened:steepened:steepening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:ATMOSPHERE]
 	[NOUN:atmosphere:atmospheres]
@@ -21568,7 +21585,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		
 [WORD:EXIST]
 	[VERB:exist:exists:existed:existed:existing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[NOUN:existence:existences]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -21590,7 +21607,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:garden:gardens:gardened:gardened:gardening]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:HAVEN]
 	[NOUN:haven:havens]
@@ -21688,7 +21705,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:layer:layers:layered:layered:layering]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:LAYOUT]
 	[NOUN:layout:layouts]
@@ -21716,7 +21733,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:level:levels:levelled:levelled:levelling]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:LOCAL]
 	[ADJ:local]
@@ -21729,7 +21746,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:localize:localizes:localized:localized:localizing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:MAINLAND]
 	[NOUN:mainland:mainlands]
@@ -21745,7 +21762,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 	[VERB:map:maps:mapped:mapped:mapping]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:NEXUS]
 	[NOUN:nexus:nexuses]
@@ -21771,11 +21788,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:objectify:objectifies:objectified:objectified:objectifying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 		
 [WORD:OCCUR]
 	[VERB:occur:occurs:occurred:occurred:occurring]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[NOUN:occurrence:occurrences]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
@@ -21863,7 +21880,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		
 [WORD:REPRESENT_ART]
 	[VERB:represent:represents:represented:represented:representing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:representational]
 		[ADJ_DIST:6]
 		[THE_COMPOUND_ADJ]
@@ -21920,7 +21937,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[VERB:space:spaces:spaced:spaced:spacing]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:spatial]
 		[ADJ_DIST:7]
 		[THE_COMPOUND_ADJ]
@@ -22115,7 +22132,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[OF_NOUN_PLUR]
 		[REAR_COMPOUND_NOUN_PLUR]
 	[VERB:parent:parents:parented:parented:parenting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:parental]
 		[ADJ_DIST:1]
 		[THE_COMPOUND_ADJ]
@@ -22123,7 +22140,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		
 [WORD:PROTRUDE]
 	[VERB:protrude:protrudes:protruded:protruded:protruding]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[NOUN:protrusion:protrusions]
 		[THE_NOUN_SING]
 		[THE_COMPOUND_NOUN_SING]
@@ -22169,7 +22186,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:ERUPT]
 	[VERB:erupt:erupts:erupted:erupted:erupting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[ADJ:eruptive]
 		[ADJ_DIST:7]
 		[THE_COMPOUND_ADJ]
@@ -22314,7 +22331,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:INCLINE]
 	[VERB:incline:inclines:inclined:inclined:inclining]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[NOUN:incline:inclines]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
@@ -22343,11 +22360,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:5]
 		[THE_COMPOUND_ADJ]
 	[VERB:crusade:crusades:crusaded:crusaded:crusading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:SUBJUGATE]
 	[VERB:subjugate:subjugates:subjugated:subjugated:subjugating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[NOUN:subjugation:subjugations]
 		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
@@ -22370,7 +22387,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[ADJ_DIST:5]
 		[THE_COMPOUND_ADJ]
 	[VERB:conquest:conquest:conquered:conquered:conquering] +
-		[STANDARD_VERB] +
+		--STANDARD_VERB] usually messes up sentences +
 
 [WORD:AGGRESSION]
 	[ADJ:aggressive]
@@ -22401,7 +22418,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DECIMATE]
 	[VERB:decimate:decimates:decimated:decimated:decimating]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DOWNFALL]
 	[NOUN:downfall:downfalls]
@@ -22424,7 +22441,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:confront:confronts:confronted:confronted:confronting]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:DEFIANCE]
 	[NOUN:defiance:]
@@ -22440,11 +22457,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_COMPOUND_ADJ]
 		[FRONT_COMPOUND_ADJ]
 	[VERB:defy:defies:defied:defied:defying]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 
 [WORD:INVADE]
 	[VERB:invade:invades:invaded:invaded:invading]
-		[STANDARD_VERB]
+		--STANDARD_VERB] usually messes up sentences
 	[NOUN:invasion:invasions]
 		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]

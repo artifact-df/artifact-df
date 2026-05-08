@@ -298,7 +298,7 @@ I'm leaving this data here in case it can someday be used to organize things in 
 [MATERIAL_VALUE:2][DISPLAY_COLOR:6:7:1][TILE:15][IS_GEM:pyrite:STP:OVERWRITE_SOLID]
 [ENVIRONMENT:ALL_STONE:CLUSTER_SMALL:100]
 [SOLID_DENSITY:4890]
-[STATE_COLOR:ALL_SOLID:SILVER]  Ironically, the color silver is closer to pyrite's color than silver's.  Real silver shines brighter.
+[STATE_COLOR:ALL_SOLID:GOLDEN_YELLOW]{:SILVER  Revision: pyrite is called fools gold so makes sense it has the same color.}
 
 [INORGANIC:CLEAR TOURMALINE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]

@@ -1,0 +1,362 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:BAMBARA_GROUNDNUT:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BAMBARA_GROUNDNUT:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_BAMBARA_GROUNDNUT_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_BAMBARA_GROUNDNUT_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_BAMBARA_GROUNDNUT_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:BROAD_BEAN:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BROAD_BEAN:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_BROAD_BEAN_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_BROAD_BEAN_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_BROAD_BEAN_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:BUSH_QUARRY:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BUSH_QUARRY:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_BUSH_QUARRY_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_BUSH_QUARRY_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_BUSH_QUARRY_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:CHICKPEA:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:CHICKPEA:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_CHICKPEA_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_CHICKPEA_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_CHICKPEA_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 4,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:HEMP:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:HEMP:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_HEMP_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_HEMP_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_HEMP_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 5,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:LENTIL:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:LENTIL:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_LENTIL_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_LENTIL_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_LENTIL_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 6,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:PEA:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PEA:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_PEA_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_PEA_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_PEA_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 7,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:PEANUT:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PEANUT:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_PEANUT_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_PEANUT_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_PEANUT_MILK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 8,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "CHEESE",
+				"material" : "PLANT:SOYBEAN:TOFU",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:SOYBEAN:MILK",
+				"reaction_id" : "AA_MAKE_TOFU_FROM_SOYBEAN_MILK",
+				"value" : 750
+			},
+			{
+				"condition" : "AtLeast",
+				"contains" :
+				[
+					"milk"
+				],
+				"reaction_id" : "AA_MAKE_TOFU_FROM_SOYBEAN_MILK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_TOFU_FROM_SOYBEAN_MILK"
+	}
+]

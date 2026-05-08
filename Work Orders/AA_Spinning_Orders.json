@@ -1,0 +1,446 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:ABACA:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:ABACA:LEAF",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_ABACA_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_ABACA_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:CATTAIL:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CATTAIL:LEAF",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_CATTAIL_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_CATTAIL_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:COTTON:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:COTTON:BOLL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_COTTON_BOLL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_COTTON_BOLL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:FLAX:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FLAX:STRUCTURAL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_FLAX_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_FLAX_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 4,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:GRASS_TAIL_PIG:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GRASS_TAIL_PIG:STRUCTURAL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_GRASS_TAIL_PIG_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_GRASS_TAIL_PIG_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 5,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:HEMP:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:HEMP:STRUCTURAL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_HEMP_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_HEMP_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 6,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:JUTE:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:JUTE:STRUCTURAL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_JUTE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_JUTE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 7,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:KENAF:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:KENAF:STRUCTURAL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_KENAF_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_KENAF_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 8,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:PALM:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PALM:HUSK",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_PALM_HUSK",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_PALM_HUSK"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 9,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:PINEAPPLE:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PINEAPPLE:LEAF",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_PINEAPPLE_LEAF",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_PINEAPPLE_LEAF"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 10,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:RAMIE:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RAMIE:STRUCTURAL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_RAMIE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_RAMIE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 11,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "THREAD",
+				"material" : "PLANT:REED_ROPE:THREAD",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:REED_ROPE:STRUCTURAL",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_REED_ROPE_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_REED_ROPE_STRUCTURAL"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Monthly",
+		"id" : 12,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"material" : "CREATURE:ALPACA:HAIR",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_ALPACA_HAIR",
+				"value" : 5
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_ALPACA_HAIR"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Monthly",
+		"id" : 13,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"material" : "CREATURE:LLAMA:HAIR",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_LLAMA_HAIR",
+				"value" : 5
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_LLAMA_HAIR"
+	},
+	{
+		"amount_left" : 5,
+		"amount_total" : 5,
+		"frequency" : "Monthly",
+		"id" : 14,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"material" : "CREATURE:SHEEP:HAIR",
+				"reaction_id" : "AA_SPIN_THREAD_FROM_SHEEP_HAIR",
+				"value" : 5
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_SPIN_THREAD_FROM_SHEEP_HAIR"
+	}
+]

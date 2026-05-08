@@ -36,8 +36,6 @@ interactions.secrets.death=function(idx,sph)
         [IT_REQUIRES:CAN_LEARN]
         [IT_REQUIRES:CAN_SPEAK]
 		[IT_CANNOT_HAVE_SYNDROME_CLASS:NECROMANCER]//new
-		[IT_AFFECTED_CREATURE:HUMAN:FEMALE_NOBLE]// only human nobles can initially learn the secret
-		[IT_AFFECTED_CREATURE:HUMAN:MALE_NOBLE]// ditto
     [I_EFFECT:ADD_SYNDROME]
         [IE_TARGET:A]
         [IE_IMMEDIATE]
@@ -47,6 +45,7 @@ interactions.secrets.death=function(idx,sph)
             [SYN_CONCENTRATION_ADDED:1000:0]//just in case
 			[IT_AFFECTED_CLASS:GENERAL_POISON]//new
 			[SYN_NO_HOSPITAL]//new
+			[SYN_IMMUNE_CLASS:DWARF_GUILD]//new
             [CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT]
             [CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0:ABRUPT]
 			[CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST]]..(experimenter and ":NIGHT_CREATURE_EXPERIMENTER" or "")..[[:START:0:ABRUPT]

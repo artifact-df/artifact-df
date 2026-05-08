@@ -411,8 +411,9 @@ creature_standard
 	[ATTACK:TGORE:BODYPART:BY_CATEGORY:TUSK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -420,8 +421,9 @@ creature_standard
 	[ATTACK:HGORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -741,7 +743,7 @@ creature_standard
 	[CREATURE_CLASS:HIGH_ELF_PET]
 	[CREATURE_CLASS:HIGH_ELF_MOUNT]
 	[CREATURE_CLASS:HIGH_ELF_BEAST]
-	[PETVALUE:1050]{:1000}
+	[PETVALUE:1500]{:1000}
 	[PREFSTRING:horns]
 	[PREFSTRING:swift gaits]
 	[PREFSTRING:elusiveness]
@@ -957,7 +959,7 @@ creature_standard
 		[MULTIPLY_VALUE:4]
 
 [CREATURE:DRAGON] red dragon by deon used as base
-	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years.  Its scales are akin to metal.]
+	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years and are drawn to great wealth.  *Its scales are akin to metal.]
 	[NAME:dragon:dragons:draconic]
 	[CASTE_NAME:dragon:dragons:draconic]
 	[CREATURE_TILE:'D'][COLOR:4:0:0]
@@ -984,7 +986,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:2:0:4]{:3:3:3  Revision: dragon attacks should be more reliant on wealth.}
 	[SPHERE:FIRE]
 	[SPHERE:WEALTH]
 	[SPHERE:MOUNTAINS]{+}
@@ -1021,8 +1023,6 @@ creature_standard
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 	 [PLUS_TISSUE_LAYER:SCALE:BY_CATEGORY:THROAT]
 		[TL_MAJOR_ARTERIES]
-	[SELECT_TISSUE_LAYER:SCALE:BY_CATEGORY:ALL]{+  thicker scales.}
-		[TL_RELATIVE_THICKNESS:4]
 	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
 	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
@@ -1058,7 +1058,6 @@ creature_standard
 			[APP_MOD_IMPORTANCE:1000]
 			[APP_MOD_NOUN:pointy teeth:PLURAL]
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
-	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:chomp:chomps]{:bite:bites
@@ -1104,7 +1103,7 @@ creature_standard
 	[CASTE:FEMALE]
 		[FEMALE]
 		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years.  Her scales are akin to metal.]{+}
+		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years and are drawn to great wealth.  *Her scales are akin to metal.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
@@ -1114,7 +1113,7 @@ creature_standard
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years.]{+}
+		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years and are drawn to great wealth.  *His scales are akin to metal.]{+}
 	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -1322,8 +1321,9 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -1454,6 +1454,7 @@ creature_standard
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR]
 	[NO_DRINK][NO_EAT][NO_SLEEP]
+	[CRAZED]{+  Revision: more rampages during worldgen.}
 	[SPHERE:METALS]
 	[SPHERE:STRENGTH]
 	[SPHERE:WAR]
@@ -1520,9 +1521,9 @@ creature_standard
 	[ITEMCORPSE_QUALITY:10]{:5
 	[DIURNAL]
 	[LAIR:SHRINE:100]
-	[NATURAL_SKILL:MELEE_COMBAT:8]{+ megabeast combat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:8]{+
-	[NATURAL_SKILL:STANCE_STRIKE:8]{+
+	[NATURAL_SKILL:MELEE_COMBAT:6]{+ megabeast combat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:9]{+
 	[NATURAL_SKILL:DODGING:4]{+
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
@@ -1743,9 +1744,9 @@ creature_standard
 	[DIURNAL]
 	[LAIR:SIMPLE_BURROW:100]
 	[HOMEOTHERM:10067]
-	[NATURAL_SKILL:WRESTLING:4]{+  revision: base nat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:4]{+
-	[NATURAL_SKILL:STANCE_STRIKE:4]{+
+	[NATURAL_SKILL:WRESTLING:5]{+  revision: base nat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:6]{+
 	[NATURAL_SKILL:MELEE_COMBAT:6]{+
 	[NATURAL_SKILL:AXE:4]{+
 	[NATURAL_SKILL:SWORD:4]{+
@@ -2068,9 +2069,9 @@ creature_standard
 	[DIURNAL]
 	[LAIR:SIMPLE_BURROW:100]
 	[HOMEOTHERM:10067]
-	[NATURAL_SKILL:WRESTLING:4]{+  revision: base nat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:4]{+
-	[NATURAL_SKILL:STANCE_STRIKE:4]{+
+	[NATURAL_SKILL:WRESTLING:5]{+  revision: base nat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:6]{+
 	[NATURAL_SKILL:MELEE_COMBAT:6]{+
 	[NATURAL_SKILL:AXE:4]{+
 	[NATURAL_SKILL:SWORD:4]{+
@@ -2080,8 +2081,8 @@ creature_standard
 	[NATURAL_SKILL:HAMMER:4]{+
 	[NATURAL_SKILL:WHIP:4]{+
 	[NATURAL_SKILL:SPEAR:4]{+
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]{+
-	[NATURAL_SKILL:DISCIPLINE:6]{+
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+
+	[NATURAL_SKILL:DISCIPLINE:8]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -2395,9 +2396,9 @@ creature_standard
 	[MULTIPART_FULL_VISION]
 	[LAIR:SIMPLE_BURROW:100]
 	[HOMEOTHERM:10067]
-	[NATURAL_SKILL:WRESTLING:4]{+  revision: base nat skills.}
-	[NATURAL_SKILL:GRASP_STRIKE:4]{+
-	[NATURAL_SKILL:STANCE_STRIKE:4]{+
+	[NATURAL_SKILL:WRESTLING:5]{+  revision: base nat skills.}
+	[NATURAL_SKILL:GRASP_STRIKE:3]{+
+	[NATURAL_SKILL:STANCE_STRIKE:6]{+
 	[NATURAL_SKILL:MELEE_COMBAT:6]{+
 	[NATURAL_SKILL:AXE:4]{+
 	[NATURAL_SKILL:SWORD:4]{+
@@ -2407,7 +2408,7 @@ creature_standard
 	[NATURAL_SKILL:HAMMER:4]{+
 	[NATURAL_SKILL:WHIP:4]{+
 	[NATURAL_SKILL:SPEAR:4]{+
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:8]{+
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+
 	[NATURAL_SKILL:DISCIPLINE:8]{+
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:657:438:219:1900:2900] 40 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -2531,8 +2532,9 @@ creature_standard
 	[PREFSTRING:horns]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[BIOME:ANY_LAND]
-	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
 	[PERSONALITY:BRAVERY:75:90:100]
+	[PERSONALITY:HATE_PROPENSITY:75:90:100]{+}
+	[PERSONALITY:ANGER_PROPENSITY:75:90:100]{+}
 	[SYNDROME_DILUTION_FACTOR:FEAR:150]{+}
 	[SYNDROME_DILUTION_FACTOR:INEBRIATION:133]{+}
 	[SPHERE:CAVERNS]
@@ -2606,6 +2608,7 @@ creature_standard
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
 	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
+	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_BERSERKING]{+  bloodlust ability.}
 	[BODY_SIZE:0:0:10000]
 	[BODY_SIZE:1:168:50000]
 	[BODY_SIZE:12:0:220000]
@@ -2643,8 +2646,9 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -2712,70 +2716,6 @@ creature_standard
 		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
-	[CASTE:FEMALE_CRAZED]{+  Revision: new rare minotaur caste that are permanently berserking and have better nat skills.}
-		[FEMALE]
-		[POP_RATIO:4] 1/10
-		[MULTIPLE_LITTER_RARE]
-		[NOEXERT][NOPAIN]
-		[CRAZED][ARENA_RESTRICTED]
-		[ORIENTATION:MALE:0:0:1]
-		[ORIENTATION:FEMALE:0:0:1]
-		[PERSONALITY:HATE_PROPENSITY:75:90:100]
-		[PERSONALITY:ANGER_PROPENSITY:75:90:100]
-		[PERSONALITY:VIOLENT:75:90:100]
-		[NATURAL_SKILL:WRESTLING:7]
-		[NATURAL_SKILL:BITE:4]
-		[NATURAL_SKILL:GRASP_STRIKE:7]
-		[NATURAL_SKILL:STANCE_STRIKE:7]
-		[NATURAL_SKILL:MELEE_COMBAT:10]
-		[NATURAL_SKILL:DODGING:7]
-		[NATURAL_SKILL:AXE:9]
-		[NATURAL_SKILL:SWORD:9]
-		[NATURAL_SKILL:DAGGER:9]
-		[NATURAL_SKILL:PIKE:9]
-		[NATURAL_SKILL:MACE:9]
-		[NATURAL_SKILL:HAMMER:9]
-		[NATURAL_SKILL:WHIP:9]
-		[NATURAL_SKILL:SPEAR:9]
-		[NATURAL_SKILL:ARMOR:5]
-		[NATURAL_SKILL:SHIELD:5]
-		[NATURAL_SKILL:DISCIPLINE:15]
-		[CASTE_NAME:savage minotauress:savage minotauresses:minotaur]{+}
-		[BABYNAME:savage minotauress baby girl:savage minotauress baby girls]{+}
-		[CHILDNAME:savage minotauress girl:savage minotauress girls]{+}
-		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked. She is crazed and in a state of bloodlust and will not surrender to pain or exertion.]
-	[CASTE:MALE_CRAZED]
-		[MALE]
-		[POP_RATIO:6] 1/10
-		[CRAZED]--ARENA_RESTRICTED]
-		[NOEXERT][NOPAIN]
-		[ORIENTATION:FEMALE:0:0:1]
-		[ORIENTATION:MALE:0:0:1]
-		[PERSONALITY:HATE_PROPENSITY:75:90:100]
-		[PERSONALITY:ANGER_PROPENSITY:75:90:100]
-		[PERSONALITY:VIOLENT:75:90:100]
-		[NATURAL_SKILL:WRESTLING:7]
-		[NATURAL_SKILL:BITE:4]
-		[NATURAL_SKILL:GRASP_STRIKE:7]
-		[NATURAL_SKILL:STANCE_STRIKE:7]
-		[NATURAL_SKILL:MELEE_COMBAT:10]
-		[NATURAL_SKILL:DODGING:7]
-		[NATURAL_SKILL:AXE:9]
-		[NATURAL_SKILL:SWORD:9]
-		[NATURAL_SKILL:DAGGER:9]
-		[NATURAL_SKILL:PIKE:9]
-		[NATURAL_SKILL:MACE:9]
-		[NATURAL_SKILL:HAMMER:9]
-		[NATURAL_SKILL:WHIP:9]
-		[NATURAL_SKILL:SPEAR:9]
-		[NATURAL_SKILL:ARMOR:5]
-		[NATURAL_SKILL:SHIELD:5]
-		[NATURAL_SKILL:DISCIPLINE:15]
-		[CASTE_NAME:savage minotaur:savage minotaurs:minotaur]{+}
-		[BABYNAME:savage minotaur baby boy:savage minotaur baby boys]{+}
-		[CHILDNAME:savage minotaur boy:savage minotaur boys]{+}
-		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked. He is crazed and in a state of bloodlust and will not surrender to pain or exertion.]
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -2790,17 +2730,6 @@ creature_standard
 		  [TL_RELATIVE_THICKNESS:3]{+
 		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]{+
 		  [TL_RELATIVE_THICKNESS:5]{+
-	[SELECT_CASTE:FEMALE_CRAZED]{+}
-	[SELECT_ADDITIONAL_CASTE:MALE_CRAZED]{+
-		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]{+
-			[TL_COLOR_MODIFIER:CHARCOAL:1]{+  dark hair
-				[TLCM_NOUN:hair:SINGULAR]{+
-		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{+
-	[TL_COLOR_MODIFIER:CHARCOAL:1]{+  dark skin
-				[TLCM_NOUN:skin:SINGULAR]{+
-		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]{+
-			[TL_COLOR_MODIFIER:RED:1]{+  red eyes
-				[TLCM_NOUN:eyes:PLURAL]{+
 	[SELECT_MATERIAL:ALL]{+}
 		[MULTIPLY_VALUE:4]{+
 
@@ -4043,8 +3972,9 @@ creature_standard
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]

@@ -118,11 +118,11 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:6:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:1674]{:420}
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:420]
+	[IGNITE_POINT:10508]  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10418]{:10250  Revision: 450F, longer fires}
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10250  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
@@ -171,12 +171,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:3590]{:4181}
-	[IGNITE_POINT:10360]{:10508   Revision: 392 F, lights more easily.}
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: 22 F, beware of glacial frostbite.}
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  Revision: 55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1000]
 	[LIQUID_DENSITY:NONE]
@@ -222,12 +222,12 @@ material_template_default
 	[STATE_ADJ:GAS:boiling greasy]{:n/a}
 	[DISPLAY_COLOR:6:0:1]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10369]{:10338   Revision: not as fiery. 401 F.}
-	[MELTING_POINT:10180]{:10078  Revision: blood boils.}
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10130]{:10250  162 F, 3rd degree burn}
-	[COLDDAM_POINT:9900]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
+	[MELTING_POINT:NONE]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  Revision: 55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:900]
 	[LIQUID_DENSITY:800]
@@ -274,12 +274,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:4:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:3470]{:4181}
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10166] {:10250, 92 C hypothetical 4th degree burn}
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  Revision: 55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -327,12 +327,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:4:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  Revision: 55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1000]
 	[LIQUID_DENSITY:NONE]
@@ -375,11 +375,11 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:1]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:440] {:1000}
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:1000]
+	[IGNITE_POINT:10508]  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
+	[BOILING_POINT:11773]{:NONE   Revision: 985 C, starts combusting.}
+	[HEATDAM_POINT:10250]  138.8 C
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
@@ -424,12 +424,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:1]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:420]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:420}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -472,10 +472,10 @@ material_template_default
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:420]
-	[IGNITE_POINT:10378]{:10508  Revision: 410 F, lights more easily.}
+	[IGNITE_POINT:10414]{:10508  Revision: 230 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10180]{:10250 Revision: 212 F, lights more easily.}
+	[BOILING_POINT:10450]{:NONE  Revision: 250 C, starts combusting.}
+	[HEATDAM_POINT:10369]{:10250 Revision: 205 C, lights more easily.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1520]{:500     Revision: copied plant cloth.}
@@ -502,7 +502,7 @@ material_template_default
 	[MAX_EDGE:0]
 	[ABSORPTION:100]
 	[IMPLIES_ANIMAL_KILL]
-	[ITEMS_HARD]
+	--ITEMS_HARD]{  Revision: shouldn't realistically have this tag.}
 	[HAIR]
 	[EDIBLE_VERMIN]{+  Revision: bodies left in the open will disappear eventually.}
 
@@ -518,12 +518,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:420]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:420}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -564,12 +564,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:420]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:420}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1850]{:500}
 	[LIQUID_DENSITY:NONE]
@@ -610,12 +610,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:420]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:420}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -656,12 +656,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:1]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:440] {:1000}
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:1000]
+	[IGNITE_POINT:10508]  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:11773]{:NONE   Revision: 985 C, starts combusting.}
+	[HEATDAM_POINT:10250]  138.8 C
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -703,12 +703,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:1]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -755,12 +755,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -802,12 +802,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10369]{:10338   Revision: not as fiery. 401 F.}
-	[MELTING_POINT:10180]{:10078  Revision: blood boils.}
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10140]{:10250  Revision: 172 F.}
-	[COLDDAM_POINT:9900]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
+	[MELTING_POINT:NONE]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:900]
 	[LIQUID_DENSITY:800]
@@ -854,12 +854,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:5:0:1]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -906,12 +906,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:4:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -958,12 +958,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:5:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -1010,12 +1010,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:5:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -1062,12 +1062,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:5:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -1114,12 +1114,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:5:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -1166,12 +1166,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:5:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -1218,12 +1218,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:4:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -1270,12 +1270,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:4181]
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
@@ -1322,12 +1322,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:6:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:1507] {:420}
-	[IGNITE_POINT:10382] {:10508}
+	[SPEC_HEAT:870]{:4181}
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1380]{:500    Sver: density for properly tanned leather.}
 	[LIQUID_DENSITY:NONE]
@@ -1371,7 +1371,7 @@ material_template_default
 	[SPEC_HEAT:420]
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10630]{:NONE  Revision: 350 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -1413,12 +1413,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:1530] {:420}
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:1000]{:420}
+	[IGNITE_POINT:10508]  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:11773]{:NONE   Revision: 985 C, starts combusting.}
+	[HEATDAM_POINT:10250]  138.8 C
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -1460,12 +1460,12 @@ material_template_default
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
-	[SPEC_HEAT:1530]{:420}
-	[IGNITE_POINT:10508]
+	[SPEC_HEAT:1000]{:420}
+	[IGNITE_POINT:10508]  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:11773]{:NONE   Revision: 985 C, starts combusting.}
+	[HEATDAM_POINT:10250]  138.8 C
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -1511,7 +1511,7 @@ material_template_default
 	[SPEC_HEAT:1000]
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10630]{:NONE  Revision: 350 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -1552,12 +1552,12 @@ material_template_default
 	[STATE_NAME:GAS:smoke]{:n/a}
 	[STATE_ADJ:GAS:smoke]{:n/a}
 	[DISPLAY_COLOR:7:0:1]
-	[MATERIAL_VALUE:2]{:1
+	[MATERIAL_VALUE:2]{:1} silk is more valuable than most cloth
 	[SPEC_HEAT:420]
-	[IGNITE_POINT:10378]{:10508  Revision: 410 F, lights more easily.}
+	[IGNITE_POINT:10414]{:10508  Revision: 230 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10180]{:10250 Revision: 212 F, lights more easily.}
+	[BOILING_POINT:10450]{:NONE  Revision: 250 C, starts combusting.}
+	[HEATDAM_POINT:10369]{:10250 Revision: 205 C, lights more easily.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1520]{:500     Revision: copied plant cloth.}
@@ -1830,11 +1830,11 @@ material_template_default
 	[DISPLAY_COLOR:2:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:1000]
-	[IGNITE_POINT:10508]
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -1864,10 +1864,7 @@ material_template_default
 	[ITEMS_HARD]
 	[ITEMS_SCALED]
 	[EDIBLE_VERMIN]
-	[ITEMS_BARRED]{+}
-	[LEATHER]{+}
-	[ITEMS_LEATHER]{+}
-	[MATERIAL_REACTION_PRODUCT:TAN_MAT:LOCAL_CREATURE_MAT:SHELL]{+ can be tanned.}
+	[BONE]{+  Revision: allows it to be used for armor.}
 
 [MATERIAL_TEMPLATE:SOAP_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:CREAM]
@@ -1884,7 +1881,7 @@ material_template_default
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:10078]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10630]{:NONE  Revision: 350 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -1930,7 +1927,7 @@ material_template_default
 	[SPEC_HEAT:4181]
 	[IGNITE_POINT:10338]
 	[MELTING_POINT:10078]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10450]{:NONE  Revision: 250 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -1980,11 +1977,11 @@ material_template_default
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:420]
-	[IGNITE_POINT:10508]
+	[IGNITE_POINT:10360]{:10508   Revision: 200 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
-	[COLDDAM_POINT:9900]
+	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
+	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
+	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:500]
 	[LIQUID_DENSITY:NONE]
@@ -2013,12 +2010,8 @@ material_template_default
 	[IMPLIES_ANIMAL_KILL]
 	[CHITIN]
 	[EDIBLE_VERMIN]{+}
-	[ITEMS_HARD]{+}
-	[ITEMS_SCALED]{+}
-	[ITEMS_BARRED]{+}
-	[LEATHER]{+}
-	[ITEMS_LEATHER]{+}
-	[MATERIAL_REACTION_PRODUCT:TAN_MAT:LOCAL_CREATURE_MAT:CHITIN]{+ can be tanned.}
+	[BONE]{+  Revision: allows it to be used for armor.}
+	[REACTION_CLASS:CHITIN]{+}
 
 [MATERIAL_TEMPLATE:MILK_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:WHITE]
@@ -2086,7 +2079,7 @@ material_template_default
 	[SPEC_HEAT:4181]
 	[IGNITE_POINT:10338]
 	[MELTING_POINT:10078]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10450]{:NONE  Revision: 250 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -2148,10 +2141,10 @@ material_template_default
 	[DISPLAY_COLOR:6:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:3000]
-	[IGNITE_POINT:10508]
+	[IGNITE_POINT:10508]  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10250]
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10250  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1200]
@@ -2194,10 +2187,10 @@ material_template_default
 	[DISPLAY_COLOR:6:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
-	[IGNITE_POINT:10400]
+	[IGNITE_POINT:10508]{:10400}  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10500]
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10500  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:600]
@@ -2240,10 +2233,10 @@ material_template_default
 	[DISPLAY_COLOR:2:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
-	[IGNITE_POINT:10400]
+	[IGNITE_POINT:10508]{:10400}  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10500]
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10500  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:600]
@@ -2285,10 +2278,10 @@ material_template_default
 	[DISPLAY_COLOR:2:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
-	[IGNITE_POINT:10400]
+	[IGNITE_POINT:10508]{:10400}  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10500]
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10500  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:600]
@@ -2331,10 +2324,10 @@ material_template_default
 	[DISPLAY_COLOR:2:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
-	[IGNITE_POINT:10400]
+	[IGNITE_POINT:10508]{:10400}  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10500]
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10500  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:600]
@@ -2376,10 +2369,10 @@ material_template_default
 	[DISPLAY_COLOR:2:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
-	[IGNITE_POINT:10400]
+	[IGNITE_POINT:10508]{:10400}  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10500]
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10500  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:600]
@@ -2422,10 +2415,10 @@ material_template_default
 	[DISPLAY_COLOR:2:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:800]
-	[IGNITE_POINT:10400]
+	[IGNITE_POINT:10508]{:10400}  282.2 C
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10500]
+	[BOILING_POINT:10558]{:NONE   Revision: 310 C, starts combusting.}
+	[HEATDAM_POINT:10418]{:10500  Revision: 232.2 C, longer fires.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:600]
@@ -2467,10 +2460,10 @@ material_template_default
 	[DISPLAY_COLOR:7:0:0]
 	[MATERIAL_VALUE:1]
 	[SPEC_HEAT:420]
-	[IGNITE_POINT:10378]{:10508  Revision: 410 F, lights more easily.}
+	[IGNITE_POINT:10414]{:10508  Revision: 230 C, lights more easily.}
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
-	[HEATDAM_POINT:10180]{:10250 Revision: 212 F, lights more easily.}
+	[BOILING_POINT:10450]{:NONE  Revision: 250 C, starts combusting.}
+	[HEATDAM_POINT:10369]{:10250 Revision: 205 C, lights more easily.}
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1520]
@@ -2574,7 +2567,7 @@ material_template_default
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10400]
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10576]{:NONE  Revision: 320 C, starts combusting.}
 	[HEATDAM_POINT:10500]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -2775,7 +2768,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[SPEC_HEAT:1000]
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10576]{:NONE  Revision: 320 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -2964,7 +2957,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[SPEC_HEAT:800]
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:10078]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10576]{:NONE  Revision: 320 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -3010,7 +3003,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[SPEC_HEAT:3400]
 	[IGNITE_POINT:10368]
 	[MELTING_POINT:10113]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10576]{:NONE  Revision: 320 C, starts combusting.}
 	[HEATDAM_POINT:10153]
 	[COLDDAM_POINT:NONE]
 	[MAT_FIXED_TEMP:NONE]
@@ -3120,7 +3113,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[SPEC_HEAT:420]
 	[IGNITE_POINT:10508]
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10576]{:NONE  Revision: 320 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
@@ -3211,7 +3204,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[SPEC_HEAT:4181]
 	[IGNITE_POINT:10338]
 	[MELTING_POINT:NONE]
-	[BOILING_POINT:NONE]
+	[BOILING_POINT:10576]{:NONE  Revision: 320 C, starts combusting.}
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]

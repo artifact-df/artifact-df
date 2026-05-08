@@ -8,11 +8,11 @@ building_dwarf_fff
 	[BUILD_LABOR:SMELT]
 	[BUILD_KEY:CUSTOM_SHIFT_C]
 	
-    [BUILD_ITEM:2:TOOL:ITEM_TOOL_CAULDRON:METAL:STEEL]
-	[BUILD_ITEM:10:BAR:NONE:METAL:STEEL]
-	[BUILD_ITEM:2:CHAIN:NONE:METAL:STEEL]
-	[BUILD_ITEM:2:TRAPPARTS:NONE:METAL:STEEL]
-	[BUILD_ITEM:1:ANVIL:NO_SUBTYPE:METAL:MITHRIL]
+    [BUILD_ITEM:1:TOOL:ITEM_TOOL_CAULDRON:METAL:DWARFSTEEL]
+	[BUILD_ITEM:5:BAR:NONE:METAL:DWARFSTEEL]
+	[BUILD_ITEM:1:CHAIN:NONE:METAL:DWARFSTEEL]
+	[BUILD_ITEM:1:TRAPPARTS:NONE:METAL:DWARFSTEEL]
+	[BUILD_ITEM:1:ANVIL:NO_SUBTYPE:METAL:DWARFSTEEL]
 	[NEEDS_MAGMA]
     
 	[DIM:5:5]
@@ -62,7 +62,7 @@ building_dwarf_fff
 	[COLOR:3:3:6:0:0:0:0:1:4:0:1:0:0:1:6:0:0]
 	[COLOR:3:4:6:0:0:0:0:1:4:0:1:0:0:1:6:0:0]
 	[COLOR:3:5:0:0:0:0:0:1:0:0:1:0:0:1:0:0:0]
-	[TOOLTIP:A vastly more powerful and efficient forge powered by the heat of the earth.  Unlock more advanced metals and recipes.]
+	[TOOLTIP:A vastly more powerful and efficient forge powered by the heat of the earth.  Unlock more advanced metals and recipes.  *Requires a dwarfsteel cauldron to construct.]
 	
 [BUILDING_WORKSHOP:RUNESMITH]
    [NAME:Rune forge]

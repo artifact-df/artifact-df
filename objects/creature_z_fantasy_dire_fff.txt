@@ -146,7 +146,7 @@ creature_fantasy_dire_fff
 	[MAXAGE:10:20]
 	[PRONE_TO_RAGE:30]
 	[TRAINABLE_WAR]
-	[NATURAL_SKILL:DISCIPLINE:1]{+  Revision: to address trainable pets bug #7161.}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[ATTACK:KICK:BODYPART:BY_CATEGORY:HOOF_FRONT]{+    Revision: hooved animals should kick much harder.}
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
@@ -216,8 +216,9 @@ creature_fantasy_dire_fff
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:TUSK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:90]{:100}
 		[ATTACK_PENETRATION_PERC:110]{+}
+		[ATTACK_VELOCITY_MODIFIER:1100]{+}
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]

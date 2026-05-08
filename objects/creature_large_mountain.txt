@@ -15,7 +15,7 @@ creature_large_mountain
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:4]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+}
 	[GRASSTRAMPLE:0]
 	[BIOME:MOUNTAIN]
 	[BENIGN][MEANDERER]
@@ -154,9 +154,10 @@ creature_large_mountain
 	[GO_TO_START]
 	[NAME:mountain goat man:mountain goat men:mountain goat man]
 	[DESCRIPTION:A horned person with the head of a mountain goat.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'g']
 	[COLOR:7:0:1]
 
@@ -207,7 +208,7 @@ creature_large_mountain
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:4]
-	[FREQUENCY:20]{+}
+	[FREQUENCY:100]{+}
 	[VISION_ARC:50:310]
 	[NO_WINTER][NO_AUTUMN][BENIGN][MEANDERER]
 	[PREFSTRING:whistles]
@@ -320,7 +321,7 @@ creature_large_mountain
 	[GO_TO_START]
 	[NAME:hoary marmot man:hoary marmot men:hoary marmot man]
 	[DESCRIPTION:A person with the head and fur of a hoary marmot.]
-	[POPULATION_NUMBER:10:25]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
 	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
 	[CREATURE_TILE:'m']
@@ -367,7 +368,7 @@ creature_large_mountain
 	[CREATURE_CLASS:MAMMAL]
 	[GRASSTRAMPLE:0][GOOD]
 	[BIOME:MOUNTAIN]
-	[LARGE_ROAMING][FREQUENCY:20]{:10
+	[LARGE_ROAMING][FREQUENCY:100]{:10}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[CURIOUSBEAST_GUZZLER]
@@ -628,7 +629,7 @@ creature_large_mountain
 	[CREATURE_CLASS:MAMMAL]
 	[GRASSTRAMPLE:0][EVIL]
 	[BIOME:MOUNTAIN]
-	[LARGE_ROAMING][FREQUENCY:20]{:10
+	[LARGE_ROAMING][FREQUENCY:100]{:10}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[CURIOUSBEAST_GUZZLER]

@@ -8,9 +8,9 @@ tile_page_items
 	[PAGE_DIM:4:11]
 
 [TILE_PAGE:ITEM_FOOD]
-	[FILE:images/item_food.png]
+	[FILE:images/mfork/masterfork_food.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM:3:3]
+	[PAGE_DIM_PIXELS:128:320]
 
 [TILE_PAGE:ITEM_TOY]
 	[FILE:images/item_toy.png]
@@ -100,7 +100,7 @@ tile_page_items
 [TILE_PAGE:BOULDERS]
 	[FILE:images/boulders.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:64:512]
+	[PAGE_DIM_PIXELS:256:512]
 
 [TILE_PAGE:CLOTH_ROLL]
 	[FILE:images/cloth_roll.png]

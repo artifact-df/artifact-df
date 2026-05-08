@@ -431,14 +431,14 @@ Unusual Experience With [NAME]
 Useless [NO_ART_NAME]
 We Know Nothing About [NAME]
 Welcome to [NAME]
-What Is The [NAME]?
+What Is The [NO_ART_NAME]?
 What You Don't Know About [NAME]
 What to Do About [NAME]?
 What's The Point of [NAME]?
 When [NAME] Goes Wrong
 When [NAME] Was [ADJ]
 Where Has [NAME] Gone?
-Where Is The [NAME]?
+Where Is The [NO_ART_NAME]?
 Where Was [NAME] In [ANY_AGE]?
 Who Is Behind [NAME]?
 Who Touched My [NO_ART_NAME]?
@@ -721,3 +721,58 @@ I Hate [ANY_AGE]
 [PHRASE], Now
 [PHRASE] Without Me
 [PHRASE], Do You Understand?
+Pondering [NAME]
+Guide to [NAME]
+[NAME] Handbook
+Manual on [NAME]
+[NAME] Essentials
+[NAME] Chronicles
+What You Need to Know About [NAME]
+[NAME] Paradox
+[NAME]: Past, Present, and Future
+[NAME] Across Cultures and Time
+[NAME]: A Closer Look
+Reckoning with [NAME]
+The Roots of [NAME]
+[NAME] in Crisis
+Rethinking [NAME] in [ANY_AGE]
+The [ADJ] Impact of [NAME]
+Consequences of [NAME]
+The Inheritance of [NAME]
+The Untold Chapters of [NAME]
+The Labyrinth of [NAME]
+Fragments of [NAME]
+The Ghosts of [NAME]
+[NAME]: A New Vision
+Breaking the Silence on [NAME]
+[NAME] Reborn
+Beneath the Surface of [NAME]
+[NAME] Unleashed
+The Codex of [NAME]
+The Manuscript of [NAME]
+[NAME]: Secrets of the Scribes
+[NAME]: Lost Wisdom
+Wisdom of [NAME]
+[NAME] Foretold
+Thus Spoke [NAME]
+The Tome of [NAME]
+Relics of [NAME]
+[NAME]: Divine Revelations
+[NAME]: Divine Intervention
+The Archives of [NAME]
+The Treatise of [NAME]
+Embodiment of [NAME]
+Imperishable [NO_ART_NAME]
+Phantasmagoria of [NAME]
+[NAME] of Faith
+Undefined [NO_ART_NAME]
+Legacy of [NAME]
+Unconnected [NO_ART_NAME]
+Unfinished [NO_ART_NAME]
+[NAME] Wonders
+[NAME] for People Who Don't Care
+Confessions of a [NAME] Enthusiast
+What Your Mom Never Told You About [NAME]
+[NAME] Files
+[NAME] Without the Boring Stuff
+Give Up [NAME]

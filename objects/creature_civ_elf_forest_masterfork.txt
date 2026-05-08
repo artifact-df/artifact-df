@@ -4,8 +4,8 @@ creature_civ_elf_forest_masterfork
 
 [CREATURE:ELF]
 	[DESCRIPTION:A medium-sized creature dedicated to the ruthless protection of nature. It does not appear to age.]
-	[NAME:forest elf:forest elves:elven]{:elf:elves:elven
-	[CASTE_NAME:forest elf:forest elves:elven]{:elf:elves:elven
+	[NAME:forest elf:forest elves:elven]{:elf:elves:elven}
+	[CASTE_NAME:forest elf:forest elves:elven]{:elf:elves:elven}
 	[CREATURE_TILE:'e'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:137]
 	[CREATURE_CLASS:MAMMAL]
@@ -25,11 +25,11 @@ creature_civ_elf_forest_masterfork
 	[NATURAL_SKILL:SWIMMING:1]{+}
 	--NATURAL_SKILL:SITUATIONAL_AWARENESS:1]{+}
 	// RACIAL SKILLS //
-	[NATURAL_SKILL:SITUATIONAL_AWARENESS:2]{+}
-	[NATURAL_SKILL:DODGING:1]{+}
-	[NATURAL_SKILL:DISCIPLINE:2]{+}
-	[NATURAL_SKILL:ANIMALTRAIN:2]{+}
-	[NATURAL_SKILL:ANIMALCARE:2]{+}
+	[NATURAL_SKILL:SITUATIONAL_AWARENESS:3]{+}
+	[NATURAL_SKILL:DODGING:3]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:ANIMALTRAIN:1]{+}
+	[NATURAL_SKILL:ANIMALCARE:1]{+}
 	[NATURAL_SKILL:BOW:1]{+}
 	[NATURAL_SKILL:RANGED_COMBAT:2]{+}
 	[NATURAL_SKILL:SNEAK:1]{+}
@@ -147,13 +147,6 @@ creature_civ_elf_forest_masterfork
 		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
 		[CDI:WAIT_PERIOD:30]
-	[CAN_DO_INTERACTION:HIDE]{+ ability to hide.}
-		[CDI:ADV_NAME:Hide]
-		[CDI:TARGET:A:SELF_ONLY]
-		--CDI:USAGE_HINT:DEFEND]
-		[CDI:USAGE_HINT:FLEEING]
-		[CDI:VERB:hide:hides:NA]
-		[CDI:WAIT_PERIOD:1200]
 	[PHYS_ATT_RANGE:TOUGHNESS:150:600:800:900:1000:1100:1500]               -  {+ new}
 	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:1800:2500]              ++
 	[PHYS_ATT_RANGE:RECUPERATION:450:950:1150:1250:1350:1550:2250]          +
@@ -281,13 +274,14 @@ creature_civ_elf_forest_masterfork
 	[SMELL_TRIGGER:10]
 	[SLAIN_SPEECH:SLAIN_ELF]
 	[HOMEOTHERM:10067]
+	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:120]{+  Revision: elves are resistant to many poisons/venoms.}
 	[SYNDROME_DILUTION_FACTOR:INEBRIATION:110]{+  less barfights.}
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:642:428:214:1900:2900] 41 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2728:2069:1409:675:4000:5700] 13 kph
 	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
-	[SKILL_RATE:SITUATIONAL_AWARENESS:55:NONE:NONE:NONE]{+  Revision: forest elves learn these skills faster than normal.}
+	[SKILL_RATE:SITUATIONAL_AWARENESS:55:NONE:NONE:NONE]{+  Revision: elves learn these skills faster than normal.}
 	[SKILL_RATE:DODGING:55:NONE:NONE:NONE]{+
 	[SKILL_RATE:DISCIPLINE:55:NONE:NONE:NONE]{+
 	[SKILL_RATE:ANIMALTRAIN:55:NONE:NONE:NONE]{+
@@ -348,43 +342,17 @@ creature_civ_elf_forest_masterfork
 	[PROFESSION_NAME:MASTER_THIEF:Veteran Scout:Veteran Scouts]{+}
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:1]{+}
+		[MULTIPLE_LITTER_RARE]
 		[BABYNAME:elf baby girl:elven baby girls]{+}
 		[CHILDNAME:elf girl:elven girls]{+}
 		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  She feels most at home among her beloved trees and seems driven to protect them.  She does not appear to age.]{+}
-		[MULTIPLE_LITTER_RARE]
-	[CASTE:FEMALE_ASEXUAL]{+} new gender that is completely asexual to reduce elven population
-		[FEMALE]
-		[POP_RATIO:2]
-		[ARENA_RESTRICTED]
-		[PERSONALITY:LUST_PROPENSITY:0:20:50]
-		[ORIENTATION:MALE:1:0:0]
-		[ORIENTATION:FEMALE:1:0:0]
-		[BABYNAME:elf baby girl:elven baby girls]
-		[CHILDNAME:elf girl:elven girls]
-		[MULTIPLE_LITTER_RARE]
-		[DESCRIPTION:A medium-sized, tall, graceful woman with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  She feels most at home among her beloved trees and seems driven to protect them.  She does not appear to age.]
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:1]{+}
-		[BABYNAME:elf baby boy:elven baby boys]{+}
-		[CHILDNAME:elf boy:elven boys]{+}
-		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]{+  Revision: elves are clean-shaven.}
-		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  He feels most at home among his beloved trees and seems driven to protect them.  He does not appear to age.]{+}
-	[CASTE:MALE_ASEXUAL]{+} new gender that is completely asexual to reduce elven population
-		[MALE]
-		[POP_RATIO:2]
-		[ARENA_RESTRICTED]
-		[PERSONALITY:LUST_PROPENSITY:0:20:50]
-		[ORIENTATION:MALE:1:0:0]
-		[ORIENTATION:FEMALE:1:0:0]
-		[BABYNAME:elf baby boy:elven baby boys]
-		[CHILDNAME:elf boy:elven boys]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  He feels most at home among his beloved trees and seems driven to protect them.  He does not appear to age.]
-
+		[BABYNAME:elf baby boy:elven baby boys]{+}
+		[CHILDNAME:elf boy:elven boys]{+}
+		[DESCRIPTION:A medium-sized, tall, graceful man with flawless pale skin, glowing eldritch eyes, fair hair, and a reputation for grace and beauty.  He feels most at home among his beloved trees and seems driven to protect them.  He does not appear to age.]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -393,7 +361,7 @@ creature_civ_elf_forest_masterfork
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
 		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
-	[TL_COLOR_MODIFIER:GOLDEN_YELLOW:1:GOLDENROD:1:SAFFRON:1:SILVER:2:WHITE:2]{:GOLDEN_YELLOW:1:GOLDENROD:1:MOSS_GREEN:1:ORANGE:1:PUMPKIN:1:RED:1:SAFFRON:1:SCARLET:1:SILVER:1:WHITE:1  Revision: elves have predominantly white/silver hair and shades of gold.}
+	[TL_COLOR_MODIFIER:GOLDEN_YELLOW:1:GOLDENROD:1:SAFFRON:1:SILVER:1:WHITE:1]{:GOLDEN_YELLOW:1:GOLDENROD:1:MOSS_GREEN:1:ORANGE:1:PUMPKIN:1:RED:1:SAFFRON:1:SCARLET:1:SILVER:1:WHITE:1  Revision: elves have predominantly white/silver hair and shades of gold.}
 				[TLCM_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
 			[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:50:80:90:100:110:120:150]
@@ -413,17 +381,17 @@ creature_civ_elf_forest_masterfork
 				[APP_MOD_NOUN:hair:SINGULAR]
 				[APP_MOD_DESC_RANGE:10:25:75:125:200:300]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
-			[TISSUE_STYLE_UNIT:HAIR:PONY_TAILS]{:STANDARD_HAIR_SHAPINGS  Revision: seems thematic, also less bald elves.}
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
 				[TSU_NOUN:hair:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
 		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:CHIN_WHISKERS]
-			[TISSUE_STYLE_UNIT:BEARD:CLEAN_SHAVEN]{:STANDARD_BEARD_SHAPINGS  Revision: elves are clean-shaven.}
+			[TISSUE_STYLE_UNIT:BEARD:STANDARD_BEARD_SHAPINGS]
 				[TSU_NOUN:beard:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:MOUSTACHE]
-			[TISSUE_STYLE_UNIT:MOUSTACHE:CLEAN_SHAVEN]{:STANDARD_MOUSTACHE_SHAPINGS  Revision: elves are clean-shaven.}
+			[TISSUE_STYLE_UNIT:MOUSTACHE:STANDARD_MOUSTACHE_SHAPINGS]
 				[TSU_NOUN:moustache:SINGULAR]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:SIDEBURNS]
-			[TISSUE_STYLE_UNIT:SIDEBURNS:CLEAN_SHAVEN]{:STANDARD_SIDEBURNS_SHAPINGS  Revision: elves are clean-shaven.}
+			[TISSUE_STYLE_UNIT:SIDEBURNS:STANDARD_SIDEBURNS_SHAPINGS]
 				[TSU_NOUN:sideburns:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 	[TL_COLOR_MODIFIER:PEACH:1:DARK_PEACH:1:ECRU:1:TAN:1:TAUPE_PALE:1:COPPER:1]{:BROWN:1:BURNT_UMBER:1:CINNAMON:1:DARK_BROWN:1:DARK_TAN:1:PALE_BROWN:1:PALE_CHESTNUT:1:PALE_PINK:1:PINK:1:RAW_UMBER:1:SEPIA:1:TAUPE_SANDY:1  Revision: elves have pale skin.}

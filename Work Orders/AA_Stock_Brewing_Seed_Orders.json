@@ -1,0 +1,2144 @@
+[
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BARLEY:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BARLEY:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_BARLEY_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BARLEY:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_BARLEY_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BARLEY_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BERRIES_FISHER:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRIES_FISHER:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRIES_FISHER_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRIES_FISHER:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRIES_FISHER_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BERRIES_FISHER_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BERRIES_PRICKLE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRIES_PRICKLE:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRIES_PRICKLE_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRIES_PRICKLE:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRIES_PRICKLE_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BERRIES_PRICKLE_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BERRIES_STRAW:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRIES_STRAW:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRIES_STRAW_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRIES_STRAW:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRIES_STRAW_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BERRIES_STRAW_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 4,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BERRY_SUN:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRY_SUN:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRY_SUN_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BERRY_SUN:FRUIT",
+				"reaction_id" : "AA_COLLECT_BERRY_SUN_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BERRY_SUN_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 5,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BILBERRY:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BILBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_BILBERRY_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BILBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_BILBERRY_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BILBERRY_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 6,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BLACKBERRY:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BLACKBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_BLACKBERRY_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BLACKBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_BLACKBERRY_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BLACKBERRY_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 7,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BLOOD_AMARANTH:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BLOOD_AMARANTH:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_BLOOD_AMARANTH_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BLOOD_AMARANTH:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_BLOOD_AMARANTH_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BLOOD_AMARANTH_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 8,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BLUEBERRY:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BLUEBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_BLUEBERRY_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BLUEBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_BLUEBERRY_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BLUEBERRY_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 9,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:BUCKWHEAT:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BUCKWHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_BUCKWHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:BUCKWHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_BUCKWHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_BUCKWHEAT_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 10,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:CASSAVA:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:CASSAVA:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_CASSAVA_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:CASSAVA:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_CASSAVA_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_CASSAVA_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 11,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:CLOUDBERRY:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CLOUDBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_CLOUDBERRY_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CLOUDBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_CLOUDBERRY_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_CLOUDBERRY_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 12,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:CRANBERRY:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CRANBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_CRANBERRY_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CRANBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_CRANBERRY_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_CRANBERRY_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 13,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:FINGER_MILLET:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FINGER_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_FINGER_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FINGER_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_FINGER_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_FINGER_MILLET_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 14,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:FONIO:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FONIO:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_FONIO_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FONIO:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_FONIO_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_FONIO_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 15,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:FOXTAIL_MILLET:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FOXTAIL_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_FOXTAIL_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:FOXTAIL_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_FOXTAIL_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_FOXTAIL_MILLET_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 16,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:GRAPE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GRAPE:FRUIT",
+				"reaction_id" : "AA_COLLECT_GRAPE_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GRAPE:FRUIT",
+				"reaction_id" : "AA_COLLECT_GRAPE_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_GRAPE_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 17,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:GRASS_LONGLAND:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GRASS_LONGLAND:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_GRASS_LONGLAND_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GRASS_LONGLAND:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_GRASS_LONGLAND_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_GRASS_LONGLAND_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 18,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:GRASS_TAIL_PIG:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GRASS_TAIL_PIG:PANICLE",
+				"reaction_id" : "AA_COLLECT_GRASS_TAIL_PIG_SEEDS_FROM_PANICLE",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:GRASS_TAIL_PIG:PANICLE",
+				"reaction_id" : "AA_COLLECT_GRASS_TAIL_PIG_SEEDS_FROM_PANICLE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_GRASS_TAIL_PIG_SEEDS_FROM_PANICLE"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 19,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:GRASS_WHEAT_CAVE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GRASS_WHEAT_CAVE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_GRASS_WHEAT_CAVE_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:GRASS_WHEAT_CAVE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_GRASS_WHEAT_CAVE_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_GRASS_WHEAT_CAVE_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 20,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:HARD_WHEAT:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:HARD_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_HARD_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:HARD_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_HARD_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_HARD_WHEAT_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 21,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:KANIWA:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:KANIWA:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_KANIWA_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:KANIWA:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_KANIWA_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_KANIWA_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 22,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:MAIZE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MAIZE:EAR",
+				"reaction_id" : "AA_COLLECT_MAIZE_SEEDS_FROM_EAR",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MAIZE:EAR",
+				"reaction_id" : "AA_COLLECT_MAIZE_SEEDS_FROM_EAR",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_MAIZE_SEEDS_FROM_EAR"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 23,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:MUSHROOM_HELMET_PLUMP:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:MUSHROOM_HELMET_PLUMP:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_MUSHROOM_HELMET_PLUMP_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:MUSHROOM_HELMET_PLUMP:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_MUSHROOM_HELMET_PLUMP_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_MUSHROOM_HELMET_PLUMP_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 24,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:MUSKMELON:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MUSKMELON:FRUIT",
+				"reaction_id" : "AA_COLLECT_MUSKMELON_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:MUSKMELON:FRUIT",
+				"reaction_id" : "AA_COLLECT_MUSKMELON_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_MUSKMELON_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 25,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:OATS:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:OATS:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_OATS_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:OATS:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_OATS_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_OATS_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 26,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:PASSION_FRUIT:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PASSION_FRUIT:FRUIT",
+				"reaction_id" : "AA_COLLECT_PASSION_FRUIT_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PASSION_FRUIT:FRUIT",
+				"reaction_id" : "AA_COLLECT_PASSION_FRUIT_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_PASSION_FRUIT_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 27,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:PEARL_MILLET:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:PEARL_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_PEARL_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:PEARL_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_PEARL_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_PEARL_MILLET_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 28,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:PENDANT_AMARANTH:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:PENDANT_AMARANTH:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_PENDANT_AMARANTH_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:PENDANT_AMARANTH:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_PENDANT_AMARANTH_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_PENDANT_AMARANTH_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 29,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:PINEAPPLE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PINEAPPLE:FRUIT",
+				"reaction_id" : "AA_COLLECT_PINEAPPLE_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PINEAPPLE:FRUIT",
+				"reaction_id" : "AA_COLLECT_PINEAPPLE_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_PINEAPPLE_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 30,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:POD_SWEET:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:POD_SWEET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_POD_SWEET_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:POD_SWEET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_POD_SWEET_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_POD_SWEET_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 31,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:POTATO:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:POTATO:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_POTATO_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:POTATO:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_POTATO_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_POTATO_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 32,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:QUINOA:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:QUINOA:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_QUINOA_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:QUINOA:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_QUINOA_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_QUINOA_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 33,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:RASPBERRY:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:RASPBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_RASPBERRY_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:RASPBERRY:FRUIT",
+				"reaction_id" : "AA_COLLECT_RASPBERRY_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_RASPBERRY_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 34,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:REED_ROPE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:REED_ROPE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_REED_ROPE_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:REED_ROPE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_REED_ROPE_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_REED_ROPE_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 35,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:RICE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RICE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_RICE_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RICE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_RICE_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_RICE_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 36,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:ROOT_MUCK:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:ROOT_MUCK:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_ROOT_MUCK_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:ROOT_MUCK:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_ROOT_MUCK_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_ROOT_MUCK_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 37,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:RYE:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RYE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_RYE_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:RYE:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_RYE_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_RYE_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 38,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:SINGLE-GRAIN_WHEAT:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SINGLE-GRAIN_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SINGLE-GRAIN_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SINGLE-GRAIN_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SINGLE-GRAIN_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_SINGLE-GRAIN_WHEAT_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 39,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:SLIVER_BARB:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SLIVER_BARB:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SLIVER_BARB_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SLIVER_BARB:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SLIVER_BARB_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_SLIVER_BARB_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 40,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:SOFT_WHEAT:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SOFT_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SOFT_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SOFT_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SOFT_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_SOFT_WHEAT_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 41,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:SORGHUM:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:SORGHUM:PANICLE",
+				"reaction_id" : "AA_COLLECT_SORGHUM_SEEDS_FROM_PANICLE",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:SORGHUM:PANICLE",
+				"reaction_id" : "AA_COLLECT_SORGHUM_SEEDS_FROM_PANICLE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_SORGHUM_SEEDS_FROM_PANICLE"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 42,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:SPELT:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SPELT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SPELT_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SPELT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SPELT_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_SPELT_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 43,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:SWEET_POTATO:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SWEET_POTATO:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SWEET_POTATO_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:SWEET_POTATO:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_SWEET_POTATO_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_SWEET_POTATO_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 44,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:TEFF:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TEFF:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_TEFF_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TEFF:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_TEFF_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_TEFF_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 45,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:TOMATO:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:TOMATO:FRUIT",
+				"reaction_id" : "AA_COLLECT_TOMATO_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:TOMATO:FRUIT",
+				"reaction_id" : "AA_COLLECT_TOMATO_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_TOMATO_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 46,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:TUBER_BLOATED:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TUBER_BLOATED:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_TUBER_BLOATED_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TUBER_BLOATED:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_TUBER_BLOATED_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_TUBER_BLOATED_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 47,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:TWO-GRAIN_WHEAT:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TWO-GRAIN_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_TWO-GRAIN_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:TWO-GRAIN_WHEAT:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_TWO-GRAIN_WHEAT_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_TWO-GRAIN_WHEAT_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 48,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:VINE_WHIP:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:VINE_WHIP:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_VINE_WHIP_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:VINE_WHIP:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_VINE_WHIP_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_VINE_WHIP_SEEDS_FROM_STRUCTURAL"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 49,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:WATERMELON:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:WATERMELON:FRUIT",
+				"reaction_id" : "AA_COLLECT_WATERMELON_SEEDS_FROM_FRUIT",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:WATERMELON:FRUIT",
+				"reaction_id" : "AA_COLLECT_WATERMELON_SEEDS_FROM_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_WATERMELON_SEEDS_FROM_FRUIT"
+	},
+	{
+		"amount_left" : 20,
+		"amount_total" : 20,
+		"frequency" : "Daily",
+		"id" : 50,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "LessThan",
+				"item_type" : "SEEDS",
+				"material" : "PLANT:WHITE_MILLET:SEED",
+				"value" : 20
+			},
+			{
+				"condition" : "LessThan",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:WHITE_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_WHITE_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 20
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"material" : "PLANT:WHITE_MILLET:STRUCTURAL",
+				"reaction_id" : "AA_COLLECT_WHITE_MILLET_SEEDS_FROM_STRUCTURAL",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_COLLECT_WHITE_MILLET_SEEDS_FROM_STRUCTURAL"
+	}
+]
