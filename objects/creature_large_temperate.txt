@@ -210,7 +210,6 @@ creature_large_temperate
 	[PET_EXOTIC]{:PET}
 	[NATURAL]
 	[TRAINABLE]{+}
-	[UBIQUITOUS]{+}
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_ROAMING]--FREQUENCY:4]
 	[POPULATION_NUMBER:20:30]{:2:3
@@ -416,7 +415,6 @@ creature_large_temperate
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[UBIQUITOUS]{+}
 	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CLUSTER_NUMBER:1:4]
 	[BIOME:FOREST_TAIGA]
@@ -612,7 +610,6 @@ creature_large_temperate
 	[BONECARN]
 	[BENIGN]
 	[TRAINABLE_HUNTING]{+}
-	[UBIQUITOUS]{+}
 	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[GRASSTRAMPLE:0]
@@ -1349,7 +1346,6 @@ creature_large_temperate
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:SHRUBLAND_TEMPERATE]
-	[UBIQUITOUS]{+}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:3:7]
 	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
@@ -1749,7 +1745,6 @@ creature_large_temperate
 	[PET_EXOTIC]
 	--MOUNT_EXOTIC]
 	[AMBUSHPREDATOR]{+}
-	[UBIQUITOUS]{+}
 	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CANNOT_JUMP]
 	[LARGE_PREDATOR]
@@ -2362,7 +2357,6 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[STANDARD_GRAZER]
 	[AMPHIBIOUS]
 	[LARGE_ROAMING]
-	[UBIQUITOUS]{+}
 	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:200:300]{:20:30
 	[CLUSTER_NUMBER:5:10]
@@ -2767,7 +2761,6 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:FOREST_TAIGA]
 	[BIOME:FOREST_TEMPERATE_CONIFER]{:ANY_TEMPERATE_FOREST}
 	--BENIGN][MEANDERER][NATURAL][PET_EXOTIC][MOUNT_EXOTIC]
-	[UBIQUITOUS]{+}
 	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[MAXAGE:15:25]
 	[DIURNAL]

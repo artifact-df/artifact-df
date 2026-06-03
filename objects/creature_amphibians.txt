@@ -13,7 +13,6 @@ creature_amphibians
 	[NATURAL][PET_EXOTIC]
 	[NOT_BUTCHERABLE]
 	[BIOME:ANY_POOL]
-	[UBIQUITOUS]{+}
 	[NOSMELLYROT]{+ doesn't produce miasma.}
 	[POPULATION_NUMBER:250:500]
 	[SOUND:ALERT:100:10000:VOCALIZATION:croak:croaks:loud croaking]{+}

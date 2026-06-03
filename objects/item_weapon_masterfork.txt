@@ -117,14 +117,14 @@ item_weapon
 [LOADED:30:7]
 [INITIATE_SHOT_TIME:1]
 [SHOT_RECOVERY_TIME:0]
-[SHOOT_FORCE:1100]{:1000  crossbows should be more powerful than bows
+[SHOOT_FORCE:1000]
 no shot force requirements
-[SHOOT_MAXVEL:220]{:200}  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
+[SHOOT_MAXVEL:200]  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
 [TWO_HANDED:0]
-[MINIMUM_SIZE:30000]
-[MATERIAL_SIZE:6] 2 bars
-[ATTACK:BLUNT:100:4000:bash:bashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:2:5]
+[MINIMUM_SIZE:15000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:10000:4000:bash:bashes:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_WEAPON:ITEM_WEAPON_PICK]
 [NAME:pick:picks]
@@ -144,22 +144,22 @@ no shot force requirements
 
 [ITEM_WEAPON:ITEM_WEAPON_BOW]
 [NAME:bow:bows]
-[SIZE:200]
+[SIZE:300]
 [SKILL:SWORD]
 [RANGED:BOW:ARROW]
 [AIM_DIFFICULTY:5]
-[NOCKED:25:5]{:20:7
-[INITIATE_SHOT_TIME:3]
+[NOCKED:20:7]
+[INITIATE_SHOT_TIME:1]
 [SHOT_RECOVERY_TIME:0]
 [SHOOT_FORCE:1000]
 [SHOT_FORCE_REQUIRES:STRENGTH:1500]
 [SHOT_FORCE_REQUIRES:BOW:15]
-[SHOOT_MAXVEL:250]{:200}  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
+[SHOOT_MAXVEL:200]
 [TWO_HANDED:0]
 [MINIMUM_SIZE:15000]
-[MATERIAL_SIZE:6] 2 bars
+[MATERIAL_SIZE:3]
 [ATTACK:BLUNT:10000:4000:bash:bashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:2:5]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_WEAPON:ITEM_WEAPON_BLOWGUN]
 [NAME:blowgun:blowguns]
@@ -439,40 +439,40 @@ no shot force requirements
 
 [ITEM_WEAPON:ITEM_WEAPON_LONGBOW]  more powerful bow but harder to use
 [NAME:longbow:longbows]
-[SIZE:300]  x1.5
+[SIZE:450] 1.5x
 [SKILL:SWORD]
 [RANGED:BOW:ARROW]
 [AIM_DIFFICULTY:6] +1
-[NOCKED:25:5]
-[INITIATE_SHOT_TIME:3]
+[NOCKED:25:7] +5
+[INITIATE_SHOT_TIME:1]
 [SHOT_RECOVERY_TIME:0]
-[SHOOT_FORCE:1250] x1.25
-[SHOT_FORCE_REQUIRES:STRENGTH:2000] +500
+[SHOOT_FORCE:2000] 2x
+[SHOT_FORCE_REQUIRES:STRENGTH:1750]
 [SHOT_FORCE_REQUIRES:BOW:15]
-[SHOOT_MAXVEL:300]{:250}  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
+[SHOOT_MAXVEL:300] Unchanged
 [TWO_HANDED:0]
-[MINIMUM_SIZE:62000] elves and above
-[MATERIAL_SIZE:9]
+[MINIMUM_SIZE:61500] elves and larger
+[MATERIAL_SIZE:6]
 [ATTACK:BLUNT:10000:4000:bash:bashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:2:6]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_WEAPON:ITEM_WEAPON_HEAVY_CROSSBOW_SPL]  more powerful crossbow but more unwieldy
 [NAME:siege crossbow:siege crossbows]
-[SIZE:600]  1.5x
+[SIZE:600]
 [SKILL:HAMMER]
 [RANGED:CROSSBOW:BOLT]
-[AIM_DIFFICULTY:3] +1
-[LOADED:30:7]
+[AIM_DIFFICULTY:3]
+[LOADED:60:15] Increased from the crossbow's 30:7. Now slower shooting but more powerful.
 [INITIATE_SHOT_TIME:2]
 [SHOT_RECOVERY_TIME:0]
-[SHOOT_FORCE:1500] x1.25
-no shot force requirements
-[SHOOT_MAXVEL:300]{:250}  This is just to make sure a near-weightless object doesn't go faster than the string could possibly go.
+[SHOOT_FORCE:2250]
+[SHOOT_MAXVEL:300] Unchanged
 [TWO_HANDED:0]
-[MINIMUM_SIZE:58500]
-[MATERIAL_SIZE:12]
+[MINIMUM_SIZE:40000] Down from 58500. Let smaller dwarves and some animal men use it.
+[MATERIAL_SIZE:9] Reduced from 12. Even if it was 6 it wouldn't be OP.
 [ATTACK:BLUNT:100:4000:bash:bashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:2:6]
+[ATTACK_PREPARE_AND_RECOVER:2:5] Reduced from 2:6. No reason it needs to be even clunkier than the regular crossbow.
+// with this SHOOT_FORCE value they get some penetrations against equivalent metal armor but they still lose to crossbows if the bolt material is superior to the armor material.
 
 [ITEM_WEAPON:ITEM_WEAPON_SLING_CROSSBOW_SPL]
 [NAME:slingshot:slingshots]

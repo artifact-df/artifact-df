@@ -129,7 +129,7 @@ creature_civ_elf_dark_masterfork
 	[PHYS_ATT_CAP_PERC:TOUGHNESS:150]{+ reduced toughness cap.}
 	[BODY_SIZE:0:0:3000]
 	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:12:0:60000]
+	[BODY_SIZE:12:0:62000]{:12:0:60000}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:83:104:107:110:112:115:138]{:75:95:98:100:102:105:125  Revision: elves are more tall than broad.}
 		[APP_MOD_IMPORTANCE:520]{:500  Revision: height is more important than the other descriptors.}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]

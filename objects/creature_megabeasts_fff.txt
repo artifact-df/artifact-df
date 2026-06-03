@@ -17,7 +17,7 @@ creature_megabeasts_fff
 	[BIOME:ANY_LAND]
 	[LARGE_ROAMING][FREQUENCY:5]
 	[SEMIMEGABEAST][DIFFICULTY:6]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:2:2:2]
 	[FANCIFUL]
 	[BUILDINGDESTROYER:2]
 	[FIREIMMUNE]
@@ -173,7 +173,7 @@ creature_megabeasts_fff
 	[FREQUENCY:5]
 	[FANCIFUL]
 	[MEGABEAST][DIFFICULTY:10]
-	    [ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
+	    [ATTACK_TRIGGER:3:3:3]
 	[SPHERE:REBIRTH]
 	[SPHERE:FIRE]
 	[SPHERE:DEATH]

@@ -17,7 +17,6 @@ Octopuses were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:10]
 	[LARGE_ROAMING]
 	[FREQUENCY:100]
-	[UBIQUITOUS]{+}
 	[CARNIVORE]
 	[AQUATIC][NOBONES][IMMOBILE_LAND][UNDERSWIM]
 	[NATURAL]
@@ -171,7 +170,6 @@ Crabs were sponsored by the generous contributions of the Bay 12 community.
 	[NATURAL]
 	[BIOME:ANY_OCEAN]
 	[FREQUENCY:100]
-	[UBIQUITOUS]{+}
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:2500:5000]{:250:500}
 	[PREFSTRING:pincers]
@@ -450,7 +448,6 @@ Cuttlefish were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:10]
 	[VERMIN_FISH]
 	[FREQUENCY:100]
-	[UBIQUITOUS]{+}
 	[AQUATIC][SMALL_REMAINS][FISHITEM][NOBONES][IMMOBILE_LAND][UNDERSWIM][COOKABLE_LIVE]
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:900:750:600:439:1900:2900] 20 kph, NO DATA
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -604,7 +601,6 @@ Orcas were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_CLASS:MAMMAL]
 	[LARGE_ROAMING]
 	[AQUATIC][UNDERSWIM][IMMOBILE_LAND][BEACH_FREQUENCY:10]
-	[UBIQUITOUS]{+}
 	[NATURAL]{BENIGN  Revision: their description says they're vicious predators.}
 	[LARGE_PREDATOR]{+}
 	[PETVALUE:750]
@@ -861,7 +857,6 @@ Horseshoe crabs were sponsored by the generous contributions of the Bay 12 commu
 	[LARGE_ROAMING]
 	[AMPHIBIOUS][UNDERSWIM]
 	[FREQUENCY:100]
-	[UBIQUITOUS]{+}
 	[POPULATION_NUMBER:2500:5000]{:250:500}
 	[PREFSTRING:ability to hide in sand]
 	[ALL_ACTIVE]
@@ -983,7 +978,6 @@ Sperm whales were sponsored by the generous contributions of the Bay 12 communit
 	[MEANDERER][NATURAL]--BENIGN]
 	[PETVALUE:1000]
 	[BIOME:ANY_OCEAN]
-	[UBIQUITOUS]{+}
 	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:teeth]

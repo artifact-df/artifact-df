@@ -114,7 +114,6 @@ creature_civ_goblin_masterfork
 	[SELECT_MATERIAL:BLOOD]
 		[STATE_COLOR:ALL:BLACK] demonic
 		[DISPLAY_COLOR:0:0:0]
-		[SLIME_MAP_DESCRIPTOR] should cause it to be palletized properly?
 		[SYNDROME]
 			[SYN_NAME:demonic blood burn]
 			[SYN_IMMUNE_CREATURE:GOBLIN:ALL]
@@ -339,17 +338,15 @@ creature_civ_goblin_masterfork
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-		[ORIENTATION:MALE:70:0:30]{+ reduce world population.}
+		[ORIENTATION:MALE:50:0:50]{+ reduce world population.}
 		[ORIENTATION:FEMALE:1:0:0]{+
-		[POP_RATIO:3]{+
 		[DESCRIPTION:A medium-sized, cruel woman with leathery skin, glowing eyes, sharply-defined features and a lanky body.  She only eats meat and only sleep and distractions from her boredom.  She works with others to dig pits and trenches that connect many towers.  She does not appear to age.]{+}
 	[CASTE:MALE]
 		[MALE]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[ORIENTATION:MALE:1:0:0]{+ reduce world population.}
-		[ORIENTATION:FEMALE:70:0:30]{+
-		[POP_RATIO:5]{+
+		[ORIENTATION:FEMALE:50:0:50]{+
 		[DESCRIPTION:A medium-sized, cruel man with leathery skin, glowing eyes, sharply-defined features and a lanky body.  He only eats meat and only sleep and distractions from her boredom.  He works with others to dig pits and trenches that connect many towers.  He does not appear to age.]{+}
 
 	[SELECT_CASTE:ALL]

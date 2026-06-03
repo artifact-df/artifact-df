@@ -321,7 +321,7 @@ creature_next_underground
 	[EXTRAVISION]
 	[CAVE_ADAPT]{+}
 	[PRONE_TO_RAGE:10]{+}
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
+	[TRAPAVOID]{+  Revision: cage traps are too strong.}
 	[CURIOUSBEAST_EATER]{+}
 	[CURIOUSBEAST_GUZZLER]{+}
 	[PREFSTRING:echoing howls]
@@ -641,7 +641,7 @@ creature_next_underground
 	[CLUSTER_NUMBER:15:20]
 	[CARNIVORE]
 	[CAVE_ADAPT]{+}
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
+	[TRAPAVOID]{+  Revision: cage traps are too strong.}
 	[PREFSTRING:nervous energy]
 	[BODY:HUMANOID_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4FINGERS:4TOES:MOUTH:TONGUE:2HEAD_HORN]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]

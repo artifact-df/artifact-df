@@ -27,6 +27,7 @@ creature_civ_dwarf_mfork
 	[NATURAL_SKILL:SPEAKING:1]{+}
 	[NATURAL_SKILL:SHIELD:1]{+} experimental
 	[NATURAL_SKILL:ARMOR:1]{+} experimental
+	[NATURAL_SKILL:MINING:1]{+} experimental
 	
 	// PERSONALITY WEIGHTS //
 	[PERSONALITY:LOVE_PROPENSITY:0:45:100]-   Minor Aversion

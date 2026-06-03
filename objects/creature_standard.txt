@@ -969,7 +969,7 @@ creature_standard
 	[TRAINABLE_WAR]{TRAINABLE  Revision: dragons are too deadly to hunt.}
 	[MOUNT_EXOTIC]
 	[BIOME:ANY_LAND]
-	[FREQUENCY:8]{:5}
+	[FREQUENCY:5]
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 	    [CDI:TOKEN:BREATHE_FIRE]
@@ -980,13 +980,13 @@ creature_standard
 		[CDI:TARGET:C:LINE_OF_SIGHT]
 		[CDI:TARGET_RANGE:C:10]
 		[CDI:MAX_TARGET_NUMBER:C:1]
-		[CDI:WAIT_PERIOD:250] 50 was way too often!!
+		[CDI:WAIT_PERIOD:250]{:50  Revision: was way too often.}
 	[FIREIMMUNE_SUPER]
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:2:0:4]{:3:3:3  Revision: dragon attacks should be more reliant on wealth.}
+		[ATTACK_TRIGGER:2:3:4]{:3:3:3  Revision: dragon attacks should be more reliant on wealth.}
 	[SPHERE:FIRE]
 	[SPHERE:WEALTH]
 	[SPHERE:MOUNTAINS]{+}
@@ -1443,7 +1443,7 @@ creature_standard
 	[CREATURE_TILE:'C'][COLOR:6:0:0]
 	[CREATURE_CLASS:FOOTWEAR_TRACKING_SYMBOL]
 	[MEGABEAST][DIFFICULTY:15] 11 or higher does not get assigned as adv mode quests
-		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:3:3:3]
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
@@ -1542,7 +1542,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:30]{:20  Revision: tall megabeasts can see farther.}
 	[CAN_LEARN][SLOW_LEARNER][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -1870,7 +1870,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2193,7 +2193,7 @@ creature_standard
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -2520,7 +2520,7 @@ creature_standard
 	[BONECARN]
 	[LARGE_PREDATOR]
 	[SEMIMEGABEAST][DIFFICULTY:5]
-		[ATTACK_TRIGGER:2:0:2]{:2:2:2  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:2:2:2]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[CAN_LEARN][CAN_SPEAK]
 	[CANOPENDOORS]
@@ -4483,13 +4483,13 @@ creature_standard
 	[TRAINABLE_WAR]{+}
 	[CHILD:1][GENERAL_CHILD_NAME:hydra hatchling:hydra hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:ANY_LAND]
-	[FREQUENCY:8]{:5}
+	[FREQUENCY:5]
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:3:3:3]
 	[VIEWRANGE:25]{:20  Revision: megabeasts can see farther.}
 	[SPHERE:MUCK]
 	[SPHERE:REBIRTH]
@@ -5099,11 +5099,11 @@ creature_standard
 	[MOUNT_EXOTIC]
 	[CHILD:1][GENERAL_CHILD_NAME:roc chick:roc chicks]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:8]{:5}
+	[FREQUENCY:5]
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
-		[ATTACK_TRIGGER:3:0:3]{:3:3:3  Revision: removed exported wealth requirements.}
+		[ATTACK_TRIGGER:3:3:3]
     [VIEWRANGE:35]{:20  Revision: flying megabeasts can see farther.}
 	[SPHERE:SKY]
 	[SPHERE:WIND]

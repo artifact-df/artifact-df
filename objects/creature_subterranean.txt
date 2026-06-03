@@ -1166,6 +1166,7 @@ creature_subterranean
 	[UNDERGROUND_DEPTH:1:3]{:1:2
 	[SMELL_TRIGGER:5]{+ stalking prey }
 	[THICKWEB][WEBIMMUNE][AMBUSHPREDATOR][PARALYZEIMMUNE]
+	[TRAPAVOID]{+  Revision: cage traps are too strong.}
 	[USE_MATERIAL_TEMPLATE:SILK:SILK_TEMPLATE]
 	[SELECT_MATERIAL:SILK]{+  Revision: about 33% lighter and stronger tensile strength than ordinary silk.}
 	    [SOLID_DENSITY:1003]{+
@@ -1394,7 +1395,7 @@ creature_subterranean
 	[NAME:cave fish:cave fish:cave fish]
 	[CASTE_NAME:cave fish:cave fish:cave fish]
 	[CREATURE_TILE:224][COLOR:7:0:1]
-	[VERMIN_FISH][VERMIN_GROUNDER][FISHITEM][IMMOBILE_LAND][VERMIN_NOTRAP]
+	[VERMIN_FISH]--VERMIN_GROUNDER][FISHITEM][IMMOBILE_LAND][VERMIN_NOTRAP]
 	[AQUATIC][SMALL_REMAINS][UNDERSWIM]
 	[NATURAL]
 	[FREQUENCY:100]

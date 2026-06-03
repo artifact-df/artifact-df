@@ -206,7 +206,6 @@ creature_large_tundra
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
 	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
-	[UBIQUITOUS]{+}
 	[GRASSTRAMPLE:0]
 	[BIOME:TUNDRA]
 	[BIOME:GRASSLAND_TEMPERATE]

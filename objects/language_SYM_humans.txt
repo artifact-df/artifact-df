@@ -543,6 +543,50 @@ no need to add a HUMAN_CIV_THE - NAME_ENTITY_KINGDOM works just fine
 	[S_WORD:TOWN]
 	[S_WORD:TREATY]
 	[S_WORD:VILLAGE]
+	[S_WORD:COTTAGE] +
+	[S_WORD:ALE] + combine food related words for site names, graincottage, grapemarket, etc.
+	[S_WORD:APPLE] +
+	[S_WORD:BREW] +
+	[S_WORD:BUSHEL] +
+	[S_WORD:CHEESE] +
+	[S_WORD:DISH] +
+	[S_WORD:FRUIT] +
+	[S_WORD:GRAIN] +
+	[S_WORD:GRAPE] +
+	[S_WORD:HARVEST] +
+	[S_WORD:HONEY] +
+	[S_WORD:LOAF] +
+	[S_WORD:MEAL_DOM] +
+	[S_WORD:OLIVE] +
+	[S_WORD:PLUM] +
+	[S_WORD:SPICE] +
+	[S_WORD:STEED] +
+	[S_WORD:WINE] +
+	[S_WORD:CASTLE] +
+	[S_WORD:HAME] +
+	[S_WORD:HEARTH] +
+	[S_WORD:HOLD] +
+	[S_WORD:INN] +
+	[S_WORD:LEAGUE GROUP] +
+	[S_WORD:FORD] +
+	[S_WORD:CREEK] +
+	[S_WORD:BANK] +
+	[S_WORD:BOTTOM] +
+	[S_WORD:DALE] +
+	[S_WORD:DELL] +
+	[S_WORD:FIELD] +
+	[S_WORD:GLEN] +
+	[S_WORD:GREEN] +
+	[S_WORD:GROVE] +
+	[S_WORD:HILL] +
+	[S_WORD:LAKE] +
+	[S_WORD:LAND] +
+	[S_WORD:MARSH] +
+	[S_WORD:RIVER] +
+	[S_WORD:SHORE] +
+	[S_WORD:VALE] +
+	[S_WORD:WATER] +
+	[S_WORD:WOOD] +
 
 [SYMBOL:HUMAN_SQUAD_THE] ~ASSERTIVE
 	[S_WORD:ARMOR]

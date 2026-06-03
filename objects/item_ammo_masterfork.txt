@@ -5,15 +5,15 @@ item_ammo_masterfork
 [ITEM_AMMO:ITEM_AMMO_BOLTS]
 [NAME:bolt:bolts]
 [CLASS:BOLT]
-[SIZE:100]{:150}
-[ATTACK:EDGE:10:1000:stab:stabs:NO_SUB:1000]
+[SIZE:150]
+[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_ARROWS]
 [NAME:arrow:arrows]
 [CLASS:ARROW]
-[SIZE:100]{:150}
-[ATTACK:EDGE:10:1000:stab:stabs:NO_SUB:1000]
+[SIZE:150]
+[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_BLOWDARTS]
@@ -30,7 +30,7 @@ item_ammo_masterfork
 [ITEM_AMMO:ITEM_AMMO_ARROWS_ENCHANTED]
 [NAME:singing arrow:singing arrows]
 [CLASS:ARROW]
-[SIZE:80]
+[SIZE:150]
 [ATTACK:EDGE:10:12000:stab:stabs:NO_SUB:3000]
 
 
@@ -39,7 +39,7 @@ item_ammo_masterfork
 [ITEM_AMMO:ITEM_AMMO_THROWING_DAGGERS_ZM5]
 [NAME:throwing dagger:throwing daggers]
 [CLASS:THROWN]
-[SIZE:80]
+[SIZE:150]
 [ATTACK:EDGE:350:350:slash:slashes:NO_SUB:700]
 	[ATTACK_PREPARE_AND_RECOVER:4:1]
 [ATTACK:EDGE:7:420:stab:stabs:NO_SUB:500]
@@ -48,7 +48,7 @@ item_ammo_masterfork
 [ITEM_AMMO:ITEM_AMMO_SLING_SPL]
 [NAME:sling-bullet:sling-bullets]
 [CLASS:SLING]
-[SIZE:100]
+[SIZE:150]
 [ATTACK:BLUNT:20:50:impact:impacts:NO_SUB:1000]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
@@ -76,7 +76,7 @@ item_ammo_masterfork
 [ITEM_AMMO:ITEM_AMMO_PELLETS_ZM5]  better broadhead arrows
 [NAME:blunderbuss shot:blunderbuss shots]
 [CLASS:PELLET]
-[SIZE:35]
+[SIZE:125]
 [ATTACK:EDGE:10:1500:stab:stabs:NO_SUB:900]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
@@ -84,7 +84,7 @@ item_ammo_masterfork
 [ITEM_AMMO:ITEM_AMMO_HANDCANNON_SHELL_ZM5]
 [NAME:rifle bullet:rifle bullets]
 [CLASS:HANDCANNON_SHELL]
-[SIZE:100]
+[SIZE:175]
 [ATTACK:BLUNT:4:650:impact:impacts:NO_SUB:2000]  { --contact area, -penetration, +++velocity }
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
@@ -92,34 +92,34 @@ item_ammo_masterfork
 [ITEM_AMMO:ITEM_AMMO_HANDCANNON_SHRAPNEL_SHELL_ZM5]
 [NAME:rifle shrapnel shell:rifle shrapnel shells]
 [CLASS:HANDCANNON_SHELL]
-[SIZE:100]
+[SIZE:175]
 [ATTACK:EDGE:30:1750:stab:stabs:NO_SUB:650]  { +++contact area, ++penetration, --velocity }
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_BOLTS_BROADHEAD]
 [NAME:broadhead bolt:broadhead bolts]
 [CLASS:BOLT]
-[SIZE:150]{:150}
+[SIZE:150]
 [ATTACK:EDGE:25:1500:stab:stabs:NO_SUB:600]  { +++contact area, ++penetration, --velocity }
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_BOLTS_HAMMERHEAD]
 [NAME:hammerhead bolt:hammerhead bolts]
 [CLASS:BOLT]
-[SIZE:100]{:150}
+[SIZE:150]
 [ATTACK:BLUNT:5:500:impact:impacts:NO_SUB:1500]  { --contact area, -penetration, +++velocity }
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_ARROWS_BROADHEAD]
 [NAME:broadhead arrow:broadhead arrows]
 [CLASS:ARROW]
-[SIZE:150]{:150}
+[SIZE:150]
 [ATTACK:EDGE:25:1500:stab:stabs:NO_SUB:600]  { +++contact area, ++penetration, --velocity }
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_ARROWS_HAMMERHEAD]
 [NAME:hammerhead arrow:hammerhead arrows]
 [CLASS:ARROW]
-[SIZE:100]{:150}
+[SIZE:150]
 [ATTACK:BLUNT:5:500:impact:impacts:NO_SUB:1500]  { --contact area, -penetration, +++velocity }
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
