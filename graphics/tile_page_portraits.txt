@@ -636,3 +636,103 @@ tile_page_creatures
 	[FILE:images/portraits/creature_aquatic_portrait.png]
 	[TILE_DIM:96:96]
 	[PAGE_DIM_PIXELS:768:960]
+
+[TILE_PAGE:PORTRAIT_CREATURES_CAMBRIAN]
+	[FILE:images/portraits/creatures_cambrian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]
+
+[TILE_PAGE:PORTRAIT_CREATURES_CARBONIFEROUS]
+	[FILE:images/portraits/creatures_carboniferous_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:1]
+
+[TILE_PAGE:PORTRAIT_CREATURES_CENOZOIC]
+	[FILE:images/portraits/creatures_cenozoic_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:5]
+
+[TILE_PAGE:PORTRAIT_CREATURES_CRETACEOUS]
+	[FILE:images/portraits/creatures_cretaceous_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:8]
+
+[TILE_PAGE:PORTRAIT_CREATURES_DEVONIAN]
+	[FILE:images/portraits/creatures_devonian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]
+
+[TILE_PAGE:PORTRAIT_CREATURES_JURASSIC]
+	[FILE:images/portraits/creatures_jurassic_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:5]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ORDOVICIAN]
+	[FILE:images/portraits/creatures_ordovician_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:2:1]
+
+[TILE_PAGE:PORTRAIT_CREATURES_PERMIAN]
+	[FILE:images/portraits/creatures_permian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]
+
+[TILE_PAGE:PORTRAIT_CREATURES_SILURIAN]
+	[FILE:images/portraits/creatures_silurian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:2:1]
+
+[TILE_PAGE:PORTRAIT_CREATURES_TRIASSIC]
+	[FILE:images/portraits/creatures_triassic_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_CAMBRIAN]
+	[FILE:images/portraits/creatures_animal_people_cambrian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_CARBONIFEROUS]
+	[FILE:images/portraits/creatures_animal_people_carboniferous_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:1]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_CENOZOIC]
+	[FILE:images/portraits/creatures_animal_people_cenozoic_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:5]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_CRETACEOUS]
+	[FILE:images/portraits/creatures_animal_people_cretaceous_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:8]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_DEVONIAN]
+	[FILE:images/portraits/creatures_animal_people_devonian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_JURASSIC]
+	[FILE:images/portraits/creatures_animal_people_jurassic_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:5]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_ORDOVICIAN]
+	[FILE:images/portraits/creatures_animal_people_ordovician_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:2:1]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_PERMIAN]
+	[FILE:images/portraits/creatures_animal_people_permian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_SILURIAN]
+	[FILE:images/portraits/creatures_animal_people_silurian_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:2:1]
+
+[TILE_PAGE:PORTRAIT_CREATURES_ANIMAL_PEOPLE_TRIASSIC]
+	[FILE:images/portraits/creatures_animal_people_triassic_portrait.png]
+	[TILE_DIM:96:96]
+	[PAGE_DIM:8:2]

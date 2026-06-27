@@ -56,8 +56,7 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [INORGANIC:ROCK_SALT]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:rock salt][DISPLAY_COLOR:7:7:1][TILE:'#']
-[STATE_NAME:POWDER:salt]{+}
-[STATE_ADJ:POWDER:salt]{+}
+[STATE_NAME_ADJ:POWDER:salt]{+}
 [SEDIMENTARY]
 [IS_STONE]
 [MATERIAL_VALUE:1]{+}
@@ -72,8 +71,7 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [INORGANIC:LIMESTONE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:limestone][DISPLAY_COLOR:7:7:1][TILE:178]
-[STATE_NAME:POWDER:limestone powder]{+}
-[STATE_ADJ:POWDER:limestone powder]{+}
+[STATE_NAME_ADJ:POWDER:limestone powder]{+}
 [REACTION_CLASS:FLUX]
 [REACTION_CLASS:CALCIUM_CARBONATE]
 [SEDIMENTARY][SEDIMENTARY_OCEAN_DEEP]
@@ -96,10 +94,8 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [INORGANIC:DOLOMITE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:dolomite][DISPLAY_COLOR:7:7:1][TILE:'`']
-[STATE_NAME:POWDER:dolomite powder]{+}
-[STATE_ADJ:POWDER:dolomite powder]{+}
+[STATE_NAME_ADJ:POWDER:dolomite powder]{+}
 [REACTION_CLASS:FLUX] not CaCO3, has Mg, makes "calcined dolomite" in calcination instead of quicklime, not sure of effective differences
-[REACTION_CLASS:CALCIUM_CARBONATE]{+}
 [SEDIMENTARY]
 [MATERIAL_VALUE:2]
 [IS_STONE]
@@ -122,8 +118,7 @@ http://www.bay12forums.com/smf/index.php?topic=80022.0
 [INORGANIC:CHALK]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:chalk][DISPLAY_COLOR:7:7:1][TILE:176]
-[STATE_NAME:POWDER:chalk powder]{+}
-[STATE_ADJ:POWDER:chalk powder]{+}
+[STATE_NAME_ADJ:POWDER:chalk powder]{+}
 [REACTION_CLASS:FLUX]
 [REACTION_CLASS:CALCIUM_CARBONATE]
 [SEDIMENTARY]
@@ -277,8 +272,7 @@ MELTING_POINT:11818 <-- I think this is from the data collected by the contribut
 [INORGANIC:MARBLE]
 [USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
 [STATE_NAME_ADJ:ALL_SOLID:marble][DISPLAY_COLOR:7:7:1][TILE:178]
-[STATE_NAME:POWDER:marble powder]{+}
-[STATE_ADJ:POWDER:marble powder]{+}
+[STATE_NAME_ADJ:POWDER:marble powder]{+}
 [REACTION_CLASS:FLUX]
 [REACTION_CLASS:CALCIUM_CARBONATE] depends on marble classification
 [METAMORPHIC]

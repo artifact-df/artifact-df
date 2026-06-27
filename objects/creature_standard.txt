@@ -969,7 +969,7 @@ creature_standard
 	[TRAINABLE_WAR]{TRAINABLE  Revision: dragons are too deadly to hunt.}
 	[MOUNT_EXOTIC]
 	[BIOME:ANY_LAND]
-	[FREQUENCY:5]
+	[FREQUENCY:10]{:5}
 	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 	    [CDI:TOKEN:BREATHE_FIRE]
@@ -1005,23 +1005,24 @@ creature_standard
 	[SOUND:ALERT:50:5000:VOCALIZATION:growl:lets out a deep, rumbling growl that shakes your bones:a deep, rumbling growl from far away]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:25:5000:VOCALIZATION:growl idly:growls idly:an unsettling growl]{+}
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
-	[BODY:QUADRUPED_NECK:TAIL:2WINGS:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
-	[BODY_DETAIL_PLAN:DRAGON_MATERIALS]{:STANDARD_MATERIALS}
-		[REMOVE_MATERIAL:SKIN]
-		[REMOVE_MATERIAL:LEATHER]
+	[BODY:QUADRUPED_NECK:TAIL:2WINGS:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]{+2WINGS}
+	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+		--REMOVE_MATERIAL:SKIN]
+		--REMOVE_MATERIAL:LEATHER]
+		--REMOVE_MATERIAL:PARCHMENT]
 		[REMOVE_MATERIAL:HAIR]
-		[USE_MATERIAL_TEMPLATE:SCALE:DRAGONSCALE_TEMPLATE]{:SCALE_TEMPLATE}
-	[BODY_DETAIL_PLAN:DRAGON_TISSUES]{:STANDARD_TISSUES}
-		[REMOVE_TISSUE:SKIN]
+		--USE_MATERIAL_TEMPLATE:SCALE:SCALE_TEMPLATE]
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+		--REMOVE_TISSUE:SKIN]
 		[REMOVE_TISSUE:HAIR]
-		[USE_TISSUE_TEMPLATE:SCALE:DRAGONSCALE_TISSUE_TEMPLATE]{:SCALE_TEMPLATE}
-	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SCALE:FAT:MUSCLE:BONE:CARTILAGE]
-	[USE_MATERIAL_TEMPLATE:CLAW:DRAGONBONE_TEMPLATE]{:CLAW_TEMPLATE}
+		--USE_TISSUE_TEMPLATE:SCALE:SCALE_TEMPLATE]
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]{:SCALE:FAT:MUSCLE:BONE:CARTILAGE}
+	[USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]
 	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]
 	[BODY_DETAIL_PLAN:LEATHERY_EGG_MATERIALS]
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
-	 [PLUS_TISSUE_LAYER:SCALE:BY_CATEGORY:THROAT]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]{:SCALE:BY_CATEGORY:THROAT}
 		[TL_MAJOR_ARTERIES]
 	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
@@ -1032,7 +1033,6 @@ creature_standard
 	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
 	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
 	[CREATURE_CLASS:GENERAL_POISON]
-	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:200]{+  zey: 100% resistant to most poisons.}
 	[GETS_WOUND_INFECTIONS]
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
@@ -1109,14 +1109,13 @@ creature_standard
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:6100]
-			[CLUTCH_SIZE:1:2]{:1:3
+			[CLUTCH_SIZE:1:3]
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years and are drawn to great wealth.  *His scales are akin to metal.]{+}
-	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
-		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{:SCALE}
 			[TL_COLOR_MODIFIER:RED:1:BLACK:1:GREEN:1:BLUE:1:YELLOW:1:PURPLE:1:SILVER:1:AQUA:1]
 				[TLCM_NOUN:scales:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
@@ -1710,11 +1709,10 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
@@ -1736,8 +1734,18 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
-    zey: removed scratching
-    zey: removed biting
+	{ removed scratching }
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
+	    { removed latching }
 	[BABY:1]
 	[CHILD:18]
 	[EQUIPS]
@@ -1780,11 +1788,10 @@ creature_standard
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
 		[CASTE_NAME:giant:giants:giant]
-	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[NO_GENDER]
+		[MAXAGE:900:1100] makes them able to seek immortality
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:400:500] so they cant rule forever
 		[POP_RATIO:5] 1/20
 		[BABYNAME:giant baby:giant babies]
 		[CHILDNAME:giant child:giant children]
@@ -1849,7 +1856,7 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_AMBER:1:IRIS_EYE_AQUA:1:IRIS_EYE_AQUAMARINE:1:IRIS_EYE_ASH_GRAY:1:IRIS_EYE_AUBURN:1:IRIS_EYE_AZURE:1:IRIS_EYE_BLUE:1:IRIS_EYE_BRASS:1:IRIS_EYE_BRONZE:1:IRIS_EYE_BROWN:1:IRIS_EYE_CERULEAN:1:IRIS_EYE_CHESTNUT:1:IRIS_EYE_CHOCOLATE:1:IRIS_EYE_CINNAMON:1:IRIS_EYE_COPPER:1:IRIS_EYE_DARK_BLUE:1:IRIS_EYE_DARK_BROWN:1:IRIS_EYE_DARK_CHESTNUT:1:IRIS_EYE_DARK_GREEN:1:IRIS_EYE_DARK_OLIVE:1:IRIS_EYE_DARK_TAN:1:IRIS_EYE_ECRU:1:IRIS_EYE_EMERALD:1:IRIS_EYE_FERN_GREEN:1:IRIS_EYE_GRAY:1:IRIS_EYE_GREEN:1:IRIS_EYE_JADE:1:IRIS_EYE_LIGHT_BLUE:1:IRIS_EYE_LIGHT_BROWN:1:IRIS_EYE_MAHOGANY:1:IRIS_EYE_MIDNIGHT_BLUE:1:IRIS_EYE_OCHRE:1:IRIS_EYE_OLIVE:1:IRIS_EYE_PALE_BLUE:1:IRIS_EYE_PALE_BROWN:1:IRIS_EYE_PALE_CHESTNUT:1:IRIS_EYE_PERIWINKLE:1:IRIS_EYE_PINE_GREEN:1:IRIS_EYE_RAW_UMBER:1:IRIS_EYE_RUSSET:1:IRIS_EYE_SEA_GREEN:1:IRIS_EYE_SEPIA:1:IRIS_EYE_SKY_BLUE:1:IRIS_EYE_SLATE_GRAY:1:IRIS_EYE_SPRING_GREEN:1:IRIS_EYE_TAN:1:IRIS_EYE_TAUPE_DARK:1:IRIS_EYE_TAUPE_GRAY:1:IRIS_EYE_TAUPE_MEDIUM:1:IRIS_EYE_TAUPE_PALE:1:IRIS_EYE_TAUPE_SANDY:1:IRIS_EYE_TEAL:1:IRIS_EYE_TURQUOISE:1]
 				[TLCM_NOUN:eyes:PLURAL]
-	[SELECT_CASTE:ALL]{+  Revision: thicker skin, skull bone and fat.}
+	[SELECT_CASTE:ALL]{+  Revision: thicker skin, skull and fat.}
 		[SELECT_TISSUE_LAYER:SKIN:BY_CATEGORY:ALL]{+
 		  [TL_RELATIVE_THICKNESS:2]{+
 		[SELECT_TISSUE_LAYER:BONE:BY_CATEGORY:SKULL]{+
@@ -2035,11 +2042,10 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
@@ -2061,8 +2067,18 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
-    zey: removed scratching
-    zey: removed biting
+	{ removed scratching }
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
+	    { removed latching }
 	[BABY:1]
 	[CHILD:18]
 	[EQUIPS]
@@ -2104,11 +2120,10 @@ creature_standard
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[NO_GENDER]
+		[MAXAGE:900:1100] makes them able to seek immortality
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:400:500] so they cant rule forever
 		[POP_RATIO:5] 1/20
 		[BABYNAME:cyclops baby:cyclops babies]
 		[CHILDNAME:cyclops child:cyclops children]
@@ -2361,11 +2376,10 @@ creature_standard
 		[BP_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:125]
 			[APP_MOD_IMPORTANCE:700]
 			[APP_MOD_DESC_RANGE:91:94:98:102:106:109]
-	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
@@ -2387,8 +2401,18 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
-    zey: removed scratching
-    zey: removed biting
+	{ removed scratching }
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
+	    { removed latching }
 	[BABY:1]
 	[CHILD:18]
 	[EQUIPS]
@@ -2431,11 +2455,10 @@ creature_standard
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
 		[NO_GENDER]
+		[MAXAGE:900:1100] makes them able to seek immortality
 		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[MAXAGE:400:500] so they cant rule forever
 		[POP_RATIO:5] 1/20
 		[BABYNAME:ettin baby:ettin babies]
 		[CHILDNAME:ettin child:ettin children]
@@ -2621,7 +2644,7 @@ creature_standard
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
@@ -2643,18 +2666,18 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
-	[ATTACK:GORE:BODYPART:BY_CATEGORY:HORN]
+	{ removed scratching }
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:90]{:100}
-		[ATTACK_PENETRATION_PERC:110]{+}
-		[ATTACK_VELOCITY_MODIFIER:1100]{+}
-		[ATTACK_FLAG_EDGE]{+}
-		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_WITH]
-	removed scratching
-	removed biting
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
+	    { removed latching }
 	[BABY:1]
 	[CHILD:18]
 	[EQUIPS]
@@ -2715,7 +2738,6 @@ creature_standard
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
 		[DESCRIPTION:A giant, brutish man with woolly legs and arms, large hooves, and a bull's head.  He rarely leaves his labyrinth but enjoys taunting his (rare) intruders.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -4483,7 +4505,7 @@ creature_standard
 	[TRAINABLE_WAR]{+}
 	[CHILD:1][GENERAL_CHILD_NAME:hydra hatchling:hydra hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:ANY_LAND]
-	[FREQUENCY:5]
+	[FREQUENCY:10]{:5}
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
@@ -4605,7 +4627,6 @@ creature_standard
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  His armored tail whips and thrashes aggressively.  He preys on his victims with a flurry of attacks as his heads all bite at once.  His wounds heal quickly.  His scales are akin to metal.]{+}
-	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GOLD:1:RED:1]
@@ -5099,7 +5120,7 @@ creature_standard
 	[MOUNT_EXOTIC]
 	[CHILD:1][GENERAL_CHILD_NAME:roc chick:roc chicks]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]
+	[FREQUENCY:15]{:5}
 	[FANCIFUL]
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
@@ -5225,12 +5246,11 @@ creature_standard
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:201000]
-			[CLUTCH_SIZE:1:2]{:1:3
+			[CLUTCH_SIZE:1:3]
 	[CASTE:MALE]
 		[MALE]
 		[POP_RATIO:5]{+}
 		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath his mighty wings should fear the sky.]{+}
-	[APPLY_CREATURE_VARIATION:MEGABEAST_ORIENTATIONS]{+  Revision: megabeasts have a harder chance to procreate.}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:WHITE:1]

@@ -11,14 +11,12 @@ creature_large_temperate
 	[CREATURE_CLASS:MAMMAL]
 	[NATURAL]
 	[PETVALUE:500]
-	[PET_EXOTIC]{:PET}
+	[PET]
 	[TRAINABLE]
-	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[MOUNT_EXOTIC]
-	[LARGE_ROAMING]--FREQUENCY:2]
-	[POPULATION_NUMBER:20:30]{:2:3
+	[LARGE_ROAMING][FREQUENCY:2]
+	[POPULATION_NUMBER:2:3]
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[CURIOUSBEAST_EATER]
@@ -26,37 +24,18 @@ creature_large_temperate
 	[GRASSTRAMPLE:0]
 	[LARGE_PREDATOR]
 	[NO_WINTER][MEANDERER]
-	[SOUND:ALERT:100:10000:VOCALIZATION:roar:roars:a loud roar]{+}
-	[SOUND:ALERT:50:1000:VOCALIZATION:growl:growls:a low growl]{+}
-	[SOUND:PEACEFUL_INTERMITTENT:50:2500:VOCALIZATION:grunt idly:grunts idly:an idle grunt]{+}
-	[SOUND:PEACEFUL_INTERMITTENT:25:2500:VOCALIZATION:growl idly:growls idly:an idle growl]{+}
-	[PRONE_TO_RAGE:5]{+}
 	[PREFSTRING:strength]
-	[PREFSTRING:standing posture]{+}
-	[PREFSTRING:dark, handsome pelts]{+}
-	[PREFSTRING:lengthy hibernating periods]{+}
-	[PREFSTRING:interspecies rivalry]{+}
-	[PREFSTRING:motherly instinct]{+}
-	[NATURAL_SKILL:BITE:6][NATURAL_SKILL:GRASP_STRIKE:6]{+  Revision: ursine natural skills, and attribute weights.}
-	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+:       -
-	[PHYS_ATT_RANGE:STRENGTH:450:950:1150:1250:1350:1550:2250]{+:    ++
-	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+:   ++
-	[PHYS_ATT_RANGE:ENDURANCE:450:950:1150:1250:1350:1550:2250]{+:   +
-	[APPLY_CREATURE_VARIATION:CREATURE_ABILITY_GROWL]{+  Revision: this creature can let loose a fearful growl.}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODYGLOSS:PAW]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[SELECT_TISSUE:HAIR]
 			[INSULATION:200]
-	[SELECT_TISSUE:FAT]{+}
-	    [RELATIVE_THICKNESS:2]
-		[INSULATION:150]
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
 	[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
-	[USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]{:NAIL:NAIL_TEMPLATE}
-	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:CLAW:CLAW_TEMPLATE}
-	[TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]{:TOE:NAIL}
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
 		[TL_MAJOR_ARTERIES]
@@ -80,24 +59,23 @@ creature_large_temperate
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
 	[MAXAGE:20:30]
-	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_FUR]{+  Revision: the leather is still furry after tanning.}
-	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:maul:mauls]{:bite:bites
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
-	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]{  Revision: a powerful edged scratching attack.}
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:NAIL]
 		[ATTACK_SKILL:GRASP_STRIKE]
-		[ATTACK_VERB:claw:claws]{:scratch:scratches
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_PRIORITY:MAIN]{:SECOND
+		[ATTACK_PRIORITY:SECOND]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:471:314:157:1900:2900] 56 kph
@@ -109,12 +87,9 @@ creature_large_temperate
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[DESCRIPTION:A huge, shaggy, and stocky creature with long claws, a pointy muzzle, small round ears, and a hump on her shoulders.  Generally calm, she has a fierce temper if her family is threatened.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[DESCRIPTION:A huge, shaggy, and stocky creature with long claws, a pointy muzzle, small round ears, and a hump on his shoulders.  Generally calm, he has a fierce temper if his family is threatened.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -127,8 +102,6 @@ creature_large_temperate
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:3]
-	[SELECT_CASTE:ALL]{+}
-		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
 
 [CREATURE:BEAR_GRIZZLY_MAN]
 	[COPY_TAGS_FROM:BEAR_GRIZZLY]
@@ -136,19 +109,13 @@ creature_large_temperate
 	[GO_TO_END]
 	[SELECT_CASTE:MALE]
 		[CASTE_NAME:grizzly bear man:grizzly bear men:grizzly bear man]
-		[BABYNAME:grizzly bear baby boy:grizzly bear baby boys]{+}
-		[CHILDNAME:grizzly bear boy:grizzly bear boys]{+}
-		[DESCRIPTION:A tall and furry beastman with a low, gravelly voice, long claws, a short tail, and the head of a grizzly bear; he has a pointy muzzle and small, round ears.  He has a slumped posture and a hump between his shoulder blades.  His shaggy fur makes him look stockier than he is.  He doesn't care that he's naked.]{+}
 	[SELECT_CASTE:FEMALE]
 		[CASTE_NAME:grizzly bear woman:grizzly bear women:grizzly bear woman]
-		[BABYNAME:grizzly bear baby girl:grizzly bear baby girls]{+}
-		[CHILDNAME:grizzly bear girl:grizzly bear girls]{+}
-		[DESCRIPTION:A tall and furry beastwoman with a low, gravelly voice, long claws, a short tail, and the head of a grizzly bear; she has a pointy muzzle and small, round ears.  She has a slumped posture with a hump between her shoulder blades.  Her shaggy fur makes her look stockier than she is.  She doesn't care that she's naked.]{+}
 	[SELECT_CASTE:ALL]
 	[APPLY_CREATURE_VARIATION:PUNCH_ATTACK]
 	[APPLY_CREATURE_VARIATION:KICK_ATTACK]
-	[APPLY_CREATURE_VARIATION:CLAW_SCRATCH_ATTACK]{:NAIL_SCRATCH_ATTACK  zey: most ursids have very sharp claws.}
-	[APPLY_CREATURE_VARIATION:TOOTH_SHARP_BITE_ATTACK]{:TOOTH_BITE_ATTACK    Revision: a powerful edged biting attack.}
+	[APPLY_CREATURE_VARIATION:NAIL_SCRATCH_ATTACK]
+	[APPLY_CREATURE_VARIATION:TOOTH_BITE_ATTACK]
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
@@ -156,16 +123,13 @@ creature_large_temperate
 	[GO_TO_START]
 	[NAME:grizzly bear man:grizzly bear men:grizzly bear man]
 	[DESCRIPTION:A large person with the head of a grizzly bear.]
-	[TRANCES]{+  can enter battle trances.}
-	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
+	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
-	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
+	[MAXAGE:60:80]
 	[CREATURE_TILE:'B']
 	[COLOR:6:0:0]
-	[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]{:NAIL:NAIL_TEMPLATE
-	[TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT]{:FINGER:NAIL
-	[SKILL_LEARN_RATE:FISH:200]{+}
+	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
 
 [CREATURE:GIANT_BEAR_GRIZZLY]
 	[COPY_TAGS_FROM:BEAR_GRIZZLY]
@@ -1335,9 +1299,9 @@ creature_large_temperate
 
 [CREATURE:WOLF]
 	[DESCRIPTION:A large canine found in temperate regions.  It is territorial and hunts in packs.]
-	[NAME:wolf:wolves:wolf]
-	[CASTE_NAME:wolf:wolves:wolf]
-	[CHILD:1][GENERAL_CHILD_NAME:wolf pup:wolf pups]
+	[NAME:gray wolf:gray wolves:wolf]{:wolf:wolves:wolf}
+	[CASTE_NAME:gray wolf:gray wolves:wolf]{:wolf:wolves:wolf}
+	[CHILD:1][GENERAL_CHILD_NAME:gray wolf pup:gray wolf pups]{:wolf pup:wolf pups}
 	[CREATURE_TILE:'w'][COLOR:7:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[LARGE_PREDATOR][MEANDERER]
@@ -1352,7 +1316,7 @@ creature_large_temperate
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:65]{:50
 	[PET_EXOTIC]
-	[TRAINABLE]{+}
+	[TRAINABLE_HUNTING]{+}
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BONECARN]
 	[PREFSTRING:cunning]

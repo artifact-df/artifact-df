@@ -103,7 +103,7 @@ creature_civ_halfling_chp
 	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
-	[TISSUE_LAYER:BY_CATEGORY:FOOT:HAIR:TOP]
+	[TISSUE_LAYER:BY_CATEGORY:FOOT:HAIR:TOP] hairy feet
 	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
 	[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
 	[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
@@ -124,6 +124,8 @@ creature_civ_halfling_chp
 	[SKILL_LEARN_RATE:THROW:75]
 	[SKILL_LEARN_RATE:DODGING:75]
 	[SKILL_LEARN_RATE:SNEAK:75]
+	[SKILL_LEARN_RATE:PLANT:75]
+	[SKILL_LEARN_RATE:COOK:75]
 	[CAN_DO_INTERACTION:PET_ANIMAL]
 		[CDI:ADV_NAME:Pet animal]
 		[CDI:USAGE_HINT:GREETING]
@@ -213,25 +215,25 @@ creature_civ_halfling_chp
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
+		[ATTACK_CONTACT_PERC:115]{:100         Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1200]{+    Revision: kick velocity increased by 20%.}
-		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_CONTACT_PERC:115]{:100         Revision: increased surface area of kicks to make the attack more pulping.}
+		[ATTACK_VELOCITY_MODIFIER:1250]{+      Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:4  Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1200]{+    Revision: kick velocity increased by 20%.}
-		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_CONTACT_PERC:115]{:100         Revision: increased surface area of kicks to make the attack more pulping.}
+		[ATTACK_VELOCITY_MODIFIER:1250]{+      Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:4  Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -241,12 +243,12 @@ creature_civ_halfling_chp
 		[ATTACK_VERB:bite:bites]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:500]{+  reduced velocity by 50%.}
+		[ATTACK_VELOCITY_MODIFIER:500]{+       Revision: reduced bite velocity by 50% for civ creatures.}
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
+		[ATTACK_PREPARE_AND_RECOVER:3:5]{:3:3  Revision: made civ creature biting slower.}
 		[ATTACK_PRIORITY:SECOND]
+		--ATTACK_FLAG_CANLATCH]  removed latching for civ creatures
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
-	    { removed latching }
 	[BABY:1]
 	[GENERAL_BABY_NAME:halfling baby:halfling babies]
 	[CHILD:18]

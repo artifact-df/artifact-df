@@ -85,6 +85,8 @@ Colors added by Bohandas.
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:GOLDEN_YELLOW]{:GOLD
+	[ITEMS_SOFT]
+	[STOCKPILE_THREAD_METAL]{+}
 
 [INORGANIC:SILVER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -125,6 +127,8 @@ Colors added by Bohandas.
 	[BENDING_STRAIN_AT_YIELD:120]
 	[MAX_EDGE:5000]{:10000  Revision:  terrible for edged weapons.}
 	[STATE_COLOR:ALL_SOLID:SILVER]
+	[ITEMS_SOFT]{+}
+	[STOCKPILE_THREAD_METAL]{+}
 
 [INORGANIC:COPPER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -765,7 +769,7 @@ temperature values unknown, used copper
 	[STATE_NAME_ADJ:GAS:boiling billon]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:10]{:6  material cost of 7,2; increased value by 1.5x so it actually gains value/purpose.}
+	[MATERIAL_VALUE:8]{:6  material cost of 7,2
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -806,7 +810,7 @@ value is weighted average of 3 silver and 1 copper
 	[STATE_NAME_ADJ:GAS:boiling sterling silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:16]{:8  material cost of 11,2; increased value by 1.5x so it actually gains value/purpose.}
+	[MATERIAL_VALUE:12] material cost would be 11,2
 	[SPEC_HEAT:230]
 	[MELTING_POINT:11602] unknown source
 	[BOILING_POINT:13892]

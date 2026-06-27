@@ -506,3 +506,203 @@ tile_page_creatures
 	[FILE:images/hides.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:192:128]
+
+[TILE_PAGE:CREATURES_CAMBRIAN]
+	[FILE:images/creatures_cambrian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:192:192]
+
+[TILE_PAGE:STATUES_CREATURES_CAMBRIAN]
+	[FILE:images/statues/creatures_cambrian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:384]
+
+[TILE_PAGE:CREATURES_CARBONIFEROUS]
+	[FILE:images/creatures_carboniferous.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:160]
+
+[TILE_PAGE:STATUES_CREATURES_CARBONIFEROUS]
+	[FILE:images/statues/creatures_carboniferous_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:256]
+
+[TILE_PAGE:CREATURES_CENOZOIC]
+	[FILE:images/creatures_cenozoic.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:1216]
+
+[TILE_PAGE:STATUES_CREATURES_CENOZOIC]
+	[FILE:images/statues/creatures_cenozoic_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1280]
+
+[TILE_PAGE:CREATURES_CRETACEOUS]
+	[FILE:images/creatures_cretaceous.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:1728]
+
+[TILE_PAGE:STATUES_CREATURES_CRETACEOUS]
+	[FILE:images/statues/creatures_cretaceous_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1984]
+
+[TILE_PAGE:CREATURES_DEVONIAN]
+	[FILE:images/creatures_devonian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:320]
+
+[TILE_PAGE:STATUES_CREATURES_DEVONIAN]
+	[FILE:images/statues/creatures_devonian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:384]
+
+[TILE_PAGE:CREATURES_JURASSIC]
+	[FILE:images/creatures_jurassic.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:1024]
+
+[TILE_PAGE:STATUES_CREATURES_JURASSIC]
+	[FILE:images/statues/creatures_jurassic_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1152]
+
+[TILE_PAGE:CREATURES_ORDOVICIAN]
+	[FILE:images/creatures_ordovician.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:64]
+
+[TILE_PAGE:STATUES_CREATURES_ORDOVICIAN]
+	[FILE:images/statues/creatures_ordovician_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:64]
+
+[TILE_PAGE:CREATURES_PERMIAN]
+	[FILE:images/creatures_permian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:416]
+
+[TILE_PAGE:STATUES_CREATURES_PERMIAN]
+	[FILE:images/statues/creatures_permian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:488]
+
+[TILE_PAGE:CREATURES_SILURIAN]
+	[FILE:images/creatures_silurian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:64]
+
+[TILE_PAGE:STATUES_CREATURES_SILURIAN]
+	[FILE:images/statues/creatures_silurian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:64]
+
+[TILE_PAGE:CREATURES_TRIASSIC]
+	[FILE:images/creatures_triassic.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:448:224]
+
+[TILE_PAGE:STATUES_CREATURES_TRIASSIC]
+	[FILE:images/statues/creatures_triassic_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:384]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_CAMBRIAN]
+	[FILE:images/creatures_animal_people_cambrian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:192]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_ORDOVICIAN]
+	[FILE:images/creatures_animal_people_ordovician.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:32]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_SILURIAN]
+	[FILE:images/creatures_animal_people_silurian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:32]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_CARBONIFEROUS]
+	[FILE:images/creatures_animal_people_carboniferous.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:128]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_DEVONIAN]
+	[FILE:images/creatures_animal_people_devonian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:192]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_PERMIAN]
+	[FILE:images/creatures_animal_people_permian.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:224]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_TRIASSIC]
+	[FILE:images/creatures_animal_people_triassic.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:192]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_JURASSIC]
+	[FILE:images/creatures_animal_people_jurassic.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:576]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_CRETACEOUS]
+	[FILE:images/creatures_animal_people_cretaceous.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:992]
+
+[TILE_PAGE:CREATURES_ANIMAL_PEOPLE_CENOZOIC]
+	[FILE:images/creatures_animal_people_cenozoic.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:352:640]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_CAMBRIAN]
+	[FILE:images/statues/creatures_animal_people_cambrian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:384]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_ORDOVICIAN]
+	[FILE:images/statues/creatures_animal_people_ordovician_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:64]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_SILURIAN]
+	[FILE:images/statues/creatures_animal_people_silurian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:64]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_CARBONIFEROUS]
+	[FILE:images/statues/creatures_animal_people_carboniferous_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:256]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_DEVONIAN]
+	[FILE:images/statues/creatures_animal_people_devonian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:384]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_PERMIAN]
+	[FILE:images/statues/creatures_animal_people_permian_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:448]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_TRIASSIC]
+	[FILE:images/statues/creatures_animal_people_triassic_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:384]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_JURASSIC]
+	[FILE:images/statues/creatures_animal_people_jurassic_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1152]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_CRETACEOUS]
+	[FILE:images/statues/creatures_animal_people_cretaceous_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1984]
+
+[TILE_PAGE:STATUES_CREATURES_ANIMAL_PEOPLE_CENOZOIC]
+	[FILE:images/statues/creatures_animal_people_cenozoic_statues.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:1280]

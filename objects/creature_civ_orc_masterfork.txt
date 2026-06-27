@@ -6,13 +6,14 @@ creature_civ_orc_masterwork
     [DESCRIPTION:A large green-skinned humanoid with large, jutting tusks.  Barbaric and primative, most orcs live in raiding camps and constantly war with their neighbors.]
 	[NAME:orc:orcs:orcish]
 	[CASTE_NAME:orc:orcs:orcish]
+	[OUTSIDER_CONTROLLABLE] makes sense orcs can also be outsiders
 	[CREATURE_TILE:'O'][COLOR:3:0:0]
 	[CREATURE_SOLDIER_TILE:153]
 	[CREATURE_CLASS:MAMMAL]
 	[CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]
 	[CREATURE_CLASS:ORC]
 	[CREATURE_CLASS:RUTHLESS]
-	[EVIL]
+	[SAVAGE] used to be evil but i think savage fits better?
 	[INTELLIGENT]
 	[CANOPENDOORS]
 	[BONECARN]
@@ -115,9 +116,6 @@ creature_civ_orc_masterwork
 	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
-	[RELSIZE:BY_CATEGORY:ARM_UPPER:220]{+    Revision: orcs have larger arms than other races.  default: 200 }
-	[RELSIZE:BY_CATEGORY:ARM_LOWER:220]{+    default: 200 }
-	[RELSIZE:BY_CATEGORY:HAND:88]{+           default: 80 }
 	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
 	[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
 	[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
@@ -260,25 +258,25 @@ creature_civ_orc_masterwork
 	[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:punch:punches]
-		[ATTACK_CONTACT_PERC:110]{:100    Revision: increased surface area of punches to make the attack more pulping.}
+		[ATTACK_CONTACT_PERC:115]{:100         Revision: increased surface area of punches to make the attack more pulping.}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:MAIN]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1200]{+    Revision: kick velocity increased by 20%.}
-		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_CONTACT_PERC:115]{:100         Revision: increased surface area of kicks to make the attack more pulping.}
+		[ATTACK_VELOCITY_MODIFIER:1250]{+      Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:4  Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]{+    Revision: another identical kicking attack to increase the chance of using kicks in combat.}
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:kick:kicks]
-		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:1200]{+    Revision: kick velocity increased by 20%.}
-		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:8    Revision: increased attack recovery by 4 ticks due to the new attack.}
+		[ATTACK_CONTACT_PERC:115]{:100         Revision: increased surface area of kicks to make the attack more pulping.}
+		[ATTACK_VELOCITY_MODIFIER:1250]{+      Revision: kick velocity increased by 25%.}
+		[ATTACK_PREPARE_AND_RECOVER:4:8]{:4:4  Revision: increased attack recovery by 4 ticks due to the new attack.}
 		[ATTACK_FLAG_WITH]
 		[ATTACK_PRIORITY:SECOND]
 		[ATTACK_FLAG_BAD_MULTIATTACK]
@@ -288,12 +286,12 @@ creature_civ_orc_masterwork
 		[ATTACK_VERB:bite:bites]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
-		[ATTACK_VELOCITY_MODIFIER:750]{+  reduced velocity by 25%.}
+		[ATTACK_VELOCITY_MODIFIER:500]{+       Revision: reduced bite velocity by 50% for civ creatures.}
 		[ATTACK_FLAG_EDGE]
-		[ATTACK_PREPARE_AND_RECOVER:4:4]{:3:3  Revision: made civ biting slower.}
+		[ATTACK_PREPARE_AND_RECOVER:3:5]{:3:3  Revision: made civ creature biting slower.}
 		[ATTACK_PRIORITY:SECOND]
+		--ATTACK_FLAG_CANLATCH]  removed latching for civ creatures
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
-	    { removed latching }
 	[PROFESSION_NAME:CRAFTSMAN:craftsorc:craftsorcs]
 	[PROFESSION_NAME:FISHERMAN:fisherorc:fisherorcs]
 	[PROFESSION_NAME:HAMMERMAN:hammerorc:hammerorcs]
@@ -367,7 +365,6 @@ creature_civ_orc_masterwork
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  He is spartan and rough, like much of his kin he live in tribal camps and are frequently in conflict with their neighbors.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:NECKBEARD_TISSUE_LAYERS]
-
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]

@@ -3,33 +3,29 @@ reaction_smelter
 [OBJECT:REACTION]
 
 [REACTION:BITUMINOUS_COAL_TO_COKE]
-	[NAME:make coke(9) from bituminous coal]
+	[NAME:make coke from bituminous coal]
 	[BUILDING:SMELTER:NONE]
 	[BUILDING:KILN:NONE]
 	[REAGENT:bituminous coal:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
 	[PRODUCT:100:9:BAR:NO_SUBTYPE:COAL:COKE]
 		[PRODUCT_DIMENSION:150]
-	[WORLDGEN_ENABLED]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:SMELT]
 	[FUEL]
-	[DESCRIPTION:Smelt 9 bars of coke from one unit of bituminous coal.]{+}
+	[DESCRIPTION:Make 9 bars of coke from one unit of bituminous coal.]{+}
 
 [REACTION:LIGNITE_TO_COKE]
-	[NAME:make coke(5) from lignite]
+	[NAME:make coke from lignite]
 	[BUILDING:SMELTER:NONE]
 	[BUILDING:KILN:NONE]
 	[REAGENT:lignite:1:BOULDER:NO_SUBTYPE:INORGANIC:LIGNITE]
 	[PRODUCT:100:5:BAR:NO_SUBTYPE:COAL:COKE]
 		[PRODUCT_DIMENSION:150]
-	[WORLDGEN_ENABLED]
-	[FORTRESS_MODE_ENABLED]
 	[SKILL:SMELT]
 	[FUEL]
-	[DESCRIPTION:Smelt 5 bars of coke from one unit of lignite.]{+}
+	[DESCRIPTION:Make 5 bars of coke from one unit of lignite.]{+}
 
 [REACTION:ADAMANTINE_WAFERS]
-	[NAME:smelt adamantine wafers (1)]
+	[NAME:smelt adamantine wafers]
 	--BUILDING:SMELTER:NONE]{  Revision: moved to the blast furnace.}
 	[BUILDING:BLAST_FURNACE_FFF:NONE]
 	[REAGENT:adamantine thread:15000:THREAD:NO_SUBTYPE:METAL:ADAMANTINE]
@@ -44,7 +40,7 @@ reaction_smelter
 REACTION:BRASS_MAKING  alloys can only be smelted using bars
 
 [REACTION:BRASS_MAKING2]
-[NAME:smelt brass bars (3)]
+[NAME:smelt brass bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:zinc:150:BAR:NO_SUBTYPE:METAL:ZINC]
 [REAGENT:copper:300:BAR:NO_SUBTYPE:METAL:COPPER]
@@ -58,7 +54,7 @@ REACTION:BRASS_MAKING  alloys can only be smelted using bars
 REACTION:BRONZE_MAKING  alloys can only be smelted using bars
 
 [REACTION:BRONZE_MAKING2]
-[NAME:smelt bronze bars (10)]
+[NAME:smelt bronze bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:tin:150:BAR:NO_SUBTYPE:METAL:TIN] 1 bar
 [REAGENT:copper:1350:BAR:NO_SUBTYPE:METAL:COPPER] 9 bars
@@ -72,7 +68,7 @@ REACTION:BRONZE_MAKING  alloys can only be smelted using bars
 REACTION:ELECTRUM_MAKING  alloys can only be smelted using bars
 
 [REACTION:ELECTRUM_MAKING2]
-[NAME:smelt electrum bars (2)]
+[NAME:smelt electrum bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:silver:150:BAR:NO_SUBTYPE:METAL:SILVER]
 [REAGENT:gold:150:BAR:NO_SUBTYPE:METAL:GOLD]
@@ -85,7 +81,7 @@ REACTION:ELECTRUM_MAKING  alloys can only be smelted using bars
 REACTION:BILLON_MAKING  alloys can only be smelted using bars
 
 [REACTION:BILLON_MAKING2]
-[NAME:smelt billon bars (5)]
+[NAME:smelt billon bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:silver:300:BAR:NO_SUBTYPE:METAL:SILVER] 2 bars
 [REAGENT:copper:450:BAR:NO_SUBTYPE:METAL:COPPER] 3 bars
@@ -99,7 +95,7 @@ REACTION:BILLON_MAKING  alloys can only be smelted using bars
 REACTION:PEWTER_FINE_MAKING  alloys can only be smelted using bars
 
 [REACTION:PEWTER_FINE_MAKING2]
-[NAME:smelt fine pewter bars (10)]
+[NAME:smelt fine pewter bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:tin:1200:BAR:NO_SUBTYPE:METAL:TIN] 8 bars
 [REAGENT:copper:150:BAR:NO_SUBTYPE:METAL:COPPER] 1 bar
@@ -116,7 +112,7 @@ REACTION:PEWTER_TRIFLE_MAKING  removed
 REACTION:PEWTER_TRIFLE_MAKING2  removed
 
 [REACTION:PEWTER_LAY_MAKING]
-[NAME:smelt lay pewter bars (10)]
+[NAME:smelt lay pewter bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:tin:1200:BAR:NO_SUBTYPE:METAL:TIN] 8 bars
 [REAGENT:copper:150:BAR:NO_SUBTYPE:METAL:COPPER] 1 bar
@@ -129,11 +125,11 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [SKILL_IP:75]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 [REACTION:PIG_IRON_MAKING]
-[NAME:smelt pig iron bars (1)]
+[NAME:smelt pig iron bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:iron:300:BAR:NO_SUBTYPE:METAL:IRON]{:150:BAR  requires an additional bar of iron
 [REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
-[REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
+[REAGENT:coal/coke:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 [PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:pig iron]{+}
 [FUEL]
@@ -141,12 +137,12 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [DESCRIPTION:Smelt 1 pig iron bar from 2 iron bars, 1 calcium carbonate containing stone boulder, and 1 bar of coal/coke (in addition to that used for fuel).]{+}
 
 [REACTION:STEEL_MAKING]
-[NAME:smelt steel bars (2)]
+[NAME:smelt steel bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:iron:150:BAR:NO_SUBTYPE:METAL:IRON]
 [REAGENT:pig iron:150:BAR:NO_SUBTYPE:METAL:PIG_IRON]
 [REAGENT:calcium carbonate boulder:1:BOULDER:NO_SUBTYPE:NONE:NONE][REACTION_CLASS:FLUX]
-[REAGENT:coal:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
+[REAGENT:coal/coke:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
 [PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
 	[PRODUCT_TOKEN:steel]{+}
 [FUEL]
@@ -155,7 +151,7 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [SKILL_IP:45]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
 [REACTION:NICKEL_SILVER_MAKING]
-[NAME:smelt nickel silver bars (5)]
+[NAME:smelt nickel silver bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:nickel:150:BAR:NO_SUBTYPE:METAL:NICKEL]
 [REAGENT:copper:450:BAR:NO_SUBTYPE:METAL:COPPER]
@@ -168,7 +164,7 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [SKILL_IP:37]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 [REACTION:BLACK_BRONZE_MAKING]
-[NAME:smelt black bronze bars (10)]
+[NAME:smelt black bronze bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:copper:1200:BAR:NO_SUBTYPE:METAL:COPPER]
 [REAGENT:silver:150:BAR:NO_SUBTYPE:METAL:SILVER]
@@ -181,7 +177,7 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [SKILL_IP:112]{+ 30 default  revision: advanced smelting should yield more experience than normal. 1.5x multiplier.}
 
 [REACTION:STERLING_SILVER_MAKING]
-[NAME:smelt sterling silver bars (10)]
+[NAME:smelt sterling silver bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:silver:1350:BAR:NO_SUBTYPE:METAL:SILVER] 9 bars
 [REAGENT:copper:150:BAR:NO_SUBTYPE:METAL:COPPER] 1 bar
@@ -193,7 +189,7 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [SKILL_IP:300]{+ 30 default  revision: increase skill gain so you get the same amount of skill per bar as vanilla.}
 
 [REACTION:ROSE_GOLD_MAKING]
-[NAME:smelt rose gold bars (4)]
+[NAME:smelt rose gold bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:gold:450:BAR:NO_SUBTYPE:METAL:GOLD]
 [REAGENT:copper:150:BAR:NO_SUBTYPE:METAL:COPPER]
@@ -204,7 +200,7 @@ REACTION:PEWTER_TRIFLE_MAKING2  removed
 [DESCRIPTION:Smelt 4 rose gold bars from 3 gold bars and 1 copper bar.]{+}
 
 [REACTION:BISMUTH_BRONZE_MAKING]
-[NAME:smelt bismuth bronze bars (10)]
+[NAME:smelt bismuth bronze bars]
 [BUILDING:SMELTER:NONE]
 [REAGENT:bronze:1350:BAR:NO_SUBTYPE:METAL:BRONZE]
 [REAGENT:bismuth:150:BAR:NO_SUBTYPE:METAL:BISMUTH]
