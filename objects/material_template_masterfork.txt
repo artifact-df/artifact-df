@@ -66,7 +66,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  Revision: 55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1000]
 	[LIQUID_DENSITY:NONE]
@@ -422,7 +422,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:750]
 	[LIQUID_DENSITY:NONE]
@@ -467,7 +467,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1300]
 	[LIQUID_DENSITY:NONE]
@@ -514,7 +514,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:600]{:500}
 	[LIQUID_DENSITY:NONE]
@@ -559,7 +559,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  Revision: 55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1100] more dense
 	[LIQUID_DENSITY:NONE]
@@ -608,7 +608,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1100] more dense
 	[LIQUID_DENSITY:NONE]
@@ -656,7 +656,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:11773]{:NONE   Revision: 985 C, starts combusting.}
 	[HEATDAM_POINT:10250]  138.8 C
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1100] more dense
 	[LIQUID_DENSITY:NONE]
@@ -704,7 +704,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1430] more dense
 	[LIQUID_DENSITY:NONE]
@@ -750,7 +750,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:11773]{:NONE   Revision: 985 C, starts combusting.}
 	[HEATDAM_POINT:10250]  138.8 C
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1100] more dense
 	[LIQUID_DENSITY:NONE]
@@ -800,7 +800,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:660] more dense
 	[LIQUID_DENSITY:NONE]
@@ -851,7 +851,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:825] more dense
 	[LIQUID_DENSITY:NONE]
@@ -899,7 +899,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:11773]{:NONE   Revision: 985 C, starts combusting.}
 	[HEATDAM_POINT:10250]  138.8 C
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1000]
 	[LIQUID_DENSITY:NONE]
@@ -946,7 +946,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1000]
 	[LIQUID_DENSITY:NONE]
@@ -1161,7 +1161,7 @@ material_template_masterfork
 	[MELTING_POINT:NONE]
 	[BOILING_POINT:10171]{:NONE   Revision: 95 C, 3rd degree burn.}
 	[HEATDAM_POINT:10099]{:10250  Revision: 55 C, 2nd degree burn}
-	[COLDDAM_POINT:9960]{:9900    Revision: -22.2 C, beware of glacial frostbite.}
+	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
 	[SOLID_DENSITY:1060]
 	[LIQUID_DENSITY:NONE]
