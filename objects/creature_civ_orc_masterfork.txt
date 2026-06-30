@@ -13,7 +13,6 @@ creature_civ_orc_masterwork
 	[CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]
 	[CREATURE_CLASS:ORC]
 	[CREATURE_CLASS:RUTHLESS]
-	[SAVAGE] used to be evil but i think savage fits better?
 	[INTELLIGENT]
 	[CANOPENDOORS]
 	[BONECARN]

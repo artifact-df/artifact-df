@@ -3,7 +3,7 @@ creature_civ_human_masterfork
 [OBJECT:CREATURE]
 
 [CREATURE:HUMAN]
-	[DESCRIPTION:A medium-sized woman of great ambition and potential.]
+	[DESCRIPTION:A medium-sized creature prone to great ambition.]
 	[NAME:human:humans:human]
 	[CASTE_NAME:human:humans:human]
 	[OUTSIDER_CONTROLLABLE]

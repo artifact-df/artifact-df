@@ -15,7 +15,6 @@ creature_civ_elf_dark_masterfork
 	[CREATURE_CLASS:DARK_ELF]
 	[CREATURE_CLASS:ELF]
 	[CREATURE_CLASS:RUTHLESS]
-	[EVIL]
 	[INTELLIGENT]
 	[CANOPENDOORS][TRAPAVOID][LOCKPICKER]
 	[TRANCES]  can enter battle trances
