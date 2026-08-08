@@ -6,14 +6,14 @@ item_ammo_masterfork
 [NAME:bolt:bolts]
 [CLASS:BOLT]
 [SIZE:150]
-[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
+[ATTACK:EDGE:5:1000:impact:impacts:head:1000]{:stab:stabs:NO_SUB:1000  Revision: reworded stabs into impacts as stabbing sounds odd from an inanimate object, also added 'head' as a part for combat log flavor.}
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_ARROWS]
 [NAME:arrow:arrows]
 [CLASS:ARROW]
 [SIZE:150]
-[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
+[ATTACK:EDGE:5:1000:impact:impacts:head:1000]{:stab:stabs:NO_SUB:1000}
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_BLOWDARTS]
@@ -27,14 +27,49 @@ item_ammo_masterfork
 [NAME:ballista arrow:ballista arrows]
 [CLASS:BALLISTA]
 
-[ITEM_AMMO:ITEM_AMMO_ARROWS_ENCHANTED]
+
+	// CUSTOM AMMO TYPES //
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_ENCHANTED] magical elven fluff arrows
 [NAME:singing arrow:singing arrows]
 [CLASS:ARROW]
 [SIZE:150]
-[ATTACK:EDGE:10:12000:stab:stabs:NO_SUB:3000]
+[ATTACK:EDGE:10:12000:impact:impacts:head:3000]
 
+[ITEM_AMMO:ITEM_AMMO_GREATARROWS] From Taffer's Revised
+[NAME:greatarrow:greatarrows]
+[CLASS:ARROW]
+[SIZE:150]
+[ATTACK:EDGE:8:1200:impact:impacts:head:1200] more velocity
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
-  // THROWN WEAPON AMMO
+[ITEM_AMMO:ITEM_AMMO_BOLTS_BROADHEAD]  bolts that should be good for lightly armored targets that shred internal organs
+[NAME:broadhead bolt:broadhead bolts]
+[CLASS:BOLT]
+[SIZE:165] +10%
+[ATTACK:EDGE:25:1500:impact:impacts:head:500]  { +++contact area, ++penetration, --velocity }
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_AMMO:ITEM_AMMO_BOLTS_HAMMERHEAD] bolts that should be good against armored targets
+[NAME:hammerhead bolt:hammerhead bolts]
+[CLASS:BOLT]
+[SIZE:135] -10%
+[ATTACK:BLUNT:4:1000:impact:impacts:head:1500]  { --contact area, +++velocity }
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_BROADHEAD] copy of broadhead bolts
+[NAME:broadhead arrow:broadhead arrows]
+[CLASS:ARROW]
+[SIZE:165] +10%
+[ATTACK:EDGE:25:1500:impact:impacts:head:500]  { +++contact area, ++penetration, --velocity }
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_AMMO:ITEM_AMMO_ARROWS_HAMMERHEAD] copy of hammerhead bolts
+[NAME:hammerhead arrow:hammerhead arrows]
+[CLASS:ARROW]
+[SIZE:135] -10%
+[ATTACK:BLUNT:4:1000:impact:impacts:head:1500]  { --contact area, +++velocity }
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 [ITEM_AMMO:ITEM_AMMO_THROWING_DAGGERS_ZM5]
 [NAME:throwing dagger:throwing daggers]
@@ -52,13 +87,6 @@ item_ammo_masterfork
 [ATTACK:BLUNT:20:50:impact:impacts:NO_SUB:1000]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
-[ITEM_AMMO:ITEM_AMMO_GREATARROWS] From Taffer's Revised
-[NAME:greatarrow:greatarrows]
-[CLASS:ARROW]
-[SIZE:200]
-[ATTACK:EDGE:10:1100:stab:stabs:NO_SUB:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-
 [ITEM_AMMO:ITEM_AMMO_THROWING_AXES_ZM5]
 [NAME:throwing axe:throwing axes]
 [CLASS:THROWN]
@@ -70,56 +98,26 @@ item_ammo_masterfork
 [NAME:javelin:javelins]
 [CLASS:THROWN]
 [SIZE:200]
-[ATTACK:EDGE:10:1000:stab:stabs:NO_SUB:600]
+[ATTACK:EDGE:10:1000:stab:stabs:head:600]
 	[ATTACK_PREPARE_AND_RECOVER:2:4]
 
-[ITEM_AMMO:ITEM_AMMO_PELLETS_ZM5]  better broadhead arrows
-[NAME:blunderbuss shot:blunderbuss shots]
-[CLASS:PELLET]
-[SIZE:125]
-[ATTACK:EDGE:10:1500:stab:stabs:NO_SUB:900]
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-
-  better hammerhead bolts
-[ITEM_AMMO:ITEM_AMMO_HANDCANNON_SHELL_ZM5]
+[ITEM_AMMO:ITEM_AMMO_HANDCANNON_SHELL_ZM5]  approx. 50% better hammerhead bolts
 [NAME:rifle bullet:rifle bullets]
 [CLASS:HANDCANNON_SHELL]
-[SIZE:175]
-[ATTACK:BLUNT:4:650:impact:impacts:NO_SUB:2000]  { --contact area, -penetration, +++velocity }
+[SIZE:125]
+[ATTACK:BLUNT:2:1000:impact:impacts:head:2250]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
-  better broadhead bolts
-[ITEM_AMMO:ITEM_AMMO_HANDCANNON_SHRAPNEL_SHELL_ZM5]
-[NAME:rifle shrapnel shell:rifle shrapnel shells]
+[ITEM_AMMO:ITEM_AMMO_HANDCANNON_SHRAPNEL_SHELL_ZM5]  approx. 50% better broadhead bolts
+[NAME:rifle shrapnel bullet:rifle shrapnel bullets]
 [CLASS:HANDCANNON_SHELL]
-[SIZE:175]
-[ATTACK:EDGE:30:1750:stab:stabs:NO_SUB:650]  { +++contact area, ++penetration, --velocity }
+[SIZE:125]
+[ATTACK:EDGE:37:2250:impact:impacts:head:750]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
-[ITEM_AMMO:ITEM_AMMO_BOLTS_BROADHEAD]
-[NAME:broadhead bolt:broadhead bolts]
-[CLASS:BOLT]
-[SIZE:150]
-[ATTACK:EDGE:25:1500:stab:stabs:NO_SUB:600]  { +++contact area, ++penetration, --velocity }
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-
-[ITEM_AMMO:ITEM_AMMO_BOLTS_HAMMERHEAD]
-[NAME:hammerhead bolt:hammerhead bolts]
-[CLASS:BOLT]
-[SIZE:150]
-[ATTACK:BLUNT:5:500:impact:impacts:NO_SUB:1500]  { --contact area, -penetration, +++velocity }
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-
-[ITEM_AMMO:ITEM_AMMO_ARROWS_BROADHEAD]
-[NAME:broadhead arrow:broadhead arrows]
-[CLASS:ARROW]
-[SIZE:150]
-[ATTACK:EDGE:25:1500:stab:stabs:NO_SUB:600]  { +++contact area, ++penetration, --velocity }
-	[ATTACK_PREPARE_AND_RECOVER:3:3]
-
-[ITEM_AMMO:ITEM_AMMO_ARROWS_HAMMERHEAD]
-[NAME:hammerhead arrow:hammerhead arrows]
-[CLASS:ARROW]
-[SIZE:150]
-[ATTACK:BLUNT:5:500:impact:impacts:NO_SUB:1500]  { --contact area, -penetration, +++velocity }
+[ITEM_AMMO:ITEM_AMMO_PELLETS_ZM5]  slightly better broadhead arrows
+[NAME:blunderbuss shot:blunderbuss shots]
+[CLASS:PELLET]
+[SIZE:100]
+[ATTACK:EDGE:30:1600:impact:impacts:head:600]
 	[ATTACK_PREPARE_AND_RECOVER:3:3]

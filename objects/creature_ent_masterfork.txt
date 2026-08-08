@@ -10,8 +10,6 @@ creature_ent_masterfork
 	[PETVALUE:10000] --should never arrive in a cage, too large
 	[NATURAL]
 	[ALL_ACTIVE]
-	[TRAINABLE_WAR]
-	[PET_EXOTIC]
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[CHILD:3][GENERAL_CHILD_NAME:ent seedling:ent seedlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[FANCIFUL]
@@ -32,7 +30,6 @@ creature_ent_masterfork
 	[NO_THOUGHT_CENTER_FOR_MOVEMENT]
 	[PRONE_TO_RAGE:5]
 	[BUILDINGDESTROYER:2]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	--CURIOUSBEAST_GUZZLER]
 	[SMELL_TRIGGER:1] skill: 1 is best, 50 is default. Ents have ultra-detection.
 	[PREFSTRING:slow speech]

@@ -156,7 +156,7 @@ creature_large_mountain
 	[DESCRIPTION:A horned person with the head of a mountain goat.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'g']
 	[COLOR:7:0:1]
@@ -323,7 +323,7 @@ creature_large_mountain
 	[DESCRIPTION:A person with the head and fur of a hoary marmot.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]

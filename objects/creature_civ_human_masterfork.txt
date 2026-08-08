@@ -17,7 +17,6 @@ creature_civ_human_masterfork
 	[BENIGN]
 	[PREFSTRING:stature]
 	[PREFSTRING:individualistic nature]{+}
-	[GNAWER:picked]{+  Revision: creature can get out of non-metal cages.}
 	// BASE SKILLS //
 	[NATURAL_SKILL:DISCIPLINE:1]{+}
 	[NATURAL_SKILL:SWIMMING:1]{+}

@@ -17,7 +17,6 @@ creature_civ_halfling_chp
 	[BENIGN]
 	[PREFSTRING:bravery]
 	[PREFSTRING:large, hairy feet]
-	[GNAWER:picked]{+  revision: creature can get out of non-metal cages.}
 	// BASE SKILLS //
 	[NATURAL_SKILL:DISCIPLINE:1]
 	[NATURAL_SKILL:SWIMMING:1]

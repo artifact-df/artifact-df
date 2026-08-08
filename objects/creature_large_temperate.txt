@@ -14,8 +14,8 @@ creature_large_temperate
 	[PET]
 	[TRAINABLE]
 	[MOUNT_EXOTIC]
-	[LARGE_ROAMING][FREQUENCY:2]
-	[POPULATION_NUMBER:2:3]
+	[LARGE_ROAMING][FREQUENCY:20]{:2}
+	[POPULATION_NUMBER:20:30]{:2:3}
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
@@ -175,10 +175,9 @@ creature_large_temperate
 	[NATURAL]
 	[TRAINABLE]{+}
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
-	[LARGE_ROAMING]--FREQUENCY:4]
+	[LARGE_ROAMING][FREQUENCY:25]{:4}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	--CURIOUSBEAST_EATER] removed or they break caravans
@@ -320,7 +319,7 @@ creature_large_temperate
 	[TRANCES]{+  can enter battle trances.}
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
@@ -379,7 +378,7 @@ creature_large_temperate
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[FREQUENCY:100]{+}
 	[CLUSTER_NUMBER:1:4]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
@@ -518,7 +517,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the head of a deer.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'d']
 	[COLOR:6:0:0]
@@ -568,13 +567,13 @@ creature_large_temperate
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
+	[FREQUENCY:100]{+}
 	[CLUSTER_NUMBER:1:1]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BONECARN]
 	[BENIGN]
 	[TRAINABLE_HUNTING]{+}
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[GRASSTRAMPLE:0]
 	[SOUND:ALERT:100:1000:VOCALIZATION:yap:yaps:tiny yapping]{+}
@@ -694,7 +693,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the head and tail of a fox.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'f']
 	[COLOR:4:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -746,10 +745,9 @@ creature_large_temperate
 	[NATURAL]
 	[PETVALUE:25]
 	[PET_EXOTIC]
-	[LARGE_ROAMING][FREQUENCY:10]
+	[LARGE_ROAMING][FREQUENCY:50]{:10}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:3][LOOSE_CLUSTERS]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[CURIOUSBEAST_EATER]
@@ -871,7 +869,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the mask and tail of a raccoon.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'r']
 	[COLOR:7:0:0]
@@ -924,12 +922,12 @@ creature_large_temperate
 	[CURIOUSBEAST_ITEM]
 	[CURIOUSBEAST_GUZZLER]{+}
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:10}
+	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:200:1000]{:20:100
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
-	[BIOME:SHRUBLAND_TEMPERATE]
-	[BIOME:SAVANNA_TEMPERATE]
-	[BIOME:GRASSLAND_TEMPERATE]
+	[BIOME:SHRUBLAND_TROPICAL]{:SHRUBLAND_TEMPERATE}  Revision: changed the biomes so they don't compete to spawn with other temperate creatures.
+	[BIOME:SAVANNA_TROPICAL]{:SAVANNA_TEMPERATE}
+	[BIOME:GRASSLAND_TROPICAL]{:GRASSLAND_TEMPERATE}
 	[PREFSTRING:mischief]
 	[PREFSTRING:ungodly ability to get into trouble]{+}
 	[PREFSTRING:quick hands and adept feet]{+}
@@ -1044,7 +1042,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the head and tail of a rhesus macaque.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1093,10 +1091,9 @@ creature_large_temperate
 	[BIOME:FOREST_TROPICAL_CONIFER]{:ANY_TROPICAL_FOREST
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[LARGE_ROAMING][FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:20]{:5}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CARNIVORE][NATURAL]
 	[PETVALUE:100]
 	[PET_EXOTIC]
@@ -1253,7 +1250,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the head and tail of a cougar.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
@@ -1305,14 +1302,13 @@ creature_large_temperate
 	[CREATURE_TILE:'w'][COLOR:7:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[LARGE_PREDATOR][MEANDERER]
-	[LARGE_ROAMING]--FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[BIOME:TUNDRA]
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:65]{:50
 	[PET_EXOTIC]
@@ -1473,7 +1469,7 @@ creature_large_temperate
 	[TRANCES]{+  can enter battle trances.}
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'w']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1527,7 +1523,7 @@ creature_large_temperate
 	[BIOME:GRASSLAND_TEMPERATE]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[FREQUENCY:10]{+}
 	[CLUSTER_NUMBER:1:4]
 	[NO_WINTER][BENIGN][MEANDERER]
 	[VISION_ARC:50:310]
@@ -1648,7 +1644,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the head and fur of a groundhog.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'g']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1702,6 +1698,7 @@ creature_large_temperate
 	[BIOME:RIVER_TROPICAL_BRACKISHWATER]
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:50:100]{:5:10
+	[FREQUENCY:60]{+}
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
@@ -1709,7 +1706,6 @@ creature_large_temperate
 	[PET_EXOTIC]
 	--MOUNT_EXOTIC]
 	[AMBUSHPREDATOR]{+}
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CANNOT_JUMP]
 	[LARGE_PREDATOR]
 	[GRASSTRAMPLE:20]
@@ -1842,7 +1838,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the head and tail of an alligator.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]{:CLAW:CLAW_TEMPLATE
@@ -1889,12 +1885,12 @@ creature_large_temperate
 	[GENERAL_CHILD_NAME:buzzard hatchling:buzzard hatchlings]
 	[CREATURE_TILE:'b'][COLOR:0:0:1]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CLUSTER_NUMBER:5:10]
 	[LOOSE_CLUSTERS]
 	[PETVALUE:30]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:20]{+}
 	[CURIOUSBEAST_EATER]
 	[PET_EXOTIC]
 	[FLIER]
@@ -2028,7 +2024,7 @@ creature_large_temperate
 	[DESCRIPTION:A person with the head and wings of a buzzard.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'b']
 	[COLOR:0:0:1]
 
@@ -2090,7 +2086,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[FREQUENCY:10]{+}
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]{:ANY_TEMPERATE_FOREST
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]{+}
 	[GRASSTRAMPLE:0]
@@ -2290,7 +2286,7 @@ Pandas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A humanoid creature with the head and belly of a panda.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'P']
 	[COLOR:7:0:1]
@@ -2321,9 +2317,9 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[STANDARD_GRAZER]
 	[AMPHIBIOUS]
 	[LARGE_ROAMING]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[POPULATION_NUMBER:200:300]{:20:30
 	[CLUSTER_NUMBER:5:10]
+	[FREQUENCY:100]{+}
 	[BIOME:ANY_TROPICAL_WETLAND]{:ANY_WETLAND}
 	[GRASSTRAMPLE:0]
 	[MEANDERER]
@@ -2485,7 +2481,7 @@ Capybaras were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A humanoid with the head of a capybara.  It is fond of swimming.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:0]
 
@@ -2507,7 +2503,7 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:4:12]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[FREQUENCY:100]{+}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:ANY_TEMPERATE_FOREST]
 	[BIOME:SHRUBLAND_TEMPERATE]
@@ -2648,7 +2644,7 @@ Badgers were sponsored by the generous contributions of the Bay 12 community.
 	[TRANCES]{+  can enter battle trances.}
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'b']
 	[COLOR:7:0:0]
@@ -2722,10 +2718,10 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
+	[FREQUENCY:100]{+}
 	[BIOME:FOREST_TAIGA]
 	[BIOME:FOREST_TEMPERATE_CONIFER]{:ANY_TEMPERATE_FOREST}
 	--BENIGN][MEANDERER][NATURAL][PET_EXOTIC][MOUNT_EXOTIC]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[MAXAGE:15:25]
 	[DIURNAL]
 	[HOMEOTHERM:10067]
@@ -2874,7 +2870,7 @@ Moose were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A humanoid with the head and antlers of a moose.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
@@ -2933,7 +2929,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[FREQUENCY:10]{+}
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]{:ANY_TEMPERATE_FOREST
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]{+}
 	[STANDARD_GRAZER]
@@ -3093,7 +3089,7 @@ Red pandas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A medium-sized, walking red panda with arms and a tail.  It prefers the forest and its beloved trees.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'p']
 	[COLOR:4:0:0]

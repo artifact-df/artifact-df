@@ -32,7 +32,6 @@ creature_standard
 	[PERSONALITY:ORDERLINESS:0:25:50]
 	[PERSONALITY:DUTIFULNESS:0:25:50]
 	[PERSONALITY:BASHFUL:0:0:0]{+}
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
@@ -214,8 +213,6 @@ creature_standard
 		[CHILDNAME:gremlin boy:gremlin boys]{+}
 		[DESCRIPTION:A pint-sized, goblin-like man with sharply-defined features, leathery skin, and wide, pointy ears.  He has a toothy, unusually wide smile; he seems to delight in chaos and mischief.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:GREEN:1]
@@ -238,7 +235,7 @@ creature_standard
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:50:100]{:5:10
 	[BUILDINGDESTROYER:2]
-	[NATURAL_SKILL:DISCIPLINE:5]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[LARGE_PREDATOR]
 	[CAN_LEARN][SLOW_LEARNER]
 	[EVIL]
@@ -300,7 +297,7 @@ creature_standard
 	[BODY_SIZE:0:0:10000]
 	[BODY_SIZE:1:168:50000]
 	[BODY_SIZE:10:0:250000]
-	[BODY_SIZE:1000:0:300000]{+  Revision: 20% greater size after a millennium.}
+	[BODY_SIZE:1000:0:312500]{+  Revision: +25% max-size after a millennium.}
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tough.}
 	[SELECT_TISSUE:HAIR]{+}
 		[YARN]{+
@@ -455,8 +452,6 @@ creature_standard
 		[BABYNAME:troll baby boy:troll baby boys]{+}
 		[CHILDNAME:troll boy:troll boys]{+}
 		[DESCRIPTION:A huge, monstrous man with large tusks, curved horns, broad shoulders, and a strong back.  Enslaved by goblins and orcs, his shaggy fur is sheared for wool; he also does brutish work for his masters.  He's always naked but it's hard to say if that's by choice.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:GRAY:1]
@@ -500,7 +495,6 @@ creature_standard
 	[SMELL_TRIGGER:30]{+}
 	[BONECARN]
 	[FANCIFUL]{+}
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CURIOUSBEAST_EATER]{+}
 	[CURIOUSBEAST_GUZZLER]{+}
 	[APPLY_CREATURE_VARIATION:CREATURE_PERSONALITY_ROWDY]{+}
@@ -771,7 +765,7 @@ creature_standard
 	[NATURAL_SKILL:BITE:3]{+}
 	[NATURAL_SKILL:DODGING:3]{+}
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:5]{+}
-	[NATURAL_SKILL:DISCIPLINE:5]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[BODY:QUADRUPED_NECK_HOOF:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:HEAD_HORN:EYELIDS:CHEEKS]
 	[PET]
 	[MOUNT]
@@ -896,8 +890,6 @@ creature_standard
 		[CASTE_NAME:unicorn stallion:unicorns:unicorn]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[POP_RATIO:750]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 	[TL_COLOR_MODIFIER:WHITE:10:BLACK:1]
@@ -944,7 +936,6 @@ creature_standard
 		[BENDING_YIELD:600000]{+
 		[BENDING_FRACTURE:900000]{+
 		[BENDING_STRAIN_AT_YIELD:415]{+
-		[MAX_EDGE:11000]{+
 		[ABSORPTION:100]{+
 		[IMPLIES_ANIMAL_KILL]{+
 		[HORN]{+
@@ -958,71 +949,63 @@ creature_standard
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:4]
 
-[CREATURE:DRAGON] red dragon by deon used as base
-	[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years and are drawn to great wealth.  *Its scales are akin to metal.]
+[CREATURE:DRAGON]
+	[DESCRIPTION:A gigantic reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years.]
 	[NAME:dragon:dragons:draconic]
 	[CASTE_NAME:dragon:dragons:draconic]
-	[CREATURE_TILE:'D'][COLOR:4:0:0]
+	[CREATURE_TILE:'D'][COLOR:2:0:0]
 	[CHILD:10][CHILDNAME:dragon hatchling:dragon hatchlings]
 	[PETVALUE:10000]
 	[PET_EXOTIC]
-	[TRAINABLE_WAR]{TRAINABLE  Revision: dragons are too deadly to hunt.}
+	[TRAINABLE_WAR]{:TRAINABLE  Revision: too big for hunting training.}
 	[MOUNT_EXOTIC]
 	[BIOME:ANY_LAND]
 	[FREQUENCY:10]{:5}
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
-	    [CDI:TOKEN:BREATHE_FIRE]
+		[CDI:TOKEN:BREATHE_FIRE]
 		[CDI:ADV_NAME:Breathe fire]
 		[CDI:USAGE_HINT:ATTACK]
 		[CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]
 		[CDI:FLOW:DRAGONFIRE]
 		[CDI:TARGET:C:LINE_OF_SIGHT]
-		[CDI:TARGET_RANGE:C:10]
+		[CDI:TARGET_RANGE:C:15]
 		[CDI:MAX_TARGET_NUMBER:C:1]
-		[CDI:WAIT_PERIOD:250]{:50  Revision: was way too often.}
+		[CDI:WAIT_PERIOD:150]{:50  way too often.}
 	[FIREIMMUNE_SUPER]
 	[FANCIFUL]
 	[LARGE_PREDATOR]
-	[BONECARN]
 	[MEGABEAST][DIFFICULTY:10]
 		[ATTACK_TRIGGER:2:3:4]{:3:3:3  Revision: dragon attacks should be more reliant on wealth.}
 	[SPHERE:FIRE]
 	[SPHERE:WEALTH]
-	[SPHERE:MOUNTAINS]{+}
 	[CURIOUSBEAST_ITEM]
 	[NOFEAR][NOEXERT]
+	[PRONE_TO_RAGE:5]{+}
 	[BUILDINGDESTROYER:2]
-	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
-	[FLIER]
-	[SMELL_TRIGGER:12]
-	[LOW_LIGHT_VISION:10000]
-	[PRONE_TO_RAGE:5]
-	[GRASSTRAMPLE:100]
+	[GRASSTRAMPLE:50]
+	[BONECARN]
 	[PREFSTRING:terrible majesty]
-	[SYNDROME_DILUTION_FACTOR:FEAR:150]{+}
 	[SOUND:ALERT:100:15000:VOCALIZATION:roar, spewing cinders and ash:roars, spewing cinders and ash:the echoing roar of an ancient dragon]{+}
 	[SOUND:ALERT:50:5000:VOCALIZATION:growl:lets out a deep, rumbling growl that shakes your bones:a deep, rumbling growl from far away]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:25:5000:VOCALIZATION:growl idly:growls idly:an unsettling growl]{+}
-	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
-	[BODY:QUADRUPED_NECK:TAIL:2WINGS:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]{+2WINGS}
+	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:4TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
-		--REMOVE_MATERIAL:SKIN]
-		--REMOVE_MATERIAL:LEATHER]
-		--REMOVE_MATERIAL:PARCHMENT]
+		[REMOVE_MATERIAL:SKIN]
+		[REMOVE_MATERIAL:LEATHER]
+		[REMOVE_MATERIAL:PARCHMENT]
 		[REMOVE_MATERIAL:HAIR]
-		--USE_MATERIAL_TEMPLATE:SCALE:SCALE_TEMPLATE]
+		[USE_MATERIAL_TEMPLATE:SCALE:DRAGONSCALE_TEMPLATE]{:SCALE_TEMPLATE  Revision: dragons have extremely strong scales.}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
-		--REMOVE_TISSUE:SKIN]
+		[REMOVE_TISSUE:SKIN]
 		[REMOVE_TISSUE:HAIR]
-		--USE_TISSUE_TEMPLATE:SCALE:SCALE_TEMPLATE]
-	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]{:SCALE:FAT:MUSCLE:BONE:CARTILAGE}
+		[USE_TISSUE_TEMPLATE:SCALE:SCALE_TEMPLATE]
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SCALE:FAT:MUSCLE:BONE:CARTILAGE]
 	[USE_MATERIAL_TEMPLATE:CLAW:NAIL_TEMPLATE]
 	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]
 	[BODY_DETAIL_PLAN:LEATHERY_EGG_MATERIALS]
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
-	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]{:SCALE:BY_CATEGORY:THROAT}
+	 [PLUS_TISSUE_LAYER:SCALE:BY_CATEGORY:THROAT]
 		[TL_MAJOR_ARTERIES]
 	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
 	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
@@ -1033,6 +1016,7 @@ creature_standard
 	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
 	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
 	[CREATURE_CLASS:GENERAL_POISON]
+	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:175]{+  Revision: very resistant to most poisons.}
 	[GETS_WOUND_INFECTIONS]
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
@@ -1040,48 +1024,32 @@ creature_standard
 	[BODY_SIZE:0:0:6000]
 	[BODY_SIZE:10:0:5000000]
 	[BODY_SIZE:1000:0:25000000]
-	[BODY_SIZE:2000:0:33250000]{+  revision: 33% larger over two millenniums.}
-	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:500]
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:500]
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:500]
-	[SET_BP_GROUP:BY_CATEGORY:TOOTH]{+}
-		[BP_APPEARANCE_MODIFIER:GAPS:0:70:90:100:110:130:150]
-			[APP_MOD_NOUN:pointy teeth:PLURAL]
-		[BP_APPEARANCE_MODIFIER:LENGTH:90:92:94:100:106:108:110]
-			[APP_MOD_IMPORTANCE:900]
-			[APP_MOD_NOUN:pointy teeth:PLURAL]
-			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
-		[BP_APPEARANCE_MODIFIER:BROADNESS:80:82:84:85:86:88:90]
-			[APP_MOD_IMPORTANCE:1000]
-			[APP_MOD_NOUN:pointy teeth:PLURAL]
-			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]
-	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
+	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:chomp:chomps]{:bite:bites
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
-	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]{  Revision: a powerful edged scratching attack.}
+	[ATTACK:CLAW:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]
 		[ATTACK_SKILL:GRASP_STRIKE]
-		[ATTACK_VERB:claw:claws]{:scratch:scratches
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:claw:claws]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-	[APPLY_CREATURE_VARIATION:TAIL_ATTACK]{+ tail slap attack.}
 	[ALL_ACTIVE]
-	[MENT_ATT_RANGE:WILLPOWER:3000:3500:3750:4000:4250:4500:5000]            +++
-	[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4500:5000]             +++
-	[PHYS_ATT_RANGE:TOUGHNESS:3000:3500:3750:4000:4250:4500:5000]            +++
-	[PHYS_ATT_RANGE:ENDURANCE:3000:3500:3750:4000:4250:4500:5000]            +++
-	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                  -
+	[MENT_ATT_RANGE:WILLPOWER:3000:3500:3750:4000:4250:4500:5000]
+	[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4500:5000]{+}             +++
+	[PHYS_ATT_RANGE:TOUGHNESS:3000:3500:3750:4000:4250:4500:5000]{+}            +++
+	[PHYS_ATT_RANGE:ENDURANCE:3000:3500:3750:4000:4250:4500:5000]{+}            +++
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+}    
 	[LAIR:SIMPLE_BURROW:100]
 	[HABIT_NUM:TEST_ALL]
 	[HABIT:COLLECT_WEALTH:100]
@@ -1091,19 +1059,15 @@ creature_standard
 	[NATURAL_SKILL:MELEE_COMBAT:6]
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]
-	[NATURAL_SKILL:DISCIPLINE:10]{+}
-	[SWIMS_INNATE]{+}
-	[HOMEOTHERM:10040]{+}
-	[STANCE_CLIMBER][NATURAL_SKILL:CLIMBING:1]{+}
-	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:585:390:195:1900:2900] 45 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:900:703:505:274:1900:2900] 32 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:730:561:351:1900:2900] 25 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
+	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  Revision: megabeasts have a high resistance against low tier materials.}
+	[SWIMS_INNATE]
+	[HOMEOTHERM:10040]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  She is magical and can exhale fire.  These monsters can live for thousands of years and are drawn to great wealth.  *Her scales are akin to metal.]{+}
+		[DESCRIPTION:A gigantic reptilian creature that breathes fire and can live for thousands of years.  Covetous and almost unstoppable, she hoards treasure and seeks rare artifacts.  Her tough scales are fringed with dark colors.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
@@ -1112,20 +1076,18 @@ creature_standard
 			[CLUTCH_SIZE:1:3]
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:5]{+}
-		[DESCRIPTION:An ancient and titanic scaled flying reptilian creature.  He is magical and can exhale fire.  These monsters can live for thousands of years and are drawn to great wealth.  *His scales are akin to metal.]{+}
+		[DESCRIPTION:A gigantic reptilian creautre that breathes fire and can live for thousands of years.  Covetous and almost unstoppable, he hoards treasure and seeks rare artifacts.  His tough scales are fringed with dark colors.]{+}
+	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
-		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]{:SCALE}
-			[TL_COLOR_MODIFIER:RED:1:BLACK:1:GREEN:1:BLUE:1:YELLOW:1:PURPLE:1:SILVER:1:AQUA:1]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
+			[TL_COLOR_MODIFIER:GREEN:1]
 				[TLCM_NOUN:scales:PLURAL]
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
-			[TL_COLOR_MODIFIER:BLACK:1:RED:1:AZURE:1:SCARLET:1]
+			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
-		[SET_TL_GROUP:BY_CATEGORY:FINGER:CLAW]{+  variable claw descriptions + lengths.}
-		 [PLUS_TL_GROUP:BY_CATEGORY:TOE:CLAW]{+
-		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:85:95:98:100:102:105:115]{+
+		[SET_TL_GROUP:BY_CATEGORY:TOE:CLAW]{+  variable claw descriptions + lengths.}
+		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]{+
 				[APP_MOD_NOUN:claws:PLURAL]{+
-				[APP_MOD_DESC_RANGE:86:94:98:102:106:114]{+
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:15]
 		[COLDDAM_POINT:NONE]
@@ -1367,8 +1329,6 @@ creature_standard
 		[BABYNAME:satyr baby:satyr babies]
 		[CHILDNAME:satyr boy:satyr boys]
 		[DESCRIPTION:A hooved, medium-sized man with a hairy body, woolly legs, and short, spiral horns.  Capricious and lewd, he wanders certain forests, looking for fun.  He likes being naked; he's comfy as he is.  * His skin is moderately firm. *]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 	[SELECT_CASTE:ALL]{+}
 	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
@@ -1453,7 +1413,6 @@ creature_standard
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR]
 	[NO_DRINK][NO_EAT][NO_SLEEP]
-	[CRAZED]{+  Revision: more rampages during worldgen.}
 	[SPHERE:METALS]
 	[SPHERE:STRENGTH]
 	[SPHERE:WAR]
@@ -1464,7 +1423,6 @@ creature_standard
 	[EQUIPS]
 	[NOFEAR]
 	[PREFSTRING:height]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[NOBONES]
 	[ODOR_LEVEL:0] no smell
 	[SMELL_TRIGGER:10000] cannot smell
@@ -1547,7 +1505,6 @@ creature_standard
 	[CANOPENDOORS]
 	[BUILDINGDESTROYER:2]
 	[PREFSTRING:height]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[BIOME:ANY_LAND]
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
@@ -1647,7 +1604,7 @@ creature_standard
 	[BODY_SIZE:0:0:200000]
 	[BODY_SIZE:1:168:3000000]
 	[BODY_SIZE:12:0:9000000]
-	[BODY_SIZE:1000:0:10800000]{+  Revision: 20% greater size after a millennium.}
+	[BODY_SIZE:1000:0:11250000]{+  Revision: +25% max-size after a millennium.}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:550]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
@@ -1773,31 +1730,42 @@ creature_standard
 	[SWIMS_LEARNED]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
+		[POP_RATIO:20]{+}
 		[CASTE_NAME:giantess:giantesses:giantess]
 		[BABYNAME:giantess baby girl:giantess baby girls]{+}
 		[CHILDNAME:giantess girl:giantess girls]{+}
 		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:60]{+}
+		[POP_RATIO:20]{+}
+		[CASTE_NAME:giant:giants:giant]{+}
 		[BABYNAME:giant baby boy:giant baby boys]{+}
 		[CHILDNAME:giant boy:giant boys]{+}
 		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-		[CASTE_NAME:giant:giants:giant]
-	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[NO_GENDER]
-		[MAXAGE:900:1100] makes them able to seek immortality
-		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[POP_RATIO:5] 1/20
-		[BABYNAME:giant baby:giant babies]
-		[CHILDNAME:giant child:giant children]
-		[DESCRIPTION:A gigantic and monstrous overweight humanoid almost unparalleled in size.  They has a hairy, strong body, shaggy hair, and an almost primitive appearance.  They live quietly in a cozy burrow and keeps to themselves.  They steps over fortifications and crushes buildings underfoot, whether they means to or not.  Their great size makes their nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
-		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-		[CASTE_NAME:giant:giants:giant]
+	[CASTE:POWER_MALE]{+  Revision: new rare caste that can be worshipped, lead civilizations and learn secrets.}
+		[MALE]{+
+		[MAXAGE:900:1100]{+
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]{+
+		[CASTE_NAME:giant:giants:giant]{+
+		[BABYNAME:giant baby boy:giant baby boys]{+
+		[CHILDNAME:giant boy:giant boys]{+
+		[POP_RATIO:1]{+
+		[DESCRIPTION:A gigantic and monstrous overweight man almost unparalleled in size.  He has a hairy, strong body, shaggy hair, and an almost primitive appearance.  He lives quietly in a cozy burrow and keeps to himself.  He steps over fortifications and crushes buildings underfoot, whether he means to or not.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]{+
+	[CASTE:POWER_FEMALE]{+  Revision: new rare caste that can be worshipped, lead civilizations and learn secrets.}
+		[FEMALE]{+
+		[MULTIPLE_LITTER_RARE]{+
+		[MAXAGE:900:1100]{+
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]{+
+		[CASTE_NAME:giantess:giantesses:giantess]{+
+		[BABYNAME:giantess baby girl:giantess baby girls]{+
+		[CHILDNAME:giantess girl:giantess girls]{+
+		[POP_RATIO:1]{+
+		[DESCRIPTION:A gigantic and monstrous overweight woman almost unparalleled in size.  She has a hairy, strong body, shaggy hair, and an almost primitive appearance.  She lives quietly in a cozy burrow and keeps to herself.  She steps over fortifications and crushes buildings underfoot, whether she means to or not.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -1884,7 +1852,6 @@ creature_standard
 	[CURIOUSBEAST_GUZZLER]{+}
 	[BUILDINGDESTROYER:2]
 	[PREFSTRING:single eye]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[BIOME:ANY_LAND]
 	[SPHERE:LIGHT]
 	[SPHERE:LIGHTNING]
@@ -1985,7 +1952,7 @@ creature_standard
 	[BODY_SIZE:0:0:200000]
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:12:0:8000000]
-	[BODY_SIZE:1000:0:9600000]{+  Revision: 20% greater size after a millennium.}
+	[BODY_SIZE:1000:0:10000000]{+  Revision: +25% max-size after a millennium.}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
@@ -2107,28 +2074,38 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
+		[POP_RATIO:20]{+}
 		[BABYNAME:cyclops baby girl:cyclops baby girls]{+}
 		[CHILDNAME:cyclops girl:cyclops girls]{+}
 		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:60]{+}
+		[POP_RATIO:20]{+}
 		[BABYNAME:cyclops baby boy:cyclops baby boys]{+}
 		[CHILDNAME:cyclops boy:cyclops boys]{+}
 		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[NO_GENDER]
-		[MAXAGE:900:1100] makes them able to seek immortality
-		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[POP_RATIO:5] 1/20
-		[BABYNAME:cyclops baby:cyclops babies]
-		[CHILDNAME:cyclops child:cyclops children]
-		[DESCRIPTION:A giant, monstrous humanoid with leathery, veined skin and a primitive-looking face with one large eye set in their forehead.  They mostly stays in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
-		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[CASTE:POWER_MALE]{+  Revision: new rare caste that can be worshipped, lead civilizations and learn secrets.}
+		[MALE]{+
+		[MAXAGE:900:1100]{+
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]{+
+		[BABYNAME:cyclops baby boy:cyclops baby boys]{+
+		[CHILDNAME:cyclops boy:cyclops boys]{+
+		[POP_RATIO:1]{+
+		[DESCRIPTION:A giant, monstrous man with leathery, veined skin and a primitive-looking face with one large eye set in his forehead.  He mostly stays in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]{+
+	[CASTE:POWER_FEMALE]{+  Revision: new rare caste that can be worshipped, lead civilizations and learn secrets.}
+		[FEMALE]{+
+		[MULTIPLE_LITTER_RARE]{+
+		[MAXAGE:900:1100]{+
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]{+
+		[BABYNAME:cyclops baby girl:cyclops baby girls]{+
+		[CHILDNAME:cyclops girl:cyclops girls]{+
+		[POP_RATIO:1]{+
+		[DESCRIPTION:A giant, monstrous woman with leathery, veined skin and a primitive-looking face with one large eye set in her forehead.  She mostly stays in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2214,7 +2191,6 @@ creature_standard
 	[CANOPENDOORS]
 	[BUILDINGDESTROYER:2]
 	[PREFSTRING:arguing heads]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[BIOME:ANY_LAND]
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
@@ -2314,7 +2290,7 @@ creature_standard
 	[BODY_SIZE:0:0:200000]
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:12:0:8000000]
-	[BODY_SIZE:1000:0:9600000]{+  Revision: 20% greater size after a millennium.}
+	[BODY_SIZE:1000:0:10000000]{+  Revision: +25% max-size after a millennium.}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
 		[APP_MOD_IMPORTANCE:500]
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
@@ -2442,28 +2418,38 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
+		[POP_RATIO:20]{+}
 		[BABYNAME:ettin baby girl:ettin baby girls]{+}
 		[CHILDNAME:ettin girl:ettin girls]{+}
 		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:60]{+}
+		[POP_RATIO:20]{+}
 		[BABYNAME:ettin baby boy:ettin baby boys]{+}
 		[CHILDNAME:ettin boy:ettin boys]{+}
 		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[CASTE:POWER]{+  revision: new caste that can be worshipped and lead civilizations.}
-		[NO_GENDER]
-		[MAXAGE:900:1100] makes them able to seek immortality
-		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]
-		[POP_RATIO:5] 1/20
-		[BABYNAME:ettin baby:ettin babies]
-		[CHILDNAME:ettin child:ettin children]
-		[DESCRIPTION:A giant and monstrous overweight humanoid with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  They mostly lives in their cozy cave but is sometimes lured into pillaging by rumors of wealth.  Their great size makes the nudity obvious, although they certainly seem oblivious and uncaring to the fact.]
-		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[CASTE:POWER_MALE]{+  Revision: new rare caste that can be worshipped, lead civilizations and learn secrets.}
+		[MALE]{+
+		[MAXAGE:900:1100]{+
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]{+
+		[BABYNAME:ettin baby boy:ettin baby boys]{+
+		[CHILDNAME:ettin boy:ettin boys]{+
+		[POP_RATIO:1]{+
+		[DESCRIPTION:A giant and monstrous overweight man with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  He mostly lives in his cozy cave but is sometimes lured into pillaging by rumors of wealth.  His great size makes his nudity obvious, although he certainly seem oblivious and uncaring to the fact.]{+
+		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]{+
+	[CASTE:POWER_FEMALE]{+  Revision: new rare caste that can be worshipped, lead civilizations and learn secrets.}
+		[FEMALE]{+
+		[MULTIPLE_LITTER_RARE]{+
+		[MAXAGE:900:1100]{+
+		[POWER][SPREAD_EVIL_SPHERES_IF_RULER][ARENA_RESTRICTED]{+
+		[BABYNAME:ettin baby girl:ettin baby girls]{+
+		[CHILDNAME:ettin girl:ettin girls]{+
+		[POP_RATIO:1]{+
+		[DESCRIPTION:A giant and monstrous overweight woman with a thick, muscular body and two arguing heads.  Each head controls one arm, resulting in movement strange and (often) funny.  She mostly lives in her cozy cave but is sometimes lured into pillaging by rumors of wealth.  Her great size makes her nudity obvious, although she certainly seem oblivious and uncaring to the fact.]{+
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -2550,10 +2536,9 @@ creature_standard
 	[BUILDINGDESTROYER:2]
 	[NOSTUN][NOFEAR]
 	[TRANCES]{+}
-	[PRONE_TO_RAGE:25]{+}
+	[PRONE_TO_RAGE:5]{+}
 	[CURIOUSBEAST_GUZZLER]{+}
 	[PREFSTRING:horns]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[BIOME:ANY_LAND]
 	[PERSONALITY:BRAVERY:75:90:100]
 	[PERSONALITY:HATE_PROPENSITY:75:90:100]{+}
@@ -2635,7 +2620,7 @@ creature_standard
 	[BODY_SIZE:0:0:10000]
 	[BODY_SIZE:1:168:50000]
 	[BODY_SIZE:12:0:220000]
-	[BODY_SIZE:1000:0:292600]{+  Revision: 50% greater size after a millennium.}
+	[BODY_SIZE:1000:0:10000000]{+  Revision: +25% max-size after a millennium.}
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]{:90:95:98:100:102:105:110}
 		[APP_MOD_IMPORTANCE:480]{+}
 	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:135]{:90:95:98:100:102:105:110}
@@ -2724,7 +2709,6 @@ creature_standard
 	[SWIMS_INNATE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:40]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:minotauress:minotauresses:minotaur]{+}
 		[BABYNAME:minotauress baby girl:minotauress baby girls]{+}
@@ -2732,7 +2716,6 @@ creature_standard
 		[DESCRIPTION:A giant, brutish woman with woolly legs and arms, large hooves, and a bull's head.  She rarely leaves her labyrinth but enjoys taunting her (rare) intruders.  She doesn't care that she's naked.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:60]{+}
 		[CASTE_NAME:minotaur:minotaurs:minotaur]{+}
 		[BABYNAME:minotaur baby boy:minotaur baby boys]{+}
 		[CHILDNAME:minotaur boy:minotaur boys]{+}
@@ -2876,8 +2859,6 @@ creature_standard
 		[CHILDNAME:yeti boy:yeti boys]{+}
 		[DESCRIPTION:A large, ape-like man covered in shaggy fur save for his sad-looking and his broad hands and feet.  He wanders certain lonely, wintery wastes.  He's protective of his territory and his kind; if you've seen one you may soon see another.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -3014,8 +2995,6 @@ creature_standard
 		[CHILDNAME:sasquatch boy:sasquatch boys]{+}
 		[DESCRIPTION:A large, ape-like man covered in shaggy fur save for his sad-looking face and his broad hands and feet.  His arms are almost long enough for his hands to brush the ground.  He lives quietly by himself in certain forests.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -3141,7 +3120,7 @@ creature_standard
 	[PET_EXOTIC]{+}
 	[MOUNT_EXOTIC]{+}
 	[NATURAL_SKILL:BITE:3]{+}
-	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[PREFSTRING:piercing howls]
 	[SOUND:ALERT:100:2500:VOCALIZATION:growl:growls:a low growl]{+}
 	[SOUND:ALERT:100:2500:VOCALIZATION:snarl:snarls:a vicious snarl]{+}
@@ -3214,8 +3193,6 @@ creature_standard
 		[MALE]
 		[DESCRIPTION:A fierce, medium-sized canine with shaggy fur and a piercing howl.  Despite his wagging tail, he seems very different from his domesticated cousins.  He hunts and wanders certain tundra, sometimes alone but often with others.  * His skin is moderately firm. *]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -3420,8 +3397,6 @@ creature_standard
 		[DESCRIPTION:A tiny, unusually light homunculus that seems to dance through the air on delicate wings.  He's an otherworldly beauty with eldritch eyes, flowing hair, and long, slender legs.  He has a habit of giggling and a carefree attitude.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -3657,8 +3632,6 @@ creature_standard
 		[DESCRIPTION:A tiny, unusually light homunculus with shifting colors and an otherworldly beauty.  He has eldritch eyes, flowing hair, and plenty of freckles.  He performs intricate aerial dances, often with others.  He has a carefree attitude.  He doesn't care that he's naked.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]
@@ -3720,7 +3693,7 @@ creature_standard
 	[BONECARN]
 	[FANCIFUL]{+}
 	[TRAINABLE_WAR]{+}
-	[NATURAL_SKILL:DISCIPLINE:3]{+}
+	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[NATURAL_SKILL:BITE:3]{+}
 	[PREFSTRING:chatters and clicks]
 	[PREFSTRING:hunched, razor-like backs]
@@ -3767,13 +3740,13 @@ creature_standard
 	[MAXAGE:20:50]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:NAIL]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:scratch:scratches]
@@ -3801,8 +3774,6 @@ creature_standard
 		[MALE]
 		[DESCRIPTION:A large, beaked, and featherless creature that chatters and clicks.  He wanders certain swamps on thick chicken-like legs and is often kept by goblins.  Hunched and wingless, he resembles a squat, dog-like bird with colorful, blotchy skin.  * His skin is moderately firm. *]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
 			[TL_COLOR_MODIFIER:SPOTS_PALE_CHESTNUT_MAUVE_EMERALD:1]{:STRIPES_RAINBOW  Revision: fan art never seems to draw the rainbow stripes, which admittedly sounds pretty silly.  Try to improve on it a little.}
@@ -4041,8 +4012,6 @@ creature_standard
 		[CHILDNAME:foul blendec boy:foul blendec boys]
 		[DESCRIPTION:A hooved, medium-sized horror with a hairy, gaunt body, woolly legs, and spiral horns on the empty-eyed skull of a goat.  Foul and lewd, he wanders certain forests, looking for fun.  He doesn't care that he's naked.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]{+}
 		[SET_TL_GROUP:BY_CATEGORY:BODY_LOWER:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:LEG_UPPER:HAIR]
@@ -4147,8 +4116,6 @@ creature_standard
 		[DESCRIPTION:A medium-sized, four-armed horror with three eyes, rows of teeth, and a gaunt, almost simian appearance.  His unnaturally long arms drag on the ground as he walks.  He's vicious and simple minded; he doesn't care that he's naked.  His skin is very tough.]{+}
 		[BABYNAME:strangler baby boy:strangler baby boys]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BLACK:1]
@@ -4264,8 +4231,6 @@ creature_standard
 		[CHILDNAME:nightwing boy:nightwing boys]
 		[DESCRIPTION:A large and sinister beastman with a jackal's head, a thin mane, and needle-like horns.  His fur seems stretched over his gaunt, unusually light body.  His enveloping back-wings are thin yet immense.  He circles overhead in certain deserts.  He doesn't seem to need food, drink, or even rest.  He doesn't care that he's naked.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 		[TL_COLOR_MODIFIER:DARK_BROWN:1]
@@ -4399,8 +4364,6 @@ creature_standard
 		[BABYNAME:harpy baby boy:harpy baby boys]
 		[CHILDNAME:harpy boy:harpy boys]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]{+}
 	[SET_BP_GROUP:BY_CATEGORY:EYE]
 		[BP_APPEARANCE_MODIFIER:CLOSE_SET:0:70:90:100:110:130:200]
@@ -4502,8 +4465,8 @@ creature_standard
 	[CREATURE_TILE:'H'][COLOR:4:0:1]
 	[PETVALUE:10000]
 	[PET_EXOTIC]
-	[TRAINABLE_WAR]{+}
-	[CHILD:1][GENERAL_CHILD_NAME:hydra hatchling:hydra hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
+	[TRAINABLE]{+}
+	[CHILD:10]{:1}[GENERAL_CHILD_NAME:hydra hatchling:hydra hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:ANY_LAND]
 	[FREQUENCY:10]{:5}
 	[FANCIFUL]
@@ -4523,7 +4486,6 @@ creature_standard
 	[BUILDINGDESTROYER:2]
 	[GRASSTRAMPLE:50]
 	[PREFSTRING:seven heads]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[SOUND:ALERT:100:15000:VOCALIZATION:roar in resonant harmony:roars in a multi-tone harmony with its seven heads, shaking your bones:the echoing, harmonic roar of a hydra]{+}
 	[SOUND:ALERT:50:5000:VOCALIZATION:growl:lets out a deep, rumbling growl that shakes your bones:a deep, rumbling growl echoing through the caverns]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:25:5000:VOCALIZATION:growl idly:growls idly:an unsettling growl]{+}
@@ -4544,6 +4506,7 @@ creature_standard
 	[USE_MATERIAL_TEMPLATE:CLAW:MONSTER_CLAW_TEMPLATE]{:CLAW_TEMPLATE
 	[USE_TISSUE_TEMPLATE:CLAW:MONSTER_TISSUE_CLAW_TEMPLATE]{:CLAW_TEMPLATE
 	[TISSUE_LAYER:BY_CATEGORY:TOE:CLAW:FRONT]
+	[BODY_DETAIL_PLAN:LEATHERY_EGG_MATERIALS]{+}
 	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
 		[TL_MAJOR_ARTERIES]
 	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
@@ -4562,7 +4525,7 @@ creature_standard
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
 	[BODY_SIZE:0:0:200000]
 	[BODY_SIZE:20:0:8000000]
-	[BODY_SIZE:1000:0:10640000]{+  Revision: 33% greater size after a millennium.}
+	[BODY_SIZE:1000:0:10000000]{+  Revision: +25% max-size after a millennium.}
 	[PHYS_ATT_RANGE:ENDURANCE:5000:5000:5000:5000:5000:5000:5000]            max
 	[PHYS_ATT_RANGE:RECUPERATION:5000:5000:5000:5000:5000:5000:5000]         max
 	[PHYS_ATT_RANGE:TOUGHNESS:1000:1200:1400:1500:1600:2000:3000]            ++
@@ -4585,23 +4548,24 @@ creature_standard
 			[APP_MOD_NOUN:pointy teeth:PLURAL]{+
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]{+
 	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
-	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:chomp:chomps]{:bite:bites
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
-	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]{  Revision: a powerful edged scratching attack.}
+		[ATTACK_FLAG_INDEPENDENT_MULTIATTACK]
+	[ATTACK:CLAW:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]
 		[ATTACK_SKILL:GRASP_STRIKE]
-		[ATTACK_VERB:claw:claws]{:scratch:scratches
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:claw:claws]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_PRIORITY:SECOND]
 	[APPLY_CREATURE_VARIATION:TAIL_ATTACK]{+ tail slap attack.}
 	[ALL_ACTIVE]
 	[LAIR:SIMPLE_BURROW:100]
@@ -4620,13 +4584,18 @@ creature_standard
 	[HOMEOTHERM:10040]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
-		[MULTIPLE_LITTER_RARE]
+		--MULTIPLE_LITTER_RARE]
+		[LAYS_EGGS]{+  Revision: hydras now lay eggs similar to dragons.}
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]{+
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]{+
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]{+
+			[EGG_SIZE:6100]{+
+			[CLUTCH_SIZE:1:3]{+
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  Her armored tail whips and thrashes aggressively.  She preys on her victims with a flurry of attacks as her heads all bite at once.  Her wounds heal quickly.  Her scales are akin to metal.]{+}
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:5]{+}
 		[DESCRIPTION:A giant dragon-like monster with seven biting heads on long, flexible necks.  His armored tail whips and thrashes aggressively.  He preys on his victims with a flurry of attacks as his heads all bite at once.  His wounds heal quickly.  His scales are akin to metal.]{+}
+	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:GOLD:1:RED:1]
@@ -5009,8 +4978,6 @@ creature_standard
 	[CASTE:MALE]
 		[MALE]
 		[DESCRIPTION:A giant, serpentine dragon that lurks near the sea floor.  His twisting, limbless body is covered in glittering scales.  He coils and flows through the water, steering with twin flippers near the end of his long tail.  He dwarfs the largest ships and crushes them in his coils.  His scales are akin to metal.]{+}
-	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
-	
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
 			[TL_COLOR_MODIFIER:AQUA:1]
@@ -5109,48 +5076,33 @@ creature_standard
 		[MULTIPLY_VALUE:5]
 
 [CREATURE:BIRD_ROC]
-	[DESCRIPTION:A bird of prey so large and ferocious it dwarfs even dragons.  All beneath its mighty wings should fear the sky.]
+	[DESCRIPTION:A bird of prey so large and ferocious it dwarfs many dragons.  All beneath its mighty wings should fear the sky.]
 	[NAME:roc:rocs:roc]
 	[CASTE_NAME:roc:rocs:roc]
 	[GENERAL_CHILD_NAME:roc hatchling:roc hatchlings]
 	[CREATURE_TILE:'R'][COLOR:7:0:1]
 	[PETVALUE:10000]
-	[TRAINABLE_WAR]--TRAINABLE]
 	[PET_EXOTIC]
+	[TRAINABLE]
 	[MOUNT_EXOTIC]
-	[CHILD:1][GENERAL_CHILD_NAME:roc chick:roc chicks]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:15]{:5}
+	[FREQUENCY:10]{:5}
 	[FANCIFUL]
-	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
 	[MEGABEAST][DIFFICULTY:10]
 		[ATTACK_TRIGGER:3:3:3]
-    [VIEWRANGE:35]{:20  Revision: flying megabeasts can see farther.}
 	[SPHERE:SKY]
 	[SPHERE:WIND]
 	[SPHERE:HUNTING]
-	[MANNERISM_FINGERS:claw:claws]
-	[MANNERISM_HEAD:head]
-	[MANNERISM_EYES:eyes]
-	[MANNERISM_MOUTH:beak]
-	[MANNERISM_HAIR:feather]
-	[MANNERISM_NAILS:talons]
-	[MANNERISM_FEET:feet]
-	[MANNERISM_ARMS:wings]
-	[MANNERISM_TONGUE:tongue]
-	[MANNERISM_LEG:leg]
-	[MANNERISM_BREATH]
-	[MANNERISM_POSTURE]
-	[MANNERISM_STRETCH]
-	[MANNERISM_EYELIDS]
 	[CURIOUSBEAST_ITEM]
 	[CURIOUSBEAST_EATER]
 	[SOUND:ALERT:100:15000:VOCALIZATION:let out a shrieking cry:lets out a shrieking cry:the distant cry of a titanic bird]{+}
 	[SOUND:ALERT:50:15000:VOCALIZATION:screech:gives a deafening screech:a fierce and thunderous screeching from afar]{+}
+	[VIEWRANGE:35]{:20  Revision: flying megabeasts can see farther.}
 	[NATURAL]
 	[LARGE_PREDATOR]
-	[BONECARN]
 	[FLIER]
+	[BONECARN]
+	[CHILD:1]
 	[ALL_ACTIVE]
 	[HOMEOTHERM:10067]
 	[LAIR:WILDERNESS_LOCATION:100]
@@ -5162,16 +5114,16 @@ creature_standard
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]
 	[NATURAL_SKILL:DISCIPLINE:10]{+}
+	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:2000:3000]             ++
+	[PHYS_ATT_RANGE:ENDURANCE:700:1200:1400:1500:1600:2000:3000]           ++
 	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:528:352:176:1900:2900] 50 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:3512:2634:1756:878:4900:6900] 10 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
+	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  Revision: megabeasts have a high resistance against low tier materials.}
 	[SWIMS_INNATE]
 	[PREFSTRING:awe-inspiring size]
 	[PREFSTRING:dedication to their young]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
-	[SYNDROME_DILUTION_FACTOR:FEAR:150]{+}
-	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
 	[BODY:HUMANOID_ARMLESS_NECK:2WINGS:2EYES:2LUNGS:HEART:GUTS:ORGANS:GIZZARD:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES:BEAK:TONGUE:RIBCAGE]
 	[BODY_DETAIL_PLAN:MONSTER_MATERIALS]{:STANDARD_MATERIALS}
 		[REMOVE_MATERIAL:HAIR]
@@ -5179,11 +5131,9 @@ creature_standard
 	[BODY_DETAIL_PLAN:MONSTER_TISSUES]{:STANDARD_TISSUES}
 		[REMOVE_TISSUE:HAIR]
 		[USE_TISSUE_TEMPLATE:FEATHER:FEATHER_TEMPLATE]
-	[SELECT_MATERIAL:FEATHER]
-		[MATERIAL_VALUE:2]
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
 	[BODY_DETAIL_PLAN:BODY_FEATHER_TISSUE_LAYERS:FEATHER]
-	[USE_MATERIAL_TEMPLATE:TALON:MONSTER_CLAW_TEMPLATE]{:NAIL_TEMPLATE
+	[USE_MATERIAL_TEMPLATE:TALON:MONSTER_CLAW_TEMPLATE]{:NAIL_TEMPLATE}
 	[USE_TISSUE_TEMPLATE:TALON:TALON_TEMPLATE]
 	[TISSUE_LAYER:BY_CATEGORY:TOE:TALON:FRONT]
 	[BODY_DETAIL_PLAN:EGG_MATERIALS]
@@ -5209,28 +5159,23 @@ creature_standard
 	[BODY_SIZE:0:0:200000]
 	[BODY_SIZE:1:0:5000000]
 	[BODY_SIZE:20:0:20000000]
-	[BODY_SIZE:1000:0:26600000]{+  Revision: 33% greater size after a millennium.}
-	[PHYS_ATT_RANGE:AGILITY:700:1200:1400:1500:1600:2000:3000]             ++
-	[PHYS_ATT_RANGE:ENDURANCE:700:1200:1400:1500:1600:2000:3000]           ++
-	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:450]
-	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:500]
-	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:120]
-		[APP_MOD_IMPORTANCE:550]
+	[BODY_SIZE:1000:0:25000000]{+  Revision: +25% max-size after a millennium.}
+	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
 	[MAXAGE:900:1100]{+  Revision: megabeasts should die of old age eventually. 1000 avg.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:bite:bites]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		[ATTACK_FLAG_CANLATCH]
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
-		[ATTACK_VERB:slice at:slices at]
+		[ATTACK_VERB:snatch at:snatches at]
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
@@ -5239,18 +5184,17 @@ creature_standard
 		[ATTACK_FLAG_WITH]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[POP_RATIO:4]{+  Revision: megabeasts are largely male to make sure their populations eventually decline.}
-		[DESCRIPTION:A graceful bird of prey so large she dwarfs many dragons.  She has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath her mighty wings should fear the sky.]{+}
+		[DESCRIPTION:A graceful bird of prey so large she dwarfs many dragons.  She has shaggy, scalloped feathers, a long beak, and huge, menacing talons.  All beneath her mighty wings should fear the sky.]{+}
 		[LAYS_EGGS]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:201000]
-			[CLUTCH_SIZE:1:3]
+			[CLUTCH_SIZE:1:2]
 	[CASTE:MALE]
 		[MALE]
-		[POP_RATIO:5]{+}
-		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing claws.  All beneath his mighty wings should fear the sky.]{+}
+		[DESCRIPTION:A graceful bird of prey so large he dwarfs many dragons.  He has shaggy, scalloped feathers, a long beak, and huge, menacing talons.  All beneath his mighty wings should fear the sky.]{+}
+	[APPLY_CREATURE_VARIATION:ANIMAL_ORIENTATIONS]{+}
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:WHITE:1]
@@ -5261,10 +5205,11 @@ creature_standard
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:BLACK:1]
 				[TLCM_NOUN:eyes:PLURAL]
-		[SET_TL_GROUP:BY_CATEGORY:FINGER:TALON]{+  variable talon descriptions + lengths.}
-		 [PLUS_TL_GROUP:BY_CATEGORY:TOE:TALON]{+
-		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:85:95:98:100:102:105:115]{+
+		[SET_TL_GROUP:BY_CATEGORY:BEAK:BONE]{+  beak color descriptor.}
+			[TL_COLOR_MODIFIER:AMBER:1]{+
+				[TLCM_NOUN:beak:SINGULAR]{+
+		[SET_TL_GROUP:BY_CATEGORY:TOE:TALON]{+  variable talon descriptions + lengths.}
+		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]{+
 				[APP_MOD_NOUN:talons:PLURAL]{+
-				[APP_MOD_DESC_RANGE:86:94:98:102:106:114]{+
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:15]

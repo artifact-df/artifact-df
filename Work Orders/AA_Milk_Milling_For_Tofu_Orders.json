@@ -1,0 +1,371 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 0,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BAMBARA_GROUNDNUT:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BAMBARA_GROUNDNUT:FRUIT",
+				"reaction_id" : "AA_MAKE_MILK_FROM_BAMBARA_GROUNDNUT_FRUIT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_BAMBARA_GROUNDNUT_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_BAMBARA_GROUNDNUT_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 1,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BROAD_BEAN:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BROAD_BEAN:POD",
+				"reaction_id" : "AA_MAKE_MILK_FROM_BROAD_BEAN_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_BROAD_BEAN_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_BROAD_BEAN_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 2,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:BUSH_QUARRY:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:BUSH_QUARRY:POD",
+				"reaction_id" : "AA_MAKE_MILK_FROM_BUSH_QUARRY_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_BUSH_QUARRY_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_BUSH_QUARRY_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 3,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:CHICKPEA:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:CHICKPEA:POD",
+				"reaction_id" : "AA_MAKE_MILK_FROM_CHICKPEA_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_CHICKPEA_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_CHICKPEA_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 4,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:HEMP:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:HEMP:PANICLE",
+				"reaction_id" : "AA_MAKE_MILK_FROM_HEMP_PANICLE",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_HEMP_PANICLE",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_HEMP_PANICLE"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 5,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:LENTIL:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:LENTIL:POD",
+				"reaction_id" : "AA_MAKE_MILK_FROM_LENTIL_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_LENTIL_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_LENTIL_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 6,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PEA:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PEA:POD",
+				"reaction_id" : "AA_MAKE_MILK_FROM_PEA_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_PEA_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_PEA_POD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 7,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:PEANUT:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:PEANUT:FRUIT",
+				"reaction_id" : "AA_MAKE_MILK_FROM_PEANUT_FRUIT",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_PEANUT_FRUIT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_PEANUT_FRUIT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 8,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" :
+		[
+			{
+				"condition" : "Exactly",
+				"item_type" : "LIQUID_MISC",
+				"material" : "PLANT:SOYBEAN:MILK",
+				"value" : 0
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"material" : "PLANT:SOYBEAN:POD",
+				"reaction_id" : "AA_MAKE_MILK_FROM_SOYBEAN_POD",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" :
+				[
+					"food_storage",
+					"empty"
+				],
+				"reaction_id" : "AA_MAKE_MILK_FROM_SOYBEAN_POD",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"max_workshops" : 1,
+		"reaction" : "AA_MAKE_MILK_FROM_SOYBEAN_POD"
+	}
+]

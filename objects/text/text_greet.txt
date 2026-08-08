@@ -1,5 +1,7 @@
 text_greet
 
+	Original from DPh Krakens 'The Way the Words Work' and edited by Zey
+
 [OBJECT:TEXT_SET]
 
 Credits:
@@ -11,7 +13,6 @@ DF Wiki Speech Mods
 [TEXT_SET:GREET]
 
 Greetings.  My name is [SPEAKER:TRANS_NAME].
-
 Allow me to introduce myself.  My name is [SPEAKER:TRANS_NAME].
 Could you help a [SPEAKER:UNIT_NAME] out?
 Do you have a moment? I'm [SPEAKER:TRANS_NAME].
@@ -34,7 +35,6 @@ It's me, [SPEAKER:TRANS_NAME].
 My name is [SPEAKER:TRANS_NAME].  Don't wear it out.
 Pardon me.  This is [SPEAKER:TRANS_NAME].
 [SPEAKER:TRANS_NAME], reporting for duty.
-
 Good day.  My name is [SPEAKER:TRANS_NAME].
 Hail, friend.  My name is [SPEAKER:TRANS_NAME].
 Hello.  I am [SPEAKER:TRANS_NAME].
@@ -42,21 +42,18 @@ I am [SPEAKER:TRANS_NAME].
 My name is [SPEAKER:TRANS_NAME].
 Pleased to meet you.  I am [SPEAKER:TRANS_NAME].
 Well met.  My name is [SPEAKER:TRANS_NAME].
-
 Ah, finally, someone! My name is [SPEAKER:TRANS_NAME].
 Hello! I'm [SPEAKER:TRANS_NAME].
 I must say, I have never seen shoes of such an intriguing color before.  I'm [SPEAKER:TRANS_NAME].
 Oh, sorry! I didn't see you there.  I'm [SPEAKER:TRANS_NAME].
 Pray, come speak with me.  My name is [SPEAKER:TRANS_NAME].
 What a nice shirt! I am [SPEAKER:TRANS_NAME].
-
 Hello.  My name is [SPEAKER:TRANS_NAME].
 Howdy.  My name is [SPEAKER:TRANS_NAME].
 Ah, finally, someone sentient!   My name is [SPEAKER:TRANS_NAME].
 I am grateful for your attention.   My name is [SPEAKER:TRANS_NAME].
 What a nice shirt! I'm [SPEAKER:TRANS_NAME].
 Looking into your eyes, I can see a depth that I have not witnessed since I last glanced in the well. Pray, come speak with me.  My name is [SPEAKER:TRANS_NAME].
-Yo!  My name is [SPEAKER:TRANS_NAME].
 Greetings!  My name is [SPEAKER:TRANS_NAME].
 Hello!  My name is [SPEAKER:TRANS_NAME].
 [SPEAKER:TRANS_NAME], at your service!

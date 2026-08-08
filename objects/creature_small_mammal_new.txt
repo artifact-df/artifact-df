@@ -124,7 +124,7 @@ Hamsters were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and fur of a hamster.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'h']
 	[COLOR:7:0:0]
@@ -294,7 +294,7 @@ Hedgehogs were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and spines of a hedgehog.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'h']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -456,7 +456,7 @@ Flying squirrels were sponsored by the generous contributions of the Bay 12 comm
 	[DESCRIPTION:A person with the head and wings of a flying squirrel.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:3:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]

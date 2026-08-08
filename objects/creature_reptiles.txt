@@ -635,7 +635,6 @@ creature_reptiles
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NATURAL]{CARNIVORE  Revision: as their description indicates, they're not carnivores.}
 	[MEANDERER]
 	[PETVALUE:400]

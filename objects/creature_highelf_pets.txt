@@ -9,10 +9,8 @@ creature_highelf_pets
 	[CHILD:10][GENERAL_CHILD_NAME:lunar drakeling:lunar drakelings]
 	[CREATURE_TILE:'D'][COLOR:7:0:0]
 	[PETVALUE:1000]
-	[PET_EXOTIC]
 	[GOOD]
 	[NATURAL]
-	[MOUNT_EXOTIC][TRAINABLE_WAR]
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[CREATURE_CLASS:HIGH_ELF_PET]
 	[CREATURE_CLASS:HIGH_ELF_MOUNT]
@@ -124,10 +122,8 @@ creature_highelf_pets
 	[CHILD:10][GENERAL_CHILD_NAME:solar drakeling:solar drakelings]
 	[CREATURE_TILE:'D'][COLOR:6:0:1]
 	[PETVALUE:1000]
-	[PET_EXOTIC]
 	[GOOD]
 	[NATURAL]
-	[MOUNT_EXOTIC][TRAINABLE_WAR]
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[CREATURE_CLASS:HIGH_ELF_PET]
 	[CREATURE_CLASS:HIGH_ELF_MOUNT]

@@ -21,7 +21,6 @@ Stoats were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:TUNDRA]
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BENIGN]
 	[PREFSTRING:ability to take down large prey]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:4TOES_FQ_REG:5TOES_RQ_REG:MOUTH:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]
@@ -135,7 +134,7 @@ Stoats were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A long-bodied person with the head of a stoat.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
@@ -192,10 +191,9 @@ Lynx were sponsored by the generous contributions of the Bay 12 community.
 	[PET_EXOTIC]
 	[TRAINABLE]
 	[BIOME:FOREST_TAIGA]
-	[LARGE_ROAMING]--FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:20:39]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
 	[GRASSTRAMPLE:0]
@@ -320,7 +318,7 @@ Lynx were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and tail of a lynx.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:0]

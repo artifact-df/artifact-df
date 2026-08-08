@@ -1,5 +1,7 @@
 text_greet_reply_after_hero
 
+	Original from DPh Krakens 'The Way the Words Work' and edited by Zey
+
 [OBJECT:TEXT_SET]
 
 Credits:

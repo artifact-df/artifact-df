@@ -4333,7 +4333,7 @@ Misc verbs/adjectives
 	[S_WORD:TOAST]
 	[S_WORD:TORCH]
 	[S_WORD:VOLCANO]
-	[S_WORD:WAX]
+	--S_WORD:WAX]
 	[S_WORD:WISP]
 	+ expanded dictionary
 	[S_WORD:CHIMNEY]

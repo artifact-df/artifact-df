@@ -100,7 +100,7 @@ creature_amphibians
 	[DESCRIPTION:A dark green man with the distinct head of a toad.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'t']
 	[COLOR:2:0:0]
@@ -133,8 +133,9 @@ creature_amphibians
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[MAXAGE:6:9]{+  Revision: let them live long enough to be worth taming.}
-	[LARGE_PREDATOR]{+}
-	[TRAINABLE]{+}
+	[LARGE_PREDATOR][AMBUSHPREDATOR]{+}
+	[TRAINABLE_WAR]{+}
+	[HUNTS_VERMIN]{+}
 	[GO_TO_END]
 	[SOUND:ALERT:100:10000:VOCALIZATION:croak:croaks:loud croaking]{+}
 	[PREFSTRING:beauty]
@@ -142,3 +143,4 @@ creature_amphibians
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:3512:2634:1756:878:4900:6900] 10 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+}

@@ -15,6 +15,7 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:TRAINABLE]{+}
 	[CV_REMOVE_TAG:TRAINABLE_HUNTING]{+}
 	[CV_REMOVE_TAG:TRAINABLE_WAR]{+}
+	[CV_REMOVE_TAG:CANNOT_CLIMB]{+}
 	[CV_REMOVE_TAG:NAME]
 	[CV_REMOVE_TAG:GENERAL_CHILD_NAME]
 	[CV_REMOVE_TAG:GENERAL_BABY_NAME]
@@ -72,7 +73,6 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
 	[CV_REMOVE_TAG:ORIENTATION]{+	should restore orientations to default 5/20/75
-	[CV_REMOVE_TAG:ANIMAL_ORIENTATIONS]{+  same as above
 	[CV_REMOVE_TAG:GRAZER]{+         Revision: animal people ought to be able to eat normal food.}
 	[CV_REMOVE_TAG:STANDARD_GRAZER]{+}
 	[CV_REMOVE_TAG:SPECIFIC_FOOD]{+  Revision: adventurers that depend on specific plants to survive are difficult to play.}
@@ -96,6 +96,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:HOMEOTHERM]{+}
 	[CV_REMOVE_TAG:SWIMS_INNATE]{+    Revision: converts innate to learned.}
 	[CV_NEW_TAG:SWIMS_LEARNED]{+
+	[CV_REMOVE_TAG:FREQUENCY]{+  Revision: standardize spawn frequencies.}
+	[CV_NEW_TAG:FREQUENCY:15]{+
 	[CV_CONVERT_TAG]{+                                      Revision: humanoid head features.}
 		[CVCT_MASTER:BODY_DETAIL_PLAN]
 		[CVCT_TARGET:STANDARD_HEAD_POSITIONS]
@@ -244,10 +246,6 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_MASTER:BIOME]
 		[CVCT_TARGET:POOL_TROPICAL_SALTWATER]
 		[CVCT_REPLACEMENT:LAKE_TROPICAL_SALTWATER]
-	[CV_CONVERT_TAG]{+}
-		[CVCT_MASTER:BIOME]
-		[CVCT_TARGET:ANY_POOL]
-		[CVCT_REPLACEMENT:ANY_LAKE]
 	[CV_CONVERT_TAG]{+  Revision: humanoids should (in theory) yield leather.}
 		[CVCT_MASTER:BODY_DETAIL_PLAN]
 		[CVCT_TARGET:STANDARD_NOLEATHER_MATERIALS]
@@ -260,12 +258,16 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_MASTER:USE_MATERIAL_TEMPLATE]
 		[CVCT_TARGET:SCALE_NOLEATHER_TEMPLATE]
 		[CVCT_REPLACEMENT:SCALE_TEMPLATE]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:BIOME]
+		[CVCT_TARGET:ANY_POOL]
+		[CVCT_REPLACEMENT:ANY_LAKE]
+	[CV_NEW_TAG:CREATURE_CLASS:ANIMAL_PERSON]
+	[CV_NEW_TAG:CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]{+}
 	[CV_NEW_TAG:LARGE_ROAMING]
-	[CV_REMOVE_TAG:GOOD]{+  just in case.}
-	[CV_REMOVE_TAG:EVIL]{+}
 	[CV_NEW_TAG:SAVAGE]
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
-		[CV_NEW_TAG:GRAVITATE_BODY_SIZE:72000]{:70000  Revision: animal people are slightly larger than humans.}
+		[CV_NEW_TAG:GRAVITATE_BODY_SIZE:70000]
 		[CV_NEW_TAG:CHANGE_FREQUENCY_PERC:10]
 	[CV_NEW_TAG:CAN_LEARN]
 	[CV_NEW_TAG:CAN_SPEAK]
@@ -329,16 +331,12 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:PERSONALITY:HOPEFUL:5:55:100]{+
 	[CV_NEW_TAG:PERSONALITY:CURIOUS:5:55:100]{+
 	[CV_NEW_TAG:PERSONALITY:BRAVERY:5:55:100]{+
-	[CV_NEW_TAG:CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]{+}
-	[CV_NEW_TAG:CREATURE_CLASS:ANIMAL_PERSON]{+}
 	[CV_REMOVE_TAG:BODY_APPEARANCE_MODIFIER]{+         Revision: animal peoples height and broadness varies like other civ creatures.}
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
-	[CV_REMOVE_TAG:FREQUENCY]{+}
-	[CV_NEW_TAG:FREQUENCY:25]{+                        Revision: a high frequency should hopefully allow them to be absorbed into civs easier.}
-	[CV_NEW_TAG:FANCIFUL]{+                            Revision: animal people should be counted as fanciful creatures.}
+	--CV_NEW_TAG:FANCIFUL]{+                            Revision: animal people should be counted as fanciful creatures.}
 	[CV_NEW_TAG:SKILL_RATES:75:10:18:18]{+             Revision: animal people learn all skills at 75% rate but rust slower.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:BITE:125]{+           Revision: animal people should learn these skills faster than normal.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:GRASP_STRIKE:125]{+
@@ -358,6 +356,7 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:TRAINABLE]{+}
 	[CV_REMOVE_TAG:TRAINABLE_HUNTING]{+}
 	[CV_REMOVE_TAG:TRAINABLE_WAR]{+}
+	[CV_REMOVE_TAG:CANNOT_CLIMB]{+}
 	[CV_REMOVE_TAG:NAME]
 	[CV_REMOVE_TAG:GENERAL_CHILD_NAME]
 	[CV_REMOVE_TAG:GENERAL_BABY_NAME]
@@ -412,7 +411,6 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:MEANDERER]{+      Revision: meanderer causes pathing issues for humanoid citizens.}
 	[CV_REMOVE_TAG:COOKABLE_LIVE]{+  Revision: if you're going to eat a humanoid, you'll need to at least butcher them.}
 	[CV_REMOVE_TAG:ORIENTATION]{+	should restore orientations to default 5/20/75
-	[CV_REMOVE_TAG:ANIMAL_ORIENTATIONS]{+  same as above
 	[CV_REMOVE_TAG:LAYS_EGGS]{+      Revision: egg laying is broken for civilized humanoids (10209).}
 	[CV_REMOVE_TAG:EGG_MATERIAL]{+}
 	[CV_REMOVE_TAG:EGG_SIZE]{+}
@@ -433,6 +431,8 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_REMOVE_TAG:HOMEOTHERM]{+}
 	[CV_REMOVE_TAG:SWIMS_INNATE]{+    Revision: converts innate to learned.}
 	[CV_NEW_TAG:SWIMS_LEARNED]{+
+	[CV_REMOVE_TAG:FREQUENCY]{+  Revision: standardize spawn frequencies.}
+	[CV_NEW_TAG:FREQUENCY:15]{+
 	[CV_CONVERT_TAG]{+                                      Revision: humanoid head features.}
 		[CVCT_MASTER:BODY_DETAIL_PLAN]
 		[CVCT_TARGET:STANDARD_HEAD_POSITIONS]
@@ -559,10 +559,6 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_MASTER:BIOME]
 		[CVCT_TARGET:POOL_TROPICAL_SALTWATER]
 		[CVCT_REPLACEMENT:LAKE_TROPICAL_SALTWATER]
-	[CV_CONVERT_TAG]{+}
-		[CVCT_MASTER:BIOME]
-		[CVCT_TARGET:ANY_POOL]
-		[CVCT_REPLACEMENT:ANY_LAKE]
 	[CV_CONVERT_TAG]{+  Revision: humanoids should (in theory) yield leather.}
 		[CVCT_MASTER:BODY_DETAIL_PLAN]
 		[CVCT_TARGET:STANDARD_NOLEATHER_MATERIALS]
@@ -575,12 +571,16 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 		[CVCT_MASTER:USE_MATERIAL_TEMPLATE]
 		[CVCT_TARGET:SCALE_NOLEATHER_TEMPLATE]
 		[CVCT_REPLACEMENT:SCALE_TEMPLATE]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:BIOME]
+		[CVCT_TARGET:ANY_POOL]
+		[CVCT_REPLACEMENT:ANY_LAKE]
+	[CV_NEW_TAG:CREATURE_CLASS:ANIMAL_PERSON]
+	[CV_NEW_TAG:CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]{+}
 	[CV_NEW_TAG:LARGE_ROAMING]
-	[CV_REMOVE_TAG:GOOD]{+  just in case.}
-	[CV_REMOVE_TAG:EVIL]{+}
 	[CV_NEW_TAG:SAVAGE]
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
-		[CV_NEW_TAG:GRAVITATE_BODY_SIZE:72000]{:70000  Revision: animal people are slightly larger than humans.}
+		[CV_NEW_TAG:GRAVITATE_BODY_SIZE:70000]
 		[CV_NEW_TAG:CHANGE_FREQUENCY_PERC:10]
 	[CV_NEW_TAG:CAN_LEARN]
 	[CV_NEW_TAG:CAN_SPEAK]
@@ -640,16 +640,12 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:PERSONALITY:HOPEFUL:5:55:100]{+
 	[CV_NEW_TAG:PERSONALITY:CURIOUS:5:55:100]{+
 	[CV_NEW_TAG:PERSONALITY:BRAVERY:5:55:100]{+
-	[CV_NEW_TAG:CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL]{+}
-	[CV_NEW_TAG:CREATURE_CLASS:ANIMAL_PERSON]{+}
 	[CV_REMOVE_TAG:BODY_APPEARANCE_MODIFIER]{+         Revision: animal peoples height and broadness varies like other civ creatures.}
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:HEIGHT:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
 	[CV_NEW_TAG:BODY_APPEARANCE_MODIFIER:BROADNESS:75:95:98:100:102:105:125]{+
 		[CV_NEW_TAG:APP_MOD_IMPORTANCE:500]{+
-	[CV_REMOVE_TAG:FREQUENCY]{+}
-	[CV_NEW_TAG:FREQUENCY:25]{+                        Revision: a high frequency should hopefully allow them to be absorbed into civs easier.}
-	[CV_NEW_TAG:FANCIFUL]{+                            Revision: animal people should be counted as fanciful creatures.}
+	--CV_NEW_TAG:FANCIFUL]{+                            Revision: animal people should be counted as fanciful creatures.}
 	[CV_NEW_TAG:SKILL_RATES:75:10:18:18]{+             Revision: animal people learn all skills at 75% rate but rust slower.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:BITE:125]{+           Revision: animal people should learn these skills faster than normal.}
 	[CV_NEW_TAG:SKILL_LEARN_RATE:GRASP_STRIKE:125]{+
@@ -1044,9 +1040,7 @@ Change TAG to CTAG and add, for example, CV_REMOVE_CTAG:1:YES:<regular stuff> to
 	[CV_NEW_TAG:LARGE_ROAMING]
 	[CV_NEW_TAG:SAVAGE]
 	[CV_NEW_TAG:DIFFICULTY:4]{+                             Revision: slaying giant creatures should be a tough quest.}
-	--CV_REMOVE_TAG:FREQUENCY]{+}
-	--CV_NEW_TAG:FREQUENCY:25]{+}
-	[CV_NEW_TAG:FANCIFUL]{+                            Revision: giant creatures should be counted as fanciful creatures.}
+	--CV_NEW_TAG:FANCIFUL]{+                            Revision: giant creatures should be counted as fanciful creatures.}
 	[CV_NEW_TAG:NATURAL_SKILL:BITE:5]{+}
 	[CV_NEW_TAG:NATURAL_SKILL:STANCE_STRIKE:5]{+}
 	[CV_NEW_TAG:NATURAL_SKILL:DODGING:3]{+}

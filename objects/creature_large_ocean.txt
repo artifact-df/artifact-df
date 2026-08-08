@@ -117,7 +117,7 @@ creature_large_ocean
 	[DESCRIPTION:A legless person with the head and back flippers of a walrus.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
 
@@ -3180,7 +3180,7 @@ Narwhals were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A medium-sized creature with the arms and torso on a man, but with the head and tail of a narwhal.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'N']
 	[COLOR:7:0:0]
 	[SKILL_LEARN_RATE:SING:200]{+}

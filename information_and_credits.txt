@@ -9,7 +9,7 @@ Fork by zey & contributors
 
 contributors: 
 
-- DPh Kraken
+- (removed upon request)
 - Droseran
 - chipathingy
 
@@ -26,11 +26,14 @@ contributors:
    1. {TEXT_SET}
    (generative content in these raws I belive are fine as they do not go, in my opinion, against the spirit of the game
     -and are UNDER THE CONDITION that each entry is manually reviewed for quality and consistency.)
+	
+ note: as of 26/07/26 the mod contains no generated content what-so-ever, of any kind.
+
 ---------------------------------------- MASTERFORK CONTENT CREDITS ----------------------------------------
 
-Masterfork contains RAWs and other assets from the following mods, either in part or in full:
-(  Note: Please contact me if you have any grievances/concerns about your mod being included in MFORK, or if I forgot to credit you-
-   mod authors reserve the right to request their mod to be removed from the project if they so desire. Please contact me if you do. - zey.)
+ Masterfork contains RAWs and other assets from the following mods, either in part or in full:
+ (  Note: Please contact me if you have any grievances/concerns about your mod being included in MFORK, or if I forgot to credit you-
+    mod authors reserve the right to request their mod to be removed from the project if they so desire. Please contact me if you do. - zey.)
 
  - 'The Way the Words Work'                author(s): DPh Kraken                                                                      # https://steamcommunity.com/sharedfiles/filedetails/?id=3309091369
  - 'Immaterial Cultures'                   author(s): DPh Kraken (removed upon request)                                               # http://www.bay12forums.com/smf/index.php?topic=181821.0
@@ -62,3 +65,10 @@ Masterfork contains RAWs and other assets from the following mods, either in par
  - 'Remove Invisible Divine Items (Lua)'   author(s): DPh Kraken                                                                      # https://steamcommunity.com/sharedfiles/filedetails/?id=3479977620
  - 'Perspective Walls Rewalled'            author(s): Kahzel, Thomrade, Glentgm                                                       # https://steamcommunity.com/sharedfiles/filedetails/?id=3641516321
  - 'Ketaros Stones Variations'             author(s): Ketaros                                                                         # https://steamcommunity.com/sharedfiles/filedetails/?id=2951182373
+ - 'ArgMod'                                author(s): Argendauss                                                                      # https://steamcommunity.com/sharedfiles/filedetails/?id=3638614809
+ - ''                                      author(s):                                                                                 # https://
+ - ''                                      author(s):                                                                                 # https://
+ - ''                                      author(s):                                                                                 # https://
+ - ''                                      author(s):                                                                                 # https://
+ - ''                                      author(s):                                                                                 # https://
+ 

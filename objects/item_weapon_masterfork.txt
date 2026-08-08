@@ -28,7 +28,7 @@ item_weapon
 [NAME:battle axe:battle axes]
 [SIZE:600]
 [SKILL:AXE]
-[TWO_HANDED:20000]
+[TWO_HANDED:200000]{:77500  only huge creatures should be able to wield this weapon one-handed
 [MINIMUM_SIZE:15000]
 [MATERIAL_SIZE:6] 2 bars
 [ATTACK:EDGE:150:600:hack:hacks:NO_SUB:1200]
@@ -83,7 +83,7 @@ item_weapon
 [SIZE:350]
 [SKILL:SPEAR]
 [CAN_STONE]{+}
-[TWO_HANDED:20000]
+[TWO_HANDED:5000]
 [MINIMUM_SIZE:5000] amphibian men, etc., need variants
 [MATERIAL_SIZE:6] 2 bars
 [ATTACK:EDGE:15:600:jab:jabs:NO_SUB:600]
@@ -95,7 +95,7 @@ item_weapon
 [ATTACK:BLUNT:25:1:bash:bashes:shaft:2000]
 	[ATTACK_PREPARE_AND_RECOVER:2:8]
 	[ATTACK_FLAG_BAD_MULTIATTACK]
-	
+
 [ITEM_WEAPON:ITEM_WEAPON_MACE]
 [NAME:mace:maces]
 [SIZE:600]{:800}
@@ -194,8 +194,8 @@ no shot force requirements
 [ITEM_WEAPON:ITEM_WEAPON_PIKE]
 [NAME:pike:pikes]
 [SIZE:600]
-[SKILL:SPEAR]
-[TWO_HANDED:5000000]
+[SKILL:PIKE]
+[TWO_HANDED:200000]{:77500  only huge creatures should be able to wield this weapon one-handed
 [MINIMUM_SIZE:58500]{:62500  Revision: dwarves and above can equip most two-handed weapons.}
 [MATERIAL_SIZE:9]{:4}  3 bars
 [ATTACK:EDGE:15:1200:jab:jabs:NO_SUB:900]
@@ -210,8 +210,8 @@ no shot force requirements
 [ITEM_WEAPON:ITEM_WEAPON_HALBERD]
 [NAME:halberd:halberds]
 [SIZE:450]
-[SKILL:AXE]
-[TWO_HANDED:5000000]
+[SKILL:PIKE]
+[TWO_HANDED:200000]{:77500  only huge creatures should be able to wield this weapon one-handed
 [MINIMUM_SIZE:58500]{:62500  Revision: dwarves and above can equip most two-handed weapons.}
 [MATERIAL_SIZE:9]{:4}  3 bars
 [ATTACK:EDGE:225:900:hack:hacks:NO_SUB:1920]
@@ -228,7 +228,7 @@ no shot force requirements
 [NAME:two-handed sword:two-handed swords]
 [SIZE:450]
 [SKILL:SWORD]
-[TWO_HANDED:5000000]
+[TWO_HANDED:200000]{:77500  only huge creatures should be able to wield this weapon one-handed
 [MINIMUM_SIZE:58500]{:62500  Revision: dwarves and above can equip most two-handed weapons.}
 [MATERIAL_SIZE:9]{:4}  3 bars
 [ATTACK:EDGE:1000:1000:slash:slashes:NO_SUB:1300]
@@ -247,7 +247,7 @@ no shot force requirements
 [NAME:longsword:longswords]
 [SIZE:350]
 [SKILL:SWORD]
-[TWO_HANDED:5000000]
+[TWO_HANDED:57500]
 [MINIMUM_SIZE:58500]{:62500  Revision: dwarves and above can equip most two-handed weapons.}
 [MATERIAL_SIZE:6]{:4}  2 bars
 [ATTACK:EDGE:800:800:slash:slashes:NO_SUB:1000]
@@ -266,7 +266,7 @@ no shot force requirements
 [NAME:maul:mauls]
 [SIZE:1200]{:1300}
 [SKILL:HAMMER]
-[TWO_HANDED:5000000]{:77500}
+[TWO_HANDED:200000]{:77500  only huge creatures should be able to wield this weapon one-handed
 [MINIMUM_SIZE:58500]{:62500  Revision: dwarves and above can equip most two-handed weapons.}
 [MATERIAL_SIZE:9]{:5}  3 bars
 [ATTACK:BLUNT:30:6000:bash:bashes:NO_SUB:5640]{:NO_SUB:2000  Revision: multiple strikes with bashing attacks cannot be performed effectively, but have increased momentum.}
@@ -283,7 +283,7 @@ no shot force requirements
 [NAME:great axe:great axes]
 [SIZE:600]
 [SKILL:AXE]
-[TWO_HANDED:5000000]
+[TWO_HANDED:200000]{:77500  only huge creatures should be able to wield this weapon one-handed
 [MINIMUM_SIZE:58500]{:62500  Revision: dwarves and above can equip most two-handed weapons.}
 [MATERIAL_SIZE:6]{:4}  2 bars
 [ATTACK:EDGE:300:1200:hack:hacks:NO_SUB:2400]
@@ -301,7 +301,7 @@ no shot force requirements
 [ADJECTIVE:large]
 [SIZE:100]
 [SKILL:DAGGER]
-[TWO_HANDED:20000]
+[TWO_HANDED:5000] easy to wield in one hand
 [MINIMUM_SIZE:5000]
 [MATERIAL_SIZE:3] 1 bars
 [ATTACK:EDGE:350:350:slash:slashes:NO_SUB:450]
@@ -321,7 +321,7 @@ no shot force requirements
 [NAME:scourge:scourges]
 [SIZE:400]
 [SKILL:WHIP]
-[TWO_HANDED:20000]
+[TWO_HANDED:200000]{:77500  only huge creatures should be able to wield this weapon one-handed
 [MINIMUM_SIZE:15000]
 [MATERIAL_SIZE:6] 2 bars
 [ATTACK:EDGE:250:250:lash:lashes:blade:1500]
@@ -443,21 +443,15 @@ no shot force requirements
 	[ATTACK_FLAG_BAD_MULTIATTACK]
 [TRAINING]
 
-[ITEM_WEAPON:ITEM_WEAPON_PICK_GREAT]
+[ITEM_WEAPON:ITEM_WEAPON_PICK_GREAT] unchanged from vanilla
 [NAME:great pick:great picks]
-[SIZE:3000]{:4000
+[SIZE:4000]
 [SKILL:MINING]
-[TWO_HANDED:5000000]
+[TWO_HANDED:275000]
 [MINIMUM_SIZE:225000]
-[MATERIAL_SIZE:12] 4 bars
-[ATTACK:EDGE:20:200:prick:pricks:NO_SUB:1500]
-	[ATTACK_PREPARE_AND_RECOVER:2:4]
-[ATTACK:EDGE:20:1000:strike:strikes:NO_SUB:1875]
-	[ATTACK_PREPARE_AND_RECOVER:2:5]
-[ATTACK:EDGE:20:1500:pierce:pierces:NO_SUB:2250]
-	[ATTACK_PREPARE_AND_RECOVER:2:6]
-[ATTACK:BLUNT:20:1000:strike:strikes:pommel:2300]
-	[ATTACK_PREPARE_AND_RECOVER:2:10]
+[MATERIAL_SIZE:12]
+[ATTACK:EDGE:100:4000:strike:strikes:NO_SUB:2000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
 
 
 // CUSTOM WEAPONS
@@ -492,7 +486,7 @@ no shot force requirements
 [INITIATE_SHOT_TIME:2]
 [SHOT_RECOVERY_TIME:0]
 [SHOOT_FORCE:2250]
-[SHOOT_MAXVEL:300] Unchanged
+[SHOOT_MAXVEL:200]
 [TWO_HANDED:0]
 [MINIMUM_SIZE:40000] Down from 58500. Let smaller dwarves and some animal men use it.
 [MATERIAL_SIZE:9] Reduced from 12. Even if it was 6 it wouldn't be OP.
@@ -578,7 +572,7 @@ no shot force requirements
 [NAME:knuckleduster:knuckledusters]
 [SIZE:100]
 [SKILL:GRASP_STRIKE]
-[TWO_HANDED:9000]
+[TWO_HANDED:5000]
 [MINIMUM_SIZE:5000]
 [MATERIAL_SIZE:3]
 [ATTACK:BLUNT:10:100:jab:jabs:NO_SUB:1360]
@@ -596,8 +590,8 @@ no shot force requirements
 [ADJECTIVE:enormous]
 [SIZE:1000]
 [SKILL:HAMMER]
-[TWO_HANDED:5000000]
-[MINIMUM_SIZE:75000] orcs and above
+[TWO_HANDED:200000]
+[MINIMUM_SIZE:72500] orcs and above
 [MATERIAL_SIZE:15] 5 bars
 [ATTACK:BLUNT:75:10000:swipe:swipes at:NO_SUB:5610]
 	[ATTACK_PREPARE_AND_RECOVER:3:6]
@@ -614,8 +608,8 @@ no shot force requirements
 [ADJECTIVE:enormous]
 [SIZE:600]
 [SKILL:SWORD]
-[TWO_HANDED:5000000]
-[MINIMUM_SIZE:75000] orcs and above
+[TWO_HANDED:200000]
+[MINIMUM_SIZE:72500] orcs and above
 [MATERIAL_SIZE:15] 5 bars
 [ATTACK:EDGE:2000:2000:slash:slashes:NO_SUB:1800]
 	[ATTACK_PREPARE_AND_RECOVER:3:6]
@@ -632,8 +626,8 @@ no shot force requirements
 [ADJECTIVE:enormous]
 [SIZE:800]
 [SKILL:AXE]
-[TWO_HANDED:5000000]
-[MINIMUM_SIZE:75000] orcs and above
+[TWO_HANDED:200000]
+[MINIMUM_SIZE:72500] orcs and above
 [MATERIAL_SIZE:15] 5 bars
 [ATTACK:EDGE:1000:3000:hack:hacks:NO_SUB:2600]
 	[ATTACK_PREPARE_AND_RECOVER:3:6]
@@ -650,8 +644,8 @@ no shot force requirements
 [ADJECTIVE:enormous]
 [SIZE:1000]
 [SKILL:MACE]
-[TWO_HANDED:5000000]
-[MINIMUM_SIZE:71500] orcs and above
+[TWO_HANDED:200000]
+[MINIMUM_SIZE:72500] orcs and above
 [MATERIAL_SIZE:15] 5 bars
 [ATTACK:BLUNT:150:10000:sap:saps:NO_SUB:7000]
 	[ATTACK_PREPARE_AND_RECOVER:3:6]
@@ -680,8 +674,8 @@ no shot force requirements
 [SHOT_FORCE_REQUIRES:STRENGTH:2500]
 [SHOT_FORCE_REQUIRES:BLOWGUN:15]
 [SHOOT_MAXVEL:1500]
-[TWO_HANDED:20000]
-[MINIMUM_SIZE:15000]
+[TWO_HANDED:5000] easy to wield in one hand
+[MINIMUM_SIZE:5000]
 [MATERIAL_SIZE:3]
 [ATTACK:EDGE:350:350:slash:slashes:NO_SUB:700]
 	[ATTACK_PREPARE_AND_RECOVER:4:1]
@@ -706,8 +700,8 @@ no shot force requirements
 [SHOT_FORCE_REQUIRES:STRENGTH:2500]
 [SHOT_FORCE_REQUIRES:THROW:15]
 [SHOOT_MAXVEL:1500]
-[TWO_HANDED:0]
-[MINIMUM_SIZE:5000]
+[TWO_HANDED:6500]
+[MINIMUM_SIZE:6500]
 [MATERIAL_SIZE:3]
 [ATTACK:EDGE:200:600:hack:hacks:NO_SUB:900]
 	[ATTACK_PREPARE_AND_RECOVER:4:1]
@@ -732,8 +726,8 @@ no shot force requirements
 [SHOT_FORCE_REQUIRES:STRENGTH:2500]
 [SHOT_FORCE_REQUIRES:BLOWGUN:15]
 [SHOOT_MAXVEL:1500]
-[TWO_HANDED:0]
-[MINIMUM_SIZE:8000]
+[TWO_HANDED:5000]
+[MINIMUM_SIZE:5000] amphibian men, etc., need variants
 [MATERIAL_SIZE:3]
 [ATTACK:EDGE:10:100:jab:jabs:NO_SUB:480]
 	[ATTACK_PREPARE_AND_RECOVER:2:3]
@@ -864,34 +858,33 @@ no shot force requirements
 [SHOT_RECOVERY_TIME:0]
 [SHOOT_FORCE:1000]
 no shot force requirements
-[SHOOT_MAXVEL:300]
-[TWO_HANDED:5000000]
+[SHOOT_MAXVEL:1000]
+[TWO_HANDED:0]
 [MINIMUM_SIZE:58500]  dwarves and larger
-[MATERIAL_SIZE:15]
+[MATERIAL_SIZE:3]
 [ATTACK:BLUNT:100:4000:bash:bashes:NO_SUB:1250]
 	[ATTACK_PREPARE_AND_RECOVER:3:4]
 [ATTACK:BLUNT:70:4000:strike:strikes:stock:1000]
 	[ATTACK_PREPARE_AND_RECOVER:3:4]
 
-[ITEM_WEAPON:ITEM_WEAPON_HANDCANNON_ZM5]  basically a more powerful crossbow and easier to use
+[ITEM_WEAPON:ITEM_WEAPON_HANDCANNON_ZM5]  basically a smaller more powerful and easier to use crossbow, but longer reload time
 [NAME:wheel-lock rifle:wheel-lock rifle]
-[SIZE:500]  crossbows are 400
+[SIZE:350]  crossbows are 400
 [SKILL:HAMMER]
 [RANGED:BLOWGUN:HANDCANNON_SHELL]
 [AIM_DIFFICULTY:1]
-[LOADED:30:10]
+[LOADED:35:10]
 [INITIATE_SHOT_TIME:1]
 [SHOT_RECOVERY_TIME:0]
-[SHOOT_FORCE:1500]
+[SHOOT_FORCE:2000]
 no shot force requirements
-[SHOOT_MAXVEL:1500]
+[SHOOT_MAXVEL:1000]
 [TWO_HANDED:0]
-[MINIMUM_SIZE:58500]
-[MATERIAL_SIZE:15]
-[ATTACK:BLUNT:100:4000:bash:bashes:NO_SUB:1250]
-	[ATTACK_PREPARE_AND_RECOVER:3:4]
-[ATTACK:BLUNT:70:4000:strike:strikes:stock:1000]
-	[ATTACK_PREPARE_AND_RECOVER:3:4]
+[MINIMUM_SIZE:35000]
+[MATERIAL_SIZE:3]
+[ATTACK:BLUNT:10000:4000:bash:bashes:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+	[ATTACK_FLAG_BAD_MULTIATTACK]{+  Revision: ranged weapons should be highly ineffective in melee combat.}
 	
 [ITEM_WEAPON:ITEM_WEAPON_SWORD_ARMING]
 [NAME:arming sword:arming swords]
@@ -991,7 +984,7 @@ no shot force requirements
 [ITEM_WEAPON:ITEM_WEAPON_POLEAXE]
 [NAME:poleaxe:poleaxes]
 [SIZE:450]
-[SKILL:AXE]
+[SKILL:PIKE]
 [TWO_HANDED:5000000]
 [MINIMUM_SIZE:58500]  dwarves and larger
 [MATERIAL_SIZE:9]

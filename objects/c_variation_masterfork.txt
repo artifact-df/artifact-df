@@ -216,6 +216,9 @@ c_variation_masterwork
 	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:ANTIMONIAL_LEAD:4:5] 0.8x  damage taken from hard lead
 	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:ELF_STEEL:4:5]       0.8x  damage taken from elf steel
 	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:ENCHANTED_WOOD:4:5]  0.8x  damage taken from elf wood
+	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:ANTIMONY_BRONZE:4:5] 0.8x  damage taken from antimonial bronze
+	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:CUPRONICKEL:4:5]     0.8x  damage taken from cupronickel
+	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:TRUESILVER:4:5]      0.8x  damage taken from truesilver
 	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:STEEL:1:1]           1.0x  damage taken from steel
 	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:MITHRIL:1:1]         1.0x  damage taken from mithril
 	[CV_NEW_TAG:MATERIAL_FORCE_MULTIPLIER:INORGANIC:DWARFSTEEL:1:1]      1.0x  damage taken from dwarfsteel

@@ -13,7 +13,7 @@ creature_woodelf_pet_fff
 	[PREFSTRING:mystical presence]
 	[GRASSTRAMPLE:0]
 	[LARGE_ROAMING]
-	[TRAINABLE_WAR]{+}
+	--TRAINABLE_WAR] forest elf entity overrides this
 	[SAVAGE] used to be good
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[POPULATION_NUMBER:15:30]

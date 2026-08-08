@@ -1,5 +1,7 @@
 text_curse
 
+	Original from DPh Krakens 'The Way the Words Work' and edited by Zey
+
 Credits:
 Vanilla
 New

@@ -22,7 +22,6 @@ creature_civ_elf_dark_masterfork
 	[PREFSTRING:cruelty]
 	[PREFSTRING:arrogance]
 	[PREFSTRING:vanity]
-	[GNAWER:picked]{+  revision: creature can get out of non-metal cages.}
 	// BASE SKILLS //
 	--NATURAL_SKILL:DISCIPLINE:1]
 	[NATURAL_SKILL:SWIMMING:1]
@@ -244,7 +243,7 @@ creature_civ_elf_dark_masterfork
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2990:2257:1525:731:4300:6100] 12 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2728:2069:1409:675:4000:5700] 13 kph
-	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 33%, but have no rust.}
+	[APPLY_CREATURE_VARIATION:SKILLRATE_IMMORTAL]{+  Revision: immortal creatures learn all skills at 40%, but have no rust.}
 	[SKILL_RATE:SITUATIONAL_AWARENESS:55:NONE:NONE:NONE]{+  Revision: elves learn these skills faster than normal.}
 	[SKILL_RATE:DODGING:55:NONE:NONE:NONE]{+
 	[SKILL_RATE:DISCIPLINE:55:NONE:NONE:NONE]{+

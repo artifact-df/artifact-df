@@ -12,7 +12,7 @@ creature_next_underground
 	[PETVALUE:10]
 	[PET_EXOTIC]
 	[LARGE_ROAMING]
-	--FREQUENCY:10]
+	[FREQUENCY:10]
 	[EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 	[NOTHOUGHT]
 	[NOBONES]
@@ -20,7 +20,6 @@ creature_next_underground
 	[CAVE_ADAPT]{+}
 	[CANNOT_JUMP]
 	[POPULATION_NUMBER:250:500]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:freakish appearance]
 	[BODY:BASIC_1PARTBODY:HEART:GUTS]
 	[NO_THOUGHT_CENTER_FOR_MOVEMENT]
@@ -71,10 +70,9 @@ creature_next_underground
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_ITEM]
-	[LARGE_ROAMING]--FREQUENCY:10]
+	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
 	[PREFSTRING:manes]
@@ -167,7 +165,7 @@ creature_next_underground
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
 	[LARGE_ROAMING]
-	--FREQUENCY:5]
+	[FREQUENCY:5]
 	[NOBREATHE]
 	[NOBONES]
 	[EVIL]
@@ -179,7 +177,6 @@ creature_next_underground
 	[NATURAL_SKILL:CLIMBING:15]
 	[CLUSTER_NUMBER:10:20]
 	[POPULATION_NUMBER:250:500]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:unnerving stare]
 	[GLOWTILE:9][GLOWCOLOR:4:0:1]
 	[BODY:BASIC_1PARTBODY:4ARMS_STANCE:HEART:GUTS:4FINGERS:BODY_EYE:BODY_EYELID]
@@ -224,7 +221,6 @@ creature_next_underground
 	[UNDERGROUND_DEPTH:2:3]
 	[LARGE_ROAMING][DIFFICULTY:2]
 	[POPULATION_NUMBER:100:200]{:10:20
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CARNIVORE][NATURAL]
 	[PETVALUE:1000]
 	[PET_EXOTIC]
@@ -309,10 +305,9 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[PETVALUE:500]
 	[EVIL]
-	[DIFFICULTY:5]{:4}--FREQUENCY:50]
+	[DIFFICULTY:5]{:4}[FREQUENCY:50]
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BUILDINGDESTROYER:2]
 	[LARGE_PREDATOR][MEANDERER]
 	[CAN_LEARN][SLOW_LEARNER]
@@ -777,7 +772,6 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]
 	[CLUSTER_NUMBER:5:10]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
 	[LARGE_PREDATOR]
@@ -851,7 +845,7 @@ creature_next_underground
 	[CASTE_NAME:flesh ball:flesh balls:flesh ball]
 	[CREATURE_TILE:'o'][COLOR:6:0:0]
 	[PETVALUE:10]
-	--FREQUENCY:10]
+	[FREQUENCY:10]
 	[BIOME:SUBTERRANEAN_WATER]
 	[LARGE_ROAMING]
 	[UNDERGROUND_DEPTH:3:3]
@@ -860,7 +854,6 @@ creature_next_underground
 	[PET_EXOTIC]{+}
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:2:5]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:calming roundness]
 	[PREFSTRING:warmth]
 	[BODY:BASIC_1PARTBODY]
@@ -898,7 +891,6 @@ creature_next_underground
 	[CREATURE_TILE:'E'][COLOR:6:0:0]
 	[POPULATION_NUMBER:250:500]{:25:50
 	[CLUSTER_NUMBER:5:10]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NATURAL]
 	[LARGE_ROAMING]
 	[BENIGN]
@@ -970,13 +962,13 @@ creature_next_underground
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is tough.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -1026,7 +1018,7 @@ creature_next_underground
 	[CHILD:1][GENERAL_CHILD_NAME:helmet snake hatchling:helmet snake hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
-	--FREQUENCY:30]
+	[FREQUENCY:30]
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
@@ -1035,12 +1027,10 @@ creature_next_underground
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
 	[POPULATION_NUMBER:100:250]{:10:25
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CLUSTER_NUMBER:1:1]
 	[PREFSTRING:impressive heads]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
-	[APPLY_CREATURE_VARIATION:EMOTION_AURA_FEAR]{+  fear inducing presence.}
 	[BODY:BASIC_1PARTBODY:BASIC_HEAD_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:FORKED_TONGUE:GENERIC_TEETH_WITH_FANGS:RIBCAGE]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 		[REMOVE_MATERIAL:SKIN]
@@ -1145,10 +1135,9 @@ creature_next_underground
 	[PETVALUE:200]
 	[GENERAL_CHILD_NAME:green devourer cub:green devourer cubs]{+  Revision: taming requires a child tag (bug 7983).}
 	[NATURAL]
-	[LARGE_ROAMING]--FREQUENCY:10]
+	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[PREFSTRING:bizarre appearance]
@@ -1235,7 +1224,6 @@ creature_next_underground
 	[UNDERGROUND_DEPTH:2:3]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
@@ -1324,7 +1312,7 @@ creature_next_underground
 	[PETVALUE:20]
 	[PET_EXOTIC]
 	[EVIL]
-	--FREQUENCY:10]
+	[FREQUENCY:10]
 	[VERMIN_ROTTER][VERMIN_GROUNDER]
 	[SMALL_REMAINS][NATURAL]
 	[NOBONES]
@@ -1333,7 +1321,6 @@ creature_next_underground
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
 	[POPULATION_NUMBER:250:500]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:freakish wriggling]
 	[EXTRAVISION]
 	[NOSMELLYROT]{+ doesn't produce miasma.}
@@ -1382,7 +1369,6 @@ creature_next_underground
 	[UNDERGROUND_DEPTH:1:2]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:2:5]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CAVE_ADAPT]{+}
 	[TRAINABLE]{+}
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
@@ -1471,14 +1457,13 @@ creature_next_underground
 	[CREATURE_TILE:'W'][COLOR:7:0:0]
 	[PETVALUE:500]
 	[CHILD:1][GENERAL_CHILD_NAME:giant earthworm hatchling:giant earthworm hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
-	--FREQUENCY:20]
+	[FREQUENCY:20]
 	[NATURAL][NOBONES]
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:awesome presence]
 	[EXTRAVISION]
 	[CANNOT_JUMP]
@@ -1528,11 +1513,10 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
-	--FREQUENCY:1]
+	[FREQUENCY:1]
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:2]{+  Revision: non-solid creatures need all the help they can get.}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:2:5]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NOBONES]
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 		[NOTHOUGHT][NOEXERT]
@@ -1620,7 +1604,6 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:200:400]{:20:40
 	[CLUSTER_NUMBER:5:15]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[BENIGN]
@@ -1710,7 +1693,6 @@ creature_next_underground
 	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:200:300]{:20:30
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[LARGE_PREDATOR][AMBUSHPREDATOR][GRASSTRAMPLE:0]{+}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]{:2:2
@@ -1799,11 +1781,10 @@ creature_next_underground
 	[CREATURE_TILE:'M'][COLOR:4:0:1]
 	[CREATURE_CLASS:MAMMAL]
 	[NATURAL]
-	[LARGE_ROAMING]--FREQUENCY:20]
+	[LARGE_ROAMING][FREQUENCY:20]
 	[LARGE_PREDATOR]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:3]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[PREFSTRING:freakish appearance]
@@ -1909,7 +1890,6 @@ creature_next_underground
 	[CAVE_ADAPT]{+}
 	[LARGE_ROAMING][DIFFICULTY:3]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[LARGE_PREDATOR][NATURAL]
 	[BONECARN]
 	[CHILD:1]
@@ -1966,13 +1946,13 @@ creature_next_underground
 	[APPLY_CREATURE_VARIATION:CONVERT_LEATHER_TO_HIDE]{+  Revision: the leather is still furry after tanning.}
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -2019,7 +1999,6 @@ creature_next_underground
 	[AQUATIC][IMMOBILE_LAND]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:5]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:1:2]
@@ -2059,13 +2038,13 @@ creature_next_underground
 	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:bite:bites]
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		[ATTACK_FLAG_CANLATCH]
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:STAB:BODYPART:BY_CATEGORY:CLAW]
 		[ATTACK_SKILL:GRASP_STRIKE]
 		[ATTACK_VERB:stab at:stabs at]
@@ -2096,10 +2075,9 @@ creature_next_underground
 	[MOUNT]{:MOUNT_EXOTIC}
 	[NATURAL]
 	[CAVE_ADAPT]{+}
-	[LARGE_ROAMING]--FREQUENCY:10]
+	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:2]
 	[LARGE_PREDATOR]
@@ -2195,52 +2173,49 @@ creature_next_underground
 	[DESCRIPTION:A gigantic monster, once a dragon, now adapted to and polluted by the underground.  Its face is full of incredibly long teeth.  Its eyes are large to penetrate the darkness.  Its scales are akin to metal.]{: Revision: removed mention of wings and added mention of dragonscales.}
 	[NAME:cave dragon:cave dragons:cave draconic]
 	[CASTE_NAME:cave dragon:cave dragons:cave draconic]
-	[CHILD:10][CHILDNAME:cave dragon hatchling:cave dragon hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[CREATURE_TILE:'D'][COLOR:7:0:1]
+	[CHILD:10][CHILDNAME:cave dragon hatchling:cave dragon hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[PETVALUE:10000]
 	[PET_EXOTIC]
 	[MOUNT_EXOTIC]{+  Revision: surface dragons are exotic mounts; cave dragons should be too.}
-	[TRAINABLE_WAR]{:TRAINABLE}
+	[TRAINABLE]
 	[EVIL]
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
-	[UNDERGROUND_DEPTH:2:3]{:3:3
-	[POPULATION_NUMBER:20:50]{:2:5
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
+	[UNDERGROUND_DEPTH:3:3]
+	[POPULATION_NUMBER:20:50]{:2:5}[DIFFICULTY:10]
 	[DIFFICULTY:10]
 	[CLUSTER_NUMBER:1:1]
-	--FREQUENCY:5]
+	[FREQUENCY:20]{:5}
+	[FANCIFUL]{+}
 	[FIREIMMUNE_SUPER]
 	[LARGE_PREDATOR]
 	[NOFEAR]
+	[PRONE_TO_RAGE:5]{+}
 	[BUILDINGDESTROYER:2]
 	[GRASSTRAMPLE:50]
 	[BONECARN]
 	[CAVE_ADAPT]{+}
-	[AMPHIBIOUS]{+}
 	[SMELL_TRIGGER:10]{+}
-	[FANCIFUL]{+}
 	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  revision: megabeasts have a high resistance against low tier materials.}
-	[CURIOUSBEAST_ITEM]{+    Revision: cave dragons should steal items like regular dragons do.}
 	[PREFSTRING:impressive teeth]
 	[PREFSTRING:large eyes]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[SYNDROME_DILUTION_FACTOR:FEAR:150]{+}
 	[SOUND:ALERT:100:15000:VOCALIZATION:roar:roars:the echoing roar of an ancient dragon]{+}
 	[SOUND:ALERT:50:5000:VOCALIZATION:growl:lets out a deep, rumbling growl that shakes your bones:a deep, rumbling growl echoing through the caverns]{+}
 	[SOUND:PEACEFUL_INTERMITTENT:25:5000:VOCALIZATION:growl idly:growls idly:an unsettling growl]{+}
 	[APPLY_CREATURE_VARIATION:EMOTION_AURA_TERROR]{+  terror inducing presence.}
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE]{:TAIL:2WINGS:2EYES  Revision: removed its wings.  It's a cave adapted surface dragon, but surface dragons have no wings.}
-	[BODY_DETAIL_PLAN:DRAGON_MATERIALS]{:STANDARD_MATERIALS}
+	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
 		[REMOVE_MATERIAL:SKIN]
 		[REMOVE_MATERIAL:LEATHER]
-		--REMOVE_MATERIAL:PARCHMENT]
+		[REMOVE_MATERIAL:PARCHMENT]
 		[REMOVE_MATERIAL:HAIR]
-		[USE_MATERIAL_TEMPLATE:SCALE:DRAGONSCALE_TEMPLATE]{:SCALE_TEMPLATE}
-	[BODY_DETAIL_PLAN:DRAGON_TISSUES]{:STANDARD_TISSUES}
+		[USE_MATERIAL_TEMPLATE:SCALE:DRAGONSCALE_TEMPLATE]{:SCALE_TEMPLATE  Revision: dragons have extremely strong scales.}
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[REMOVE_TISSUE:SKIN]
 		[REMOVE_TISSUE:HAIR]
-		[USE_TISSUE_TEMPLATE:SCALE:DRAGONSCALE_TISSUE_TEMPLATE]{:SCALE_TEMPLATE}
+		[USE_TISSUE_TEMPLATE:SCALE:SCALE_TEMPLATE]
 	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SCALE:FAT:MUSCLE:BONE:CARTILAGE]
 	[USE_MATERIAL_TEMPLATE:CLAW:DRAGONBONE_TEMPLATE]{:CLAW_TEMPLATE}
 	[USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]
@@ -2258,12 +2233,13 @@ creature_next_underground
 	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
 	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
 	[CREATURE_CLASS:GENERAL_POISON]
-	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:200]{+  zey: 100% resistant to most poisons.}
+	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:175]{+  Revision: very resistant to most poisons.}
 	[GETS_WOUND_INFECTIONS]
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
 	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
 	[BODY_SIZE:0:0:6000]
+	[BODY_SIZE:10:0:3750000]{+  Revision: 1/4th size after 10 years.}
 	[BODY_SIZE:1000:0:15000000]
 	[BODY_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:120]{:90:95:98:100:102:105:110}
 		[APP_MOD_IMPORTANCE:520]{+}
@@ -2282,19 +2258,19 @@ creature_next_underground
 			[APP_MOD_IMPORTANCE:1000]{+
 			[APP_MOD_NOUN:pointy teeth:PLURAL]{+
 			[APP_MOD_DESC_RANGE:30:60:90:110:150:190]{+
-	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]{+    Revision: a powerful edged biting attack.}
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:chomp:chomps]{:bite:bites
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
 		[ATTACK_FLAG_CANLATCH]
-	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]{  Revision: a powerful edged scratching attack.}
+	[ATTACK:CLAW:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:CLAW]
 		[ATTACK_SKILL:GRASP_STRIKE]
-		[ATTACK_VERB:claw:claws]{:scratch:scratches
-		[ATTACK_CONTACT_PERC:90]{:100
+		[ATTACK_VERB:claw:claws]
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
@@ -2302,10 +2278,11 @@ creature_next_underground
 	[APPLY_CREATURE_VARIATION:TAIL_ATTACK]{+ tail slap attack.}
 	[APPLY_CREATURE_VARIATION:HOWL_TERROR]{+  fear inducing howl.}
 	[ALL_ACTIVE]
-	[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4500:5000]             +++
-	[PHYS_ATT_RANGE:TOUGHNESS:3000:3500:3750:4000:4250:4500:5000]            +++
-	[PHYS_ATT_RANGE:ENDURANCE:3000:3500:3750:4000:4250:4500:5000]            +++
-	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]                  -
+	[MENT_ATT_RANGE:WILLPOWER:3000:3500:3750:4000:4250:4500:5000]{+}            +++
+	[PHYS_ATT_RANGE:STRENGTH:3000:3500:3750:4000:4250:4500:5000]{+}             +++
+	[PHYS_ATT_RANGE:TOUGHNESS:3000:3500:3750:4000:4250:4500:5000]{+}            +++
+	[PHYS_ATT_RANGE:ENDURANCE:3000:3500:3750:4000:4250:4500:5000]{+}            +++
+	[PHYS_ATT_RANGE:AGILITY:150:600:800:900:1000:1100:1500]{+}                  -
 	[LOW_LIGHT_VISION:10000]
 	[NATURAL_SKILL:BITE:6]
 	[NATURAL_SKILL:GRASP_STRIKE:6]
@@ -2313,11 +2290,11 @@ creature_next_underground
 	[NATURAL_SKILL:DODGING:6]
 	[NATURAL_SKILL:BITE:10]
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:6]{+}
-	[NATURAL_SKILL:DISCIPLINE:10]{+}
-	[NATURAL_SKILL:CLIMBING:5]{+  Revision: since they live in caves it seems reasonable they should be able to climb fairly well.}
+	[NATURAL_SKILL:CLIMBING:1]{+  Revision: since they live in caves it seems reasonable they should be able to climb.}
 	[APPLY_CREATURE_VARIATION:STANDARD_QUADRUPED_GAITS:900:750:600:439:1900:2900] 20 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
+	[APPLY_CREATURE_VARIATION:MEGABEAST_FORCE_RESISTANCE]{+  Revision: megabeasts have a high resistance against low tier materials.}
 	[SWIMS_INNATE]
 	[HOMEOTHERM:10040]
 	[CASTE:FEMALE]
@@ -2340,13 +2317,11 @@ creature_next_underground
 		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
 			[TL_COLOR_MODIFIER:IRIS_EYE_GREEN:1]
 				[TLCM_NOUN:eyes:PLURAL]
-		[SET_TL_GROUP:BY_CATEGORY:FINGER:CLAW]{+  variable claw descriptions + lengths.}
-		 [PLUS_TL_GROUP:BY_CATEGORY:TOE:CLAW]{+
-		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:85:95:98:100:102:105:115]{+
+		[SET_TL_GROUP:BY_CATEGORY:TOE:CLAW]{+  variable claw descriptions + lengths.}
+		 	[TISSUE_LAYER_APPEARANCE_MODIFIER:LENGTH:90:95:98:100:102:105:110]{+
 				[APP_MOD_NOUN:claws:PLURAL]{+
-				[APP_MOD_DESC_RANGE:86:94:98:102:106:114]{+
 	[SELECT_MATERIAL:ALL]
-		[MULTIPLY_VALUE:8]{:4
+		[MULTIPLY_VALUE:6]{:4
 		[COLDDAM_POINT:NONE]{+}
 		[HEATDAM_POINT:NONE]{+
 		[IGNITE_POINT:NONE]{+
@@ -2371,7 +2346,6 @@ creature_next_underground
 	[UNDERGROUND_DEPTH:2:3]
 	[POPULATION_NUMBER:100:150]{:10:15
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BONECARN]
 	[CAVE_ADAPT]{+}
 	[LARGE_PREDATOR][AMBUSHPREDATOR][GRASSTRAMPLE:0]{+}
@@ -2491,9 +2465,8 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
-	--FREQUENCY:1]
+	[FREQUENCY:1]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 		[NOTHOUGHT][NOEXERT]
 	[NO_DIZZINESS]
@@ -2567,10 +2540,9 @@ creature_next_underground
 	[CREATURE_TILE:'g'][COLOR:6:0:1]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:1:3]
-	[LARGE_ROAMING]--FREQUENCY:25]
+	[LARGE_ROAMING][FREQUENCY:25]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:2]{:1:1
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BENIGN]
 	[CAVE_ADAPT]{+}
 	[CAN_LEARN][CAN_SPEAK]
@@ -2739,14 +2711,13 @@ creature_next_underground
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:2:3]
 	[LARGE_ROAMING]
-	--FREQUENCY:10]
+	[FREQUENCY:10]
 	[EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 	[FLIER]
 	[NOBONES]
 	[NATURAL]
 	[POPULATION_NUMBER:150:250]{:30:50
 	[CLUSTER_NUMBER:1:3]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:graceful drifting]
 	[BODY:BASIC_1PARTBODY_FLYING_HEAD_FLAG_THOUGHT:2EYESTALKS]
 	[USE_MATERIAL_TEMPLATE:POD_JUICE:CREATURE_EXTRACT_TEMPLATE]
@@ -2826,11 +2797,10 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:2:3]
-	--FREQUENCY:20]
+	[FREQUENCY:20]
 	[BENIGN]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:5]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CAN_LEARN]
 	[LOCAL_POPS_CONTROLLABLE]
 	[LOCAL_POPS_PRODUCE_HEROES]
@@ -2940,7 +2910,7 @@ creature_next_underground
 	[CREATURE_CLASS:POISONOUS]
 	[PETVALUE:50]
 	[PET_EXOTIC]
-	--FREQUENCY:10]
+	[FREQUENCY:10]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[BIOME:SUBTERRANEAN_WATER]
 	[LARGE_ROAMING]
@@ -2950,7 +2920,6 @@ creature_next_underground
 	[NATURAL]
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:2:5]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:bright orange color]
 	[BODY:BASIC_1PARTBODY_THOUGHT]
 	[USE_MATERIAL_TEMPLATE:SKIN:SKIN_NOLEATHER_TEMPLATE]{:SKIN_TEMPLATE}
@@ -3017,9 +2986,8 @@ creature_next_underground
 	[LARGE_ROAMING]
 	[BIOME:SUBTERRANEAN_CHASM]
 	[UNDERGROUND_DEPTH:3:3]
-	--FREQUENCY:1]
+	[FREQUENCY:1]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[NOBONES]
 	[NOPAIN][EXTRAVISION][NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION]
 		[NOTHOUGHT][NOEXERT]

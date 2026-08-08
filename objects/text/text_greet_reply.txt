@@ -1,5 +1,7 @@
 text_greet_reply
 
+	Original from DPh Krakens 'The Way the Words Work' and edited by Zey
+
 [OBJECT:TEXT_SET]
 
 Credits:
@@ -15,10 +17,10 @@ DF Wiki Speech Mods
 Ah, hello.  I'm [SPEAKER:TRANS_NAME].
 I'm alright. My name is [SPEAKER:TRANS_NAME].
 I'm glad you're here.  I'm [SPEAKER:TRANS_NAME].
-I'm [SPEAKER:TRANS_NAME].  Let's be friends.
+I'm [SPEAKER:TRANS_NAME].  Welcome!
 It's me, [SPEAKER:TRANS_NAME].
-My name is [AUDIENCE:TRANS_NAME], but just [SPEAKER:TRANS_NAME] is fine.
-My name is [SPEAKER:TRANS_NAME], don't wear it out.
+My name is [SPEAKER:TRANS_NAME], but just [SPEAKER:FIRST_NAME] is fine.
+My name is [SPEAKER:TRANS_NAME], but my friends call me [SPEAKER:FIRST_NAME].
 Oh, I haven't gotten to introduce myself.  I'm [SPEAKER:TRANS_NAME].
 Pray tell, [AUDIENCE:TRANS_NAME].  This is [SPEAKER:TRANS_NAME].
 Speak freely, [AUDIENCE:TRANS_NAME].  My name is [SPEAKER:TRANS_NAME].

@@ -42,7 +42,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:155000]
 	[BENDING_FRACTURE:310000]
 	[BENDING_STRAIN_AT_YIELD:73]
-	[MAX_EDGE:10000]
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[STATE_COLOR:ALL_SOLID:GRAY]
 
 [INORGANIC:GOLD]
@@ -79,14 +79,12 @@ Colors added by Bohandas.
 	[BENDING_YIELD:50000]
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:64]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
 	[STATE_COLOR:ALL_SOLID:GOLDEN_YELLOW]{:GOLD
-	[ITEMS_SOFT]
-	[STOCKPILE_THREAD_METAL]{+}
 
 [INORGANIC:SILVER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -95,7 +93,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:12]{:10
+	[MATERIAL_VALUE:15]{:10
 	[SPEC_HEAT:230]
 	[MELTING_POINT:11731]
 	[BOILING_POINT:13892]
@@ -125,10 +123,8 @@ Colors added by Bohandas.
 	[BENDING_YIELD:100000]
 	[BENDING_FRACTURE:170000]
 	[BENDING_STRAIN_AT_YIELD:120]
-	[MAX_EDGE:5000]{:10000  Revision:  terrible for edged weapons.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[STATE_COLOR:ALL_SOLID:SILVER]
-	[ITEMS_SOFT]{+}
-	[STOCKPILE_THREAD_METAL]{+}
 
 [INORGANIC:COPPER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
@@ -167,7 +163,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:70000]
 	[BENDING_FRACTURE:220000]
 	[BENDING_STRAIN_AT_YIELD:58]
-	[MAX_EDGE:9000]{:10000  revision: copper is less sharp than iron.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[STATE_COLOR:ALL_SOLID:COPPER]
 	[MATERIAL_REACTION_PRODUCT:MINERAL_DYE:INORGANIC:DYE_MALACHITE]{+}
 
@@ -178,7 +174,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling nickel]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:2]
+	[MATERIAL_VALUE:6]{:2}
 	[SPEC_HEAT:444]
 	[MELTING_POINT:12619]
 	[BOILING_POINT:15243]
@@ -203,7 +199,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:20000]
 	[BENDING_FRACTURE:160000]
 	[BENDING_STRAIN_AT_YIELD:10]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -242,7 +238,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:50000]
 	[BENDING_FRACTURE:150000]
 	[BENDING_STRAIN_AT_YIELD:46]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -256,7 +252,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling bronze]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:12]{:5  material cost would be 4,4. valuable because its a good armor/weapon material
+	[MATERIAL_VALUE:10]{:5  material cost would be 4,4. valuable because its a good armor/weapon material
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]
@@ -286,7 +282,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:172000]
 	[BENDING_FRACTURE:241000]
 	[BENDING_STRAIN_AT_YIELD:156]
-	[MAX_EDGE:10250]{:10000  revision: bronze is sharper than iron but less so than steel.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[STATE_COLOR:ALL_SOLID:BRONZE]
 
 [INORGANIC:BRASS]
@@ -296,7 +292,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling brass]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:9]{:7  material cost of 3,6
+	[MATERIAL_VALUE:6]{:7  material cost of 3,6
 	[SPEC_HEAT:377]
 	[MELTING_POINT:11656]
 	[BOILING_POINT:14068]
@@ -321,12 +317,12 @@ Colors added by Bohandas.
 	[BENDING_YIELD:83000]
 	[BENDING_FRACTURE:290000]
 	[BENDING_STRAIN_AT_YIELD:75]
-	[MAX_EDGE:9250]{:10000  Revision:  slight improvement over copper due to hardness added by zinc.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
 	[ITEMS_SCALED]
-	[ITEMS_WEAPON][ITEMS_WEAPON_RANGED][ITEMS_AMMO][ITEMS_ARMOR]{+}
+	--ITEMS_WEAPON]--ITEMS_WEAPON_RANGED]--ITEMS_AMMO]
 	[STATE_COLOR:ALL_SOLID:BRASS]
 
 [INORGANIC:STEEL]
@@ -362,7 +358,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:430000]
 	[BENDING_FRACTURE:720000]
 	[BENDING_STRAIN_AT_YIELD:215]
-	[MAX_EDGE:10500]{:10000  revision: steel has a superior edge compared to iron and bronze.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -376,7 +372,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling pig iron]
 	[DISPLAY_COLOR:0:7:1]
 	[BUILD_COLOR:0:7:1]
-	[MATERIAL_VALUE:10]
+	[MATERIAL_VALUE:6]{:10}
 	[SPEC_HEAT:500]
 	[MELTING_POINT:12106]
 	[BOILING_POINT:13968]
@@ -401,7 +397,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:130000]
 	[BENDING_FRACTURE:200000]
 	[BENDING_STRAIN_AT_YIELD:62]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[STATE_COLOR:ALL_SOLID:TAUPE_GRAY]
 
 [INORGANIC:PLATINUM]
@@ -436,7 +432,7 @@ Colors added by Bohandas.
 	[BENDING_YIELD:100000]
 	[BENDING_FRACTURE:200000]
 	[BENDING_STRAIN_AT_YIELD:60]
-	[MAX_EDGE:5000]{:10000  Revision:  terrible for edged weapons.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -450,7 +446,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling electrum]
 	[DISPLAY_COLOR:6:6:1]
 	[BUILD_COLOR:6:6:1]
-	[MATERIAL_VALUE:31]{:20  material cost would be 21
+	[MATERIAL_VALUE:25]{:20  material cost of 21,0
 	[SPEC_HEAT:180]
 	[MELTING_POINT:11828]
 	[BOILING_POINT:14968]
@@ -478,7 +474,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_YIELD:50000]
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:64]
-	[MAX_EDGE:10000]
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -517,7 +513,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_YIELD:12000]
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:24]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -532,7 +528,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling fine pewter]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:17]{:5  material cost = 7,1
+	[MATERIAL_VALUE:8]{:5  material cost of 7,1
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -557,7 +553,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_YIELD:12000]
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:24]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -596,7 +592,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_YIELD:12000]
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:24]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -611,7 +607,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[STATE_NAME_ADJ:GAS:boiling lay pewter]
 	[DISPLAY_COLOR:3:7:0]
 	[BUILD_COLOR:3:7:0]
-	[MATERIAL_VALUE:11]{:3  material cost = 7,1
+	[MATERIAL_VALUE:9]{:3  material cost of 7,1
 	[SPEC_HEAT:210]
 	[MELTING_POINT:10417]
 	[BOILING_POINT:14684]
@@ -636,7 +632,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_YIELD:12000]
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:24]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -675,7 +671,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_YIELD:10000]
 	[BENDING_FRACTURE:12000]
 	[BENDING_STRAIN_AT_YIELD:63]
-	[MAX_EDGE:5000]{:10000  Revision:  inappropriate for edged weapons.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -714,7 +710,7 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 	[BENDING_YIELD:20000]
 	[BENDING_FRACTURE:50000]
 	[BENDING_STRAIN_AT_YIELD:29]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -724,12 +720,12 @@ Also found a more accurate source, which gives a range of 13000-16000 -- http://
 temperature values unknown, used nickel
 [INORGANIC:NICKEL_SILVER]
 	[USE_MATERIAL_TEMPLATE:METAL_TEMPLATE]
-	[STATE_NAME_ADJ:ALL_SOLID:nickel silver]
-	[STATE_NAME_ADJ:LIQUID:molten nickel silver]
-	[STATE_NAME_ADJ:GAS:boiling nickel silver]
+	[STATE_NAME_ADJ:ALL_SOLID:nickel-silver]{:nickel silver}
+	[STATE_NAME_ADJ:LIQUID:molten nickel-silver]{:nickel silver}
+	[STATE_NAME_ADJ:GAS:boiling nickel-silver]{:nickel silver}
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:5] material cost would be 3,4
+	[MATERIAL_VALUE:8]{:3  material cost of 4,2
 	[SPEC_HEAT:444]
 	[MELTING_POINT:11620] german wiki
 	[BOILING_POINT:15243]
@@ -754,7 +750,7 @@ temperature values unknown, used nickel
 	[BENDING_YIELD:20000]
 	[BENDING_FRACTURE:160000]
 	[BENDING_STRAIN_AT_YIELD:10]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -769,7 +765,7 @@ temperature values unknown, used copper
 	[STATE_NAME_ADJ:GAS:boiling billon]
 	[DISPLAY_COLOR:7:3:0]
 	[BUILD_COLOR:7:3:0]
-	[MATERIAL_VALUE:8]{:6  material cost of 7,2
+	[MATERIAL_VALUE:11]{:6  material cost of 7,2
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -794,7 +790,7 @@ temperature values unknown, used copper
 	[BENDING_YIELD:70000]
 	[BENDING_FRACTURE:220000]
 	[BENDING_STRAIN_AT_YIELD:58]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -810,7 +806,7 @@ value is weighted average of 3 silver and 1 copper
 	[STATE_NAME_ADJ:GAS:boiling sterling silver]
 	[DISPLAY_COLOR:7:7:1]
 	[BUILD_COLOR:7:7:1]
-	[MATERIAL_VALUE:12] material cost would be 11,2
+	[MATERIAL_VALUE:16]{:8  material cost of 11,2
 	[SPEC_HEAT:230]
 	[MELTING_POINT:11602] unknown source
 	[BOILING_POINT:13892]
@@ -835,7 +831,7 @@ value is weighted average of 3 silver and 1 copper
 	[BENDING_YIELD:100000]
 	[BENDING_FRACTURE:170000]
 	[BENDING_ELASTICITY:120]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -854,7 +850,7 @@ value of 11 is the weighted average value of 2copper/1silver/1gold components
 	[STATE_NAME_ADJ:GAS:boiling black bronze]
 	[DISPLAY_COLOR:5:6:0]
 	[BUILD_COLOR:5:6:0]
-	[MATERIAL_VALUE:8] material cost would be 7,4
+	[MATERIAL_VALUE:11]{:11  material cost of 7,4
 	[SPEC_HEAT:385]
 	[MELTING_POINT:11952]
 	[BOILING_POINT:14611]
@@ -879,7 +875,7 @@ value of 11 is the weighted average value of 2copper/1silver/1gold components
 	[BENDING_YIELD:70000]
 	[BENDING_FRACTURE:220000]
 	[BENDING_STRAIN_AT_YIELD:58]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -920,7 +916,7 @@ value is weighted average of 3 gold and 1 copper
 	[BENDING_YIELD:50000]
 	[BENDING_FRACTURE:100000]
 	[BENDING_STRAIN_AT_YIELD:64]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -935,7 +931,7 @@ bismuth itself is brittle, but you can alloy it with tin/copper to make a light-
 	[STATE_NAME_ADJ:GAS:boiling bismuth]
 	[DISPLAY_COLOR:5:5:1]
 	[BUILD_COLOR:5:5:1]
-	[MATERIAL_VALUE:2]
+	[MATERIAL_VALUE:6]{:2}
 	[SPEC_HEAT:123]
 	[MELTING_POINT:10488]
 	[BOILING_POINT:12815]
@@ -960,7 +956,7 @@ bismuth itself is brittle, but you can alloy it with tin/copper to make a light-
 	[BENDING_YIELD:30000]
 	[BENDING_FRACTURE:50000]
 	[BENDING_STRAIN_AT_YIELD:94]
-	[MAX_EDGE:1000]{:10000  Revision:  inappropriate for military use.}
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[STATE_COLOR:ALL_SOLID:HELIOTROPE]
 
 you can make a lighter colored bronze by adding bismuth, used temp values from bronze, used by incas, at least according to one source ha ha
@@ -997,7 +993,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_YIELD:172000]
 	[BENDING_FRACTURE:241000]
 	[BENDING_STRAIN_AT_YIELD:156]
-	[MAX_EDGE:10000]
+	[MAX_EDGE:5000]{:10000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[ITEMS_HARD]
 	[ITEMS_METAL]
 	[ITEMS_BARRED]
@@ -1043,7 +1039,7 @@ you can make a lighter colored bronze by adding bismuth, used temp values from b
 	[BENDING_YIELD:5000000]
 	[BENDING_FRACTURE:5000000]
 	[BENDING_STRAIN_AT_YIELD:0]
-	[MAX_EDGE:100000]
+	[MAX_EDGE:10000]{:100000  Revision: reworked most material sharpness; new baseline is 5000.}
 	[DEEP_SPECIAL]
 	[STOCKPILE_THREAD_METAL]
 	[STATE_COLOR:ALL_SOLID:AQUA]

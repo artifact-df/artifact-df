@@ -75,13 +75,13 @@ Crows were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:10:15]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -148,7 +148,7 @@ Crows were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small person with the head and wings of a crow.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -211,7 +211,7 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:ANY_TEMPERATE_WETLAND]
 	[BIOME:TUNDRA]
 	[BIOME:ANY_DESERT]
-	[LARGE_ROAMING][FREQUENCY:100]
+	[LARGE_ROAMING][FREQUENCY:25]{:100}
 	[POPULATION_NUMBER:250:500]
 	[CLUSTER_NUMBER:2:10]
 	[SMALL_REMAINS]
@@ -268,13 +268,13 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:20:40]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -338,7 +338,7 @@ Ravens were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a raven.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'r']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -390,9 +390,10 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[CHILD:1][GENERAL_CHILD_NAME:cassowary chick:cassowary chicks]
 	[CREATURE_TILE:'c'][COLOR:0:0:1]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[PETVALUE:100]
 	--BENIGN][MEANDERER]
 	[PET_EXOTIC]
@@ -466,13 +467,13 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_PRIORITY:SECOND]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		[ATTACK_PRIORITY:MAIN]
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[CASTE:FEMALE]
 		[FEMALE]
 		[DESCRIPTION:A small, flightless, colorful bird with a red casque on her head and strong legs with large claws.  Unlike most birds, she lacks tail feathers.]{+}
@@ -525,7 +526,7 @@ Cassowaries were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A brightly-colored person with the head of a cassowary.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -569,10 +570,11 @@ Kea were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:kea:kea:kea]
 	[GENERAL_CHILD_NAME:kea chick:kea chicks]
 	[CREATURE_TILE:'k'][COLOR:2:0:0]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_ITEM]
 	[PETVALUE:25]
@@ -634,13 +636,13 @@ Kea were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:30:50]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -705,7 +707,7 @@ Kea were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A green person with the head of a kea.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'k']
 	[COLOR:2:0:0]
 	[SKILL_LEARN_RATE:DODGING:300]{+  Revision: help kea people feel more unique.}
@@ -756,9 +758,10 @@ Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:snowy owl:snowy owls:snowy owl]
 	[GENERAL_CHILD_NAME:snowy owl chick:snowy owl chicks]
 	[CREATURE_TILE:'o'][COLOR:7:0:1]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BENIGN][PETVALUE:25]
 	[PET_EXOTIC]
 	[FLIER]
@@ -818,13 +821,13 @@ Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:10:30]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -891,7 +894,7 @@ Snowy owls were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the wings and head of a snowy owl.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:1]
@@ -1011,13 +1014,13 @@ Sparrows were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:5:10]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -1081,7 +1084,7 @@ Sparrows were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a sparrow.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -1136,9 +1139,10 @@ Storks were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'s'][COLOR:7:0:1]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BIOME:ANY_GRASSLAND]
 	[BIOME:ANY_WETLAND]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:25]
 	[BENIGN][MEANDERER][PET_EXOTIC]
@@ -1188,13 +1192,13 @@ Storks were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:20:40]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -1248,7 +1252,7 @@ Storks were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a stork, also standing on long legs.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:1]
 
@@ -1300,10 +1304,11 @@ Loons were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'l'][COLOR:0:0:1]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BIOME:LAKE_TEMPERATE_SALTWATER]
 	[BIOME:LAKE_TEMPERATE_BRACKISHWATER]
 	[BIOME:LAKE_TEMPERATE_FRESHWATER]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:1:4]
 	[PETVALUE:10]
 	[BENIGN][MEANDERER][PET_EXOTIC]
@@ -1352,13 +1357,13 @@ Loons were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:25:30]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -1412,7 +1417,7 @@ Loons were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a loon.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:0:0:1]
 
@@ -1460,9 +1465,10 @@ Barn owl were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:barn owl:barn owls:barn owl]
 	[GENERAL_CHILD_NAME:barn owl chick:barn owl chicks]
 	[CREATURE_TILE:'b'][COLOR:6:0:0]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BENIGN][PETVALUE:25]
 	[PET_EXOTIC]
 	[FLIER]
@@ -1528,13 +1534,13 @@ Barn owl were sponsored by the generous contributions of the Bay 12 community.
 	[MUNDANE]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -1598,7 +1604,7 @@ Barn owl were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the arms and wings of a barn owl.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'b']
 	[COLOR:6:0:0]
@@ -1714,13 +1720,13 @@ Parakeets were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:15:25]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -1784,7 +1790,7 @@ Parakeets were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a parakeet.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:2:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -1838,11 +1844,12 @@ Kakapo were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'k'][COLOR:2:0:0]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:ANY_TEMPERATE_FOREST]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:1:1]
 	[PETVALUE:50]
 	[BENIGN][MEANDERER][PET_EXOTIC]
@@ -1890,13 +1897,13 @@ Kakapo were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:60:120]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -1951,7 +1958,7 @@ Kakapo were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a kakapo.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'k']
 	[COLOR:2:0:0]
 
@@ -2001,8 +2008,9 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 	[CREATURE_TILE:'p'][COLOR:7:0:0]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:3:5]
 	[BENIGN][PETVALUE:10]
 	[MEANDERER][PET_EXOTIC]
@@ -2053,13 +2061,13 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 	[MAXAGE:40:60]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -2113,7 +2121,7 @@ Grey parrots were sponsored by the generous contributions of the Bay 12 communit
 	[DESCRIPTION:A person with the head and wings of a grey parrot.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:3:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:7:0:0]
 
@@ -2163,8 +2171,9 @@ Puffins were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'p'][COLOR:0:0:1]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BIOME:OCEAN_ARCTIC]
-	[POPULATION_NUMBER:30:50]
+	[POPULATION_NUMBER:300:500]{:30:50}
 	[CLUSTER_NUMBER:5:10]
 	[PETVALUE:10]
 	[BENIGN][PET_EXOTIC]
@@ -2212,13 +2221,13 @@ Puffins were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:15:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -2272,7 +2281,7 @@ Puffins were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A feathered person with the head of a puffin.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'p']
 	[COLOR:0:0:1]
 
@@ -2319,9 +2328,10 @@ Swans were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'s'][COLOR:7:0:1]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BIOME:ANY_TEMPERATE_LAKE]
 	[BIOME:ANY_TEMPERATE_MARSH]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:1:2]
 	[PETVALUE:10]
 	[BENIGN][MEANDERER][PET_EXOTIC]
@@ -2369,13 +2379,13 @@ Swans were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:10:25]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[CASTE_NAME:pen swan:pen swans:pen swan]
@@ -2431,7 +2441,7 @@ Swans were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a swan.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:2]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:1]
 
@@ -2535,13 +2545,13 @@ Lorikeets were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:15:30]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -2605,7 +2615,7 @@ Lorikeets were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A colorful person with the head and wings of a lorikeet.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:4:0:1]
 
@@ -2716,13 +2726,13 @@ Wrens were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:5:7]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -2786,7 +2796,7 @@ Wrens were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a wren.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'w']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -2837,9 +2847,10 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:osprey:ospreys:osprey]
 	[GENERAL_CHILD_NAME:osprey chick:osprey chicks]
 	[CREATURE_TILE:'o'][COLOR:7:0:1]
-	[POPULATION_NUMBER:150:300]{:15:30
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[BENIGN][FLIER]
@@ -2904,13 +2915,13 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[BODY_SIZE:2:0:2000]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -2974,7 +2985,7 @@ Ospreys were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of an osprey.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:1]
 	[SKILL_LEARN_RATE:TRAPPING:200]{+}
@@ -3026,10 +3037,11 @@ Emus were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'E'][COLOR:6:0:0]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:ANY_TEMPERATE_FOREST]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:2:10]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[PETVALUE:100]
 	[BENIGN][MEANDERER]
 	[PET_EXOTIC]
@@ -3091,13 +3103,13 @@ Emus were sponsored by the generous contributions of the Bay 12 community.
 		[ATTACK_FLAG_BAD_MULTIATTACK]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
-		[ATTACK_PRIORITY:SECOND]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		[ATTACK_PRIORITY:MAIN]
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -3151,7 +3163,7 @@ Emus were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A feathered person with the head of an emu.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'E']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DANCE:300]{+  Revision: emus are silly creatures.}
@@ -3256,13 +3268,13 @@ Cockatiels were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:15:30]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -3326,7 +3338,7 @@ Cockatiels were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A crested person with the head and wings of a cockatiel.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:7:0:1]
 
@@ -3430,13 +3442,13 @@ Peach-faced lovebirds were sponsored by the generous contributions of the Bay 12
 	[MAXAGE:10:15]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -3500,7 +3512,7 @@ Peach-faced lovebirds were sponsored by the generous contributions of the Bay 12
 	[DESCRIPTION:A colorful person with the head and wings of a peach-faced lovebird.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:2:0:1]
 
@@ -3606,13 +3618,13 @@ Magpies were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:10:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -3676,7 +3688,7 @@ Magpies were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a magpie.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -3727,9 +3739,10 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:kestrel:kestrels:kestrel]
 	[GENERAL_CHILD_NAME:kestrel chick:kestrel chicks]
 	[CREATURE_TILE:'k'][COLOR:4:0:0]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[PETVALUE:25]
 	[PET]
 	[BENIGN][FLIER]
@@ -3793,13 +3806,13 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:10:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -3866,7 +3879,7 @@ Kestrels were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a kestrel.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'k']
 	[COLOR:4:0:0]
 	[SKILL_LEARN_RATE:TRAPPING:200]{+}
@@ -3916,8 +3929,9 @@ Albatrosses were sponsored by the generous contributions of the Bay 12 community
 	[CREATURE_TILE:'a'][COLOR:7:0:1]
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[BIOME:ANY_OCEAN]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[CLUSTER_NUMBER:1:10]
 	[PETVALUE:10]
 	[BENIGN][PET_EXOTIC]
@@ -3967,13 +3981,13 @@ Albatrosses were sponsored by the generous contributions of the Bay 12 community
 	[MAXAGE:40:50]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
@@ -4027,7 +4041,7 @@ Albatrosses were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A person with the head and wings of an albatross.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:1]
 
@@ -4074,9 +4088,10 @@ Great horned owls were sponsored by the generous contributions of the Bay 12 com
 	[CASTE_NAME:great horned owl:great horned owls:great horned owl]
 	[GENERAL_CHILD_NAME:great horned owl chick:great horned owl chicks]
 	[CREATURE_TILE:'o'][COLOR:7:0:0]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[FLIER]
@@ -4141,13 +4156,13 @@ Great horned owls were sponsored by the generous contributions of the Bay 12 com
 	[MAXAGE:15:20]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -4214,7 +4229,7 @@ Great horned owls were sponsored by the generous contributions of the Bay 12 com
 	[DESCRIPTION:A feathered person with the head and wings of a great horned owl.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'o']
 	[COLOR:7:0:0]
@@ -4268,9 +4283,10 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:eagle:eagles:eagle]
 	[GENERAL_CHILD_NAME:eagle chick:eagle chicks]
 	[CREATURE_TILE:'e'][COLOR:6:0:0]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[PETVALUE:25]
 	[PET]
 	[BENIGN][FLIER]
@@ -4333,13 +4349,13 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:20:30]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -4406,7 +4422,7 @@ Eagles were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A feathered person with the head and wings of an eagle.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'e']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:TRAPPING:200]{+}
@@ -4456,9 +4472,10 @@ Hornbills were sponsored by the generous contributions of the Bay 12 community.
 	[CASTE_NAME:hornbill:hornbills:hornbill]
 	[GENERAL_CHILD_NAME:hornbill chick:hornbill chicks]
 	[CREATURE_TILE:'h'][COLOR:0:0:1]
-	[POPULATION_NUMBER:15:30]
+	[POPULATION_NUMBER:150:300]{:15:30}
 	[NATURAL]
 	[LARGE_ROAMING]
+	[FREQUENCY:25]{+}
 	[PETVALUE:25]
 	[PET_EXOTIC]
 	[BENIGN][FLIER]
@@ -4510,13 +4527,13 @@ Hornbills were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:35:40]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -4583,7 +4600,7 @@ Hornbills were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A feathered person with a brightly-colored bill.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'h']
 	[COLOR:0:0:1]
 
@@ -4685,13 +4702,13 @@ Masked lovebirds were sponsored by the generous contributions of the Bay 12 comm
 	[MAXAGE:10:15]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -4755,7 +4772,7 @@ Masked lovebirds were sponsored by the generous contributions of the Bay 12 comm
 	[DESCRIPTION:A colorful person with the head and wings of a masked lovebird.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:2:0:1]
 
@@ -4857,13 +4874,13 @@ Bushtits were sponsored by the generous contributions of the Bay 12 community.
 	[MAXAGE:1:2]
 	[ATTACK:BITE:BODYPART:BY_CATEGORY:BEAK]
 		[ATTACK_SKILL:BITE]
-		[ATTACK_VERB:peck:pecks]{:bite:bites
+		[ATTACK_VERB:peck:pecks]{:bite:bites}
 		[ATTACK_CONTACT_PERC:100]
-		[ATTACK_PENETRATION_PERC:110]{:100  revision: beaks are more penetrating.}
+		[ATTACK_PENETRATION_PERC:100]
 		[ATTACK_FLAG_EDGE]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
-		--ATTACK_FLAG_CANLATCH]{ revision: beaks don't latch.}
+		--ATTACK_FLAG_CANLATCH]{  Revision: beaks don't latch.}
 	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:STANCE:BY_CATEGORY:ALL:TALON]
 		[ATTACK_SKILL:STANCE_STRIKE]
 		[ATTACK_VERB:snatch at:snatches at]
@@ -4927,7 +4944,7 @@ Bushtits were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a bushtit.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'b']
 	[COLOR:6:0:0]
 

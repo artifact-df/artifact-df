@@ -80,7 +80,7 @@ creature_annelids
 	[DESCRIPTION:A worm-like creature with the torso of a man.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'w']
 	[COLOR:7:0:0]
 	[EXTRAVISION]

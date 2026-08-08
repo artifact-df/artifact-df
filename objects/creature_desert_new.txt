@@ -112,7 +112,7 @@ Geckos were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and fingers of a gecko.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'g']
 	[COLOR:6:0:1]
@@ -276,7 +276,7 @@ Desert tortoises were sponsored by the generous contributions of the Bay 12 comm
 	[DESCRIPTION:A reptile person with the head and tail of a desert tortoise.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'t']
 	[COLOR:6:0:0]
 
@@ -476,7 +476,7 @@ Gila monsters were sponsored by the generous contributions of the Bay 12 communi
 	[DESCRIPTION:A venomous person with the head and tail of a gila monster.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'g']
 	[COLOR:4:0:1]

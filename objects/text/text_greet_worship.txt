@@ -1,5 +1,7 @@
 text_greet_worship
 
+	Original from DPh Krakens 'The Way the Words Work' and edited by Zey
+
 [OBJECT:TEXT_SET]
 
 Credits:

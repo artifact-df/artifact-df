@@ -25,7 +25,7 @@ reaction_other_masterfork
 	[DESCRIPTION:Press peat into a more compacted form which can be fired at a kiln or smelter and turned into coke.]{+}
 
 [REACTION:PEAT_TO_COKE]
-	[NAME:make coke (2-4) from compacted peat]
+	[NAME:make coke from compacted peat (2-4)]
 	[BUILDING:SMELTER:NONE]
 	[BUILDING:KILN:NONE]
 	[REAGENT:compacted peat:1:BOULDER:NO_SUBTYPE:INORGANIC:PEAT]
@@ -38,17 +38,19 @@ reaction_other_masterfork
 	[SKILL:SMELT]
 	[FUEL]
 	[DESCRIPTION:Make 2-4 bars of coke from one unit of compacted peat.]
+	[SKILL_IP:15]{+ 30 default  Revision: reduced exp from making coal. 0.5x multiplier.}
 
 [REACTION:ANTHRACITE_TO_COKE]
-	[NAME:make coke (10) from anthracite]
+	[NAME:make coke from anthracite (12)]
 	[BUILDING:SMELTER:NONE]
 	[BUILDING:KILN:NONE]
 	[REAGENT:anthracite:1:BOULDER:NO_SUBTYPE:INORGANIC:ANTHRACITE]
-	[PRODUCT:100:10:BAR:NO_SUBTYPE:COAL:COKE]
+	[PRODUCT:100:12:BAR:NO_SUBTYPE:COAL:COKE]
 		[PRODUCT_DIMENSION:150]
 	[SKILL:SMELT]
 	[FUEL]
-	[DESCRIPTION:Make 10 bars of coke from one unit of anthracite.]
+	[DESCRIPTION:Make 12 bars of coke from one unit of anthracite.]
+	[SKILL_IP:15]{+ 30 default  Revision: reduced exp from making coal. 0.5x multiplier.}
 
 [REACTION:MECHANISM_WOOD]
  	[NAME:make wooden mechanism]
@@ -82,11 +84,11 @@ reaction_other_masterfork
 	[NAME:grind rock into dye]
 	[BUILDING:MILLSTONE:NONE]
 	[BUILDING:QUERN:NONE]
-	[REAGENT:dye containing mineral:1:ANY_RAW_MATERIAL:NONE:NONE:NONE]
+	[REAGENT:mineral dye:1:ANY_RAW_MATERIAL:NONE:NONE:NONE]
 	    [HAS_MATERIAL_REACTION_PRODUCT:MINERAL_DYE]
 	[REAGENT:empty bag:1:BAG:NONE:NONE:NONE]
 		[EMPTY][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:1:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:dye containing mineral:MINERAL_DYE][PRODUCT_DIMENSION:150]
+	[PRODUCT:100:1:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:mineral dye:MINERAL_DYE][PRODUCT_DIMENSION:150]
 		[PRODUCT_TO_CONTAINER:empty bag]
 		[PRODUCT_TOKEN:dye]
 	[WORLDGEN_ENABLED]
@@ -100,11 +102,11 @@ reaction_other_masterfork
 	[NAME:grind rough gem into dye]
 	[BUILDING:MILLSTONE:NONE]
 	[BUILDING:QUERN:NONE]
-	[REAGENT:dye containing gem:1:ROUGH:NONE:NONE:NONE]
+	[REAGENT:gem dye:1:ROUGH:NONE:NONE:NONE]
 	    [HAS_MATERIAL_REACTION_PRODUCT:MINERAL_DYE]
 	[REAGENT:empty bag:1:BAG:NONE:NONE:NONE]
 		[EMPTY][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:1:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:dye containing gem:MINERAL_DYE][PRODUCT_DIMENSION:150]
+	[PRODUCT:100:1:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:gem dye:MINERAL_DYE][PRODUCT_DIMENSION:150]
 		[PRODUCT_TO_CONTAINER:empty bag]
 		[PRODUCT_TOKEN:dye]
 	[WORLDGEN_ENABLED]
@@ -476,7 +478,7 @@ reaction_other_masterfork
 // MISC BUILDING MATS
 
 [REACTION:MAKE_WOOD_BLOCKS_EFFICIENTLY]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
- 	[NAME:split logs into planks efficiently* (4-8)]
+ 	[NAME:split logs into planks efficiently*]
  	[BUILDING:CARPENTER:NONE]
 	[REAGENT:log:1:WOOD:NONE:NONE:NONE]
 		[ANY_PLANT_MATERIAL]
@@ -485,12 +487,11 @@ reaction_other_masterfork
 	[PRODUCT:4:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:log:NONE]
 	[PRODUCT:4:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:log:NONE]
 	[PRODUCT:4:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:log:NONE]
-	[MAX_MULTIPLIER:1] for consistency
 	[SKILL:WOODCUTTING]
-	[DESCRIPTION:Efficiency - this reaction is an efficiency reaction, which means that it has a 4% chance to yield additional products per number of reagents.]
+	[DESCRIPTION: *Efficiency - this reaction is an efficiency reaction, which means that it has a 4% chance, per the number of (primary) reagents, to yield additional free products.]
 
 [REACTION:MAKE_STONE_BLOCKS_EFFICIENTLY]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
-	[NAME:split boulders into blocks efficiently* (4-8)]
+	[NAME:split boulders into blocks efficiently*]
 	[BUILDING:MASON:NONE]
 	[REAGENT:boulder:1:BOULDER:NONE:NONE:NONE]
 		[WORTHLESS_STONE_ONLY]
@@ -499,12 +500,11 @@ reaction_other_masterfork
 	[PRODUCT:4:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:boulder:NONE]
 	[PRODUCT:4:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:boulder:NONE]
 	[PRODUCT:4:1:BLOCKS:NO_SUBTYPE:GET_MATERIAL_FROM_REAGENT:boulder:NONE]
-	[MAX_MULTIPLIER:1] for consistency
 	[SKILL:MASONRY]
-	[DESCRIPTION:Efficiency - this reaction is an efficiency reaction, which means that it has a 4% chance to yield additional products per number of reagents.]
+	[DESCRIPTION: *Efficiency - this reaction is an efficiency reaction, which means that it has a 4% chance, per the number of (primary) reagents, to yield additional free products.]
 
 [REACTION:MAKE_CLAY_BRICKS_EFFICIENTLY]{ efficiency: makes an additional product and a 4% chance to get additional free products, per base product amount. }
-	[NAME:make clay bricks efficiently* (4-8)]
+	[NAME:make clay bricks efficiently*]
 	[BUILDING:KILN:CUSTOM_B]
 	[REAGENT:clay:1:BOULDER:NONE:NONE:NONE]
 		[HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT]
@@ -514,9 +514,8 @@ reaction_other_masterfork
 	[PRODUCT:4:1:BLOCKS:NONE:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
 	[PRODUCT:4:1:BLOCKS:NONE:GET_MATERIAL_FROM_REAGENT:clay:FIRED_MAT]
 	[FUEL]
-	[MAX_MULTIPLIER:1] for consistency
 	[SKILL:POTTERY]
-	[DESCRIPTION:Efficiency - this reaction is an efficiency reaction, which means that it has a 4% chance to yield additional products per number of reagents.]
+	[DESCRIPTION: *Efficiency - this reaction is an efficiency reaction, which means that it has a 4% chance, per the number of (primary) reagents, to yield additional free products.]
 
 // MISC REACTIONS FROM FFF
 
@@ -730,13 +729,12 @@ reaction_other_masterfork
 	[CATEGORY:DEBARK_LOGS]
 
 [REACTION:MAKE_CHARCOAL_BULK]
-	[NAME:make bulk charcoal (5)]
+	[NAME:make charcoal (5)]
 	[BUILDING:WOOD:NONE]
 	[REAGENT:logs:5:WOOD:NONE:NONE:NONE]
 		[ANY_PLANT_MATERIAL]
 	[PRODUCT:100:5:BAR:NO_SUBTYPE:COAL:CHARCOAL]
 		[PRODUCT_DIMENSION:150]
-	[MAX_MULTIPLIER:5] repeat 5x
 	[FORTRESS_MODE_ENABLED]
 	[SKILL:WOOD_BURNING]
 
@@ -755,77 +753,55 @@ reaction_other_masterfork
 	[DESCRIPTION:Make quicklime from powdered calcium carbonate rock such as marble, limestone, chalk, borax or calcite.]
 	[FORTRESS_MODE_ENABLED]
 
-[REACTION:GRIND_CARBONATE_STONE_POWDER]  turn 4 calcium carbonate rocks into 5 powder, +25% efficiency
+[REACTION:GRIND_CARBONATE_STONE_POWDER]
 	[NAME:grind calcium carbonate boulder into powder]
 	[BUILDING:QUERN:NONE]
 	[BUILDING:MILLSTONE:NONE]
-	[REAGENT:A:4:BOULDER:NONE:NONE:NONE]
+	[REAGENT:A:1:BOULDER:NONE:NONE:NONE]
 		[REACTION_CLASS:CALCIUM_CARBONATE]
 	[REAGENT:empty bag:1:BAG:NONE:NONE:NONE]
 		[EMPTY]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:5:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:A:MINERAL_LIME][PRODUCT_DIMENSION:150]
+	[PRODUCT:100:1:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:A:MINERAL_LIME][PRODUCT_DIMENSION:150]
 		[PRODUCT_TO_CONTAINER:empty bag]
 		[PRODUCT_TOKEN:calcium carbonate]
 	[SKILL:MILLING]
-	[SKILL_IP:120]{+ 30 default  revision: bulk reactions should yield the same experience as doing each reagent individually.}
-	[MAX_MULTIPLIER:1] not sure if needed?
-	[DESCRIPTION:Grind calcium carbonate containing minerals into powder. This is more efficient than using boulders for reactions.]
+	[DESCRIPTION:Grind calcium carbonate containing minerals into powder.]
 	[FORTRESS_MODE_ENABLED]
 
-[REACTION:GRIND_FLUX_STONE_POWDER]  turn 4 flux rocks into 5 powder, +25% efficiency
-	[NAME:grind flux boulder into powder]
+[REACTION:GRIND_FLUX_STONE_POWDER]  Revision: flux reactions now require flux to be in powder form and no longer accept boulders.
+	[NAME:grind flux boulder into lime]
 	[BUILDING:QUERN:NONE]
 	[BUILDING:MILLSTONE:NONE]
-	[REAGENT:A:4:BOULDER:NONE:NONE:NONE]
+	[REAGENT:A:1:BOULDER:NONE:NONE:NONE]
 		[REACTION_CLASS:FLUX]
 	[REAGENT:empty bag:1:BAG:NONE:NONE:NONE]
 		[EMPTY]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:5:POWDER_MISC:NONE:GET_MATERIAL_FROM_REAGENT:A:MINERAL_LIME][PRODUCT_DIMENSION:150]
+	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:LIME_FLUX][PRODUCT_DIMENSION:150]
 		[PRODUCT_TO_CONTAINER:empty bag]
-		[PRODUCT_TOKEN:flux]
+		[PRODUCT_TOKEN:lime]
 	[SKILL:MILLING]
-	[SKILL_IP:120]{+ 30 default  revision: bulk reactions should yield the same experience as doing each reagent individually.}
-	[MAX_MULTIPLIER:1] not sure if needed?
-	[DESCRIPTION:Grind flux minerals into powder. This is more efficient than using boulders for reactions.]
+	[DESCRIPTION:Grind flux minerals into lime powder. Reactions requiring lime flux need it to be in powder form.]
 	[FORTRESS_MODE_ENABLED]
 
-[REACTION:STEEL_MAKING_POWDER]  can use powdered flux instead
-	[NAME:smelt steel bars (powder)]
-	[BUILDING:SMELTER:NONE]
-	[REAGENT:iron:150:BAR:NO_SUBTYPE:METAL:IRON]
-	[REAGENT:pig iron:150:BAR:NO_SUBTYPE:METAL:PIG_IRON]
-	[REAGENT:flux:150:POWDER_MISC:NONE:NONE:NONE]
-		[REACTION_CLASS:FLUX]
-	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
-		[CONTAINS:flux]
+[REACTION:GRIND_BORAX_STONE_POWDER]  borax is more efficient at making lime
+	[NAME:grind borax boulder into lime]
+	[BUILDING:QUERN:NONE]
+	[BUILDING:MILLSTONE:NONE]
+	[REAGENT:A:4:BOULDER:NONE:INORGANIC:BORAX]
+	[REAGENT:empty bag:5:BAG:NONE:NONE:NONE]
+		[EMPTY]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[REAGENT:coal/coke:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
-	[PRODUCT:100:2:BAR:NO_SUBTYPE:METAL:STEEL][PRODUCT_DIMENSION:150]
-	[FUEL]
-	[SKILL:SMELT]
-	[DESCRIPTION:Smelt 2 steel bars from 1 iron bar, 1 pig iron bar, 1 calcium carbonate containing bag, and 1 bar of coal/coke (in addition to that used for fuel).]{+}
-	[FORTRESS_MODE_ENABLED]
-
-[REACTION:PIG_IRON_MAKING_POWDER]
-	[NAME:smelt pig iron bars (powder)]
-	[BUILDING:SMELTER:NONE]
-	[REAGENT:iron:300:BAR:NO_SUBTYPE:METAL:IRON]
-	[REAGENT:flux:150:POWDER_MISC:NONE:NONE:NONE]
-		[REACTION_CLASS:FLUX]
-	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
-		[CONTAINS:flux]
-		[PRESERVE_REAGENT]
-		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[REAGENT:coal/coke:150:BAR:NO_SUBTYPE:COAL:NO_MATGLOSS]
-	[PRODUCT:100:1:BAR:NO_SUBTYPE:METAL:PIG_IRON][PRODUCT_DIMENSION:150]
-	[FUEL]
-	[SKILL:SMELT]
-	[DESCRIPTION:Smelt 1 pig iron bar from 2 iron bars, 1 bag containing calcium carbonate, and 1 bar of coal/coke (in addition to that used for fuel).]{+}
+	[PRODUCT:100:5:POWDER_MISC:NONE:INORGANIC:LIME_FLUX][PRODUCT_DIMENSION:150]
+		[PRODUCT_TO_CONTAINER:empty bag]
+		[PRODUCT_TOKEN:lime]
+	[SKILL:MILLING]
+	[DESCRIPTION:Grind borax into lime powder. Reactions requiring lime flux need it to be in powder form.]
+	[DESCRIPTION:Borax flux is more efficient than other flux minerals.]
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:MAKE_CRYSTAL_ROCK]
@@ -844,7 +820,7 @@ reaction_other_masterfork
 	[FUEL]
 
 [REACTION:GRIND_ROCK_SALT_POWDER]
-	[NAME:grind rock salt into powder]
+	[NAME:grind halite into salt]
 	[BUILDING:QUERN:NONE]
 	[BUILDING:MILLSTONE:NONE]
 	[REAGENT:A:1:BOULDER:NONE:INORGANIC:ROCK_SALT]
@@ -852,7 +828,7 @@ reaction_other_masterfork
 		[EMPTY]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[PRODUCT:100:5:POWDER_MISC:NONE:INORGANIC:ROCK_SALT][PRODUCT_DIMENSION:150]
+	[PRODUCT:100:1:POWDER_MISC:NONE:INORGANIC:ROCK_SALT][PRODUCT_DIMENSION:150]
 		[PRODUCT_TOKEN:salt]
 		[PRODUCT_TO_CONTAINER:empty bag]
 	[SKILL:MILLING]
@@ -861,16 +837,16 @@ reaction_other_masterfork
 [REACTION:MAKE_SALTED_MEAT]  salt meat to make it not rot and more valuable
 	[NAME:salt meat]
 	[BUILDING:KITCHEN:NONE]
-	[REAGENT:meat:1:MEAT:NONE:NONE:NONE][UNROTTEN]
+	[REAGENT:meat:5:MEAT:NONE:NONE:NONE][UNROTTEN][USE_BODY_COMPONENT]
 		[REACTION_CLASS:MEAT_SALTABLE]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:salt]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
-	[REAGENT:salt:150:POWDER_MISC:NONE:NONE:NONE]
-		[REACTION_CLASS:SODIUM_CHLORIDE]
+	[REAGENT:salt:150:POWDER_MISC:NONE:INORGANIC:ROCK_SALT]
 	[PRODUCT:100:5:MEAT:NONE:GET_MATERIAL_FROM_REAGENT:meat:SALTED_MAT]
 	[SKILL:COOK]
+	[DESCRIPTION:Preserve meat with salt causing it not to spoil.]
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:TAN_A_HIDE_SALT]  more efficient way to tan hides
@@ -878,15 +854,14 @@ reaction_other_masterfork
 	[BUILDING:TANNER:NONE]
 	[REAGENT:hide:1:NONE:NONE:NONE:NONE][USE_BODY_COMPONENT][UNROTTEN]
 		[HAS_MATERIAL_REACTION_PRODUCT:TAN_MAT]
-	[REAGENT:salt:150:POWDER_MISC:NONE:NONE:NONE]
-		[REACTION_CLASS:SODIUM_CHLORIDE]
+	[REAGENT:salt:150:POWDER_MISC:NONE:INORGANIC:ROCK_SALT]
 	[REAGENT:bag:1:BAG:NONE:NONE:NONE]
 		[CONTAINS:salt]
 		[PRESERVE_REAGENT]
 		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 	[PRODUCT:100:2:SKIN_TANNED:NONE:GET_MATERIAL_FROM_REAGENT:hide:TAN_MAT] an additional leather
 	[SKILL:TANNER]
-	[AUTOMATIC]
+	--AUTOMATIC]
 	[FORTRESS_MODE_ENABLED]
 
 [REACTION:MAKE_OBSIDIAN_ARROWS]

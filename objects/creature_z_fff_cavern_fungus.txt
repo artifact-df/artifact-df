@@ -182,7 +182,6 @@ creature_fff_cavern_fungus
 	[PREFSTRING:three heads]
 	[PREFSTRING:long bodies]
 	[PREFSTRING:spore-covered body]
-	[GNAWER:thrashed]{+  revision: creature can get out of non-metal cages.}
 	[SOUND:ALERT:100:15000:VOCALIZATION:roar in resonant harmony:roars in a multi-tone harmony with its three heads, shaking your bones:the echoing, harmonic roar of a hydra]
 	[SOUND:ALERT:50:5000:VOCALIZATION:growl:lets out a deep, rumbling growl that shakes your bones:a deep, rumbling growl echoing through the caverns]
 	[SOUND:PEACEFUL_INTERMITTENT:25:5000:VOCALIZATION:growl idly:growls idly:an unsettling growl]

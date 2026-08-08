@@ -26,10 +26,8 @@ creature_large_tropical
 	[BIOME:SAVANNA_TROPICAL]{+}
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BENIGN][MEANDERER][NATURAL]
 	[NATURAL_SKILL:BITE:3]{+}
-	[PRONE_TO_RAGE:5]{+}
 	[PREFSTRING:strength]
 	[PREFSTRING:amazing trunks]
 	[PREFSTRING:calves' spirited antics]
@@ -52,7 +50,7 @@ creature_large_tropical
 		[USE_MATERIAL_TEMPLATE:IVORY:TOOTH_TEMPLATE]
 			[STATE_NAME:ALL_SOLID:ivory]
 			[STATE_ADJ:ALL_SOLID:ivory]
-			[MATERIAL_VALUE:4]{+  revision: more valuable ivory.}
+			[MATERIAL_VALUE:3]{+  revision: more valuable ivory.}
 	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
 		[USE_TISSUE_TEMPLATE:IVORY:IVORY_TEMPLATE]
 			[TISSUE_NAME:ivory:NP]
@@ -93,9 +91,7 @@ creature_large_tropical
 	[ATTACK:GORE:BODYPART:BY_CATEGORY:TUSK]
 		[ATTACK_SKILL:BITE]
 		[ATTACK_VERB:gore:gores]
-		[ATTACK_CONTACT_PERC:90]{:100}
-		[ATTACK_PENETRATION_PERC:110]{+}
-		[ATTACK_VELOCITY_MODIFIER:1100]{+}
+		[ATTACK_CONTACT_PERC:100]
 		[ATTACK_FLAG_EDGE]{+}
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
 		[ATTACK_PRIORITY:MAIN]
@@ -116,7 +112,6 @@ creature_large_tropical
 		[MALE]
 		[POP_RATIO:2]{+ males are less common in herds.}
 		[PRONE_TO_RAGE:5]{+}
-		[TRANCES]{+  can enter battle trances.}
 		[CASTE_NAME:elephant bull:elephant bulls:elephant]
 		[DESCRIPTION:A huge, tusked, and hairless mammal that grazes in forest and grassland in groups.  He lifts plants with his trunk and attacks with long tusks when he gets angry.  His large ears flap in the heat.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
@@ -165,7 +160,7 @@ creature_large_tropical
 	[DESCRIPTION:A large person with the trunk and ears of an elephant.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'E']
 	[COLOR:7:0:0]
@@ -236,7 +231,6 @@ creature_large_tropical
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -339,7 +333,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:WARTHOG_MAN]
 	[COPY_TAGS_FROM:WARTHOG]
@@ -370,7 +363,7 @@ creature_large_tropical
 	[DESCRIPTION:A person with the head of a warthog.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'W']
 	[COLOR:6:0:0]
@@ -425,7 +418,7 @@ creature_large_tropical
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
@@ -545,7 +538,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:LION_MAN]
 	[COPY_TAGS_FROM:LION]
@@ -576,7 +568,7 @@ creature_large_tropical
 	[TRANCES]{+  can enter battle trances.}
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'L']
 	[COLOR:6:0:1]
@@ -632,7 +624,7 @@ creature_large_tropical
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
@@ -750,7 +742,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:LEOPARD_MAN]
 	[COPY_TAGS_FROM:LEOPARD]
@@ -780,7 +771,7 @@ creature_large_tropical
 	[DESCRIPTION:A spotted person with the head and tail of a leopard.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:1]
@@ -836,7 +827,7 @@ creature_large_tropical
 	[BIOME:DESERT_BADLAND]
 	[BIOME:DESERT_ROCK]
 	[BIOME:DESERT_SAND]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
@@ -954,7 +945,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:JAGUAR_MAN]
 	[COPY_TAGS_FROM:JAGUAR]
@@ -984,7 +974,7 @@ creature_large_tropical
 	[DESCRIPTION:A spotted person with the head and tail of a jaguar.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'J']
 	[COLOR:6:0:1]
@@ -1042,7 +1032,7 @@ creature_large_tropical
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
 	[BIOME:SWAMP_TROPICAL_SALTWATER]
 	[BIOME:SWAMP_MANGROVE]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
 	[AMBUSHPREDATOR]{+}
@@ -1161,7 +1151,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:TIGER_MAN]
 	[COPY_TAGS_FROM:TIGER]
@@ -1192,7 +1181,7 @@ creature_large_tropical
 	[TRANCES]{+  can enter battle trances.}
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:1]
@@ -1247,7 +1236,7 @@ creature_large_tropical
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:1]
 	[CARNIVORE][NATURAL]
@@ -1364,7 +1353,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:CHEETAH_MAN]
 	[COPY_TAGS_FROM:CHEETAH]
@@ -1394,7 +1382,7 @@ creature_large_tropical
 	[DESCRIPTION:A spotted person with the head and tail of a cheetah.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'c']
 	[COLOR:6:0:1]
@@ -1552,7 +1540,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GAZELLE_MAN]
 	[COPY_TAGS_FROM:GAZELLE]
@@ -1583,7 +1570,7 @@ creature_large_tropical
 	[DESCRIPTION:A horned person with the head of a gazelle.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'g']
 	[COLOR:6:0:0]
@@ -1631,7 +1618,7 @@ creature_large_tropical
 	[NATURAL_SKILL:DISCIPLINE:3]{+  Revision: to address trainable pets bug #7161.}
 	[NATURAL]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][LOOSE_CLUSTERS][FREQUENCY:100]{:10}
+	[LARGE_ROAMING][LOOSE_CLUSTERS][FREQUENCY:15]{:10}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -1725,7 +1712,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:MANDRILL_MAN]
 	[COPY_TAGS_FROM:MANDRILL]
@@ -1755,7 +1741,7 @@ creature_large_tropical
 	[DESCRIPTION:A blue-rumped person with the head and tail of a mandrill.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:1:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1806,7 +1792,7 @@ creature_large_tropical
 	[NATURAL]
 	[MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:10]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -1899,7 +1885,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:BONOBO]
 	[DESCRIPTION:A large ape which lives in the tropical forests.  It is quite intelligent and lives in large and complex social groups.]
@@ -1915,7 +1900,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:10]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2006,7 +1991,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GORILLA]
 	[DESCRIPTION:A huge ape found in the forest.  It lives in small groups eating plants.  The groups are lead by a large dominant male with a silver back.]
@@ -2024,7 +2008,7 @@ creature_large_tropical
 	[NATURAL]
 	[MEANDERER]--BENIGN]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:10]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2128,7 +2112,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:ORANGUTAN]
 	[DESCRIPTION:A huge intelligent ape found in the tropical forests.  It is bright red and found living in the trees.]
@@ -2144,7 +2127,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:10]{:5}
 	[POPULATION_NUMBER:200:500]{:20:50
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:colorful hair]
@@ -2235,7 +2218,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_SIAMANG]
 	[DESCRIPTION:A medium-sized ape found in the trees.  It is known for its loud calls.]
@@ -2251,7 +2233,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2342,7 +2324,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_WHITE_HANDED]
 	[DESCRIPTION:A small, long-armed ape.  It lives in trees and eats fruit.]
@@ -2358,7 +2339,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2450,7 +2431,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_BLACK_HANDED]
 	[DESCRIPTION:A small fruit-eating ape, found in the trees.]
@@ -2466,7 +2446,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2558,7 +2538,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_GRAY]
 	[DESCRIPTION:A small ape found in the trees of the tropical forest.  It is known for its calls.]
@@ -2574,7 +2553,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2665,7 +2644,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_SILVERY]
 	[DESCRIPTION:A small ape found in the trees eating fruit.]
@@ -2681,7 +2659,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2767,7 +2745,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_PILEATED]
 	[DESCRIPTION:A small ape found in pairs, swinging from the trees.]
@@ -2783,7 +2760,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2872,7 +2849,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_BILOU]
 	[DESCRIPTION:A small ape that swings from the trees, eating fruit.]
@@ -2888,7 +2864,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -2979,7 +2955,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_WHITE_BROWED]
 	[DESCRIPTION:A small fruit-eating ape, found in the trees.]
@@ -2995,7 +2970,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -3081,7 +3056,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIBBON_BLACK_CRESTED]
 	[DESCRIPTION:A small ape from the tropical forest.  It can be found in the trees eating fruit.]
@@ -3097,7 +3071,7 @@ creature_large_tropical
 	[NATURAL]
 	[BENIGN][MEANDERER]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:2:2]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
@@ -3188,7 +3162,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:CAMEL_1_HUMP]
 	[DESCRIPTION:A large long-necked creature with a large hump on its sturdy body.  It has been domesticated to carry passengers and cargo but is nonetheless bad-tempered and will spit.]
@@ -3338,7 +3311,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:CAMEL_1_HUMP_MAN]
 	[COPY_TAGS_FROM:CAMEL_1_HUMP]
@@ -3376,7 +3348,7 @@ creature_large_tropical
 	[DESCRIPTION:A person with the head and hump of a one-humped camel.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
@@ -3549,7 +3521,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:CAMEL_2_HUMP_MAN]
 	[COPY_TAGS_FROM:CAMEL_2_HUMP]
@@ -3587,7 +3558,7 @@ creature_large_tropical
 	[DESCRIPTION:A person with the head and humps of a two-humped camel.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'C']
 	[COLOR:6:0:0]
@@ -3653,7 +3624,7 @@ creature_large_tropical
 	[BIOME:RIVER_TROPICAL_SALTWATER]
 	[BIOME:RIVER_TROPICAL_BRACKISHWATER]
 	[BIOME:RIVER_TROPICAL_FRESHWATER]
-	[LARGE_ROAMING][DIFFICULTY:2][FREQUENCY:100]{:5}
+	[LARGE_ROAMING][DIFFICULTY:2][FREQUENCY:25]{:5}
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:3]
 	[CARNIVORE][NATURAL]
@@ -3754,7 +3725,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:3]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:CROCODILE_SALTWATER_MAN]
 	[COPY_TAGS_FROM:CROCODILE_SALTWATER]
@@ -3785,7 +3755,7 @@ creature_large_tropical
 	[DESCRIPTION:A person with the head and tail of a saltwater crocodile.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'C']
 	[COLOR:2:0:0]
@@ -3832,7 +3802,7 @@ creature_large_tropical
 	[GENERAL_CHILD_NAME:vulture hatchling:vulture hatchlings]
 	[CREATURE_TILE:'v'][COLOR:4:0:0]
 	[POPULATION_NUMBER:150:300]{:15:30
-	[FREQUENCY:100]{+}
+	[FREQUENCY:25]{+}
 	[CLUSTER_NUMBER:5:10]
 	[LOOSE_CLUSTERS]
 	[PETVALUE:30]
@@ -3937,7 +3907,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:VULTURE_MAN]
 	[COPY_TAGS_FROM:BIRD_VULTURE]
@@ -3969,7 +3938,7 @@ creature_large_tropical
 	[DESCRIPTION:A person with the head and wings of a vulture.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'v']
 	[COLOR:4:0:0]
 
@@ -4027,7 +3996,7 @@ creature_large_tropical
 	[BIOME:SHRUBLAND_TROPICAL]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+}
+	[FREQUENCY:60]{+}
 	[MEANDERER][NATURAL]--BENIGN]
 	[PREFSTRING:horns]
 	[WAGON_PULLER][PACK_ANIMAL][TRADE_CAPACITY:2500]{+}
@@ -4114,7 +4083,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:5]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:RHINOCEROS_MAN]
 	[COPY_TAGS_FROM:RHINOCEROS]
@@ -4154,7 +4122,7 @@ creature_large_tropical
 	[DESCRIPTION:A person with the head and horns of a rhinoceros.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'R']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
@@ -4211,7 +4179,7 @@ creature_large_tropical
 	[BIOME:SHRUBLAND_TROPICAL]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+}
+	[FREQUENCY:60]{+}
 	[BENIGN][MEANDERER][NATURAL]
 	[PREFSTRING:long necks]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:GENERIC_TEETH:RIBCAGE:2HEAD_HORN]
@@ -4284,7 +4252,6 @@ creature_large_tropical
 		[MULTIPLY_VALUE:5]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIRAFFE_MAN]
 	[COPY_TAGS_FROM:GIRAFFE]
@@ -4313,7 +4280,7 @@ creature_large_tropical
 	[DESCRIPTION:A person with the head and neck of a giraffe.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'G']
 	[COLOR:6:0:0]
 	[GO_TO_TAG:BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
@@ -4398,6 +4365,7 @@ creature_large_tropical
 	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
 	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
 	[CREATURE_CLASS:GENERAL_POISON]
+	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:150]{+  Revision: honey badgers are resistant to venom.}
 	[GETS_WOUND_INFECTIONS]
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
@@ -4470,7 +4438,6 @@ creature_large_tropical
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:HONEY BADGER MAN]
 	[COPY_TAGS_FROM:HONEY BADGER]
@@ -4503,7 +4470,7 @@ creature_large_tropical
 	[TRANCES]{+  can enter battle trances.}
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'b']
 	[COLOR:7:0:1]
@@ -4574,7 +4541,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:300]{:10:30
 	[CLUSTER_NUMBER:5:10]
-	[FREQUENCY:100]{+}
+	[FREQUENCY:15]{+}
 	[PREFSTRING:great size]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:TONGUE:RIBCAGE:SHELL]
 	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
@@ -4658,7 +4625,6 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:GIANT TORTOISE MAN]
 	[COPY_TAGS_FROM:GIANT TORTOISE]
@@ -4688,7 +4654,7 @@ Giant tortoises were sponsored by the generous contributions of the Bay 12 commu
 	[DESCRIPTION:A person with a large shell and the head of a giant tortoise.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'T']
 	[COLOR:6:0:0]
 
@@ -4744,7 +4710,7 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+}
+	[FREQUENCY:60]{+}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
@@ -4825,7 +4791,6 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_CASTE:ALL]{+}
 		[APPLY_CREATURE_VARIATION:MUSCLE_CAN_BE_SALTED]{+     Revision: muscle can be salted to prevent spoilage.}
-		
 
 [CREATURE:ARMADILLO MAN]
 	[COPY_TAGS_FROM:ARMADILLO]
@@ -4855,7 +4820,7 @@ Armadillos were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:0]
 

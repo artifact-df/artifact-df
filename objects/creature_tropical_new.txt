@@ -21,7 +21,6 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BONECARN]
@@ -52,6 +51,7 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
 	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
 	[CREATURE_CLASS:GENERAL_POISON]
+	[SYNDROME_DILUTION_FACTOR:GENERAL_POISON:150]{+  Revision: mongooses are resistant to venom.}
 	[GETS_WOUND_INFECTIONS]
 	[GETS_INFECTIONS_FROM_ROT]
 	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
@@ -136,7 +136,7 @@ Mongooses were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A small person with the head and tail of a mongoose.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'m']
 	[COLOR:7:0:0]
@@ -189,13 +189,12 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[CREATURE_TILE:'h'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
 	[LARGE_PREDATOR][MEANDERER]
-	[LARGE_ROAMING]--FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:5:15]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:50]
 	[PET_EXOTIC]
@@ -316,7 +315,7 @@ Hyenas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and markings of a hyena.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'h']
 	[COLOR:6:0:0]
@@ -372,7 +371,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:200]
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
-	--FREQUENCY:50]
+	[FREQUENCY:50]
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
@@ -381,7 +380,6 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:ANY_TROPICAL_WETLAND]
 	[POPULATION_NUMBER:100:250]{:10:25
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:great size]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
@@ -478,10 +476,11 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A large anaconda with the torso and arms of a man.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
-	[LISP]{+}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'A']
 	[COLOR:2:0:1]
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+}              +
+	[LISP]{+  Revision: snake animal people should have a lisp when talking.}
 
 [CREATURE:GIANT_ANACONDA]
 	[COPY_TAGS_FROM:ANACONDA]
@@ -508,8 +507,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
-	[TRAINABLE]{+}
-	[AMBUSHPREDATOR]{+}
+	[TRAINABLE_WAR]{+}
 	[GO_TO_END]
 	[PREFSTRING:great size]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -534,7 +532,6 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:50:100]{:5:10
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
 	[PETVALUE:400]
@@ -650,7 +647,7 @@ Monitor lizards were sponsored by the generous contributions of the Bay 12 commu
 	[DESCRIPTION:A person with the head and tail of a monitor lizard.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LISP]{+}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
@@ -704,7 +701,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[PETVALUE:200]
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
-	--FREQUENCY:20]
+	[FREQUENCY:20]
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
@@ -712,7 +709,6 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[BIOME:ANY_TROPICAL_BROADLEAF]{+}
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:charming hood]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
@@ -852,10 +848,11 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A legless person with the head and tail of a king cobra.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
-	[LISP]{+}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'k']
 	[COLOR:0:0:1]
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+}              +
+	[LISP]{+  Revision: snake animal people should have a lisp when talking.}
 
 [CREATURE:GIANT_KING_COBRA]
 	[COPY_TAGS_FROM:KING_COBRA]
@@ -899,8 +896,7 @@ King cobras were sponsored by the generous contributions of the Bay 12 community
 	[PETVALUE:500]
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
-	[TRAINABLE]{+}
-	[AMBUSHPREDATOR]{+}
+	[TRAINABLE_WAR]{+}
 	[GO_TO_END]
 	[PREFSTRING:charming hood]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:900:750:600:439:1900:2900] 20 kph
@@ -926,10 +922,9 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:SWAMP_MANGROVE]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[LARGE_ROAMING]--FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[CARNIVORE][NATURAL]
 	[MEANDERER]
 	[GRASSTRAMPLE:0]
@@ -1060,7 +1055,7 @@ Ocelots were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and tail of an ocelot.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'o']
 	[COLOR:6:0:1]
@@ -1113,13 +1108,12 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 	[CHILD:1][GENERAL_CHILD_NAME:jackal pup:jackal pups]
 	[CREATURE_TILE:'j'][COLOR:6:0:0]
 	[CREATURE_CLASS:MAMMAL]
-	[LARGE_ROAMING]--FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:25]{:5}
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:5]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[GRASSTRAMPLE:0][NATURAL]
 	[PETVALUE:50]
 	[PET_EXOTIC]
@@ -1240,7 +1234,7 @@ Jackals were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and tail of a jackal.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'j']
 	[COLOR:6:0:0]
@@ -1300,7 +1294,6 @@ Capuchins were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:5:10][LOOSE_CLUSTERS]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[BIOME:SWAMP_MANGROVE]
 	[PREFSTRING:intelligence]
@@ -1412,7 +1405,7 @@ Capuchins were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and tail of a capuchin.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'c']
 	[COLOR:7:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1462,10 +1455,9 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:50]
 	[BENIGN][PET_EXOTIC]
 	[GRASSTRAMPLE:0]
-	[LARGE_ROAMING]--FREQUENCY:10]
+	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:100:300]{:10:30
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[PREFSTRING:slow movement]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:MOUTH:5TOES_FQ_FINGERS:5TOES_RQ_ANON:GENERIC_TEETH_WITH_LARGE_EYE_TEETH:RIBCAGE:FACIAL_FEATURES]
@@ -1575,7 +1567,7 @@ Sloths were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head of a sloth.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
@@ -1633,7 +1625,6 @@ Spider monkeys were sponsored by the generous contributions of the Bay 12 commun
 	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:200:500]{:20:50
 	[CLUSTER_NUMBER:1:6][LOOSE_CLUSTERS]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[PREFSTRING:long limbs]
@@ -1745,7 +1736,7 @@ Spider monkeys were sponsored by the generous contributions of the Bay 12 commun
 	[DESCRIPTION:A long-limbed person with the head and tail of a spider monkey.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:0:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -1804,7 +1795,6 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BENIGN][MEANDERER]
 	[PREFSTRING:overlapping scales]
 	[BODY:QUADRUPED_NECK:TAIL:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:THROAT:NECK:SPINE:BRAIN:SKULL:5TOES_FQ_REG:5TOES_RQ_REG:MOUTH:TONGUE:RIBCAGE]
@@ -1921,7 +1911,7 @@ Pangolins were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and scales of a pangolin.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'p']
 	[COLOR:6:0:0]
@@ -1971,7 +1961,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[PETVALUE:50]
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
-	--FREQUENCY:30]
+	[FREQUENCY:30]
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
@@ -1981,7 +1971,6 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[BIOME:ANY_TROPICAL_SWAMP]
 	[POPULATION_NUMBER:100:250]{:10:25
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:aggression]
 	[PREFSTRING:deadly bite]
 	[PRONE_TO_RAGE:1]
@@ -2125,10 +2114,11 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[DESCRIPTION:A person in the form of a large black mamba with arms.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
-	[LISP]{+}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:0:0:1]
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+}              +
+	[LISP]{+  Revision: snake animal people should have a lisp when talking.}
 
 [CREATURE:GIANT_BLACK_MAMBA]
 	[COPY_TAGS_FROM:BLACK_MAMBA]
@@ -2172,8 +2162,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[PETVALUE:600]{:500
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
-	[TRAINABLE]{+}
-	[AMBUSHPREDATOR]{+}
+	[TRAINABLE_WAR]{+}
 	[GO_TO_END]
 	[PREFSTRING:aggression]
 	[PREFSTRING:deadly bite]
@@ -2193,10 +2182,9 @@ Sloth bears were sponsored by the generous contributions of the Bay 12 community
 	[PETVALUE:250]
 	[PET_EXOTIC]{PET}
 	[NATURAL]
-	[LARGE_ROAMING]--FREQUENCY:5]
+	[LARGE_ROAMING][FREQUENCY:5]
 	[POPULATION_NUMBER:20:30]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:ANY_TROPICAL_FOREST]
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
@@ -2311,7 +2299,7 @@ Sloth bears were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A person with the head and claws of a sloth bear.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'B']
 	[COLOR:0:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -2365,7 +2353,6 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING][FREQUENCY:10]
 	[POPULATION_NUMBER:100:200]{:10:20
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[PREFSTRING:interesting fingers]
@@ -2476,7 +2463,7 @@ Aye-ayes were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and fingers of an aye-aye.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:0]
@@ -2531,14 +2518,13 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[PETVALUE:50]
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
-	--FREQUENCY:30]
+	[FREQUENCY:30]
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[POPULATION_NUMBER:100:250]{:10:25
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:deadly bite]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
@@ -2681,9 +2667,10 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A large bushmaster with the arms of a man.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:3]
-	[LISP]{+}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+}              +
+	[LISP]{+  Revision: snake animal people should have a lisp when talking.}
 
 [CREATURE:GIANT_BUSHMASTER]
 	[COPY_TAGS_FROM:BUSHMASTER]
@@ -2727,8 +2714,7 @@ Bushmasters were sponsored by the generous contributions of the Bay 12 community
 	[PETVALUE:600]{:500
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
-	[TRAINABLE]{+}
-	[AMBUSHPREDATOR]{+}
+	[TRAINABLE_WAR]{+}
 	[GO_TO_END]
 	[PREFSTRING:deadly bite]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:3512:2634:1756:878:4900:6900] 10 kph
@@ -2748,14 +2734,13 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:50]
 	[GOBBLE_VERMIN_CLASS:MAMMAL]{+}
 	[PET_EXOTIC]
-	--FREQUENCY:30]
+	[FREQUENCY:30]
 	[NATURAL]
 	[CARNIVORE]
 	[LARGE_ROAMING]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[POPULATION_NUMBER:100:250]{:10:25
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PREFSTRING:great size]
 	[SOUND:ALERT:100:2500:VOCALIZATION:hiss:hisses:hissing]{+}
 	[SOUND:ALERT:50:1000:VOCALIZATION:snap:snaps:a hostile snapping]{+}
@@ -2859,9 +2844,10 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A large python with arms of a man.]
 	[POPULATION_NUMBER:5:10]
 	[CLUSTER_NUMBER:1:3]
-	[LISP]{+}
 	[CREATURE_TILE:'S']
 	[COLOR:6:0:0]
+	[PHYS_ATT_RANGE:AGILITY:450:950:1150:1250:1350:1550:2250]{+}              +
+	[LISP]{+  Revision: snake animal people should have a lisp when talking.}
 
 [CREATURE:GIANT_PYTHON]
 	[COPY_TAGS_FROM:PYTHON]
@@ -2888,8 +2874,7 @@ Pythons were sponsored by the generous contributions of the Bay 12 community.
 	[PETVALUE:600]{:500
 	[MOUNT_EXOTIC]
 	[LARGE_PREDATOR]{+}
-	[TRAINABLE]{+}
-	[AMBUSHPREDATOR]{+}
+	[TRAINABLE_WAR]{+}
 	[GO_TO_END]
 	[PREFSTRING:great size]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:3512:2634:1756:878:4900:6900] 10 kph
@@ -2910,7 +2895,6 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[PETVALUE:200]
 	[VISION_ARC:50:310]
 	[PREFSTRING:floppy noses]
@@ -3056,7 +3040,7 @@ Tapirs were sponsored by the generous contributions of the Bay 12 community.
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'T']
 	[COLOR:7:0:1]
 
@@ -3117,7 +3101,6 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:5:10]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BENIGN][MEANDERER][NATURAL]
@@ -3245,7 +3228,7 @@ Impalas were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A slender, horned man with the head and tail of a impala.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'i']
 	[COLOR:6:0:0]
@@ -3302,7 +3285,6 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 	[GOBBLE_VERMIN_CLASS:EDIBLE_GROUND_BUG]{+}
 	[POPULATION_NUMBER:75:150]{:15:30
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[BENIGN][MEANDERER]
 	[PREFSTRING:long ears]
 	[PREFSTRING:snout]
@@ -3414,7 +3396,7 @@ Aardvarks were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and tail of an aardvark.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'a']
 	[COLOR:7:0:0]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
@@ -3576,7 +3558,7 @@ Lion tamarins were sponsored by the generous contributions of the Bay 12 communi
 	[DESCRIPTION:An orange person with the head and tail of a lion tamarin.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:1]
 	[GO_TO_TAG:USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]

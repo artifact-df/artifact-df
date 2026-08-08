@@ -1,5 +1,7 @@
 text_arch_info_justification
 
+	Original from DPh Krakens 'The Way the Words Work' and edited by Zey
+
 [OBJECT:TEXT_SET]
 
 Credits:

@@ -15,7 +15,6 @@ creature_large_tundra
 	[BIOME:GRASSLAND_TEMPERATE]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[MEANDERER]--BENIGN]
 	[PETVALUE:300]
 	[PET_EXOTIC]
@@ -154,7 +153,7 @@ creature_large_tundra
 	[DESCRIPTION:A horned person with the head of a muskox.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'M']
 	[COLOR:6:0:0]
@@ -205,7 +204,6 @@ creature_large_tundra
 	[LARGE_ROAMING]
 	[POPULATION_NUMBER:150:300]{:15:30
 	[CLUSTER_NUMBER:3:7]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
 	[GRASSTRAMPLE:0]
 	[BIOME:TUNDRA]
 	[BIOME:GRASSLAND_TEMPERATE]
@@ -346,7 +344,7 @@ creature_large_tundra
 	[DESCRIPTION:A person with the head of an elk.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:100]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'E']
 	[COLOR:6:0:0]
@@ -399,8 +397,7 @@ creature_large_tundra
 	[LARGE_PREDATOR]
 	[POPULATION_NUMBER:10:15]{:2:3
 	[CLUSTER_NUMBER:1:1]
-	[FREQUENCY:100]{+  Revision: make animals more frequent in the world.}
-	--FREQUENCY:2]
+	[FREQUENCY:2]
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
 	[MEANDERER]
@@ -535,7 +532,7 @@ creature_large_tundra
 	[TRANCES]{+  can enter battle trances.}
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'B']
 	[COLOR:7:0:1]

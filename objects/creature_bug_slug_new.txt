@@ -90,7 +90,7 @@ Damselflies were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A person with the wings and head of a damselfly.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:2:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'d']
 	[COLOR:3:0:1]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -222,7 +222,7 @@ Moths were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a moth.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:5]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[LOW_LIGHT_VISION:10000]{+  Revision: certain animal people should have dark vision.}
 	[CREATURE_TILE:'m']
 	[COLOR:6:0:0]
@@ -353,7 +353,7 @@ Grasshoppers were sponsored by the generous contributions of the Bay 12 communit
 	[DESCRIPTION:A person with the head and legs of a grasshopper.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'g']
 	[COLOR:2:0:1]
 	[SKILL_LEARN_RATE:CLIMBING:200]{+}
@@ -527,7 +527,7 @@ Bark scorpions were sponsored by the generous contributions of the Bay 12 commun
 	[DESCRIPTION:A person with the head, pincers and tail of a bark scorpion.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:1]
 	[SKILL_LEARN_RATE:STANCE_STRIKE:200]{+}
@@ -676,7 +676,7 @@ Mantises were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A green person with the head and arms of a mantis.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:2:0:1]
 	[SKILL_LEARN_RATE:GRASP_STRIKE:200]{+}
@@ -811,7 +811,7 @@ Ticks were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and legs of a tick.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'t']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -942,7 +942,7 @@ Lice were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and legs of a louse.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'l']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -1073,7 +1073,7 @@ Thrips were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a thrips.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:5:10]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'t']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:DODGING:200]{+}
@@ -1194,7 +1194,7 @@ Slugs were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A great slug with the torso of a man.  It pulls itself across the ground with its hands for greater speed.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[PHYS_ATT_RANGE:TOUGHNESS:450:950:1150:1250:1350:1550:2250]{+}
@@ -1321,7 +1321,7 @@ Mosquitos were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A person with the head and wings of a mosquito.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'m']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -1453,7 +1453,7 @@ Jumping spiders were sponsored by the generous contributions of the Bay 12 commu
 	[DESCRIPTION:A person with the head and arms of a jumping spider.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'j']
 	[COLOR:0:0:1]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -1667,7 +1667,7 @@ Moon snails were sponsored by the generous contributions of the Bay 12 community
 	[DESCRIPTION:A colorful person with the head and shell of a moon snail.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:4:0:1]
 	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into <pro_pos> shell:retracts into <pro_pos> shell:come out of <pro_pos> shell:comes out of <pro_pos> shell]{+  Revision: in lieu of stat boosts, moon snail men gain the ability to hide in their shell.}
@@ -1835,7 +1835,7 @@ Brown recluse spiders were sponsored by the generous contributions of the Bay 12
 	[DESCRIPTION:A person with the head and arms of a brown recluse spider.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:6:0:0]
 	[SKILL_LEARN_RATE:BITE:200]{+}
@@ -1985,7 +1985,7 @@ Snails were sponsored by the generous contributions of the Bay 12 community.
 	[DESCRIPTION:A creature with the shape of a man, but with stalks for eyes, and a great shell on its back.]
 	[POPULATION_NUMBER:25:50]{:5:10  Revision: increased animal people populations.}
 	[CLUSTER_NUMBER:1:3]
-	[MAXAGE:65:125]{:60:80  Revision: animal people light slightly longer lives compared to humans.}
+	[MAXAGE:60:120]{:60:80  Revision: animal people have the same lifespan as humans.}
 	[CREATURE_TILE:'s']
 	[COLOR:7:0:0]
 	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into <pro_pos> shell:retracts into <pro_pos> shell:come out of <pro_pos> shell:comes out of <pro_pos> shell]{+  Revision: in lieu of stat boosts, snail men gain the ability can hide in their shell.}
