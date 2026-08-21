@@ -252,7 +252,7 @@ Colors added by Bohandas.
 	[STATE_NAME_ADJ:GAS:boiling bronze]
 	[DISPLAY_COLOR:6:4:0]
 	[BUILD_COLOR:6:4:0]
-	[MATERIAL_VALUE:10]{:5  material cost would be 4,4. valuable because its a good armor/weapon material
+	[MATERIAL_VALUE:12]{:5  material cost would be 4,4. valuable because its a good armor/weapon material
 	[SPEC_HEAT:435]
 	[MELTING_POINT:11868]
 	[BOILING_POINT:14140]

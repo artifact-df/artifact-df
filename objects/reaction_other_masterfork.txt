@@ -22,6 +22,7 @@ reaction_other_masterfork
 	[REAGENT:peat:5:BOULDER:NONE:INORGANIC:PEAT_SOIL]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:PEAT]
 	[SKILL:MECHANICS]
+	[FORTRESS_MODE_ENABLED]
 	[DESCRIPTION:Press peat into a more compacted form which can be fired at a kiln or smelter and turned into coke.]{+}
 
 [REACTION:PEAT_TO_COKE]
@@ -37,6 +38,7 @@ reaction_other_masterfork
 		[PRODUCT_DIMENSION:150]
 	[SKILL:SMELT]
 	[FUEL]
+	[FORTRESS_MODE_ENABLED]
 	[DESCRIPTION:Make 2-4 bars of coke from one unit of compacted peat.]
 	[SKILL_IP:15]{+ 30 default  Revision: reduced exp from making coal. 0.5x multiplier.}
 

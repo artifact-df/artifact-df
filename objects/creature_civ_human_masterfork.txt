@@ -192,7 +192,7 @@ creature_civ_human_masterfork
 		--ATTACK_FLAG_CANLATCH]  removed latching for civ creatures
 		[ATTACK_FLAG_BAD_MULTIATTACK]{+}
 	[BABY:1]
-	[CHILD:14]{:18  Revision: humans mature faster than other races.}
+	[CHILD:15]{:18  Revision: humans mature faster than other races.}
 	[EQUIPS]
 	[DIURNAL]
 	[SMELL_TRIGGER:90]
@@ -220,13 +220,13 @@ creature_civ_human_masterfork
 	[PERSONALITY:ANXIETY_PROPENSITY:0:48:85]{+  *
 	[PERSONALITY:STRESS_VULNERABILITY:0:48:85]{+  *
 	[PERSONALITY:DEPRESSION_PROPENSITY:0:48:85]{+  *
-	[PERSONALITY:BRAVERY:5:52:100]{+  *
-	[PERSONALITY:CURIOUS:5:52:100]{+
+	[PERSONALITY:BRAVERY:0:52:100]{+  *
+	[PERSONALITY:CURIOUS:0:52:100]{+
 	[PERSONALITY:GREGARIOUSNESS:5:52:100]{+
 	[PERSONALITY:TOLERANT:0:48:100]{+
 	[PERSONALITY:HOPEFUL:5:52:100]{+  *
-	[PERSONALITY:VIOLENT:5:52:100]{+
-	[PERSONALITY:HATE_PROPENSITY:5:52:100]{+
+	[PERSONALITY:VIOLENT:0:52:100]{+
+	[PERSONALITY:HATE_PROPENSITY:0:52:100]{+
 	[PERSONALITY:DISCORD:0:52:100]{+
 	[MANNERISM_FINGERS:finger:fingers]
 	[MANNERISM_NOSE:nose]
@@ -258,6 +258,7 @@ creature_civ_human_masterfork
 		[FEMALE]
 		--MULTIPLE_LITTER_RARE]
 		[POP_RATIO:20]{+}
+		[LITTERSIZE:1:4]{+ default is 1:3 }
 		[BABYNAME:human baby girl:human babies]{+}
 		[CHILDNAME:human girl:human children]{+}
 		[DESCRIPTION:A medium-sized woman of great ambition and potential.  She looks almost ordinary in a world of strange things.  She toils with others to build villages, kingdoms, trade networks and die in wars.]{+}
@@ -379,7 +380,6 @@ creature_civ_human_masterfork
 		[SKILL_RATE:SPINNING:50:4:8:8][CASTE_PROFESSION_NAME:SPINNER:spinner -:spinners]
 		[SKILL_RATE:POTTERY:50:4:8:8][CASTE_PROFESSION_NAME:POTTER:potter -:potters]
 		[MAXAGE:65:125] slightly longer lifespan
-
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
 		 [PLUS_TL_GROUP:BY_CATEGORY:CHEEK:CHEEK_WHISKERS]

@@ -16,14 +16,14 @@ creature_hornbeetle_masterfork
 	[LARGE_ROAMING]
 	[CAVE_ADAPT]
 	--NOMEAT] will not be hunted by hunters in fortress mode
-	[DIFFICULTY:2] should stop them being hunted in fortress mode?
-	[FREQUENCY:100]
+	[DIFFICULTY:1] should stop them being hunted in fortress mode?
+	[FREQUENCY:70]
 	[CLUSTER_NUMBER:2:10]
 	[POPULATION_NUMBER:50:120]
 	[BIOME:SUBTERRANEAN_CHASM][BIOME:SUBTERRANEAN_WATER]
 	[UNDERGROUND_DEPTH:1:2]
 	[PETVALUE:350]
-	[STANDARD_GRAZER]
+	--STANDARD_GRAZER] no grazing, causing females to starve to death when roosting
 		--SPECIFIC_FOOD:PLANT:CAVE MOSS]
 		--SPECIFIC_FOOD:PLANT:FLOOR FUNGI]
 		--SPECIFIC_FOOD:PLANT:UNDERLICHEN]
@@ -122,7 +122,7 @@ creature_hornbeetle_masterfork
 		[CASTE_NAME:longhorn cave beetle: longhorn cave beetle: longhorn cave beetle]
 		[DESCRIPTION:A round herbivorous beetle slightly slightly larger than a horse found in deep caverns.  He grazes on cave fungus and has an ornery disposition.  He is hot-tempered and is slightly larger than the other males.  He is of a rare breed that have an exceptionally long horn that he often spends time sharpening against cave walls whilst protecting his herd.]
 		[CHILDNAME:longhorn cave beetle nymph:longhorn cave beetle nymphs]
-		[DIFFICULTY:3]
+		[DIFFICULTY:2]
 		[RELSIZE:BY_CATEGORY:HORN:532]{:700  were too large; 33% larger than ordinary males.}
 		[PETVALUE:792]
 		[BODY_SIZE:0:0:750]
@@ -144,7 +144,7 @@ creature_hornbeetle_masterfork
 		[CASTE_NAME:albino longhorn cave beetle:albino longhorn cave beetle:albino longhorn cave beetle]
 		[DESCRIPTION:A round herbivorous beetle slightly slightly larger than a horse found in deep caverns.  He grazes on cave fungus and has an ornery disposition.  He is hot-tempered and is slightly larger than the other males.  He is of a very rare breed that have an extraordinarily long horn that he often spends time sharpening against the cave walls whilst protecting his herd.]
 		[CHILDNAME:longhorn cave beetle nymph:longhorn cave beetle nymphs]
-		[DIFFICULTY:4]
+		[DIFFICULTY:3]
 		[RELSIZE:BY_CATEGORY:HORN:532]{:700  were too large; 33% larger than ordinary males.}
 		[PETVALUE:1584]
 		[BODY_SIZE:0:0:750]

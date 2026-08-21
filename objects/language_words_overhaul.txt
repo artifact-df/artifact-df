@@ -137,12 +137,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:APE]
 	[NOUN:ape:apes]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:simian] +
 		[ADJ_DIST:3] +
 		[FRONT_COMPOUND_ADJ] +
@@ -448,12 +448,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BEE]
 	[NOUN:bee:bees]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:BEER]
 	[NOUN:beer:beers]
@@ -470,12 +470,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BEETLE]
 	[NOUN:beetle:beetles]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:BEGUILER]
 	[NOUN:beguiler:beguilers]
@@ -540,12 +540,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BIRD]
 	[NOUN:bird:birds]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:BLACK]
 	[NOUN:blackness:blacknesses]
@@ -667,12 +667,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BOAR]
 	[NOUN:boar:boars]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:BOAT]
 	[NOUN:boat:boats]
@@ -984,12 +984,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BUCK]
 	[NOUN:buck:bucks]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:BUCKLE]
 	[NOUN:buckle:buckles]
@@ -1147,7 +1147,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 [WORD:BUTTERFLY]
 	[NOUN:butterfly:butterflies]
 		[THE_COMPOUND_NOUN_SING]
-		THE_NOUN_SING -
+		[THE_NOUN_SING]
 		OF_NOUN_PLUR - *test
 
 [WORD:BUTTON]
@@ -1166,12 +1166,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BUZZARD]
 	[NOUN:buzzard:buzzards]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:CACKLE]
 	[VERB:cackle:cackles:cackled:cackled:cackling]
@@ -1320,12 +1320,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CAT]
 	[NOUN:cat:cats]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:feline] +
 		[ADJ_DIST:3] +
 		[THE_COMPOUND_ADJ] +
@@ -1653,12 +1653,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:COBRA]
 	[NOUN:cobra:cobras]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:COIL]
 	[NOUN:coil:coils]
@@ -1881,12 +1881,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:CROW]
 	[NOUN:crow:crows]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:CROWN]
 	[NOUN:crown:crowns]
@@ -2165,12 +2165,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DEER]
 	[NOUN:stag:stags] *
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:DEMON]
 	[NOUN:demon:demons]
@@ -3217,12 +3217,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:FROG]
 	[NOUN:frog:frogs]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:FRUIT]
 	[NOUN:fruit:fruits]
@@ -3357,12 +3357,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GERBIL]
 	[NOUN:gerbil:gerbils]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:GHOST]
 	[NOUN:ghost:ghosts]
@@ -3807,12 +3807,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:GRUB]
 	[NOUN:grub:grubs]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:GUARD]
 	[NOUN:guard:guards]
@@ -3946,12 +3946,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HARE]
 	[NOUN:hare:hares]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:HARVEST]
 	[NOUN:harvest:harvests]
@@ -4016,7 +4016,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
 		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 
 [WORD:HAY]
 	[NOUN:hay:hays]
@@ -4194,12 +4194,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:HOG]
 	[NOUN:hog:hogs]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:HOLY]
 	[NOUN:holiness:holinesses]
@@ -4548,12 +4548,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:JACKAL]
 	[NOUN:jackal:jackals]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:JAUNDICE]
 	[NOUN:jaundice:jaundices]
@@ -4825,21 +4825,21 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LARK]
 	[NOUN:lark:larks]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:LARVA]
 	[NOUN:larva:larvae]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:larval]
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
@@ -4958,12 +4958,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LEOPARD]
 	[NOUN:leopard:leopards]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:LEPER]
 	[NOUN:leper:lepers]
@@ -5063,21 +5063,21 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:LIZARD]
 	[NOUN:lizard:lizards]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:LOBSTER]
 	[NOUN:lobster:lobsters]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:LOCK]
 	[NOUN:lock:locks]
@@ -5267,12 +5267,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:MAGGOT]
 	[NOUN:maggot:maggots]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:MAGIC]
 	[NOUN:magic:magics]
@@ -5547,12 +5547,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:MITE]
 	[NOUN:mite:mites]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:MITHRIL] +
 	[NOUN:mithril:]
@@ -5572,12 +5572,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:MOLE]
 	[NOUN:mole:moles]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:MOLTEN]
 	[ADJ:molten]
@@ -5588,12 +5588,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:MONKEY]
 	[NOUN:monkey:monkeys]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:MOON]
 	[NOUN:moon:moons]
@@ -5619,12 +5619,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:MOTH]
 	[NOUN:moth:moths]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:MOTHER]
 	[NOUN:mother:mothers]
@@ -5889,12 +5889,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:NEWT]
 	[NOUN:newt:newts]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:NIBBLE]
 	[VERB:nibble:nibbles:nibbled:nibbled:nibbling]
@@ -6133,12 +6133,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:OWL]
 	[NOUN:owl:owls]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:OX]
 	[NOUN:ox:oxen]
@@ -6246,12 +6246,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:PANTHER]
 	[NOUN:panther:panthers]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:PANTS]
 	[NOUN:pants:pants]
@@ -6700,12 +6700,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:RABBIT]
 	[NOUN:rabbit:rabbits]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:RABBLE]
 	[NOUN:rabble:rabbles]
@@ -6790,14 +6790,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:RAM]
 	[NOUN:ram:rams]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
-	[VERB:ram:ram:rammed:rammed:ramming] +
-		--STANDARD_VERB] usually messes up sentences +
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:RAMPAGE]
 	[NOUN:rampage:rampages]
@@ -6825,21 +6823,21 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:RAPTOR]
 	[NOUN:raptor:raptors]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:RAT]
 	[NOUN:rat:rats]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:RAUNCH]
 	[NOUN:raunch:raunches]
@@ -6863,12 +6861,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:RAVEN]
 	[NOUN:raven:ravens]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:corvid] +
 		[ADJ_DIST:4] +
 		[THE_COMPOUND_ADJ] +
@@ -7288,17 +7286,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SAPPHIRE] +
 	[NOUN:sapphire:sapphires]
-		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
-		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 	[ADJ:sapphire]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:SATIN]
 	[NOUN:satin:satins]
@@ -7382,12 +7377,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SCORPION]
 	[NOUN:scorpion:scorpions]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:SCRATCH]
 	[NOUN:scratch:scratches]
@@ -7444,12 +7439,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SEAL_ANIMAL]
 	[NOUN:seal:seals]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:SEAL_ART]
 	[NOUN:seal:seals]
@@ -7547,12 +7542,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SERPENT]
 	[NOUN:serpent:serpents]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:serpentine] +
 		[ADJ_DIST:4] +
 		[FRONT_COMPOUND_ADJ] +
@@ -7627,11 +7622,11 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SHARK]
 	[NOUN:shark:sharks]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
+		THE_NOUN_PLUR -
 		[OF_NOUN_PLUR]
 
 [WORD:SHEAR]
@@ -7925,12 +7920,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SKUNK]
 	[NOUN:skunk:skunks]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:SKULL]
 	[NOUN:skull:skulls]
@@ -8079,12 +8074,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SLUG]
 	[NOUN:slug:slugs]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[ADJ:sluggish] +
 		[ADJ_DIST:2] +
 		[THE_COMPOUND_ADJ] +
@@ -8161,12 +8156,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SNAKE]
 	[NOUN:snake:snakes]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:SNEER]
 	[NOUN:sneer:sneers]
@@ -8341,12 +8336,17 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SPIDER]
 	[NOUN:spider:spiders]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
+	[ADJ:arachnid] +
+		[ADJ_DIST:5] +
+		[FRONT_COMPOUND_ADJ] +
+		[THE_COMPOUND_ADJ] +
+		[REAR_COMPOUND_ADJ] +
 
 [WORD:SPIDERY]
 	[ADJ:spidery]
@@ -8485,12 +8485,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SQUID]
 	[NOUN:squid:squids]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:SQUIRM]
 	[VERB:squirm:squirms:squirmed:squirmed:squirming]
@@ -9189,12 +9189,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:TICK_ANIMAL]
 	[NOUN:tick:ticks]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:TICK_CLOCK]
 	[NOUN:toll:tolls] *
@@ -9236,12 +9236,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:TOAD]
 	[NOUN:toad:toads]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:TOE]
 	[NOUN:toe:toes]
@@ -9793,12 +9793,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:VIPER]
 	[NOUN:viper:vipers]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 	[PREFIX:vipers]
 		[FRONT_COMPOUND_PREFIX]
 
@@ -9849,12 +9849,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:VULTURE]
 	[NOUN:vulture:vultures]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:WAIL]
 	[NOUN:wail:wails]
@@ -9910,12 +9910,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WASP]
 	[NOUN:wasp:wasps]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:WASTE]
 	[NOUN:waste:wastes]
@@ -9981,12 +9981,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WEASEL]
 	[NOUN:weasel:weasels]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:WEAVER]
 	[NOUN:weaver:weavers]
@@ -10240,12 +10240,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WORM]
 	[NOUN:worm:worms]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:WRAITH]
 	[NOUN:wraith:wraiths]
@@ -10470,17 +10470,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:DIAMOND]
 	[NOUN:diamond:diamonds]
-		FRONT_COMPOUND_NOUN_SING -
-		REAR_COMPOUND_NOUN_SING -
-		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 	[ADJ:diamond]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:DOMAIN]
 	[NOUN:domain:domains]
@@ -10971,12 +10968,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:WEEVIL]
 	[NOUN:weevil:weevils]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:WHIM]
 	[NOUN:whimsy:whims]
@@ -13524,8 +13521,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:CACTUS]
 	[NOUN:cactus:cacti]
@@ -13680,12 +13677,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:BUNNY]
 	[NOUN:bunny:bunnies]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:ROPE]
 	[NOUN:rope:ropes]
@@ -14021,17 +14018,14 @@ Introduces additional forms, especially if they're fitting adjectives.
 		
 [WORD:RUBY] +
 	[NOUN:ruby:rubies]
-		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
-		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		[REAR_COMPOUND_NOUN_PLUR]
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 	[ADJ:ruby]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
+		REAR_COMPOUND_ADJ -
+		[THE_COMPOUND_ADJ]
 
 [WORD:WORTHY]
 	[NOUN:worth:]
@@ -16323,12 +16317,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:INSECT]
 	[NOUN:insect:insects]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:BUG]
 	[NOUN:bug:bugs]
@@ -20060,12 +20054,12 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:SNAIL]
 	[NOUN:snail:snails]
-		FRONT_COMPOUND_NOUN_SING -
+		[FRONT_COMPOUND_NOUN_SING]
 		REAR_COMPOUND_NOUN_SING -
 		[THE_NOUN_SING]
 		REAR_COMPOUND_NOUN_PLUR -
-		[THE_NOUN_PLUR]
-		[OF_NOUN_PLUR]
+		THE_NOUN_PLUR -
+		OF_NOUN_PLUR -
 
 [WORD:VINE]
 	[NOUN:vine:vines]
@@ -20468,14 +20462,9 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:AMETHYST]
 	[NOUN:amethyst:amethysts]
-		[FRONT_COMPOUND_NOUN_SING]
-		REAR_COMPOUND_NOUN_SING -
-		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
-		THE_NOUN_PLUR -
-		[OF_NOUN_PLUR]
+		OF_NOUN_PLUR -
 	[ADJ:amethyst]
 		[ADJ_DIST:1]
 		[FRONT_COMPOUND_ADJ]
@@ -20679,13 +20668,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 
 [WORD:EMERALD]
 	[NOUN:emerald:emeralds]
-		[FRONT_COMPOUND_NOUN_SING]
-		[REAR_COMPOUND_NOUN_SING]
-		[THE_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 		[OF_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
-		THE_NOUN_PLUR -
 		OF_NOUN_PLUR -
 	[ADJ:emerald]
 		[ADJ_DIST:1]

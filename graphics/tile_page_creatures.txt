@@ -477,7 +477,6 @@ tile_page_creatures
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:224:1504]
 
-
 // EXTINCT CREATURES
 
 [TILE_PAGE:CREATURES_CAMBRIAN]
@@ -679,7 +678,6 @@ tile_page_creatures
 	[FILE:images/statues/creatures_animal_people_cenozoic_statues.png]
 	[TILE_DIM:32:32]
 	[PAGE_DIM_PIXELS:32:1280]
-
 
 // VWO
 

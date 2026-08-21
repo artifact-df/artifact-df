@@ -439,7 +439,7 @@ Symbols marked with *** have seen heavy redefinition, otherwise expansions on de
 	[S_WORD:TUNDRA]
 	[S_WORD:VALE]
 	[S_WORD:VALLEY]
-	[S_WORD:VOLCANO]
+	S_WORD:VOLCANO -
 	++
 	[S_WORD:CLIMATE]
 	[S_WORD:DROPLET] "dew"
