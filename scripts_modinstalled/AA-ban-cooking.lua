@@ -26,20 +26,20 @@ Usage
 ban-cooking <type|all> [<type> ...] [<options>]
 
 Valid types are:
-	all (everything below)
-	booze (drinks)
-	brew (brewable plants and growths)
-	honey
-	mill (millable plants and growths)
-	milk
-	oil
-	plant_milk (only plant milks that can be processed into tofu)
-	roast (growths that have processing chains, such as coffee cherries)
-	syrup
-	seed_items (plants and growths which produce seeds)
-	seeds
-	tallow
-	thread (plants and growths which can be spun into thread)
+    all (everything below)
+    booze (drinks)
+    brew (brewable plants and growths)
+    honey
+    mill (millable plants and growths)
+    milk
+    oil
+    plant_milk (only plant milks that can be processed into tofu)
+    roast (growths that have processing chains, such as coffee cherries)
+    syrup
+    seed_items (plants and growths which produce seeds)
+    seeds
+    tallow
+    thread (plants and growths which can be spun into thread)
 
 It is possible to include multiple types or all types in a single ban-cooking command: ban-cooking oil tallow will ban both oil and tallow from cooking. ban-cooking all will ban all of the above types.
 

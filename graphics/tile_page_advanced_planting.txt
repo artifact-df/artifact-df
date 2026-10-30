@@ -1,0 +1,8 @@
+tile_page_advanced_planting
+
+[OBJECT:TILE_PAGE]
+
+[TILE_PAGE:AP_PREPARED_GROUND]
+	[FILE:images/ap_prepared_ground.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:32]

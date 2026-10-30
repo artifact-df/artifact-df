@@ -1,20 +1,7 @@
 -- Enforce placing sapling workshop only on plantable tiles and convert it to a sapling on reaction completion
 -- author Droseran
 
---@enable = true
 --@module = true
-
---[====[
-Advanced Planting
-===========
-
-Tags: fort | gameplay | plants
-
-Allows planting tree saplings with the Prepared Ground workshop.
-
-This script controls the functionality of the Prepared Ground workshop.
-It cannot be disabled if the mod is active in a save as doing so would break the workshop.
-]====]
 
 local eventful = require 'plugins.eventful'
 local utils = require 'utils'
@@ -28,7 +15,9 @@ local function get_custom_workshop_id(token)
 			return workshop.id
 		end
 	end
+	return nil
 end
+
 local prepared_ground_id = get_custom_workshop_id('AP_PREPARED_GROUND')
 
 -- Following tables used for identifying tiles in multiple functions
@@ -59,7 +48,9 @@ end
 -- Add the custom workshop to the permitted buildings of the currently played entity
 local function add_permitted_building()
 	local player_civ = getPlayerEntity()
-	utils.insert_sorted(player_civ.entity_raw.workshops.permitted_building_id, prepared_ground_id)
+	if prepared_ground_id then
+		utils.insert_sorted(player_civ.entity_raw.workshops.permitted_building_id, prepared_ground_id)
+	end
 end
 
 -- Return the building object for a given building ID
@@ -159,20 +150,7 @@ local function replace_workshop(job)
 	dfhack.run_command('plant create "' .. plant_id .. '" ' .. coordinates .. ' --age 0 --force')
 end
 
-local function get_default_state()
-	return {
-		enabled = true
-	}
-end
-
-state = state or get_default_state()
-
-function isEnabled()
-	return state.enabled
-end
-
-local function do_enable()
-	state.enabled = true
+function do_enable()
 	add_permitted_building()
 	eventful.enableEvent(eventful.eventType.BUILDING, 0)
 	eventful.enableEvent(eventful.eventType.JOB_COMPLETED, 0)
@@ -180,23 +158,11 @@ local function do_enable()
 	eventful.onJobCompleted[GLOBAL_KEY] = replace_workshop
 end
 
-local function do_disable()
-	state.enabled = false
+function do_unload()
 	eventful.onBuildingCreatedDestroyed[GLOBAL_KEY] = nil
 	eventful.onJobCompleted[GLOBAL_KEY] = nil
 end
 
--- Script should always be active if the mod is active in the save
--- Disable the script when a save is unloaded to prevent affecting saves without the mod
-dfhack.onStateChange[GLOBAL_KEY] = function(sc)
-	if sc == SC_MAP_UNLOADED then
-		do_disable()
-		return
-	end
-	
-	if sc ~= SC_MAP_LOADED or df.global.gamemode ~= df.game_mode.DWARF then
-		return
-	end
-	
-	do_enable()
+function print_help()
+	print("Enforces placing the Prepared Ground workshop only on plantable tiles and converts it to a sapling on reaction completion.")
 end

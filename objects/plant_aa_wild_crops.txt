@@ -2,13 +2,15 @@ plant_aa_wild_crops
 
 [OBJECT:PLANT]
 
-[PLANT:WILD_ALFALFA] Medicago sativa
+[CUT_PLANT:WILD_CARROT]
+
+[PLANT:AA_WILD_ALFALFA] Medicago sativa
 	[NAME:wild alfalfa plant][NAME_PLURAL:wild alfalfa plants][ADJ:wild alfalfa plant]
 	[PREFSTRING:sprouts]
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:ALFALFA:STRUCTURAL]
@@ -31,7 +33,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:120000:220000]
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:220000:3]
 
-[PLANT:WILD_ARTICHOKE] Cynara cardunculus
+[PLANT:AA_WILD_ARTICHOKE] Cynara cardunculus
 	[NAME:wild artichoke plant][NAME_PLURAL:wild artichoke plants][ADJ:wild artichoke plant]
 	[PREFSTRING:yummy hearts]
 	[PICKED_TILE:58]
@@ -40,7 +42,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:ARTICHOKE:STRUCTURAL]
@@ -68,7 +70,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:170000:270000]
 		[GROWTH_PRINT:5:5:5:0:1:170000:270000:4]
 
-[PLANT:WILD_ASPARAGUS] Asparagus officinalis
+[PLANT:AA_WILD_ASPARAGUS] Asparagus officinalis
 	[NAME:wild asparagus plant][NAME_PLURAL:wild asparagus plants][ADJ:wild asparagus plant]
 	[PREFSTRING:delicious shoots]
 	[PICKED_TILE:58]
@@ -76,9 +78,9 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:ASPARAGUS:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild asparagus shoot:STP]
@@ -99,7 +101,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:120000:220000]
 		[GROWTH_PRINT:'%':'%':4:0:1:120000:220000:3]
 
-[PLANT:WILD_BAMBARA_GROUNDNUT] Vigna subterranea
+[PLANT:AA_WILD_BAMBARA_GROUNDNUT] Vigna subterranea
 	[NAME:wild bambara groundnut plant][NAME_PLURAL:wild bambara groundnut plants][ADJ:wild bambara groundnut plant]
 	[PREFSTRING:edible nuts]
 	[PICKED_TILE:58]
@@ -109,9 +111,9 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:BAMBARA_GROUNDNUT:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild bambara groundnut leaf:wild bambara groundnut leaves]
@@ -131,7 +133,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:175000:235000]
 		[GROWTH_PRINT:'%':'%':6:0:0:NONE]
 
-[PLANT:WILD_BARLEY] Hordeum vulgare
+[PLANT:AA_WILD_BARLEY] Hordeum vulgare
 	[NAME:wild barley][NAME_PLURAL:wild barley][ADJ:wild barley]
 	[PREFSTRING:beer]
 	[DRY]
@@ -139,7 +141,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:DESERT_SAND]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER]
 	[BASIC_MAT:PLANT_MAT:BARLEY:STRUCTURAL]
@@ -149,7 +151,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_BEET] Beta vulgaris
+[PLANT:AA_WILD_BEET] Beta vulgaris
 	[NAME:wild beet][NAME_PLURAL:wild beets][ADJ:wild beet]
 	[PREFSTRING:sweet roots]
 	[PICKED_TILE:58]
@@ -158,7 +160,7 @@ plant_aa_wild_crops
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
 	[BIOME:MARSH_TEMPERATE_SALTWATER]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:BEET:STRUCTURAL]
@@ -180,7 +182,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:120000:220000]
 		[GROWTH_PRINT:5:5:6:0:0:120000:220000:3]
 
-[PLANT:WILD_BILBERRY] Vaccinium myrtillus
+[PLANT:AA_WILD_BILBERRY] Vaccinium myrtillus
 	[NAME:wild bilberry bush][NAME_PLURAL:wild bilberry bushes][ADJ:wild bilberry bush]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -191,9 +193,9 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:TAIGA]
 	[BIOME:TUNDRA]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:BILBERRY:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild bilberry leaf:wild bilberry leaves]
@@ -215,7 +217,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_BITTER_MELON] Momordica charantia, vine, can be used in place of hops in beer
+[PLANT:AA_WILD_BITTER_MELON] Momordica charantia, vine, can be used in place of hops in beer
 	[NAME:wild bitter melon vine][NAME_PLURAL:wild bitter melon vines][ADJ:wild bitter melon vine]
 	[PREFSTRING:taste]
 	[PICKED_TILE:58]
@@ -223,7 +225,7 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:BITTER_MELON:STRUCTURAL]
@@ -247,7 +249,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_BITTER_VETCH] Vicia ervilia
+[PLANT:AA_WILD_BITTER_VETCH] Vicia ervilia
 	[NAME:wild bitter vetch plant][NAME_PLURAL:wild bitter vetch plant][ADJ:wild bitter vetch plant]
 	[PREFSTRING:beans]
 	[PICKED_TILE:58]
@@ -256,7 +258,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER]
 	[BASIC_MAT:PLANT_MAT:BITTER_VETCH:STRUCTURAL]
@@ -279,7 +281,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_BLACKBERRY] Rubus fruticosus
+[PLANT:AA_WILD_BLACKBERRY] Rubus fruticosus
 	[NAME:wild blackberry bush][NAME_PLURAL:wild blackberry bushes][ADJ:wild blackberry bush]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -291,9 +293,9 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:FOREST_TEMPERATE_CONIFER]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:BLACKBERRY:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild blackberry leaf:wild blackberry leaves]
@@ -315,7 +317,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_WEED_BLADE] Woad?
+[PLANT:AA_WILD_WEED_BLADE] Woad?
 	[NAME:wild blade weed plant][NAME_PLURAL:wild blade weed plants][ADJ:wild blade weed plant]
 	[PREFSTRING:stiff, triangular leaves]
 	[PICKED_TILE:231]
@@ -325,7 +327,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:WEED_BLADE:STRUCTURAL]
@@ -349,7 +351,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':0:0:0:160000:230000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_TUBER_BLOATED]
+[PLANT:AA_WILD_TUBER_BLOATED]
 	[NAME:wild bloated tuber][NAME_PLURAL:wild bloated tubers][ADJ:wild bloated tuber]
 	[PREFSTRING:stout shape]
 	[BASIC_MAT:PLANT_MAT:TUBER_BLOATED:STRUCTURAL]
@@ -363,16 +365,16 @@ plant_aa_wild_crops
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
 	[BIOME:MARSH_TROPICAL_SALTWATER]
 	[SPRING][SUMMER][AUTUMN]
-	[FREQUENCY:20]{:100
+	[FREQUENCY:100]
 	[CLUSTERSIZE:4]
 
-[PLANT:WILD_BLOOD_AMARANTH] Amaranthus cruentus
+[PLANT:AA_WILD_BLOOD_AMARANTH] Amaranthus cruentus
 	[NAME:wild blood amaranth][NAME_PLURAL:wild blood amaranths][ADJ:wild blood amaranth]
 	[PREFSTRING:striking color]
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:BLOOD_AMARANTH:STRUCTURAL]
@@ -388,7 +390,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:4:0:1:60000:119999:2]
 
-[PLANT:WILD_BLUEBERRY] Vaccinium spp. (section Cyanococcus)
+[PLANT:AA_WILD_BLUEBERRY] Vaccinium spp. (section Cyanococcus)
 	[NAME:wild blueberry bush][NAME_PLURAL:wild blueberry bushes][ADJ:wild blueberry bush]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -399,9 +401,9 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:TAIGA]
 	[BIOME:TUNDRA]
-	[FREQUENCY:5]{:50}
-	[CLUSTERSIZE:5]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[FREQUENCY:25]{:50}
+	[CLUSTERSIZE:4]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:BLUEBERRY:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild blueberry leaf:wild blueberry leaves]
@@ -423,7 +425,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_BROAD_BEAN] Vicia faba
+[PLANT:AA_WILD_BROAD_BEAN] Vicia faba
 	[NAME:wild broad bean plant][NAME_PLURAL:wild broad bean plants][ADJ:wild broad bean plant]
 	[PREFSTRING:beans]
 	[PICKED_TILE:58]
@@ -431,7 +433,7 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:BROAD_BEAN:STRUCTURAL]
@@ -454,14 +456,14 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:220000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_BUCKWHEAT] Fagopyrum esculentum
+[PLANT:AA_WILD_BUCKWHEAT] Fagopyrum esculentum
 	[NAME:wild buckwheat][NAME_PLURAL:wild buckwheat][ADJ:wild buckwheat]
 	[PREFSTRING:beer]
 	[DRY]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:FOREST_TEMPERATE_CONIFER]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:BUCKWHEAT:STRUCTURAL]
@@ -477,7 +479,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:7:0:1:60000:119999:2]
 
-[PLANT:WILD_CABBAGE] Brassica oleracea (many cultivars like broccoli, cauliflower, etc.)
+[PLANT:AA_WILD_CABBAGE] Brassica oleracea (many cultivars like broccoli, cauliflower, etc.)
 	[NAME:wild cabbage][NAME_PLURAL:wild cabbages][ADJ:wild cabbage]
 	[PREFSTRING:crisp leaves]
 	[PICKED_TILE:58]
@@ -485,9 +487,9 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER]--WINTER]
+	[SPRING][SUMMER][WINTER]
 	[BASIC_MAT:PLANT_MAT:CABBAGE:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild cabbage leaf:wild cabbage leaves]
@@ -509,7 +511,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':6:0:0:120000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_CAPER] Capparis spinosa
+[PLANT:AA_WILD_CAPER] Capparis spinosa
 	[NAME:wild caper bush][NAME_PLURAL:wild caper bushes][ADJ:wild caper bush]
 	[PREFSTRING:buds and berries]
 	[PICKED_TILE:58]
@@ -517,9 +519,9 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:ANY_DESERT]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:CAPER:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild caper leaf:wild caper leaves]
@@ -546,8 +548,6 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:0:120000:200000:4]
 		[GROWTH_HAS_SEED]
 
-[CUT_PLANT:WILD_CARROT]
-
 [PLANT:WILD_CARROT] Daucus carota
 	[NAME:wild carrot][NAME_PLURAL:wild carrots][ADJ:wild carrot]
 	[PREFSTRING:edible roots]
@@ -558,7 +558,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:CARROT:STRUCTURAL]
@@ -580,7 +580,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:120000:220000]
 		[GROWTH_PRINT:5:5:6:0:0:120000:220000:3]
 
-[PLANT:WILD_CASSAVA] Manihot esculenta
+[PLANT:AA_WILD_CASSAVA] Manihot esculenta
 	[NAME:wild cassava][NAME_PLURAL:wild cassavas][ADJ:wild cassava]
 	[PREFSTRING:roots]
 	[PICKED_TILE:58]
@@ -589,9 +589,9 @@ plant_aa_wild_crops
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:CASSAVA:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild cassava leaf:wild cassava leaves]
@@ -605,7 +605,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:5:0:1:60000:119999:2]
 
-[PLANT:WILD_CATTAIL] Typha spp.
+[PLANT:AA_WILD_CATTAIL] Typha spp.
 	[NAME:wild cattail][NAME_PLURAL:wild cattails][ADJ:wild cattail]
 	[PICKED_TILE:231]
 		[PICKED_COLOR:6:0:0]
@@ -615,9 +615,9 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:5]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:CATTAIL:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:cattail leaf:cattail leaves]
@@ -637,14 +637,14 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:180000:330000]
 		[GROWTH_PRINT:5:5:6:0:0:180000:330000:3]
 
-[PLANT:WILD_CELERY] Apium graveolens
+[PLANT:AA_WILD_CELERY] Apium graveolens
 	[NAME:wild celery][NAME_PLURAL:wild celery][ADJ:wild celery]
 	[PREFSTRING:taste]
 	[PICKED_TILE:58]
 		[PICKED_COLOR:2:0:0]
 	[DRY]
 	[BIOME:ANY_TEMPERATE_WETLAND]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:CELERY:STRUCTURAL]
@@ -667,7 +667,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:120000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_CHICKPEA] Cicer arietinum
+[PLANT:AA_WILD_CHICKPEA] Cicer arietinum
 	[NAME:wild chickpea plant][NAME_PLURAL:wild chickpea plants][ADJ:wild chickpea plant]
 	[PREFSTRING:pods]
 	[PICKED_TILE:58]
@@ -676,7 +676,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:CHICKPEA:STRUCTURAL]
@@ -699,7 +699,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':6:0:0:150000:220000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_CHICORY] Cichorium intybus
+[PLANT:AA_WILD_CHICORY] Cichorium intybus
 	[NAME:wild chicory root][NAME_PLURAL:wild chicory roots][ADJ:wild chicory root]
 	[PREFSTRING:taste]
 	[PICKED_TILE:58]
@@ -708,7 +708,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:CHICORY:STRUCTURAL]
@@ -731,16 +731,48 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':6:0:0:160000:300000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_COTTON] Gossypium hirsutum / sp.
+[PLANT:AA_WILD_CLOUDBERRY] Rubus chamaemorus
+	[NAME:cloudberry][NAME_PLURAL:cloudberries][ADJ:cloudberry]
+	[PREFSTRING:fruit]
+	[PICKED_TILE:58]
+		[PICKED_COLOR:2:0:1]
+	[WET][DRY]
+	[BIOME:MOUNTAIN]
+	[BIOME:TUNDRA]
+	[BIOME:TAIGA]
+	[FREQUENCY:25]{:50}
+	[CLUSTERSIZE:5]
+	[SPRING][SUMMER][AUTUMN]
+	[BASIC_MAT:PLANT_MAT:CLOUDBERRY:STRUCTURAL]
+	[GROWTH:BUD]
+		[GROWTH_NAME:cloudberry bud:STP]
+		[GROWTH_ITEM:PLANT_GROWTH:NONE:PLANT_MAT:CLOUDBERRY:LEAF]
+		[GROWTH_DENSITY:1000]
+		[GROWTH_TIMING:70000:90000]
+		[GROWTH_PRINT:0:7:2:0:0:70000:90000:1]
+	[GROWTH:FLOWER]
+		[GROWTH_NAME:cloudberry flower:STP]
+		[GROWTH_ITEM:PLANT_GROWTH:NONE:PLANT_MAT:CLOUDBERRY:FLOWER]
+		[GROWTH_DENSITY:1000]
+		[GROWTH_TIMING:90000:125000]
+		[GROWTH_PRINT:5:5:7:0:1:90000:125000:2]
+	[GROWTH:FRUIT]
+		[GROWTH_NAME:cloudberry:cloudberries]
+		[GROWTH_ITEM:PLANT_GROWTH:NONE:PLANT_MAT:CLOUDBERRY:FRUIT]
+		[GROWTH_DENSITY:1000]
+		[GROWTH_TIMING:150000:185000]
+		[GROWTH_PRINT:5:5:4:0:1:150000:185000:3]
+
+[PLANT:AA_WILD_COTTON] Gossypium hirsutum / sp.
 	[NAME:wild cotton plant][NAME_PLURAL:wild cotton plants][ADJ:wild cotton plant]
 	[PREFSTRING:flowers]
 	[DRY]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:COTTON:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild cotton leaf:wild cotton leaves]
@@ -761,7 +793,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:160000:220000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_COWPEA] Vigna unguiculata
+[PLANT:AA_WILD_COWPEA] Vigna unguiculata
 	[NAME:wild cowpea plant][NAME_PLURAL:wild cowpea plants][ADJ:wild cowpea plant]
 	[PREFSTRING:pods]
 	[PICKED_TILE:58]
@@ -771,7 +803,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:COWPEA:STRUCTURAL]
@@ -794,7 +826,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:130000:220000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_CRANBERRY] Vaccinium oxycoccos
+[PLANT:AA_WILD_CRANBERRY] Vaccinium oxycoccos
 	[NAME:wild cranberry vine][NAME_PLURAL:wild cranberry vines][ADJ:wild cranberry vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -804,9 +836,9 @@ plant_aa_wild_crops
 	[BIOME:SWAMP_TEMPERATE_FRESHWATER]
 	[BIOME:TAIGA]
 	[BIOME:TUNDRA]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:CRANBERRY:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild cranberry leaf:wild cranberry leaves]
@@ -828,7 +860,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_CUCUMBER] Cucumis sativus, vine
+[PLANT:AA_WILD_CUCUMBER] Cucumis sativus, vine
 	[NAME:wild cucumber vine][NAME_PLURAL:wild cucumber vines][ADJ:wild cucumber vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -837,7 +869,7 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TEMPERATE_CONIFER]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:SHRUBLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:CUCUMBER:STRUCTURAL]
@@ -860,7 +892,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:0:130000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_EGGPLANT] Solanum melongena
+[PLANT:AA_WILD_EGGPLANT] Solanum melongena
 	[NAME:wild eggplant plant][NAME_PLURAL:wild eggplant plants][ADJ:wild eggplant plant]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -869,7 +901,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:EGGPLANT:STRUCTURAL]
@@ -892,14 +924,14 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':5:0:0:130000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_ELEPHANT-HEAD_AMARANTH] Amaranthus tricolor
+[PLANT:AA_WILD_ELEPHANT-HEAD_AMARANTH] Amaranthus tricolor
 	[NAME:wild elephant-head amaranth plant][NAME_PLURAL:wild elephant-head amaranth plants][ADJ:wild elephant-head amaranth plant]
 	[PREFSTRING:leaf coloration]
 	[DRY]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:ELEPHANT-HEAD_AMARANTH:STRUCTURAL]
@@ -922,7 +954,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:130000:230000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_FINGER_MILLET] Eleusine coracana
+[PLANT:AA_WILD_FINGER_MILLET] Eleusine coracana
 	[NAME:wild finger millet][NAME_PLURAL:wild finger millet][ADJ:wild finger millet]
 	[PREFSTRING:grain]
 	[DRY]
@@ -930,7 +962,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:FINGER_MILLET:STRUCTURAL]
@@ -940,7 +972,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_BERRIES_FISHER]
+[PLANT:AA_WILD_BERRIES_FISHER]
 	[NAME:wild fisher berry bush][NAME_PLURAL:wild fisher berry bushes][ADJ:wild fisher berry bush]
 	[PREFSTRING:round shape]
 	[PICKED_TILE:58]
@@ -962,9 +994,9 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:BERRIES_FISHER:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild fisher berry leaf:wild fisher berry leaves]
@@ -986,13 +1018,13 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_FLAX] Linum usitatissimum
+[PLANT:AA_WILD_FLAX] Linum usitatissimum
 	[NAME:wild flax plant][NAME_PLURAL:wild flax plants][ADJ:wild flax plant]
 	[PREFSTRING:flowers]
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:FLAX:STRUCTURAL]
@@ -1014,7 +1046,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:150000:200000]
 		[GROWTH_PRINT:0:6:6:0:1:150000:200000:4]
 
-[PLANT:WILD_FONIO] Digitaria exilis
+[PLANT:AA_WILD_FONIO] Digitaria exilis
 	[NAME:wild fonio][NAME_PLURAL:wild fonio][ADJ:wild fonio]
 	[PREFSTRING:grain]
 	[DRY]
@@ -1022,7 +1054,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:FONIO:STRUCTURAL]
@@ -1032,7 +1064,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_FOXTAIL_MILLET] Setaria italica
+[PLANT:AA_WILD_FOXTAIL_MILLET] Setaria italica
 	[NAME:wild foxtail millet][NAME_PLURAL:wild foxtail millet][ADJ:wild foxtail millet]
 	[PREFSTRING:grain]
 	[DRY]
@@ -1041,7 +1073,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:FOXTAIL_MILLET:STRUCTURAL]
@@ -1051,7 +1083,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_GARDEN_CRESS] Lepidium sativum
+[PLANT:AA_WILD_GARDEN_CRESS] Lepidium sativum
 	[NAME:wild garden cress plant][NAME_PLURAL:wild garden cress plants][ADJ:wild garden cress plant]
 	[PREFSTRING:taste]
 	[PICKED_TILE:58]
@@ -1060,7 +1092,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:GARDEN_CRESS:STRUCTURAL]
@@ -1083,7 +1115,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:230000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_GARLIC] Allium sativum
+[PLANT:AA_WILD_GARLIC] Allium sativum
 	[NAME:wild garlic][NAME_PLURAL:wild garlic][ADJ:wild garlic]
 	[PREFSTRING:cloves]
 	[PICKED_TILE:58]
@@ -1094,7 +1126,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER]
 	[BASIC_MAT:PLANT_MAT:GARLIC:STRUCTURAL]
@@ -1110,7 +1142,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:5:0:1:60000:119999:3]
 
-[PLANT:WILD_GRAPE] Vitis vinifera
+[PLANT:AA_WILD_GRAPE] Vitis vinifera
 	[NAME:wild grape vine][NAME_PLURAL:wild grape vines][ADJ:wild grape vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -1119,9 +1151,9 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:GRAPE:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild grape leaf:wild grape leaves]
@@ -1143,13 +1175,13 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_HARD_WHEAT] Durum
+[PLANT:AA_WILD_HARD_WHEAT] Durum
 	[NAME:wild hard wheat][NAME_PLURAL:wild hard wheat][ADJ:wild hard wheat]
 	[PREFSTRING:beer]
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:HARD_WHEAT:STRUCTURAL]
@@ -1159,7 +1191,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_HEMP] Cannabis sativa
+[PLANT:AA_WILD_HEMP] Cannabis sativa
 	[NAME:wild hemp plant][NAME_PLURAL:wild hemp plants][ADJ:wild hemp plant]
 	[PREFSTRING:strong fiber]
 	[PREFSTRING:leaves]
@@ -1168,7 +1200,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:HEMP:STRUCTURAL]
@@ -1184,7 +1216,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:150000:230000]
 		[GROWTH_PRINT:0:6:6:0:1:150000:230000:2]
 
-[PLANT:WILD_ROOT_HIDE] Madder?
+[PLANT:AA_WILD_ROOT_HIDE] Madder?
 	[NAME:wild hide root][NAME_PLURAL:wild hide root][ADJ:wild hide root]
 	[PREFSTRING:fuzzy projections]
 	[PICKED_TILE:231]
@@ -1206,12 +1238,12 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:ROOT_HIDE:STRUCTURAL]
 
-[PLANT:WILD_HORNED_MELON] Cucumis metuliferus
+[PLANT:AA_WILD_HORNED_MELON] Cucumis metuliferus
 	[NAME:wild horned melon vine][NAME_PLURAL:wild horned melon vines][ADJ:wild horned melon vine]
 	[PREFSTRING:spiky fruit]
 	[PICKED_TILE:58]
@@ -1220,7 +1252,7 @@ plant_aa_wild_crops
 	[BIOME:ANY_DESERT]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:HORNED_MELON:STRUCTURAL]
@@ -1244,16 +1276,16 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_JUTE] Corchorus capsularis / Corchorus olitorius
+[PLANT:AA_WILD_JUTE] Corchorus capsularis / Corchorus olitorius
 	[NAME:wild jute plant][NAME_PLURAL:wild jute plants][ADJ:wild jute plant]
 	[PREFSTRING:fibrous stems]
 	[DRY]
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:JUTE:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild jute leaf:wild jute leaves]
@@ -1274,7 +1306,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:210000:4]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_KANIWA] Chenopodium pallidicaule
+[PLANT:AA_WILD_KANIWA] Chenopodium pallidicaule
 	[NAME:wild kaniwa][NAME_PLURAL:wild kaniwa][ADJ:wild kaniwa]
 	[PREFSTRING:beer]
 	[DRY]
@@ -1282,7 +1314,7 @@ plant_aa_wild_crops
 	[BIOME:TAIGA]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:KANIWA:STRUCTURAL]
@@ -1298,14 +1330,14 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:2:0:1:60000:119999:2]
 
-[PLANT:WILD_KENAF] Hibiscus cannabinus
+[PLANT:AA_WILD_KENAF] Hibiscus cannabinus
 	[NAME:wild kenaf plant][NAME_PLURAL:wild kenaf plants][ADJ:wild kenaf plant]
 	[PREFSTRING:flowers]
 	[DRY]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:KENAF:STRUCTURAL]
@@ -1327,7 +1359,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:150000:210000]
 		[GROWTH_PRINT:0:6:6:0:1:150000:210000:3]
 
-[PLANT:WILD_LEEK] Allium ampeloprasum
+[PLANT:AA_WILD_LEEK] Allium ampeloprasum
 	[NAME:wild leek][NAME_PLURAL:wild leeks][ADJ:wild leek]
 	[PREFSTRING:taste]
 	[PICKED_TILE:58]
@@ -1338,9 +1370,9 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:LEEK:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild leek leaf:wild leek leaves]
@@ -1361,7 +1393,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:130000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_LENTIL] Lens culinaris
+[PLANT:AA_WILD_LENTIL] Lens culinaris
 	[NAME:wild lentil plant][NAME_PLURAL:wild lentil plants][ADJ:wild lentil plant]
 	[PREFSTRING:lens-shaped seeds]
 	[PICKED_TILE:58]
@@ -1370,7 +1402,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:LENTIL:STRUCTURAL]
@@ -1393,7 +1425,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:210000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_LESSER_YAM] Dioscorea esculenta
+[PLANT:AA_WILD_LESSER_YAM] Dioscorea esculenta
 	[NAME:wild lesser yam][NAME_PLURAL:wild lesser yams][ADJ:wild lesser yam]
 	[PREFSTRING:tubers]
 	[PICKED_TILE:58]
@@ -1402,9 +1434,9 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:LESSER_YAM:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild lesser yam leaf:wild lesser yam leaves]
@@ -1418,7 +1450,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:7:0:1:60000:119999:2]
 
-[PLANT:WILD_LETTUCE] Lactuca sativa
+[PLANT:AA_WILD_LETTUCE] Lactuca sativa
 	[NAME:wild lettuce][NAME_PLURAL:wild lettuces][ADJ:wild lettuce]
 	[PREFSTRING:taste]
 	[PICKED_TILE:58]
@@ -1429,7 +1461,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER]
 	[BASIC_MAT:PLANT_MAT:LETTUCE:STRUCTURAL]
@@ -1451,7 +1483,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:120000:200000]
 		[GROWTH_PRINT:5:5:7:0:1:120000:200000:3]
 
-[PLANT:WILD_LONG_YAM] Dioscorea polystachya
+[PLANT:AA_WILD_LONG_YAM] Dioscorea polystachya
 	[NAME:wild long yam][NAME_PLURAL:wild long yams][ADJ:wild long yam]
 	[PREFSTRING:tubers]
 	[PICKED_TILE:58]
@@ -1460,9 +1492,9 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:LONG_YAM:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild long yam leaf:wild long yam leaves]
@@ -1477,7 +1509,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:7:0:1:60000:119999:2]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_GRASS_LONGLAND]
+[PLANT:AA_WILD_GRASS_LONGLAND]
 	[NAME:wild Longland grass][NAME_PLURAL:wild Longland grass][ADJ:wild Longland grass]
 	[PREFSTRING:sweeping stalks]
 	[PICKED_TILE:231]
@@ -1489,18 +1521,18 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[AUTUMN]
 	[BASIC_MAT:PLANT_MAT:GRASS_LONGLAND:STRUCTURAL]
 
-[PLANT:WILD_MAIZE] Zea mays subsp. mays
+[PLANT:AA_WILD_MAIZE] Zea mays subsp. mays
 	[NAME:wild maize][NAME_PLURAL:wild maize][ADJ:wild maize]
 	[PREFSTRING:popped kernels]
 	[DRY]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:MAIZE:STRUCTURAL]
@@ -1516,7 +1548,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:130000:200000]
 		[GROWTH_PRINT:0:6:6:0:1:130000:200000:2]
 
-[PLANT:WILD_ROOT_MUCK] Cattails?
+[PLANT:AA_WILD_ROOT_MUCK] Cattails?
 	[NAME:wild muck root][NAME_PLURAL:wild muck roots][ADJ:wild muck root]
 	[PREFSTRING:twisting shape]
 	[PICKED_TILE:231]
@@ -1537,7 +1569,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
-	[FREQUENCY:20]{:100
+	[FREQUENCY:100]
 	[CLUSTERSIZE:4]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:ROOT_MUCK:STRUCTURAL]
@@ -1547,7 +1579,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_MUNG_BEAN] Vigna radiata
+[PLANT:AA_WILD_MUNG_BEAN] Vigna radiata
 	[NAME:wild mung bean plant][NAME_PLURAL:wild mung bean plants][ADJ:wild mung bean plant]
 	[PREFSTRING:pods]
 	[PICKED_TILE:58]
@@ -1556,9 +1588,9 @@ plant_aa_wild_crops
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:MUNG_BEAN:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild mung bean leaf:wild mung bean leaves]
@@ -1579,7 +1611,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:130000:210000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_MUSKMELON] Cucumis melo (many many cultivars)
+[PLANT:AA_WILD_MUSKMELON] Cucumis melo (many many cultivars)
 	[NAME:wild muskmelon vine][NAME_PLURAL:wild muskmelon vines][ADJ:wild muskmelon vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -1589,7 +1621,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:MUSKMELON:STRUCTURAL]
@@ -1613,13 +1645,13 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_OATS] Avena sativa
+[PLANT:AA_WILD_OATS] Avena sativa
 	[NAME:wild oat][NAME_PLURAL:wild oats][ADJ:wild oat]
 	[PREFSTRING:beer]
 	[DRY]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER]
 	[BASIC_MAT:PLANT_MAT:OATS:STRUCTURAL]
@@ -1629,7 +1661,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_ONION] Allium cepa
+[PLANT:AA_WILD_ONION] Allium cepa
 	[NAME:wild onion][NAME_PLURAL:wild onions][ADJ:wild onion]
 	[PREFSTRING:bulbs]
 	[PICKED_TILE:58]
@@ -1638,7 +1670,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:ONION:STRUCTURAL]
@@ -1661,13 +1693,13 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:130000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_PAPYRUS_SEDGE] Cyperus papyrus
+[PLANT:AA_WILD_PAPYRUS_SEDGE] Cyperus papyrus
 	[NAME:wild papyrus sedge][NAME_PLURAL:wild papyrus sedges][ADJ:wild papyrus sedge]
 	[PREFSTRING:useful stems]
 	[WET]
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
 	[BIOME:SWAMP_TROPICAL_FRESHWATER] not cold tolerant (can be grown as temperate annual in cultivation), not salt tolerant
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:PAPYRUS_SEDGE:STRUCTURAL]
@@ -1683,7 +1715,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:6:0:0:60000:119999:2]
 
-[PLANT:WILD_PARSNIP] Pastinaca sativa
+[PLANT:AA_WILD_PARSNIP] Pastinaca sativa
 	[NAME:wild parsnip][NAME_PLURAL:wild parsnips][ADJ:wild parsnip]
 	[PREFSTRING:edible roots]
 	[PICKED_TILE:58]
@@ -1692,9 +1724,9 @@ plant_aa_wild_crops
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:PARSNIP:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild parsnip leaf:wild parsnip leaves]
@@ -1715,7 +1747,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:120000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_PASSION_FRUIT] Passiflora edulis
+[PLANT:AA_WILD_PASSION_FRUIT] Passiflora edulis
 	[NAME:wild passion fruit vine][NAME_PLURAL:wild passion fruit vines][ADJ:wild passion fruit vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -1728,7 +1760,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:PASSION_FRUIT:STRUCTURAL]
@@ -1752,7 +1784,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_PEA] Pisum sativum
+[PLANT:AA_WILD_PEA] Pisum sativum
 	[NAME:wild pea plant][NAME_PLURAL:wild pea plants][ADJ:wild pea plant]
 	[PREFSTRING:pods]
 	[PICKED_TILE:58]
@@ -1760,7 +1792,7 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER]
 	[BASIC_MAT:PLANT_MAT:PEA:STRUCTURAL]
@@ -1782,7 +1814,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:120000]
 		[GROWTH_PRINT:'%':'%':2:0:1:60000:120000:3]
 
-[PLANT:WILD_PEANUT] Arachis hypogaea
+[PLANT:AA_WILD_PEANUT] Arachis hypogaea
 	[NAME:wild peanut plant][NAME_PLURAL:wild peanut plants][ADJ:wild peanut plant]
 	[PREFSTRING:edible nuts]
 	[PICKED_TILE:58]
@@ -1793,7 +1825,7 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TROPICAL_CONIFER]
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:PEANUT:STRUCTURAL]
@@ -1815,14 +1847,14 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:175000:235000]
 		[GROWTH_PRINT:5:5:6:0:0:NONE]
 
-[PLANT:WILD_PEARL_MILLET] Pennisetum glaucum
+[PLANT:AA_WILD_PEARL_MILLET] Pennisetum glaucum
 	[NAME:wild pearl millet][NAME_PLURAL:wild pearl millet][ADJ:wild pearl millet]
 	[PREFSTRING:grain]
 	[DRY]
 	[BIOME:ANY_DESERT]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:PEARL_MILLET:STRUCTURAL]
@@ -1832,14 +1864,14 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_PENDANT_AMARANTH] Amaranthus caudatus
+[PLANT:AA_WILD_PENDANT_AMARANTH] Amaranthus caudatus
 	[NAME:wild pendant amaranth][NAME_PLURAL:wild pendant amaranths][ADJ:wild pendant amaranth]
 	[PREFSTRING:striking color]
 	[DRY]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:PENDANT_AMARANTH:STRUCTURAL]
@@ -1855,7 +1887,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:5:0:1:60000:119999:2]
 
-[PLANT:WILD_PEPPER] Capsicum spp. (wild varieties difficult to unravel)
+[PLANT:AA_WILD_PEPPER] Capsicum spp. (wild varieties difficult to unravel)
 	[NAME:wild pepper plant][NAME_PLURAL:wild pepper plants][ADJ:wild pepper plant]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -1866,9 +1898,9 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:PEPPER:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild pepper leaf:wild pepper leaves]
@@ -1889,7 +1921,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':4:0:1:120000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_PINEAPPLE] Ananas comosus
+[PLANT:AA_WILD_PINEAPPLE] Ananas comosus
 	[NAME:wild pineapple plant][NAME_PLURAL:wild pineapple plants][ADJ:wild pineapple plant]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -1898,9 +1930,9 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:PINEAPPLE:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild pineapple leaf:wild pineapple leaves]
@@ -1922,7 +1954,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF_NO_CLOUD]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_POTATO] Solanum tuberosum
+[PLANT:AA_WILD_POTATO] Solanum tuberosum
 	[NAME:wild potato][NAME_PLURAL:wild potatoes][ADJ:wild potato]
 	[PREFSTRING:edible tubers]
 	[PICKED_TILE:58]
@@ -1934,7 +1966,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:POTATO:STRUCTURAL]
@@ -1950,7 +1982,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:5:0:1:60000:119999:2]
 
-[PLANT:WILD_BERRIES_PRICKLE]
+[PLANT:AA_WILD_BERRIES_PRICKLE]
 	[NAME:wild prickle berry bush][NAME_PLURAL:wild prickle berry bushes][ADJ:wild prickle berry bush]
 	[PREFSTRING:precise thorns]
 	[PICKED_TILE:58]
@@ -1972,7 +2004,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:BERRIES_PRICKLE:STRUCTURAL]
@@ -1996,7 +2028,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_PURPLE_AMARANTH] Amaranthus blitum
+[PLANT:AA_WILD_PURPLE_AMARANTH] Amaranthus blitum
 	[NAME:wild purple amaranth plant][NAME_PLURAL:wild purple amaranth plants][ADJ:wild purple amaranth plant]
 	[PREFSTRING:striking color]
 	[DRY]
@@ -2004,7 +2036,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:PURPLE_AMARANTH:STRUCTURAL]
@@ -2027,7 +2059,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:130000:210000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_PURPLE_YAM] Dioscorea alata
+[PLANT:AA_WILD_PURPLE_YAM] Dioscorea alata
 	[NAME:wild purple yam][NAME_PLURAL:wild purple yams][ADJ:wild purple yam]
 	[PREFSTRING:tubers]
 	[PICKED_TILE:58]
@@ -2036,9 +2068,9 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:PURPLE_YAM:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild purple yam leaf:wild purple yam leaves]
@@ -2052,7 +2084,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:7:0:1:60000:119999:2]
 
-[PLANT:WILD_QUINOA] Chenopodium quinoa
+[PLANT:AA_WILD_QUINOA] Chenopodium quinoa
 	[NAME:wild quinoa][NAME_PLURAL:wild quinoa][ADJ:wild quinoa]
 	[PREFSTRING:beer]
 	[DRY]
@@ -2061,7 +2093,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:QUINOA:STRUCTURAL]
@@ -2077,7 +2109,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:2:0:1:60000:119999:2]
 
-[PLANT:WILD_RADISH] Raphanus sativus
+[PLANT:AA_WILD_RADISH] Raphanus sativus
 	[NAME:wild radish][NAME_PLURAL:wild radishes][ADJ:wild radish]
 	[PREFSTRING:edible roots]
 	[PICKED_TILE:58]
@@ -2086,7 +2118,7 @@ plant_aa_wild_crops
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:2]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:RADISH:STRUCTURAL]
@@ -2109,7 +2141,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:110000:160000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_RAMIE] Boehmeria nivea
+[PLANT:AA_WILD_RAMIE] Boehmeria nivea
 	[NAME:wild ramie plant][NAME_PLURAL:wild ramie plants][ADJ:wild ramie plant]
 	[PREFSTRING:useful stems]
 	[DRY]
@@ -2117,7 +2149,7 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:RAMIE:STRUCTURAL]
@@ -2127,7 +2159,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_RASPBERRY] Rubus spp.
+[PLANT:AA_WILD_RASPBERRY] Rubus spp.
 	[NAME:wild raspberry bush][NAME_PLURAL:wild raspberry bushes][ADJ:wild raspberry bush]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -2137,9 +2169,9 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TEMPERATE_CONIFER]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:RASPBERRY:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild raspberry leaf:wild raspberry leaves]
@@ -2161,7 +2193,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_WEED_RAT]
+[PLANT:AA_WILD_WEED_RAT]
 	[NAME:wild rat weed plant][NAME_PLURAL:wild rat weed plant][ADJ:wild rat weed plant]
 	[PREFSTRING:hanging leaves]
 	[PICKED_TILE:231]
@@ -2183,7 +2215,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:WEED_RAT:STRUCTURAL]
@@ -2206,7 +2238,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:200000:300000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_RED_BEAN] Vigna angularis
+[PLANT:AA_WILD_RED_BEAN] Vigna angularis
 	[NAME:wild red bean vine][NAME_PLURAL:wild red bean vines][ADJ:wild red bean vine]
 	[PREFSTRING:pods]
 	[PICKED_TILE:58]
@@ -2215,7 +2247,7 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:RED_BEAN:STRUCTURAL]
@@ -2238,7 +2270,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:210000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_RED_SPINACH] Amaranthus dubius
+[PLANT:AA_WILD_RED_SPINACH] Amaranthus dubius
 	[NAME:wild red spinach plant][NAME_PLURAL:wild red spinach plants][ADJ:wild red spinach plant]
 	[PREFSTRING:leaves]
 	[DRY]
@@ -2247,7 +2279,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:RED_SPINACH:STRUCTURAL]
@@ -2270,7 +2302,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:130000:210000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_RHUBARB] Rheum rhabarbarum
+[PLANT:AA_WILD_RHUBARB] Rheum rhabarbarum
 	[NAME:wild rhubarb plant][NAME_PLURAL:wild rhubarb plants][ADJ:wild rhubarb plant]
 	[PREFSTRING:sour taste]
 	[PICKED_TILE:58]
@@ -2278,9 +2310,9 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:RHUBARB:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild rhubarb stalk:wild rhubarb stalks]
@@ -2302,7 +2334,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:210000:300000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_RICE] Oryza sativa
+[PLANT:AA_WILD_RICE] Oryza sativa
 	[NAME:wild rice][NAME_PLURAL:wild rice][ADJ:wild rice]
 	[PREFSTRING:grain]
 	[WET]
@@ -2310,7 +2342,7 @@ plant_aa_wild_crops
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
 	[BIOME:SWAMP_TROPICAL_FRESHWATER]
 	[BIOME:MARSH_TROPICAL_FRESHWATER]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:RICE:STRUCTURAL]
@@ -2320,7 +2352,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_REED_ROPE] Sugar cane?
+[PLANT:AA_WILD_REED_ROPE] Sugar cane?
 	[NAME:wild rope reed][NAME_PLURAL:wild rope reeds][ADJ:wild rope reed]
 	[PREFSTRING:precise lines]
 	[PICKED_TILE:159]
@@ -2342,12 +2374,12 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:REED_ROPE:STRUCTURAL]
 
-[PLANT:WILD_RYE] Secale cereale
+[PLANT:AA_WILD_RYE] Secale cereale
 	[NAME:wild rye][NAME_PLURAL:wild rye][ADJ:wild rye]
 	[PREFSTRING:beer]
 	[DRY]
@@ -2358,7 +2390,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:TAIGA]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER]
 	[BASIC_MAT:PLANT_MAT:RYE:STRUCTURAL]
@@ -2368,13 +2400,13 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_SINGLE-GRAIN_WHEAT] Einkorn wheat
+[PLANT:AA_WILD_SINGLE-GRAIN_WHEAT] Einkorn wheat
 	[NAME:wild single-grain wheat][NAME_PLURAL:wild single-grain wheat][ADJ:wild single-grain wheat]
 	[PREFSTRING:beer]
 	[DRY]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:SINGLE-GRAIN_WHEAT:STRUCTURAL]
@@ -2384,7 +2416,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_SLIVER_BARB]
+[PLANT:AA_WILD_SLIVER_BARB]
 	[NAME:wild sliver barb][NAME_PLURAL:wild sliver barbs][ADJ:wild sliver barb]
 	[PREFSTRING:wicked thorns]
 	[PICKED_TILE:231]
@@ -2407,12 +2439,12 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
 		[EVIL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SPRING][SUMMER]
 	[BASIC_MAT:PLANT_MAT:SLIVER_BARB:STRUCTURAL]
 
-[PLANT:WILD_SORGHUM] Sorghum bicolor
+[PLANT:AA_WILD_SORGHUM] Sorghum bicolor
 	[NAME:wild sorghum cane][NAME_PLURAL:wild sorghum canes][ADJ:wild sorghum cane]
 	[PREFSTRING:beer]
 	[DRY]
@@ -2422,7 +2454,7 @@ plant_aa_wild_crops
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:SORGHUM:STRUCTURAL]
@@ -2444,7 +2476,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:140000:210000]
 		[GROWTH_PRINT:0:6:6:0:1:140000:210000:3]
 
-[PLANT:WILD_SOYBEAN] Glycine max
+[PLANT:AA_WILD_SOYBEAN] Glycine max
 	[NAME:wild soybean plant][NAME_PLURAL:wild soybean plants][ADJ:wild soybean plant]
 	[PREFSTRING:milk]
 	[PICKED_TILE:58]
@@ -2452,7 +2484,7 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:SOYBEAN:STRUCTURAL]
@@ -2475,7 +2507,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:150000:220000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_SPELT] Triticum spelta
+[PLANT:AA_WILD_SPELT] Triticum spelta
 	[NAME:wild spelt][NAME_PLURAL:wild spelt][ADJ:wild spelt]
 	[PREFSTRING:beer]
 	[DRY]
@@ -2484,7 +2516,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
 	[BIOME:FOREST_TEMPERATE_CONIFER]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:SPELT:STRUCTURAL]
@@ -2494,7 +2526,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_SPINACH] Spinacia oleracea
+[PLANT:AA_WILD_SPINACH] Spinacia oleracea
 	[NAME:wild spinach plant][NAME_PLURAL:wild spinach plants][ADJ:wild spinach plant]
 	[PREFSTRING:leaves]
 	[PICKED_TILE:58]
@@ -2502,7 +2534,7 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:SPINACH:STRUCTURAL]
@@ -2526,7 +2558,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:5:5:6:0:0:120000:200000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_SQUASH] Cucurbita spp. (mess of cultivars as with peppers), vine
+[PLANT:AA_WILD_SQUASH] Cucurbita spp. (mess of cultivars as with peppers), vine
 	[NAME:wild squash vine][NAME_PLURAL:wild squash vines][ADJ:wild squash vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -2538,7 +2570,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:SQUASH:STRUCTURAL]
@@ -2562,7 +2594,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_BERRIES_STRAW]
+[PLANT:AA_WILD_BERRIES_STRAW]
 	[NAME:wild strawberry plant][NAME_PLURAL:wild strawberry plants][ADJ:wild strawberry plant]
 	[PREFSTRING:vivid red color]
 	[PICKED_TILE:58]
@@ -2570,15 +2602,21 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:SWAMP_TEMPERATE_FRESHWATER]
 	[BIOME:FOREST_TEMPERATE_BROADLEAF]
+	[BIOME:FOREST_TEMPERATE_CONIFER]
 	[BIOME:SHRUBLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:TAIGA]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:5]{:50}
-	[CLUSTERSIZE:5]
-	[SPRING][SUMMER]--AUTUMN]--WINTER]
+	[FREQUENCY:25]{:50}
+	[CLUSTERSIZE:4]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:BERRIES_STRAW:STRUCTURAL]
+	[GROWTH:LEAVES]
+		[GROWTH_NAME:wild strawberry leaf:wild strawberry leaves]
+		[GROWTH_ITEM:PLANT_GROWTH:LEAVES:PLANT_MAT:BERRIES_STRAW:LEAF]
+		[GROWTH_DENSITY:1000]
+		[GROWTH_PRINT:0:6:2:0:1:NONE]
 	[GROWTH:FRUIT]
 		[GROWTH_NAME:wild strawberry:wild strawberries]
 		[GROWTH_ITEM:PLANT_GROWTH:FRUIT:PLANT_MAT:BERRIES_STRAW:FRUIT]
@@ -2587,7 +2625,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':7:4:0:1:40000:90000:2]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_STRING_BEAN] Phaseolus vulgaris
+[PLANT:AA_WILD_STRING_BEAN] Phaseolus vulgaris
 	[NAME:wild string bean plant][NAME_PLURAL:wild string bean plants][ADJ:wild string bean plant]
 	[PREFSTRING:pods]
 	[PICKED_TILE:58]
@@ -2596,7 +2634,7 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:STRING_BEAN:STRUCTURAL]
@@ -2619,7 +2657,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:120000:210000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_BERRY_SUN]
+[PLANT:AA_WILD_BERRY_SUN]
 	[NAME:wild sun berry bush][NAME_PLURAL:wild sun berry bushes][ADJ:wild sun berry bush]
 	[PREFSTRING:inner light]
 	[PICKED_TILE:58]
@@ -2642,9 +2680,9 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
 		[GOOD]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:BERRY_SUN:STRUCTURAL]
 	[GROWTH:FRUIT]
 		[GROWTH_NAME:wild sun berry:wild sun berries]
@@ -2654,7 +2692,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':7:4:0:1:300000:400000:1]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_SWEET_POTATO] Ipomoea batatas
+[PLANT:AA_WILD_SWEET_POTATO] Ipomoea batatas
 	[NAME:wild sweet potato][NAME_PLURAL:wild sweet potatoes][ADJ:wild sweet potato]
 	[PREFSTRING:edible tubers]
 	[PICKED_TILE:58]
@@ -2665,9 +2703,9 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:SHRUBLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:SWEET_POTATO:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild sweet potato leaf:wild sweet potato leaves]
@@ -2681,7 +2719,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:5:0:1:60000:119999:2]
 
-[PLANT:WILD_TARO] Colocasia esculenta
+[PLANT:AA_WILD_TARO] Colocasia esculenta
 	[NAME:wild taro][NAME_PLURAL:wild taro][ADJ:wild taro]
 	[PREFSTRING:roots]
 	[PICKED_TILE:58]
@@ -2690,9 +2728,9 @@ plant_aa_wild_crops
 	[BIOME:SWAMP_TEMPERATE_FRESHWATER]
 	[BIOME:MARSH_TEMPERATE_FRESHWATER]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:TARO:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild taro leaf:wild taro leaves]
@@ -2706,14 +2744,14 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:8:0:1:60000:119999:2]
 
-[PLANT:WILD_TEFF] Eragrostis tef
+[PLANT:AA_WILD_TEFF] Eragrostis tef
 	[NAME:wild teff][NAME_PLURAL:wild teff][ADJ:wild teff]
 	[PREFSTRING:grain]
 	[DRY]
 	[BIOME:ANY_DESERT]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:TEFF:STRUCTURAL]
@@ -2723,7 +2761,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_TOMATILLO] Physalis philadelphica
+[PLANT:AA_WILD_TOMATILLO] Physalis philadelphica
 	[NAME:wild tomatillo plant][NAME_PLURAL:wild tomatillo plants][ADJ:wild tomatillo plant]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -2735,7 +2773,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SPRING][SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:TOMATILLO:STRUCTURAL]
@@ -2759,7 +2797,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_TOMATO] Solanum lycopersicum
+[PLANT:AA_WILD_TOMATO] Solanum lycopersicum
 	[NAME:wild tomato plant][NAME_PLURAL:wild tomato plants][ADJ:wild tomato plant]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -2771,9 +2809,9 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:TOMATO:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild tomato leaf:wild tomato leaves]
@@ -2795,7 +2833,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_TURNIP] Brassica rapa
+[PLANT:AA_WILD_TURNIP] Brassica rapa
 	[NAME:wild turnip][NAME_PLURAL:wild turnips][ADJ:wild turnip]
 	[PREFSTRING:edible roots]
 	[PICKED_TILE:58]
@@ -2803,9 +2841,9 @@ plant_aa_wild_crops
 	[DRY]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:GRASSLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:TURNIP:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild turnip leaf:wild turnip leaves]
@@ -2826,14 +2864,14 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':6:0:1:70000:120000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_TWO-GRAIN_WHEAT] Emmer wheat
+[PLANT:AA_WILD_TWO-GRAIN_WHEAT] Emmer wheat
 	[NAME:wild two-grain wheat][NAME_PLURAL:wild two-grain wheat][ADJ:wild two-grain wheat]
 	[PREFSTRING:beer]
 	[DRY]
 	[BIOME:GRASSLAND_TEMPERATE]
 	[BIOME:SAVANNA_TEMPERATE]
 	[BIOME:SHRUBLAND_TEMPERATE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:TWO-GRAIN_WHEAT:STRUCTURAL]
@@ -2843,7 +2881,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_URAD_BEAN] Vigna mungo
+[PLANT:AA_WILD_URAD_BEAN] Vigna mungo
 	[NAME:wild urad bean plant][NAME_PLURAL:wild urad bean plants][ADJ:wild urad bean plant]
 	[PREFSTRING:pods]
 	[PICKED_TILE:58]
@@ -2852,9 +2890,9 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:URAD_BEAN:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild urad bean leaf:wild urad bean leaves]
@@ -2875,7 +2913,7 @@ plant_aa_wild_crops
 		[GROWTH_PRINT:'%':'%':2:0:1:130000:220000:3]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_WATERMELON] Citrullus lanatus
+[PLANT:AA_WILD_WATERMELON] Citrullus lanatus
 	[NAME:watermelon vine][NAME_PLURAL:watermelon vines][ADJ:watermelon vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -2884,7 +2922,7 @@ plant_aa_wild_crops
 	[BIOME:ANY_DESERT]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:WATERMELON:STRUCTURAL]
@@ -2908,7 +2946,7 @@ plant_aa_wild_crops
 		[GROWTH_DROPS_OFF]
 		[GROWTH_HAS_SEED]
 
-[PLANT:WILD_VINE_WHIP]
+[PLANT:AA_WILD_VINE_WHIP]
 	[NAME:wild whip vine][NAME_PLURAL:wild whip vines][ADJ:wild whip vine]
 	[PREFSTRING:length]
 	[PICKED_TILE:21]
@@ -2931,19 +2969,19 @@ plant_aa_wild_crops
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:ANY_DESERT]
 		[SAVAGE]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
 	[SPRING][SUMMER]
 	[BASIC_MAT:PLANT_MAT:VINE_WHIP:STRUCTURAL]
 
-[PLANT:WILD_WHITE_MILLET] Panicum miliaceum
+[PLANT:AA_WILD_WHITE_MILLET] Panicum miliaceum
 	[NAME:wild white millet][NAME_PLURAL:wild white millet][ADJ:wild white millet]
 	[PREFSTRING:grain]
 	[DRY]
 	[BIOME:ANY_DESERT]
 	[BIOME:GRASSLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:WHITE_MILLET:STRUCTURAL]
@@ -2953,7 +2991,7 @@ plant_aa_wild_crops
 		[GROWTH_DENSITY:1000]
 		[GROWTH_PRINT:0:6:2:0:0:ALL:1]
 
-[PLANT:WILD_WHITE_YAM] Dioscorea rotundata
+[PLANT:AA_WILD_WHITE_YAM] Dioscorea rotundata
 	[NAME:wild white yam][NAME_PLURAL:wild white yams][ADJ:wild white yam]
 	[PREFSTRING:tubers]
 	[PICKED_TILE:58]
@@ -2962,9 +3000,9 @@ plant_aa_wild_crops
 	[BIOME:FOREST_TROPICAL_MOIST_BROADLEAF]
 	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
 	[BIOME:SAVANNA_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:4]
-	[SPRING][SUMMER][AUTUMN]--WINTER]
+	[SPRING][SUMMER][AUTUMN][WINTER]
 	[BASIC_MAT:PLANT_MAT:WHITE_YAM:STRUCTURAL]
 	[GROWTH:LEAVES]
 		[GROWTH_NAME:wild white yam leaf:wild white yam leaves]
@@ -2978,7 +3016,7 @@ plant_aa_wild_crops
 		[GROWTH_TIMING:60000:119999]
 		[GROWTH_PRINT:5:5:7:0:1:60000:119999:2]
 
-[PLANT:WILD_WINTER_MELON] Benincasa hispida
+[PLANT:AA_WILD_WINTER_MELON] Benincasa hispida
 	[NAME:wild winter melon vine][NAME_PLURAL:wild winter melon vines][ADJ:wild winter melon vine]
 	[PREFSTRING:fruit]
 	[PICKED_TILE:58]
@@ -2988,7 +3026,7 @@ plant_aa_wild_crops
 	[BIOME:SHRUBLAND_TROPICAL]
 	[BIOME:SAVANNA_TROPICAL]
 	[BIOME:GRASSLAND_TROPICAL]
-	[FREQUENCY:5]{:50}
+	[FREQUENCY:25]{:50}
 	[CLUSTERSIZE:3]
 	[SUMMER][AUTUMN]
 	[BASIC_MAT:PLANT_MAT:WINTER_MELON:STRUCTURAL]

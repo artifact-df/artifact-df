@@ -31,6 +31,7 @@ Made on game version 0.47.04
 	[ADD_MATERIAL:PARCHMENT:PARCHMENT_TEMPLATE]
 	[ADD_MATERIAL:TALLOW:TALLOW_TEMPLATE]
 	[ADD_MATERIAL:SOAP:SOAP_TEMPLATE]
+	[ADD_MATERIAL:SCALE_TANNED:SCALE_TANNED_TEMPLATE]{+  Revision: scales can be tanned into a more durable form similar to leather.}
 
 [BODY_DETAIL_PLAN:CHITIN_MATERIALS]
 	[ADD_MATERIAL:CHITIN:CHITIN_TEMPLATE]
@@ -259,7 +260,7 @@ Made on game version 0.47.04
 	[BP_LAYERS:BY_CATEGORY:KIDNEY:KIDNEY:100]
 	[BP_LAYERS:BY_CATEGORY:JOINT:ARG4:4:ARG3:3]{:ARG3:1    Revision: joints were too fragile.}
 	[BP_LAYERS:BY_CATEGORY:SPINE:NERVE:2:ARG4:50]{:ARG4:2  Revision: spines snapped too easily.}
-	[BP_LAYERS:BY_CATEGORY:BRAIN:ARG2:1]{:BRAIN:BRAIN:100  Revision: adds a protective layer of fat around the brain.}
+	[BP_LAYERS:BY_CATEGORY:BRAIN:BRAIN:100]
 	[BP_LAYERS:BY_CATEGORY:HORN:ARG4:2:HORN:2]
 	[BP_LAYERS:BY_CATEGORY:FINGER:ARG4:25:ARG2:5:ARG1:25]{:ARG3:5:ARG1:1   Sver: vertebrate's fingers don't have muscle.}
 	[BP_LAYERS:BY_CATEGORY:TOE:ARG4:25:ARG2:5:ARG1:25]{:ARG3:5:ARG1:1      Sver: vertebrate's toes don't have muscle.}

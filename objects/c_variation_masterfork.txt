@@ -312,9 +312,7 @@ c_variation_masterwork
 
 [CREATURE_VARIATION:ATTRIBUTES_HUMAN]
 	[CV_NEW_TAG:SELECT_CASTE:ALL]
-		[CV_NEW_TAG:SKILL_RATES:85:10:20:20] humans learn all skills faster and rust slower than other races
-		[CV_NEW_TAG:SKILL_RATE:KNOWLEDGE_ACQUISITION:100:10:20:20]
-		[CV_NEW_TAG:SKILL_RATE:READING:60:6:12:12] peasants get a penalty to reading learn and rust rate
+		[CV_NEW_TAG:SKILL_RATES:75:10:20:20] humans learn all skills faster and rust slower than other races
 		[CV_NEW_TAG:MENT_ATT_CAP_PERC:ANALYTICAL_ABILITY:220]  humans can raise their attributes to 220% (2.2x) of the starting value. default: 200 (2.0x)
 		[CV_NEW_TAG:MENT_ATT_CAP_PERC:FOCUS:220]
 		[CV_NEW_TAG:MENT_ATT_CAP_PERC:WILLPOWER:220]

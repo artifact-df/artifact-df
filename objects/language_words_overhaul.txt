@@ -88,6 +88,7 @@ Introduces additional forms, especially if they're fitting adjectives.
 		[THE_NOUN_SING]
 		[THE_NOUN_PLUR] +
 		[OF_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_PLUR] +
 	[ADJ:ancient]
 		[ADJ_DIST:4]
 		[FRONT_COMPOUND_ADJ]
@@ -98,8 +99,8 @@ Introduces additional forms, especially if they're fitting adjectives.
 	[NOUN:angel:angels]
 		[FRONT_COMPOUND_NOUN_SING]
 		[REAR_COMPOUND_NOUN_SING]
-		[THE_NOUN_SING]
-		REAR_COMPOUND_NOUN_PLUR -
+		THE_NOUN_SING -
+		[REAR_COMPOUND_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 	[ADJ:angelic]
 		[ADJ_DIST:3]

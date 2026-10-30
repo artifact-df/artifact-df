@@ -297,7 +297,7 @@ entity_human_masterfork
 	[SIEGER]
 	[MAX_STARTING_CIV_NUMBER:10]
 	[MAX_POP_NUMBER:10000]
-	[MAX_SITE_POP_NUMBER:150]{:120}
+	[MAX_SITE_POP_NUMBER:90]{:120  Revision: reduced site max histfig count to hopefully make histfig count increase slower during worldgen.}
 	[RELIGION:PANTHEON]
 	[RELIGION_SPHERE:LONGEVITY]{+ prevents the civ from worshipping death sphere.}
 	[WANDERER]
@@ -432,9 +432,6 @@ entity_human_masterfork
 	[PERMITTED_REACTION:ROSE_GOLD_MAKING]
 	--PERMITTED_REACTION:BISMUTH_BRONZE_MAKING]{  Revision: disabled during worldgen, moved to fortress mode only.}
 	[PERMITTED_REACTION:MAKE WOODEN DISPLAY CASE]
-	[PERMITTED_REACTION:HARDLEAD_MAKING2]
-	[PERMITTED_REACTION:CUPRONICKEL_MAKING]
-	[PERMITTED_REACTION:ANTIMONY_BRONZE_MAKING]
 	// MECHANICS //
 	[PERMITTED_REACTION:MAKE_WEAPON_BLUNDERBUSS]
 
@@ -523,7 +520,6 @@ entity_human_masterfork
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[RESPONSIBILITY:MILITARY_STRATEGY]
 		[SQUAD:10:royal guard:royal guards]
-		[ALLOWED_CLASS:HUMAN_NOBLE] only nobles
 		[PRECEDENCE:1]
 		[SPECIAL_BURIAL]
 		[RULES_FROM_LOCATION]
@@ -604,7 +600,6 @@ entity_human_masterfork
 		[NUMBER:AS_NEEDED]
 		[SQUAD:10:man-at-arms:men-at-arms]
 		[LAND_HOLDER:3]
-		[ALLOWED_CLASS:HUMAN_NOBLE] only nobles
 		[LAND_NAME:a duchy]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
@@ -646,7 +641,6 @@ entity_human_masterfork
 		[NUMBER:AS_NEEDED]
 		[SQUAD:10:man-at-arms:men-at-arms]
 		[LAND_HOLDER:2]
-		[ALLOWED_CLASS:HUMAN_NOBLE] only nobles
 		[LAND_NAME:a county]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
@@ -689,7 +683,6 @@ entity_human_masterfork
 		[NUMBER:AS_NEEDED]
 		[SQUAD:10:man-at-arms:men-at-arms]
 		[LAND_HOLDER:1]
-		[ALLOWED_CLASS:HUMAN_NOBLE] only nobles
 		[LAND_NAME:a barony]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:LAW_ENFORCEMENT]

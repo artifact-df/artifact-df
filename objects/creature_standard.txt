@@ -960,7 +960,7 @@ creature_standard
 	[TRAINABLE_WAR]{:TRAINABLE  Revision: too big for hunting training.}
 	[MOUNT_EXOTIC]
 	[BIOME:ANY_LAND]
-	[FREQUENCY:10]{:5}
+	[FREQUENCY:5]
 	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
 		[CDI:TOKEN:BREATHE_FIRE]
 		[CDI:ADV_NAME:Breathe fire]
@@ -4468,7 +4468,7 @@ creature_standard
 	[TRAINABLE]{+}
 	[CHILD:10]{:1}[GENERAL_CHILD_NAME:hydra hatchling:hydra hatchlings]{+  Revision: taming requires a child tag (bug 7983).}
 	[BIOME:ANY_LAND]
-	[FREQUENCY:10]{:5}
+	[FREQUENCY:5]
 	[FANCIFUL]
 	[LARGE_PREDATOR]
 	[BONECARN]
@@ -5086,7 +5086,7 @@ creature_standard
 	[TRAINABLE]
 	[MOUNT_EXOTIC]
 	[BIOME:MOUNTAIN]
-	[FREQUENCY:10]{:5}
+	[FREQUENCY:5]
 	[FANCIFUL]
 	[MEGABEAST][DIFFICULTY:10]
 		[ATTACK_TRIGGER:3:3:3]

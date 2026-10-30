@@ -208,7 +208,6 @@ material_template_default
 	[MATERIAL_REACTION_PRODUCT:PARCHMENT_MAT:LOCAL_CREATURE_MAT:PARCHMENT]
 	This lets the game know that an animal was likely killed in the production of this item.
 	[IMPLIES_ANIMAL_KILL]
-	[PEARL]
 	[ROTS]
 	[GENERATES_MIASMA]{+}
 
@@ -411,7 +410,7 @@ material_template_default
 	[BONE]
 	[ITEMS_HARD]
 	[ITEMS_BARRED]
-	[EDIBLE_VERMIN]{+  Revision: bodies left in the open will disappear eventually.}
+	--EDIBLE_VERMIN]{+  Revision: bodies left in the open will disappear eventually.} // disabled as corpses in tombs fade away causing ghosts
 
 [MATERIAL_TEMPLATE:CARTILAGE_TEMPLATE]  Sver: more elastic cartilage to complement its addition to throat
 	[STATE_COLOR:ALL_SOLID:WHITE]
@@ -572,7 +571,7 @@ material_template_default
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
-	[SOLID_DENSITY:1300]{:500}
+	[SOLID_DENSITY:1000]{:500}
 	[LIQUID_DENSITY:NONE]
 	[MOLAR_MASS:NONE]
 	[IMPACT_YIELD:1500000]{:10000}
@@ -598,6 +597,9 @@ material_template_default
 	[IMPLIES_ANIMAL_KILL]
 	[SCALE]
 	[EDIBLE_VERMIN]{+}
+	[MATERIAL_REACTION_PRODUCT:TAN_MAT:LOCAL_CREATURE_MAT:SCALE_TANNED]{+  Revision: scales can be tanned into tanned scales.}
+	[ROTS]{+}
+	[GENERATES_MIASMA]{+}
 
 [MATERIAL_TEMPLATE:NAIL_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:GRAY]
@@ -1866,7 +1868,6 @@ material_template_default
 	[ITEMS_HARD]
 	[ITEMS_SCALED]
 	[EDIBLE_VERMIN]
-	[BONE]{+  Revision: allows it to be used for armor.}
 
 [MATERIAL_TEMPLATE:SOAP_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:CREAM]
@@ -1985,7 +1986,7 @@ material_template_default
 	[HEATDAM_POINT:10250]
 	[COLDDAM_POINT:9900]
 	[MAT_FIXED_TEMP:NONE]
-	[SOLID_DENSITY:750]
+	[SOLID_DENSITY:1000]{:750}
 	[LIQUID_DENSITY:NONE]
 	[MOLAR_MASS:NONE]
 	[IMPACT_YIELD:112200]
@@ -2011,8 +2012,6 @@ material_template_default
 	[IMPLIES_ANIMAL_KILL]
 	[CHITIN]
 	[EDIBLE_VERMIN]{+}
-	[BONE]{+  Revision: allows it to be used for armor.}
-	[REACTION_CLASS:CHITIN]{+}
 
 [MATERIAL_TEMPLATE:MILK_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:WHITE]

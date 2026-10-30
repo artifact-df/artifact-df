@@ -5,7 +5,7 @@ tile_page_advanced_agriculture
 [TILE_PAGE:AA_SHRUBS]
 	[FILE:images/aa_shrubs.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:352:3584]
+	[PAGE_DIM_PIXELS:352:3616]
 
 [TILE_PAGE:AA_SAP_BUCKET]
 	[FILE:images/aa_sap_bucket.png]
@@ -15,4 +15,4 @@ tile_page_advanced_agriculture
 [TILE_PAGE:AA_TREE_GROWTHS]
 	[FILE:images/aa_tree_growths.png]
 	[TILE_DIM:32:32]
-	[PAGE_DIM_PIXELS:64:192]
+	[PAGE_DIM_PIXELS:64:224]

@@ -268,7 +268,7 @@ entity_orc_masterfork
 	[SIEGE_SKILLED_MINERS] same as dwarves
 	[MAX_STARTING_CIV_NUMBER:5]
 	[MAX_POP_NUMBER:7500]
-	[MAX_SITE_POP_NUMBER:30]{:120}
+	[MAX_SITE_POP_NUMBER:90]{:120  Revision: reduced site max histfig count to hopefully make histfig count increase slower during worldgen.}
 	[RELIGION:PANTHEON]
 	[RELIGION_SPHERE:LIES]
 	[RELIGION_SPHERE:THRALLDOM]
@@ -422,7 +422,6 @@ entity_orc_masterfork
 	[PERMITTED_REACTION:ROSE_GOLD_MAKING]
 	--PERMITTED_REACTION:BISMUTH_BRONZE_MAKING]{  Revision: disabled during worldgen, moved to fortress mode only.}
 	[PERMITTED_REACTION:MAKE WOODEN DISPLAY CASE]
-	[PERMITTED_REACTION:HARDLEAD_MAKING2]
 
     // WRITING //
 	[PERMITTED_REACTION:MFORK_MAKE_CLAY_TABLET]

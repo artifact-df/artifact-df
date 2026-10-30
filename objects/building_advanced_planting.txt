@@ -1,0 +1,20 @@
+building_advanced_planting
+
+[OBJECT:BUILDING]
+
+[BUILDING_WORKSHOP:AP_PREPARED_GROUND]
+	[NAME:Prepared Ground]
+	[NAME_COLOR:2:0:1]
+	[DIM:1:1]
+	[WORK_LOCATION:1:1]
+	[BUILD_LABOR:PLANT]
+	[BLOCK:1:0]
+	[TILE:0:1:' ']
+	[COLOR:0:1:6:0:0]
+	[TILE:1:1:'.']
+	[COLOR:1:1:6:0:0]
+	[TILE:2:1:'o']
+	[COLOR:2:1:6:0:0]
+	[TILE:3:1:'O']
+	[COLOR:3:1:6:0:0]
+	[TOOLTIP:Prepare the ground to plant a shrub or sapling.]

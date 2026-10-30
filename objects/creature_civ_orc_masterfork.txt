@@ -358,9 +358,13 @@ creature_civ_orc_masterwork
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
+		[ORIENTATION:MALE:5:10:85]  Revision: increase worldgen population.
+		[ORIENTATION:FEMALE:85:10:5]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  She is spartan and rough, like much of her kin she live in tribal camps and are frequently in conflict with their neighbors.]
 	[CASTE:MALE]
 		[MALE]
+		[ORIENTATION:MALE:85:10:5]  Revision: increase worldgen population.
+		[ORIENTATION:FEMALE:5:10:85]
 		[DESCRIPTION:A large green-skinned humanoid with large jutting tusks, and thick leathery-skin.  He is spartan and rough, like much of his kin he live in tribal camps and are frequently in conflict with their neighbors.]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:NECKBEARD_TISSUE_LAYERS]

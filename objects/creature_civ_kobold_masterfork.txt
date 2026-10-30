@@ -276,11 +276,15 @@ creature_civ_kobold
 		[LITTERSIZE:10:20]{+} big litters
 		[BABYNAME:kobold baby girl:kobold babies]{+}
 		[CHILDNAME:kobold girl:kobold children]{+}
+		[ORIENTATION:MALE:1:0:99]{+  Revision: increase worldgen population.}
+		[ORIENTATION:FEMALE:99:0:1]{+
 		[DESCRIPTION:A small, quiet woman with leathery, scale-like skin and large, floppy ears.  She has wide, bright eyes and an innocent expression, feigned or real.  She lives in a cave with her tribe; she leaves often to steal.  Like most kobolds, she doesn't know her real parents.  Her tribe is her family.]{+}
 	[CASTE:MALE]
 		[MALE]
 		[BABYNAME:kobold baby girl:kobold babies]{+}
 		[CHILDNAME:kobold girl:kobold children]{+}
+		[ORIENTATION:MALE:99:9:1]{+  Revision: increase worldgen population.}
+		[ORIENTATION:FEMALE:1:0:99]{+
 		[DESCRIPTION:A small, quiet man with leathery, scale-like skin and large, floppy ears.  He has wide, bright eyes and an innocent expression, feigned or real.  He lives in a cave with his tribe; he leaves often to steal.  Like most kobolds, he doesn't know his real parents.  His tribe is his family.]{+}
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]{+}
 	[SELECT_CASTE:ALL]
